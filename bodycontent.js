@@ -9,14 +9,9 @@ function showPivot(pivotName) {
     toShow.style.display = "block";
 }
 
-
 function writeTopLevelURL(divID, titleString) {
     document.write('<a href="#" onclick="showPivot(\''+divID+'\'); return false;" class="pivot-switch">' + loc(titleString) + '</a>');
 }
-
-//alert('Hash:' + document.location.hash);
-// Parse the hash
-//tokens = document.location.hash.split("-", 
 
 document.write('<h2 bi:titleflag="t1" bi:title="t1">');
 writeTopLevelURL("pivot-international-student", "International Student");
@@ -27,4 +22,5 @@ writeTopLevelURL("pivot-texas-indiana-residents", "Indiana Residents");
 writeTopLevelURL("pivot-life-insurance", "Life Insurance");
 document.write('</h2>');
         
+
 
