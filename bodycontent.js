@@ -1,5 +1,9 @@
 
 function showPivot(pivotName) {
+    var defaultTab = "pivot-international-student";
+    if (pivotName.length == 0)
+        pivotName = defaultTab;
+
     document.location.hash = '#' + langTag() + '-' + pivotName; 
     var toHide = document.getElementsByClassName("pivot ");
     for (var i = 0; i < toHide.length; i++) {
