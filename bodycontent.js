@@ -1,5 +1,6 @@
 
 function showPivot(pivotName) {
+    document.location.hash = '#' + langTag() + '-' + pivotName; 
     var toHide = document.getElementsByClassName("pivot ");
     for (var i = 0; i < toHide.length; i++) {
         toHide[i].style.display = "none";
@@ -8,21 +9,14 @@ function showPivot(pivotName) {
     toShow.style.display = "block";
 }
 
-function loc(str) {
-    var loc = {};
-    loc['International Student'] = "ching chong";
-    loc['Global Medical'] = "wing wong";
-    // Fill in the rest of the localizable strings here...
-
-    var useChinese = false;
-    if (!useChinese || !loc[str])
-        return str;
-    return loc[str];
-}
 
 function writeTopLevelURL(divID, titleString) {
     document.write('<a href="#" onclick="showPivot(\''+divID+'\'); return false;" class="pivot-switch">' + loc(titleString) + '</a>');
 }
+
+//alert('Hash:' + document.location.hash);
+// Parse the hash
+//tokens = document.location.hash.split("-", 
 
 document.write('<h2 bi:titleflag="t1" bi:title="t1">');
 writeTopLevelURL("pivot-international-student", "International Student");
