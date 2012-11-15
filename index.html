@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>
 TaiAn Financial	Health Insurance
 </title>
 
 <link rel="stylesheet" type="text/css" href="style.css"></link>
 
-<!-- This script makes the tabs (For home/for work) work -->
-<script type="text/javascript" src="http://i.s-microsoft.com/en-us/home/shared/templates/Scripts/modernizr.js?v1"></script>
-
 <script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="localization.js"></script>
 </head>
 <body class="home">
 
 <div class="top-bar account-center">
+<a href="#" onclick="switchLang('cn'); return false;" class="language-switch">中文</a> | <a href="#" onclick="switchLang('en'); return false;" class="language-switch">English</a>
 </div>
 <header id="mscom-header" class="site-header" bi:type="header">
     <div class="grid-container">
@@ -29,13 +29,16 @@ TaiAn Financial	Health Insurance
     
 <section class="row-padded">
     <div class="grid-container">
-        <div class="grid-row row-4 "><div class="grid-unit col-1"><div bi:type="list" class="list-of-links list-of-links-xlg list-array">
-    <h2 bi:titleflag="t1" bi:title="t1" class="heading">Products</h2>
-    <ul bi:parenttitle="t1">
-        <script language="javascript" src="sidelinks.js"></script>
-    </ul>
-</div>
-    </div>
+        <div class="grid-row row-4 ">
+
+            <div class="grid-unit col-1">
+                <div bi:type="list" class="list-of-links list-of-links-xlg list-array">
+                    <h2 bi:titleflag="t1" bi:title="t1" class="heading">Products</h2>
+                    <ul bi:parenttitle="t1">
+                        <script language="javascript" src="sidelinks.js"></script>
+                    </ul>
+                </div>
+            </div>
     
     
     <div class="grid-unit col-3">

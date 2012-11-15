@@ -164,7 +164,7 @@ input[type="submit"]{cursor:pointer;font-size:.9em}
 .js .global-navigation,.js .menu-component{display:none}
 .global-navigation{clear:both;float:none;margin-top:.4em;padding:0 2%;position:relative}
 .account-center{text-align:right;margin:0 0 .5em 0;font-size:.9em;display:block;width:96%;padding:0 2%;background:#eee}
-.account-center a{display:-moz-inline-stack;display:inline-block;zoom:1;*display:inline;padding:.25em 0;margin-left:1em}
+.account-center a{display:-moz-inline-stack;display:inline-block;zoom:1;*display:inline;padding:.25em 0;margin-left:0em}
 @media screen and (min-width:540px){.account-center{padding:0;width:100%;background:transparent;min-height:1.9em;margin:.25em 0 0 0}
 .account-center a{color:#0072c6}
 }
