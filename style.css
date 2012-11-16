@@ -2,7 +2,9 @@
 body{line-height:1}
 ol,ul{list-style:none}
 table{border-collapse:collapse;border-spacing:0}
-caption,th,td{text-align:left;font-weight:normal;vertical-align:middle}
+caption,th,td{text-align:center;font-weight:normal;vertical-align:middle;padding:5px}
+table, th, td{border: 1px solid #303030; background-color:#eee;font-size:.833em}
+.tableHeader td{background-color:#D6D6D6}
 q,blockquote{quotes:none}
 q:before,q:after,blockquote:before,blockquote:after{content:"";content:none}
 a img{border:none}
@@ -116,6 +118,8 @@ h6{font-size:1em}
 }
 a{color:#1570a6;text-decoration:none;-webkit-transition:color .1s linear;-moz-transition:color .1s linear;-ms-transition:color .1s linear;-o-transition:color .1s linear;transition:color .1s linear}
 a:focus,a:hover{color:#083047;text-decoration:underline}
+.styled-li {list-style-type:square}
+.styled-ul {width:90%;text-align:left;margin-left:20px}
 .icon-left,.icon-right,.icon-menu,.icon-search,.icon-plus,.icon-minus,.icon-circledown,.icon-globe{font-family:"MSHPIconsRegular"}
 .fontface .icon-left:after{content:''}
 .fontface .icon-right:after{content:''}
