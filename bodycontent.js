@@ -1056,6 +1056,116 @@ function writeSections() {
 
     endSection();
 
+    // Travel Insurance
+    startSection("pivot-travel-insurance", "Travel Insurance");
 
+    startRow();
+    writeText("Taian International Health Insurance provides simple and flexible travel insurance for B1,B2 visa travelers to the United States. The coverage is also good for anybody (U.S. and non-U.S. citizen) travelling out of their home country, regardless of visa requirements. Monthly premium can be as low as $32.00 with $250 deductible for U.S. citizen and $39.00 for non-U.S. citizen.");
+    endRow();
+
+    startRow();
+    writeText("Sample rates and benefits for Patriot Travel Medical Insurance:");
+    document.write(makeTable(3, [
+                "Taian Travel Insurance",
+                makeURL("Patriot America For non-US citizens traveling outside home country", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+                makeURL("Patriot International For US citizens traveling outside  home country", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+                "Lifetime maximum", "$50,000, $100,000, $500,000, $1,000,000", "$50,000, $100,000, $500,000, $1,000,000", 
+                "Term", "5 days to 2 years", "5 days to 2 years", 
+                "Deductible", "$0, $100, $250, $500, $1,000, $2,500", "$0, $100, $250, $500, $1,000, $2,500", 
+                "Coinsurance", "In-PPO 90% to $5,000, then 100%<br />Out-PPO, 80% to $5,000 then 100%", "No coinsurance outside of U.S.",
+                "Intensive care unit", "Up to the Maximum", "Up to the Maximum",
+                "Hospitalization / room & board", "Up to the Max for average semi-private room rate", "Up to the Maximum for average semi-private room rate",
+                "Prescription Drugs", "Up to the Maximum", "Up to the Maximum",
+                "Emergency Room & Local Ambulance", "Up to the Maximum", "Up to the Maximum",
+                "Accidental Dental Injury", "Up to the Maximum", "Up to the Maximum",
+                "Sport & Activities Coverage", "Up to the Maximum for basic sports", "Up to the Maximum for basic sports",
+                "Trip Interruption", "Up to $5,000", "Up to $5,000", 
+                "Accidental Death & Dismemberment", "$25,000 principal sum", "$25,000 principal sum", 
+                "Emergency Medical Evacuation", "$500,000", "$500,000", 
+                "Repatriation of remains", "$50,000", "$50,000", 
+
+                "Monthly rate for $50,000 maximum and $250 deductible",
+                makeTable(2, [
+                    "Age", "Rate",
+                    "18-29", "$39",
+                    "30-39", "$52",
+                    "40-49", "$78",
+                    "50-59", "$113",
+                    "60-64", "$142",
+                    "65-69", "$162",
+                    "70-79", "$219",
+                    ]),
+                makeTable(2, [
+                    "Age", "Rate",
+                    "18-29", "$32",
+                    "30-39", "$37",
+                    "40-49", "$59",
+                    "50-59", "$96",
+                    "60-64", "$109",
+                    "65-69", "$129",
+                    "70-79", "$189",
+                    ]),
+
+                "Monthly rate for $50,000 maximum and $1000 deductible",
+                makeTable(2, [
+                    "Age", "Rate",
+                    "18-29", "$31.20",
+                    "30-39", "$41.60",
+                    "40-49", "$62.40",
+                    "50-59", "$90.40",
+                    "60-64", "$113.60",
+                    "65-69", "$129.60",
+                    "70-79", "$175.20",
+                    ]),
+                makeTable(2, [
+                    "Age", "Rate",
+                    "18-29", "$18.40",
+                    "30-39", "$22.40",
+                    "40-49", "$40",
+                    "50-59", "$64.80",
+                    "60-64", "$78.40",
+                    "65-69", "$92.80",
+                    "70-79", "$136",
+                    ]),
+
+                "",
+                makeURL("Buy Patriot Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+                makeURL("Buy Patriot Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+                ]));
+    endRow();
+
+    startRow();
+    writeText("");
+    writeText("Patriot Travel Medical Insurance highlights:");
+    document.write(makeBulletedListWithTitle("", [
+                "Short-term travel medical coverage (5 days to 2 years)",
+                "Coverage for individuals and dependents",
+                "Two plan designs for U.S. citizens and non-U.S. citizens traveling outside their home country",
+                "Maximum Limits from $50,000 to $2,000,000",
+                "Deductible options from $0 to $2,500",
+                "Available in daily and monthly rates",
+                "Renewable up to 24 months if three months or more are purchased",
+                "Freedom to seek treatment with hospital or doctor of your choice",
+                "Trip cancellation, travel delay and baggage delay benefits available",
+                "Universal Rx pharmacy discount savings",
+                "24 hour secure access from anywhere in the world to manage your account at any time",
+                "Simple application doesn’t need a physical exam",
+                ]));
+    endRow();
+
+    startRow();
+    writeText("");
+    writeText("Alternatively, consider Patriot T.R.I.P. Travel if you need a coverage for trip cancellation, travel and baggage delays, and emergency medical treatment.");
+    document.write(makeBulletedListWithTitle("", [
+                makeURL("Patriot T.R.I.P.® Travel", "https://www.imglobal.com/applications/pti/index.cfm?IMGAC=80000699&show=PTI"),
+                makeURL("Patriot T.R.I.P.® Elite", "https://www.imglobal.com/applications/pte/index.cfm?IMGAC=80000699&show=PTEAI,PTEII"),
+                makeURL("Patriot T.R.I.P.® Student", "https://www.imglobal.com/applications/pts/index.cfm?IMGAC=80000699&show=PTS"),
+                ]));
+    endRow();
+
+    writeDontSeeWhatYouNeedRow();
+
+    endSection();
 
 }
