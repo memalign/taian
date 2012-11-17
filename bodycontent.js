@@ -134,6 +134,25 @@ function writeTabs() {
     document.write('</h2>');
 }
 
+function writeDontSeeWhatYouNeedRow() {
+    startRow();
+    writeText("");
+    document.write(makeBulletedListWithTitle("Don't see what you need?", [
+                makeURL("Explore other choices on your own.", "https://producer.imglobal.com/international-insurance-plans.aspx?imgac=80000699"),
+                makeURL("Email us: chris@taianfinancial.com", "mailto:chris@taianfinancial.com"),
+                "Call us at 317-318-8258",
+                "We have plans to meet many diverse needs:",
+                "Adventure Travel",
+                "Multi trip travel medical insurance",
+                "Student coverage for non us citizens with a visa",
+                "Student coverage for US citizens abroad",
+                "Coverage for professionals living outside their home country",
+                "Travel insurance plans for groups traveling together",
+                "More – Just ask!",
+                ]));
+    endRow();
+}
+
 
 function writeSections() {
     startSection("pivot-home", "");
@@ -718,6 +737,10 @@ function writeSections() {
     startSection("pivot-international-student", "International Student");
 
     startRow();
+    writeText("Taian International Health Insurance provides International Student Insurance for US visa students (F1 visa, J1 visa, and M1 visa). Taian Student Insurance Plan A and Plan B meet most school student insurance standards and are more affordable.");
+    endRow();
+
+    startRow();
     writeCellWithText("We are qualified insurance agents with over 20 years experience working with insurance companies.");
     writeCellWithText("We have native English and Chinese speakers to answer all of your questions.");
     writeCellWithText(makePivotURL("pivot-school-waiver", "Check your school waiver requirements.") + " " + loc("Contact us to ensure a plan meets your requirements."));
@@ -905,22 +928,134 @@ function writeSections() {
 
     endRow();
 
+    writeDontSeeWhatYouNeedRow();
+    endSection();
+
+
+    // Global Medical
+    //
+    startSection("pivot-global-medical", "Global Medical");
+
     startRow();
-    writeText("");
-    document.write(makeBulletedListWithTitle("Don't see what you need?", [
-                makeURL("Explore other choices on your own.", "https://producer.imglobal.com/international-insurance-plans.aspx?imgac=80000699"),
-                makeURL("Email us: chris@taianfinancial.com", "mailto:chris@taianfinancial.com"),
-                "Call us at 317-318-8258",
-                "We have plans to meet many diverse needs:",
-                "Adventure Travel",
-                "Multi trip travel medical insurance",
-                "Student coverage for non us citizens with a visa",
-                "Student coverage for US citizens abroad",
-                "Coverage for professionals living outside their home country",
-                "Travel insurance plans for groups traveling together",
-                "More – Just ask!",
-                ]));
+    writeText("Taian International Health Insurance provides medical coverage for International professionals with a green card, H1B visa, TN1 visa, O visa and their dependents.");
     endRow();
 
+    startRow();
+    document.write(makeTable(2, [
+                "Plan", makeURL("Global Medical Insurance", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
+
+                "Plan Highlights", 
+                makeBulletedListWithTitle("", [
+                 "Annually renewable comprehensive worldwide medical coverage for non-US nationals worldwide or US citizen working abroad",
+                 "Deductible options from $100 to $10,000.",
+                 "Maximum policy benefits from $5,000,000 to $8,000,000",
+                 "Hospitalization / room & board covers average semi-private room rate.",
+                 "Up to $50,000 medical evacuation",
+                 "Up to $5,000-50,000 repatriation of remains to home country.",
+                 "Flexible, comprehensive medical coverage",
+                 "Coverage for individuals and families",
+                 "Four unique plan designs - Silver, Gold, Gold Plus and Platinum",
+                 "Optional riders: Global Term Life Insurance, Global Daily Indemnity, Maternity, Terrorism, Sports",
+                 "Choose your area of coverage (worldwide or worldwide excluding the U.S., Canada, China, Hong Kong, Macau, Taiwan, Singapore and Japan)",
+                 "Select from multiple deductible options",
+                 "Family premium covers first two children between 14 days and 9 years at no additional cost for the first year",
+                 "Choose from several payment modes",
+                 "Multiple underwriting options to fit your needs",
+                 "Freedom to choose your provider",
+                 "Access to two extensive provider networks",
+                 "Emergency Medical Evacuation and other evacuation benefits",
+                 "Medical Concierge Program",
+                 "Medical professionals to coordinate your care",
+                 "24 hour access to information",
+                 ]),
+
+                "Who the plan is designed for",
+                makeBulletedListWithTitle("", [
+                        "Coverage for individuals or families living or working abroad",
+                        "Contract employees living and working abroad",
+                        "Seniors with dual residencies six months or longer outside the U.S.",
+                        ]),
+
+                "", makeURL("Buy Global Medical Insurance", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
+
+
+                ])
+                );
+    endRow();
+
+    startRow();
+    writeText("");
+    writeText("Our highlight example plans:");
+    endRow();
+
+    startRow();
+    document.write(makeTable(3,
+            [
+            // Column headers:
+            "TaiAn Global Medical",
+            makeURL("Global Medical (Silver Plan) $250 deductible", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
+            makeURL("Global Medical (Platinum Plan) $1000 deductible", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
+
+
+
+
+
+            "Family Deductible", "3 times the individual", "2 times the individual", 
+            "Lifetime Max limit", "$5,000,000 per individual", "$8,000,000 per individual", 
+            "Treatment inside the U.S.", "In-PPO: deductible 50% waived (up to $2500). No coinsurance.<br />Non-PPO: 20% of next $5000 expenses after deductible", "In-PPO: deductible 50% waived (up to $2500). No coinsurance<br />Non-PPO: 10% of next $5000 expenses after deductible",
+            "Treatment outside the U.S.", "Subject to deductible. No coinsurance", "Subject to deductible. No coinsurance",
+            "Intensive care unit", "$1,500/day, 180 day /event", "URC",
+            "Hospitalization/room & board", "In U.S. average semi-private room rate. Outside of U.S. URC of private room rate (not exceed 150% semi-private). All subject to $600/day, 240 day max", "Private room rate",
+            "Emergency Room", "URC", "URC",
+            "Local Ambulance", "$1500/event - not subject to deductible or coinsurance", "URC",
+            "Child Wellness (under 18 y/o)", "3 visit/period, $70 max/period. Available after 12 months of coverage", "$400/period, not subject to deductible or coinsurance. Available after 6 months of coverage",
+            "Adult Wellness", "NA", "$500/period, not subject to deductible or coinsurance. Available after 6 months of coverage", 
+            "Emergency Dental", "$1,000/period", "URC", 
+            "Non-emergency Dental", "NA", "$750/year", 
+            "Vision", "NA", "Exams-up to $100. Materials-up to $150 per 24 months", 
+            "Surgery", "URC", "URC", 
+            "Emergency Evacuation", "$50,000 per period, not subject to deductible or coinsurance", "Up to the maximum limit, not subject to deductible or coinsurance", 
+            "Repatriation of remains", "$25,000 per insured, not subject to deductible or coinsurance", "$50,000 per insured, not subject to deductible or coinsurance", 
+            "Mental/Nervous", "Out-patient only, after 12 month of coverage", "$50,000 max, after 12 month of coverage", 
+            "Maternity", "Optional Rider($2500) - $50,000 lifetime max. Max of $5000 for normal delivery, $7500 for C-section. $200 child wellness for first 12 month. new born care & congenital disorders max of $250,000 for the first 31 days (benefits reduced by 50% for births that occur in the 11th or 12th month of coverage)", "Maternity is covered same as any illness for any birth that occurs after 10 months of coverage- $1000 additional deductible, $50,000 lifetime max. $200 child wellness for the first 12 months. new born care & congenital disorders max of $250,000 for the first 31 days",
+
+            "Monthly Rate",
+            makeTable(3, [
+                    "Age", "Male", "Female",
+                    "18", "$60",    "$60",
+                    "25", "$63",    "$85",
+                    "30", "$71",    "$94",
+                    "35", "$79",    "$111",
+                    "40", "$100",   "$122",
+                    "45", "$112",   "$135",
+                    "50", "$136",   "$150",
+                    ]),
+            makeTable(3, [
+                    "Age", "Male", "Female",
+                    "18", "$220",    "$220",
+                    "25", "$228",    "$399",
+                    "30", "$248",    "$451",
+                    "35", "$256",    "$495",
+                    "40", "$313",   "$533",
+                    "45", "$349",   "$415",
+                    "50", "$416",   "$450",
+                    ]),
+
+
+
+
+            "Brochure", makeURL("Complete Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1804&a=80000699"), makeURL("Complete Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1804&a=80000699"),
+
+            "", 
+            makeURL("Buy Global Medical (Silver Plan) $250 deductible", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
+            makeURL("Buy Global Medical (Platinum Plan) $1000 deductible", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
+            ]));
+    endRow();
+
+    writeDontSeeWhatYouNeedRow();
+
     endSection();
+
+
+
 }
