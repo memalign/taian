@@ -3,8 +3,14 @@ body{line-height:1}
 ol,ul{list-style:none}
 table{border-collapse:collapse;border-spacing:0}
 caption,th,td{text-align:center;font-weight:normal;vertical-align:middle;padding:5px}
-table, th, td{border: 1px solid #303030; background-color:#eee;font-size:.833em}
-.tableHeader td{background-color:#D6D6D6}
+.styledTable table,th,td{border: 1px solid #303030; background-color:#eee;font-size:.833em}
+.styledTable td{border: 1px solid #303030; background-color:#eee;font-size:.833em}
+.styledTable th{border: 1px solid #303030; background-color:#eee;font-size:.833em}
+.styledTableHeader td{background-color:#D6D6D6}
+.invisibleTable table{border: 0; background-color:transparent;font-size:.833em}
+.invisibleTable td{border: 0; background-color:transparent;font-size:.833em}
+.invisibleTable th{border: 0; background-color:transparent;font-size:.833em}
+.invisibleTableHeader td{background-color:transparent}
 q,blockquote{quotes:none}
 q:before,q:after,blockquote:before,blockquote:after{content:"";content:none}
 a img{border:none}
@@ -107,7 +113,6 @@ h1 img,h2 img,h3 img,h4 img,h5 img,h6 img{margin:0}
 h1+h1,h2+h2,h3+h3{margin-top:1.3em}
 @media screen and (min-width:540px){h1{margin-bottom:.35em}
 h2{font-size:1.625em;margin-bottom:.55em}
-h4{font-size:1.625em}
 h4{font-size:1.625em}
 h5{font-size:1em}
 h6{font-size:1em}
