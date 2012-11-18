@@ -80,24 +80,28 @@ function writeCellWithText(text) {
     endCell();
 }
 
-function writeImage(filename) {
-    document.write('<img src="'+filename+'"></img>');
+function makeImage(filename) {
+    return '<img src="'+filename+'"></img>';
 }
 
-function makeTable(numColumns, cells) {
+function writeImage(filename) {
+    document.write(makeImage(filename));
+}
+
+function makeTableWithStyle(styleClass, numColumns, cells) {
     var tableCode = "";
     tableCode += '<div bi:type="highlight">';
-    tableCode += '<table>';
+    tableCode += '<table class="'+styleClass+'">';
     for (var i = 0; i < cells.length; ++i) {
         if ((i % numColumns) == 0) {
             if (i != 0) {
                 tableCode += '</tr>';
-                tableCode += '<tr>';
+                tableCode += '<tr class="'+styleClass+'">';
             } else {
-                tableCode += '<tr class="tableHeader">';
+                tableCode += '<tr class="'+styleClass+'Header">';
             }
         }
-        tableCode += '<td>';
+        tableCode += '<td class="'+styleClass+'">';
         tableCode += loc(cells[i]);
         tableCode += '</td>';
     }
@@ -105,6 +109,10 @@ function makeTable(numColumns, cells) {
     tableCode += '</table>';
     tableCode += '</div>';
     return tableCode;
+}
+
+function makeTable(numColumns, cells) {
+    return makeTableWithStyle("styledTable", numColumns, cells);
 }
 
 function makeURL(title, url) {
@@ -128,8 +136,8 @@ function writeTabs() {
     writeTopLevelURL("pivot-international-student", "International Student");
     writeTopLevelURL("pivot-global-medical", "Global Medical");
     writeTopLevelURL("pivot-travel-insurance", "Travel Insurance");
-    writeTopLevelURL("pivot-texas-indiana-residents", "Texas Residents");
-    writeTopLevelURL("pivot-texas-indiana-residents", "Indiana Residents");
+    writeTopLevelURL("pivot-indiana-residents", "Indiana Residents");
+    writeTopLevelURL("pivot-texas-residents", "Texas Residents");
     writeTopLevelURL("pivot-life-insurance", "Life Insurance");
     document.write('</h2>');
 }
@@ -153,6 +161,50 @@ function writeDontSeeWhatYouNeedRow() {
     endRow();
 }
 
+function writePatriotTravelTable() {
+    document.write(makeTable(2, [
+                "Plan", makeURL("Patriot Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+                "Plan Highlights",
+                makeBulletedListWithTitle("", [
+                    "Short-term travel medical coverage",
+                    "Coverage for individuals and dependents",
+                    "Two plan designs - one for U.S. citizens and one for non-U.S. citizens traveling outside their home country",
+                    "Maximum Limits from $50,000 to $2,000,000",
+                    "Deductible options from $0 to $2,500",
+                    "Available in daily and monthly rates",
+                    "Renewable up to 24 months if three months or more are purchased",
+                    "Freedom to seek treatment with hospital or doctor of your choice",
+                    "Trip cancellation, travel delay and baggage delay benefits available",
+                    "Universal Rx pharmacy discount savings",
+                    "24 hour secure access from anywhere in the world to manage your account at any time",
+                    ]),
+
+
+                "Who the plan is designed for",
+                makeBulletedListWithTitle("", [
+                    "Graduating seniors trips",
+                    "Senior citizens age 65+ with or without Medicare traveling abroad",
+                    "College students studying abroad",
+                    "Foreign au pairs and nannies",
+                    "Families sponsoring exchange students",
+                    "International vacationers",
+                    "Individual or group missionaries",
+                    "Relatives visiting from overseas",
+                    "Recently arrived immigrants",
+                    ]),
+                "",
+                "You have enough to worry about when you're traveling. Don't let your medical coverage be an uncertainty. Patriot International® provides coverage for U.S. citizens traveling outside the U.S. with coverage for brief returns to the U.S., while Patriot America® provides coverage for non-U.S. citizens traveling outside their home country. Both plans are available for a minimum of 5 days up to a maximum of two years.",
+
+                "",
+                "The international medical plans offer excellent benefits and services to meet your global needs. You have access to international, multilingual customer service centers, claims administrators who process claims from all over the world, handling virtually every language and currency, and 24 hour access to highly qualified coordinators of emergency medical services and international treatment. You can also choose from a wide range of deductibles, several Maximum Limits, and you have access to more than 17,000 providers through the International Provider AccessSM (IPA) when seeking treatment outside the U.S.  You can also reduce your out-of-pocket costs when seeking treatment in the U.S. by locating providers through the independent Preferred Provider Organization.",
+
+                "Full Brochure", makeURL("Full Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1932&a=80000699"),
+                "", makeURL("Buy Patriot Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+                "", makeURL("Buy Patriot Group Exchange Insurance", "https://purchase.imglobal.com/Quote/patriot_group_exchange/pre-quote?imgac=80000699"),
+
+                ]));
+}
 
 function writeSections() {
     startSection("pivot-home", "");
@@ -853,46 +905,7 @@ function writeSections() {
                 );
 
     writeText("");
-    document.write(makeTable(2, [
-                "Plan", makeURL("Patriot Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
-
-                "Plan Highlights",
-                makeBulletedListWithTitle("", [
-                     "Short-term travel medical coverage",
-                     "Coverage for individuals and dependents",
-                     "Two plan designs - one for U.S. citizens and one for non-U.S. citizens traveling outside their home country",
-                     "Maximum Limits from $50,000 to $2,000,000",
-                     "Deductible options from $0 to $2,500",
-                     "Available in daily and monthly rates",
-                     "Renewable up to 24 months if three months or more are purchased",
-                     "Freedom to seek treatment with hospital or doctor of your choice",
-                     "Trip cancellation, travel delay and baggage delay benefits available",
-                     "Universal Rx pharmacy discount savings",
-                     "24 hour secure access from anywhere in the world to manage your account at any time",
-                ]),
-
-
-                "Who the plan is designed for",
-                makeBulletedListWithTitle("", [
-                        "Graduating seniors trips",
-                        "Senior citizens age 65+ with or without Medicare traveling abroad",
-                        "College students studying abroad",
-                        "Foreign au pairs and nannies",
-                        "Families sponsoring exchange students",
-                        "International vacationers",
-                        "Individual or group missionaries",
-                        "Relatives visiting from overseas",
-                        "Recently arrived immigrants",
-                        ]),
-                "",
-                "You have enough to worry about when you're traveling. Don't let your medical coverage be an uncertainty. Patriot International® provides coverage for U.S. citizens traveling outside the U.S. with coverage for brief returns to the U.S., while Patriot America® provides coverage for non-U.S. citizens traveling outside their home country. Both plans are available for a minimum of 5 days up to a maximum of two years.",
-
-                "Full Brochure", makeURL("Full Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1932&a=80000699"),
-                "", makeURL("Buy Patriot Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
-                "", makeURL("Buy Patriot Group Exchange Insurance", "https://purchase.imglobal.com/Quote/patriot_group_exchange/pre-quote?imgac=80000699"),
-
-                ]));
-
+    writePatriotTravelTable();
 
     writeText("");
     document.write(makeTable(2, [
@@ -1064,6 +1077,16 @@ function writeSections() {
     endRow();
 
     startRow();
+    writeText("Why do I need travel medical insurance?");
+    endRow();
+
+    startRow();
+    writeCellWithText("Most medical insurance coverage will not provide benefits in a different country. If you are a US citizen, your passport says, \"Health Insurance: Medical costs abroad can be extremely expensive. Does your insurance apply overseas, including medical evacuation, payment to the overseas hospital or doctor, or reimbursement to you later?.....Medicare/Medicaid does not cover healthcare costs outside the US.\"");
+    writeCellWithText("Medical Evacuation is an important benefit. Maybe you are visiting a part of the world with a lesser developed healthcare system. You planned ahead and had your travel vaccines before you left, but what if you get injured on your trip? You might need to be evacuated to an adequate hospital. A medical evacuation benefit will provide what you need.");
+    writeCellWithText("Trip cancellation, lost baggage, travel delay benefits. You spent a year planning for and saving for your trip. Now, you arrive at the airport for a connecting flight and the flight is cancelled. You don’t need a health insurance benefit, but you sure could use a travel insurance benefit. Help cover your costs for unforeseen travel problems with the right travel insurance coverage for you.");
+    endRow();
+
+    startRow();
     writeText("Sample rates and benefits for Patriot Travel Medical Insurance:");
     document.write(makeTable(3, [
                 "Taian Travel Insurance",
@@ -1137,32 +1160,146 @@ function writeSections() {
 
     startRow();
     writeText("");
-    writeText("Patriot Travel Medical Insurance highlights:");
-    document.write(makeBulletedListWithTitle("", [
-                "Short-term travel medical coverage (5 days to 2 years)",
-                "Coverage for individuals and dependents",
-                "Two plan designs for U.S. citizens and non-U.S. citizens traveling outside their home country",
-                "Maximum Limits from $50,000 to $2,000,000",
-                "Deductible options from $0 to $2,500",
-                "Available in daily and monthly rates",
-                "Renewable up to 24 months if three months or more are purchased",
-                "Freedom to seek treatment with hospital or doctor of your choice",
-                "Trip cancellation, travel delay and baggage delay benefits available",
-                "Universal Rx pharmacy discount savings",
-                "24 hour secure access from anywhere in the world to manage your account at any time",
-                "Simple application doesn’t need a physical exam",
+    
+    writePatriotTravelTable();
+    endRow();
+
+    startRow();
+    writeText(""),
+    writeText("Patriot Platinum Travel Medical Insurance is a similar plan with more coverage (up to $8,000,000):");
+    document.write(makeTable(2, [
+                "", makeURL("Patriot Platinum Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot_platinum?imgac=80000699"),
+
+                "Changes from Patriot Travel Medical Insurance",
+                makeBulletedListWithTitle("", [
+                    "Short-term travel medical coverage (5 days to 3 years)",
+                    "Maximum Limits from $1,000,000 to $8,000,000",
+                    "Deductible options from $0 to $25,000",
+                    "Renewable up to 36 months if three months or more are purchased",
+                    ]),
+
+                "Shared features",
+                makeBulletedListWithTitle("", [
+                    "Coverage for individuals and dependents",
+                    "Two plan designs for U.S. citizens and non-U.S. citizens traveling outside their home country",
+                    "Available in daily and monthly rates",
+                    "Freedom to seek treatment with hospital or doctor of your choice",
+                    "Trip cancellation, travel delay and baggage delay benefits available",
+                    "Universal Rx pharmacy discount savings",
+                    "24 hour secure access from anywhere in the world to manage your account at any time",
+                    ]),
+
+                "Brochure", makeURL("Full Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=2143&a=80000699"),
+
+                "", makeURL("Buy Patriot Platinum Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot_platinum?imgac=80000699"),
                 ]));
     endRow();
 
     startRow();
     writeText("");
     writeText("Alternatively, consider Patriot T.R.I.P. Travel if you need a coverage for trip cancellation, travel and baggage delays, and emergency medical treatment.");
-    document.write(makeBulletedListWithTitle("", [
-                makeURL("Patriot T.R.I.P.® Travel", "https://www.imglobal.com/applications/pti/index.cfm?IMGAC=80000699&show=PTI"),
+    document.write(makeTable(2, [
+                "", makeURL("Patriot T.R.I.P.® Travel", "https://www.imglobal.com/applications/pti/index.cfm?IMGAC=80000699&show=PTI"),
+                
+                "Plan Highlights",
+                makeBulletedListWithTitle("", [
+                    "$20,000 coverage for trip cancellation/interruption",
+                    "$10,000 coverage for emergency medical/dental expenses",
+                    "$500 coverage for travel delay",
+                    "$1,000 coverage for baggage/personal possessions",
+                    "$100 Baggage delay",
+                    "$20,000 Emergency medical evacuation/repatriation",
+                    "$3,000 Repatriation of mortal remains",
+                    "$100,000 Common carrier accidental death and dismemberment",
+                    ]),
+
+                "Sample Cost", "A 35 year old spends $5000 on a trip, insurance costs $200. A 25 year old spends $1500 on a trip, insurance costs $60.",
+
+                "Brochure", makeURL("Full Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1871&a=80000699"),
+                "", makeURL("Buy Patriot T.R.I.P.® Travel", "https://www.imglobal.com/applications/pti/index.cfm?IMGAC=80000699&show=PTI"),
+
+                "More options",
+                makeBulletedListWithTitle("", [
+                    makeURL("Patriot T.R.I.P.® Elite - offers more coverage than Patriot T.R.I.P. Travel Insurance.", "https://www.imglobal.com/applications/pte/index.cfm?IMGAC=80000699&show=PTEAI,PTEII"),
+                    makeURL("Patriot T.R.I.P.® Student -  designed just for students and is more affordable than Patriot T.R.I.P. Travel Insurance.", "https://www.imglobal.com/applications/pts/index.cfm?IMGAC=80000699&show=PTS"),
+                    ]),
+
+                ]));
+
+    writeText("");
+    writeText("More Options:");
+    document.write(makeTable(2, [
+                "Plan", "",
+                
                 makeURL("Patriot T.R.I.P.® Elite", "https://www.imglobal.com/applications/pte/index.cfm?IMGAC=80000699&show=PTEAI,PTEII"),
+                makeBulletedListWithTitle("", [
+                    "Offers more coverage than Patriot T.R.I.P. Travel Insurance.",
+                    makeURL("Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1879&a=80000699"),
+                    makeURL("Buy", "https://www.imglobal.com/applications/pte/index.cfm?IMGAC=80000699&show=PTEAI,PTEII"),
+                    ]),
+
                 makeURL("Patriot T.R.I.P.® Student", "https://www.imglobal.com/applications/pts/index.cfm?IMGAC=80000699&show=PTS"),
+                makeBulletedListWithTitle("", [
+                    "Designed just for students and is more affordable than Patriot T.R.I.P. Travel Insurance.",
+                    makeURL("Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1877&a=80000699"),
+                    makeURL("Buy", "https://www.imglobal.com/applications/pts/index.cfm?IMGAC=80000699&show=PTS"),
+                    ]),
                 ]));
     endRow();
+
+
+    startRow();
+    writeText("");
+    document.write(makeBulletedListWithTitle("Travel Tips", [
+                loc("Visit") + " " + makeURL("CDC (Center for Disease Control)", "http://www.cdc.gov/") + " " + loc(" to learn about travel vaccine recommendations. They provide an up to date list by country of which travel vaccinations are required or recommended. They also provide up to date health information by location. Did you know a vaccine booster for Polio is recommended for travel to some locations? Also, the vaccines for Hepatitis A and B are good for life – be safe once now and you are covered forever! Once you have your passport health care preparations are critical."),
+                loc("Travel visa requirements depend on the country you are visiting. A US citizen might need a visa depending on where they are going. A visitor to the United States might need a visa depending on the nature of their visit. For details see the") + " " + makeURL("State Department website", "http://travel.state.gov/visa/visa_1750.html") + ".",
+                ]));
+    endRow();
+
+    writeDontSeeWhatYouNeedRow();
+
+    endSection();
+
+
+    // Life Insurance
+    startSection("pivot-life-insurance", "Life Insurance");
+
+    startRow();
+    document.write(makeTableWithStyle("invisibleTable", 2, [
+                makeImage("oneamerica.png"),
+                "Delivering on our promise to provide peace of mind and financial security for clients has been the focus of American United Life Insurance Company® (AUL) a OneAmerica company, for more than 130 years. OneAmerica and its operating companies’ ratings have remained stable, providing peace of mind to our customers. A.M. Best rating A (Excellent) positive outlook The third-highest of 15 possible ratings, according to the release dated June 9, 2010. Standard & Poor’s rating AA- (Very Strong) stable outlook The fourth-highest of 21 possible ratings, according to the report dated August 3, 2010.",
+                ]));
+    endRow();
+
+
+    startRow();
+    writeText("");
+    writeText(loc("Low Cost Term Life Insurance") + " - " + loc("Sample (most preferred) rates:"));
+    document.write(makeTable(3, [
+                "Term Life Insurance",
+                "10 yr level $249,999",
+                "20 yr level $249,999",
+
+                "30 yrs old Male",
+                "$142.50/yr",
+                "$215.00/yr",
+
+                "30 yrs old Female",
+                "$127.50/yr",
+                "$170.00/yr",
+
+                "40 yrs old Male",
+                "$175.00/yr",
+                "$325.85/yr",
+
+                "40 yrs old Female",
+                "$167.50/yr",
+                "$237.50/yr",
+                ]));
+    writeText("Call or email for a quote!");
+    writeText("We also offer Whole Life Insurance and Annuities. Please call or email for a quote!");
+    endRow();
+
 
     writeDontSeeWhatYouNeedRow();
 
