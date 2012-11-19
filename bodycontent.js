@@ -33,6 +33,10 @@ function makePivotURL(divID, title) {
     return urlCode;
 }
 
+function makeBold(str) {
+    return "<strong>" + loc(str) + "</strong>";
+}
+
 function writeTopLevelURL(divID, titleString) {
     document.write(makeStartPivotURLWithIsTopLevel(divID, true));
     document.write(loc(titleString));
@@ -120,7 +124,8 @@ function makeURL(title, url) {
 }
 
 function makeBulletedListWithTitle(title, list) {
-    var listCode = '<h2>'+loc(title)+'</h2><ul class="styled-ul">';
+    var listCode = '<h2>'+loc(title)+'</h2>';
+    listCode += '<ul class="styled-ul">';
 
     for (var i = 0; i < list.length; ++i) {
         listCode += '<li class="styled-li">'+loc(list[i])+"</li>";
@@ -128,6 +133,96 @@ function makeBulletedListWithTitle(title, list) {
     
     listCode += "</ul>";
     return listCode;
+}
+
+function writeLinesWithTitle(title, lines) {
+    var code = "";
+
+    code += makeBold(title);
+    for (var i = 0; i < lines.length; ++i) {
+        code += "<br />" + loc(lines[i]);
+    }
+    
+    document.write(code);
+}
+
+function writeRowForUnitedHealthOne() {
+    startRow();
+    document.write(makeTableWithStyle("invisibleTable", 2, [
+                makeImage("uhone.png"),
+                "Major medical, short term, dental insurance, critical illness coverage for residents (in the U.S. for 1 yr or longer) of Indiana and Texas. UnitedHealthOne coverage is low cost and high quality.",
+                ]));
+    writeText("Some example plans:");
+    endRow();
+
+    startRow();
+    document.write(makeTable(2, [
+                "Plan", "Highlights",
+
+                "Short Term Medical VALUE PLAN",
+                makeBulletedListWithTitle("", [
+                    "Easiest Application, Great Temporatory Coverage",
+                    "Maximum 11 months in TX, 5 months in IN.",
+                    "Lifetime Maximum: $250,000",
+                    "Deductible: $500 to $5000 per cause",
+                    "Coinsurance: 20% to $4000, then Plan pays 100%",
+                    "Doctor Coverage: Subject to deductible and coinsurance",
+                    "Monthly Rate (deductible $2500): $35 for 25 y/o, $40 for 35 y/o, $64 for 45 y/o",
+                    ]),
+
+                "Comprehensive Major Medical PLAN 80",
+                makeBulletedListWithTitle("", [
+                    "Low Cost, Simple to Understand for Self-employed, Early Retirees and New Graduates",
+                    "Lifetime Maximum: Unlimited",
+                    "Deductible: $1500 to $10,000 per year. Deductible credit up to 50% - deductible goes down every year your expenses are under the deductible",
+                    "Coinsurance: 20% to $3000, then Plan pays 100%",
+                    "Doctor Coverage: Subject to deductible and coinsurance",
+                    "Preventive Care: Covered 100% No Copayment, No deductible, No Coinsurance",
+                    "Prescription drugs covered subject to deductible and coinsurance",
+                    "Optional benefits for accidental death, accidental injury, term life insurance, vision",
+                    "Monthly Rate (deductible $2500): $99 for 25 y/o, $133 for 35 y/o, $194 for 45 y/o",
+                    ]),
+
+                "Comprehensive Major Medical COPAY PLAN",
+                makeBulletedListWithTitle("", [
+                        "Great Comprehensive Family Coverage, More Benefits for Your Family",
+                        "Lifetime Maximum: Unlimited",
+                        "Deductible: $1000 to $10,000 per year. Deductible credit up to 50% - deductible goes down every year your expenses are under the deductible",
+                        "Coinsurance: 30% to $5000, then Plan pays 100%",
+                        "Doctor Coverage: $35 copay then 100% covered",
+                        "Preventive Care: Covered 100% No Copayment, No deductible, No Coinsurance",
+                        "Prescription drugs copay included",
+                        "Optional benefits for accidental death, accidental injury, term life insurance, vision",
+                        "Monthly Rate (deductible $2500): $106 for 25 y/o, $144 for 35 y/o, $209 for 45 y/o",
+                        ]),
+
+                "",
+                makeURL("Quote/Purchase UnitedHealthOne Insurance® - You can get a quote without entering any personal information.", "https://www.uhone.com/quote/GetQuote.ashx?BrokerID=AA4324968&ArrangementID=01"),
+                ]));
+
+    writeText("");
+    writeText("More information about these medical plans:");
+    document.write(makeBulletedListWithTitle("", [
+                "Deductible credit means your deductible goes down by 20% each year your medical expenses are less than your deductible. A 50% reduction in your deductible is your maximum benefit.",
+                "Nationwide network gives you access to providers throughout the U.S.",
+                "In Indiana and Texas dental insurance and critical illness insurance can be purchased seperately from medical coverage.",
+                "All plans are available through the quote link. This includes other copay plans, high deductible health insurance, health saving accounts, self employed health insurance coverage.",
+                ]));
+
+    writeText("");
+    writeText("More information about UnitedHealthOne:");
+    document.write(makeBulletedListWithTitle("", [
+            "A UnitedHealthCare Company.",
+            "Health insurance policies are issued by Golden Rule Insurance Company who has over 65 years experience serving individuals.",
+            "26 million customers entrust UnitedHealthCare with their health insurance needs.",
+            "\"A\" rated by A.M.Best.",
+            "\"A+\" rated by Standards and Poor's.",
+            "Up to 50% discounts on medical care provided by provider network access.",
+            "Nearly 754,000 physicians and 5,400 hospitals in the largest national provider network.",
+            ]));
+    endRow();
+
+
 }
 
 function writeTabs() {
@@ -1081,9 +1176,9 @@ function writeSections() {
     endRow();
 
     startRow();
-    writeCellWithText("Most medical insurance coverage will not provide benefits in a different country. If you are a US citizen, your passport says, \"Health Insurance: Medical costs abroad can be extremely expensive. Does your insurance apply overseas, including medical evacuation, payment to the overseas hospital or doctor, or reimbursement to you later?.....Medicare/Medicaid does not cover healthcare costs outside the US.\"");
-    writeCellWithText("Medical Evacuation is an important benefit. Maybe you are visiting a part of the world with a lesser developed healthcare system. You planned ahead and had your travel vaccines before you left, but what if you get injured on your trip? You might need to be evacuated to an adequate hospital. A medical evacuation benefit will provide what you need.");
-    writeCellWithText("Trip cancellation, lost baggage, travel delay benefits. You spent a year planning for and saving for your trip. Now, you arrive at the airport for a connecting flight and the flight is cancelled. You don’t need a health insurance benefit, but you sure could use a travel insurance benefit. Help cover your costs for unforeseen travel problems with the right travel insurance coverage for you.");
+    writeCellWithText(makeBold("Most medical insurance coverage will not provide benefits in a different country.")+ " "+ loc("If you are a US citizen, your passport says, \"Health Insurance: Medical costs abroad can be extremely expensive. Does your insurance apply overseas, including medical evacuation, payment to the overseas hospital or doctor, or reimbursement to you later?.....Medicare/Medicaid does not cover healthcare costs outside the US.\""));
+    writeCellWithText(makeBold("Medical Evacuation is an important benefit.") + " " + loc("Maybe you are visiting a part of the world with a lesser developed healthcare system. You planned ahead and had your travel vaccines before you left, but what if you get injured on your trip? You might need to be evacuated to an adequate hospital. A medical evacuation benefit will provide what you need."));
+    writeCellWithText(makeBold("Trip cancellation, lost baggage, travel delay benefits.")+ " " + loc("You spent a year planning for and saving for your trip. Now, you arrive at the airport for a connecting flight and the flight is cancelled. You don’t need a health insurance benefit, but you sure could use a travel insurance benefit. Help cover your costs for unforeseen travel problems with the right travel insurance coverage for you."));
     endRow();
 
     startRow();
@@ -1260,6 +1355,65 @@ function writeSections() {
 
     endSection();
 
+
+    // Indiana Residents
+    startSection("pivot-indiana-residents", "Indiana Residents");
+    startRow();
+    document.write(makeTableWithStyle("invisibleTable", 2, [
+                makeImage("anthem.jpg"),
+                "Comprehensive medical coverage for individuals and families (in the U.S. for 1 yr or longer) from Anthem Blue Cross.",
+                ]));
+    writeText("Some example plans:");
+    endRow();
+
+    startRow();
+    startCell();
+    writeLinesWithTitle("Core Share", [
+            "Great for new college graduates",
+            "Deductible $750 and higher",
+            "The plan with the lowest premium rates",
+            ]);
+    endCell();
+
+    startCell();
+    writeLinesWithTitle("Premier Plus", [
+            "Deductible $500 and higher",
+            "20% coinsurance",
+            "The plan with the most benefit",
+            ]);
+    endCell();
+
+    startCell();
+    writeLinesWithTitle("Smart Sense", [
+            "Deductible $500 and higher",
+            "30% coinsurance so premium cost is less than Premier Plus",
+            ]);
+    endCell();
+
+    endRow();
+
+    startRow();
+    startCell();
+    writeLinesWithTitle("Lumenos HSA", [
+            "Deductible from $1,500 to 5,500 for single, $3,000 to 11,000 for family",
+            "Tax advantaged saving account",
+            ]);
+    endCell();
+
+    writeCellWithText(loc("Call or email us to learn more or browse online:") + " " + makeURL("Quote/Purchase Anthem Insurance", "https://pd.secure.anthem.com/AgentConnect/gen/link.htm?linkid=D7_i08ReAFF-O9lX3HcGT_120121774037399"));
+
+    endRow();
+
+    writeRowForUnitedHealthOne();
+
+    endSection();
+
+    // Texas Residents
+    startSection("pivot-texas-residents", "Texas Residents");
+
+    writeRowForUnitedHealthOne();
+
+    endSection();
 
     // Life Insurance
     startSection("pivot-life-insurance", "Life Insurance");
