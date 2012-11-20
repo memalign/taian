@@ -11,9 +11,9 @@ caption,th,td{text-align:center;font-weight:normal;vertical-align:middle;padding
 .invisibleTable td{border: 0; background-color:transparent;font-size:.833em}
 .invisibleTable th{border: 0; background-color:transparent;font-size:.833em}
 .invisibleTableHeader td{background-color:transparent}
-.uglyBuyStyle a{color:red}
-.uglyBuyStyle a:hover{color:red}
-.uglyBuyStyle a:focus{color:red}
+.uglyBuyStyle a{color:red; text-decoration:underline}
+.uglyBuyStyle a:hover{color:#580000; text-decoration:underline}
+.uglyBuyStyle a:focus{color:#580000; text-decoration:underline}
 q,blockquote{quotes:none}
 q:before,q:after,blockquote:before,blockquote:after{content:"";content:none}
 a img{border:none}
