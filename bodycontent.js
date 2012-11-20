@@ -135,7 +135,7 @@ function makeURL(title, url) {
 }
 
 function makeBuyStyle(text) {
-    return "<h2>" + text + "</h2>";
+    return "<h2 class=\"uglyBuyStyle\">" + text + "</h2>";
 }
 
 function makeBulletedListWithTitle(title, list) {
