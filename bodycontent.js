@@ -212,7 +212,7 @@ function writeRowForUnitedHealthOne() {
                         ]),
 
                 "",
-                makeURL("Quote/Purchase UnitedHealthOne Insurance® - You can get a quote without entering any personal information.", "https://www.uhone.com/quote/GetQuote.ashx?BrokerID=AA4324968&ArrangementID=01"),
+                makeBuyStyle(makeURL("Quote/Purchase UnitedHealthOne Insurance® - You can get a quote without entering any personal information.", "https://www.uhone.com/quote/GetQuote.ashx?BrokerID=AA4324968&ArrangementID=01")),
                 ]));
 
     writeText("");
