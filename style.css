@@ -3,9 +3,9 @@ body{line-height:1}
 ol,ul{list-style:none}
 table{border-collapse:collapse;border-spacing:0}
 caption,th,td{text-align:center;font-weight:normal;vertical-align:middle;padding:5px}
-.styledTable table,th,td{border: 1px solid #303030; background-color:#eee;font-size:.833em}
-.styledTable td{border: 1px solid #303030; background-color:#eee;font-size:.833em}
-.styledTable th{border: 1px solid #303030; background-color:#eee;font-size:.833em}
+.styledTable table,th,td{border: 1px solid #303030; background-color:#eee;font-size:1em}
+.styledTable td{border: 1px solid #303030; background-color:#eee;font-size:1em}
+.styledTable th{border: 1px solid #303030; background-color:#eee;font-size:1em}
 .styledTableHeader td{background-color:#D6D6D6}
 .invisibleTable table{border: 0; background-color:transparent;font-size:.833em}
 .invisibleTable td{border: 0; background-color:transparent;font-size:.833em}
