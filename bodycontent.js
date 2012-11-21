@@ -903,19 +903,7 @@ function writeSections() {
     startRow();
     writeText("Taian International Health Insurance provides International Student Insurance for US visa students (F1 visa, J1 visa, and M1 visa). Taian Student Insurance Plan A and Plan B meet most school student insurance standards and are more affordable.");
     endRow();
-
-    startRow();
-    writeCellWithText("We are qualified insurance agents with over 20 years experience working with insurance companies.");
-    writeCellWithText("We have native English and Chinese speakers to answer all of your questions.");
-    writeCellWithText(makePivotURL("pivot-school-waiver", "Check your school waiver requirements.") + " " + loc("Contact us to ensure a plan meets your requirements."));
-    endRow();
-
-    startRow();
-    writeCellWithText("This table illustrates two of our highlight plans. See other plans below.");
-    writeCellWithText("As long as F1/J1 is full time student, F2/J2 can buy Plan B alone or buy with F1/J1");
-    writeCellWithText("Other plans that cover more visa types:" + " " + makeURL("Global Medical", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699") + " and " + makeURL("Patriot Travel", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"));
-    endRow();
-
+   
     startRow();
     writeText("Our highlight plans:");
     endRow();
@@ -1051,6 +1039,22 @@ function writeSections() {
 
                 ]));
 
+    endRow();
+
+    startRow();
+    writeText("");
+    endRow();
+
+    startRow();
+    writeCellWithText("We are qualified insurance agents with over 20 years experience working with insurance companies.");
+    writeCellWithText("We have native English and Chinese speakers to answer all of your questions.");
+    writeCellWithText(makePivotURL("pivot-school-waiver", "Check your school waiver requirements.") + " " + loc("Contact us to ensure a plan meets your requirements."));
+    endRow();
+
+    startRow();
+    writeCellWithText("This table illustrates two of our highlight plans. See other plans below.");
+    writeCellWithText("As long as F1/J1 is full time student, F2/J2 can buy Plan B alone or buy with F1/J1");
+    writeCellWithText("Other plans that cover more visa types:" + " " + makeURL("Global Medical", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699") + " and " + makeURL("Patriot Travel", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"));
     endRow();
 
     writeDontSeeWhatYouNeedRow();
