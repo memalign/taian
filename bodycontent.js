@@ -260,7 +260,8 @@ function writeDontSeeWhatYouNeedRow() {
     document.write(makeBulletedListWithTitle("Don't see what you need?", [
                 makeURL("Explore other choices on your own.", "https://producer.imglobal.com/international-insurance-plans.aspx?imgac=80000699"),
                 makeURL("Email us: chris@taianfinancial.com", "mailto:chris@taianfinancial.com"),
-                "Call us at 317-318-8258",
+                "Call us at 317-318-8258 (Chinese)",
+                "Call us at 317-318-8259 (English)",
                 "We have plans to meet many diverse needs:",
                 "Adventure Travel",
                 "Multi trip travel medical insurance",
@@ -290,6 +291,7 @@ function writePatriotTravelTable() {
                     "Trip cancellation, travel delay and baggage delay benefits available",
                     "Universal Rx pharmacy discount savings",
                     "24 hour secure access from anywhere in the world to manage your account at any time",
+                    "Groups of 5 or more can purchase Patriot Travel Group offering at a lower price",
                     ]),
 
 
@@ -311,9 +313,11 @@ function writePatriotTravelTable() {
                 "",
                 "The international medical plans offer excellent benefits and services to meet your global needs. You have access to international, multilingual customer service centers, claims administrators who process claims from all over the world, handling virtually every language and currency, and 24 hour access to highly qualified coordinators of emergency medical services and international treatment. You can also choose from a wide range of deductibles, several Maximum Limits, and you have access to more than 17,000 providers through the International Provider AccessSM (IPA) when seeking treatment outside the U.S.  You can also reduce your out-of-pocket costs when seeking treatment in the U.S. by locating providers through the independent Preferred Provider Organization.",
 
-                "Full Brochure", makeURL("Full Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1932&a=80000699"),
+                "Patriot Travel Brochure", makeURL("Patriot Travel Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1801&a=80000699"),
+                "Group Patriot Travel Brochure", makeURL("Group Patriot Travel Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1802&a=80000699"),
+
                 "", makeBuyStyle(makeURL("Buy Patriot Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot?imgac=80000699")),
-                "", makeBuyStyle(makeURL("Buy Patriot Group Exchange Insurance", "https://purchase.imglobal.com/Quote/patriot_group_exchange/pre-quote?imgac=80000699")),
+                "", makeBuyStyle(makeURL("Buy Patriot Group Travel Insurance", "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699")),
 
                 ]));
 }
@@ -340,7 +344,7 @@ function writeSections() {
     startCell();
     startPivotURL("pivot-global-medical");
     writeImage("global-medical.jpg");
-    writeText("Global Medical - International professional and family: Good for green card holder, H1B visa, TN1 visa, O visa and their dependents.");
+    writeText("Global Medical - Global insurance designed for non-US citizens to use worldwide, and US citizens to use outside of the United States.");
     endPivotURL();
     endCell();
 
@@ -905,7 +909,7 @@ function writeSections() {
     endRow();
    
     startRow();
-    writeText("Our highlight plans:");
+    writeText("Our highlighted plans:");
     endRow();
 
     startRow();
@@ -940,12 +944,15 @@ function writeSections() {
             "Pre-existing conditions", "After 12 mos of continuous coverage", "After 12 mos of continuous coverage",
 
             // Table within a table
-            "Cost Per Month",
+            "Cost Per Month (Non-US Citizens)",
             makeTable(4, [
                     "Age",     "F1/J1", "Spouse", "Children",
                     "&lt; 19", "$72",   "$386",   "$82",
                     "19-23",   "$95",   "$386",   "$82",
-                    "24-34",   "$110",  "$426",   "$82",
+                    "24-30",   "$110",  "$426",   "$82",
+                    "31-40",   "$197",  "$567",   "$82",
+                    "41-50",   "$322",  "$586",   "$82",
+                    "51-64",   "$430",  "$567",   "$82",
                     ]), 
 
             makeTable(4, [
@@ -956,8 +963,8 @@ function writeSections() {
                     ]), 
 
             "", 
-            makeBuyStyle(makeURL("Buy Plan A (Student Health Advantage)", "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")),
-            makeBuyStyle(makeURL("Buy Plan B (Standard) (Patriot Exchange Program)", "https://purchase.imglobal.com/quote/patriot_exchange?IMGAC=80000699")),
+            makeBuyStyle(makeURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")),
+            makeBuyStyle(makeURL(loc("Buy Plan B") + "<br />" + loc("Patriot Exchange Program - Standard"), "https://purchase.imglobal.com/quote/patriot_exchange?IMGAC=80000699")),
 
             ])
             );
@@ -968,45 +975,7 @@ function writeSections() {
     endRow();
 
     startRow();
-    writeText("Other available plans:");
-    document.write(makeTable(2, [
-                "Plan", makeURL("Global Medical Insurance", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
-
-                "Plan Highlights", 
-                makeBulletedListWithTitle("", [
-                 "Flexible, comprehensive medical coverage",
-                 "Coverage for individuals and families",
-                 "Four unique plan designs - Silver, Gold, Gold Plus and Platinum",
-                 "Optional riders: Global Term Life Insurance, Global Daily Indemnity, Maternity, Terrorism, Sports",
-                 "Choose your area of coverage (worldwide or worldwide excluding the U.S., Canada, China, Hong Kong, Macau, Taiwan, Singapore and Japan)",
-                 "Select from multiple deductible options",
-                 "Family premium covers first two children between 14 days and 9 years at no additional cost for the first year",
-                 "Choose from several payment modes",
-                 "Multiple underwriting options to fit your needs",
-                 "Freedom to choose your provider",
-                 "Access to two extensive provider networks",
-                 "Emergency Medical Evacuation and other evacuation benefits",
-                 "Medical Concierge Program",
-                 "Medical professionals to coordinate your care",
-                 "24 hour access to information",
-                 ]),
-
-                "Who the plan is designed for",
-                makeBulletedListWithTitle("", [
-                        "Coverage for individuals or families living or working abroad",
-                        "Contract employees living and working abroad",
-                        "Seniors with dual residencies six months or longer outside the U.S.",
-                        ]),
-
-                "", makeBuyStyle(makeURL("Buy Global Medical Insurance", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699")),
-
-
-                ])
-                );
-
-    writeText("");
-    writePatriotTravelTable();
-
+    writeText("More plan details:");
     writeText("");
     document.write(makeTable(2, [
                 "Plan", "Student Health Advantage more benefits",
@@ -1024,15 +993,6 @@ function writeSections() {
                         ]),
 
 
-                "Individual Rates (Non-U.S. Citizens)",
-                makeTable(4, [
-                    "Age",   "Student", "Spouse", "Dependent Child",
-                    "&lt; 19", "$72",    "$386",     "$82",
-                    "19-23",   "$95",    "$386",     "$82",
-                    "24-30",  "$110",    "$426",     "$82",
-                    "31-40",  "$197",    "$567",     "$82",
-                    ]),
-
                 "Full Brochure", makeURL("Full Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1938&a=80000699"),
                 "", makeBuyStyle(makeURL("Buy Student Health Advantage", "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")),
 
@@ -1043,18 +1003,49 @@ function writeSections() {
 
     startRow();
     writeText("");
+    document.write(makeTable(2, [
+                "Plan", "More on Patriot Exchange",
+
+                "Plan Highlights",
+                makeBulletedListWithTitle("", [
+                        "F2/J2 can buy Patriot Exchange alone (if F1/J1 buys schools plan) or buy with F1/J1",                        
+                        "Patriot Exchange Group plan available for groups of 2 or more",
+                        "Patriot Exchange Basic Plan available at a lower cost (may not meet your visa requirements - ask us!)",
+                        "Other available options include: travel protection for baggage and valuables, legal assistance, personal liability coverage, adventure sports coverage",                       
+                        ]),
+
+                "Full Brochures", 
+                makeBulletedListWithTitle("", [
+                        makeURL("Patriot Exchange Brochure", 
+                        "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1932&a=80000699"),
+
+                        makeURL("Patriot Exchange Group Brochure", 
+                        "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1905&a=80000699"),
+                        ]),
+
+                "Apply Now", 
+                makeBulletedListWithTitle("", [
+                        makeBuyStyle(makeURL("Buy Plan B (Patriot Exchange Program)", "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699")),
+                        makeBuyStyle(makeURL("Buy Plan B Group (Patriot Exchange Group)", "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699")),
+                        ]),
+               ]));
+
     endRow();
 
     startRow();
-    writeCellWithText("We are qualified insurance agents with over 20 years experience working with insurance companies.");
-    writeCellWithText("We have native English and Chinese speakers to answer all of your questions.");
-    writeCellWithText(makePivotURL("pivot-school-waiver", "Check your school waiver requirements.") + " " + loc("Contact us to ensure a plan meets your requirements."));
+    writeText("");
     endRow();
 
     startRow();
-    writeCellWithText("This table illustrates two of our highlight plans. See other plans below.");
-    writeCellWithText("As long as F1/J1 is full time student, F2/J2 can buy Plan B alone or buy with F1/J1");
-    writeCellWithText("Other plans that cover more visa types:" + " " + makeURL("Global Medical", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699") + " and " + makeURL("Patriot Travel", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"));
+    writeText("We have native English and Chinese speakers to answer all of your questions.");
+    endRow();
+
+    startRow();
+    writeText(makePivotURL("pivot-school-waiver", "Check your school waiver requirements.") + " " + loc("Contact us to ensure a plan meets your requirements."));
+    endRow();
+
+    startRow();
+    writeText("Other plans that cover more visa types:" + " " + makeURL("Global Medical", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699") + " and " + makeURL("Patriot Travel", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"));
     endRow();
 
     writeDontSeeWhatYouNeedRow();
@@ -1066,87 +1057,42 @@ function writeSections() {
     startSection("pivot-global-medical", "Global Medical");
 
     startRow();
-    writeText("Taian International Health Insurance provides medical coverage for International professionals with a green card, H1B visa, TN1 visa, O visa and their dependents.");
-    endRow();
-
-    startRow();
-    document.write(makeTable(2, [
-                "Plan", makeURL("Global Medical Insurance", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
-
-                "Plan Highlights", 
-                makeBulletedListWithTitle("", [
-                 "Annually renewable comprehensive worldwide medical coverage for non-US nationals worldwide or US citizen working abroad",
-                 "Deductible options from $100 to $10,000.",
-                 "Maximum policy benefits from $5,000,000 to $8,000,000",
-                 "Hospitalization / room & board covers average semi-private room rate.",
-                 "Up to $50,000 medical evacuation",
-                 "Up to $5,000-50,000 repatriation of remains to home country.",
-                 "Flexible, comprehensive medical coverage",
-                 "Coverage for individuals and families",
-                 "Four unique plan designs - Silver, Gold, Gold Plus and Platinum",
-                 "Optional riders: Global Term Life Insurance, Global Daily Indemnity, Maternity, Terrorism, Sports",
-                 "Choose your area of coverage (worldwide or worldwide excluding the U.S., Canada, China, Hong Kong, Macau, Taiwan, Singapore and Japan)",
-                 "Select from multiple deductible options",
-                 "Family premium covers first two children between 14 days and 9 years at no additional cost for the first year",
-                 "Choose from several payment modes",
-                 "Multiple underwriting options to fit your needs",
-                 "Freedom to choose your provider",
-                 "Access to two extensive provider networks",
-                 "Emergency Medical Evacuation and other evacuation benefits",
-                 "Medical Concierge Program",
-                 "Medical professionals to coordinate your care",
-                 "24 hour access to information",
-                 ]),
-
-                "Who the plan is designed for",
-                makeBulletedListWithTitle("", [
-                        "Coverage for individuals or families living or working abroad",
-                        "Contract employees living and working abroad",
-                        "Seniors with dual residencies six months or longer outside the U.S.",
-                        ]),
-
-                "", makeBuyStyle(makeURL("Buy Global Medical Insurance", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699")),
-
-
-                ])
-                );
+    writeText(loc("Global insurance designed for non-US citizens to use worldwide, and US citizens to use outside of the United States.") + "    " + loc("A good choice for a baby born in the US and living outside the US."));
     endRow();
 
     startRow();
     writeText("");
-    writeText("Our highlight example plans:");
+    writeText("Our highlighted example plans:");
     endRow();
 
     startRow();
-    document.write(makeTable(3,
+    document.write(makeTable(4,
             [
             // Column headers:
             "TaiAn Global Medical",
             makeURL("Global Medical (Silver Plan) $250 deductible", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
+            makeURL("Global Medical (Gold Plan) $500 deductible", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
             makeURL("Global Medical (Platinum Plan) $1000 deductible", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
 
 
-
-
-
-            "Family Deductible", "3 times the individual", "2 times the individual", 
-            "Lifetime Max limit", "$5,000,000 per individual", "$8,000,000 per individual", 
-            "Treatment inside the U.S.", "In-PPO: deductible 50% waived (up to $2500). No coinsurance.<br />Non-PPO: 20% of next $5000 expenses after deductible", "In-PPO: deductible 50% waived (up to $2500). No coinsurance<br />Non-PPO: 10% of next $5000 expenses after deductible",
-            "Treatment outside the U.S.", "Subject to deductible. No coinsurance", "Subject to deductible. No coinsurance",
-            "Intensive care unit", "$1,500/day, 180 day /event", "URC",
-            "Hospitalization/room & board", "In U.S. average semi-private room rate. Outside of U.S. URC of private room rate (not exceed 150% semi-private). All subject to $600/day, 240 day max", "Private room rate",
-            "Emergency Room", "URC", "URC",
-            "Local Ambulance", "$1500/event - not subject to deductible or coinsurance", "URC",
-            "Child Wellness (under 18 y/o)", "3 visit/period, $70 max/period. Available after 12 months of coverage", "$400/period, not subject to deductible or coinsurance. Available after 6 months of coverage",
-            "Adult Wellness", "NA", "$500/period, not subject to deductible or coinsurance. Available after 6 months of coverage", 
-            "Emergency Dental", "$1,000/period", "URC", 
-            "Non-emergency Dental", "NA", "$750/year", 
-            "Vision", "NA", "Exams-up to $100. Materials-up to $150 per 24 months", 
-            "Surgery", "URC", "URC", 
-            "Emergency Evacuation", "$50,000 per period, not subject to deductible or coinsurance", "Up to the maximum limit, not subject to deductible or coinsurance", 
-            "Repatriation of remains", "$25,000 per insured, not subject to deductible or coinsurance", "$50,000 per insured, not subject to deductible or coinsurance", 
-            "Mental/Nervous", "Out-patient only, after 12 month of coverage", "$50,000 max, after 12 month of coverage", 
-            "Maternity", "Optional Rider($2500) - $50,000 lifetime max. Max of $5000 for normal delivery, $7500 for C-section. $200 child wellness for first 12 month. new born care & congenital disorders max of $250,000 for the first 31 days (benefits reduced by 50% for births that occur in the 11th or 12th month of coverage)", "Maternity is covered same as any illness for any birth that occurs after 10 months of coverage- $1000 additional deductible, $50,000 lifetime max. $200 child wellness for the first 12 months. new born care & congenital disorders max of $250,000 for the first 31 days",
+            "Family Deductible", "3 times the individual", "3 times the individual", "2 times the individual", 
+            "Lifetime Max limit", "$5,000,000 per individual",  "$5,000,000 per individual", "$8,000,000 per individual", 
+            "Treatment inside the U.S.", "In-PPO: deductible 50% waived (up to $2500). No coinsurance.<br />Non-PPO: 20% of next $5000 expenses after deductible", "In-PPO: deductible 50% waived (up to $2500). No coinsurance.<br />Non-PPO: 20% of next $5000 expenses after deductible", "In-PPO: deductible 50% waived (up to $2500). No coinsurance<br />Non-PPO: 10% of next $5000 expenses after deductible",
+            "Treatment outside the U.S.", "Subject to deductible. No coinsurance", "Subject to deductible. No coinsurance", "Subject to deductible. No coinsurance",
+            "Intensive care unit", "$1,500/day, 180 day /event", "URC", "URC",
+            "Hospitalization/room & board", "In U.S. average semi-private room rate. Outside of U.S. URC of private room rate (not exceed 150% semi-private). All subject to $600/day, 240 day max", "In U.S. average semi-private room rate. Outside of U.S. URC of private room rate (not exceed 150% semi-private).", "Private room rate",
+            "Emergency Room", "URC", "URC", "URC",
+            "Local Ambulance", "$1500/event - not subject to deductible or coinsurance", "URC", "URC",
+            "Child Wellness (under 18 y/o)", "3 visit/period, $70 max/period. Available after 12 months of coverage", "$200/period, not subject to deductible or coinsurance. Available after 12 months of coverage", "$400/period, not subject to deductible or coinsurance. Available after 6 months of coverage",
+            "Adult Wellness", "NA", "$250/period, not subject to deductible or coinsurance.  Available for those at least 30 years old after 12 months of coverage", "$500/period, not subject to deductible or coinsurance. Available for those at least 18 years old after 6 months of coverage", 
+            "Emergency Dental (accident)", "$1,000/period", "URC", "URC", 
+            "Non-emergency Dental", "NA", "NA", "$750/year", 
+            "Vision", "NA", "NA", "Exams-up to $100. Materials-up to $150 per 24 months", 
+            "Surgery", "URC", "URC", "URC", 
+            "Emergency Evacuation", "$50,000 per period, not subject to deductible or coinsurance", "Up to the maximum limit, not subject to deductible or coinsurance", "Up to the maximum limit, not subject to deductible or coinsurance", 
+            "Repatriation of remains", "$25,000 per insured, not subject to deductible or coinsurance", "$25,000 per insured, not subject to deductible or coinsurance", "$50,000 per insured, not subject to deductible or coinsurance", 
+            "Mental/Nervous", "Out-patient only, after 12 month of coverage", "$10,000 per year - $50,000 max, after 12 month of coverage", "$50,000 max, after 12 month of coverage", 
+            "Maternity", "Optional Rider (cost $2500 per year) - $50,000 lifetime max. Max of $5000 for normal delivery, $7500 for C-section. $200 child wellness for first 12 month. new born care & congenital disorders max of $250,000 for the first 31 days (benefits reduced by 50% for births that occur in the 11th or 12th month of coverage)", "Optional Rider (cost $2500 per year) - $50,000 lifetime max. Max of $5000 for normal delivery, $7500 for C-section. $200 child wellness for first 12 month. new born care & congenital disorders max of $250,000 for the first 31 days (benefits reduced by 50% for births that occur in the 11th or 12th month of coverage)", "Maternity is covered same as any illness for any birth that occurs after 10 months of coverage- $1000 additional deductible, $50,000 lifetime max. $200 child wellness for the first 12 months. new born care & congenital disorders max of $250,000 for the first 31 days",
 
             "Monthly Rate",
             makeTable(3, [
@@ -1158,8 +1104,23 @@ function writeSections() {
                     "40", "$100",   "$122",
                     "45", "$112",   "$135",
                     "50", "$136",   "$150",
+                    "55", "$150",   "$165",
+                    "60", "$242",   "$228",
                     ]),
             makeTable(3, [
+                    "Age", "Male", "Female",
+                    "18", "$71",    "$71",
+                    "25", "$73",    "$112",
+                    "30", "$77",    "$119",
+                    "35", "$79",    "$124",
+                    "40", "$110",   "$143",
+                    "45", "$127",   "$155",
+                    "50", "$149",   "$163",
+                    "55", "$192",   "$186",
+                    "60", "$283",   "$266",
+                    ]),
+
+             makeTable(3, [
                     "Age", "Male", "Female",
                     "18", "$220",    "$220",
                     "25", "$228",    "$399",
@@ -1168,17 +1129,75 @@ function writeSections() {
                     "40", "$313",   "$533",
                     "45", "$349",   "$415",
                     "50", "$416",   "$450",
+                    "55", "$523",   "$509",
+                    "60", "$766",   "$713",
                     ]),
 
 
 
-
-            "Brochure", makeURL("Complete Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1804&a=80000699"), makeURL("Complete Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1804&a=80000699"),
+            "Brochure", makeURL("Complete Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1804&a=80000699"), makeURL("Complete Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1804&a=80000699"), makeURL("Complete Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1804&a=80000699"),
 
             "", 
             makeBuyStyle(makeURL("Buy Global Medical (Silver Plan) $250 deductible", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699")),
+            makeBuyStyle(makeURL("Buy Global Medical (Gold Plan) $500 deductible", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699")),
             makeBuyStyle(makeURL("Buy Global Medical (Platinum Plan) $1000 deductible", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699")),
             ]));
+    endRow();
+
+    startRow();
+    writeText("");
+    writeText("More details on Global medical:");
+    endRow();
+
+    startRow();
+    document.write(makeTable(2, [
+                "Plan", makeURL("Global Medical Insurance", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
+
+                "Plan Highlights", 
+                makeBulletedListWithTitle("", [
+                        "Annually renewable comprehensive worldwide medical coverage for non-US nationals worldwide or US citizen working abroad",
+                        "Available up to age 74",
+                        "Deductible options from $100 to $10,000.",
+                        "Maximum policy benefits from $5,000,000 to $8,000,000",
+                        "Hospitalization / room & board covers average semi-private room rate.",
+                        "Up to $50,000 medical evacuation",
+                        "Up to $5,000-50,000 repatriation of remains to home country.",
+                        "Flexible, comprehensive medical coverage",
+                        "Coverage for individuals and families",
+                        "Four unique plan designs - Silver, Gold, Gold Plus and Platinum",
+                        "Optional riders: Global Term Life Insurance, Global Daily Indemnity, Maternity, Terrorism, Sports",
+                        "Choose your area of coverage (worldwide or worldwide excluding the U.S., Canada, China, Hong Kong, Macau, Taiwan, Singapore and Japan)",
+                        "Select from multiple deductible options",
+                        "Family premium covers first two children between 14 days and 9 years at no additional cost for the first year",
+                        "Choose from several payment modes",
+                        "Rates illustrated above are for annual premium, rates are higher for monthly payment",
+                        "Multiple underwriting options to fit your needs",
+                        "Freedom to seek treatment with hospital or doctor of your choice",
+                        "Access to two extensive provider networks",
+                        "Emergency Medical Evacuation and other evacuation benefits",
+                        "Medical Concierge Program",
+                        "Medical professionals to coordinate your care",
+                        "24 hour access to information",
+                        ]),
+
+                "Who the plan is designed for",
+                makeBulletedListWithTitle("", [
+                        "Coverage for individuals or families living or working abroad",
+                        "Contract employees living and working abroad",
+                        "Seniors with dual residencies six months or longer outside the U.S.",
+                        "Non-US citizens coming to the US to have a baby.  For maternity coverage you must purchase before becoming pregnant.",
+                        ]),
+
+                "Which Plan is best for you?",
+                makeBulletedListWithTitle("", [
+                        "Silver plan is most economical",
+                        "Gold Plan is the best value",
+                        "Platinum is best for those wanting the best coverage or considering having a baby",
+                        ]),
+
+                "", makeBuyStyle(makeURL("Buy Global Medical Insurance", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699")),
+                ])
+                );
     endRow();
 
     writeDontSeeWhatYouNeedRow();
@@ -1189,17 +1208,7 @@ function writeSections() {
     startSection("pivot-travel-insurance", "Travel Insurance");
 
     startRow();
-    writeText("Taian International Health Insurance provides simple and flexible travel insurance for B1,B2 visa travelers to the United States. The coverage is also good for anybody (U.S. and non-U.S. citizen) travelling out of their home country, regardless of visa requirements. Monthly premium can be as low as $32.00 with $250 deductible for U.S. citizen and $39.00 for non-U.S. citizen.");
-    endRow();
-
-    startRow();
-    writeText("Why do I need travel medical insurance?");
-    endRow();
-
-    startRow();
-    writeCellWithText(makeBold("Most medical insurance coverage will not provide benefits in a different country.")+ " "+ loc("If you are a US citizen, your passport says, \"Health Insurance: Medical costs abroad can be extremely expensive. Does your insurance apply overseas, including medical evacuation, payment to the overseas hospital or doctor, or reimbursement to you later?.....Medicare/Medicaid does not cover healthcare costs outside the US.\""));
-    writeCellWithText(makeBold("Medical Evacuation is an important benefit.") + " " + loc("Maybe you are visiting a part of the world with a lesser developed healthcare system. You planned ahead and had your travel vaccines before you left, but what if you get injured on your trip? You might need to be evacuated to an adequate hospital. A medical evacuation benefit will provide what you need."));
-    writeCellWithText(makeBold("Trip cancellation, lost baggage, travel delay benefits.")+ " " + loc("You spent a year planning for and saving for your trip. Now, you arrive at the airport for a connecting flight and the flight is cancelled. You don’t need a health insurance benefit, but you sure could use a travel insurance benefit. Help cover your costs for unforeseen travel problems with the right travel insurance coverage for you."));
+    writeText("Taian International Health Insurance provides simple and flexible travel insurance for B1,B2 visa travelers to the United States. The coverage is also good for anybody (U.S. and non-U.S. citizen) travelling out of their home country, regardless of visa requirements. Monthly premium can be as low as $23.00 with $250 deductible for U.S. citizen and $39.00 for non-U.S. citizen.");
     endRow();
 
     startRow();
@@ -1223,48 +1232,56 @@ function writeSections() {
                 "Emergency Medical Evacuation", "$500,000", "$500,000", 
                 "Repatriation of remains", "$50,000", "$50,000", 
 
-                "Monthly rate for $50,000 maximum and $250 deductible",
+                "Monthly rate for $50,000 maximum and $250 deductible ($10,000 max for 80+ age) - minimum purchase 5 days",
                 makeTable(2, [
                     "Age", "Rate",
-                    "18-29", "$39",
+                    "dependent child", "$35",
+                    "&lt; 30", "$39",
                     "30-39", "$52",
                     "40-49", "$78",
                     "50-59", "$113",
                     "60-64", "$142",
                     "65-69", "$162",
                     "70-79", "$219",
+                    "80+",   "$381",
                     ]),
                 makeTable(2, [
                     "Age", "Rate",
-                    "18-29", "$32",
-                    "30-39", "$37",
-                    "40-49", "$59",
-                    "50-59", "$96",
-                    "60-64", "$109",
-                    "65-69", "$129",
-                    "70-79", "$189",
+                    "dependent child", "$21",
+                    "&lt; 30", "$23",
+                    "30-39", "$28",
+                    "40-49", "$50",
+                    "50-59", "$81",
+                    "60-64", "$98",
+                    "65-69", "$116",
+                    "70-79", "$170",
+                    "80+",   "$340",
                     ]),
 
-                "Monthly rate for $50,000 maximum and $1000 deductible",
+                "Monthly rate for $50,000 maximum and $1000 deductible ($10,000 max for 80+ age) - minimum purchase 5 days",
                 makeTable(2, [
                     "Age", "Rate",
-                    "18-29", "$31.20",
+                    "dependent child", "$28.00",
+                    "&lt; 30", "$31.20",
                     "30-39", "$41.60",
                     "40-49", "$62.40",
                     "50-59", "$90.40",
                     "60-64", "$113.60",
                     "65-69", "$129.60",
                     "70-79", "$175.20",
+                    "80+",   "$304.80",
                     ]),
                 makeTable(2, [
                     "Age", "Rate",
-                    "18-29", "$18.40",
+                    "dependent child", "$16.80",
+                    "&lt; 30", "$18.40",
                     "30-39", "$22.40",
-                    "40-49", "$40",
+                    "40-49", "$40.00",
                     "50-59", "$64.80",
                     "60-64", "$78.40",
                     "65-69", "$92.80",
-                    "70-79", "$136",
+                    "70-79", "$136.00",
+                    "80+",   "$272.00",
                     ]),
 
                 "",
@@ -1276,7 +1293,14 @@ function writeSections() {
 
     startRow();
     writeText("");
+    endRow();
     
+    startRow();
+    writeText("More about Patriot Travel");
+    endRow();
+    
+    startRow();
+    writeText("");
     writePatriotTravelTable();
     endRow();
 
@@ -1292,6 +1316,8 @@ function writeSections() {
                     "Maximum Limits from $1,000,000 to $8,000,000",
                     "Deductible options from $0 to $25,000",
                     "Renewable up to 36 months if three months or more are purchased",
+                    "Ages 70-79 have $100,000 coverage (with $1,000 deductible the cost is $355.20 per month)",
+                    "Ages 80 and over have $20,000 coverage (with $1,000 deductible the cost is $515.20 per month)",
                     ]),
 
                 "Shared features",
@@ -1305,7 +1331,7 @@ function writeSections() {
                     "24 hour secure access from anywhere in the world to manage your account at any time",
                     ]),
 
-                "Brochure", makeURL("Full Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=2143&a=80000699"),
+                "Patriot Platinum Brochure", makeURL("Patriot Platinum Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1964&a=80000699"),
 
                 "", makeBuyStyle(makeURL("Buy Patriot Platinum Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot_platinum?imgac=80000699")),
                 ]));
@@ -1331,15 +1357,8 @@ function writeSections() {
 
                 "Sample Cost", "A 35 year old spends $5000 on a trip, insurance costs $200. A 25 year old spends $1500 on a trip, insurance costs $60.",
 
-                "Brochure", makeURL("Full Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1871&a=80000699"),
+                "Brochure", makeURL("Patriot Trip Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1871&a=80000699"),
                 "", makeBuyStyle(makeURL("Buy Patriot T.R.I.P.® Travel", "https://www.imglobal.com/applications/pti/index.cfm?IMGAC=80000699&show=PTI")),
-
-                "More options",
-                makeBulletedListWithTitle("", [
-                    makeURL("Patriot T.R.I.P.® Elite - offers more coverage than Patriot T.R.I.P. Travel Insurance.", "https://www.imglobal.com/applications/pte/index.cfm?IMGAC=80000699&show=PTEAI,PTEII"),
-                    makeURL("Patriot T.R.I.P.® Student -  designed just for students and is more affordable than Patriot T.R.I.P. Travel Insurance.", "https://www.imglobal.com/applications/pts/index.cfm?IMGAC=80000699&show=PTS"),
-                    ]),
-
                 ]));
 
     writeText("");
@@ -1363,6 +1382,19 @@ function writeSections() {
                 ]));
     endRow();
 
+    startRow();
+    writeText("");
+    endRow();
+
+    startRow();
+    writeText("Why do I need travel medical insurance?");
+    endRow();
+
+    startRow();
+    writeCellWithText(makeBold("Most medical insurance coverage will not provide benefits in a different country.")+ " "+ loc("If you are a US citizen, your passport says, \"Health Insurance: Medical costs abroad can be extremely expensive. Does your insurance apply overseas, including medical evacuation, payment to the overseas hospital or doctor, or reimbursement to you later?.....Medicare/Medicaid does not cover healthcare costs outside the US.\""));
+    writeCellWithText(makeBold("Medical Evacuation is an important benefit.") + " " + loc("Maybe you are visiting a part of the world with a lesser developed healthcare system. You planned ahead and had your travel vaccines before you left, but what if you get injured on your trip? You might need to be evacuated to an adequate hospital. A medical evacuation benefit will provide what you need."));
+    writeCellWithText(makeBold("Trip cancellation, lost baggage, travel delay benefits.")+ " " + loc("You spent a year planning for and saving for your trip. Now, you arrive at the airport for a connecting flight and the flight is cancelled. You don’t need a health insurance benefit, but you sure could use a travel insurance benefit. Help cover your costs for unforeseen travel problems with the right travel insurance coverage for you."));
+    endRow();
 
     startRow();
     writeText("");
