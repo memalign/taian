@@ -1,16 +1,16 @@
 
 function switchLang(newLang) {
-    var oldHash = document.location.hash
-    var tokens = oldHash.split("-", 1);
-    if (tokens[0].indexOf(newLang) == 1)
+    var currLang = getPageAttribute("l");
+    if (currLang == newLang)
         return;
 
-    document.location.hash = '#' + newLang + '-' + oldHash.substring(tokens[0].length+1);
+    updateHash("l", newLang);
     document.location.reload(true)
 }
 
 function langIsChinese() {
-    return (document.location.hash.indexOf("cn") == 1);
+    var lang = getPageAttribute("l");
+    return (lang == "cn");
 }
 
 function langTag() {
