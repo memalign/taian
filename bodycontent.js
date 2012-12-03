@@ -1,10 +1,60 @@
+function getPageAttributes() {
+    var delimiter = "&";
+    
+    var currHash = document.location.hash.substr(1);
+    var assignments = currHash.split(delimiter);
+
+    var map = {};
+    for (var i = 0; i < assignments.length; i++) {
+        var pair = assignments[i].split("=");
+        if (pair.length >= 2 && pair[0].length > 0 && pair[1].length > 0) {
+            map[pair[0]] = pair[1];
+        }
+    }
+
+    // Defaults
+    // Language
+    if (!map["l"] || map["l"].length <= 0) {
+        map["l"] = "en";
+    }
+
+    // Page
+    if (!map["p"] || map["p"].length <= 0) {
+        map["p"] = "pivot-home";
+    }
+
+    return map;
+}
+
+function getPageAttribute(attr) {
+    var map = getPageAttributes();
+    return map[attr];
+}
+
+function updateHash(keyToUpdate, newValue) {
+    var map = getPageAttributes();
+
+    if (keyToUpdate && keyToUpdate.length > 0)
+        map[keyToUpdate] = newValue;
+
+    var newHash = "#";
+    var delim = "";
+    for (var key in map) {
+        if (key.length > 0 && map[key] && map[key].length > 0) {
+            newHash = newHash + delim + key + "=" + map[key];
+            delim = "&";
+        }
+    }
+
+    document.location.hash = newHash;
+}
 
 function showPivot(pivotName) {
     var defaultTab = "pivot-home";
     if (pivotName.length == 0)
         pivotName = defaultTab;
 
-    document.location.hash = '#' + langTag() + '-' + pivotName; 
+    updateHash("p", pivotName);
     var toHide = document.getElementsByClassName("pivot ");
     for (var i = 0; i < toHide.length; i++) {
         toHide[i].style.display = "none";

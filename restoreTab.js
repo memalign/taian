@@ -4,8 +4,7 @@ $(function(){
     // Bind an event to window.onhashchange that, when the hash changes, gets the
     // hash and adds the class "selected" to any matching nav link.
     $(window).hashchange( function(){
-        var hash = location.hash;
-        var pageDiv = document.location.hash.substr(4);
+        var pageDiv = getPageAttribute("p");
         showPivot(pageDiv);
     })
 
