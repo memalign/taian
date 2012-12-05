@@ -3,14 +3,15 @@ body{line-height:1}
 ol,ul{list-style:none}
 table{border-collapse:collapse;border-spacing:0}
 caption,th,td{text-align:center;font-weight:normal;vertical-align:middle;padding:5px}
-.styledTable table,th,td{border: 1px solid #303030; background-color:#eee;font-size:1em}
-.styledTable td{border: 1px solid #303030; background-color:#eee;font-size:1em}
+.styledTable table,th,td {border: 1px solid #303030; background-color:#eee;font-size:1em}
 .styledTable th{border: 1px solid #303030; background-color:#eee;font-size:1em}
-.styledTableHeader td{background-color:#D6D6D6}
+.styledTableHeader {background-color:#D6D6D6}
+.styledTableLeft {background-color:#D6D6D6}
 .invisibleTable table{border: 0; background-color:transparent;font-size:.833em}
 .invisibleTable td{border: 0; background-color:transparent;font-size:.833em}
 .invisibleTable th{border: 0; background-color:transparent;font-size:.833em}
 .invisibleTableHeader td{background-color:transparent}
+.invisibleTableLeft td{background-color:transparent}
 .uglyBuyStyle a{color:red; text-decoration:underline; font-size:.7em}
 .uglyBuyStyle a:hover{color:#580000; text-decoration:underline}
 .uglyBuyStyle a:focus{color:#580000; text-decoration:underline}
@@ -432,7 +433,7 @@ input[type="submit"]{cursor:pointer;font-size:.9em}
 .pivot>.heading{display:-moz-inline-stack;display:inline-block;zoom:1;*display:inline;margin-right:.4em;margin-bottom:.25em}
 
 .pivot-switch,.pivot-switch:link{display:-moz-inline-stack;display:inline-block;zoom:1;*display:inline;position:relative;bottom:.25em;padding:0em .7em;border:1px solid transparent;margin:0 0 .7em .7em;text-decoration:none;font-size:.8em;color:#1570a6}
-.pivot-switch:hover{color:#083047;text-decoration:none}
+.pivot-switch:hover{color:#083047;text-decoration:underline}
 .no-js .pivot-switch,.lt-ie7 .pivot-switch{display:none}
 @media screen and (min-width:540px){.pivot>.heading{font-size:2em;margin-bottom:.7em}
 .pivot-switch{margin:0 0 .7em .25em;padding:.2em .7em}

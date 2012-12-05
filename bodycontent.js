@@ -47,6 +47,7 @@ function updateHash(keyToUpdate, newValue) {
     }
 
     document.location.hash = newHash;
+    window.scrollTo(0, 0);
 }
 
 function showPivot(pivotName) {
@@ -158,15 +159,26 @@ function makeTableWithStyle(styleClass, numColumns, cells) {
     tableCode += '<div bi:type="highlight">';
     tableCode += '<table class="'+styleClass+'">';
     for (var i = 0; i < cells.length; ++i) {
-        if ((i % numColumns) == 0) {
+        var isHeader = (i / numColumns) < 1;
+        var isLeftCol = (i % numColumns) == 0;
+
+        if (isLeftCol) {
             if (i != 0) {
                 tableCode += '</tr>';
-                tableCode += '<tr class="'+styleClass+'">';
+                tableCode += '<tr>';
             } else {
-                tableCode += '<tr class="'+styleClass+'Header">';
+                tableCode += '<tr>';
             }
         }
-        tableCode += '<td class="'+styleClass+'">';
+
+        var style = styleClass;
+        if (isHeader) {
+            style += 'Header';
+        } else if (isLeftCol) {
+            style += 'Left';
+        }
+
+        tableCode += '<td class="' + style + '">';
         tableCode += loc(cells[i]);
         tableCode += '</td>';
     }
@@ -376,18 +388,11 @@ function writeSections() {
     startSection("pivot-home", "");
 
     startRow();
-    writeCellWithText("We are qualified insurance agents with over 20 years experience working with insurance companies.");
-    writeCellWithText("We have native English and Chinese speakers to answer all of your questions.");
-    writeCellWithText("Ask us about student coverage that meets your university insurance standards.");
-    endRow();
-
-    // Row 2
-    startRow();
 
     startCell();
     startPivotURL("pivot-international-student");
     writeImage("international-student.jpg");
-    writeText("International Student & Scholar (F1&J1 visa). Coverage meets most university standards. $59.85/month with $5,000,000 Maximum");
+    writeText("International Student & Scholar (F1&J1 visa). Coverage meets most university standards. $48.62/month with $5,000,000 Maximum");
     endPivotURL();
     endCell();
 
@@ -401,11 +406,21 @@ function writeSections() {
     startCell();
     startPivotURL("pivot-travel-insurance");
     writeImage("traveler.jpg");
-    writeText("Traveler's insurance: Business travel, family visiting, leisure travel. 5 days - 2 years, $39/month and up.");
+    writeText("Traveler's insurance: Business travel, family visiting, leisure travel. 5 days - 2 years.  Prices start at about $1/day");
     endPivotURL();
     endCell();
 
+    endRow();
+   
 
+    startRow();
+    writeText("");
+    endRow();
+
+    startRow();
+    writeCellWithText("We are qualified insurance agents with over 20 years experience working with insurance companies.");
+    writeCellWithText("We have native English and Chinese speakers to answer all of your questions.");
+    writeCellWithText("Ask us about student coverage that meets your university insurance standards.");
     endRow();
 
     endSection();
@@ -1095,7 +1110,11 @@ function writeSections() {
     endRow();
 
     startRow();
-    writeText("Other plans that cover more visa types:" + " " + makeURL("Global Medical", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699") + " and " + makeURL("Patriot Travel", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"));
+    writeText("Other plans that cover more visa types:" + " " + makePivotURL("pivot-global-medical", "Global Medical") + " and " + makePivotURL("pivot-travel-insurance", "Patriot Travel"));
+    endRow();
+
+    startRow();
+    writeText("Insurance policy is underwritten by a health insurance company that is 'A' rated by A.M.Best");
     endRow();
 
     writeDontSeeWhatYouNeedRow();
@@ -1111,7 +1130,6 @@ function writeSections() {
     endRow();
 
     startRow();
-    writeText("");
     writeText("Our highlighted example plans:");
     endRow();
 
@@ -1262,6 +1280,35 @@ function writeSections() {
     endRow();
 
     startRow();
+    writeText("Which plan is right for you?");
+    document.write(makeTable(2, [
+                "Taian Travel/Medical Insurance", "Who the plan is designed for",
+
+                "Patriot Travel Medical Insurance", 
+                makeBulletedListWithTitle("", [
+                        "Meets the medical coverage needs of most international travelers",
+                        "Two plan designs for U.S. citizens and non-U.S. citizens",
+                        ]),
+
+                "Patriot Platinum Travel Medical Insurance",
+                makeBulletedListWithTitle("", [
+                        "Ages 70-79 have more coverage ($100,000 compared to $50,000 for Patriot Travel Medical)",
+                        "Ages 80 have more coverage ($20,000 compared to $10,000 for Patriot Travel Medical)",
+                        ]),
+
+                "TRIP Insurance", 
+                makeBulletedListWithTitle("", [
+                        "Coverage to protect your travel cost and basic emergency medical coverage",
+                        "3 plan designs to meet your needs: TRIP, TRIP Elite (more coverage), TRIP Student (more affordable)",
+                        ]),
+                ]));
+    endRow();
+
+    startRow();
+    writeText("");
+    endRow();
+
+    startRow();
     writeText("Sample rates and benefits for Patriot Travel Medical Insurance:");
     document.write(makeTable(3, [
                 "Taian Travel Insurance",
@@ -1285,27 +1332,27 @@ function writeSections() {
                 "Monthly rate for $50,000 maximum and $250 deductible ($10,000 max for 80+ age) - minimum purchase 5 days",
                 makeTable(2, [
                     "Age", "Rate",
-                    "dependent child", "$35",
-                    "&lt; 30", "$39",
-                    "30-39", "$52",
-                    "40-49", "$78",
-                    "50-59", "$113",
-                    "60-64", "$142",
-                    "65-69", "$162",
-                    "70-79", "$219",
-                    "80+",   "$381",
+                    "dependent child", "$35.00",
+                    "&lt; 30", "$39.00",
+                    "30-39", "$52.00",
+                    "40-49", "$78.00",
+                    "50-59", "$113.00",
+                    "60-64", "$142.00",
+                    "65-69", "$162.00",
+                    "70-79", "$219.00",
+                    "80+",   "$381.00",
                     ]),
                 makeTable(2, [
                     "Age", "Rate",
-                    "dependent child", "$21",
-                    "&lt; 30", "$23",
-                    "30-39", "$28",
-                    "40-49", "$50",
-                    "50-59", "$81",
-                    "60-64", "$98",
-                    "65-69", "$116",
-                    "70-79", "$170",
-                    "80+",   "$340",
+                    "dependent child", "$21.00",
+                    "&lt; 30", "$23.00",
+                    "30-39", "$28.00",
+                    "40-49", "$50.00",
+                    "50-59", "$81.00",
+                    "60-64", "$98.00",
+                    "65-69", "$116.00",
+                    "70-79", "$170.00",
+                    "80+",   "$340.00",
                     ]),
 
                 "Monthly rate for $50,000 maximum and $1000 deductible ($10,000 max for 80+ age) - minimum purchase 5 days",
@@ -1350,7 +1397,6 @@ function writeSections() {
     endRow();
     
     startRow();
-    writeText("");
     writePatriotTravelTable();
     endRow();
 
