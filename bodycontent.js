@@ -62,6 +62,12 @@ function showPivot(pivotName) {
     }
     var toShow = document.getElementById(pivotName);
     toShow.style.display = "block";
+
+
+    // Special behaviors for the various pages upon being shown:
+    if (pivotName == "pivot-travel-insurance") {
+        showSubsection("travel-subsections", ""); // Hide subsections
+    }
 }
 
 function makeStartPivotURLWithIsTopLevel(divID, isTopLevel) {
@@ -88,6 +94,14 @@ function makePivotURL(divID, title) {
     return urlCode;
 }
 
+function makeSubsectionURL(subsectionsName, section, title) {
+    var urlCode = "";
+    urlCode += '<a href="#" onclick="showSubsection(\''+subsectionsName+'\', \''+section+'\'); return false;">';
+    urlCode += loc(title);
+    urlCode += '</a>';
+    return urlCode;
+}
+
 function makeBold(str) {
     return "<strong>" + loc(str) + "</strong>";
 }
@@ -103,6 +117,33 @@ function makeTopLevelURL(divID, titleString) {
 
 function writeTopLevelURL(divID, titleString) {
     document.write(makeTopLevelURL(divID, titleString));
+}
+
+function startSubsections(className) {
+    document.write('<div class="'+className+'">');
+}
+
+function endSubsections() {
+    document.write('</div>');
+}
+
+function startSubsection(sectionName) {
+    document.write('<div id="'+sectionName+'">');
+}
+
+function endSubsection() {
+    document.write('</div>');
+}
+
+function showSubsection(className, sectionName) {
+    var relevantSubsections = $("."+className+" > div");
+    for (var i = 0; i < relevantSubsections.length; i++) {
+        if (relevantSubsections[i].id == sectionName) {
+            relevantSubsections[i].style.display = "block";
+        } else {
+            relevantSubsections[i].style.display = "none";
+        }
+    }
 }
 
 function startSection(divID, titleString) {
@@ -1284,19 +1325,19 @@ function writeSections() {
     document.write(makeTable(2, [
                 "Taian Travel/Medical Insurance", "Who the plan is designed for",
 
-                "Patriot Travel Medical Insurance", 
+                makeSubsectionURL("travel-subsections", "patriot-travel", "Patriot Travel Medical Insurance"), 
                 makeBulletedListWithTitle("", [
                         "Meets the medical coverage needs of most international travelers",
                         "Two plan designs for U.S. citizens and non-U.S. citizens",
                         ]),
 
-                "Patriot Platinum Travel Medical Insurance",
+                makeSubsectionURL("travel-subsections", "patriot-platinum", "Patriot Platinum Travel Medical Insurance"),
                 makeBulletedListWithTitle("", [
                         "Ages 70-79 have more coverage ($100,000 compared to $50,000 for Patriot Travel Medical)",
                         "Ages 80 have more coverage ($20,000 compared to $10,000 for Patriot Travel Medical)",
                         ]),
 
-                "TRIP Insurance", 
+                makeSubsectionURL("travel-subsections", "trip-travel", "TRIP Insurance"),
                 makeBulletedListWithTitle("", [
                         "Coverage to protect your travel cost and basic emergency medical coverage",
                         "3 plan designs to meet your needs: TRIP, TRIP Elite (more coverage), TRIP Student (more affordable)",
@@ -1308,7 +1349,12 @@ function writeSections() {
     writeText("");
     endRow();
 
+    startSubsections("travel-subsections");
+
+    startSubsection("patriot-travel");
+
     startRow();
+    writeText("");
     writeText("Sample rates and benefits for Patriot Travel Medical Insurance:");
     document.write(makeTable(3, [
                 "Taian Travel Insurance",
@@ -1400,6 +1446,11 @@ function writeSections() {
     writePatriotTravelTable();
     endRow();
 
+    endSubsection();
+
+
+    startSubsection("patriot-platinum");
+
     startRow();
     writeText(""),
     writeText("Patriot Platinum Travel Medical Insurance is a similar plan with more coverage (up to $8,000,000):");
@@ -1432,6 +1483,11 @@ function writeSections() {
                 "", makeBuyStyle(makeURL("Buy Patriot Platinum Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot_platinum?imgac=80000699")),
                 ]));
     endRow();
+
+    endSubsection();
+
+
+    startSubsection("trip-travel");
 
     startRow();
     writeText("");
@@ -1477,6 +1533,12 @@ function writeSections() {
                     ]),
                 ]));
     endRow();
+
+    endSubsection();
+
+
+    endSubsections();
+
 
     startRow();
     writeText("");
