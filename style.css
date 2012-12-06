@@ -6,7 +6,7 @@ caption,th,td{text-align:center;font-weight:normal;vertical-align:middle;padding
 .styledTable table,th,td {border: 1px solid #303030; background-color:#eee;font-size:1em}
 .styledTable th{border: 1px solid #303030; background-color:#eee;font-size:1em}
 .styledTableHeader {background-color:#D6D6D6}
-.styledTableLeft {background-color:#D6D6D6}
+.styledTableLeft {max-width: 200px; background-color:#D6D6D6}
 .invisibleTable table{border: 0; background-color:transparent;font-size:.833em}
 .invisibleTable td{border: 0; background-color:transparent;font-size:.833em}
 .invisibleTable th{border: 0; background-color:transparent;font-size:.833em}
@@ -23,6 +23,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,su
 html{overflow-y:auto}
 img,video{max-width:100%;height:auto}
 .lt-ie9 img{-ms-interpolation-mode:bicubic;zoom:1}
+.tab-container{width:98%;margin-left:auto;margin-right:auto;max-width:1180px;*zoom:1}
 .grid-container{width:95%;margin-left:auto;margin-right:auto;max-width:1180px;*zoom:1}
 .grid-container:after{content:"";display:table;clear:both}
 .grid-row .grid-unit{position:relative;margin-left:0;width:100%;float:left;display:inline}
