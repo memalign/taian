@@ -66,7 +66,7 @@ function showPivot(pivotName) {
 
     // Special behaviors for the various pages upon being shown:
     if (pivotName == "pivot-travel-insurance") {
-        showSubsection("travel-subsections", ""); // Hide subsections
+        showSubsection("travel-subsections", "patriot-travel");
     }
 }
 
