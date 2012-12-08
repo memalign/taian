@@ -343,6 +343,10 @@ function writeRowForUnitedHealthOne() {
 
 }
 
+function writeHeaderNote() {
+    document.write("<br />" + loc("Great new look - same TaiAn Financial"));
+}
+
 function writeTabs() {
     var topLevelLinks = [
         makeTopLevelURL("pivot-home", "Home"),
