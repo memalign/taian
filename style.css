@@ -24,6 +24,11 @@ html{overflow-y:auto}
 img,video{max-width:100%;height:auto}
 .lt-ie9 img{-ms-interpolation-mode:bicubic;zoom:1}
 .tab-container{width:98%;margin-left:auto;margin-right:auto;max-width:1180px;*zoom:1}
+.lang-container{margin:0 0 .5em 0;text-align:right;float:right;}
+.lang-container:after{content:"";display:table;clear:both}
+.logo-container{text-align:left;float:left;}
+.logo-container:after{content:"";display:table;clear:both}
+.header-container:after{content:"";display:table;clear:both}
 .grid-container{width:95%;margin-left:auto;margin-right:auto;max-width:1180px;*zoom:1}
 .grid-container:after{content:"";display:table;clear:both}
 .grid-row .grid-unit{position:relative;margin-left:0;width:100%;float:left;display:inline}
@@ -172,7 +177,7 @@ input[type="submit"]{cursor:pointer;font-size:.9em}
 @media screen and (min-width:900px){.page-content{}
 }
 .lt-ie9 .page-content{min-height:auto}
-.site-header{margin:0 auto;max-width:1600px;border-bottom:5px solid #eee}
+.site-header{margin-top:1em;max-width:1600px;border-bottom:5px solid #eee}
 .site-header h1{margin:0}
 .mscom-logo{float:left;margin:0 3% .25em}
 .mscom-logo img{width:115px}
@@ -180,7 +185,7 @@ input[type="submit"]{cursor:pointer;font-size:.9em}
 .no-js .site-header-togglers{display:none}
 .js .global-navigation,.js .menu-component{display:none}
 .global-navigation{clear:both;float:none;margin-top:.4em;padding:0 2%;position:relative}
-.account-center{text-align:right;margin:0 0 .5em 0;font-size:.9em;display:block;width:96%;padding:0 2%;background:#eee}
+.account-center{font-size:.9em;background:#eee;text-align:right;float:right;}
 .account-center a{display:-moz-inline-stack;display:inline-block;zoom:1;*display:inline;padding:.25em 0;margin-left:0em}
 @media screen and (min-width:540px){.account-center{padding:0;width:100%;background:transparent;min-height:1.9em;margin:.25em 0 0 0}
 .account-center a{color:#0072c6}
