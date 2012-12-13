@@ -1205,6 +1205,7 @@ function writeSections() {
             "Emergency Evacuation", "$50,000 per period, not subject to deductible or coinsurance", "Up to the maximum limit, not subject to deductible or coinsurance", "Up to the maximum limit, not subject to deductible or coinsurance", 
             "Repatriation of remains", "$25,000 per insured, not subject to deductible or coinsurance", "$25,000 per insured, not subject to deductible or coinsurance", "$50,000 per insured, not subject to deductible or coinsurance", 
             "Mental/Nervous", "Out-patient only, after 12 month of coverage", "$10,000 per year - $50,000 max, after 12 month of coverage", "$50,000 max, after 12 month of coverage", 
+            "Pre-existing conditions", "May have limited coverage after 24 months or be excluded at time of underwriting", "May be covered same as any illness or excluded at time of underwriting", "May be covered same as any illness or excluded at time of underwriting",
             "Maternity", "Optional Rider (cost $2500 per year) - $50,000 lifetime max. Max of $5000 for normal delivery, $7500 for C-section. $200 child wellness for first 12 month. new born care & congenital disorders max of $250,000 for the first 31 days (benefits reduced by 50% for births that occur in the 11th or 12th month of coverage)", "Optional Rider (cost $2500 per year) - $50,000 lifetime max. Max of $5000 for normal delivery, $7500 for C-section. $200 child wellness for first 12 month. new born care & congenital disorders max of $250,000 for the first 31 days (benefits reduced by 50% for births that occur in the 11th or 12th month of coverage)", "Maternity is covered same as any illness for any birth that occurs after 10 months of coverage- $1000 additional deductible, $50,000 lifetime max. $200 child wellness for the first 12 months. new born care & congenital disorders max of $250,000 for the first 31 days",
 
             "Monthly Rate",
@@ -1325,7 +1326,6 @@ function writeSections() {
     endRow();
 
     startRow();
-    writeText("Which plan is right for you?");
     document.write(makeTable(2, [
                 "Taian Travel/Medical Insurance", "Who the plan is designed for",
 
@@ -1378,6 +1378,7 @@ function writeSections() {
                 "Accidental Death & Dismemberment", "$25,000 principal sum", "$25,000 principal sum", 
                 "Emergency Medical Evacuation", "$500,000", "$500,000", 
                 "Repatriation of remains", "$50,000", "$50,000", 
+				"Pre-existing conditions", "Not covered", "Limited coverage for sudden and unexpected recurrence of pre-existing condition",
 
                 "Monthly rate for $50,000 maximum and $250 deductible ($10,000 max for 80+ age) - minimum purchase 5 days",
                 makeTable(2, [
