@@ -437,7 +437,7 @@ function writeSections() {
     startCell();
     startPivotURL("pivot-international-student");
     writeImage("international-student.jpg");
-    writeText("International Student & Scholar (F1&J1 visa). Coverage meets most university standards. $48.62/month with $5,000,000 Maximum");
+    writeText("International Student & Scholar (F1&J1 visa). Coverage meets most university standards. $48.62/month with $5,000,000 Benefit");
     endPivotURL();
     endCell();
 
@@ -1051,7 +1051,7 @@ function writeSections() {
             "Accidental Death & Dismemberment", "$25,000", "$25,000", 
             "Medical Evacuation", "$500,000", "$50,000", 
             "Repatriation of remains", "$50,000", "$25,000", 
-            "Pre-existing conditions", "After 12 mos of continuous coverage", "After 12 mos of continuous coverage",
+            "Pre-existing conditions", "After 12 months of continuous coverage", "After 12 months of continuous coverage",
 
             // Table within a table
             "Cost Per Month (Non-US Citizens)",
@@ -1188,6 +1188,7 @@ function writeSections() {
             makeURL("Global Medical (Platinum Plan) $1000 deductible", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
 
 
+		    "Individual Deductible", "$250, $500, $1,000, $2,500, $5,000, $10,000", "$250, $500, $1,000, $2,500, $5,000, $10,000", "$100, $250, $500, $1,000, $2,500, $5,000, $10,000",	
             "Family Deductible", "3 times the individual", "3 times the individual", "2 times the individual", 
             "Lifetime Max limit", "$5,000,000 per individual",  "$5,000,000 per individual", "$8,000,000 per individual", 
             "Treatment inside the U.S.", "In-PPO: deductible 50% waived (up to $2500). No coinsurance.<br />Non-PPO: 20% of next $5000 expenses after deductible", "In-PPO: deductible 50% waived (up to $2500). No coinsurance.<br />Non-PPO: 20% of next $5000 expenses after deductible", "In-PPO: deductible 50% waived (up to $2500). No coinsurance<br />Non-PPO: 10% of next $5000 expenses after deductible",
@@ -1205,7 +1206,7 @@ function writeSections() {
             "Emergency Evacuation", "$50,000 per period, not subject to deductible or coinsurance", "Up to the maximum limit, not subject to deductible or coinsurance", "Up to the maximum limit, not subject to deductible or coinsurance", 
             "Repatriation of remains", "$25,000 per insured, not subject to deductible or coinsurance", "$25,000 per insured, not subject to deductible or coinsurance", "$50,000 per insured, not subject to deductible or coinsurance", 
             "Mental/Nervous", "Out-patient only, after 12 month of coverage", "$10,000 per year - $50,000 max, after 12 month of coverage", "$50,000 max, after 12 month of coverage", 
-            "Pre-existing conditions", "May have limited coverage after 24 months or be excluded at time of underwriting", "May be covered same as any illness or excluded at time of underwriting", "May be covered same as any illness or excluded at time of underwriting",
+            "Pre-existing conditions", "May have limited coverage after 24 months or be excluded at time of underwriting", "May have limited coverage after 24 months or be excluded at time of underwriting", "May be covered same as any illness or excluded at time of underwriting",
             "Maternity", "Optional Rider (cost $2500 per year) - $50,000 lifetime max. Max of $5000 for normal delivery, $7500 for C-section. $200 child wellness for first 12 month. new born care & congenital disorders max of $250,000 for the first 31 days (benefits reduced by 50% for births that occur in the 11th or 12th month of coverage)", "Optional Rider (cost $2500 per year) - $50,000 lifetime max. Max of $5000 for normal delivery, $7500 for C-section. $200 child wellness for first 12 month. new born care & congenital disorders max of $250,000 for the first 31 days (benefits reduced by 50% for births that occur in the 11th or 12th month of coverage)", "Maternity is covered same as any illness for any birth that occurs after 10 months of coverage- $1000 additional deductible, $50,000 lifetime max. $200 child wellness for the first 12 months. new born care & congenital disorders max of $250,000 for the first 31 days",
 
             "Monthly Rate",
@@ -1322,7 +1323,7 @@ function writeSections() {
     startSection("pivot-travel-insurance", "Travel Insurance");
 
     startRow();
-    writeText("Taian International Health Insurance provides simple and flexible travel insurance for B1,B2 visa travelers to the United States. The coverage is also good for anybody (U.S. and non-U.S. citizen) travelling out of their home country, regardless of visa requirements. Monthly premium can be as low as $23.00 with $250 deductible for U.S. citizen and $39.00 for non-U.S. citizen.");
+    writeText("Taian Travel Insurance is designed for anyone (U.S. and non-U.S. citizens) traveling out of their home country, regardless of visa requirements.  Cost starts at about $1/day.  Purchase 5 days - 1 year, and renewable up to 2 years if 3 months are purchased initially.");
     endRow();
 
     startRow();
