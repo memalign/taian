@@ -12,6 +12,9 @@ caption,th,td{text-align:center;font-weight:normal;vertical-align:middle;padding
 .invisibleTable th{border: 0; background-color:transparent;font-size:.833em}
 .invisibleTableHeader td{background-color:transparent}
 .invisibleTableLeft td{background-color:transparent}
+.invisibleTableNormalText table{border: 0; background-color:transparent;}
+.invisibleTableNormalText td{border: 0; background-color:transparent; width:30%;}
+.invisibleTableNormalText th{border: 0; background-color:transparent;}
 .uglyBuyStyle a{color:red; text-decoration:underline; font-size:.7em}
 .uglyBuyStyle a:hover{color:#580000; text-decoration:underline}
 .uglyBuyStyle a:focus{color:#580000; text-decoration:underline}

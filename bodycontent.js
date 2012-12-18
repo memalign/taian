@@ -96,7 +96,7 @@ function makePivotURL(divID, title) {
 
 function makeSubsectionURL(subsectionsName, section, title) {
     var urlCode = "";
-    urlCode += '<a href="#" onclick="showSubsection(\''+subsectionsName+'\', \''+section+'\'); return false;">';
+    urlCode += '<a href="#" id="'+section+'Link" onclick="showSubsection(\''+subsectionsName+'\', \''+section+'\'); return false;">';
     urlCode += loc(title);
     urlCode += '</a>';
     return urlCode;
@@ -138,10 +138,27 @@ function endSubsection() {
 function showSubsection(className, sectionName) {
     var relevantSubsections = $("."+className+" > div");
     for (var i = 0; i < relevantSubsections.length; i++) {
+        var oldUnlink = document.getElementById(relevantSubsections[i].id+"Unlink");
+        if (oldUnlink)
+            oldUnlink.parentNode.removeChild(oldUnlink);
+
         if (relevantSubsections[i].id == sectionName) {
             relevantSubsections[i].style.display = "block";
+
+            var link = document.getElementById(relevantSubsections[i].id+"Link");
+            link.parentNode.style.backgroundColor = "#D6D6D6";
+            link.style.display = "none";
+
+            var plainText = document.createElement('div');
+            plainText.setAttribute('id', relevantSubsections[i].id+"Unlink");
+            plainText.innerHTML = link.innerHTML;
+            link.parentNode.appendChild(plainText);
         } else {
             relevantSubsections[i].style.display = "none";
+
+            var link = document.getElementById(relevantSubsections[i].id+"Link");
+            link.parentNode.style.backgroundColor = "transparent";
+            link.style.display = "block";
         }
     }
 }
@@ -1327,31 +1344,26 @@ function writeSections() {
     endRow();
 
     startRow();
-    document.write(makeTable(2, [
-                "Taian Travel/Medical Insurance", "Who the plan is designed for",
+    document.write(makeTableWithStyle("invisibleTableNormalText", 3, [
+                makeSubsectionURL("travel-subsections", "patriot-travel", "Patriot Travel Medical Insurance"),
+                makeSubsectionURL("travel-subsections", "patriot-platinum", "Patriot Platinum Travel Medical Insurance"),
+                makeSubsectionURL("travel-subsections", "trip-travel", "TRIP Insurance"),
 
-                makeSubsectionURL("travel-subsections", "patriot-travel", "Patriot Travel Medical Insurance"), 
                 makeBulletedListWithTitle("", [
                         "Meets the medical coverage needs of most international travelers",
                         "Two plan designs for U.S. citizens and non-U.S. citizens",
                         ]),
 
-                makeSubsectionURL("travel-subsections", "patriot-platinum", "Patriot Platinum Travel Medical Insurance"),
                 makeBulletedListWithTitle("", [
                         "Ages 70-79 have more coverage ($100,000 compared to $50,000 for Patriot Travel Medical)",
                         "Ages 80 have more coverage ($20,000 compared to $10,000 for Patriot Travel Medical)",
                         ]),
 
-                makeSubsectionURL("travel-subsections", "trip-travel", "TRIP Insurance"),
                 makeBulletedListWithTitle("", [
                         "Coverage to protect your travel cost and basic emergency medical coverage",
                         "3 plan designs to meet your needs: TRIP, TRIP Elite (more coverage), TRIP Student (more affordable)",
                         ]),
                 ]));
-    endRow();
-
-    startRow();
-    writeText("");
     endRow();
 
     startSubsections("travel-subsections");
