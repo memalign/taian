@@ -50,6 +50,16 @@ function updateHash(keyToUpdate, newValue) {
     window.scrollTo(0, 0);
 }
 
+function analyticsTrackEvent(action, label, value) {
+    if (_gaq) {
+        if (!value || (typeof value === "undefined")) {
+            value = "";
+        }
+
+        _gaq.push(['_trackEvent', "taianfinancial", action, label, value]);
+    }
+}
+
 function showPivot(pivotName) {
     var defaultTab = "pivot-home";
     if (pivotName.length == 0)
@@ -63,10 +73,11 @@ function showPivot(pivotName) {
     var toShow = document.getElementById(pivotName);
     toShow.style.display = "block";
 
-
     // Special behaviors for the various pages upon being shown:
     if (pivotName == "pivot-travel-insurance") {
         showSubsection("travel-subsections", "patriot-travel");
+    } else {
+        analyticsTrackEvent("view", pivotName, getPageAttribute("adid"));
     }
 }
 
@@ -136,6 +147,8 @@ function endSubsection() {
 }
 
 function showSubsection(className, sectionName) {
+    analyticsTrackEvent("view", className+"-"+sectionName, getPageAttribute("adid"));
+
     var relevantSubsections = $("."+className+" > div");
     for (var i = 0; i < relevantSubsections.length; i++) {
         var oldUnlink = document.getElementById(relevantSubsections[i].id+"Unlink");
