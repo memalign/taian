@@ -78,6 +78,7 @@ function showPivot(pivotName) {
         showSubsection("travel-subsections", "patriot-travel");
     } else {
         analyticsTrackEvent("view", pivotName, getPageAttribute("adid"));
+        analyticsTrackEvent("viewLanguage", pivotName, getPageAttribute("l"));
     }
 }
 
@@ -148,6 +149,7 @@ function endSubsection() {
 
 function showSubsection(className, sectionName) {
     analyticsTrackEvent("view", className+"-"+sectionName, getPageAttribute("adid"));
+    analyticsTrackEvent("viewLanguage", className+"-"+sectionName, getPageAttribute("l"));
 
     var relevantSubsections = $("."+className+" > div");
     for (var i = 0; i < relevantSubsections.length; i++) {
