@@ -50,17 +50,6 @@ function updateHash(keyToUpdate, newValue) {
     window.scrollTo(0, 0);
 }
 
-function getLanguageTrackingCode() {
-    var lstr = getPageAttribute("l");
-    if (lstr == "en") {
-        return 0;
-    } else if (lstr == "cn") {
-        return 1;
-    } else {
-        return -1;
-    }
-}
-
 function analyticsTrackEvent(action, label, value, nonInteraction) {
     if (_gaq) {
         if (typeof value === "undefined" || isNaN(parseInt(value))) {
@@ -78,6 +67,11 @@ function analyticsTrackAdView(pageName) {
     } else {
         analyticsTrackEvent("ad-"+adId, pageName, 1, true);
     }
+}
+
+function analyticsTrackLanguageView(pageName) {
+    var lstr = getPageAttribute("l");
+    analyticsTrackEvent("viewLanguage", lstr+"-"+pageName, 1, true);
 }
 
 function showPivot(pivotName) {
@@ -99,7 +93,7 @@ function showPivot(pivotName) {
     } else {
         analyticsTrackEvent("view", pivotName, 1, false);
         analyticsTrackAdView(pivotName);
-        analyticsTrackEvent("viewLanguage", pivotName, getLanguageTrackingCode(), true);
+        analyticsTrackLanguage(pivotName);
     }
 }
 
@@ -169,9 +163,10 @@ function endSubsection() {
 }
 
 function showSubsection(className, sectionName) {
-    analyticsTrackEvent("view", className+"-"+sectionName, 1, false);
-    analyticsTrackAdView(className+"-"+sectionName);
-    analyticsTrackEvent("viewLanguage", className+"-"+sectionName, getLanguageTrackingCode(), true);
+    var trackName = className+"-"+sectionName;
+    analyticsTrackEvent("view", trackName, 1, false);
+    analyticsTrackAdView(trackName);
+    analyticsTrackLanguage(trackName);
 
     var relevantSubsections = $("."+className+" > div");
     for (var i = 0; i < relevantSubsections.length; i++) {
