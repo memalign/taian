@@ -93,7 +93,7 @@ function showPivot(pivotName) {
     } else {
         analyticsTrackEvent("view", pivotName, 1, false);
         analyticsTrackAdView(pivotName);
-        analyticsTrackLanguage(pivotName);
+        analyticsTrackLanguageView(pivotName);
     }
 }
 
@@ -166,7 +166,7 @@ function showSubsection(className, sectionName) {
     var trackName = className+"-"+sectionName;
     analyticsTrackEvent("view", trackName, 1, false);
     analyticsTrackAdView(trackName);
-    analyticsTrackLanguage(trackName);
+    analyticsTrackLanguageView(trackName);
 
     var relevantSubsections = $("."+className+" > div");
     for (var i = 0; i < relevantSubsections.length; i++) {
