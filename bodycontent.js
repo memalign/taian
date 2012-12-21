@@ -71,6 +71,15 @@ function analyticsTrackEvent(action, label, value, nonInteraction) {
     }
 }
 
+function analyticsTrackAdView(pageName) {
+    var adId = getPageAttribute("adid");
+    if (typeof adId === "undefined") {
+        // No tracking to be done
+    } else {
+        analyticsTrackEvent("ad-"+adId, pageName, 1, true);
+    }
+}
+
 function showPivot(pivotName) {
     var defaultTab = "pivot-home";
     if (pivotName.length == 0)
@@ -88,7 +97,8 @@ function showPivot(pivotName) {
     if (pivotName == "pivot-travel-insurance") {
         showSubsection("travel-subsections", "patriot-travel");
     } else {
-        analyticsTrackEvent("view", pivotName, getPageAttribute("adid"), false);
+        analyticsTrackEvent("view", pivotName, 1, false);
+        analyticsTrackAdView(pivotName);
         analyticsTrackEvent("viewLanguage", pivotName, getLanguageTrackingCode(), true);
     }
 }
@@ -159,7 +169,8 @@ function endSubsection() {
 }
 
 function showSubsection(className, sectionName) {
-    analyticsTrackEvent("view", className+"-"+sectionName, getPageAttribute("adid"), false);
+    analyticsTrackEvent("view", className+"-"+sectionName, 1, false);
+    analyticsTrackAdView(className+"-"+sectionName);
     analyticsTrackEvent("viewLanguage", className+"-"+sectionName, getLanguageTrackingCode(), true);
 
     var relevantSubsections = $("."+className+" > div");
