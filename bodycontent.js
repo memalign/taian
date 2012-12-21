@@ -50,13 +50,24 @@ function updateHash(keyToUpdate, newValue) {
     window.scrollTo(0, 0);
 }
 
-function analyticsTrackEvent(action, label, value) {
+function getLanguageTrackingCode() {
+    var lstr = getPageAttribute("l");
+    if (lstr == "en") {
+        return 0;
+    } else if (lstr == "cn") {
+        return 1;
+    } else {
+        return -1;
+    }
+}
+
+function analyticsTrackEvent(action, label, value, nonInteraction) {
     if (_gaq) {
-        if (!value || (typeof value === "undefined")) {
-            value = "";
+        if (typeof value === "undefined" || isNaN(parseInt(value))) {
+            value = -1;
         }
 
-        _gaq.push(['_trackEvent', "taianfinancial", action, label, value]);
+        _gaq.push(['_trackEvent', "taianfinancial", action, label, parseInt(value), nonInteraction]);
     }
 }
 
@@ -77,8 +88,8 @@ function showPivot(pivotName) {
     if (pivotName == "pivot-travel-insurance") {
         showSubsection("travel-subsections", "patriot-travel");
     } else {
-        analyticsTrackEvent("view", pivotName, getPageAttribute("adid"));
-        analyticsTrackEvent("viewLanguage", pivotName, getPageAttribute("l"));
+        analyticsTrackEvent("view", pivotName, getPageAttribute("adid"), false);
+        analyticsTrackEvent("viewLanguage", pivotName, getLanguageTrackingCode(), true);
     }
 }
 
@@ -148,8 +159,8 @@ function endSubsection() {
 }
 
 function showSubsection(className, sectionName) {
-    analyticsTrackEvent("view", className+"-"+sectionName, getPageAttribute("adid"));
-    analyticsTrackEvent("viewLanguage", className+"-"+sectionName, getPageAttribute("l"));
+    analyticsTrackEvent("view", className+"-"+sectionName, getPageAttribute("adid"), false);
+    analyticsTrackEvent("viewLanguage", className+"-"+sectionName, getLanguageTrackingCode(), true);
 
     var relevantSubsections = $("."+className+" > div");
     for (var i = 0; i < relevantSubsections.length; i++) {
