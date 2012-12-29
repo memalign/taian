@@ -136,7 +136,7 @@ function makeBold(str) {
 function makeTopLevelURL(divID, titleString) {
     var code = "<h2>";
     code += makeStartPivotURLWithIsTopLevel(divID, true);
-    code += loc(titleString);
+    code += makeBold(titleString);
     code += makeEndPivotURL();
     code += "</h2>";
     return code;
@@ -197,7 +197,7 @@ function showSubsection(className, sectionName) {
 
 function startSection(divID, titleString) {
     document.write('<div id="'+divID+'" class="pivot " bi:type="pivot">');
-    document.write('<h2 bi:titleflag="t1" bi:title="t1" class="heading">'+titleString+'</h2>');
+    document.write('<h2 bi:titleflag="t1" bi:title="t1" class="heading">'+loc(titleString)+'</h2>');
 }
 
 function endSection() {
@@ -436,11 +436,8 @@ function writePatriotTravelTable() {
 
                 "Plan Highlights",
                 makeBulletedListWithTitle("", [
-                    "Short-term travel medical coverage",
                     "Coverage for individuals and dependents",
                     "Two plan designs - one for U.S. citizens and one for non-U.S. citizens traveling outside their home country",
-                    "Maximum Limits from $50,000 to $2,000,000",
-                    "Deductible options from $0 to $2,500",
                     "Available in daily and monthly rates",
                     "Renewable up to 24 months if three months or more are purchased",
                     "Freedom to seek treatment with hospital or doctor of your choice",
@@ -1204,7 +1201,7 @@ function writeSections() {
     endRow();
 
     startRow();
-    writeText("Other plans that cover more visa types:" + " " + makePivotURL("pivot-global-medical", "Global Medical") + " and " + makePivotURL("pivot-travel-insurance", "Patriot Travel"));
+    writeText(loc("Other plans that cover more visa types:") + " " + makePivotURL("pivot-global-medical", "Global Medical") + " " + loc("and") + " " + makePivotURL("pivot-travel-insurance", "Patriot Travel"));
     endRow();
 
     startRow();
@@ -1302,9 +1299,9 @@ function writeSections() {
             "Brochure", makeURL("Complete Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1804&a=80000699"), makeURL("Complete Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1804&a=80000699"), makeURL("Complete Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1804&a=80000699"),
 
             "", 
-            makeBuyStyle(makeURL("Buy Global Medical (Silver Plan) $250 deductible", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699")),
-            makeBuyStyle(makeURL("Buy Global Medical (Gold Plan) $500 deductible", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699")),
-            makeBuyStyle(makeURL("Buy Global Medical (Platinum Plan) $1000 deductible", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699")),
+            makeBuyStyle(makeURL("Buy Global Medical (Silver Plan)", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699")),
+            makeBuyStyle(makeURL("Buy Global Medical (Gold Plan)", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699")),
+            makeBuyStyle(makeURL("Buy Global Medical (Platinum Plan)", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699")),
             ]));
     endRow();
 
@@ -1382,18 +1379,17 @@ function writeSections() {
                 makeSubsectionURL("travel-subsections", "trip-travel", "TRIP Insurance"),
 
                 makeBulletedListWithTitle("", [
-                        "Meets the medical coverage needs of most international travelers",
-                        "Two plan designs for U.S. citizens and non-U.S. citizens",
+                        "Medical coverage for most international travelers",
+                        "Plan designs for U.S. citizens and non-U.S. citizens",
                         ]),
 
                 makeBulletedListWithTitle("", [
-                        "Ages 70-79 have more coverage ($100,000 compared to $50,000 for Patriot Travel Medical)",
-                        "Ages 80 have more coverage ($20,000 compared to $10,000 for Patriot Travel Medical)",
+                        "Similar to Patriot Travel but more coverage",
+                        "Great for Ages 70 and over",
                         ]),
 
                 makeBulletedListWithTitle("", [
                         "Coverage to protect your travel cost and basic emergency medical coverage",
-                        "3 plan designs to meet your needs: TRIP, TRIP Elite (more coverage), TRIP Student (more affordable)",
                         ]),
                 ]));
     endRow();
@@ -1403,11 +1399,11 @@ function writeSections() {
     startSubsection("patriot-travel");
 
     startRow();
-    writeText("");
+
     writeText("Sample rates and benefits for Patriot Travel Medical Insurance:");
     document.write(makeTable(3, [
                 "Taian Travel Insurance",
-                makeURL("Patriot America For non-US citizens traveling outside home country", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+                makeURL("Patriot America For non-US citizens traveling internationally", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
                 makeURL("Patriot International For US citizens traveling outside  home country", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
                 "Lifetime maximum", "$50,000, $100,000, $500,000, $1,000,000", "$50,000, $100,000, $500,000, $1,000,000", 
                 "Term", "5 days to 2 years", "5 days to 2 years", 
@@ -1423,7 +1419,7 @@ function writeSections() {
                 "Accidental Death & Dismemberment", "$25,000 principal sum", "$25,000 principal sum", 
                 "Emergency Medical Evacuation", "$500,000", "$500,000", 
                 "Repatriation of remains", "$50,000", "$50,000", 
-				"Pre-existing conditions", "Not covered", "Limited coverage for sudden and unexpected recurrence of pre-existing condition",
+				"Pre-existing conditions", "Not covered", "Limited coverage for sudden and unexpected recurrence",
 
                 "Monthly rate for $50,000 maximum and $250 deductible ($10,000 max for 80+ age) - minimum purchase 5 days",
                 makeTable(2, [
