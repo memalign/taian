@@ -1504,7 +1504,6 @@ function writeSections() {
     startSubsection("patriot-platinum");
 
     startRow();
-    writeText(""),
     writeText("Patriot Platinum Travel Medical Insurance is a similar plan with more coverage (up to $8,000,000):");
     document.write(makeTable(2, [
                 "", makeURL("Patriot Platinum Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot_platinum?imgac=80000699"),
@@ -1542,7 +1541,6 @@ function writeSections() {
     startSubsection("trip-travel");
 
     startRow();
-    writeText("");
     writeText("Alternatively, consider Patriot T.R.I.P. Travel if you need a coverage for trip cancellation, travel and baggage delays, and emergency medical treatment.");
     document.write(makeTable(2, [
                 "", makeURL("Patriot T.R.I.P.® Travel", "https://www.imglobal.com/applications/pti/index.cfm?IMGAC=80000699&show=PTI"),
