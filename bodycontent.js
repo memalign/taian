@@ -283,6 +283,12 @@ function makeTable(numColumns, cells) {
 }
 
 function makeURL(title, url) {
+    var adId = getPageAttribute("adid");
+    var hasAdId = !(typeof adId === "undefined");
+
+    if (url.indexOf(".imglobal.com") >= 0 && hasAdId) {
+        url += "&uservar="+adId;
+    }
     return '<a href="'+url+'" bi:cpid="workHighlight">'+loc(title)+'</a>';
 }
 
