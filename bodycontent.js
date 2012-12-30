@@ -138,7 +138,7 @@ function writeSectionsForApps() {
         var name = "pivot-"+urlsForLang[url];
         startSection(name, "");
         startRow();
-        writeText("Annotated directions are in the top frame, the real application is below.");
+        writeText(loc("Annotated directions are in the top frame, the real application is below.") + " " + makeRawURL("Alternatively, see the application in a separate page.", url));
         endRow();
 
         startRow();
@@ -338,13 +338,7 @@ function makeTable(numColumns, cells) {
     return makeTableWithStyle("styledTable", numColumns, cells);
 }
 
-function makeURL(title, url) {
-    var urlsForLang = urlsToAppIds()[getPageAttribute("l")];
-    var nameForURL = (typeof urlsForLang === "undefined") ? undefined : urlsForLang[url];
-    if (!(typeof nameForURL === "undefined")) {
-        return makePivotURL("pivot-"+nameForURL, title);
-    }
-
+function makeRawURL(title, url) {
     var adId = getPageAttribute("adid");
     var hasAdId = !(typeof adId === "undefined");
 
@@ -352,6 +346,16 @@ function makeURL(title, url) {
         url += "&uservar="+adId;
     }
     return '<a href="'+url+'" bi:cpid="workHighlight">'+loc(title)+'</a>';
+}
+
+function makeURL(title, url) {
+    var urlsForLang = urlsToAppIds()[getPageAttribute("l")];
+    var nameForURL = (typeof urlsForLang === "undefined") ? undefined : urlsForLang[url];
+    if (!(typeof nameForURL === "undefined")) {
+        return makePivotURL("pivot-"+nameForURL, title);
+    }
+
+    return makeRawURL(title, url);
 }
 
 function makeBuyStyle(text) {
