@@ -13,7 +13,7 @@ caption,th,td{text-align:center;font-weight:normal;vertical-align:middle;padding
 .invisibleTableHeader td{background-color:transparent}
 .invisibleTableLeft td{background-color:transparent}
 .invisibleTableNormalText table{border: 0; background-color:transparent;}
-.invisibleTableNormalText td{border: 0; background-color:transparent; width:30%;}
+.invisibleTableNormalText td{border: 0; background-color:transparent; width:30%;padding:5px}
 .invisibleTableNormalText th{border: 0; background-color:transparent;}
 .uglyBuyStyle a{color:red; text-decoration:underline; font-size:.7em}
 .uglyBuyStyle a:hover{color:#580000; text-decoration:underline}
@@ -180,7 +180,7 @@ input[type="submit"]{cursor:pointer;font-size:.9em}
 @media screen and (min-width:900px){.page-content{}
 }
 .lt-ie9 .page-content{min-height:auto}
-.site-header{margin-top:1em;max-width:1600px;border-bottom:5px solid #eee}
+.site-header{margin-top:1em;border-bottom:5px solid #eee}
 .site-header h1{margin:0}
 .mscom-logo{float:left;margin:0 3% .25em}
 .mscom-logo img{width:115px}
