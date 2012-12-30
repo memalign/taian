@@ -147,7 +147,7 @@ function writeSectionsForApps() {
         endRow();
 
         startRow();
-        document.write("<iframe class='"+name+"' id='"+name+"-url"+"' src=\"JavaScript:''\" width=100% height=500></iframe>");
+        document.write("<iframe class='"+name+"' id='"+name+"-url"+"' src=\"JavaScript:''\" width=100% height=1000></iframe>");
         endRow();
         endSection();
     }
