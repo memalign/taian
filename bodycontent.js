@@ -87,6 +87,8 @@ function showPivot(pivotName) {
     var toShow = document.getElementById(pivotName);
     toShow.style.display = "block";
 
+    showApplicationFrames(pivotName);
+
     // Special behaviors for the various pages upon being shown:
     if (pivotName == "pivot-travel-insurance") {
         showSubsection("travel-subsections", "patriot-travel");
@@ -94,6 +96,60 @@ function showPivot(pivotName) {
         analyticsTrackEvent("view", pivotName, 1, false);
         analyticsTrackAdView(pivotName);
         analyticsTrackLanguageView(pivotName);
+    }
+}
+
+function urlsToAppIds() {
+    var urlsToAppIds = {
+        "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699" : "PatExchGroupPlanB",
+        "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699" : "PatExchPlanB",
+        "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699" : "SHAPlanA",
+        "https://purchase.imglobal.com/quote/patriot?imgac=80000699" : "Travel",
+        "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699" : "TravelGroup",
+    };
+    
+    var perLang = {
+        "cn" : urlsToAppIds,
+    };
+    return perLang;
+}
+
+function showApplicationFrames(pivotName) {
+    var urlsForLang = urlsToAppIds()[getPageAttribute("l")];
+
+    for (url in urlsForLang) {
+        var rawName = urlsForLang[url];
+        var name = "pivot-"+rawName;
+        if (name == pivotName) {
+            var imgURL = "annotatedApps/index.html#l="+getPageAttribute("l")+"&p="+rawName;
+            document.getElementById(pivotName+"-img").src = imgURL;
+            document.getElementById(pivotName+"-url").src = url;
+        } else {
+            document.getElementById(name+"-img").src = "JavaScript:''";
+            document.getElementById(name+"-url").src = "JavaScript:''";
+        }
+    }
+}
+
+function writeSectionsForApps() {
+    var urlsForLang = urlsToAppIds()[getPageAttribute("l")];
+
+    for (url in urlsForLang) {
+        var name = "pivot-"+urlsForLang[url];
+        startSection(name, "");
+        startRow();
+        writeText("Annotated directions are in the top frame, the real application is below.");
+        endRow();
+
+        startRow();
+        var imgURL = "annotatedApps/index.html#l="+getPageAttribute("l")+"&p="+name;
+        document.write("<iframe class='"+name+"' id='"+name+"-img"+"' src=\"JavaScript:''\" width=100% height=200></iframe>");
+        endRow();
+
+        startRow();
+        document.write("<iframe class='"+name+"' id='"+name+"-url"+"' src=\"JavaScript:''\" width=100% height=500></iframe>");
+        endRow();
+        endSection();
     }
 }
 
@@ -283,6 +339,12 @@ function makeTable(numColumns, cells) {
 }
 
 function makeURL(title, url) {
+    var urlsForLang = urlsToAppIds()[getPageAttribute("l")];
+    var nameForURL = (typeof urlsForLang === "undefined") ? undefined : urlsForLang[url];
+    if (!(typeof nameForURL === "undefined")) {
+        return makePivotURL("pivot-"+nameForURL, title);
+    }
+
     var adId = getPageAttribute("adid");
     var hasAdId = !(typeof adId === "undefined");
 
@@ -1722,4 +1784,6 @@ function writeSections() {
 
     endSection();
 
+
+    writeSectionsForApps();
 }
