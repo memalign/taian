@@ -27,7 +27,7 @@ function getPageAttribute(attr) {
 }
 
 function writeImageForLanguageAndPage(lang, page, i) {
-    document.write('<img src="'+lang+'/'+page+'/'+i+'.png"></img>');
+    document.write('<img src="'+lang+'/'+page+'/'+i+'.png" onerror="this.hidden=true;"></img>');
 }
 
 function writeApp() {
