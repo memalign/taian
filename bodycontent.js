@@ -114,6 +114,19 @@ function urlsToAppIds() {
     return perLang;
 }
 
+function imageURLForURL(url) {
+    var urlsForLang = urlsToAppIds()[getPageAttribute("l")];
+    var imageURL = urlsForLang[url];
+	
+    if (typeof imageURL === "undefined") {
+        imageURL = "JavaScript:''";
+    } else {
+        imageURL = "annotatedApps/index.html#l="+getPageAttribute("l")+"&p="+imageURL;
+    }
+	
+    return imageURL;
+}
+
 function showApplicationFrames(pivotName) {
     var urlsForLang = urlsToAppIds()[getPageAttribute("l")];
 
@@ -121,7 +134,7 @@ function showApplicationFrames(pivotName) {
         var rawName = urlsForLang[url];
         var name = "pivot-"+rawName;
         if (name == pivotName) {
-            var imgURL = "annotatedApps/index.html#l="+getPageAttribute("l")+"&p="+rawName;
+            var imgURL = imageURLForURL(url);
             document.getElementById(pivotName+"-img").src = imgURL;
             document.getElementById(pivotName+"-url").src = url;
         } else {
@@ -282,8 +295,12 @@ function endCell() {
         ');
 }
 
+function makeText(text) {
+    return '<p align="left">'+loc(text)+'</p>';
+}
+
 function writeText(text) {
-    document.write('<p>'+loc(text)+'</p>');
+    document.write(makeText(text));
 }
 
 function writeCellWithText(text) {
@@ -348,14 +365,33 @@ function makeRawURL(title, url) {
     return '<a href="'+url+'" bi:cpid="workHighlight">'+loc(title)+'</a>';
 }
 
-function makeURL(title, url) {
+function makeURLWithBuyStyle(title, url, buyStyle) {
     var urlsForLang = urlsToAppIds()[getPageAttribute("l")];
     var nameForURL = (typeof urlsForLang === "undefined") ? undefined : urlsForLang[url];
     if (!(typeof nameForURL === "undefined")) {
-        return makePivotURL("pivot-"+nameForURL, title);
+        //return makePivotURL("pivot-"+nameForURL, title);
+
+        var buyURL = makeRawURL(title, url);
+        if (buyStyle) {
+            buyURL = makeBuyStyle(buyURL);
+        }
+        return buyURL + makeRawURL(loc("Annotated Application"), imageURLForURL(url));
     }
 
-    return makeRawURL(title, url);
+    var outputURL = makeRawURL(title, url);
+    if (buyStyle) {
+        outputURL = makeBuyStyle(outputURL);
+    }
+    
+    return outputURL;
+}
+
+function makeURL(title, url) {
+    return makeURLWithBuyStyle(title, url, false);
+}
+
+function makeBuyURL(title, url) {
+    return makeURLWithBuyStyle(title, url, true);
 }
 
 function makeBuyStyle(text) {
@@ -436,7 +472,7 @@ function writeRowForUnitedHealthOne() {
                         ]),
 
                 "",
-                makeBuyStyle(makeURL("Quote/Purchase UnitedHealthOne Insurance® - You can get a quote without entering any personal information.", "https://www.uhone.com/quote/GetQuote.ashx?BrokerID=AA4324968&ArrangementID=01")),
+                makeBuyURL("Quote/Purchase UnitedHealthOne Insurance® - You can get a quote without entering any personal information.", "https://www.uhone.com/quote/GetQuote.ashx?BrokerID=AA4324968&ArrangementID=01"),
                 ]));
 
     writeText("");
@@ -504,7 +540,7 @@ function writeDontSeeWhatYouNeedRow() {
 
 function writePatriotTravelTable() {
     document.write(makeTable(2, [
-                "Plan", makeURL("Patriot Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+                "Plan", makeRawURL("Patriot Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                 "Plan Highlights",
                 makeBulletedListWithTitle("", [
@@ -541,8 +577,8 @@ function writePatriotTravelTable() {
                 "Patriot Travel Brochure", makeURL("Patriot Travel Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1801&a=80000699"),
                 "Group Patriot Travel Brochure", makeURL("Group Patriot Travel Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1802&a=80000699"),
 
-                "", makeBuyStyle(makeURL("Buy Patriot Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot?imgac=80000699")),
-                "", makeBuyStyle(makeURL("Buy Patriot Group Travel Insurance", "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699")),
+                "", makeBuyURL("Buy Patriot Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+                "", makeBuyURL("Buy Patriot Group Travel Insurance", "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
 
                 ]));
 }
@@ -1145,8 +1181,8 @@ function writeSections() {
             [
             // Column headers:
             "TaiAn International Students",
-            makeURL("Plan A (Student Health Advantage)", "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
-            makeURL("Plan B (Standard) (Patriot Exchange Program)", "https://purchase.imglobal.com/quote/patriot_exchange?IMGAC=80000699"),
+            makeRawURL("Plan A (Student Health Advantage)", "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+            makeRawURL("Plan B (Standard) (Patriot Exchange Program)", "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
 
             // Rest of the table:
             // Row 2
@@ -1191,8 +1227,8 @@ function writeSections() {
                     ]), 
 
             "", 
-            makeBuyStyle(makeURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")),
-            makeBuyStyle(makeURL(loc("Buy Plan B") + "<br />" + loc("Patriot Exchange Program - Standard"), "https://purchase.imglobal.com/quote/patriot_exchange?IMGAC=80000699")),
+            makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+            makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Patriot Exchange Program - Standard"), "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
 
             ])
             );
@@ -1222,7 +1258,7 @@ function writeSections() {
 
 
                 "Full Brochure", makeURL("Full Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1938&a=80000699"),
-                "", makeBuyStyle(makeURL("Buy Student Health Advantage", "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")),
+                "", makeBuyURL("Buy Student Health Advantage", "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
 
 
                 ]));
@@ -1253,8 +1289,8 @@ function writeSections() {
 
                 "Apply Now", 
                 makeBulletedListWithTitle("", [
-                        makeBuyStyle(makeURL("Buy Plan B (Patriot Exchange Program)", "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699")),
-                        makeBuyStyle(makeURL("Buy Plan B Group (Patriot Exchange Group)", "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699")),
+                        makeBuyURL("Buy Plan B (Patriot Exchange Program)", "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
+                        makeBuyURL("Buy Plan B Group (Patriot Exchange Group)", "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699"),
                         ]),
                ]));
 
@@ -1301,9 +1337,9 @@ function writeSections() {
             [
             // Column headers:
             "TaiAn Global Medical",
-            makeURL("Global Medical (Silver Plan) $250 deductible", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
-            makeURL("Global Medical (Gold Plan) $500 deductible", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
-            makeURL("Global Medical (Platinum Plan) $1000 deductible", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
+            makeRawURL("Global Medical (Silver Plan) $250 deductible", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
+            makeRawURL("Global Medical (Gold Plan) $500 deductible", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
+            makeRawURL("Global Medical (Platinum Plan) $1000 deductible", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
 
 
 		    "Individual Deductible", "$250, $500, $1,000, $2,500, $5,000, $10,000", "$250, $500, $1,000, $2,500, $5,000, $10,000", "$100, $250, $500, $1,000, $2,500, $5,000, $10,000",	
@@ -1371,9 +1407,9 @@ function writeSections() {
             "Brochure", makeURL("Complete Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1804&a=80000699"), makeURL("Complete Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1804&a=80000699"), makeURL("Complete Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1804&a=80000699"),
 
             "", 
-            makeBuyStyle(makeURL("Buy Global Medical (Silver Plan)", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699")),
-            makeBuyStyle(makeURL("Buy Global Medical (Gold Plan)", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699")),
-            makeBuyStyle(makeURL("Buy Global Medical (Platinum Plan)", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699")),
+            makeBuyURL("Buy Global Medical (Silver Plan)", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
+            makeBuyURL("Buy Global Medical (Gold Plan)", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
+            makeBuyURL("Buy Global Medical (Platinum Plan)", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
             ]));
     endRow();
 
@@ -1384,7 +1420,7 @@ function writeSections() {
 
     startRow();
     document.write(makeTable(2, [
-                "Plan", makeURL("Global Medical Insurance", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
+                "Plan", makeRawURL("Global Medical Insurance", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
 
                 "Plan Highlights", 
                 makeBulletedListWithTitle("", [
@@ -1428,7 +1464,7 @@ function writeSections() {
                         "Platinum is best for those wanting the best coverage or considering having a baby",
                         ]),
 
-                "", makeBuyStyle(makeURL("Buy Global Medical Insurance", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699")),
+                "", makeBuyURL("Buy Global Medical Insurance", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
                 ])
                 );
     endRow();
@@ -1475,8 +1511,8 @@ function writeSections() {
     writeText("Sample rates and benefits for Patriot Travel Medical Insurance:");
     document.write(makeTable(3, [
                 "Taian Travel Insurance",
-                makeURL("Patriot America For non-US citizens traveling internationally", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
-                makeURL("Patriot International For US citizens traveling outside  home country", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+                makeRawURL("Patriot America For non-US citizens traveling internationally", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+                makeRawURL("Patriot International For US citizens traveling outside  home country", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                 "Lifetime maximum", "$50,000, $100,000, $500,000, $1,000,000", "$50,000, $100,000, $500,000, $1,000,000", 
                 "Term", "5 days to 2 years", "5 days to 2 years", 
@@ -1548,8 +1584,8 @@ function writeSections() {
                     ]),
 
                 "",
-                makeBuyStyle(makeURL("Buy Patriot Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot?imgac=80000699")),
-                makeBuyStyle(makeURL("Buy Patriot Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot?imgac=80000699")),
+                makeBuyURL("Buy Patriot Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+                makeBuyURL("Buy Patriot Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                 ]));
     endRow();
@@ -1574,7 +1610,7 @@ function writeSections() {
     startRow();
     writeText("Patriot Platinum Travel Medical Insurance is a similar plan with more coverage (up to $8,000,000):");
     document.write(makeTable(2, [
-                "", makeURL("Patriot Platinum Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot_platinum?imgac=80000699"),
+                "", makeRawURL("Patriot Platinum Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot_platinum?imgac=80000699"),
 
                 "Changes from Patriot Travel Medical Insurance",
                 makeBulletedListWithTitle("", [
@@ -1599,7 +1635,7 @@ function writeSections() {
 
                 "Patriot Platinum Brochure", makeURL("Patriot Platinum Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1964&a=80000699"),
 
-                "", makeBuyStyle(makeURL("Buy Patriot Platinum Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot_platinum?imgac=80000699")),
+                "", makeBuyURL("Buy Patriot Platinum Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot_platinum?imgac=80000699"),
                 ]));
     endRow();
 
@@ -1611,7 +1647,7 @@ function writeSections() {
     startRow();
     writeText("Alternatively, consider Patriot T.R.I.P. Travel if you need a coverage for trip cancellation, travel and baggage delays, and emergency medical treatment.");
     document.write(makeTable(2, [
-                "", makeURL("Patriot T.R.I.P.® Travel", "https://www.imglobal.com/applications/pti/index.cfm?IMGAC=80000699&show=PTI"),
+                "", makeURL("Patriot T.R.I.P.® Travel", "https://www.imglobal.com/applications/pti/index.cfm?imgac=80000699&show=PTI"),
                 
                 "Plan Highlights",
                 makeBulletedListWithTitle("", [
@@ -1628,7 +1664,7 @@ function writeSections() {
                 "Sample Cost", "A 35 year old spends $5000 on a trip, insurance costs $200. A 25 year old spends $1500 on a trip, insurance costs $60.",
 
                 "Brochure", makeURL("Patriot Trip Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1871&a=80000699"),
-                "", makeBuyStyle(makeURL("Buy Patriot T.R.I.P.® Travel", "https://www.imglobal.com/applications/pti/index.cfm?IMGAC=80000699&show=PTI")),
+                "", makeBuyURL("Buy Patriot T.R.I.P.® Travel", "https://www.imglobal.com/applications/pti/index.cfm?imgac=80000699&show=PTI"),
                 ]));
 
     writeText("");
@@ -1636,18 +1672,18 @@ function writeSections() {
     document.write(makeTable(2, [
                 "Plan", "",
                 
-                makeURL("Patriot T.R.I.P.® Elite", "https://www.imglobal.com/applications/pte/index.cfm?IMGAC=80000699&show=PTEAI,PTEII"),
+                makeURL("Patriot T.R.I.P.® Elite", "https://www.imglobal.com/applications/pte/index.cfm?imgac=80000699&show=PTEAI,PTEII"),
                 makeBulletedListWithTitle("", [
                     "Offers more coverage than Patriot T.R.I.P. Travel Insurance.",
                     makeURL("Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1879&a=80000699"),
-                    makeBuyStyle(makeURL("Buy", "https://www.imglobal.com/applications/pte/index.cfm?IMGAC=80000699&show=PTEAI,PTEII")),
+                    makeBuyURL("Buy", "https://www.imglobal.com/applications/pte/index.cfm?imgac=80000699&show=PTEAI,PTEII"),
                     ]),
 
-                makeURL("Patriot T.R.I.P.® Student", "https://www.imglobal.com/applications/pts/index.cfm?IMGAC=80000699&show=PTS"),
+                makeURL("Patriot T.R.I.P.® Student", "https://www.imglobal.com/applications/pts/index.cfm?imgac=80000699&show=PTS"),
                 makeBulletedListWithTitle("", [
                     "Designed just for students and is more affordable than Patriot T.R.I.P. Travel Insurance.",
                     makeURL("Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1877&a=80000699"),
-                    makeBuyStyle(makeURL("Buy", "https://www.imglobal.com/applications/pts/index.cfm?IMGAC=80000699&show=PTS")),
+                    makeBuyURL("Buy", "https://www.imglobal.com/applications/pts/index.cfm?imgac=80000699&show=PTS"),
                     ]),
                 ]));
     endRow();
