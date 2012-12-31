@@ -32,6 +32,7 @@ l['Travel Insurance'] = "旅游和探亲保险";
 l['Indiana Residents'] = "印城居民保险";
 l['Texas Residents'] = "德州居民保险";
 l['Life Insurance'] = "人寿保险和养老金";
+l['Annotated Application'] = "填表指南";
 l['We are qualified insurance agents with over 20 years experience working with insurance companies.'] = "我们是有 20 多年经验的保险代理， 为您选择优质实惠的保险。";
 l['We have native English and Chinese speakers to answer all of your questions.'] = "根据您的需要, 用中文或英文为您解答问题。";
 l['Ask us about student coverage that meets your university insurance standards.'] = "请咨询我们有关留学生(访问学者)保险, 确保符合您所在大学的标准。";
