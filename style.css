@@ -7,11 +7,11 @@ caption,th,td{text-align:center;font-weight:normal;vertical-align:middle;padding
 .styledTable th{border: 1px solid #303030; background-color:#eee;font-size:1em}
 .styledTableHeader {background-color:#D6D6D6}
 .styledTableLeft {max-width: 200px; background-color:#D6D6D6}
-.invisibleTable table{border: 0; background-color:transparent;font-size:.833em}
-.invisibleTable td{border: 0; background-color:transparent;font-size:.833em}
-.invisibleTable th{border: 0; background-color:transparent;font-size:.833em}
-.invisibleTableHeader td{background-color:transparent}
-.invisibleTableLeft td{background-color:transparent}
+.invisibleTable table{table-layout:fixed;border-spacing:0px;border-collapse:collapse;border: 0;background-color:transparent;font-size:.833em}
+.invisibleTable td{border-spacing:0px;border: 0;padding:10px;background-color:transparent;font-size:.833em}
+.invisibleTable th{border: 0;background-color:transparent;font-size:.833em}
+.invisibleTableHeader td{border:0;background-color:transparent}
+.invisibleTableLeft td{border:0;background-color:transparent}
 .invisibleTableNormalText table{border: 0; background-color:transparent;}
 .invisibleTableNormalText td{border: 0; background-color:transparent; width:30%;padding:5px}
 .invisibleTableNormalText th{border: 0; background-color:transparent;}
@@ -441,20 +441,20 @@ input[type="submit"]{cursor:pointer;font-size:.9em}
 .pivot{clear:both}
 .pivot>.heading{display:-moz-inline-stack;display:inline-block;zoom:1;*display:inline;margin-right:.4em;margin-bottom:.25em}
 
-.pivot-switch,.pivot-switch:link{display:-moz-inline-stack;display:inline-block;zoom:1;*display:inline;position:relative;bottom:.25em;padding:0em .7em;border:1px solid transparent;margin:0 0 .7em .7em;text-decoration:none;font-size:.8em;color:#1570a6}
+.pivot-switch,.pivot-switch:link{display:-moz-inline-stack;display:inline-block;zoom:1;*display:inline;position:relative;bottom:0;padding:0 0;border:1px solid transparent;margin:0 0 0 0;text-decoration:none;font-size:.8em;color:#1570a6}
 .pivot-switch:hover{color:#083047;text-decoration:underline}
 .no-js .pivot-switch,.lt-ie7 .pivot-switch{display:none}
 @media screen and (min-width:540px){.pivot>.heading{font-size:2em;margin-bottom:.7em}
-.pivot-switch{margin:0 0 .7em .25em;padding:.2em .7em}
+.pivot-switch{margin:0 0 0 0;padding:0 0}
 }
-@media screen and (min-width:680px){.pivot-switch{font-size:.9em;margin:0 0 .7em .75em;padding:.2em .7em}
+@media screen and (min-width:680px){.pivot-switch{font-size:.9em;margin:0 0 0 0;padding:0 0}
 }
 @media screen and (min-width:900px){.pivot>.heading{margin-bottom:.5em;font-size:2.375em}
 .ja-jp .pivot>.heading{font-size:1.8em}
-.pivot-switch{font-size:1em;margin:0 0 2.5%}
+.pivot-switch{font-size:1em;margin:0 0 0}
 }
 .lt-ie9 .pivot>.heading{margin-bottom:.75em;font-size:2.375em}
-.lt-ie8 .pivot-switch{bottom:1.2em}
+.lt-ie8 .pivot-switch{bottom:0em}
 .no-js.lt-ie7 .pivot img{height:inherit!important}
 .features{clear:both}
 .features p{font-size:.9em;margin-bottom:0}
