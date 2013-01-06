@@ -14,7 +14,7 @@ function getPartnership(partner) {
                     contactInfo: ["Call: +1 (317) 318-8258 (Chinese)",
                                   "Call: +1 (317) 318-8259 (English)",
                                   "WeChat ID:  wxid_taian_usa",
-                                  "Skype:  chris.lee136",
+                                  "Skype: chris.lee136",
                                   "Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>",
                                  ],
                },
