@@ -74,6 +74,8 @@ l['Designed specifically for international students (F1,F2,J1,J2). Renewable up 
 l['Designed specifically for international students (F1,F2,J1,J2). Renewable up to 4 years if 3 months or more are purchased. No limitation for how long you have been in the US.'] = "计划专为F1，F2和J1，J2而设计。如果购买3个月以上可以续保至4年。不受来美时间长短的限制。";
 l['Maximum Limit'] = "最高赔付";
 l['$500,000 lifetime maximum, $300,000 per illness/injury'] = "$500,000 最高赔付， $300,000/疾病或受伤";
+l['$50,000 per illness/injury'] = "$50,000/疾病或受伤";
+l['$250,000 per illness/injury'] = "$250,000/疾病或受伤";
 l['$5,000,000 lifetime. Options $50,000, $250,000 or $500,000 per illness/injury'] = "$5,000,000 最高赔付。 可选$50,000, $250,000 or $500,000/疾病或受伤";
 l['Deductible'] = "免赔额";
 l['$100 per illness/injury, $5 co-pay per visit in Student Health Center.'] = "$100/疾病或受伤, $5 co-pay 就诊学生医疗中心 ";
