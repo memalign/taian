@@ -564,11 +564,16 @@ function writeTabs() {
 function writeDontSeeWhatYouNeedRow() {
     startRow();
     writeText("");
-    document.write(makeBulletedListWithTitle("Don't see what you need?", [
-                makeURL("Explore other choices on your own.", "https://producer.imglobal.com/international-insurance-plans.aspx?imgac=80000699"),
-                makeURL("Email us: chris@taianfinancial.com", "mailto:chris@taianfinancial.com"),
-                "Call us at 317-318-8258 (Chinese)",
-                "Call us at 317-318-8259 (English)",
+
+    var bullets = [
+        makeURL("Explore other choices on your own.", "https://producer.imglobal.com/international-insurance-plans.aspx?imgac=80000699"),
+    ];
+
+    var partnerShip = getPartnership(getPageAttribute("partner"));
+    var contactInfo = partnerShip["contactInfo"];
+
+    bullets = bullets.concat(contactInfo);
+    bullets = bullets.concat([
                 "We have plans to meet many diverse needs:",
                 "Adventure Travel",
                 "Multi trip travel medical insurance",
@@ -577,7 +582,9 @@ function writeDontSeeWhatYouNeedRow() {
                 "Coverage for professionals living outside their home country",
                 "Travel insurance plans for groups traveling together",
                 "More – Just ask!",
-                ]));
+                ]);
+
+    document.write(makeBulletedListWithTitle("Don't see what you need?", bullets));
     endRow();
 }
 

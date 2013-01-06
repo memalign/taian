@@ -22,6 +22,7 @@ function langTag() {
 
 var l = {};
 l['TaiAn Financial'] = "泰安国际医疗保险";
+l['WeChat ID: wxid_taian_usa'] = "微信ID: wxid_taian_usa";
 l['URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization'] = "受伤急诊 URC, 急诊住院 URC, 急诊门诊 附加$250免赔额";
 l['Home'] = "首页";
 l['More details on Global medical:'] = "全球医疗保险的更多信息";
