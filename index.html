@@ -23,7 +23,8 @@ TaiAn Financial	Health Insurance
 <script type="text/javascript" src="jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="jquery.ba-hashchange.js"></script>
 <script type="text/javascript" src="localization.js"></script>
-<script language="javascript" src="bodycontent.js"></script>
+<script type="text/javascript" src="partners.js"></script>
+<script type="text/javascript" src="bodycontent.js"></script>
 </head>
 <body class="home">
 
@@ -35,9 +36,8 @@ TaiAn Financial	Health Insurance
         </div>
         <h1>
             <div class="logo-container">
-                <img src="longevity.gif" width="30" height="30" alt="TaiAn Financial" />&nbsp;
                 <script type="text/javascript">
-                document.write(loc("TaiAn Financial"));
+                writeLogoAndTitle();
                 </script>
             </div>
         </h1>
@@ -67,17 +67,9 @@ TaiAn Financial	Health Insurance
                 <img src="partner-banner.png"></img>
             </div>
             <div class="grid-unit col-3 inline-list" bi:type="legal">
-                <ul>
-                    <li>Call: +1 (317) 318-8258 (Chinese)
-                    </li>
-                    <li>Call: +1 (317) 318-8259 (English)
-                    </li>
-                    <li>Email: <a href="mailto:chris@taianfinancial.com">chris@taianfinancial.com</a>
-                    </li>
-                    <li id="mscom-legal-copyright">
-                    2012 TaiAn Financial LLC. All rights reserved.
-                    </li>
-                </ul>
+                <script type="text/javascript">
+                writeContactInfo();
+                </script>
             </div>
         </div>
     </div>

@@ -50,6 +50,16 @@ function updateHash(keyToUpdate, newValue) {
     window.scrollTo(0, 0);
 }
 
+function getAdId() {
+    var partnership = getPageAttribute("partner");
+    var hasPartnership = !(typeof partnership === "undefined");
+    if (hasPartnership)
+        return partnership;
+
+    var adId = getPageAttribute("adid");
+    return adId;
+}
+
 function analyticsTrackEvent(action, label, value, nonInteraction) {
     if (_gaq) {
         if (typeof value === "undefined" || isNaN(parseInt(value))) {
@@ -61,7 +71,7 @@ function analyticsTrackEvent(action, label, value, nonInteraction) {
 }
 
 function analyticsTrackAdView(pageName) {
-    var adId = getPageAttribute("adid");
+    var adId = getAdId();
     if (typeof adId === "undefined") {
         // No tracking to be done
     } else {
@@ -356,7 +366,7 @@ function makeTable(numColumns, cells) {
 }
 
 function makeRawURL(title, url) {
-    var adId = getPageAttribute("adid");
+    var adId = getAdId();
     var hasAdId = !(typeof adId === "undefined");
 
     if (url.indexOf(".imglobal.com") >= 0 && hasAdId) {
@@ -500,8 +510,41 @@ function writeRowForUnitedHealthOne() {
 
 }
 
+function writeLogoAndTitle() {
+    var partnerShip = getPartnership(getPageAttribute("partner"));
+
+    var windowTitle = partnerShip["windowTitle"];
+    var logoImage = partnerShip["logoImage"];
+    var logoHeight = partnerShip["logoHeight"];
+    var logoWidth = partnerShip["logoWidth"];
+    var pageTitle = partnerShip["pageTitle"];
+
+    document.title = loc(windowTitle);
+    document.write('<img src="'+logoImage+'" width="'+logoWidth+'" height="'+logoHeight+'" alt="'+loc(pageTitle)+'" />&nbsp;');
+    document.write(loc(pageTitle));
+}
+
 function writeHeaderNote() {
     document.write("<br />" + loc("Great new look - same TaiAn Financial"));
+}
+
+function writeContactInfo() {
+    var partnerShip = getPartnership(getPageAttribute("partner"));
+    var contactInfo = partnerShip["contactInfo"];
+
+    document.write("<ul>");
+
+    for (var i = 0; i < contactInfo.length; ++i) {
+        document.write("<li>");
+        document.write(loc(contactInfo[i]));
+        document.write("</li>");
+    }
+
+    document.write("<li id=\"mscom-legal-copyright\">");
+    document.write(loc("2012 TaiAn Financial LLC. All rights reserved."));
+    document.write("</li>");
+
+    document.write("</ul>");
 }
 
 function writeTabs() {
