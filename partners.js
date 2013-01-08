@@ -17,6 +17,15 @@ function getPartnership(partner) {
                                   "Skype: chris.lee136",
                                   "Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>",
                                  ],
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-indiana-residents",
+                            "pivot-texas-residents",
+                            "pivot-life-insurance",
+                          ],
                },
 
         using: {
@@ -29,6 +38,12 @@ function getPartnership(partner) {
                                   "传真: 626-254-0286",
                                   "Email: <a href=\"mailto:ushres123@gmail.com\">ushres123@gmail.com</a>",
                                  ],
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                          ],
               },
 
     };

@@ -320,7 +320,7 @@ function writeCellWithText(text) {
 }
 
 function makeImage(filename) {
-    return '<img src="'+filename+'"></img>';
+    return '<img src="'+filename+'" width="100%"></img>';
 }
 
 function writeImage(filename) {
@@ -548,16 +548,23 @@ function writeContactInfo() {
 }
 
 function writeTabs() {
-    var topLevelLinks = [
-        makeTopLevelURL("pivot-home", "Home"),
-        makeTopLevelURL("pivot-international-student", "International Student"),
-        makeTopLevelURL("pivot-global-medical", "Global Medical"),
-        makeTopLevelURL("pivot-travel-insurance", "Travel Insurance"),
-        makeTopLevelURL("pivot-indiana-residents", "Indiana Residents"),
-        makeTopLevelURL("pivot-texas-residents", "Texas Residents"),
-        makeTopLevelURL("pivot-life-insurance", "Life Insurance"),
-    ];
-               
+    var topLevelNames = { "pivot-home": "Home",
+                          "pivot-international-student": "International Student",
+                          "pivot-global-medical": "Global Medical",
+                          "pivot-travel-insurance": "Travel Insurance",
+                          "pivot-indiana-residents": "Indiana Residents",
+                          "pivot-texas-residents": "Texas Residents",
+                          "pivot-life-insurance": "Life Insurance",
+    };
+
+    var partnership = getPartnership(getPageAttribute("partner"));
+    var tabs = partnership["tabs"];
+
+    var topLevelLinks = [];
+
+    for (var i = 0; i < tabs.length; ++i) {
+        topLevelLinks.push(makeTopLevelURL(tabs[i], topLevelNames[tabs[i]]));
+    }
     document.write(makeTableWithStyle("invisibleTable", topLevelLinks.length, topLevelLinks));
 }
 
