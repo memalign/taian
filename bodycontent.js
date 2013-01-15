@@ -1317,8 +1317,9 @@ function writeSections() {
                         "Local Ambulance: Per injury up to $350, Per illness only if admitted in-patient up to $350",
                         "Dental: Injury due to covered accident $500; Sudden & unexpected pain $350",
                         "Intercollegiate/Interscholastic/intramural or club sports: $5,000 per injury/illness medical expenses only",
-                        "incidental home country coverage: up to cumulative two weeks",
+                        "Incidental home country coverage: up to cumulative two weeks",
                         "Terrorism coverage: up to 50,000 lifetime maximum",
+                        "Dependents can only purchase when the student purchases",
                         ]),
 
 

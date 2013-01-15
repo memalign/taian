@@ -23,6 +23,7 @@ function langTag() {
 var l = {};
 l['TaiAn Financial'] = "泰安国际医疗保险";
 l['WeChat ID: wxid_taian_usa'] = "微信ID: wxid_taian_usa";
+l['Dependents can only purchase when the student purchases'] = "F2/J2 不能单独购买，只能与F1/J1一起购买。";
 l['URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization'] = "受伤急诊 URC, 急诊住院 URC, 急诊门诊 附加$250免赔额";
 l['Home'] = "首页";
 l['More details on Global medical:'] = "全球医疗保险的更多信息";
@@ -178,7 +179,7 @@ l['Physical Therapy: URC -limit once per day'] = "理疗： URC - 限于1次/天
 l['Local Ambulance: Per injury up to $350, Per illness only if admitted in-patient up to $350'] = "救护车： $350/受伤； 入院急诊救护车每次最高$350";
 l['Dental: Injury due to covered accident $500; Sudden & unexpected pain $350'] = "意外牙科： 受伤$500; 突痛$350";
 l['Intercollegiate/Interscholastic/intramural or club sports: $5,000 per injury/illness medical expenses only'] = "校际/校内/运动俱乐部： $5,000医疗费用/受伤或疾病";
-l['incidental home country coverage: up to cumulative two weeks'] = "回国： 保险2个星期";
+l['Incidental home country coverage: up to cumulative two weeks'] = "回国： 保险2个星期";
 l['Terrorism coverage: up to 50,000 lifetime maximum'] = "恐怖伤害： 最高$50,000 ";
 l['Dependent Child'] = "未成年子女";
 l['Buy Student Health Advantage'] = "购买计划 A (Student Health Advantage)";
