@@ -22,6 +22,7 @@ function getPartnership(partner) {
                             "pivot-international-student",
                             "pivot-global-medical",
                             "pivot-travel-insurance",
+                            "pivot-partnerships",
                             "pivot-indiana-residents",
                             "pivot-texas-residents",
                             "pivot-life-insurance",

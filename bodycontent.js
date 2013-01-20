@@ -420,7 +420,7 @@ function makeBulletedListWithTitle(title, list) {
     return listCode;
 }
 
-function writeLinesWithTitle(title, lines) {
+function makeLinesWithTitle(title, lines) {
     var code = "";
 
     code += makeBold(title);
@@ -428,7 +428,11 @@ function writeLinesWithTitle(title, lines) {
         code += "<br />" + loc(lines[i]);
     }
     
-    document.write(code);
+    return code;
+}
+
+function writeLinesWithTitle(title, lines) {
+    document.write(makeLinesWithTitle(title, lines));
 }
 
 function writeRowForUnitedHealthOne() {
@@ -555,6 +559,7 @@ function writeTabs() {
                           "pivot-indiana-residents": "Indiana Residents",
                           "pivot-texas-residents": "Texas Residents",
                           "pivot-life-insurance": "Life Insurance",
+                          "pivot-partnerships": "Partnerships",
     };
 
     var partnership = getPartnership(getPageAttribute("partner"));
@@ -568,6 +573,12 @@ function writeTabs() {
     document.write(makeTableWithStyle("invisibleTable", topLevelLinks.length, topLevelLinks));
 }
 
+function getContactInfo() {
+    var partnerShip = getPartnership(getPageAttribute("partner"));
+    var contactInfo = partnerShip["contactInfo"];
+    return contactInfo;
+}
+
 function writeDontSeeWhatYouNeedRow() {
     startRow();
     writeText("");
@@ -576,10 +587,7 @@ function writeDontSeeWhatYouNeedRow() {
         makeURL("Explore other choices on your own.", "https://producer.imglobal.com/international-insurance-plans.aspx?imgac=80000699"),
     ];
 
-    var partnerShip = getPartnership(getPageAttribute("partner"));
-    var contactInfo = partnerShip["contactInfo"];
-
-    bullets = bullets.concat(contactInfo);
+    bullets = bullets.concat(getContactInfo());
     bullets = bullets.concat([
                 "We have plans to meet many diverse needs:",
                 "Adventure Travel",
@@ -1891,5 +1899,58 @@ function writeSections() {
     endSection();
 
 
+    // Partnerships
+    startSection("pivot-partnerships", "Partnerships");
+    startRow();
+    writeText("<h2>" + loc("Who should consider collaborating with TaiAn Financial?") + "</h2>");
+    endRow();
+
+    startRow();
+    startCell();
+    writeLinesWithTitle("Travel Agents", [
+            "Pairing travel services with travel and health insurance can be mutually beneficial.",
+            ]);
+    endCell();
+
+    startCell();
+    writeLinesWithTitle("Students", [
+            "Help your peers find the insurance they need as they travel abroad for university or vacation.",
+            ]);
+    endCell();
+
+    startCell();
+    writeLinesWithTitle("Anyone with International Ties", [
+            "Bring an understanding of travel and health insurance to your own international community.",
+            ]);
+    endCell();
+
+    endRow();
+
+    startRow();
+    writeText("<br />");
+    document.write(makeBulletedListWithTitle("What's involved in a partnership?", [
+                "We work closely with our partners to design a custom solution that is mutually beneficial.",
+                "Collaborating can be as simple as providing you with a way to easily refer potential customers.",
+                "In more complex partnerships, we can work together to provide the best solution using the technologies at our disposal.",
+                ]));
+    endRow();
+
+    startRow();
+    document.write(makeBulletedListWithTitle("Why work with TaiAn Financial?", [
+                "We are qualified insurance agents with over 20 years experience working with insurance companies.",
+                "We have native English and Chinese professionals who create a unique advantage enabling us to help Chinese visitors to the United States and American visitors to China.",
+                "We are available for your customers and friends before and after they purchase the insurance they need.",
+                "We work with only the most financially secure insurers with top quality ratings from A.M. Best and Standard and Poor's.",
+                "We are accustomed to working with people in the United States and China via email, phone, WeChat, and Skype.",
+                "Our website is accessible around the world, including mainland China.",
+                ]));
+    endRow();
+
+    startRow();
+    document.write(makeBulletedListWithTitle("Want to know more? Contact us:", getContactInfo()));
+    endRow();
+
+    endSection();
+    
     writeSectionsForApps();
 }
