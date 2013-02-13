@@ -31,12 +31,7 @@ function getPageAttribute(attr) {
     return map[attr];
 }
 
-function updateHash(keyToUpdate, newValue) {
-    var map = getPageAttributes();
-
-    if (keyToUpdate && keyToUpdate.length > 0)
-        map[keyToUpdate] = newValue;
-
+function getHashForMap(map) {
     var newHash = "#";
     var delim = "";
     for (var key in map) {
@@ -46,7 +41,16 @@ function updateHash(keyToUpdate, newValue) {
         }
     }
 
-    document.location.hash = newHash;
+    return newHash;
+}
+
+function updateHash(keyToUpdate, newValue) {
+    var map = getPageAttributes();
+
+    if (keyToUpdate && keyToUpdate.length > 0)
+        map[keyToUpdate] = newValue;
+
+    document.location.hash = getHashForMap(map);
     window.scrollTo(0, 0);
 }
 
@@ -1970,6 +1974,48 @@ function writeSections() {
     endRow();
 
     endSection();
-    
+
+
+    startSection("test-form-success", "Test Form Success!");
+    startRow();
+    writeText("yay it worked!");
+    endRow();
+    endSection();
+
+
+    startSection("test-form", "Test Form");
+    startRow();
+    startForm("form-name", "post.php", "test-form-success");
+    document.write(makeTableWithStyle("formTable", 2, [
+                    "Input label", makeFormTextInput("inputName"),
+                    "Input label2", makeFormTextInput("inputName2"),
+                ]));
+    endForm();
+    endRow();
+
+    endSection();
+
     writeSectionsForApps();
 }
+
+function makeFormTextInput(name) {
+    return "<input type='text' name='"+name+"' style='width:100%'/><br />";
+}
+
+function startForm(name, target, successPage) {
+    //document.write("<form name='"+name+"' action='"+target+"' method='post'>");
+    document.write("<form name='"+name+"' action='http://taianfinancial.com/post.php' method='post'>");
+
+    var map = getPageAttributes();
+    map["p"] = successPage;
+    var hash = getHashForMap(map);
+    document.write("<input type='hidden' name='formName' value='"+name+"' />");
+    document.write("<input type='hidden' name='successPage' value='/"+hash+"' />");
+}
+
+function endForm() {
+    document.write('<center><input type="submit" value="'+loc("Submit")+'"></center>');
+    document.write("</form>")
+}
+
+

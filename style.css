@@ -15,6 +15,9 @@ caption,th,td{text-align:center;font-weight:normal;vertical-align:middle;padding
 .invisibleTableNormalText table{border: 0; background-color:transparent;}
 .invisibleTableNormalText td{border: 0; background-color:transparent; width:30%;padding:5px}
 .invisibleTableNormalText th{border: 0; background-color:transparent;}
+.formTable table{border: 0; background-color:transparent;}
+.formTable td{border: 1; background-color:transparent; width:50%; padding:5px}
+.formTable th{border: 0; background-color:transparent; width:50%}
 .uglyBuyStyle a{color:red; text-decoration:underline; font-size:.7em}
 .uglyBuyStyle a:hover{color:#580000; text-decoration:underline}
 .uglyBuyStyle a:focus{color:#580000; text-decoration:underline}
