@@ -332,10 +332,12 @@ function writeImage(filename) {
 }
 
 function makeTableWithStyle(styleClass, numColumns, cells) {
+    var mergedCells = [];
+    mergedCells = mergedCells.concat.apply(mergedCells, cells); // Flatten the array
     var tableCode = "";
     tableCode += '<div bi:type="highlight">';
     tableCode += '<table class="'+styleClass+'">';
-    for (var i = 0; i < cells.length; ++i) {
+    for (var i = 0; i < mergedCells.length; ++i) {
         var isHeader = (i / numColumns) < 1;
         var isLeftCol = (i % numColumns) == 0;
 
@@ -356,7 +358,7 @@ function makeTableWithStyle(styleClass, numColumns, cells) {
         }
 
         tableCode += '<td class="' + style + '">';
-        tableCode += loc(cells[i]);
+        tableCode += loc(mergedCells[i]);
         tableCode += '</td>';
     }
     tableCode += '</tr>';
@@ -1917,14 +1919,14 @@ function writeSections() {
     endCell();
 
     startCell();
-    writeLinesWithTitle("Students", [
-            "Help your peers find the insurance they need as they travel abroad for university or vacation.",
+    writeLinesWithTitle("Schools", [
+            "If your school is sending students or teachers abroad, or has students or teachers visting we would make a good partner.",
             ]);
     endCell();
 
     startCell();
-    writeLinesWithTitle("Anyone with International Ties", [
-            "Bring an understanding of travel and health insurance to your own international community.",
+    writeLinesWithTitle("Organizations", [
+            "We work with representatives of International organizations, student or scholar organizations, and travel clubs to help your membership with their travel insurance needs.",
             ]);
     endCell();
 
@@ -1942,11 +1944,17 @@ function writeSections() {
     endCell();
 
     startCell();
-    writeLinesWithTitle("Schools", [
-            "If your school is sending students or teachers abroad,  or has students or teachers visting we would make a good partner.",
+    writeLinesWithTitle("Students", [
+            "Help your peers find the insurance they need as they travel abroad for university or vacation.",
             ]);
     endCell();
 
+    startCell();
+    writeLinesWithTitle("Anyone with International Ties", [
+            "Bring an understanding of travel and health insurance to your own international community.",
+            ]);
+    endCell();
+    
     endRow();
 
     startRow();
@@ -1976,19 +1984,159 @@ function writeSections() {
     endSection();
 
 
-    startSection("test-form-success", "Test Form Success!");
+    startSection("global-form-success", "Global Information Submitted");
     startRow();
     writeText("yay it worked!");
     endRow();
     endSection();
 
 
-    startSection("test-form", "Test Form");
+    startSection("global-form", "Global Application");
     startRow();
-    startForm("form-name", "post.php", "test-form-success");
+    startForm("Global Application Information", "post.php", "global-form-success");
     document.write(makeTableWithStyle("formTable", 2, [
-                    "Input label", makeFormTextInput("inputName"),
-                    "Input label2", makeFormTextInput("inputName2"),
+                makeFormTextInput("Number of Dependent Children Age 9 years or below"),
+                makeFormTextInput("Number of Dependent Children Ages 10 to 18"),
+                makeFormTextInput("Silver/Gold/Platinum"),
+                makeFormTextInput("Deductible ($100, $250, $500, $1000, $2500, $5000, $10,000)"),
+                makeFormTextInput("Primary Insured-First Name"),
+                makeFormTextInput("Primary Insured-Last Name"),
+                makeFormTextInput("Primary Insured-Gender"),
+                makeFormTextInput("Primary Insured-Date of Birth"),
+                makeFormTextInput("Primary Insured-Height"),
+                makeFormTextInput("Primary Insured-Inches or centimeters"),
+                makeFormTextInput("Primary Insured-Weight"),
+                makeFormTextInput("Primary Insured-Kilograms or Pounds"),
+                makeFormTextInput("Primary Insured-Occupation (ok to leave blank)"),
+                makeFormTextInput("Primary Insured-Government Issued ID Number"),
+                makeFormTextInput("Primary Insured-Country of Citizenship"),
+                makeFormTextInput("Primary Insured-If US Citizen Date you did or will depart US"),
+                makeFormTextInput("Primary Insured-Is your expected length of residence outside the U.S. at least 6 of the next 12 months? "),
+                makeFormTextInput("Spouse-First Name"),
+                makeFormTextInput("Spouse-Last Name"),
+                makeFormTextInput("Spouse-Gender"),
+                makeFormTextInput("Spouse-Date of Birth"),
+                makeFormTextInput("Spouse-Height"),
+                makeFormTextInput("Spouse-Inches or centimeters"),
+                makeFormTextInput("Spouse-Weight"),
+                makeFormTextInput("Spouse-Kilograms or Pounds"),
+                makeFormTextInput("Spouse-Occupation (ok to leave blank)"),
+                makeFormTextInput("Spouse-Government Issued ID Number"),
+                makeFormTextInput("Spouse-Country of Citizenship"),
+                makeFormTextInput("Spouse-If US Citizen Date you did or will depart US"),
+                makeFormTextInput("Spouse-Is your expected length of residence outside the U.S. at least 6 of the next 12 months? "),
+                makeFormTextInput("Child 1-First Name"),
+                makeFormTextInput("Child 1-Last Name"),
+                makeFormTextInput("Child 1-Gender"),
+                makeFormTextInput("Child 1-Date of Birth"),
+                makeFormTextInput("Child 1-Height"),
+                makeFormTextInput("Child 1-Inches or centimeters"),
+                makeFormTextInput("Child 1-Weight"),
+                makeFormTextInput("Child 1-Kilograms or Pounds"),
+                makeFormTextInput("Child 1-Occupation (ok to leave blank)"),
+                makeFormTextInput("Child 1-Government Issued ID Number"),
+                makeFormTextInput("Child 1-Country of Citizenship"),
+                makeFormTextInput("Child 1-If US Citizen Date you did or will depart US"),
+                makeFormTextInput("Child 1-Is your expected length of residence outside the U.S. at least 6 of the next 12 months? "),
+                makeFormTextInput("Child 2-First Name"),
+                makeFormTextInput("Child 2-Last Name"),
+                makeFormTextInput("Child 2-Gender"),
+                makeFormTextInput("Child 2-Date of Birth"),
+                makeFormTextInput("Child 2-Height"),
+                makeFormTextInput("Child 2-Inches or centimeters"),
+                makeFormTextInput("Child 2-Weight"),
+                makeFormTextInput("Child 2-Kilograms or Pounds"),
+                makeFormTextInput("Child 2-Occupation (ok to leave blank)"),
+                makeFormTextInput("Child 2-Government Issued ID Number"),
+                makeFormTextInput("Child 2-Country of Citizenship"),
+                makeFormTextInput("Child 2-If US Citizen Date you did or will depart US"),
+                makeFormTextInput("Child 2-Is your expected length of residence outside the U.S. at least 6 of the next 12 months? "),
+                makeFormTextInput("Requested Coverage Effective Date"),
+                makeFormTextInput("Residence Address  (Best to use Chinese address)"),
+                makeFormTextInput("City"),
+                makeFormTextInput("County/Region"),
+                makeFormTextInput("State/Province (US or Canada only)"),
+                makeFormTextInput("Zip Code"),
+                makeFormTextInput("Country"),
+                makeFormTextInput("Telephone"),
+                makeFormTextInput("Email Address"),
+                makeFormTextInput("Forwarding Address  (Best to use US address)"),
+                makeFormTextInput("City"),
+                makeFormTextInput("County/Region"),
+                makeFormTextInput("State/Province (US or Canada only)"),
+                makeFormTextInput("Zip Code"),
+                makeFormTextInput("Country"),
+                makeFormTextInput("Telephone"),
+                makeFormTextInput("Email Address"),
+                makeFormTextInput("Are you or any other applicant currently disabled or unable to perform normal activities?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"),
+                makeFormTextInput("Are you or any other applicant presently hospitalized, or scheduled for or in need of hospitalization or surgery?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"),
+                makeFormTextInput("Have you or any other applicant ever tested positive for, been diagnosed with, or been treated for Acquired Immune Deficiency Syndrome (AIDS), AIDS Related Complex (ARC), Lymphadenopathy Syndrome, Human Immunodeficiency Virus (HIV) or any other Immune System Disorder?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"),
+                makeFormTextInput("Have you or any other applicant ever had, been recommended to have, or are you currently on a waiting list for any organ transplant (other than corneal)?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"),
+                makeFormTextInput("Do you participate in professional sports?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"),
+                makeFormTextInput("Have you or any other applicant been diagnosed with or treated for any type of cancer or pre-cancerous condition during the past five (5) years?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"),
+                makeFormTextInput("If a non-U.S. citizen, do you or any other applicant have a U.S. visa or green card?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"),
+
+                makeFormTextInput("If a non-U.S. citizen, have you or any other applicant resided continuously in the U.S. for the last five (5) years?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"),
+                makeFormTextInput("Are you or any other applicant currently pregnant?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"),
+                makeFormTextInput("Heart, cardiac, cardiovascular and/or circulatory, including, but not limited to: congestive heart failure, heart attack, angina, chest pain, arteriosclerosis, atherosclerosis, elevated blood pressure, hypertension, swelling of feet/ankles, thrombosis, phlebitis, rheumatic fever, or heart murmur?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"),
+                makeFormTextInput("Blood, blood vessels, spleen, arteries, veins or disorders of the blood, including, but not limited to: anemia, hemophilia, leukemia, hepatitis, lymph glands, or high cholesterol?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"),
+                makeFormTextInput("Diabetes, hyperglycemia or hypoglycemia?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"),
+                makeFormTextInput("Asthma or allergies?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"),
+                makeFormTextInput("Cancer, tumor, cyst, polyp, melanoma, Kaposi's sarcoma, cell disorder, shingles, lump, calcification, or growth of any kind?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"), 
+                makeFormTextInput("Liver, Pancreas, Gall Bladder or endocrine disorders including, but not limited to: pituitary, thyroid or metabolic disorders, or obesity?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"), 
+                makeFormTextInput("Kidney, urinary tract functions, kidney or bladder stones or infections?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"), 
+                makeFormTextInput("Respiratory system including, but not limited to: tuberculosis, lung disorders, emphysema, chronic cough, bronchitis, bronchial asthma, pleurisy pneumonia?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"), 
+                makeFormTextInput("Mental and nervous system disorders including, but not limited to: psychosis, mental or behavioral disorders, ADD or ADHD, chemical or drug abuse or dependency, alcoholism, psychiatric counseling and/or support groups, depression, anxiety, chronic fatigue, or eating or sleeping disorders?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"), 
+                makeFormTextInput("Neurological disorders, including but not limited to: multiple sclerosis (MS), muscular dystrophy, Lou Gehrig's disease (ALS), Parkinson's disease, paralysis, epilepsy, convulsions, seizures, migraines, chronic headaches, stroke, or transient cerebral ischemic attacks?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"), 
+                makeFormTextInput("Muscular, skeletal, spine, bone, or joint, including but not limited to: scoliosis, disc disease or disorder, vertebrae, degeneration, or any other back or neck condition, rheumatism, arthritis, gout, tendonitis, osteoporosis or inflammation?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"), 
+                makeFormTextInput("For female applicants, miscarriage, complicated pregnancy or delivery, or infertility consultation, advice, diagnosis or treatment, and disorders of the reproductive systems, including but not limited to: vaginal bleeding, fibroids, nodules or breast cysts, fallopian tubes, ovaries or uterus, and hormone replacement therapy?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"), 
+                makeFormTextInput("For male applicants, disorders of the reproductive systems, including but not limited to: prostate or elevated PSA level, or erectile dysfunction?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"), 
+                makeFormTextInput("Congenital, genetic, hereditary or other birth condition or defect including, but not limited to: mental retardation, Down Syndrome, or other chromosome disorder, physical disorder, deformity or defect?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"), 
+                makeFormTextInput("Digestive system, stomach, or intestines, including, but not limited to: esophageal regurgitation, gastritis, ulcers, colon, or rectum disorders?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"), 
+                makeFormTextInput("Eyes, ears, nose, mouth, throat or jaw, including, but not limited to: cataracts, glaucoma, nasal septum deviation, chronic sinusitis, or TMJ?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"), 
+                makeFormTextInput("Any other disease, medical problem, illness, injury or condition of any kind not listed?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"), 
+                makeFormTextInput("Do you or any family member applying for coverage currently use or during the past five years have you used tobacco in any form?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"), 
+                makeFormTextInput("Have you or any family member applying for coverage ever applied or purchased insurance through IMG?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"), 
+                makeFormTextInput("During the last twelve (12) months, have you or any family member applying for coverage experienced manifestation or symptoms of, been diagnosed with, or received any consultation, examination, testing or treatment (including medications) for, any medical, health, mental, physical or nervous condition?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"), 
+                makeFormTextInput("Have you or any family member applying for coverage ever been rejected, cancelled, rated or declined for coverage under any health, life or disability insurance policy?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"), 
+                makeFormTextInput("During the last twelve (12) months, have you or any family member applying for coverage been covered under any health or medical insurance plan, including a government sponsored health care plan? If yes, please state the name and location of the insurance company, the policy/plan number, and the applicable dates of coverage.(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"), 
+                makeFormTextInput("Please provide details on any yes answer including doctor name and address, date last seen, details of the condition"), 
+                makeFormTextInput("Primary Insured Family doctor Name"), 
+                makeFormTextInput("Primary Insured Family doctor Address"), 
+                makeFormTextInput("Primary Insured Family doctor City"), 
+                makeFormTextInput("Primary Insured Family doctor State/Province (If in US)"), 
+                makeFormTextInput("Primary Insured Family doctor Zip/Postal Code"), 
+                makeFormTextInput("Primary Insured Family doctor Country"), 
+                makeFormTextInput("Primary Insured Family doctor Telephone"), 
+                makeFormTextInput("Primary Insured Family doctor Date Last Seen"), 
+                makeFormTextInput("Primary Insured Family doctor Reason"), 
+                makeFormTextInput("Spouse Family doctor Name"), 
+                makeFormTextInput("Spouse Family doctor Address"), 
+                makeFormTextInput("Spouse Family doctor City"), 
+                makeFormTextInput("Spouse Family doctor State/Province (If in US)"), 
+                makeFormTextInput("Spouse Family doctor Zip/Postal Code"), 
+                makeFormTextInput("Spouse Family doctor Country"), 
+                makeFormTextInput("Spouse Family doctor Telephone"), 
+                makeFormTextInput("Spouse Family doctor Date Last Seen"), 
+                makeFormTextInput("Spouse Family doctor Reason"), 
+                makeFormTextInput("Child 1 Family doctor Name"), 
+                makeFormTextInput("Child 1 Family doctor Address"), 
+                makeFormTextInput("Child 1 Family doctor City"), 
+                makeFormTextInput("Child 1 Family doctor State/Province (If in US)"), 
+                makeFormTextInput("Child 1 Family doctor Zip/Postal Code"), 
+                makeFormTextInput("Child 1 Family doctor Country"), 
+                makeFormTextInput("Child 1 Family doctor Telephone"), 
+                makeFormTextInput("Child 1 Family doctor Date Last Seen"), 
+                makeFormTextInput("Child 1 Family doctor Reason"), 
+                makeFormTextInput("Child 2 Family doctor Name"), 
+                makeFormTextInput("Child 2 Family doctor Address"), 
+                makeFormTextInput("Child 2 Family doctor City"), 
+                makeFormTextInput("Child 2 Family doctor State/Province (If in US)"), 
+                makeFormTextInput("Child 2 Family doctor Zip/Postal Code"), 
+                makeFormTextInput("Child 2 Family doctor Country"), 
+                makeFormTextInput("Child 2 Family doctor Telephone"), 
+                makeFormTextInput("Child 2 Family doctor Date Last Seen"), 
+                makeFormTextInput("Child 2 Family doctor Reason"), 
                 ]));
     endForm();
     endRow();
@@ -1998,8 +2146,12 @@ function writeSections() {
     writeSectionsForApps();
 }
 
-function makeFormTextInput(name) {
-    return "<input type='text' name='"+name+"' style='width:100%'/><br />";
+var formInputID = 0;
+function makeFormTextInput(label) {
+    var ret = "<input type='text' name='formInput"+formInputID+"' style='width:100%'/><br />";
+    ret += "<input type='hidden' name='formLabel"+formInputID+"' value='"+label+"'/>";
+    formInputID += 1;
+    return [loc(label), ret];
 }
 
 function startForm(name, target, successPage) {

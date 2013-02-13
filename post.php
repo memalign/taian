@@ -3,7 +3,9 @@ $message = "Form submission from ".$_SERVER["REMOTE_ADDR"]."\n";
 
 foreach ($_POST as $key => $value) {
     if ($key != "successPage") {
-        $message .= $key." = ".$value."\n";
+        if (preg_match("/^formLabel(\d+)/", $key, $matches)) {
+            $message .= $value." = ".$_POST["formInput".$matches[1]]."\n";
+        }
     }
 }
 
