@@ -47,6 +47,15 @@ function getPartnership(partner) {
                           ],
               },
 
+        mei: {
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                          ],
+              },              
+
     };
 
 
