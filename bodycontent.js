@@ -89,6 +89,22 @@ function analyticsTrackLanguageView(pageName) {
 }
 
 function showPivot(pivotName) {
+    // If the hash doesn't have an =, try to treat it as a redirect.
+    var currHash = document.location.hash.substr(1);
+
+    var referrals = {
+        mei: "l=cn&partner=mei",
+        wxct: "l=cn&p=pivot-home&adid=wxct",
+    }; 
+
+    var newHash = referrals[currHash];
+    if (!(typeof newHash === "undefined")) {
+        document.location.hash = "#"+newHash;
+        document.location.reload(true)
+        return;
+    }
+
+    // Otherwise, process the hash attributes normally
     var defaultTab = "pivot-home";
     if (pivotName.length == 0)
         pivotName = defaultTab;

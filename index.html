@@ -8,19 +8,6 @@
 TaiAn Financial	Health Insurance
 </title>
 <script type="text/javascript">
-    // If the hash doesn't have an =, try to treat it as a redirect.
-    var currHash = document.location.hash.substr(1);
-
-    var referrals = {
-        mei: "l=cn&partner=mei",
-        wxct: "l=cn&p=pivot-home&adid=wxct",
-    }; 
-
-    var newHash = referrals[currHash];
-    if (!(typeof newHash === "undefined")) {
-        window.location.replace("index.html#"+newHash);
-    }
-
     // Google analytics
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-37328180-1']);
