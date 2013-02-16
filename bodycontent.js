@@ -95,6 +95,7 @@ function showPivot(pivotName) {
     var referrals = {
         mei: "l=cn&partner=mei",
         wxct: "l=cn&p=pivot-home&adid=wxct",
+        springivy: "l=cn&partner=springivy",        
     }; 
 
     var newHash = referrals[currHash];
