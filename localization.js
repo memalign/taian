@@ -186,7 +186,9 @@ l['We are accustomed to working with people in the United States and China via e
 l['Our website is accessible around the world, including mainland China.'] = "我们的网站在世界各地都能点击进入，包括中国内地。";
 l['Want to know more? Contact us:'] = "想了解更多吗？请与我们联系：";
 l['Call: +1 (317) 318-8258 (Chinese)'] = "电话：+1（317）318-8258（中文）";
+l['Call: 1-317-318-8258 (Chinese)'] = "电话：1-317-318-8258(美国， 中文）";
 l['Call: +1 (317) 318-8259 (English)'] = "电话：+1（317）318-8259（英语）";
+l['Call: 1-317-318-8259 (English)'] = "电话：1-317-318-8259(美国，英语）";
 l['WeChat ID: wxid_taian_usa'] = "微信： wxid_taian_usa";
 l['Skype: chris.lee136'] = "Skype: chris.lee136";
 l['Email: chris@taianfinancial.com'] = "电子邮件：chris@taianfinancial.com";
