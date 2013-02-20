@@ -22,6 +22,7 @@ function langTag() {
 
 var l = {};
 l['Global Application Information Submitted'] = "全球医疗保险申请信息成功提交！";
+l['Submit'] = "提交";
 l['We will email you when the online application is ready for you to complete your purchase.'] = " 我们会很快将申请表Email给你，然后你可以付款完成申请";
 l['Organizations'] = "国际组织";
 l['We work with representatives of International organizations, student or scholar organizations, and travel clubs to help your membership with their travel insurance needs.'] = "我们与国际组织，学生学者联谊会以及旅游俱乐部合作，帮助会员选择合适的医疗保险";
