@@ -333,6 +333,113 @@ function writeSectionsForForms() {
     endRow();
 
     endSection();
+
+    startSection("travel-group-form-success", "Travel Group Information Submitted");
+    startRow();
+    writeText("We will email you when the online application is ready for you to complete your purchase.");
+    endRow();
+    endSection();
+
+    startSection("travel-group-form", "Travel Group Application");
+    startRow();
+    startForm("Travel Group Application Information", "post.php", "travel-group-form-success");
+    document.write(makeTableWithStyle("formTable", 2, [
+                makeFormTextInput("Deductible ($0, $100, $250, $500, $1000, $2500)"),
+                makeFormTextInput("Maximum Limit ($50,000, $100,000, $500,000, $1,000,000)"),
+                makeFormTextInput("Sponsoring Organization"),
+                makeFormTextInput("Contact First name/Last name"),
+                makeFormTextInput("Address"),
+                makeFormTextInput("City"),
+                makeFormTextInput("State/Province (US or Canada only)"),
+                makeFormTextInput("Zip Code"),
+                makeFormTextInput("Country"),
+                makeFormTextInput("Telephone"),
+                makeFormTextInput("Email Address"),
+                makeFormTextInput("Email Address (2nd address optional)"),
+                makeFormTextInput("Requested Coverage Effective Date"),
+                makeFormTextInput("Requested Expiration Date"),
+                makeFormTextInput("Date of Departure from Home Country"),
+                makeFormTextInput("Date of Return to Home Country"),
+                makeFormTextInput("Date of Arrival in the U.S. (Required for non-US citizens over 65 and visiting the US)"),
+                makeFormTextInput("Destination country"),
+                makeFormTextInput("Insured 1-Type (Primary/Spouse/Child)"),
+                makeFormTextInput("Insured 1-First Name"),
+                makeFormTextInput("Insured 1-Last Name"),
+                makeFormTextInput("Insured 1-Date of Birth"),
+                makeFormTextInput("Insured 1-Government Issued ID Number"),                
+                makeFormTextInput("Insured 1-Home Country"),
+                makeFormTextInput("Insured 1-Country of Citizenship"),                
+                makeFormTextInput("Insured 1-Start Date"),
+                makeFormTextInput("Insured 1-End Date"),
+                makeFormTextInput("Insured 2-Type (Primary/Spouse/Child) Note: Only fill in family members that are purchasing coverage"),
+                makeFormTextInput("Insured 2-First Name"),
+                makeFormTextInput("Insured 2-Last Name"),
+                makeFormTextInput("Insured 2-Date of Birth"),
+                makeFormTextInput("Insured 2-Government Issued ID Number"),                
+                makeFormTextInput("Insured 2-Home Country"),
+                makeFormTextInput("Insured 2-Country of Citizenship"),                
+                makeFormTextInput("Insured 2-Start Date"),
+                makeFormTextInput("Insured 2-End Date"),
+                makeFormTextInput("Insured 3-Type (Primary/Spouse/Child)"),
+                makeFormTextInput("Insured 3-First Name"),
+                makeFormTextInput("Insured 3-Last Name"),
+                makeFormTextInput("Insured 3-Date of Birth"),
+                makeFormTextInput("Insured 3-Government Issued ID Number"),                
+                makeFormTextInput("Insured 3-Home Country"),
+                makeFormTextInput("Insured 3-Country of Citizenship"),                
+                makeFormTextInput("Insured 3-Start Date"),
+                makeFormTextInput("Insured 3-End Date"),
+                makeFormTextInput("Insured 4-Type (Primary/Spouse/Child)"),
+                makeFormTextInput("Insured 4-First Name"),
+                makeFormTextInput("Insured 4-Last Name"),
+                makeFormTextInput("Insured 4-Date of Birth"),
+                makeFormTextInput("Insured 4-Government Issued ID Number"),                
+                makeFormTextInput("Insured 4-Home Country"),
+                makeFormTextInput("Insured 4-Country of Citizenship"),                
+                makeFormTextInput("Insured 4-Start Date"),
+                makeFormTextInput("Insured 4-End Date"), 
+                makeFormTextInput("Insured 5-Type (Primary/Spouse/Child)"),
+                makeFormTextInput("Insured 5-First Name"),
+                makeFormTextInput("Insured 5-Last Name"),
+                makeFormTextInput("Insured 5-Date of Birth"),
+                makeFormTextInput("Insured 5-Government Issued ID Number"),                
+                makeFormTextInput("Insured 5-Home Country"),
+                makeFormTextInput("Insured 5-Country of Citizenship"),                
+                makeFormTextInput("Insured 5-Start Date"),
+                makeFormTextInput("Insured 5-End Date"),
+                makeFormTextInput("Insured 6-Type (Primary/Spouse/Child)"),
+                makeFormTextInput("Insured 6-First Name"),
+                makeFormTextInput("Insured 6-Last Name"),
+                makeFormTextInput("Insured 6-Date of Birth"),
+                makeFormTextInput("Insured 6-Government Issued ID Number"),                
+                makeFormTextInput("Insured 6-Home Country"),
+                makeFormTextInput("Insured 6-Country of Citizenship"),                
+                makeFormTextInput("Insured 6-Start Date"),
+                makeFormTextInput("Insured 6-End Date"),
+                makeFormTextInput("Insured 7-Type (Primary/Spouse/Child)"),
+                makeFormTextInput("Insured 7-First Name"),
+                makeFormTextInput("Insured 7-Last Name"),
+                makeFormTextInput("Insured 7-Date of Birth"),
+                makeFormTextInput("Insured 7-Government Issued ID Number"),                
+                makeFormTextInput("Insured 7-Home Country"),
+                makeFormTextInput("Insured 7-Country of Citizenship"),                
+                makeFormTextInput("Insured 7-Start Date"),
+                makeFormTextInput("Insured 7-End Date"),
+                makeFormTextInput("Insured 8-Type (Primary/Spouse/Child)"),
+                makeFormTextInput("Insured 8-First Name"),
+                makeFormTextInput("Insured 8-Last Name"),
+                makeFormTextInput("Insured 8-Date of Birth"),
+                makeFormTextInput("Insured 8-Government Issued ID Number"),                
+                makeFormTextInput("Insured 8-Home Country"),
+                makeFormTextInput("Insured 8-Country of Citizenship"),                
+                makeFormTextInput("Insured 8-Start Date"),
+                makeFormTextInput("Insured 8-End Date"),                
+                ]));
+    endForm();
+    endRow();
+
+    endSection();    
+    
 }
 
 function writeSectionsForApps() {
