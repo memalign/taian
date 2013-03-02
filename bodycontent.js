@@ -96,7 +96,9 @@ function showPivot(pivotName) {
         mei: "l=cn&partner=mei",
         wxct: "l=cn&p=pivot-home&adid=wxct",
         springivy: "l=cn&partner=springivy",        
-        iupui: "l=cn&partner=iupui",                
+        iupui: "l=en&partner=iupui",
+        iupuiexch: "l=cn&partner=iupui&p=exchange-form",        
+        ucla: "l=cn&partner=ucla",        
     }; 
 
     var newHash = referrals[currHash];
@@ -243,7 +245,7 @@ function writeSectionsForForms() {
                 makeFormTextInput("Child 2-Country of Citizenship"),
                 makeFormTextInput("Child 2-If US Citizen Date you did or will depart US"),
                 makeFormTextInput("Child 2-Is your expected length of residence outside the U.S. at least 6 of the next 12 months? "),
-                makeFormTextInput("Requested Coverage Effective Date"),
+                makeFormTextInput("Coverage Start Date"),
                 makeFormTextInput("Residence Address  (Best to use Chinese address)"),
                 makeFormTextInput("City"),
                 makeFormTextInput("County/Region"),
@@ -440,7 +442,67 @@ function writeSectionsForForms() {
     endRow();
 
     endSection();    
-    
+ 
+
+    startSection("exchange-form-success", "Patriot Exchange Information Submitted");
+    startRow();
+    writeText("We will email you when the online application is ready for you to complete your purchase.");
+    endRow();
+    endSection();
+
+    startSection("exchange-form", "Patriot Exchange Application");
+    startRow();
+    startForm("Patriot Exchange Application Information", "post.php", "exchange-form-success");
+    document.write(makeTableWithStyle("formTable", 2, [
+                makeFormTextInput("Maximum Limit per illness or injury ($50,000, $250,000, $500,000) (We suggest at least $250,000 to make sure you have adequate coverage)"),
+                makeFormTextInput("Primary Insured-First Name"),
+                makeFormTextInput("Primary Insured-Last Name"),
+                makeFormTextInput("Primary Insured-Gender"),
+                makeFormTextInput("Primary Insured-Date of Birth"),
+                makeFormTextInput("Primary Insured-Government Issued ID Number"),
+                makeFormTextInput("Primary Insured-Country of Citizenship"),
+                makeFormTextInput("Primary Insured-Home Country"), 
+                makeFormTextInput("Destination country"),                
+                makeFormTextInput("Primary Insured-Are you participating in a 'work and travel program'?"),   
+                makeFormTextInput("Primary Insured-If yes, name of the program"),
+                makeFormTextInput("Primary Insured-Are you a J2 visa holder?"),                 
+                makeFormTextInput("Spouse-First Name"),
+                makeFormTextInput("Spouse-Last Name"),
+                makeFormTextInput("Spouse-Gender"),
+                makeFormTextInput("Spouse-Date of Birth"),
+                makeFormTextInput("Spouse-Government Issued ID Number"),
+                makeFormTextInput("Child 1-First Name"),
+                makeFormTextInput("Child 1-Last Name"),
+                makeFormTextInput("Child 1-Date of Birth"),
+                makeFormTextInput("Child 1-Government Issued ID Number"),
+                makeFormTextInput("Child 2-First Name"),
+                makeFormTextInput("Child 2-Last Name"),
+                makeFormTextInput("Child 2-Date of Birth"),
+                makeFormTextInput("Child 2-Government Issued ID Number"),
+                makeFormTextInput("Child 3-First Name"),
+                makeFormTextInput("Child 3-Last Name"),
+                makeFormTextInput("Child 3-Date of Birth"),
+                makeFormTextInput("Child 3-Government Issued ID Number"),                
+                makeFormTextInput("Coverage Start Date"),
+                makeFormTextInput("Coverage End Date"),
+                makeFormTextInput("Address"),
+                makeFormTextInput("City"),
+                makeFormTextInput("State/Province (US or Canada only)"),
+                makeFormTextInput("Zip Code"),
+                makeFormTextInput("Country"),
+                makeFormTextInput("Telephone"),
+                makeFormTextInput("Email Address"),
+                makeFormTextInput("Email Address (2nd address optional)"),
+                makeFormTextInput("Date of Departure from Home Country"),
+                makeFormTextInput("Date of Return to Home Country"),
+                makeFormTextInput("Date of Arrival in the U.S. (Required for non-US citizens over 65 and visiting the US)"),
+                makeFormTextInput("Do you want optional coverage for higher risk sports?  (Most people say no)"),                
+                makeFormTextInput("Do you want the ad on benefit for loss of baggage, legal assistance, and personal liability (Most people say no)"),                
+                ]));
+    endForm();
+    endRow();
+    endSection(); 
+
 }
 
 function writeSectionsForApps() {
