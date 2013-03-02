@@ -56,6 +56,17 @@ function getPartnership(partner) {
                           ],
               },              
 
+        iupui: {
+                    windowTitle: "TaiAn Financial Health Insurance for IUPUI",
+                    pageTitle: "TaiAn Financial Health Insurance for IUPUI",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                          ],
+              },              
+              
         springivy: {
                     contactInfo: ["Call: 1-317-318-8258 (Chinese)",
                                   "Call: 1-317-318-8259 (English)",

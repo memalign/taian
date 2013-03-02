@@ -96,6 +96,7 @@ function showPivot(pivotName) {
         mei: "l=cn&partner=mei",
         wxct: "l=cn&p=pivot-home&adid=wxct",
         springivy: "l=cn&partner=springivy",        
+        iupui: "l=cn&partner=iupui",                
     }; 
 
     var newHash = referrals[currHash];

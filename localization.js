@@ -21,6 +21,7 @@ function langTag() {
 }
 
 var l = {};
+l['TaiAn Financial Health Insurance for IUPUI'] = "泰安国际医疗保险 - IUPUI";
 l['Travel Group Information Submitted'] = "团体旅游医疗保险信息提交成功";
 l['Travel Group Application'] = "申请团体旅游医疗保险";
 l['Travel Group Application Information'] = "团体旅游医疗保险申请信息";
