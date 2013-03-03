@@ -503,6 +503,12 @@ function writeSectionsForForms() {
     endRow();
     endSection(); 
 
+
+    // Disable the enter key for submissions
+    $('.noEnterSubmit').keypress(function(e){
+        if ( e.which == 13 ) return false;
+        if ( e.which == 13 ) e.preventDefault();
+    });
 }
 
 function writeSectionsForApps() {
@@ -680,7 +686,7 @@ function writeImage(filename) {
 
 var formInputID = 0;
 function makeFormTextInput(label) {
-    var ret = "<input type='text' name='formInput"+formInputID+"' style='width:100%'/><br />";
+    var ret = "<input type='text' name='formInput"+formInputID+"' style='width:100%' class='noEnterSubmit'/><br />";
     ret += "<input type='hidden' name='formLabel"+formInputID+"' value='"+label+"'/>";
     formInputID += 1;
     return [loc(label), ret];
