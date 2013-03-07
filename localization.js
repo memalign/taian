@@ -21,8 +21,11 @@ function langTag() {
 }
 
 var l = {};
+l['Do you want to pay monthly, quarterly, semiannually, or annually?  Monthly is the most expensive.  Quarterly saves about 6%, semiannually saves about 8%, annually saves about 17%.  Plans cancelled in the middle of a payment period will be charged a penalty for early termination.'] = "你选择哪种付款方式：每月，每季，每半年还是每年？按月付最贵，按季约省6%，按半年付约省8%，按年付约省12%。 付款期间中止保险会有罚款。";                
+l['Please fill in the answers in English.  You can use your preferred language if you do not know the English answer'] = " 请尽量用英语填表";
 l['Coverage Start Date'] = "保险开始日期";
 l['Coverage End Date'] = "保险终止日期";
+l['Patriot Exchange Information Submitted'] = "Patriot Exchange (学生保险计划B)申请信息递交成功！";
 l['Patriot Exchange Application'] = "Patriot Exchange (学生保险计划B) 申请表";
 l['Patriot Exchange Application Information'] = "Patriot Exchange (学生保险计划B) 申请信息";
 l['Maximum Limit per illness or injury ($50,000, $250,000, $500,000) (We suggest at least $250,000 to make sure you have adequate coverage)'] = "每次生病或受伤的最高赔付($50,000, $250,000, $500,000)（建议选择$250,000）";

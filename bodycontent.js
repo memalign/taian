@@ -186,6 +186,7 @@ function writeSectionsForForms() {
     endSection();
 
     startSection("global-form", "Global Application");
+    writeText("Please fill in the answers in English.  You can use your preferred language if you do not know the English answer");
     startRow();
     startForm("Global Application Information", "post.php", "global-form-success");
     document.write(makeTableWithStyle("formTable", 2, [
@@ -193,6 +194,7 @@ function writeSectionsForForms() {
                 makeFormTextInput("Number of Dependent Children Ages 10 to 18"),
                 makeFormTextInput("Silver/Gold/Platinum"),
                 makeFormTextInput("Deductible ($100, $250, $500, $1000, $2500, $5000, $10,000)"),
+                makeFormTextInput("Do you want to pay monthly, quarterly, semiannually, or annually?  Monthly is the most expensive.  Quarterly saves about 6%, semiannually saves about 8%, annually saves about 17%.  Plans cancelled in the middle of a payment period will be charged a penalty for early termination."),                
                 makeFormTextInput("Primary Insured-First Name"),
                 makeFormTextInput("Primary Insured-Last Name"),
                 makeFormTextInput("Primary Insured-Gender"),
@@ -344,6 +346,7 @@ function writeSectionsForForms() {
     endSection();
 
     startSection("travel-group-form", "Travel Group Application");
+    writeText("Please fill in the answers in English.  You can use your preferred language if you do not know the English answer");    
     startRow();
     startForm("Travel Group Application Information", "post.php", "travel-group-form-success");
     document.write(makeTableWithStyle("formTable", 2, [
@@ -451,6 +454,7 @@ function writeSectionsForForms() {
     endSection();
 
     startSection("exchange-form", "Patriot Exchange Application");
+    writeText("Please fill in the answers in English.  You can use your preferred language if you do not know the English answer");
     startRow();
     startForm("Patriot Exchange Application Information", "post.php", "exchange-form-success");
     document.write(makeTableWithStyle("formTable", 2, [
