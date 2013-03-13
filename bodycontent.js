@@ -97,7 +97,8 @@ function showPivot(pivotName) {
         wxct: "l=cn&p=pivot-home&adid=wxct",
         springivy: "l=cn&partner=springivy",        
         iupui: "l=en&partner=iupui",
-        iupuiexch: "l=cn&partner=iupui&p=exchange-form",        
+        iupuiexch: "l=cn&partner=iupui&p=exchange-form",  
+        xyz: "l=en&partner=xyz",        
         ucla: "l=cn&partner=ucla",        
     }; 
 
