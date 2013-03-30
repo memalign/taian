@@ -55,12 +55,12 @@ function updateHash(keyToUpdate, newValue) {
 }
 
 function getAdId() {
-    var partnership = getPageAttribute("partner");
-    var hasPartnership = !(typeof partnership === "undefined");
-    if (hasPartnership)
-        return partnership;
-
     var adId = getPageAttribute("adid");
+    var hasAdId = !(typeof adId === "undefined");
+    if (!hasAdId) {
+        adId = getPageAttribute("partner");
+    }
+
     return adId;
 }
 
@@ -97,9 +97,44 @@ function showPivot(pivotName) {
         wxct: "l=cn&p=pivot-home&adid=wxct",
         springivy: "l=cn&partner=springivy",        
         iupui: "l=en&partner=iupui",
+        ucdavis: "l=en&partner=ucdavis&p=pivot-international-scholar",
+        econnect: "l=en&partner=econnect",        
         iupuiexch: "l=cn&partner=iupui&p=exchange-form",  
-        xyz: "l=en&partner=xyz",        
-        ucla: "l=cn&partner=ucla",        
+        ucdavisbform: "l=cn&partner=ucdavis&p=exchange-form",        
+        univtemplate: "l=en&partner=univtemplate",        
+        usc: "l=en&partner=usc",
+        cnusc: "l=cn&partner=usc",   
+        gcnusc: "l=cn&partner=usc&p=pivot-international-student&adid=gcnusc",
+        gusc: "l=en&partner=usc&p=pivot-international-student&adid=gusc",      
+        uiuc: "l=en&partner=uiuc",
+        cnuiuc: "l=cn&partner=uiuc",   
+        gcnuiuc: "l=cn&partner=uiuc&p=pivot-international-student&adid=gcnuiuc",
+        guiuc: "l=en&partner=uiuc&p=pivot-international-student&adid=guiuc",   
+        nyu: "l=en&partner=nyu",
+        cnnyu: "l=cn&partner=nyu",   
+        gcnnyu: "l=cn&partner=nyu&p=pivot-international-student&adid=gcnnyu",
+        gnyu: "l=en&partner=nyu&p=pivot-international-student&adid=gnyu", 
+        purdue: "l=en&partner=purdue",
+        cnpurdue: "l=cn&partner=purdue",   
+        gcnpurdue: "l=cn&partner=purdue&p=pivot-international-student&adid=gcnpur",
+        gpurdue: "l=en&partner=purdue&p=pivot-international-student&adid=gpur",  
+        columbia: "l=en&partner=columbia",
+        cncolumbia: "l=cn&partner=columbia",   
+        gcncolumbia: "l=cn&partner=columbia&p=pivot-international-student&adid=gcncol",
+        gcolumbia: "l=en&partner=columbia&p=pivot-international-student&adid=gcncol", 
+        ucla: "l=en&partner=ucla",
+        cnucla: "l=cn&partner=ucla",   
+        gcnucla: "l=cn&partner=ucla&p=pivot-international-student&adid=gcnucla",
+        gucla: "l=en&partner=ucla&p=pivot-international-student&adid=gucla", 
+        utaustin: "l=en&partner=utaustin",
+        cnutaustin: "l=cn&partner=utaustin",   
+        gcnutaustin: "l=cn&partner=utaustin&p=pivot-international-student&adid=gcnut",
+        gutaustin: "l=en&partner=utaustin&p=pivot-international-student&adid=gut",
+        iu: "l=en&partner=iu",
+        cniu: "l=cn&partner=iu",   
+        gcniu: "l=cn&partner=iu&p=pivot-international-student&adid=gcniu",
+        giu: "l=en&partner=iu&p=pivot-international-student&adid=giu",        
+        
     }; 
 
     var newHash = referrals[currHash];
@@ -446,6 +481,115 @@ function writeSectionsForForms() {
     endRow();
 
     endSection();    
+    
+    startSection("exchange-group-form-success", "Exchange Group Information Submitted");
+    startRow();
+    writeText("We will email you when the online application is ready for you to complete your purchase.");
+    endRow();
+    endSection();
+
+    startSection("exchange-group-form", "Exchange Group Application");
+    writeText("Please fill in the answers in English.  You can use your preferred language if you do not know the English answer");    
+    startRow();
+    startForm("Exchange Group Application Information", "post.php", "exchange-group-form-success");
+    document.write(makeTableWithStyle("formTable", 2, [
+                makeFormTextInput("Maximum Benefit per illness/injury ($50,000, $250,000, $500,000)"),
+                makeFormTextInput("Do you want adventure sports rider?"),
+                makeFormTextInput("Do you want the add on benefit? (Covers lost baggage, legal assistance, personal liability, damage to third party, high school sports)"),
+                makeFormTextInput("Do you want STANDARD coverage that meets J visa requirements, or BASIC coverage that has less benefits?"),
+                makeFormTextInput("Sponsoring Organization"),
+                makeFormTextInput("Contact First name/Last name"),
+                makeFormTextInput("Address"),
+                makeFormTextInput("City"),
+                makeFormTextInput("State/Province (US or Canada only)"),
+                makeFormTextInput("Zip Code"),
+                makeFormTextInput("Country"),
+                makeFormTextInput("Telephone"),
+                makeFormTextInput("Email Address"),
+                makeFormTextInput("Email Address (2nd address optional)"),
+                makeFormTextInput("Requested Coverage Effective Date"),
+                makeFormTextInput("Requested Expiration Date"),
+                makeFormTextInput("Date of Departure from Home Country"),
+                makeFormTextInput("Date of Return to Home Country"),
+                makeFormTextInput("Date of Arrival in the U.S. (Required for non-US citizens over 65 and visiting the US)"),
+                makeFormTextInput("Destination country"),
+                makeFormTextInput("Insured 1-Type (Primary/Spouse/Child)"),
+                makeFormTextInput("Insured 1-First Name"),
+                makeFormTextInput("Insured 1-Last Name"),
+                makeFormTextInput("Insured 1-Date of Birth"),
+                makeFormTextInput("Insured 1-Government Issued ID Number"),                
+                makeFormTextInput("Insured 1-Home Country"),
+                makeFormTextInput("Insured 1-Country of Citizenship"),                
+                makeFormTextInput("Insured 1-Start Date"),
+                makeFormTextInput("Insured 1-End Date"),
+                makeFormTextInput("Insured 2-Type (Primary/Spouse/Child) Note: Only fill in family members that are purchasing coverage"),
+                makeFormTextInput("Insured 2-First Name"),
+                makeFormTextInput("Insured 2-Last Name"),
+                makeFormTextInput("Insured 2-Date of Birth"),
+                makeFormTextInput("Insured 2-Government Issued ID Number"),                
+                makeFormTextInput("Insured 2-Home Country"),
+                makeFormTextInput("Insured 2-Country of Citizenship"),                
+                makeFormTextInput("Insured 2-Start Date"),
+                makeFormTextInput("Insured 2-End Date"),
+                makeFormTextInput("Insured 3-Type (Primary/Spouse/Child)"),
+                makeFormTextInput("Insured 3-First Name"),
+                makeFormTextInput("Insured 3-Last Name"),
+                makeFormTextInput("Insured 3-Date of Birth"),
+                makeFormTextInput("Insured 3-Government Issued ID Number"),                
+                makeFormTextInput("Insured 3-Home Country"),
+                makeFormTextInput("Insured 3-Country of Citizenship"),                
+                makeFormTextInput("Insured 3-Start Date"),
+                makeFormTextInput("Insured 3-End Date"),
+                makeFormTextInput("Insured 4-Type (Primary/Spouse/Child)"),
+                makeFormTextInput("Insured 4-First Name"),
+                makeFormTextInput("Insured 4-Last Name"),
+                makeFormTextInput("Insured 4-Date of Birth"),
+                makeFormTextInput("Insured 4-Government Issued ID Number"),                
+                makeFormTextInput("Insured 4-Home Country"),
+                makeFormTextInput("Insured 4-Country of Citizenship"),                
+                makeFormTextInput("Insured 4-Start Date"),
+                makeFormTextInput("Insured 4-End Date"), 
+                makeFormTextInput("Insured 5-Type (Primary/Spouse/Child)"),
+                makeFormTextInput("Insured 5-First Name"),
+                makeFormTextInput("Insured 5-Last Name"),
+                makeFormTextInput("Insured 5-Date of Birth"),
+                makeFormTextInput("Insured 5-Government Issued ID Number"),                
+                makeFormTextInput("Insured 5-Home Country"),
+                makeFormTextInput("Insured 5-Country of Citizenship"),                
+                makeFormTextInput("Insured 5-Start Date"),
+                makeFormTextInput("Insured 5-End Date"),
+                makeFormTextInput("Insured 6-Type (Primary/Spouse/Child)"),
+                makeFormTextInput("Insured 6-First Name"),
+                makeFormTextInput("Insured 6-Last Name"),
+                makeFormTextInput("Insured 6-Date of Birth"),
+                makeFormTextInput("Insured 6-Government Issued ID Number"),                
+                makeFormTextInput("Insured 6-Home Country"),
+                makeFormTextInput("Insured 6-Country of Citizenship"),                
+                makeFormTextInput("Insured 6-Start Date"),
+                makeFormTextInput("Insured 6-End Date"),
+                makeFormTextInput("Insured 7-Type (Primary/Spouse/Child)"),
+                makeFormTextInput("Insured 7-First Name"),
+                makeFormTextInput("Insured 7-Last Name"),
+                makeFormTextInput("Insured 7-Date of Birth"),
+                makeFormTextInput("Insured 7-Government Issued ID Number"),                
+                makeFormTextInput("Insured 7-Home Country"),
+                makeFormTextInput("Insured 7-Country of Citizenship"),                
+                makeFormTextInput("Insured 7-Start Date"),
+                makeFormTextInput("Insured 7-End Date"),
+                makeFormTextInput("Insured 8-Type (Primary/Spouse/Child)"),
+                makeFormTextInput("Insured 8-First Name"),
+                makeFormTextInput("Insured 8-Last Name"),
+                makeFormTextInput("Insured 8-Date of Birth"),
+                makeFormTextInput("Insured 8-Government Issued ID Number"),                
+                makeFormTextInput("Insured 8-Home Country"),
+                makeFormTextInput("Insured 8-Country of Citizenship"),                
+                makeFormTextInput("Insured 8-Start Date"),
+                makeFormTextInput("Insured 8-End Date"),                
+                ]));
+    endForm();
+    endRow();
+
+    endSection();        
  
 
     startSection("exchange-form-success", "Patriot Exchange Information Submitted");
@@ -942,6 +1086,7 @@ function writeContactInfo() {
 function writeTabs() {
     var topLevelNames = { "pivot-home": "Home",
                           "pivot-international-student": "International Student",
+                          "pivot-international-scholar": "International Scholar",
                           "pivot-global-medical": "Global Medical",
                           "pivot-travel-insurance": "Travel Insurance",
                           "pivot-indiana-residents": "Indiana Residents",
@@ -955,10 +1100,12 @@ function writeTabs() {
 
     var topLevelLinks = [];
 
-    for (var i = 0; i < tabs.length; ++i) {
-        topLevelLinks.push(makeTopLevelURL(tabs[i], topLevelNames[tabs[i]]));
+    if (tabs.length > 1) {
+        for (var i = 0; i < tabs.length; ++i) {
+            topLevelLinks.push(makeTopLevelURL(tabs[i], topLevelNames[tabs[i]]));
+        }
+        document.write(makeTableWithStyle("invisibleTable", topLevelLinks.length, topLevelLinks));
     }
-    document.write(makeTableWithStyle("invisibleTable", topLevelLinks.length, topLevelLinks));
 }
 
 function getContactInfo() {
@@ -1197,6 +1344,10 @@ function writeSections() {
                 makeURL("Click to View", "https://www.aetnastudenthealth.com/schools/jhuhc/brochure1213.pdf"),
                 makeURL("Click to View", "https://www.aetnastudenthealth.com/schools/jhuhc/brochure1213.pdf"),
 
+                makeURL("Johns Hopkins Medical (JHMI)", "http://www.hopkinsmedicine.org/intlsvcs/index.html"),
+                makeURL("Click to View", "http://www.hopkinsmedicine.org/intlsvcs/f1information.html"),
+                makeURL("Click to View", "http://www.hopkinsmedicine.org/intlsvcs/j1insurance.html"),                
+                
                 makeURL("Kansas State University (KS)", "http://www.k-state.edu/"),
                 makeURL("Click to View", "http://www.k-state.edu/isss/current/healthinsurance.html"),
                 makeURL("Click to View", "http://www.k-state.edu/isss/j-1/jhealthins.htm"),
@@ -1226,8 +1377,8 @@ function writeSections() {
                 makeURL("Click to View", "http://www.njit.edu/humanresources/divisions/employment/request_for_DS-2019_J-1_status_sponsorship.pdf"),
 
                 makeURL("New York University (NY)", "http://www.nyu.edu/"),
-                makeURL("Click to View", "http://www.nyu.edu/shc/about/waiving.plans.html"),
-                makeURL("Click to View", "http://www.nyu.edu/life/student-life/international-students-and-scholars/scholars/immigration-matters-/visa-types-/j-11.html"),
+                makeURL("Click to View", "http://www.nyu.edu/global/international-immigration-services/students/inbound-to-nyc/pre-arrival/required-health-insurance-coverage.html"),
+                makeURL("Click to View", "http://www.nyu.edu/global/international-immigration-services/faculty-and-scholars/inbound-to-nyc/pre-arrival/exchange-visitor/health-insurance-requirement.html"),
 
                 makeURL("North Carolina State University (NC)", "http://www.ncsu.edu/"),
                 makeURL("Click to View", " http://healthcenter.ncsu.edu/insurance/"),
@@ -1354,7 +1505,7 @@ function writeSections() {
                 makeURL("Click to View", "http://internationaloffice.berkeley.edu/j_insurance"),
 
                 makeURL("University of California Davis (CA)", "http://www.ucdavis.edu/"),
-                makeURL("Click to View", "http://shcs.ucdavis.edu/insurance/waiver/waiver-guidelines.html"),
+                makeURL("Click to View", "http://shcs.ucdavis.edu/information/newstudent/international-ins.html"),
                 makeURL("Click to View", "http://siss.ucdavis.edu/health_j1.cfm"),
 
                 makeURL("University of California Irvine (CA)", "http://www.uci.edu/"),
@@ -1363,7 +1514,7 @@ function writeSections() {
 
                 makeURL("University of California Los Angeles (CA)", "http://www.ucla.edu/"),
                 makeURL("Click to View", "http://www.admissions.ucla.edu/NewBruins/Intl_insurance.htm"),
-                makeURL("Click to View", "http://www.admissions.ucla.edu/NewBruins/Intl_insurance.htm"),
+                makeURL("Click to View", "http://www.internationalcenter.ucla.edu/home/J1Visa/74/75/Overview"),
 
                 makeURL("University of California Riverside (CA)", "http://www.ucr.edu/"),
                 makeURL("Click to View", "http://www.campushealth.ucr.edu/SiteCollectionDocuments/ucrub1011.pdf"),
@@ -1781,6 +1932,175 @@ function writeSections() {
     writeDontSeeWhatYouNeedRow();
     endSection();
 
+    
+    // International Scholar
+    startSection("pivot-international-scholar", "International Scholar");
+
+    var partnerShip = getPartnership(getPageAttribute("partner"));
+    var internationalScholarPartnerContent = partnerShip["internationalScholarContent"];
+    var hasISPartnerContent = !(typeof internationalScholarPartnerContent === "undefined") && (internationalScholarPartnerContent.length > 0);
+    if (hasISPartnerContent) {
+        startRow();
+        writeText(internationalScholarPartnerContent);
+        endRow();
+    }
+   
+    startRow();
+    writeText("Our highlighted plans:");
+    endRow();
+
+    startRow();
+    document.write(makeTable(3,
+            [
+            // Column headers:
+            "TaiAn International Scholars",
+            makeRawURL("Plan A (Student Health Advantage)", "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+            makeRawURL("Plan B (Standard) (Patriot Exchange Program)", "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
+
+            // Rest of the table:
+            // Row 2
+            "Plan Type", "Designed specifically for international scholars (J1,J2). Renewable up to 5 years if 3 months or more are purchased. For those who have been in the US for less than 6 months.", "Designed specifically for international scholars (J1,J2). Renewable up to 4 years if 3 months or more are purchased.",
+
+            // Row 3
+            "Maximum Limit", "$500,000 lifetime maximum, $300,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $250,000 or $500,000 per illness/injury",
+
+
+
+            "Deductible", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", 
+            "Coinsurance", "No coinsurance in PPO", "No coinsurance in PPO", 
+            "Hospital Room & Board", "Average semi-private room", "Average semi-private room", 
+            "Intensive Care", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)", 
+            "Maternity", "URC", "N/A", 
+            "Mental Health", "In-patient URC to $10,000, out-patient $50/day to $500", "N/A", 
+            "Emergency Room", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", 
+            "Prescription Drugs", "In-patient URC, out-patient 50%", "URC", 
+            "Accident Dental", "Injury $500, Sudden pain $350", "Injury $500, Sudden pain $350", 
+            "Accidental Death & Dismemberment", "$25,000", "$25,000", 
+            "Medical Evacuation", "$500,000", "$50,000", 
+            "Repatriation of remains", "$50,000", "$25,000", 
+            "Pre-existing conditions", "After 12 months of continuous coverage", "After 12 months of continuous coverage",
+
+            // Table within a table
+            "Cost Per Month (Non-US Citizens)",
+            makeTable(4, [
+                    "Age",     "J1", "Spouse", "Children",
+                    "&lt; 19", "$72",   "$386",   "$82",
+                    "19-23",   "$95",   "$386",   "$82",
+                    "24-30",   "$110",  "$426",   "$82",
+                    "31-40",   "$197",  "$567",   "$82",
+                    "41-50",   "$322",  "$586",   "$82",
+                    "51-64",   "$430",  "$567",   "$82",
+                    ]), 
+
+            loc("$50,000 per illness/injury") +         
+            makeTable(4, [
+                    "Age",     "J1", "Spouse", "Children",
+                    "&lt; 25", "$48.62","$48.62",  "$48.62",
+                    "25-49",   "$63.37","$63.37",  "$48.62",
+                    "50-64",   "$135.70","$135.70","$48.62",
+                    ]) +
+
+            loc("$250,000 per illness/injury") +         
+            makeTable(4, [
+                    "Age",     "J1", "Spouse", "Children",
+                    "&lt; 25", "$60.36","$60.36",  "$60.36",
+                    "25-49",   "$78.59","$78.59",  "$60.36",
+                    "50-64",   "$168.27","$168.27","$60.36",
+                    ]),         
+            "", 
+            makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+            makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Patriot Exchange Program - Standard"), "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
+
+            ])
+            );
+    endRow();
+    
+    startRow();
+    writeText("");
+    endRow();
+
+    startRow();
+    writeText("More plan details:");
+    writeText("");
+    document.write(makeTable(2, [
+                "Plan", "Student Health Advantage more benefits",
+
+                "Plan Highlights",
+                makeBulletedListWithTitle("", [
+                        "Routine Nursery Care: $750 maximum per period of coverage",
+                        "Emergency Room: Injury: URC; Illness resulting in hospitalization: URC; Illness without hospitalization: Subject to addtional $250 deductible",
+                        "Physical Therapy: URC -limit once per day",
+                        "Local Ambulance: Per injury up to $350, Per illness only if admitted in-patient up to $350",
+                        "Dental: Injury due to covered accident $500; Sudden & unexpected pain $350",
+                        "Intercollegiate/Interscholastic/intramural or club sports: $5,000 per injury/illness medical expenses only",
+                        "Incidental home country coverage: up to cumulative two weeks",
+                        "Terrorism coverage: up to 50,000 lifetime maximum",
+                        "Dependents can only purchase when the student purchases",
+                        ]),
+
+
+                "Full Brochure", makeURL("Full Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1938&a=80000699"),
+                "", makeBuyURL("Buy Student Health Advantage", "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+
+
+                ]));
+
+    endRow();
+
+    startRow();
+    writeText("");
+    document.write(makeTable(2, [
+                "Plan", "More on Patriot Exchange",
+
+                "Plan Highlights",
+                makeBulletedListWithTitle("", [
+                        "J2 can buy Patriot Exchange alone (if J1 buys schools plan) or buy with J1",                        
+                        "Patriot Exchange Group plan available for groups of 2 or more",
+                        "Patriot Exchange Basic Plan available at a lower cost (may not meet your visa requirements - ask us!)",
+                        "Other available options include: travel protection for baggage and valuables, legal assistance, personal liability coverage, adventure sports coverage",                       
+                        ]),
+
+                "Full Brochures", 
+                makeBulletedListWithTitle("", [
+                        makeURL("Patriot Exchange Brochure", 
+                        "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1932&a=80000699"),
+
+                        makeURL("Patriot Exchange Group Brochure", 
+                        "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1905&a=80000699"),
+                        ]),
+
+                "Apply Now", 
+                makeBulletedListWithTitle("", [
+                        makeBuyURL("Buy Plan B (Patriot Exchange Program)", "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
+                        makeBuyURL("Buy Plan B Group (Patriot Exchange Group)", "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699"),
+                        ]),
+               ]));
+
+    endRow();
+
+    startRow();
+    writeText("");
+    endRow();
+
+    startRow();
+    writeText("We have native English and Chinese speakers to answer all of your questions.");
+    endRow();
+
+    startRow();
+    writeText(makePivotURL("pivot-school-waiver", "Check your school waiver requirements.") + " " + loc("Contact us to ensure a plan meets your requirements."));
+    endRow();
+
+    startRow();
+    writeText(loc("Other plans that cover more visa types:") + " " + makePivotURL("pivot-global-medical", "Global Medical") + " " + loc("and") + " " + makePivotURL("pivot-travel-insurance", "Patriot Travel"));
+    endRow();
+
+    startRow();
+    writeText("Insurance policy is underwritten by a health insurance company that is 'A' rated by A.M.Best");
+    endRow();
+
+    writeDontSeeWhatYouNeedRow();
+    endSection();
+    
 
     // Global Medical
     //

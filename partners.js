@@ -67,16 +67,124 @@ function getPartnership(partner) {
                           ],
               },              
 
-        xyz: {
-                    windowTitle: "TaiAn Financial Health Insurance for XYZ School",
-                    pageTitle: "TaiAn Financial Health Insurance for XYZ School",
+        usc: {
+                    windowTitle: "TaiAn Health Insurance for University of Southern California",
+                    pageTitle: "TaiAn Health Insurance for University of Southern California",
                     tabs: [
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                           ],
+              },    
+
+        uiuc: {
+                    windowTitle: "TaiAn Health Insurance for University of Illinois Urbana Champaign",
+                    pageTitle: "TaiAn Health Insurance for University of Illinois Urbana Champaign",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                          ],
+              },        
+
+        nyu: {
+                    windowTitle: "TaiAn Health Insurance for New York University",
+                    pageTitle: "TaiAn Health Insurance for New York University",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                          ],
+              },  
+
+        purdue: {
+                    windowTitle: "TaiAn Health Insurance for Purdue University",
+                    pageTitle: "TaiAn Health Insurance for Purdue University",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                          ],
+              },   
+
+        columbia: {
+                    windowTitle: "TaiAn Health Insurance for Columbia University",
+                    pageTitle: "TaiAn Health Insurance for Columbia University",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                          ],
+              },      
+
+        ucla: {
+                    windowTitle: "TaiAn Health Insurance for UCLA",
+                    pageTitle: "TaiAn Health Insurance for UCLA",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                          ],
+              },                  
+              
+        iu: {
+                    windowTitle: "TaiAn Health Insurance for IU Bloomington",
+                    pageTitle: "TaiAn Health Insurance for IU Bloomington",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                          ],
+              },                  
+
+        utaustin: {
+                    windowTitle: "TaiAn Health Insurance for UT Austin",
+                    pageTitle: "TaiAn Health Insurance for UT Austin",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                          ],
+              },                                
+              
+        univtemplate: {
+                    windowTitle: "TaiAn Health Insurance for Univtemplate",
+                    pageTitle: "TaiAn Health Insurance for Univtemplate",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                          ],
+              },                  
+              
+        ucdavis: {
+                    windowTitle: "TaiAn Financial Health Insurance for UC Davis J Scholars",
+                    pageTitle: "TaiAn Financial Health Insurance for UC Davis J Scholars",
+                    tabs: [
+                            "pivot-international-scholar",
+                          ],
+                    internationalScholarContent: "Taian International Health Insurance provides International Scholar Insurance for US visa scholars (J visa). Taian Scholar Insurance Plan A and Plan B meet UC Davis scholar insurance standards and are more affordable.  UC Davis requires a minimum of $50,000.00 per illness or injury and our Plan B Standard Plan meets this requirement.",
               },                            
+
+        econnect: {
+                    windowTitle: "TaiAn Financial Health Insurance for econnectionchina",
+                    pageTitle: "TaiAn Financial Health Insurance for econnectionchina",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                          ],
+              },              
               
         springivy: {
                     contactInfo: ["Call: 1-317-318-8258 (Chinese)",
