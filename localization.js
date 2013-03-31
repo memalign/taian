@@ -52,9 +52,12 @@ l['Do you want the ad on benefit for loss of baggage, legal assistance, and pers
 l['TaiAn Health Insurance for University of Southern California'] = "泰安国际医疗保险 - University of Southern California";
 l['TaiAn Health Insurance for University of Illinois Urbana Champaign'] = "泰安国际医疗保险 - University of Illinois Urbana Champaign";
 l['TaiAn Health Insurance for New York University'] = "泰安国际医疗保险 - New York University";
+l['TaiAn Financial Health Insurance for Pennsylvania State University'] = "泰安国际医疗保险 - Pennsylvania State University";
+l['TaiAn Financial Health Insurance for JHMI'] = "泰安国际医疗保险 - JHMI";
 l['TaiAn Health Insurance for Purdue University'] = "泰安国际医疗保险 - Purdue University";
 l['TaiAn Health Insurance for Columbia University'] = "泰安国际医疗保险 - Columbia University";
 l['TaiAn Health Insurance for UCLA'] = "泰安国际医疗保险 - UCLA";
+l['TaiAn Health Insurance for UC Davis'] = "泰安国际医疗保险 - UC Davis";
 l['TaiAn Health Insurance for IU Bloomington'] = "泰安国际医疗保险 - IU Bloomington";
 l['TaiAn Health Insurance for UT Austin'] = "泰安国际医疗保险 - UT Austin";
 l['TaiAn Health Insurance for Univtemplate'] = "泰安国际医疗保险 - Univtemplate";

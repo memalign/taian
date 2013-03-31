@@ -65,7 +65,29 @@ function getPartnership(partner) {
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                           ],
-              },              
+              },   
+
+       jhmi: {
+                    windowTitle: "TaiAn Financial Health Insurance for JHMI",
+                    pageTitle: "TaiAn Financial Health Insurance for JHMI",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                          ],
+              },  
+
+       psu: {
+                    windowTitle: "TaiAn Financial Health Insurance for Pennsylvania State University",
+                    pageTitle: "TaiAn Financial Health Insurance for Pennsylvania State University",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                          ],
+              },                
 
         usc: {
                     windowTitle: "TaiAn Health Insurance for University of Southern California",
@@ -131,6 +153,17 @@ function getPartnership(partner) {
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                           ],
+              },      
+              
+        ucdav: {
+                    windowTitle: "TaiAn Health Insurance for UC Davis",
+                    pageTitle: "TaiAn Health Insurance for UC Davis",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                          ],                          
               },                  
               
         iu: {
@@ -173,6 +206,7 @@ function getPartnership(partner) {
                             "pivot-international-scholar",
                           ],
                     internationalScholarContent: "Taian International Health Insurance provides International Scholar Insurance for US visa scholars (J visa). Taian Scholar Insurance Plan A and Plan B meet UC Davis scholar insurance standards and are more affordable.  UC Davis requires a minimum of $50,000.00 per illness or injury and our Plan B Standard Plan meets this requirement.",
+                   
               },                            
 
         econnect: {
