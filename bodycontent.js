@@ -1802,6 +1802,13 @@ function writeSections() {
     startRow();
     writeText("Taian International Health Insurance provides International Student Insurance for US visa students (F1 visa, J1 visa, and M1 visa). Taian Student Insurance Plan A and Plan B meet most school student insurance standards and are more affordable.");
     endRow();
+
+    var partnerShip = getPartnership(getPageAttribute("partner"));
+    var internationalStudentPartnerContent = partnerShip["internationalStudentContent"];
+    var hasIStPartnerContent = !(typeof internationalStudentPartnerContent === "undefined")
+    if (hasIStPartnerContent) {
+        internationalStudentPartnerContent();
+    }
    
     startRow();
     writeText("Our highlighted plans:");
@@ -1965,11 +1972,9 @@ function writeSections() {
 
     var partnerShip = getPartnership(getPageAttribute("partner"));
     var internationalScholarPartnerContent = partnerShip["internationalScholarContent"];
-    var hasISPartnerContent = !(typeof internationalScholarPartnerContent === "undefined") && (internationalScholarPartnerContent.length > 0);
+    var hasISPartnerContent = !(typeof internationalScholarPartnerContent === "undefined")
     if (hasISPartnerContent) {
-        startRow();
-        writeText(internationalScholarPartnerContent);
-        endRow();
+        internationalScholarPartnerContent();
     }
    
     startRow();
