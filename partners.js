@@ -220,17 +220,6 @@ function getPartnership(partner) {
                         writeText("Taian International Health Insurance provides International Scholar Insurance for US visa scholars (J visa). Taian Scholar Insurance Plan A and Plan B meet UC Davis scholar insurance standards and are more affordable.  UC Davis requires a minimum of $50,000.00 per illness or injury and our Plan B Standard Plan meets this requirement.");
                         endRow();
                     },
-
-                    internationalStudentContent: function () {
-                        startRow();
-                        writeText("Blah blah blah international students blah blah.");
-
-                        document.write(makeBulletedListWithTitle("", [
-                                makeURL("Blah Blah J requirements", "http://google.com"),
-                                makeURL("Blah Blah J2 requirements", "http://google.com"),
-                                ]));
-                        endRow();
-                    },
               },                            
 
         econnect: {
