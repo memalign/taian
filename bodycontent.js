@@ -1088,7 +1088,7 @@ function writeLogoAndTitle() {
 }
 
 function writeHeaderNote() {
-    document.write("<br />" + loc("Great new look - same TaiAn Financial"));
+    document.write("<br />");
 }
 
 function writeContactInfo() {
@@ -1112,7 +1112,7 @@ function writeContactInfo() {
 
 function writeTabs() {
     var topLevelNames = { "pivot-home": "Home",
-                          "pivot-international-student": "International Student",
+                          "pivot-international-student": "International Scholar/Student",
                           "pivot-international-scholar": "International Scholar",
                           "pivot-global-medical": "Global Medical",
                           "pivot-travel-insurance": "Travel Insurance",
@@ -1797,10 +1797,10 @@ function writeSections() {
 
 
     // International Student
-    startSection("pivot-international-student", "International Student");
+    startSection("pivot-international-student", "International Scholars and Students");
 
     startRow();
-    writeText("Taian International Health Insurance provides International Student Insurance for US visa students (F1 visa, J1 visa, and M1 visa). Taian Student Insurance Plan A and Plan B meet most school student insurance standards and are more affordable.");
+    writeText("Taian International Health Insurance provides International Scholar and Student Insurance for US visa holders (F1 visa, J1 visa, OPT, and M1 visa). Taian Insurance Plan A and Plan B meet most school scholar and student insurance standards and are more affordable.");
     endRow();
 
     var partnerShip = getPartnership(getPageAttribute("partner"));
@@ -1818,13 +1818,13 @@ function writeSections() {
     document.write(makeTable(3,
             [
             // Column headers:
-            "TaiAn International Students",
+            "TaiAn Scholars and Students",
             makeRawURL("Plan A (Student Health Advantage)", "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
             makeRawURL("Plan B (Standard) (Patriot Exchange Program)", "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
 
             // Rest of the table:
             // Row 2
-            "Plan Type", "Designed specifically for international students (F1,F2,J1,J2). Renewable up to 5 years if 3 months or more are purchased. For those who have been in the US for less than 6 months.", "Designed specifically for international students (F1,F2,J1,J2). Renewable up to 4 years if 3 months or more are purchased. No limitation for how long you have been in the US.",
+            "Plan Type", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Renewable up to 5 years if 3 months or more are purchased. For those who have been in the US for less than 6 months.", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Renewable up to 4 years if 3 months or more are purchased.",
 
             // Row 3
             "Maximum Limit", "$500,000 lifetime maximum, $300,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $250,000 or $500,000 per illness/injury",
@@ -1919,6 +1919,7 @@ function writeSections() {
 
                 "Plan Highlights",
                 makeBulletedListWithTitle("", [
+                        "Patriot Exchange Plan B Standard Plan with $50,000 limit per illness/injury meets the US Dept of state standards for Exchange visitors (J visa) which are: At least $50,000 per illness, repatriation of remains of $7,500, Medical evacuation benefits of $10,000, and a deductible not over $500.",
                         "F2/J2 can buy Patriot Exchange alone (if F1/J1 buys schools plan) or buy with F1/J1",                        
                         "Patriot Exchange Group plan available for groups of 2 or more",
                         "Patriot Exchange Basic Plan available at a lower cost (may not meet your visa requirements - ask us!)",

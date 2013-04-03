@@ -6,8 +6,8 @@ function getPartnership(partner) {
     var partnerShips = {
 
         taian: {
-                    windowTitle: "TaiAn Financial Health Insurance",
-                    pageTitle: "TaiAn Financial",
+                    windowTitle: "TaiAn International Health Insurance",
+                    pageTitle: "TaiAn International Health Insurance",
                     logoImage: "longevity.gif",
                     logoHeight: "30",
                     logoWidth: "30",
@@ -57,8 +57,8 @@ function getPartnership(partner) {
               },              
 
         iupui: {
-                    windowTitle: "TaiAn Financial Health Insurance for IUPUI",
-                    pageTitle: "TaiAn Financial Health Insurance for IUPUI",
+                    windowTitle: "TaiAn Health Insurance for IUPUI",
+                    pageTitle: "TaiAn Health Insurance for IUPUI",
                     tabs: [
                             "pivot-home",
                             "pivot-international-student",
@@ -68,8 +68,8 @@ function getPartnership(partner) {
               },   
 
        jhmi: {
-                    windowTitle: "TaiAn Financial Health Insurance for JHMI",
-                    pageTitle: "TaiAn Financial Health Insurance for JHMI",
+                    windowTitle: "TaiAn Health Insurance for JHMI",
+                    pageTitle: "TaiAn Health Insurance for JHMI",
                     tabs: [
                             "pivot-home",
                             "pivot-international-student",
@@ -79,8 +79,8 @@ function getPartnership(partner) {
               },  
 
        psu: {
-                    windowTitle: "TaiAn Financial Health Insurance for Pennsylvania State University",
-                    pageTitle: "TaiAn Financial Health Insurance for Pennsylvania State University",
+                    windowTitle: "TaiAn Health Insurance for Pennsylvania State University",
+                    pageTitle: "TaiAn Health Insurance for Pennsylvania State University",
                     tabs: [
                             "pivot-home",
                             "pivot-international-student",
@@ -109,6 +109,16 @@ function getPartnership(partner) {
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                           ],
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Insurance Plan A and Plan B meet UIUC scholar and student insurance standards.  Students are required to carry $200,000 per illness or injury.  J Scholars must meet the US department of State $50,000 minimum.");
+
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("Student Requirements", "http://www.si.uiuc.edu/Default.aspx?tabid=64"),
+                                makeURL("US Department of State and UIUC Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/"),
+                                ]));
+                        endRow();
+                    },                          
               },        
 
         nyu: {
@@ -200,19 +210,14 @@ function getPartnership(partner) {
               },                  
               
         ucdavis: {
-                    windowTitle: "TaiAn Financial Health Insurance for UC Davis J Scholars",
-                    pageTitle: "TaiAn Financial Health Insurance for UC Davis J Scholars",
+                    windowTitle: "TaiAn Health Insurance for UC Davis J Scholars",
+                    pageTitle: "TaiAn Health Insurance for UC Davis J Scholars",
                     tabs: [
                             "pivot-international-scholar",
                           ],
                     internationalScholarContent: function () {
                         startRow();
                         writeText("Taian International Health Insurance provides International Scholar Insurance for US visa scholars (J visa). Taian Scholar Insurance Plan A and Plan B meet UC Davis scholar insurance standards and are more affordable.  UC Davis requires a minimum of $50,000.00 per illness or injury and our Plan B Standard Plan meets this requirement.");
-
-                        document.write(makeBulletedListWithTitle("", [
-                                makeURL("Blah Blah J requirements", "http://google.com"),
-                                makeURL("Blah Blah J2 requirements", "http://google.com"),
-                                ]));
                         endRow();
                     },
 
