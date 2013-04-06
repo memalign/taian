@@ -120,7 +120,12 @@ function showPivot(pivotName) {
         cnusc: "l=cn&partner=usc&p=pivot-home&adid=scnusc",   
         gcnusc: "l=cn&partner=usc&p=pivot-international-student&adid=gcnusc",
         gusc: "l=en&partner=usc&p=pivot-international-student&adid=gusc",
-        acnusc: "l=cn&partner=usc&p=pivot-international-student&adid=acnusc",        
+        acnusc: "l=cn&partner=usc&p=pivot-international-student&adid=acnusc",    
+        sta: "l=en&partner=sta&p=pivot-home&adid=ssta",
+        cnsta: "l=cn&partner=sta&p=pivot-home&adid=scnsta",   
+        gcnsta: "l=cn&partner=sta&p=pivot-international-student&adid=gcnsta",
+        gsta: "l=en&partner=sta&p=pivot-international-student&adid=gsta",
+        acnsta: "l=cn&partner=sta&p=pivot-international-student&adid=acnsta",          
         uiuc: "l=en&partner=uiuc&p=pivot-home&adid=suiuc",
         cnuiuc: "l=cn&partner=uiuc&p=pivot-home&adid=scnuiuc",   
         gcnuiuc: "l=cn&partner=uiuc&p=pivot-international-student&adid=gcnuiuc",
@@ -1800,7 +1805,7 @@ function writeSections() {
     startSection("pivot-international-student", "International Scholars and Students");
 
     startRow();
-    writeText("Taian International Health Insurance provides International Scholar and Student Insurance for US visa holders (F1 visa, J1 visa, OPT, and M1 visa). Taian Insurance Plan A and Plan B meet most school scholar and student insurance standards and are more affordable.");
+    writeText("Taian International Health Insurance provides International Scholar and Student Insurance for US visa holders (F1 visa, J1 visa, OPT, and M1 visa) and their dependents. Taian Insurance Plan A and Plan B meet most school scholar and student insurance standards and are more affordable.");
     endRow();
 
     var partnerShip = getPartnership(getPageAttribute("partner"));

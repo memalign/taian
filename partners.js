@@ -98,7 +98,38 @@ function getPartnership(partner) {
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                           ],
-              },    
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet USC J scholar standards. Exchange visitors (J visa) enrolled in under 6 credits have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to USC to waive the school plan.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("USC Scholar Requirements", "http://sait.usc.edu/ois/j1-scholars/scholar-resources/insurance.aspx"),
+                                makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/"),
+                                ]));
+                        endRow();
+                    },                           
+              },
+
+        sta: {
+                    windowTitle: "TaiAn Health Insurance for Stanford University",
+                    pageTitle: "TaiAn Health Insurance for Stanford University",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Stanford University J scholar standards. Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Stanford to waive the school plan.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("Stanford Scholar Requirements", "http://icenter.stanford.edu/quick_reference/healthinsurance.html#J1reqs"),
+                                makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/"),
+                                ]));
+                        endRow();
+                    },                           
+              },               
 
         uiuc: {
                     windowTitle: "TaiAn Health Insurance for University of Illinois Urbana Champaign",
@@ -109,6 +140,7 @@ function getPartnership(partner) {
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                           ],
+                          
                     internationalStudentContent: function () {
                         startRow();
                         writeText("Taian Insurance Plan A and Plan B meet UIUC scholar and student insurance standards.  Students are required to carry $200,000 per illness or injury.  J Scholars must meet the US department of State $50,000 minimum.");
@@ -163,6 +195,17 @@ function getPartnership(partner) {
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                           ],
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UCLA J scholar standards. Some scholars are required to have coverage of $100,000 per illness or injury and the waiver is approved by VSISP/Garnett-Powers. This requirement is met by Taian Scholar/Student Plan A or Plan B with $250,000 benefit per illness or injury.  Other scholars have the waiver approved at the Dashew Center for International Students and Scholars.  They are required to have coverage of $50,000 per illness or injury. This requirement is met by Taian Scholar/Student Plan B with $50,000 benefit per illness or injury. Each of these requirements meets the US Department of State standards. You can check your required coverage level at the link below.");
+                        writeText("");
+                         writeText("A few minutes after submitting an application, you will receive a confirmation letter of your coverage which you can send to UCLA to waive the school mandatory plan.");                       
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("UCLA Scholar Requirements", "http://www.internationalcenter.ucla.edu/home/J1Visa/74/75/Overview#divHealth"),
+                                makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/"),
+                                ]));
+                        endRow();
+                    },                                 
               },      
               
         ucdav: {
