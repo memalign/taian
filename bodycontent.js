@@ -1109,7 +1109,7 @@ function writeContactInfo() {
     }
 
     document.write("<li id=\"mscom-legal-copyright\">");
-    document.write(loc("2012 TaiAn Financial LLC. All rights reserved."));
+    document.write(loc("2013 TaiAn Financial LLC. All rights reserved."));
     document.write("</li>");
 
     document.write("</ul>");
