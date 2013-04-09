@@ -182,7 +182,7 @@ function showPivot(pivotName) {
         pivotName = defaultTab;
 
     updateHash("p", pivotName);
-    var toHide = document.getElementsByClassName("pivot ");
+    var toHide = $(".pivot");
     for (var i = 0; i < toHide.length; i++) {
         toHide[i].style.display = "none";
     }
