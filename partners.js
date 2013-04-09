@@ -173,6 +173,15 @@ function getPartnership(partner) {
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                           ],
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Purdue University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Purdue as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("Purdue University Scholar Requirements", "http://www.iss.purdue.edu/Current/J1/HealthInsurance.cfm"),                               
+                                makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/"),
+                                ]));
+                        endRow();
+                    },                                    
               },   
 
         columbia: {
@@ -228,6 +237,16 @@ function getPartnership(partner) {
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                           ],
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Indiana University - Bloomington allows both international students and J scholars to waive the school plan. Students and scholars have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500; 5. Maternity benefits for females only. For males, Plan B with $50,000 benefit per illness or injury meets the standards, and the US Department of State requirements. For females, Plan A meets the requirements.  Shortly after submitting an application you will receive confirmation of your coverage which you can send to IU Bloomington to waive the school plan.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("IU Bloomington Student Requirements", "http://iservices.iupui.edu/health-insurance/students/"),
+                                makeURL("IU Bloomington Scholar Requirements", "http://iservices.iupui.edu/health-insurance/scholars/"),                               
+                                makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/"),
+                                ]));
+                        endRow();
+                    },                                        
               },                  
 
         utaustin: {

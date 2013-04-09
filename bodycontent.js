@@ -115,7 +115,7 @@ function showPivot(pivotName) {
         econnect: "l=en&partner=econnect",        
         iupuiexch: "l=cn&partner=iupui&p=exchange-form",  
         ucdavisbform: "l=cn&partner=ucdavis&p=exchange-form",        
-        univtemplate: "l=en&partner=univtemplate",        
+        univtemplate: "l=en&partner=univtemplate",
         usc: "l=en&partner=usc&p=pivot-home&adid=susc",
         cnusc: "l=cn&partner=usc&p=pivot-home&adid=scnusc",   
         gcnusc: "l=cn&partner=usc&p=pivot-international-student&adid=gcnusc",
@@ -1366,7 +1366,7 @@ function writeSections() {
 
                 makeURL("Indiana University-Bloomington", "http://www.iub.edu/"),
                 makeURL("Click to View", "http://iservices.iupui.edu/health-insurance/students/"),
-                makeURL("Click to View", "http://iservices.iupui.edu/health-insurance/students/"),
+                makeURL("Click to View", "http://iservices.iupui.edu/health-insurance/scholars/"),
 
                 makeURL("Iowa State University (IA)", "http://www.iastate.edu/"),
                 makeURL("Click to View", "http://www.hrs.iastate.edu/sship/docs/MandatoryHealthInsuranceInternationalStudents.pdf"),
@@ -1884,11 +1884,20 @@ function writeSections() {
             ])
             );
     endRow();
-    
+
+    startRow();
+    writeText("");
+    endRow();    
+
+    document.write(makeLinesWithTitle("", [
+            "Groups of 2 or more save about 10% with Plan B Group",
+            makeBuyURL("Buy Plan B Group (Patriot Exchange Group)", "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699"),
+            ]));    
+
     startRow();
     writeText("");
     endRow();
-
+            
     startRow();
     writeText("More plan details:");
     writeText("");
