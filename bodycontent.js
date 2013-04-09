@@ -186,7 +186,7 @@ function showPivot(pivotName) {
     for (var i = 0; i < toHide.length; i++) {
         toHide[i].style.display = "none";
     }
-    var toShow = document.getElementById(pivotName);
+    var toShow = $("#"+pivotName)[0];
     toShow.style.display = "block";
 
     showApplicationFrames(pivotName);
