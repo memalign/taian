@@ -1808,7 +1808,7 @@ function writeSections(legacy) {
         endRow();
 
         startRow();
-        for (var index in homePageText) {
+        for (var i = 0; i < homePageText.length; ++i) {
             writeCellWithText(homePageText[index]);
         }
         endRow();
