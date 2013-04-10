@@ -1096,23 +1096,29 @@ function writeHeaderNote() {
     document.write("<br />");
 }
 
-function writeContactInfo() {
+function makeContactInfo() {
     var partnerShip = getPartnership(getPageAttribute("partner"));
     var contactInfo = partnerShip["contactInfo"];
 
-    document.write("<ul>");
+    var ret = "";
+    ret += "<ul>";
 
     for (var i = 0; i < contactInfo.length; ++i) {
-        document.write("<li>");
-        document.write(loc(contactInfo[i]));
-        document.write("</li>");
+        ret += "<li>";
+        ret += loc(contactInfo[i]);
+        ret += "</li>";
     }
 
-    document.write("<li id=\"mscom-legal-copyright\">");
-    document.write(loc("2013 TaiAn Financial LLC. All rights reserved."));
-    document.write("</li>");
+    ret += '<li id=\"mscom-legal-copyright\">';
+    ret += loc("2013 TaiAn Financial LLC. All rights reserved.");
+    ret += "</li>";
+    ret += "</ul>";
 
-    document.write("</ul>");
+    return ret;
+}
+
+function writeContactInfo() {
+    document.write(makeContactInfo());
 }
 
 function writeTabs() {
@@ -1215,51 +1221,7 @@ function writePatriotTravelTable() {
                 ]));
 }
 
-function writeSections(legacy) {
-
-    if (!legacy) {
-        startSection("pivot-home", "");
-
-        startRow();
-
-        startCell();
-        startPivotURL("pivot-international-student");
-        writeImage("international-student.jpg");
-        writeText("International Student & Scholar (F1&J1 visa). Coverage meets most university standards. $48.62/month with $5,000,000 Benefit");
-        endPivotURL();
-        endCell();
-
-        startCell();
-        startPivotURL("pivot-global-medical");
-        writeImage("global-medical.jpg");
-        writeText("Global Medical - Global insurance designed for non-US citizens to use worldwide, and US citizens to use outside of the United States.");
-        endPivotURL();
-        endCell();
-
-        startCell();
-        startPivotURL("pivot-travel-insurance");
-        writeImage("traveler.jpg");
-        writeText("Traveler's insurance: Business travel, family visiting, leisure travel. 5 days - 2 years.  Prices start at about $1/day");
-        endPivotURL();
-        endCell();
-
-        endRow();
-
-
-        startRow();
-        writeText("");
-        endRow();
-
-        startRow();
-        writeCellWithText("We are qualified insurance agents with over 20 years experience working with insurance companies.");
-        writeCellWithText("We have native English and Chinese speakers to answer all of your questions.");
-        writeCellWithText("Ask us about student coverage that meets your university insurance standards.");
-        endRow();
-
-        endSection();
-    }
-
-
+function writeSectionForSchoolWaiverRequirements() {
     // School waiver requirements
     startSection("pivot-school-waiver", "School Waiver Requirements");
     startRow();
@@ -1802,6 +1764,65 @@ function writeSections(legacy) {
                 ]));
     endRow();
     endSection();
+}
+
+function writeSections(legacy) {
+
+    var homePageText = [
+        "We are qualified insurance agents with over 20 years experience working with insurance companies.",
+        "We have native English and Chinese speakers to answer all of your questions.",
+        "Ask us about student coverage that meets your university insurance standards.",
+    ];
+
+    if (!legacy) {
+        startSection("pivot-home", "");
+
+        startRow();
+
+        startCell();
+        startPivotURL("pivot-international-student");
+        writeImage("international-student.jpg");
+        writeText("International Student & Scholar (F1&J1 visa). Coverage meets most university standards. $48.62/month with $5,000,000 Benefit");
+        endPivotURL();
+        endCell();
+
+        startCell();
+        startPivotURL("pivot-global-medical");
+        writeImage("global-medical.jpg");
+        writeText("Global Medical - Global insurance designed for non-US citizens to use worldwide, and US citizens to use outside of the United States.");
+        endPivotURL();
+        endCell();
+
+        startCell();
+        startPivotURL("pivot-travel-insurance");
+        writeImage("traveler.jpg");
+        writeText("Traveler's insurance: Business travel, family visiting, leisure travel. 5 days - 2 years.  Prices start at about $1/day");
+        endPivotURL();
+        endCell();
+
+        endRow();
+
+
+        startRow();
+        writeText("");
+        endRow();
+
+        startRow();
+        for (var index in homePageText) {
+            writeCellWithText(homePageText[index]);
+        }
+        endRow();
+
+        endSection();
+    } else {
+        document.write(makeTableWithStyle("invisibleTableNormalText", 3, [
+                    homePageText,
+                    "","","",
+                    "",
+                    makeContactInfo(),
+                    "",
+                    ]));
+    }
 
 
     // International Student
@@ -2735,7 +2756,11 @@ function writeSections(legacy) {
 
     endSection();
 
-    writeSectionsForApps();
-    writeSectionsForForms();
+    writeSectionForSchoolWaiverRequirements();
+
+    if (!legacy) {
+        writeSectionsForApps();
+        writeSectionsForForms();
+    }
 }
 
