@@ -1215,46 +1215,49 @@ function writePatriotTravelTable() {
                 ]));
 }
 
-function writeSections() {
-    startSection("pivot-home", "");
+function writeSections(legacy) {
 
-    startRow();
+    if (!legacy) {
+        startSection("pivot-home", "");
 
-    startCell();
-    startPivotURL("pivot-international-student");
-    writeImage("international-student.jpg");
-    writeText("International Student & Scholar (F1&J1 visa). Coverage meets most university standards. $48.62/month with $5,000,000 Benefit");
-    endPivotURL();
-    endCell();
+        startRow();
 
-    startCell();
-    startPivotURL("pivot-global-medical");
-    writeImage("global-medical.jpg");
-    writeText("Global Medical - Global insurance designed for non-US citizens to use worldwide, and US citizens to use outside of the United States.");
-    endPivotURL();
-    endCell();
+        startCell();
+        startPivotURL("pivot-international-student");
+        writeImage("international-student.jpg");
+        writeText("International Student & Scholar (F1&J1 visa). Coverage meets most university standards. $48.62/month with $5,000,000 Benefit");
+        endPivotURL();
+        endCell();
 
-    startCell();
-    startPivotURL("pivot-travel-insurance");
-    writeImage("traveler.jpg");
-    writeText("Traveler's insurance: Business travel, family visiting, leisure travel. 5 days - 2 years.  Prices start at about $1/day");
-    endPivotURL();
-    endCell();
+        startCell();
+        startPivotURL("pivot-global-medical");
+        writeImage("global-medical.jpg");
+        writeText("Global Medical - Global insurance designed for non-US citizens to use worldwide, and US citizens to use outside of the United States.");
+        endPivotURL();
+        endCell();
 
-    endRow();
-   
+        startCell();
+        startPivotURL("pivot-travel-insurance");
+        writeImage("traveler.jpg");
+        writeText("Traveler's insurance: Business travel, family visiting, leisure travel. 5 days - 2 years.  Prices start at about $1/day");
+        endPivotURL();
+        endCell();
 
-    startRow();
-    writeText("");
-    endRow();
+        endRow();
 
-    startRow();
-    writeCellWithText("We are qualified insurance agents with over 20 years experience working with insurance companies.");
-    writeCellWithText("We have native English and Chinese speakers to answer all of your questions.");
-    writeCellWithText("Ask us about student coverage that meets your university insurance standards.");
-    endRow();
 
-    endSection();
+        startRow();
+        writeText("");
+        endRow();
+
+        startRow();
+        writeCellWithText("We are qualified insurance agents with over 20 years experience working with insurance companies.");
+        writeCellWithText("We have native English and Chinese speakers to answer all of your questions.");
+        writeCellWithText("Ask us about student coverage that meets your university insurance standards.");
+        endRow();
+
+        endSection();
+    }
 
 
     // School waiver requirements
