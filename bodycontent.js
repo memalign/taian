@@ -1218,7 +1218,6 @@ function writePatriotTravelTable() {
 function writeSections(legacy) {
 
     if (!legacy) {
-        /*
         startSection("pivot-home", "");
 
         startRow();
@@ -1258,7 +1257,6 @@ function writeSections(legacy) {
         endRow();
 
         endSection();
-        */
     }
 
 
