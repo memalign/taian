@@ -1815,6 +1815,8 @@ function writeSections(legacy) {
 
         endSection();
     } else {
+        document.write(makeTableWithStyle("invisibleTableNormalText", 3, homePageText));
+        /*
         document.write(makeTableWithStyle("invisibleTableNormalText", 3, [
                     homePageText,
                     "","","",
@@ -1822,6 +1824,7 @@ function writeSections(legacy) {
                     makeContactInfo(),
                     "",
                     ]));
+                    */
     }
 
 
