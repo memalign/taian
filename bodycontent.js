@@ -895,7 +895,7 @@ function makeTableWithStyle(styleClass, numColumns, cells) {
     var tableCode = "";
     tableCode += '<div bi:type="highlight">';
     tableCode += '<table class="'+styleClass+'">';
-    for (var i = 0; i < mergedCells.length; ++i) {
+    for (var i = 0; i < mergedCells.length; i++) {
         var isHeader = (i / numColumns) < 1;
         var isLeftCol = (i % numColumns) == 0;
 
@@ -976,7 +976,7 @@ function makeBulletedListWithTitle(title, list) {
     var listCode = '<h2>'+loc(title)+'</h2>';
     listCode += '<ul class="styled-ul">';
 
-    for (var i = 0; i < list.length; ++i) {
+    for (var i = 0; i < list.length; i++) {
         listCode += '<li class="styled-li">'+loc(list[i])+"</li>";
     }
     
@@ -988,7 +988,7 @@ function makeLinesWithTitle(title, lines) {
     var code = "";
 
     code += makeBold(title);
-    for (var i = 0; i < lines.length; ++i) {
+    for (var i = 0; i < lines.length; i++) {
         code += "<br />" + loc(lines[i]);
     }
     
@@ -1103,7 +1103,7 @@ function makeContactInfo() {
     var ret = "";
     ret += "<ul>";
 
-    for (var i = 0; i < contactInfo.length; ++i) {
+    for (var i = 0; i < contactInfo.length; i++) {
         ret += "<li>";
         ret += loc(contactInfo[i]);
         ret += "</li>";
@@ -1139,7 +1139,7 @@ function writeTabs() {
     var topLevelLinks = [];
 
     if (tabs.length > 1) {
-        for (var i = 0; i < tabs.length; ++i) {
+        for (var i = 0; i < tabs.length; i++) {
             topLevelLinks.push(makeTopLevelURL(tabs[i], topLevelNames[tabs[i]]));
         }
         document.write(makeTableWithStyle("invisibleTable", topLevelLinks.length, topLevelLinks));
@@ -1808,15 +1808,13 @@ function writeSections(legacy) {
         endRow();
 
         startRow();
-        for (var i = 0; i < homePageText.length; ++i) {
+        for (var i = 0; i < homePageText.length; i++) {
             writeCellWithText(homePageText[index]);
         }
         endRow();
 
         endSection();
     } else {
-        document.write(makeTableWithStyle("invisibleTableNormalText", 3, homePageText));
-        /*
         document.write(makeTableWithStyle("invisibleTableNormalText", 3, [
                     homePageText,
                     "","","",
@@ -1824,7 +1822,6 @@ function writeSections(legacy) {
                     makeContactInfo(),
                     "",
                     ]));
-                    */
     }
 
 
