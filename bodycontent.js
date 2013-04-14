@@ -1820,7 +1820,7 @@ function writeSections(legacy) {
                     "","","",
                     "",
                     makeContactInfo(),
-                    "",
+                    ""
                     ]));
     }
 

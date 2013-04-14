@@ -15,7 +15,7 @@ function getPartnership(partner) {
                                   "Call: +1 (317) 318-8259 (English)",
                                   "WeChat ID: wxid_taian_usa",
                                   "Skype: chris.lee136",
-                                  "Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>",
+                                  "Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>"
                                  ],
                     tabs: [
                             "pivot-home",
@@ -26,7 +26,7 @@ function getPartnership(partner) {
                             "pivot-texas-residents",
                             "pivot-life-insurance",
                             "pivot-partnerships",
-                          ],
+                          ]
                },
 
         using: {
