@@ -165,8 +165,7 @@ function showPivot(pivotName) {
         cniu: "l=cn&partner=iu&p=pivot-home&adid=scniu",   
         gcniu: "l=cn&partner=iu&p=pivot-international-student&adid=gcniu",
         acniu: "l=cn&partner=iu&p=pivot-international-student&adid=acniu",        
-        giu: "l=en&partner=iu&p=pivot-international-student&adid=giu",        
-        
+        giu: "l=en&partner=iu&p=pivot-international-student&adid=giu"
     }; 
 
     var newHash = referrals[currHash];
@@ -207,11 +206,11 @@ function urlsToAppIds() {
         "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699" : "PatExchPlanB",
         "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699" : "SHAPlanA",
         "https://purchase.imglobal.com/quote/patriot?imgac=80000699" : "Travel",
-        "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699" : "TravelGroup",
+        "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699" : "TravelGroup"
     };
     
     var perLang = {
-        "cn" : urlsToAppIds,
+        "cn" : urlsToAppIds
     };
     return perLang;
 }
@@ -400,7 +399,7 @@ function writeSectionsForForms() {
                 makeFormTextInput("Child 2 Family doctor Country"), 
                 makeFormTextInput("Child 2 Family doctor Telephone"), 
                 makeFormTextInput("Child 2 Family doctor Date Last Seen"), 
-                makeFormTextInput("Child 2 Family doctor Reason"), 
+                makeFormTextInput("Child 2 Family doctor Reason")
                 ]));
     endForm();
     endRow();
@@ -507,7 +506,7 @@ function writeSectionsForForms() {
                 makeFormTextInput("Insured 8-Home Country"),
                 makeFormTextInput("Insured 8-Country of Citizenship"),                
                 makeFormTextInput("Insured 8-Start Date"),
-                makeFormTextInput("Insured 8-End Date"),                
+                makeFormTextInput("Insured 8-End Date")
                 ]));
     endForm();
     endRow();
@@ -616,7 +615,7 @@ function writeSectionsForForms() {
                 makeFormTextInput("Insured 8-Home Country"),
                 makeFormTextInput("Insured 8-Country of Citizenship"),                
                 makeFormTextInput("Insured 8-Start Date"),
-                makeFormTextInput("Insured 8-End Date"),                
+                makeFormTextInput("Insured 8-End Date")
                 ]));
     endForm();
     endRow();
@@ -678,7 +677,7 @@ function writeSectionsForForms() {
                 makeFormTextInput("Date of Return to Home Country"),
                 makeFormTextInput("Date of Arrival in the U.S. (Required for non-US citizens over 65 and visiting the US)"),
                 makeFormTextInput("Do you want optional coverage for higher risk sports?  (Most people say no)"),                
-                makeFormTextInput("Do you want the ad on benefit for loss of baggage, legal assistance, and personal liability (Most people say no)"),                
+                makeFormTextInput("Do you want the ad on benefit for loss of baggage, legal assistance, and personal liability (Most people say no)")
                 ]));
     endForm();
     endRow();
@@ -1003,7 +1002,7 @@ function writeRowForUnitedHealthOne() {
     startRow();
     document.write(makeTableWithStyle("invisibleTable", 2, [
                 makeImage("uhone.png"),
-                "Major medical, short term, dental insurance, critical illness coverage for residents (in the U.S. for 1 yr or longer) of Indiana and Texas. UnitedHealthOne coverage is low cost and high quality.",
+                "Major medical, short term, dental insurance, critical illness coverage for residents (in the U.S. for 1 yr or longer) of Indiana and Texas. UnitedHealthOne coverage is low cost and high quality."
                 ]));
     writeText("Some example plans:");
     endRow();
@@ -1020,7 +1019,7 @@ function writeRowForUnitedHealthOne() {
                     "Deductible: $500 to $5000 per cause",
                     "Coinsurance: 20% to $4000, then Plan pays 100%",
                     "Doctor Coverage: Subject to deductible and coinsurance",
-                    "Monthly Rate (deductible $2500): $35 for 25 y/o, $40 for 35 y/o, $64 for 45 y/o",
+                    "Monthly Rate (deductible $2500): $35 for 25 y/o, $40 for 35 y/o, $64 for 45 y/o"
                     ]),
 
                 "Comprehensive Major Medical PLAN 80",
@@ -1033,7 +1032,7 @@ function writeRowForUnitedHealthOne() {
                     "Preventive Care: Covered 100% No Copayment, No deductible, No Coinsurance",
                     "Prescription drugs covered subject to deductible and coinsurance",
                     "Optional benefits for accidental death, accidental injury, term life insurance, vision",
-                    "Monthly Rate (deductible $2500): $99 for 25 y/o, $133 for 35 y/o, $194 for 45 y/o",
+                    "Monthly Rate (deductible $2500): $99 for 25 y/o, $133 for 35 y/o, $194 for 45 y/o"
                     ]),
 
                 "Comprehensive Major Medical COPAY PLAN",
@@ -1046,11 +1045,11 @@ function writeRowForUnitedHealthOne() {
                         "Preventive Care: Covered 100% No Copayment, No deductible, No Coinsurance",
                         "Prescription drugs copay included",
                         "Optional benefits for accidental death, accidental injury, term life insurance, vision",
-                        "Monthly Rate (deductible $2500): $106 for 25 y/o, $144 for 35 y/o, $209 for 45 y/o",
+                        "Monthly Rate (deductible $2500): $106 for 25 y/o, $144 for 35 y/o, $209 for 45 y/o"
                         ]),
 
                 "",
-                makeBuyURL("Quote/Purchase UnitedHealthOne Insurance® - You can get a quote without entering any personal information.", "https://www.uhone.com/quote/GetQuote.ashx?BrokerID=AA4324968&ArrangementID=01"),
+                makeBuyURL("Quote/Purchase UnitedHealthOne Insurance® - You can get a quote without entering any personal information.", "https://www.uhone.com/quote/GetQuote.ashx?BrokerID=AA4324968&ArrangementID=01")
                 ]));
 
     writeText("");
@@ -1059,7 +1058,7 @@ function writeRowForUnitedHealthOne() {
                 "Deductible credit means your deductible goes down by 20% each year your medical expenses are less than your deductible. A 50% reduction in your deductible is your maximum benefit.",
                 "Nationwide network gives you access to providers throughout the U.S.",
                 "In Indiana and Texas dental insurance and critical illness insurance can be purchased seperately from medical coverage.",
-                "All plans are available through the quote link. This includes other copay plans, high deductible health insurance, health saving accounts, self employed health insurance coverage.",
+                "All plans are available through the quote link. This includes other copay plans, high deductible health insurance, health saving accounts, self employed health insurance coverage."
                 ]));
 
     writeText("");
@@ -1071,7 +1070,7 @@ function writeRowForUnitedHealthOne() {
             "\"A\" rated by A.M.Best.",
             "\"A+\" rated by Standards and Poor's.",
             "Up to 50% discounts on medical care provided by provider network access.",
-            "Nearly 754,000 physicians and 5,400 hospitals in the largest national provider network.",
+            "Nearly 754,000 physicians and 5,400 hospitals in the largest national provider network."
             ]));
     endRow();
 
@@ -1130,7 +1129,7 @@ function writeTabs() {
                           "pivot-indiana-residents": "Indiana Residents",
                           "pivot-texas-residents": "Texas Residents",
                           "pivot-life-insurance": "Life Insurance",
-                          "pivot-partnerships": "Partnerships",
+                          "pivot-partnerships": "Partnerships"
     };
 
     var partnership = getPartnership(getPageAttribute("partner"));
@@ -1157,7 +1156,7 @@ function writeDontSeeWhatYouNeedRow() {
     writeText("");
 
     var bullets = [
-        makeURL("Explore other choices on your own.", "https://producer.imglobal.com/international-insurance-plans.aspx?imgac=80000699"),
+        makeURL("Explore other choices on your own.", "https://producer.imglobal.com/international-insurance-plans.aspx?imgac=80000699")
     ];
 
     bullets = bullets.concat(getContactInfo());
@@ -1169,7 +1168,7 @@ function writeDontSeeWhatYouNeedRow() {
                 "Student coverage for US citizens abroad",
                 "Coverage for professionals living outside their home country",
                 "Travel insurance plans for groups traveling together",
-                "More – Just ask!",
+                "More – Just ask!"
                 ]);
 
     document.write(makeBulletedListWithTitle("Don't see what you need?", bullets));
@@ -1190,7 +1189,7 @@ function writePatriotTravelTable() {
                     "Trip cancellation, travel delay and baggage delay benefits available",
                     "Universal Rx pharmacy discount savings",
                     "24 hour secure access from anywhere in the world to manage your account at any time",
-                    "Groups of 5 or more can purchase Patriot Travel Group offering at a lower price",
+                    "Groups of 5 or more can purchase Patriot Travel Group offering at a lower price"
                     ]),
 
 
@@ -1204,7 +1203,7 @@ function writePatriotTravelTable() {
                     "International vacationers",
                     "Individual or group missionaries",
                     "Relatives visiting from overseas",
-                    "Recently arrived immigrants",
+                    "Recently arrived immigrants"
                     ]),
                 "",
                 "You have enough to worry about when you're traveling. Don't let your medical coverage be an uncertainty. Patriot International® provides coverage for U.S. citizens traveling outside the U.S. with coverage for brief returns to the U.S., while Patriot America® provides coverage for non-U.S. citizens traveling outside their home country. Both plans are available for a minimum of 5 days up to a maximum of two years.",
@@ -1216,7 +1215,7 @@ function writePatriotTravelTable() {
                 "Group Patriot Travel Brochure", makeURL("Group Patriot Travel Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1802&a=80000699"),
 
                 "", makeBuyURL("Buy Patriot Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
-                "", makeBuyURL("Buy Patriot Group Travel Insurance", "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                "", makeBuyURL("Buy Patriot Group Travel Insurance", "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699")
 
                 ]));
 }
@@ -1759,7 +1758,7 @@ function writeSectionForSchoolWaiverRequirements() {
 
                 makeURL("Yale University (CT)", "http://www.yale.edu/"),
                 "",
-                makeURL("Click to View", "http://www.yale.edu/oiss/immigration/common/j1students/health.html"),
+                makeURL("Click to View", "http://www.yale.edu/oiss/immigration/common/j1students/health.html")
 
                 ]));
     endRow();
@@ -1809,7 +1808,7 @@ function writeSections(legacy) {
 
         startRow();
         for (var i = 0; i < homePageText.length; i++) {
-            writeCellWithText(homePageText[index]);
+            writeCellWithText(homePageText[i]);
         }
         endRow();
 
@@ -1883,7 +1882,7 @@ function writeSections(legacy) {
                     "24-30",   "$110",  "$426",   "$82",
                     "31-40",   "$197",  "$567",   "$82",
                     "41-50",   "$322",  "$586",   "$82",
-                    "51-64",   "$430",  "$567",   "$82",
+                    "51-64",   "$430",  "$567",   "$82"
                     ]), 
 
             loc("$50,000 per illness/injury") +         
@@ -1891,7 +1890,7 @@ function writeSections(legacy) {
                     "Age",     "F1/J1", "Spouse", "Children",
                     "&lt; 25", "$48.62","$48.62",  "$48.62",
                     "25-49",   "$63.37","$63.37",  "$48.62",
-                    "50-64",   "$135.70","$135.70","$48.62",
+                    "50-64",   "$135.70","$135.70","$48.62"
                     ]) +
 
             loc("$250,000 per illness/injury") +         
@@ -1899,11 +1898,11 @@ function writeSections(legacy) {
                     "Age",     "F1/J1", "Spouse", "Children",
                     "&lt; 25", "$60.36","$60.36",  "$60.36",
                     "25-49",   "$78.59","$78.59",  "$60.36",
-                    "50-64",   "$168.27","$168.27","$60.36",
+                    "50-64",   "$168.27","$168.27","$60.36"
                     ]),         
             "", 
             makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
-            makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Patriot Exchange Program - Standard"), "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
+            makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Patriot Exchange Program - Standard"), "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699")
 
             ])
             );
@@ -1915,7 +1914,7 @@ function writeSections(legacy) {
 
     document.write(makeLinesWithTitle("", [
             "Groups of 2 or more save about 10% with Plan B Group",
-            makeBuyURL("Buy Plan B Group (Patriot Exchange Group)", "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699"),
+            makeBuyURL("Buy Plan B Group (Patriot Exchange Group)", "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699")
             ]));    
 
     startRow();
@@ -1938,12 +1937,12 @@ function writeSections(legacy) {
                         "Intercollegiate/Interscholastic/intramural or club sports: $5,000 per injury/illness medical expenses only",
                         "Incidental home country coverage: up to cumulative two weeks",
                         "Terrorism coverage: up to 50,000 lifetime maximum",
-                        "Dependents can only purchase when the student purchases",
+                        "Dependents can only purchase when the student purchases"
                         ]),
 
 
                 "Full Brochure", makeURL("Full Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1938&a=80000699"),
-                "", makeBuyURL("Buy Student Health Advantage", "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                "", makeBuyURL("Buy Student Health Advantage", "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")
 
 
                 ]));
@@ -1961,7 +1960,7 @@ function writeSections(legacy) {
                         "F2/J2 can buy Patriot Exchange alone (if F1/J1 buys schools plan) or buy with F1/J1",                        
                         "Patriot Exchange Group plan available for groups of 2 or more",
                         "Patriot Exchange Basic Plan available at a lower cost (may not meet your visa requirements - ask us!)",
-                        "Other available options include: travel protection for baggage and valuables, legal assistance, personal liability coverage, adventure sports coverage",                       
+                        "Other available options include: travel protection for baggage and valuables, legal assistance, personal liability coverage, adventure sports coverage"
                         ]),
 
                 "Full Brochures", 
@@ -1970,14 +1969,14 @@ function writeSections(legacy) {
                         "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1932&a=80000699"),
 
                         makeURL("Patriot Exchange Group Brochure", 
-                        "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1905&a=80000699"),
+                        "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1905&a=80000699")
                         ]),
 
                 "Apply Now", 
                 makeBulletedListWithTitle("", [
                         makeBuyURL("Buy Plan B (Patriot Exchange Program)", "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
-                        makeBuyURL("Buy Plan B Group (Patriot Exchange Group)", "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699"),
-                        ]),
+                        makeBuyURL("Buy Plan B Group (Patriot Exchange Group)", "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699")
+                        ])
                ]));
 
     endRow();
@@ -2060,7 +2059,7 @@ function writeSections(legacy) {
                     "24-30",   "$110",  "$426",   "$82",
                     "31-40",   "$197",  "$567",   "$82",
                     "41-50",   "$322",  "$586",   "$82",
-                    "51-64",   "$430",  "$567",   "$82",
+                    "51-64",   "$430",  "$567",   "$82"
                     ]), 
 
             loc("$50,000 per illness/injury") +         
@@ -2068,7 +2067,7 @@ function writeSections(legacy) {
                     "Age",     "J1", "Spouse", "Children",
                     "&lt; 25", "$48.62","$48.62",  "$48.62",
                     "25-49",   "$63.37","$63.37",  "$48.62",
-                    "50-64",   "$135.70","$135.70","$48.62",
+                    "50-64",   "$135.70","$135.70","$48.62"
                     ]) +
 
             loc("$250,000 per illness/injury") +         
@@ -2076,11 +2075,11 @@ function writeSections(legacy) {
                     "Age",     "J1", "Spouse", "Children",
                     "&lt; 25", "$60.36","$60.36",  "$60.36",
                     "25-49",   "$78.59","$78.59",  "$60.36",
-                    "50-64",   "$168.27","$168.27","$60.36",
+                    "50-64",   "$168.27","$168.27","$60.36"
                     ]),         
             "", 
             makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
-            makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Patriot Exchange Program - Standard"), "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
+            makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Patriot Exchange Program - Standard"), "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699")
 
             ])
             );
@@ -2106,12 +2105,12 @@ function writeSections(legacy) {
                         "Intercollegiate/Interscholastic/intramural or club sports: $5,000 per injury/illness medical expenses only",
                         "Incidental home country coverage: up to cumulative two weeks",
                         "Terrorism coverage: up to 50,000 lifetime maximum",
-                        "Dependents can only purchase when the student purchases",
+                        "Dependents can only purchase when the student purchases"
                         ]),
 
 
                 "Full Brochure", makeURL("Full Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1938&a=80000699"),
-                "", makeBuyURL("Buy Student Health Advantage", "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                "", makeBuyURL("Buy Student Health Advantage", "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")
 
 
                 ]));
@@ -2128,7 +2127,7 @@ function writeSections(legacy) {
                         "J2 can buy Patriot Exchange alone (if J1 buys schools plan) or buy with J1",                        
                         "Patriot Exchange Group plan available for groups of 2 or more",
                         "Patriot Exchange Basic Plan available at a lower cost (may not meet your visa requirements - ask us!)",
-                        "Other available options include: travel protection for baggage and valuables, legal assistance, personal liability coverage, adventure sports coverage",                       
+                        "Other available options include: travel protection for baggage and valuables, legal assistance, personal liability coverage, adventure sports coverage"
                         ]),
 
                 "Full Brochures", 
@@ -2137,14 +2136,14 @@ function writeSections(legacy) {
                         "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1932&a=80000699"),
 
                         makeURL("Patriot Exchange Group Brochure", 
-                        "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1905&a=80000699"),
+                        "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1905&a=80000699")
                         ]),
 
                 "Apply Now", 
                 makeBulletedListWithTitle("", [
                         makeBuyURL("Buy Plan B (Patriot Exchange Program)", "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
-                        makeBuyURL("Buy Plan B Group (Patriot Exchange Group)", "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699"),
-                        ]),
+                        makeBuyURL("Buy Plan B Group (Patriot Exchange Group)", "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699")
+                        ])
                ]));
 
     endRow();
@@ -2227,7 +2226,7 @@ function writeSections(legacy) {
                     "45", "$112",   "$135",
                     "50", "$136",   "$150",
                     "55", "$165",   "$165",
-                    "60", "$242",   "$228",
+                    "60", "$242",   "$228"
                     ]),
             makeTable(3, [
                     "Age", "Male", "Female",
@@ -2239,7 +2238,7 @@ function writeSections(legacy) {
                     "45", "$127",   "$155",
                     "50", "$149",   "$163",
                     "55", "$192",   "$186",
-                    "60", "$283",   "$266",
+                    "60", "$283",   "$266"
                     ]),
 
              makeTable(3, [
@@ -2252,7 +2251,7 @@ function writeSections(legacy) {
                     "45", "$341",   "$381",
                     "50", "$772",   "$825",
                     "55", "$1006",   "$998",
-                    "60", "$1197",   "$1120",
+                    "60", "$1197",   "$1120"
                     ]),
 
 
@@ -2262,7 +2261,7 @@ function writeSections(legacy) {
             "", 
             makeBuyURL("Buy Global Medical (Silver Plan)", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
             makeBuyURL("Buy Global Medical (Gold Plan)", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
-            makeBuyURL("Buy Global Medical (Platinum Plan)", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
+            makeBuyURL("Buy Global Medical (Platinum Plan)", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699")
             ]));
     endRow();
 
@@ -2299,7 +2298,7 @@ function writeSections(legacy) {
                         "Emergency Medical Evacuation and other evacuation benefits",
                         "Medical Concierge Program",
                         "Medical professionals to coordinate your care",
-                        "24 hour access to information",
+                        "24 hour access to information"
                         ]),
 
                 "Who the plan is designed for",
@@ -2307,17 +2306,17 @@ function writeSections(legacy) {
                         "Coverage for individuals or families living or working abroad",
                         "Contract employees living and working abroad",
                         "Seniors with dual residencies six months or longer outside the U.S.",
-                        "Non-US citizens coming to the US to have a baby.  For maternity coverage you must purchase before becoming pregnant.",
+                        "Non-US citizens coming to the US to have a baby.  For maternity coverage you must purchase before becoming pregnant."
                         ]),
 
                 "Which Plan is best for you?",
                 makeBulletedListWithTitle("", [
                         "Silver plan is most economical",
                         "Gold Plan is the best value",
-                        "Platinum is best for those wanting the best coverage or considering having a baby",
+                        "Platinum is best for those wanting the best coverage or considering having a baby"
                         ]),
 
-                "", makeBuyURL("Buy Global Medical Insurance", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
+                "", makeBuyURL("Buy Global Medical Insurance", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699")
                 ])
                 );
     endRow();
@@ -2341,17 +2340,17 @@ function writeSections(legacy) {
 
                 makeBulletedListWithTitle("", [
                         "Medical coverage for most international travelers",
-                        "Plan designs for U.S. citizens and non-U.S. citizens",
+                        "Plan designs for U.S. citizens and non-U.S. citizens"
                         ]),
 
                 makeBulletedListWithTitle("", [
                         "Similar to Patriot Travel but more coverage",
-                        "Great for Ages 70 and over",
+                        "Great for Ages 70 and over"
                         ]),
 
                 makeBulletedListWithTitle("", [
-                        "Coverage to protect your travel cost and basic emergency medical coverage",
-                        ]),
+                        "Coverage to protect your travel cost and basic emergency medical coverage"
+                        ])
                 ]));
     endRow();
 
@@ -2395,7 +2394,7 @@ function writeSections(legacy) {
                     "60-64", "$142.00",
                     "65-69", "$162.00",
                     "70-79", "$219.00",
-                    "80+",   "$381.00",
+                    "80+",   "$381.00"
                     ]),
                 makeTable(2, [
                     "Age", "Rate",
@@ -2407,7 +2406,7 @@ function writeSections(legacy) {
                     "60-64", "$98.00",
                     "65-69", "$116.00",
                     "70-79", "$170.00",
-                    "80+",   "$340.00",
+                    "80+",   "$340.00"
                     ]),
 
                 "Monthly rate for $50,000 maximum and $1000 deductible ($10,000 max for 80+ age) - minimum purchase 5 days",
@@ -2421,7 +2420,7 @@ function writeSections(legacy) {
                     "60-64", "$113.60",
                     "65-69", "$129.60",
                     "70-79", "$175.20",
-                    "80+",   "$304.80",
+                    "80+",   "$304.80"
                     ]),
                 makeTable(2, [
                     "Age", "Rate",
@@ -2433,12 +2432,12 @@ function writeSections(legacy) {
                     "60-64", "$78.40",
                     "65-69", "$92.80",
                     "70-79", "$136.00",
-                    "80+",   "$272.00",
+                    "80+",   "$272.00"
                     ]),
 
                 "",
                 makeBuyURL("Buy Patriot Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
-                makeBuyURL("Buy Patriot Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+                makeBuyURL("Buy Patriot Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot?imgac=80000699")
 
                 ]));
     endRow();
@@ -2472,7 +2471,7 @@ function writeSections(legacy) {
                     "Deductible options from $0 to $25,000",
                     "Renewable up to 36 months if three months or more are purchased",
                     "Ages 70-79 have $100,000 coverage (with $1,000 deductible the cost is $355.20 per month)",
-                    "Ages 80 and over have $20,000 coverage (with $1,000 deductible the cost is $515.20 per month)",
+                    "Ages 80 and over have $20,000 coverage (with $1,000 deductible the cost is $515.20 per month)"
                     ]),
 
                 "Shared features",
@@ -2483,12 +2482,12 @@ function writeSections(legacy) {
                     "Freedom to seek treatment with hospital or doctor of your choice",
                     "Trip cancellation, travel delay and baggage delay benefits available",
                     "Universal Rx pharmacy discount savings",
-                    "24 hour secure access from anywhere in the world to manage your account at any time",
+                    "24 hour secure access from anywhere in the world to manage your account at any time"
                     ]),
 
                 "Patriot Platinum Brochure", makeURL("Patriot Platinum Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1964&a=80000699"),
 
-                "", makeBuyURL("Buy Patriot Platinum Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot_platinum?imgac=80000699"),
+                "", makeBuyURL("Buy Patriot Platinum Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot_platinum?imgac=80000699")
                 ]));
     endRow();
 
@@ -2511,13 +2510,13 @@ function writeSections(legacy) {
                     "$100 Baggage delay",
                     "$20,000 Emergency medical evacuation/repatriation",
                     "$3,000 Repatriation of mortal remains",
-                    "$100,000 Common carrier accidental death and dismemberment",
+                    "$100,000 Common carrier accidental death and dismemberment"
                     ]),
 
                 "Sample Cost", "A 35 year old spends $5000 on a trip, insurance costs $200. A 25 year old spends $1500 on a trip, insurance costs $60.",
 
                 "Brochure", makeURL("Patriot Trip Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1871&a=80000699"),
-                "", makeBuyURL("Buy Patriot T.R.I.P.® Travel", "https://www.imglobal.com/applications/pti/index.cfm?imgac=80000699&show=PTI"),
+                "", makeBuyURL("Buy Patriot T.R.I.P.® Travel", "https://www.imglobal.com/applications/pti/index.cfm?imgac=80000699&show=PTI")
                 ]));
 
     writeText("");
@@ -2529,15 +2528,15 @@ function writeSections(legacy) {
                 makeBulletedListWithTitle("", [
                     "Offers more coverage than Patriot T.R.I.P. Travel Insurance.",
                     makeURL("Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1879&a=80000699"),
-                    makeBuyURL("Buy", "https://www.imglobal.com/applications/pte/index.cfm?imgac=80000699&show=PTEAI,PTEII"),
+                    makeBuyURL("Buy", "https://www.imglobal.com/applications/pte/index.cfm?imgac=80000699&show=PTEAI,PTEII")
                     ]),
 
                 makeURL("Patriot T.R.I.P.® Student", "https://www.imglobal.com/applications/pts/index.cfm?imgac=80000699&show=PTS"),
                 makeBulletedListWithTitle("", [
                     "Designed just for students and is more affordable than Patriot T.R.I.P. Travel Insurance.",
                     makeURL("Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1877&a=80000699"),
-                    makeBuyURL("Buy", "https://www.imglobal.com/applications/pts/index.cfm?imgac=80000699&show=PTS"),
-                    ]),
+                    makeBuyURL("Buy", "https://www.imglobal.com/applications/pts/index.cfm?imgac=80000699&show=PTS")
+                    ])
                 ]));
     endRow();
 
@@ -2565,7 +2564,7 @@ function writeSections(legacy) {
     writeText("");
     document.write(makeBulletedListWithTitle("Travel Tips", [
                 loc("Visit") + " " + makeURL("CDC (Center for Disease Control)", "http://www.cdc.gov/") + " " + loc(" to learn about travel vaccine recommendations. They provide an up to date list by country of which travel vaccinations are required or recommended. They also provide up to date health information by location. Did you know a vaccine booster for Polio is recommended for travel to some locations? Also, the vaccines for Hepatitis A and B are good for life – be safe once now and you are covered forever! Once you have your passport health care preparations are critical."),
-                loc("Travel visa requirements depend on the country you are visiting. A US citizen might need a visa depending on where they are going. A visitor to the United States might need a visa depending on the nature of their visit. For details see the") + " " + makeURL("State Department website", "http://travel.state.gov/visa/visa_1750.html") + ".",
+                loc("Travel visa requirements depend on the country you are visiting. A US citizen might need a visa depending on where they are going. A visitor to the United States might need a visa depending on the nature of their visit. For details see the") + " " + makeURL("State Department website", "http://travel.state.gov/visa/visa_1750.html") + "."
                 ]));
     endRow();
 
@@ -2579,7 +2578,7 @@ function writeSections(legacy) {
     startRow();
     document.write(makeTableWithStyle("invisibleTable", 2, [
                 makeImage("anthem.jpg"),
-                "Comprehensive medical coverage for individuals and families (in the U.S. for 1 yr or longer) from Anthem Blue Cross.",
+                "Comprehensive medical coverage for individuals and families (in the U.S. for 1 yr or longer) from Anthem Blue Cross."
                 ]));
     writeText("Some example plans:");
     endRow();
@@ -2589,7 +2588,7 @@ function writeSections(legacy) {
     writeLinesWithTitle("Core Share", [
             "Great for new college graduates",
             "Deductible $750 and higher",
-            "The plan with the lowest premium rates",
+            "The plan with the lowest premium rates"
             ]);
     endCell();
 
@@ -2597,14 +2596,14 @@ function writeSections(legacy) {
     writeLinesWithTitle("Premier Plus", [
             "Deductible $500 and higher",
             "20% coinsurance",
-            "The plan with the most benefit",
+            "The plan with the most benefit"
             ]);
     endCell();
 
     startCell();
     writeLinesWithTitle("Smart Sense", [
             "Deductible $500 and higher",
-            "30% coinsurance so premium cost is less than Premier Plus",
+            "30% coinsurance so premium cost is less than Premier Plus"
             ]);
     endCell();
 
@@ -2614,7 +2613,7 @@ function writeSections(legacy) {
     startCell();
     writeLinesWithTitle("Lumenos HSA", [
             "Deductible from $1,500 to 5,500 for single, $3,000 to 11,000 for family",
-            "Tax advantaged saving account",
+            "Tax advantaged saving account"
             ]);
     endCell();
 
@@ -2639,7 +2638,7 @@ function writeSections(legacy) {
     startRow();
     document.write(makeTableWithStyle("invisibleTable", 2, [
                 makeImage("oneamerica.png"),
-                "Delivering on our promise to provide peace of mind and financial security for clients has been the focus of American United Life Insurance Company® (AUL) a OneAmerica company, for more than 130 years. OneAmerica and its operating companies’ ratings have remained stable, providing peace of mind to our customers. A.M. Best rating A (Excellent) positive outlook The third-highest of 15 possible ratings, according to the release dated June 9, 2010. Standard & Poor’s rating AA- (Very Strong) stable outlook The fourth-highest of 21 possible ratings, according to the report dated August 3, 2010.",
+                "Delivering on our promise to provide peace of mind and financial security for clients has been the focus of American United Life Insurance Company® (AUL) a OneAmerica company, for more than 130 years. OneAmerica and its operating companies’ ratings have remained stable, providing peace of mind to our customers. A.M. Best rating A (Excellent) positive outlook The third-highest of 15 possible ratings, according to the release dated June 9, 2010. Standard & Poor’s rating AA- (Very Strong) stable outlook The fourth-highest of 21 possible ratings, according to the report dated August 3, 2010."
                 ]));
     endRow();
 
@@ -2666,7 +2665,7 @@ function writeSections(legacy) {
 
                 "40 yrs old Female",
                 "$167.50/yr",
-                "$237.50/yr",
+                "$237.50/yr"
                 ]));
     writeText("Call or email for a quote!");
     writeText("We also offer Whole Life Insurance and Annuities. Please call or email for a quote!");
@@ -2687,19 +2686,19 @@ function writeSections(legacy) {
     startRow();
     startCell();
     writeLinesWithTitle("Travel Agents", [
-            "Pairing travel services with travel and health insurance can be mutually beneficial.",
+            "Pairing travel services with travel and health insurance can be mutually beneficial."
             ]);
     endCell();
 
     startCell();
     writeLinesWithTitle("Schools", [
-            "If your school is sending students or teachers abroad, or has students or teachers visting we would make a good partner.",
+            "If your school is sending students or teachers abroad, or has students or teachers visting we would make a good partner."
             ]);
     endCell();
 
     startCell();
     writeLinesWithTitle("Organizations", [
-            "We work with representatives of International organizations, student or scholar organizations, and travel clubs to help your membership with their travel insurance needs.",
+            "We work with representatives of International organizations, student or scholar organizations, and travel clubs to help your membership with their travel insurance needs."
             ]);
     endCell();
 
@@ -2712,19 +2711,19 @@ function writeSections(legacy) {
     startRow();
     startCell();
     writeLinesWithTitle("Teachers", [
-            "Whether you are traveling abroad with your students, have foreign students coming to the US to your class, or are sending US students abroad we have solutions for you.",
+            "Whether you are traveling abroad with your students, have foreign students coming to the US to your class, or are sending US students abroad we have solutions for you."
             ]);
     endCell();
 
     startCell();
     writeLinesWithTitle("Students", [
-            "Help your peers find the insurance they need as they travel abroad for university or vacation.",
+            "Help your peers find the insurance they need as they travel abroad for university or vacation."
             ]);
     endCell();
 
     startCell();
     writeLinesWithTitle("Anyone with International Ties", [
-            "Bring an understanding of travel and health insurance to your own international community.",
+            "Bring an understanding of travel and health insurance to your own international community."
             ]);
     endCell();
     
@@ -2735,7 +2734,7 @@ function writeSections(legacy) {
     document.write(makeBulletedListWithTitle("What's involved in a partnership?", [
                 "We work closely with our partners to design a custom solution that is mutually beneficial.",
                 "Collaborating can be as simple as providing you with a way to easily refer potential customers.",
-                "In more complex partnerships, we can work together to provide the best solution using the technologies at our disposal.",
+                "In more complex partnerships, we can work together to provide the best solution using the technologies at our disposal."
                 ]));
     endRow();
 
@@ -2746,7 +2745,7 @@ function writeSections(legacy) {
                 "We are available for your customers and friends before and after they purchase the insurance they need.",
                 "We work with only the most financially secure insurers with top quality ratings from A.M. Best and Standard and Poor's.",
                 "We are accustomed to working with people in the United States and China via email, phone, WeChat, and Skype.",
-                "Our website is accessible around the world, including mainland China.",
+                "Our website is accessible around the world, including mainland China."
                 ]));
     endRow();
 

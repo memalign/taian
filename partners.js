@@ -25,7 +25,7 @@ function getPartnership(partner) {
                             "pivot-indiana-residents",
                             "pivot-texas-residents",
                             "pivot-life-insurance",
-                            "pivot-partnerships",
+                            "pivot-partnerships"
                           ]
                },
 
@@ -37,14 +37,14 @@ function getPartnership(partner) {
                     logoWidth: "70",
                     contactInfo: ["电话: 626-532-7811, 626-264-0123",
                                   "传真: 626-254-0286",
-                                  "Email: <a href=\"mailto:ushres123@gmail.com\">ushres123@gmail.com</a>",
+                                  "Email: <a href=\"mailto:ushres123@gmail.com\">ushres123@gmail.com</a>"
                                  ],
                     tabs: [
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance",
-                          ],
+                            "pivot-travel-insurance"
+                          ]
               },
 
         mei: {
@@ -52,8 +52,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance",
-                          ],
+                            "pivot-travel-insurance"
+                          ]
               },              
 
         iupui: {
@@ -63,8 +63,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance",
-                          ],
+                            "pivot-travel-insurance"
+                          ]
               },   
 
        jhmi: {
@@ -74,8 +74,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance",
-                          ],
+                            "pivot-travel-insurance"
+                          ]
               },  
 
        psu: {
@@ -85,8 +85,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance",
-                          ],
+                            "pivot-travel-insurance"
+                          ]
               },                
 
         usc: {
@@ -96,7 +96,7 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance",
+                            "pivot-travel-insurance"
                           ],
                           
                     internationalStudentContent: function () {
@@ -104,10 +104,10 @@ function getPartnership(partner) {
                         writeText("Taian Scholar/Student Insurance Plan A and Plan B meet USC J scholar standards. Exchange visitors (J visa) enrolled in under 6 credits have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to USC to waive the school plan.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("USC Scholar Requirements", "http://sait.usc.edu/ois/j1-scholars/scholar-resources/insurance.aspx"),
-                                makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/"),
+                                makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/")
                                 ]));
                         endRow();
-                    },                           
+                    }
               },
 
         sta: {
@@ -117,7 +117,7 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance",
+                            "pivot-travel-insurance"
                           ],
                           
                     internationalStudentContent: function () {
@@ -125,10 +125,10 @@ function getPartnership(partner) {
                         writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Stanford University J scholar standards. Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Stanford to waive the school plan.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Stanford Scholar Requirements", "http://icenter.stanford.edu/quick_reference/healthinsurance.html#J1reqs"),
-                                makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/"),
+                                makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/")
                                 ]));
                         endRow();
-                    },                           
+                    }
               },               
 
         uiuc: {
@@ -138,7 +138,7 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance",
+                            "pivot-travel-insurance"
                           ],
                           
                     internationalStudentContent: function () {
@@ -147,10 +147,10 @@ function getPartnership(partner) {
 
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Student Requirements", "http://www.si.uiuc.edu/Default.aspx?tabid=64"),
-                                makeURL("US Department of State and UIUC Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/"),
+                                makeURL("US Department of State and UIUC Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/")
                                 ]));
                         endRow();
-                    },                          
+                    }
               },        
 
         nyu: {
@@ -160,8 +160,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance",
-                          ],
+                            "pivot-travel-insurance"
+                          ]
               },  
 
         purdue: {
@@ -171,17 +171,17 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance",
+                            "pivot-travel-insurance"
                           ],
                     internationalStudentContent: function () {
                         startRow();
                         writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Purdue University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Purdue as proof of insurance.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Purdue University Scholar Requirements", "http://www.iss.purdue.edu/Current/J1/HealthInsurance.cfm"),                               
-                                makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/"),
+                                makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/")
                                 ]));
                         endRow();
-                    },                                    
+                    }
               },   
 
         columbia: {
@@ -191,8 +191,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance",
-                          ],
+                            "pivot-travel-insurance"
+                          ]
               },      
 
         ucla: {
@@ -202,7 +202,7 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance",
+                            "pivot-travel-insurance"
                           ],
                     internationalStudentContent: function () {
                         startRow();
@@ -211,10 +211,10 @@ function getPartnership(partner) {
                          writeText("A few minutes after submitting an application, you will receive a confirmation letter of your coverage which you can send to UCLA to waive the school mandatory plan.");                       
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("UCLA Scholar Requirements", "http://www.internationalcenter.ucla.edu/home/J1Visa/74/75/Overview#divHealth"),
-                                makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/"),
+                                makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/")
                                 ]));
                         endRow();
-                    },                                 
+                    }
               },      
               
         ucdav: {
@@ -224,8 +224,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance",
-                          ],                          
+                            "pivot-travel-insurance"
+                          ]
               },                  
               
         iu: {
@@ -235,7 +235,7 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance",
+                            "pivot-travel-insurance"
                           ],
                     internationalStudentContent: function () {
                         startRow();
@@ -243,10 +243,10 @@ function getPartnership(partner) {
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("IU Bloomington Student Requirements", "http://iservices.iupui.edu/health-insurance/students/"),
                                 makeURL("IU Bloomington Scholar Requirements", "http://iservices.iupui.edu/health-insurance/scholars/"),                               
-                                makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/"),
+                                makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/")
                                 ]));
                         endRow();
-                    },                                        
+                    }
               },                  
 
         utaustin: {
@@ -256,8 +256,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance",
-                          ],
+                            "pivot-travel-insurance"
+                          ]
               },                                
               
         univtemplate: {
@@ -267,21 +267,21 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance",
-                          ],
+                            "pivot-travel-insurance"
+                          ]
               },                  
               
         ucdavis: {
                     windowTitle: "TaiAn Health Insurance for UC Davis J Scholars",
                     pageTitle: "TaiAn Health Insurance for UC Davis J Scholars",
                     tabs: [
-                            "pivot-international-scholar",
+                            "pivot-international-scholar"
                           ],
                     internationalScholarContent: function () {
                         startRow();
                         writeText("Taian International Health Insurance provides International Scholar Insurance for US visa scholars (J visa). Taian Scholar Insurance Plan A and Plan B meet UC Davis scholar insurance standards and are more affordable.  UC Davis requires a minimum of $50,000.00 per illness or injury and our Plan B Standard Plan meets this requirement.");
                         endRow();
-                    },
+                    }
               },                            
 
         econnect: {
@@ -291,8 +291,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance",
-                          ],
+                            "pivot-travel-insurance"
+                          ]
               },              
               
         springivy: {
@@ -300,15 +300,15 @@ function getPartnership(partner) {
                                   "Call: 1-317-318-8259 (English)",
                                   "WeChat ID: wxid_taian_usa",
                                   "Skype: chris.lee136",
-                                  "Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>",
+                                  "Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>"
                                  ],
                     tabs: [
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance",
+                            "pivot-travel-insurance"
                           ],
-              },
+              }
               
     };
 
