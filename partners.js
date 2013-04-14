@@ -161,7 +161,17 @@ function getPartnership(partner) {
                             "pivot-international-student",
                             "pivot-global-medical",
                             "pivot-travel-insurance"
-                          ]
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet NYU J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to NYU as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("NYU Scholar Requirements", "http://www.nyu.edu/global/international-immigration-services/faculty-and-scholars/inbound-to-nyc/pre-arrival/exchange-visitor/health-insurance-requirement.html"),                               
+                                makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/")
+                                ]));
+                        endRow();
+                    }
               },  
 
         purdue: {
@@ -192,7 +202,17 @@ function getPartnership(partner) {
                             "pivot-international-student",
                             "pivot-global-medical",
                             "pivot-travel-insurance"
-                          ]
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Columbia J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Columbia as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("Columbia Scholar Requirements", "http://www.columbia.edu/cu/isso/visa/scholar/J_health.html"),                               
+                                makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/")
+                                ]));
+                        endRow(); 
+                    }
               },      
 
         ucla: {
@@ -241,8 +261,8 @@ function getPartnership(partner) {
                         startRow();
                         writeText("Indiana University - Bloomington allows both international students and J scholars to waive the school plan. Students and scholars have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500; 5. Maternity benefits for females only. For males, Plan B with $50,000 benefit per illness or injury meets the standards, and the US Department of State requirements. For females, Plan A meets the requirements.  Shortly after submitting an application you will receive confirmation of your coverage which you can send to IU Bloomington to waive the school plan.");
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("IU Bloomington Student Requirements", "http://iservices.iupui.edu/health-insurance/students/"),
-                                makeURL("IU Bloomington Scholar Requirements", "http://iservices.iupui.edu/health-insurance/scholars/"),                               
+                                makeURL("IU Bloomington Student Requirements", "http://ois.indiana.edu/newstudents/livingintheus/insurance/"),
+                                makeURL("IU Bloomington Scholar Requirements", "http://ois.indiana.edu/scholars/status/med_insurance.php"),                               
                                 makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/")
                                 ]));
                         endRow();
@@ -257,7 +277,18 @@ function getPartnership(partner) {
                             "pivot-international-student",
                             "pivot-global-medical",
                             "pivot-travel-insurance"
-                          ]
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UT Austin enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UT Austin as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("UT Austin Student Waiver", "http://world.utexas.edu/forms/isss/PVT_Waiver.pdf"), 
+                                makeURL("UT Austin Scholar requirements", "http://world.utexas.edu/isss/insurance/vs-overview"),                                
+                                makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/")
+                                ]));
+                        endRow();
+                    }
               },                                
               
         univtemplate: {

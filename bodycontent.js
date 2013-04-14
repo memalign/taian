@@ -1164,7 +1164,7 @@ function writePatriotTravelTable() {
                     "Coverage for individuals and dependents",
                     "Two plan designs - one for U.S. citizens and one for non-U.S. citizens traveling outside their home country",
                     "Available in daily and monthly rates",
-                    "Renewable up to 24 months if three months or more are purchased",
+                    "Renewable up to 24 months if 1 month or more is purchased",
                     "Freedom to seek treatment with hospital or doctor of your choice",
                     "Trip cancellation, travel delay and baggage delay benefits available",
                     "Universal Rx pharmacy discount savings",
@@ -1261,7 +1261,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Click to View", "http://www.colorado.edu/oie/isss/pdf/InsuranceComplianceForm.pdf"),
 
                 makeURL("Columbia University (NY)", "http://www.columbia.edu/"),
-                makeURL("Click to View", "http://www.cumc.columbia.edu/student/health/pdf/11-12%20Insurance%20Waiver%20Criteria.pdf"),
+                makeURL("Click to View", "http://health.columbia.edu/insurance/enroll-upgrade-waive/request-waiver"),
                 makeURL("Click to View", "http://www.columbia.edu/cu/isso/visa/scholar/J_health.html"),
 
                 makeURL("Cornell University (NY)", "http://www.cornell.edu/"),
@@ -1309,6 +1309,10 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Click to View", "http://www.hio.harvard.edu/healthcareandinsurance/scholars/requirementsforjvisaholders/"),
 
                 makeURL("Indiana University-Bloomington", "http://www.iub.edu/"),
+                makeURL("Click to View", "http://ois.indiana.edu/newstudents/livingintheus/insurance/"),
+                makeURL("Click to View", "http://ois.indiana.edu/scholars/status/med_insurance.php"),
+
+                makeURL("Indiana University Purdue University-Indianapolis", "http://www.iupui.edu/"),
                 makeURL("Click to View", "http://iservices.iupui.edu/health-insurance/students/"),
                 makeURL("Click to View", "http://iservices.iupui.edu/health-insurance/scholars/"),
 
@@ -2285,7 +2289,7 @@ function writeSections(legacy) {
     startSection("pivot-travel-insurance", "Travel Insurance");
 
     startRow();
-    writeText("Taian Travel Insurance is designed for anyone (U.S. and non-U.S. citizens) traveling out of their home country, regardless of visa requirements.  Cost starts at about $1/day.  Purchase 5 days - 1 year, and renewable up to 2 years if 3 months are purchased initially.");
+    writeText("Taian Travel Insurance is designed for anyone (U.S. and non-U.S. citizens) traveling out of their home country, regardless of visa requirements. Cost starts at about $1/day. Purchase 5 days - 1 year, and renewable up to 2 years if 1 month or more is purchased initially.");
     endRow();
 
     startRow();
