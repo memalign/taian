@@ -338,7 +338,7 @@ function getPartnership(partner) {
                             "pivot-international-student",
                             "pivot-global-medical",
                             "pivot-travel-insurance"
-                          ],
+                          ]
               }
               
     };
