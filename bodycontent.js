@@ -828,32 +828,12 @@ function endRow() {
     document.write('</div>');
 }
 
-function startCell() {
-    document.write('\
-        <div class="grid-unit">\
-            <div bi:type="highlight">\
-            ');
-}
-
-function endCell() {
-    document.write('\
-            </div>\
-        </div>\
-        ');
-}
-
 function makeText(text) {
     return '<p align="left">'+loc(text)+'</p>';
 }
 
 function writeText(text) {
     document.write(makeText(text));
-}
-
-function writeCellWithText(text) {
-    startCell();
-    writeText(text);
-    endCell();
 }
 
 function makeImage(filename) {
@@ -991,7 +971,7 @@ function makeLinesWithTitle(title, lines) {
         code += "<br />" + loc(lines[i]);
     }
     
-    return code;
+    return makeText(code);
 }
 
 function writeLinesWithTitle(title, lines) {
@@ -1768,9 +1748,9 @@ function writeSectionForSchoolWaiverRequirements() {
 function writeSections(legacy) {
 
     var homePageText = [
-        "We are qualified insurance agents with over 20 years experience working with insurance companies.",
-        "We have native English and Chinese speakers to answer all of your questions.",
-        "Ask us about student coverage that meets your university insurance standards."
+        makeText("We are qualified insurance agents with over 20 years experience working with insurance companies."),
+        makeText("We have native English and Chinese speakers to answer all of your questions."),
+        makeText("Ask us about student coverage that meets your university insurance standards.")
     ];
 
     if (!legacy) {
@@ -1778,38 +1758,14 @@ function writeSections(legacy) {
 
         startRow();
 
-        startCell();
-        startPivotURL("pivot-international-student");
-        writeImage("international-student.jpg");
-        writeText("International Student & Scholar (F1&J1 visa). Coverage meets most university standards. $48.62/month with $5,000,000 Benefit");
-        endPivotURL();
-        endCell();
+        document.write(makeTableWithStyle("invisibleTableNormalText", 3, [
+                        makeStartPivotURLWithIsTopLevel("pivot-international-student", false) + makeImage("international-student.jpg") + makeText("International Student & Scholar (F1&J1 visa). Coverage meets most university standards. $48.62/month with $5,000,000 Benefit") + makeEndPivotURL(),
+                        makeStartPivotURLWithIsTopLevel("pivot-global-medical", false) + makeImage("global-medical.jpg") + makeText("Global Medical - Global insurance designed for non-US citizens to use worldwide, and US citizens to use outside of the United States.") + makeEndPivotURL(),
+                        makeStartPivotURLWithIsTopLevel("pivot-travel-insurance", false) + makeImage("traveler.jpg") + makeText("Traveler's insurance: Business travel, family visiting, leisure travel. 5 days - 2 years.  Prices start at about $1/day") + makeEndPivotURL(),
 
-        startCell();
-        startPivotURL("pivot-global-medical");
-        writeImage("global-medical.jpg");
-        writeText("Global Medical - Global insurance designed for non-US citizens to use worldwide, and US citizens to use outside of the United States.");
-        endPivotURL();
-        endCell();
+                        homePageText
+                    ]));
 
-        startCell();
-        startPivotURL("pivot-travel-insurance");
-        writeImage("traveler.jpg");
-        writeText("Traveler's insurance: Business travel, family visiting, leisure travel. 5 days - 2 years.  Prices start at about $1/day");
-        endPivotURL();
-        endCell();
-
-        endRow();
-
-
-        startRow();
-        writeText("");
-        endRow();
-
-        startRow();
-        for (var i = 0; i < homePageText.length; i++) {
-            writeCellWithText(homePageText[i]);
-        }
         endRow();
 
         endSection();
@@ -2555,9 +2511,11 @@ function writeSections(legacy) {
     endRow();
 
     startRow();
-    writeCellWithText(makeBold("Most medical insurance coverage will not provide benefits in a different country.")+ " "+ loc("If you are a US citizen, your passport says, \"Health Insurance: Medical costs abroad can be extremely expensive. Does your insurance apply overseas, including medical evacuation, payment to the overseas hospital or doctor, or reimbursement to you later?.....Medicare/Medicaid does not cover healthcare costs outside the US.\""));
-    writeCellWithText(makeBold("Medical Evacuation is an important benefit.") + " " + loc("Maybe you are visiting a part of the world with a lesser developed healthcare system. You planned ahead and had your travel vaccines before you left, but what if you get injured on your trip? You might need to be evacuated to an adequate hospital. A medical evacuation benefit will provide what you need."));
-    writeCellWithText(makeBold("Trip cancellation, lost baggage, travel delay benefits.")+ " " + loc("You spent a year planning for and saving for your trip. Now, you arrive at the airport for a connecting flight and the flight is cancelled. You don’t need a health insurance benefit, but you sure could use a travel insurance benefit. Help cover your costs for unforeseen travel problems with the right travel insurance coverage for you."));
+    document.write(makeTableWithStyle("invisibleTableNormalText", 3, [
+                makeText(makeBold("Most medical insurance coverage will not provide benefits in a different country.")+ " "+ loc("If you are a US citizen, your passport says, \"Health Insurance: Medical costs abroad can be extremely expensive. Does your insurance apply overseas, including medical evacuation, payment to the overseas hospital or doctor, or reimbursement to you later?.....Medicare/Medicaid does not cover healthcare costs outside the US.\"")),
+                makeText(makeBold("Medical Evacuation is an important benefit.") + " " + loc("Maybe you are visiting a part of the world with a lesser developed healthcare system. You planned ahead and had your travel vaccines before you left, but what if you get injured on your trip? You might need to be evacuated to an adequate hospital. A medical evacuation benefit will provide what you need.")),
+                makeText(makeBold("Trip cancellation, lost baggage, travel delay benefits.")+ " " + loc("You spent a year planning for and saving for your trip. Now, you arrive at the airport for a connecting flight and the flight is cancelled. You don’t need a health insurance benefit, but you sure could use a travel insurance benefit. Help cover your costs for unforeseen travel problems with the right travel insurance coverage for you."))
+                ]));
     endRow();
 
     startRow();
@@ -2584,41 +2542,29 @@ function writeSections(legacy) {
     endRow();
 
     startRow();
-    startCell();
-    writeLinesWithTitle("Core Share", [
-            "Great for new college graduates",
-            "Deductible $750 and higher",
-            "The plan with the lowest premium rates"
-            ]);
-    endCell();
 
-    startCell();
-    writeLinesWithTitle("Premier Plus", [
-            "Deductible $500 and higher",
-            "20% coinsurance",
-            "The plan with the most benefit"
-            ]);
-    endCell();
 
-    startCell();
-    writeLinesWithTitle("Smart Sense", [
-            "Deductible $500 and higher",
-            "30% coinsurance so premium cost is less than Premier Plus"
-            ]);
-    endCell();
-
-    endRow();
-
-    startRow();
-    startCell();
-    writeLinesWithTitle("Lumenos HSA", [
-            "Deductible from $1,500 to 5,500 for single, $3,000 to 11,000 for family",
-            "Tax advantaged saving account"
-            ]);
-    endCell();
-
-    writeCellWithText(loc("Call or email us to learn more or browse online:") + " " + makeURL("Quote/Purchase Anthem Insurance", "https://pd.secure.anthem.com/AgentConnect/gen/link.htm?linkid=D7_i08ReAFF-O9lX3HcGT_120121774037399"));
-
+    document.write(makeTableWithStyle("invisibleTableNormalText", 3, [
+                makeLinesWithTitle("Core Share", [
+                    "Great for new college graduates",
+                    "Deductible $750 and higher",
+                    "The plan with the lowest premium rates"
+                    ]),
+                makeLinesWithTitle("Premier Plus", [
+                    "Deductible $500 and higher",
+                    "20% coinsurance",
+                    "The plan with the most benefit"
+                    ]),
+                makeLinesWithTitle("Smart Sense", [
+                    "Deductible $500 and higher",
+                    "30% coinsurance so premium cost is less than Premier Plus"
+                    ]),
+                makeLinesWithTitle("Lumenos HSA", [
+                    "Deductible from $1,500 to 5,500 for single, $3,000 to 11,000 for family",
+                    "Tax advantaged saving account"
+                    ]),
+                makeText(loc("Call or email us to learn more or browse online:") + " " + makeURL("Quote/Purchase Anthem Insurance", "https://pd.secure.anthem.com/AgentConnect/gen/link.htm?linkid=D7_i08ReAFF-O9lX3HcGT_120121774037399"))
+    ]));
     endRow();
 
     writeRowForUnitedHealthOne();
@@ -2684,53 +2630,36 @@ function writeSections(legacy) {
     endRow();
 
     startRow();
-    startCell();
-    writeLinesWithTitle("Travel Agents", [
-            "Pairing travel services with travel and health insurance can be mutually beneficial."
-            ]);
-    endCell();
 
-    startCell();
-    writeLinesWithTitle("Schools", [
-            "If your school is sending students or teachers abroad, or has students or teachers visting we would make a good partner."
-            ]);
-    endCell();
+    document.write(makeTableWithStyle("invisibleTableNormalText", 3, [
+                makeLinesWithTitle("Travel Agents", [
+                    "Pairing travel services with travel and health insurance can be mutually beneficial."
+                    ]),
 
-    startCell();
-    writeLinesWithTitle("Organizations", [
-            "We work with representatives of International organizations, student or scholar organizations, and travel clubs to help your membership with their travel insurance needs."
-            ]);
-    endCell();
+                makeLinesWithTitle("Schools", [
+                    "If your school is sending students or teachers abroad, or has students or teachers visting we would make a good partner."
+                    ]),
+
+                makeLinesWithTitle("Organizations", [
+                    "We work with representatives of International organizations, student or scholar organizations, and travel clubs to help your membership with their travel insurance needs."
+                    ]),
+
+                makeLinesWithTitle("Teachers", [
+                    "Whether you are traveling abroad with your students, have foreign students coming to the US to your class, or are sending US students abroad we have solutions for you."
+                    ]),
+
+                makeLinesWithTitle("Students", [
+                    "Help your peers find the insurance they need as they travel abroad for university or vacation."
+                    ]),
+
+                makeLinesWithTitle("Anyone with International Ties", [
+                        "Bring an understanding of travel and health insurance to your own international community."
+                    ])
+    ]));
 
     endRow();
 
     startRow();
-    writeText("");
-    endRow();
-
-    startRow();
-    startCell();
-    writeLinesWithTitle("Teachers", [
-            "Whether you are traveling abroad with your students, have foreign students coming to the US to your class, or are sending US students abroad we have solutions for you."
-            ]);
-    endCell();
-
-    startCell();
-    writeLinesWithTitle("Students", [
-            "Help your peers find the insurance they need as they travel abroad for university or vacation."
-            ]);
-    endCell();
-
-    startCell();
-    writeLinesWithTitle("Anyone with International Ties", [
-            "Bring an understanding of travel and health insurance to your own international community."
-            ]);
-    endCell();
-    
-    endRow();
-
-    startRow();
-    writeText("<br />");
     document.write(makeBulletedListWithTitle("What's involved in a partnership?", [
                 "We work closely with our partners to design a custom solution that is mutually beneficial.",
                 "Collaborating can be as simple as providing you with a way to easily refer potential customers.",

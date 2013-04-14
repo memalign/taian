@@ -13,8 +13,8 @@ caption,th,td{text-align:center;font-weight:normal;vertical-align:middle;padding
 .invisibleTableHeader td{border:0;background-color:transparent}
 .invisibleTableLeft td{border:0;background-color:transparent}
 .invisibleTableNormalText table{border: 0; background-color:transparent;}
-.invisibleTableNormalText td{border: 0; background-color:transparent; width:30%;padding:5px}
-.invisibleTableNormalText th{border: 0; background-color:transparent;}
+.invisibleTableNormalText td{border: 0; background-color:transparent; width:33%; vertical-align:top; padding:8px}
+.invisibleTableNormalText th{border: 0; background-color:transparent;vertical-align:top}
 .formTable table{border: 0; background-color:transparent;}
 .formTable td{border: 1; background-color:transparent; width:50%; padding:5px}
 .formTable th{border: 0; background-color:transparent; width:50%}
