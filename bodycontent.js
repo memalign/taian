@@ -1771,7 +1771,7 @@ function writeSections(legacy) {
     var homePageText = [
         "We are qualified insurance agents with over 20 years experience working with insurance companies.",
         "We have native English and Chinese speakers to answer all of your questions.",
-        "Ask us about student coverage that meets your university insurance standards.",
+        "Ask us about student coverage that meets your university insurance standards."
     ];
 
     if (!legacy) {
