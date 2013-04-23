@@ -1217,15 +1217,15 @@ function writeSectionForSchoolWaiverRequirements() {
 
                 makeURL("Arizona State University (AZ)", "http://www.asu.edu/"),
                 makeURL("Click to View", "https://students.asu.edu/internationalstudenthealth"),
-                makeURL("Click to View", "https://students.asu.edu/internationalstudenthealth"),
+                makeURL("Click to View", "https://global.asu.edu/sites/default/files/DS2019Packet.pdf"),
 
                 makeURL("Auburn University (AL)", "http://www.auburn.edu/"),
                 makeURL("Click to View", "http://www.auburn.edu/academic/international/insurance2011/insurance_plan.htm"),
-                makeURL("Click to View", "http://www.auburn.edu/academic/international/insurance2011/insurance_plan.htm"),
+                makeURL("Click to View", "http://www.auburn.edu/academic/international/isss/insurance/"),
 
                 makeURL("Boston University (MA)", "http://www.bu.edu/"),
                 makeURL("Click to View", "http://www.bu.edu/studentaccountingservices/resources/medical-insurance/"),
-                makeURL("Click to View", "http://www.bu.edu/studentaccountingservices/resources/medical-insurance/"),
+                makeURL("Click to View", "http://www.bu.edu/isso/administrators/j1/ev-overview.html"),
 
                 makeURL("Brandeis University (MA)", "http://www.brandeis.edu/"),
                 makeURL("Click to View", "http://heller.brandeis.edu/admissions/admitted-students/grad-selection-form-8-2011.pdf"),
@@ -1241,7 +1241,7 @@ function writeSectionForSchoolWaiverRequirements() {
 
                 makeURL("California Institute of Technology (CA)", "http://www.caltech.edu/"),
                 makeURL("Click to View", "http://www.gradoffice.caltech.edu/documents/94-student_waiver_requirements_2011-2012.pdf"),
-                makeURL("Click to View", "http://www.hr.caltech.edu/postdoc/upon_arrival/international_insurance.htm"),
+                makeURL("Click to View", "http://www.international.caltech.edu/maintainstatus/j1scholar"),
 
                 makeURL("Carnegie Mellon University (PA)", "http://www.cmu.edu/"),
                 makeURL("Click to View", "http://www.cmu.edu/health-services/student-insurance/medical/med_info/medical_insurance_waiver_enrollment_process.html"),
@@ -1253,15 +1253,15 @@ function writeSectionForSchoolWaiverRequirements() {
 
                 makeURL("Clemson University (SC)", "http://www.clemson.edu/"),
                 makeURL("Click to View", "http://www.studentinsurance.com/Schools/SC/Clemson/WaiverRequirements.asp?Show=Int&MenuNum=2"),
-                makeURL("Click to View", "http://www.studentinsurance.com/Schools/SC/Clemson/WaiverRequirements.asp?Show=Int&MenuNum=2"),
+                makeURL("Click to View", "http://www.clemson.edu/administration/ia/services/students/scholars.html"),
 
-                makeURL("Colorado State University (OH)", "http://www.csuohio.edu/"),
+                makeURL("Cleveland State University (OH)", "http://www.csuohio.edu/"),
                 makeURL("Click to View", "http://www.csuohio.edu/offices/health/InsuranceWaiver.html"),
-                makeURL("Click to View", "http://www.csuohio.edu/offices/health/InsuranceWaiver.html"),
-
-                makeURL("Colorado at boulder", ""),
-                makeURL("Click to View", "http://healthcenter.colorado.edu/insurance/select-or-waive-coverage/"),
-                makeURL("Click to View", "http://www.colorado.edu/oie/isss/pdf/InsuranceComplianceForm.pdf"),
+                makeURL("Click to View", "http://www.csuohio.edu/offices/international/academic/exchange_visitors/exchange_form.html"),
+                
+                makeURL("Colorado State University (CO)", "http://www.colostate.edu/"),
+                makeURL("Click to View", "http://www.health.colostate.edu/pages/insurance.aspx"),
+                makeURL("Click to View", "http://www.health.colostate.edu/pages/insurance.aspx"),
 
                 makeURL("Columbia University (NY)", "http://www.columbia.edu/"),
                 makeURL("Click to View", "http://health.columbia.edu/insurance/enroll-upgrade-waive/request-waiver"),
@@ -1277,7 +1277,7 @@ function writeSectionForSchoolWaiverRequirements() {
 
                 makeURL("Duke University (NC)", "http://www.duke.edu/"),
                 makeURL("Click to View", "http://studentaffairs.duke.edu/studenthealth/new-students/health-insurance-requirements"),
-                makeURL("Click to View", "http://studentaffairs.duke.edu/studenthealth/new-students/health-insurance-requirements"),
+                makeURL("Click to View", "http://www.visaservices.duke.edu/J_Health_Insurance.html"),
 
                 makeURL("Emory University (GA)", "http://www.emory.edu/"),
                 makeURL("Click to View", "http://studenthealth.emory.edu/hs/hs_manins_fall_2012.php"),
@@ -1289,21 +1289,21 @@ function writeSectionForSchoolWaiverRequirements() {
 
                 makeURL("George Mason University (VA)", "http://www.gmu.edu/"),
                 makeURL("Click to View", "ttp://shs.gmu.edu/insurance/international.php#Student"),
-                makeURL("Click to View", "http://universitypolicy.gmu.edu/6002stu.html"),
+                makeURL("Click to View", "http://oips.gmu.edu/evp/maintain_j.php?type=1#ins"),
 
                 makeURL("Georgetown University (DC)", "http://www.georgetown.edu/"),
                 makeURL("Click to View", "http://studentaffairs.georgetown.edu/insurance/letterwaiver.html"),
-                makeURL("Click to View", "http://oip.georgetown.edu/isss/j1healthinsurance.htm"),
+                makeURL("Click to View", "http://internationalservices.georgetown.edu/j-1scholars/healthinsurance/"),
 
                 makeURL("George Washington University (DC)", "http://www.gwu.edu/"),
-                makeURL("", ""),
+                makeURL("Click to view", "http://gwired.gwu.edu/iso/NewlyAdmittedStudents/WelcomeCenter/Health/"),
                 makeURL("Click to View", "http://gwired.gwu.edu/iso/CurrentScholarsJ1/HealthInsuranceRequirementforJ1ExchangeVisitors"),
 
-                makeURL("Georgia Institute of Technology", ""),
+                makeURL("Georgia Institute of Technology", "http://www.gatech.edu/"),
                 makeURL("Click to View", "http://www.health.gatech.edu/finance/Pages/insurance.aspx"),
-                makeURL("Click to View", "http://oie.gatech.edu/archive/isss/forms/schol_insurance.pdf?archive=1"),
+                makeURL("Click to View", "http://www.oie.gatech.edu/scholars/procedures"),
 
-                makeURL("Georgia State University", ""),
+                makeURL("Georgia State University", "http://www.gsu.edu/"),
                 makeURL("Click to View", "http://www.gsu.edu/isss/health_insurance_FAQ.html"),
                 makeURL("Click to View", "http://www.gsu.edu/enrollment/images/ISSS/J-1_Insurance_Compliance_Form.pdf"),
 
@@ -1321,11 +1321,11 @@ function writeSectionForSchoolWaiverRequirements() {
 
                 makeURL("Iowa State University (IA)", "http://www.iastate.edu/"),
                 makeURL("Click to View", "http://www.hrs.iastate.edu/sship/docs/MandatoryHealthInsuranceInternationalStudents.pdf"),
-                makeURL("Click to View", "http://www.hrs.iastate.edu/sship/docs/MandatoryHealthInsuranceInternationalStudents.pdf"),
+                makeURL("Click to View", "https://www.isso.iastate.edu/joomla/index.php?option=com_content&view=article&id=206:health-insurance-information&catid=37&Itemid=261"),
 
                 makeURL("Johns Hopkins University (MD)", "http://www.jhu.edu/"),
                 makeURL("Click to View", "https://www.aetnastudenthealth.com/schools/jhuhc/brochure1213.pdf"),
-                makeURL("Click to View", "https://www.aetnastudenthealth.com/schools/jhuhc/brochure1213.pdf"),
+                makeURL("Click to View", "http://oisss.jhu.edu/Presentations/Understanding%20the%20J1%20Visa%20Program.pdf"),
 
                 makeURL("Johns Hopkins Medical (JHMI)", "http://www.hopkinsmedicine.org/intlsvcs/index.html"),
                 makeURL("Click to View", "http://www.hopkinsmedicine.org/intlsvcs/f1information.html"),
@@ -1333,15 +1333,15 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("Kansas State University (KS)", "http://www.k-state.edu/"),
                 makeURL("Click to View", "http://www.k-state.edu/isss/current/healthinsurance.html"),
-                makeURL("Click to View", "http://www.k-state.edu/isss/j-1/jhealthins.htm"),
+                makeURL("Click to View", "http://www.k-state.edu/isss/j-1/jhealthins.html"),
 
                 makeURL("Lehigh University (PA)", "http://www.lehigh.edu/"),
                 makeURL("Click to View", "http://www.lehigh.edu/~intnl/undergraduate.html"),
                 makeURL("Click to View", "http://www.lehigh.edu/oiss/j1health.html"),
 
-                makeURL("LSU Baton Rouge(LA", "http://www.lsu.edu"),
+                makeURL("LSU Baton Rouge(LA)", "http://www.lsu.edu"),
                 makeURL("Click to View", "http://www.oip.lsu.edu/iso/iso_Insurance_Important_Info.htm"),
-                makeURL("Click to View", "&quot;http://www.oip.lsu.edu/ISO/pdfs/Spring%20%202012%20J%20-1%20AND%20J-2%20Student%20insurance%20cov%20eval.pdf"),
+                makeURL("Click to View", "http://www.oip.lsu.edu/iso/pdfs/J-1%20Scholar%20Insurance%20Coverage%20Evaluation%20Form.pdf"),
 
                 makeURL("Massachusetts Institute of Technology (MA", "http://web.mit.edu/"),
                 makeURL("Click to View", "http://medweb.mit.edu/healthplans/student/waiver.html#requirements"),
@@ -1351,9 +1351,9 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Click to View", "http://www.hr.msu.edu/benefits/studenthealth/studenthealth_docs/MSUwaivercriteria.pdf"),
                 makeURL("Click to View", "http://oiss.isp.msu.edu/documents/scholars/DS2019_Scholar_Extension.pdf"),
 
-                makeURL("Mississippi State University (MS)>", "http://www.msstate.edu/"),
+                makeURL("Mississippi State University (MS)", "http://www.msstate.edu/"),
                 makeURL("Click to View", "http://admissions.msstate.edu/international/apply/insurance.php"),
-                makeURL("Click to View", "http://admissions.msstate.edu/international/services/insurance.php"),
+                makeURL("Click to View", "http://www.admissions.msstate.edu/pdf/international/exchange-visitor.pdf"),
 
                 makeURL("New Jersey Institute of Technology (NJ)", "http://www.njit.edu/"),
                 makeURL("Click to View", "http://www.njit.edu/healthservices/health-insurance.php"),
@@ -1365,7 +1365,7 @@ function writeSectionForSchoolWaiverRequirements() {
 
                 makeURL("North Carolina State University (NC)", "http://www.ncsu.edu/"),
                 makeURL("Click to View", " http://healthcenter.ncsu.edu/insurance/"),
-                makeURL("Click to View", "http://www.ncsu.edu/ois/studentintern/internhealthins.php"),
+                makeURL("Click to View", "http://www.ncsu.edu/ois/research/j1require.php"),
 
                 makeURL("Northeastern University (MA)", "http://www.northeastern.edu/"),
                 makeURL("Click to View", "http://www.northeastern.edu/uhcs/pdfs/nushpPetToWaive.pdf"),
@@ -1374,10 +1374,14 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Northwest University (WA)", "http://www.northwestu.edu/"),
                 makeURL("Click to View", "http://www.northwestu.edu/international/undergraduate/requirements/"),
                 makeURL("Click to View", "http://www.northwestu.edu/international/undergraduate/requirements/"),
+                
+                makeURL("Northwestern University (IL)", "http://www.northwestern.edu/"),
+                makeURL("Click to View", "http://www.northwestern.edu/international/student/pre-arrival-information.html#health"),
+                makeURL("Click to View", "http://www.northwestern.edu/risk/insurance/visiting-scholar/waiver-process.html"),                
 
                 makeURL("Ohio State University-Columbus(OH)", "http://www.osu.edu/"),
                 makeURL("Click to View", "http://shi.osu.edu/coverage-comparison-tools/"),
-                makeURL("Click to View", "http://oia.osu.edu/international-scholars/j-1-visiting-scholars/required-health-insurance.html"),
+                makeURL("Click to View", "http://oia.osu.edu/int-scholars/j-1-visiting-scholars/required-health-insurance.html"),
 
                 makeURL("Oklahoma State University System (OK)", "http://www.system.okstate.edu/"),
                 makeURL("Click to View", "http://www.okstate.edu/UHS/insurance.php"),
@@ -1387,13 +1391,13 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Click to View", "http://studenthealth.oregonstate.edu/internationalplan"),
                 makeURL("Click to View", "http://oregonstate.edu/international/sites/default/files/atosu/insurance.pdf"),
 
-                makeURL("Pennsylvania State University System (PA)", ""),
+                makeURL("Pennsylvania State University System (PA)", "http://www.psu.edu/"),
                 makeURL("Click to View", "http://studentaffairs.psu.edu/health/services/insurance/waiver.shtml"),
                 makeURL("Click to View", "http://global.psu.edu/faculty_staff/scholars/j1.cfm"),
 
                 makeURL("Princeton University (NJ)", "http://www.princeton.edu/"),
                 makeURL("Click to View", "http://www.internationalstudentguidetotheusa.com/articles/healthcare_insurance.php"),
-                makeURL("Click to View", "http://www.princeton.edu/intlctr/scholars/new-scholarsfaculty/j-1-exchange-visitor/health-insurance-requirem/&quot;"),
+                makeURL("Click to View", "http://www.princeton.edu/intlctr/scholars/new-scholarsfaculty/j-1-exchange-visitor/health-insurance-requirem/"),
 
                 makeURL("Purdue University (IN)", "http://www.purdue.edu/"),
                 makeURL("Click to View", "http://www.purdue.edu/push/insurance/waivers.shtml"),
@@ -1407,13 +1411,13 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Click to View", "http://oiss.rice.edu/gateway.aspx?id=208"),
                 makeURL("Click to View", "http://oiss.rice.edu/gateway.aspx?id=228"),
 
-                makeURL("Rutgers University (NJ)", ""),
+                makeURL("Rutgers University (NJ)", "http://www.rutgers.edu/"),
                 makeURL("Click to View", "http://internationalservices.rutgers.edu/content/Center_Staff_Services_and_Programs/Health_Insurance_Program/Rutgers_Health_Insurance_Requirement.html"),
-                makeURL("Click to View", "http://internationalservices.rutgers.edu/content/Center_Staff_Services_and_Programs/Health_Insurance_Program/Rutgers_Health_Insurance_Requirement.html#Minimum_Requirements_for_Health_Insurance_Coverage_at_Rutgers"),
+                makeURL("Click to View", "http://internationalservices.rutgers.edu/forms/Insurance_Information_for_DS-2019_Request_Form.pdf"),
 
                 makeURL("San Diego State University", "http://www.sdsu.edu/"),
-                makeURL("Click to View", "http://www.isc.sdsu.edu/Current/res_insurance.htm"),
-                makeURL("Click to View", "http://icenter.ucsd.edu/_files/ispo/departments/healthmemo_form.pdf"),
+                makeURL("Click to View", "http://www.isc.sdsu.edu/content/Future/HealthInsurance.html"),
+                makeURL("Click to View", "http://www.isc.sdsu.edu/content/Future/HealthInsurance.html"),
 
                 makeURL("Stanford University (CA)", "http://www.stanford.edu/"),
                 makeURL("Click to View", "http://www.stanford.edu/group/vaden/insurance/using_your_own.html"),
@@ -1425,27 +1429,27 @@ function writeSectionForSchoolWaiverRequirements() {
 
                 makeURL("SUNY Binghamton (NY)", "http://www.binghamton.edu/"),
                 makeURL("Click to View", "http://www2.binghamton.edu/isss/health-insurance/waiverinfo.html"),
-                makeURL("Click to View", "http://www2.binghamton.edu/isss/health-insurance/health_ins.html"),
+                makeURL("Click to View", "http://www2.binghamton.edu/isss/health-insurance/waiverinfo.html"),
 
                 makeURL("SUNY Buffalo (CA)", "http://www.buffalo.edu/"),
                 makeURL("Click to View", "http://wings.buffalo.edu/intlservices/health_stu.html"),
-                makeURL("Click to View", "http://wings.buffalo.edu/intlservices/health_stu.html"),
+                makeURL("Click to View", "http://wings.buffalo.edu/intlservices/health_sch.html"),
 
-                makeURL("SUNY Stony Brook (CA)", "http://www.sunysb.edu/"),
+                makeURL("SUNY Stony Brook (NY)", "http://www.sunysb.edu/"),
                 makeURL("Click to View", "http://studentaffairs.stonybrook.edu/shs/intl.shtml"),
-                "",
+                makeURL("Click to View", "http://studentaffairs.stonybrook.edu/shs/intl_visop.shtml"),
 
                 makeURL("Syracuse University (NY)", "http://www.syr.edu/"),
                 makeURL("Click to View", "http://international.syr.edu/new-students/health-insurance/index.html"),
-                makeURL("Click to View", "http://international.syr.edu/new-students/health-insurance/index.html"),
+                makeURL("Click to View", "http://international.syr.edu/international-faculty-staff/j1-exchange-visitors/index.html"),
 
                 makeURL("Temple University (PA)", "http://www.temple.edu/"),
                 makeURL("Click to View", "http://www.temple.edu/hr/students/waiver.htm"),
                 makeURL("Click to View", "http://www.temple.edu/isss/home/h1b1j1/MandatoryHealthinsuranceRequirementsforJExchangeVisitors.htm"),
 
-                makeURL("Texas A&M University System (TX)", ""),
+                makeURL("Texas A&M University System (TX)", "http://www.tamu.edu/"),
                 makeURL("Click to View", "http://international.tamu.edu/iss/insurance/forstudents.asp"),
-                makeURL("Click to View", "http://www.nafsa.org/_/file/_/amresource/22cfr62.htm#6214"),
+                makeURL("Click to View", "http://ifss.tamu.edu/J/insurance"),
 
                 makeURL("Texas Tech University", "http://www.ttu.edu/"),
                 makeURL("Click to View", "http://www.ttuhsc.edu/studenthealth/"),
@@ -1460,12 +1464,12 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Click to View", "https://greenspace.tulane.edu/ciss/www/J-1 Insurance Requirement.pdf"),
 
                 makeURL("University of Alabama -Tuscaloosa (AL)", "http://www.ua.edu/"),
-                "",
+                makeURL("Click to View", "http://is.ua.edu/insurance-medical-care/medical-insurance/"),
                 makeURL("Click to View", "http://is.ua.edu/international-faculty-staff/j-1-exchange-visitors/j-1-overview-categories/"),
 
                 makeURL("University of Alabama - Birmingham (AL)", "http://www.uab.edu/"),
                 makeURL("Click to View", "http://www.uab.edu/studenthealth/insurance-and-waivers/mandatory-insurance-waivers"),
-                makeURL("Click to View", "https://www.uab.edu/medicine/home/education/current/visiting"),
+                makeURL("Click to View", "https://www.uab.edu/students/international/scholars"),
 
                 makeURL("University of Alabama - Huntsville (AL)", "http://www.uah.edu/"),
                 makeURL("Click to View", "http://www.uah.edu/ISSO/Students/newstudents.php"),
@@ -1480,7 +1484,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Click to View", "http://www.health.arizona.edu/pdf/insurance/J1%20Visiting%20Scholars%20Ins%20Requirement.pdf"),
 
                 makeURL("University of Arkansas - Fayetteville(AR)", "http://www.uark.edu/"),
-                makeURL("", ""),
+                makeURL("Click to View", "http://iss.uark.edu/2186.php"),
                 makeURL("Click to View", "http://iss.uark.edu/2104.php"),
 
                 makeURL("University of California Berkeley (CA)", "http://www.berkeley.edu/"),
@@ -1505,7 +1509,7 @@ function writeSectionForSchoolWaiverRequirements() {
 
                 makeURL("University of California San Diego (CA)", "http://www.ucsd.edu/"),
                 makeURL("Click to View", "http://studenthealth.ucsd.edu/shipwaiver.shtml#howto"),
-                makeURL("Click to View", "http://icenter.ucsd.edu/_files/ispo/departments/healthmemo_form.pdf"),
+                makeURL("Click to View", "http://icenter.ucsd.edu/iso/living-in-sd/insurance/"),
 
                 makeURL("University of California San Francisco (CA)", "http://www.ucsf.edu/"),
                 makeURL("Click to View", "http://studenthealth.ucsf.edu/waiver#eli"),
@@ -1527,9 +1531,13 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Click to View", "http://www.uc.edu/uhs/student_health_insurance.html"),
                 makeURL("Click to View", "http://www.uc.edu/international/services/scholars/maintaining_status/health_insurance.html"),
 
+                makeURL("University of Colorado at Boulder", "http://www.colorado.edu/"),
+                makeURL("Click to View", "http://www.colorado.edu/oie/international-student-and-scholar-services/forms-handouts"),
+                makeURL("Click to View", "http://www.colorado.edu/oie/international-student-and-scholar-services/forms-handouts"),
+                
                 makeURL("University of Connecticut (CT)", "http://www.uconn.edu/"),
                 makeURL("Click to View ", "http://global.uconn.edu/?page_id=972"),
-                makeURL("Click to View", "http://www.disp.uconn.edu/scholars/J1insurance.html"),
+                makeURL("Click to View", "http://global.uconn.edu/about/immigration-services/visiting-scholars/insurance-requirements-for-j-1-exchange-visitors/"),
 
                 makeURL("University of Dayton (OH)", "http://www.udayton.edu/"),
                 makeURL("Click to View", "http://www.udayton.edu/international/isss/arrival_and_orientation/health_insurance.php"),
@@ -1537,15 +1545,15 @@ function writeSectionForSchoolWaiverRequirements() {
 
                 makeURL("University of Delaware (DE)", "http://www.udel.edu/"),
                 makeURL("Click to View", "http://www.udel.edu/oiss/forms/insurance_waiver_international.pdf"),
-                makeURL("Click to View", "http://www.udel.edu/oiss/information/j1j2health.html"),
+                makeURL("Click to View", "http://www.udel.edu/oiss/VS/J/pre_arrival_info.html"),
 
                 makeURL("University of Florida (FL)", "http://www.ufl.edu/"),
                 makeURL("Click to View", "http://www.ufic.ufl.edu/ISS/Forms/Insurance%20Verification.pdf"),
-                makeURL("Click to View", "http://www.ufic.ufl.edu/ISS/Forms/Insurance%20Verification.pdf"),
+                makeURL("Click to View", "http://www.ufic.ufl.edu/evs/Insurance.html"),
 
                 makeURL("University of Georgia (GA)", "http://www.uga.edu/"),
                 makeURL("Click to View", "http://www.hr.uga.edu/benefits/stuins/ins_min_table.html"),
-                makeURL("Click to View", "https://www.google.com/url?q=http://www.issis.uga.edu/images/docs/for_scholars/j_insurance.doc&amp;sa=U&amp;ei=ttbjT9qKJa2XmQXNuYmACw&amp;ved=0CAkQFjAC&amp;client=internal-uds-cse&amp;usg=AFQjCNFG8_13xA0PfuLZ74_htXpCNruYAg"),
+                makeURL("Click to View", "http://issis.uga.edu/docs/Fac_Scholar_Section/Health_%20Ins_Companies_Requirements.pdf"),
 
                 makeURL("University of Hawaii - Manoa (HI)", "http://www.uhm.hawaii.edu/"),
                 makeURL("Click to View", "http://www.hawaii.edu/shs/international.html"),
@@ -1557,7 +1565,7 @@ function writeSectionForSchoolWaiverRequirements() {
 
                 makeURL("University of Idaho (ID)", "http://www.uidaho.edu/"),
                 makeURL("Click to View", "http://www.uidaho.edu/international/issfs/international-"),
-                makeURL("Click to View", "http://www.uidaho.edu/international/issfs/international-students/f1status/f1info/j1healthinsurance"),
+                makeURL("Click to View", "http://www.uidaho.edu/~/media/Files/orgs/Academic%20Affairs/IPO/ISSS/International%20Scholars/JI%20PreArrival%20Document.ashx"),
 
                 makeURL("University of Illinois ,Urbana-Champaign (IL)", "http://www.uiuc.edu/"),
                 makeURL("Click to View", "http://www.si.uiuc.edu/Default.aspx?tabid=64"),
@@ -1565,7 +1573,7 @@ function writeSectionForSchoolWaiverRequirements() {
 
                 makeURL("University of Illinois, Chicago (IL)", "http://www.uic.edu/"),
                 makeURL("Click to View", "https://www.google.com/url?q=http://www.obfs.uillinois.edu/common/pages/DisplayFile.aspx%3FitemId%3D929186&amp;sa=U&amp;ei=V93jT-nTAcWNmQWZ6JCSCw&amp;ved=0CAgQFjAB&amp;client=internal-uds-cse&amp;usg=AFQjCNEUIscgKqfoSRPZ3LjDurIWAfOkKQ"),
-                makeURL("Click to View", "https://www.google.com/url?q=http://www.uic.edu/depts/uicforum/docs/InsuranceRequirements.pdf&amp;sa=U&amp;ei=V93jT-nTAcWNmQWZ6JCSCw&amp;ved=0CAYQFjAA&amp;client=internal-uds-cse&amp;usg=AFQjCNGZX75ex7INqxY4-Fz52tLESfQhpw"),
+                makeURL("Click to View", "http://www.ois.uic.edu/cms/one.aspx?portalId=1138157&pageId=1143737"),
 
                 makeURL("University of Iowa (IA)", "http://www.uiowa.edu/"),
                 makeURL("Click to View", "http://www.uiowa.edu/admissions/undergrad/international/exempt-guidelines.htm"),
@@ -1573,31 +1581,27 @@ function writeSectionForSchoolWaiverRequirements() {
 
                 makeURL("University of Kansas (KS)", "http://www.ku.edu/"),
                 makeURL("Click to View", "http://www.iss.ku.edu/insurance/index.shtml"),
-                makeURL("Click to View", "http://www.iss.ku.edu/pdf/insurance/insurance-waiver-sum12.pdf"),
+                makeURL("Click to View", "http://www.iss.ku.edu/insurance/"),
 
                 makeURL("University of Kentucky (KY)", "http://www.uky.edu/"),
                 makeURL("Click to View", "https://www.academichealthplans.com/enroll_waive/index.php5?school_id=136"),
-                makeURL("Click to View", "https://www.academichealthplans.com/enroll_waive/index.php5?school_id=136"),
-
-                makeURL("University of Lousiana - Lafayette (LA)", "http://www.ull.edu/"),
-                "",
-                "",
+                makeURL("Click to View", "http://www.uky.edu/international/Health_Insurance_J1"),
 
                 makeURL("University of Louisville (KY)", "http://www.louisville.edu"),
                 makeURL("Click to View", "http://louisville.edu/campushealth/forms/international%20insurance%20waiver%20Description.pdf"),
-                makeURL("Click to View", "http://louisville.edu/internationalcenter/iss/forms-and-documents/J-1DS2019a.pdf"),
+                makeURL("Click to View", "http://louisville.edu/internationalcenter/iss/forms-and-documents/The%20Exchange%20Visitor%20Program%20Welcome%20Brochure.pdf"),
 
                 makeURL("University of Maine - Orono (ME)", "http://www.umaine.edu/"),
                 makeURL("Click to View", "http://umaine.edu/international/files/2010/07/Insurance-Waiver-Spring-2012-2.pdf"),
-                makeURL("Click to View", "https://www.google.com/url?q=http://umaine.edu/international/files/2009/08/Exchange-Visitor-J-1-Application-Form-3-28-12.pdf&amp;sa=U&amp;ei=WeHjT5P7BKibmQX0seWXCw&amp;ved=0CAcQFjAB&amp;client=internal-uds-cse&amp;usg=AFQjCNGd2nktXg2gXkY6bVRIKeOBB2mINg"),
+                makeURL("Click to View", "http://umaine.edu/international/current-students/health-insurance/"),
 
                 makeURL("University of Maryland - College Park (MD)", "http://www.umcp.umd.edu/"),
                 makeURL("Click to View", "https://studentcenter.uhcsr.com/umd/?type=waiver"),
-                makeURL("Click to View", "https://studentcenter.uhcsr.com/umd/?type=waiver"),
+                makeURL("Click to View", "http://www.international.umd.edu/ies/2750"),
 
                 makeURL("University of Massachusetts - Amherst (MA)", "http://www.umass.edu/"),
                 makeURL("Click to View", "http://www.umass.edu/uhs/insurance/ship/"),
-                makeURL("Click to View", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/"),
+                makeURL("Click to View", "http://www.umass.edu/ipo/iss/health.php"),
 
                 makeURL("University of Massachusetts - Lowell (MA)", "http://www.uml.edu/"),
                 "",
@@ -1605,7 +1609,7 @@ function writeSectionForSchoolWaiverRequirements() {
 
                 makeURL("University of Miami (FL)", "http://www.miami.edu/"),
                 makeURL("Click to View", "http://www.miami.edu/sa/index.php/student_health_center/insurance_information/"),
-                makeURL("Click to View", "http://www.miami.edu/sa/index.php/student_life/student_services/isss/current_international_students/j-1_visa/health_insurance_requirement/"),
+                makeURL("Click to View", "http://www.miami.edu/sa/index.php/isss/current_international_scholars/health_insurance_requirement/"),
 
                 makeURL("University of Michigan - Ann Arbor (MI)", "http://www.umich.edu/"),
                 makeURL("Click to View", "http://internationalcenter.umich.edu/healthins/waiver.html#standards"),
@@ -1625,7 +1629,7 @@ function writeSectionForSchoolWaiverRequirements() {
 
                 makeURL("University of Nebraska - Lincoln (NE)", "http://www.unl.edu/"),
                 makeURL("Click to View", "http://health.unl.edu/billing/insurancewaiverpolicy/"),
-                makeURL("Click to View", "http://www.unl.edu/iaffairs/iss/forms/J-1%20Scholar%20Extension%20Form.pdf"),
+                makeURL("Click to View", "http://isso.unl.edu/j.status.health.insurance.requirement"),
 
                 makeURL("University of New Hampshire (NH)", "http://www.unh.edu/"),
                 makeURL("Click to View", "http://www.unh.edu/health-services/shbp/"),
@@ -1633,7 +1637,7 @@ function writeSectionForSchoolWaiverRequirements() {
 
                 makeURL("University of New Mexico (NM)", "http://www.unm.edu/"),
                 makeURL("Click to View", "http://www.unm.edu/oips/health_information.html"),
-                makeURL("Click to View", "http://www.unm.edu/oips/health_information_scholars.html"),
+                makeURL("Click to View", "http://geo.unm.edu/health_insurance_scholar.html"),
 
                 makeURL("University of North Carolina - Chapel Hill (NC)", "http://www.unc.edu/"),
                 "",
@@ -1649,11 +1653,11 @@ function writeSectionForSchoolWaiverRequirements() {
 
                 makeURL("University of Oregon (OR)", "http://www.uoregon.edu/"),
                 makeURL("Click to View", "http://www.google.com/url?q=https://healthcenter.uoregon.edu/Portals/0/fall2012-intl-waiver-requirements.doc&amp;sa=U&amp;ei=n2fLT_TqMeXYigewveS3Bg&amp;ved=0CBEQFjAG&amp;client=internal-uds-cse&amp;usg=AFQjCNHjtiSLKWN1y3FxZr2pQkoTuCGpPA"),
-                makeURL("Click to View", "http://www.google.com/url?q=http://international.uoregon.edu/index.php/component/docman/doc_download/21-statement-of-compliance-with-insurance&amp;sa=U&amp;ei=hmbLT8XIOMe7iAeM-d3KBg&amp;ved=0CAkQFjAC&amp;client=internal-uds-cse&amp;usg=AFQjCNEJxniji9kFkgpJRkB5X4HIkkS2yA"),
+                makeURL("Click to View", "http://international.uoregon.edu/sites/default/files/J-INSURANCE-REQUIREMENTS.pdf"),
 
                 makeURL("University of Pennsylvania (PA)", "http://www.upenn.edu/"),
                 makeURL("Click to View", "http://www.vpul.upenn.edu/shs/insurance.php"),
-                makeURL("Click to View", "http://www.upenn.edu/oip/isss/j1/scholar"),
+                makeURL("Click to View", "http://global.upenn.edu/isss/prearrival"),
 
                 makeURL("University of Pittsburgh (PA)", "http://www.pitt.edu/"),
                 makeURL("Click to View", "http://www.ois.pitt.edu/immigration-related-stuff/health-insurance/#student"),
@@ -1669,7 +1673,7 @@ function writeSectionForSchoolWaiverRequirements() {
 
                 makeURL("University of South Carolina - Columbia (SC)", "http://www.sc.edu/"),
                 makeURL("Click to View", "http://www.sa.sc.edu/shs/billing/insurance/"),
-                makeURL("Click to View", "http://iss.sc.edu/index.php?option=com_docman&amp;task=doc_view&amp;gid=493&amp;Itemid="),
+                makeURL("Click to View", "http://iss.sc.edu/index.php?option=com_docman&task=doc_view&gid=493&Itemid="),
 
                 makeURL("University of Southern California (CA)", "http://www.usc.edu/"),
                 makeURL("Click to View", "http://www.usc.edu/student-affairs/Health_Center/insurance/waiver.information.shtml#criteria"),
@@ -1681,7 +1685,7 @@ function writeSectionForSchoolWaiverRequirements() {
 
                 makeURL("University of Tennessee - Knoxville (TN)", "http://www.utk.edu/"),
                 makeURL("Click to View", "http://studenthealth.utk.edu/files/intl_student_insurance.pdf"),
-                makeURL("Click to View", "http://international.utk.edu/files/2011/07/J-1-Health-Insurance-Regulations-and-Procedures.pdf"),
+                makeURL("Click to View", "http://international.utk.edu/isss/health-insurance-information/scholars/"),
 
                 makeURL("University of Texas - Austin (TX)", "http://www.utexas.edu/"),
                 makeURL("Click to View", "http://world.utexas.edu/forms/isss/PVT_Waiver.pdf"),
@@ -1689,7 +1693,7 @@ function writeSectionForSchoolWaiverRequirements() {
 
                 makeURL("University of Texas - Arlington (TX)", "http://www.uta.edu/"),
                 makeURL("Click to View", "http://www.uta.edu/oie/forms/HealthInsuranceWaiver.php"),
-                "",
+                makeURL("Click to View", "http://www.uta.edu/oie/JScholar/jscholar.php"),
 
                 makeURL("University of Utah (UT)", "http://www.utah.edu/"),
                 makeURL("Click to View", "http://studenthealth.utah.edu/pdfs/INTERNATIONALSTUDENTFrontpageformfield.pdf"),
@@ -1697,7 +1701,7 @@ function writeSectionForSchoolWaiverRequirements() {
 
                 makeURL("University of Vermont (VT)", "http://www.uvm.edu/"),
                 makeURL("Click to View", "http://www.uvm.edu/~CHWB/insurance/?Page=mandatory.html"),
-                "",
+                makeURL("Click to View", "https://www.uvm.edu/oie/?Page=services/intl_students_health.html"),
 
                 makeURL("University of Virginia (VA)", "http://www.virginia.edu/"),
                 makeURL("Click to View", "http://www.virginia.edu/studenthealth/insurance/HardWaiver1011.html"),
@@ -1705,7 +1709,7 @@ function writeSectionForSchoolWaiverRequirements() {
 
                 makeURL("University of Washington", "http://www.washington.edu/"),
                 makeURL("Click to View", "http://iss.washington.edu/health-insurance"),
-                makeURL("Click to View", "http://unh.edu/oiss/department-state-mandatory-j-1-insurance-regulations"),
+                makeURL("Click to View", "http://iss.washington.edu/health-insurance"),
 
                 makeURL("University of Wisconsin - Madison (WI)", "http://www.wisc.edu/"),
                 makeURL("Click to View", "http://www.uhs.wisc.edu/ship/documents/ship-waiver.pdf"),
@@ -1713,7 +1717,7 @@ function writeSectionForSchoolWaiverRequirements() {
 
                 makeURL("Utah State University (UT)", "http://www.usu.edu/"),
                 makeURL("Click to View", "http://www.usu.edu/oiss/htm/current-students/insurance"),
-                makeURL("Click to View", "http://www.usu.edu/oiss/htm/current-students/insurance"),
+                makeURL("Click to View", "http://globalengagement.usu.edu/htm/study-abroad/incoming-students/health-insurance"),
 
                 makeURL("Vanderbilt University (TN)", "http://www.vanderbilt.edu/"),
                 makeURL("Click to View", "http://www.vanderbilt.edu/isss/wp-content/uploads/HealthInsWaiverRequest.pdf"),
@@ -1725,11 +1729,11 @@ function writeSectionForSchoolWaiverRequirements() {
 
                 makeURL("Virginia Tech (VA)", "http://www.vt.edu/"),
                 makeURL("Click to View", "http://graduateschool.vt.edu/igss/application_prearrival/insurance.html"),
-                makeURL("Click to View", "http://www.oired.vt.edu/iss/jvisa/insurance.html"),
+                makeURL("Click to View", "http://www.oired.vt.edu/iss/jvisa/health-insurance.html"),
 
                 makeURL("Washington State University", "http://www.wsu.edu/"),
                 makeURL("Click to View", "http://hws.wsu.edu/Content/Files/angie/spring%202012%20international%20student%20waiver.pdf"),
-                makeURL("Click to View", "http://ip.wsu.edu/oiss/students/J-1-student-interns/J-1-health-insurance-info-compliance-statement.pdf"),
+                makeURL("Click to View", "http://ip.wsu.edu/global-services/scholars/J-1/medical-insurance.html"),
 
                 makeURL("Washington University in St. Louis (MO)", "http://www.wustl.edu/"),
                 "",
@@ -1741,7 +1745,7 @@ function writeSectionForSchoolWaiverRequirements() {
 
                 makeURL("West Virginia University (WV)", "http://www.wvu.edu/"),
                 makeURL("Click to View", "http://oiss.wvu.edu/students/current_students/health_insurance_requirements_for_all_international_students"),
-                makeURL("Click to View", "http://oiss.wvu.edu/scholars/j1_scholars/immigration_requirements_for_j_1_scholars/insurance_requirements_for_j_1_scholars"),
+                makeURL("Click to View", "http://well.wvu.edu/medical/insurance/international-students"),
 
                 makeURL("Yale University (CT)", "http://www.yale.edu/"),
                 "",
