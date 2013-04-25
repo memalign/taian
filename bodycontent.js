@@ -125,7 +125,17 @@ function showPivot(pivotName) {
         cnsta: "l=cn&partner=sta&p=pivot-home&adid=scnsta",   
         gcnsta: "l=cn&partner=sta&p=pivot-international-student&adid=gcnsta",
         gsta: "l=en&partner=sta&p=pivot-international-student&adid=gsta",
-        acnsta: "l=cn&partner=sta&p=pivot-international-student&adid=acnsta",          
+        acnsta: "l=cn&partner=sta&p=pivot-international-student&adid=acnsta", 
+        usdos: "l=en&partner=usdos&p=pivot-international-student", 
+        iusc: "l=en&partner=usc&p=pivot-international-student",
+        ista: "l=en&partner=sta&p=pivot-international-student",
+        iuiuc: "l=en&partner=uiuc&p=pivot-international-student",
+        inyu: "l=en&partner=nyu&p=pivot-international-student",
+        ipurdue: "l=en&partner=purdue&p=pivot-international-student",
+        icolumbia: "l=en&partner=columbia&p=pivot-international-student",
+        iucla: "l=en&partner=ucla&p=pivot-international-student",
+        iiu: "l=en&partner=iu&p=pivot-international-student",
+        iutaustin: "l=en&partner=utaustin&p=pivot-international-student",                
         uiuc: "l=en&partner=uiuc&p=pivot-home&adid=suiuc",
         cnuiuc: "l=cn&partner=uiuc&p=pivot-home&adid=scnuiuc",   
         gcnuiuc: "l=cn&partner=uiuc&p=pivot-international-student&adid=gcnuiuc",
@@ -1205,552 +1215,685 @@ function writePatriotTravelTable() {
 
 function writeSectionForSchoolWaiverRequirements() {
     // School waiver requirements
-    startSection("pivot-school-waiver", "School Waiver Requirements");
+    startSection("pivot-school-waiver", "Requirements for all schools for F and J visa");
     startRow();
     writeText("Contact us to ensure a plan meets your requirements.");
     endRow();
 
     startRow();
-    document.write(makeTable(3,
+    document.write(makeTable(4,
                 [
-                "School", "F1 Visa", "J1 Visa",
+                "School", "F1 Visa", "J1 Visa", "Insurance that meets school requirements",
 
                 makeURL("Arizona State University (AZ)", "http://www.asu.edu/"),
                 makeURL("Click to View", "https://students.asu.edu/internationalstudenthealth"),
                 makeURL("Click to View", "https://global.asu.edu/sites/default/files/DS2019Packet.pdf"),
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),                
 
                 makeURL("Auburn University (AL)", "http://www.auburn.edu/"),
                 makeURL("Click to View", "http://www.auburn.edu/academic/international/insurance2011/insurance_plan.htm"),
                 makeURL("Click to View", "http://www.auburn.edu/academic/international/isss/insurance/"),
+                "Consult your school about their requirements",
 
                 makeURL("Boston University (MA)", "http://www.bu.edu/"),
                 makeURL("Click to View", "http://www.bu.edu/studentaccountingservices/resources/medical-insurance/"),
                 makeURL("Click to View", "http://www.bu.edu/isso/administrators/j1/ev-overview.html"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Brandeis University (MA)", "http://www.brandeis.edu/"),
                 makeURL("Click to View", "http://heller.brandeis.edu/admissions/admitted-students/grad-selection-form-8-2011.pdf"),
                 makeURL("Click to View", "http://www.brandeis.edu/acserv/isso/scholar/currentscholars/healthinsurance.html"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Brigham Young University (UT)", "http://www.byu.edu/"),
                 makeURL("Click to View", "http://health.byu.edu/health_plan/req.php"),
                 makeURL("Click to View", "https://internationalservices.byu.edu/content/insurance"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Brown University (RI)", "http://www.brown.edu/"),
                 makeURL("Click to View", "http://www.universityhealthplans.com/letters/letter.cgi?school_id=165"),
                 makeURL("Click to View", "http://brown.edu/Administration/OISSS/scholars/docs/J1_health_insurance_memo.pdf"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("California Institute of Technology (CA)", "http://www.caltech.edu/"),
                 makeURL("Click to View", "http://www.gradoffice.caltech.edu/documents/94-student_waiver_requirements_2011-2012.pdf"),
                 makeURL("Click to View", "http://www.international.caltech.edu/maintainstatus/j1scholar"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Carnegie Mellon University (PA)", "http://www.cmu.edu/"),
                 makeURL("Click to View", "http://www.cmu.edu/health-services/student-insurance/medical/med_info/medical_insurance_waiver_enrollment_process.html"),
                 makeURL("Click to View", "http://www.studentaffairs.cmu.edu/oie/forscho/j1/conditions.html"),
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),                
 
                 makeURL("Case Western Reserve University (OH)", "http://www.case.edu"),
                 makeURL("Click to View", "http://studentaffairs.case.edu/medicalplan/news/4915.newx"),
                 makeURL("Click to View", "http://www.case.edu/finadmin/humres/ffs/j1.html"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Clemson University (SC)", "http://www.clemson.edu/"),
                 makeURL("Click to View", "http://www.studentinsurance.com/Schools/SC/Clemson/WaiverRequirements.asp?Show=Int&MenuNum=2"),
                 makeURL("Click to View", "http://www.clemson.edu/administration/ia/services/students/scholars.html"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Cleveland State University (OH)", "http://www.csuohio.edu/"),
                 makeURL("Click to View", "http://www.csuohio.edu/offices/health/InsuranceWaiver.html"),
                 makeURL("Click to View", "http://www.csuohio.edu/offices/international/academic/exchange_visitors/exchange_form.html"),
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
                 
                 makeURL("Colorado State University (CO)", "http://www.colostate.edu/"),
                 makeURL("Click to View", "http://www.health.colostate.edu/pages/insurance.aspx"),
                 makeURL("Click to View", "http://www.health.colostate.edu/pages/insurance.aspx"),
-
+                "Consult your school about their requirements",
+                
                 makeURL("Columbia University (NY)", "http://www.columbia.edu/"),
                 makeURL("Click to View", "http://health.columbia.edu/insurance/enroll-upgrade-waive/request-waiver"),
                 makeURL("Click to View", "http://www.columbia.edu/cu/isso/visa/scholar/J_health.html"),
-
+                makeURL("Columbia International Scholars and Students", "http://taianfinancial.com/#icolumbia"),
+                
                 makeURL("Cornell University (NY)", "http://www.cornell.edu/"),
                 makeURL("Click to View", "http://www.gannett.cornell.edu/insurance/undergrads/enrollment/"),
                 makeURL("Click to View", "http://www.isso.cornell.edu/immigration/j1student/j1insurance.php"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Dartmouth College (NH)", "http://www.dartmouth.edu/"),
                 makeURL("Click to View", "http://www.dartmouth.edu/~health/depts/insurance/waiver04.html"),
                 makeURL("Click to View", "http://www.dartmouth.edu/~ovis/updates/j1/health.html"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Duke University (NC)", "http://www.duke.edu/"),
                 makeURL("Click to View", "http://studentaffairs.duke.edu/studenthealth/new-students/health-insurance-requirements"),
                 makeURL("Click to View", "http://www.visaservices.duke.edu/J_Health_Insurance.html"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Emory University (GA)", "http://www.emory.edu/"),
                 makeURL("Click to View", "http://studenthealth.emory.edu/hs/hs_manins_fall_2012.php"),
                 makeURL("Click to View", "http://www.emory.edu/isss/scholars/Maintaining%20J-1%20Status%20Scholars/Health%20Insurance.html"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Florida State University (FL)", "http://www.fsu.edu/"),
                 makeURL("Click to View", "http://studentinsurance.fsu.edu/forms/comparable_coverage_international.pdf"),
                 makeURL("Click to View", "http://cge.fsu.edu/forms/j1schforms/health_insurance_eval.pdf"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("George Mason University (VA)", "http://www.gmu.edu/"),
                 makeURL("Click to View", "ttp://shs.gmu.edu/insurance/international.php#Student"),
                 makeURL("Click to View", "http://oips.gmu.edu/evp/maintain_j.php?type=1#ins"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Georgetown University (DC)", "http://www.georgetown.edu/"),
                 makeURL("Click to View", "http://studentaffairs.georgetown.edu/insurance/letterwaiver.html"),
                 makeURL("Click to View", "http://internationalservices.georgetown.edu/j-1scholars/healthinsurance/"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("George Washington University (DC)", "http://www.gwu.edu/"),
-                makeURL("Click to view", "http://gwired.gwu.edu/iso/NewlyAdmittedStudents/WelcomeCenter/Health/"),
+                makeURL("Click to View", "http://gwired.gwu.edu/iso/NewlyAdmittedStudents/WelcomeCenter/Health/"),
                 makeURL("Click to View", "http://gwired.gwu.edu/iso/CurrentScholarsJ1/HealthInsuranceRequirementforJ1ExchangeVisitors"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Georgia Institute of Technology", "http://www.gatech.edu/"),
                 makeURL("Click to View", "http://www.health.gatech.edu/finance/Pages/insurance.aspx"),
                 makeURL("Click to View", "http://www.oie.gatech.edu/scholars/procedures"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Georgia State University", "http://www.gsu.edu/"),
                 makeURL("Click to View", "http://www.gsu.edu/isss/health_insurance_FAQ.html"),
                 makeURL("Click to View", "http://www.gsu.edu/enrollment/images/ISSS/J-1_Insurance_Compliance_Form.pdf"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Harvard University (MA)", "http://www.harvard.edu/"),
                 makeURL("Click to View", "http://www.hio.harvard.edu/healthcareandinsurance/students/healthinsurancerequirementsandwaivers/"),
                 makeURL("Click to View", "http://www.hio.harvard.edu/healthcareandinsurance/scholars/requirementsforjvisaholders/"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Indiana University-Bloomington", "http://www.iub.edu/"),
                 makeURL("Click to View", "http://ois.indiana.edu/newstudents/livingintheus/insurance/"),
                 makeURL("Click to View", "http://ois.indiana.edu/scholars/status/med_insurance.php"),
-
+                makeURL("IU International Scholars and Students", "http://taianfinancial.com/#iiu"),
+                
                 makeURL("Indiana University Purdue University-Indianapolis", "http://www.iupui.edu/"),
                 makeURL("Click to View", "http://iservices.iupui.edu/health-insurance/students/"),
                 makeURL("Click to View", "http://iservices.iupui.edu/health-insurance/scholars/"),
-
+                "Consult your school about their requirements",
+                
                 makeURL("Iowa State University (IA)", "http://www.iastate.edu/"),
                 makeURL("Click to View", "http://www.hrs.iastate.edu/sship/docs/MandatoryHealthInsuranceInternationalStudents.pdf"),
                 makeURL("Click to View", "https://www.isso.iastate.edu/joomla/index.php?option=com_content&view=article&id=206:health-insurance-information&catid=37&Itemid=261"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Johns Hopkins University (MD)", "http://www.jhu.edu/"),
                 makeURL("Click to View", "https://www.aetnastudenthealth.com/schools/jhuhc/brochure1213.pdf"),
                 makeURL("Click to View", "http://oisss.jhu.edu/Presentations/Understanding%20the%20J1%20Visa%20Program.pdf"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Johns Hopkins Medical (JHMI)", "http://www.hopkinsmedicine.org/intlsvcs/index.html"),
                 makeURL("Click to View", "http://www.hopkinsmedicine.org/intlsvcs/f1information.html"),
                 makeURL("Click to View", "http://www.hopkinsmedicine.org/intlsvcs/j1insurance.html"),                
-                
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                            
                 makeURL("Kansas State University (KS)", "http://www.k-state.edu/"),
                 makeURL("Click to View", "http://www.k-state.edu/isss/current/healthinsurance.html"),
                 makeURL("Click to View", "http://www.k-state.edu/isss/j-1/jhealthins.html"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Lehigh University (PA)", "http://www.lehigh.edu/"),
                 makeURL("Click to View", "http://www.lehigh.edu/~intnl/undergraduate.html"),
                 makeURL("Click to View", "http://www.lehigh.edu/oiss/j1health.html"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("LSU Baton Rouge(LA)", "http://www.lsu.edu"),
                 makeURL("Click to View", "http://www.oip.lsu.edu/iso/iso_Insurance_Important_Info.htm"),
                 makeURL("Click to View", "http://www.oip.lsu.edu/iso/pdfs/J-1%20Scholar%20Insurance%20Coverage%20Evaluation%20Form.pdf"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Massachusetts Institute of Technology (MA", "http://web.mit.edu/"),
                 makeURL("Click to View", "http://medweb.mit.edu/healthplans/student/waiver.html#requirements"),
                 makeURL("Click to View", "http://web.mit.edu/scholars/intlscholars/healthinsurance/j1requirements.html"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Michigan State University (MI)", "http://www.msu.edu/"),
                 makeURL("Click to View", "http://www.hr.msu.edu/benefits/studenthealth/studenthealth_docs/MSUwaivercriteria.pdf"),
                 makeURL("Click to View", "http://oiss.isp.msu.edu/documents/scholars/DS2019_Scholar_Extension.pdf"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Mississippi State University (MS)", "http://www.msstate.edu/"),
                 makeURL("Click to View", "http://admissions.msstate.edu/international/apply/insurance.php"),
                 makeURL("Click to View", "http://www.admissions.msstate.edu/pdf/international/exchange-visitor.pdf"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("New Jersey Institute of Technology (NJ)", "http://www.njit.edu/"),
                 makeURL("Click to View", "http://www.njit.edu/healthservices/health-insurance.php"),
                 makeURL("Click to View", "http://www.njit.edu/humanresources/divisions/employment/request_for_DS-2019_J-1_status_sponsorship.pdf"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("New York University (NY)", "http://www.nyu.edu/"),
                 makeURL("Click to View", "http://www.nyu.edu/global/international-immigration-services/students/inbound-to-nyc/pre-arrival/required-health-insurance-coverage.html"),
                 makeURL("Click to View", "http://www.nyu.edu/global/international-immigration-services/faculty-and-scholars/inbound-to-nyc/pre-arrival/exchange-visitor/health-insurance-requirement.html"),
-
+                makeURL("NYU International Scholars and Students", "http://taianfinancial.com/#inyu"),
+                
                 makeURL("North Carolina State University (NC)", "http://www.ncsu.edu/"),
                 makeURL("Click to View", " http://healthcenter.ncsu.edu/insurance/"),
                 makeURL("Click to View", "http://www.ncsu.edu/ois/research/j1require.php"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Northeastern University (MA)", "http://www.northeastern.edu/"),
                 makeURL("Click to View", "http://www.northeastern.edu/uhcs/pdfs/nushpPetToWaive.pdf"),
                 makeURL("Click to View", "http://www.northeastern.edu/issi/insurance.html"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Northwest University (WA)", "http://www.northwestu.edu/"),
                 makeURL("Click to View", "http://www.northwestu.edu/international/undergraduate/requirements/"),
                 makeURL("Click to View", "http://www.northwestu.edu/international/undergraduate/requirements/"),
+                "Consult your school about their requirements",
                 
                 makeURL("Northwestern University (IL)", "http://www.northwestern.edu/"),
                 makeURL("Click to View", "http://www.northwestern.edu/international/student/pre-arrival-information.html#health"),
                 makeURL("Click to View", "http://www.northwestern.edu/risk/insurance/visiting-scholar/waiver-process.html"),                
-
+                "Consult your school about their requirements",
+                
                 makeURL("Ohio State University-Columbus(OH)", "http://www.osu.edu/"),
                 makeURL("Click to View", "http://shi.osu.edu/coverage-comparison-tools/"),
                 makeURL("Click to View", "http://oia.osu.edu/int-scholars/j-1-visiting-scholars/required-health-insurance.html"),
-
+                "Consult your school about their requirements",
+                
                 makeURL("Oklahoma State University System (OK)", "http://www.system.okstate.edu/"),
                 makeURL("Click to View", "http://www.okstate.edu/UHS/insurance.php"),
                 makeURL("Click to View", "http://union.okstate.edu/iss/Scholars/Immigration/Insurance.htm"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Oregon State University (OR)", "http://oregonstate.edu/"),
                 makeURL("Click to View", "http://studenthealth.oregonstate.edu/internationalplan"),
                 makeURL("Click to View", "http://oregonstate.edu/international/sites/default/files/atosu/insurance.pdf"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Pennsylvania State University System (PA)", "http://www.psu.edu/"),
                 makeURL("Click to View", "http://studentaffairs.psu.edu/health/services/insurance/waiver.shtml"),
                 makeURL("Click to View", "http://global.psu.edu/faculty_staff/scholars/j1.cfm"),
-
+                "Consult your school about their requirements",
+                
                 makeURL("Princeton University (NJ)", "http://www.princeton.edu/"),
                 makeURL("Click to View", "http://www.internationalstudentguidetotheusa.com/articles/healthcare_insurance.php"),
                 makeURL("Click to View", "http://www.princeton.edu/intlctr/scholars/new-scholarsfaculty/j-1-exchange-visitor/health-insurance-requirem/"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Purdue University (IN)", "http://www.purdue.edu/"),
                 makeURL("Click to View", "http://www.purdue.edu/push/insurance/waivers.shtml"),
                 makeURL("Click to View", "http://www.iss.purdue.edu/Current/J1/HealthInsurance.cfm"),
-
+                makeURL("Purdue International Scholars and Students", "http://taianfinancial.com/#ipurdue"),
+                
                 makeURL("Rensselaer Polytechnic Institute (NY)", "http://www.rpi.edu/"),
                 makeURL("Click to View", "http://studenthealth.rpi.edu/insurance.php?catid=1035"),
                 makeURL("Click to View", "http://doso.rpi.edu/update.do?artcenterkey=494"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Rice University (TX)", "http://www.riceinfo.rice.edu/"),
                 makeURL("Click to View", "http://oiss.rice.edu/gateway.aspx?id=208"),
                 makeURL("Click to View", "http://oiss.rice.edu/gateway.aspx?id=228"),
-
+                "Consult your school about their requirements",
+                
                 makeURL("Rutgers University (NJ)", "http://www.rutgers.edu/"),
                 makeURL("Click to View", "http://internationalservices.rutgers.edu/content/Center_Staff_Services_and_Programs/Health_Insurance_Program/Rutgers_Health_Insurance_Requirement.html"),
                 makeURL("Click to View", "http://internationalservices.rutgers.edu/forms/Insurance_Information_for_DS-2019_Request_Form.pdf"),
-
+                "Consult your school about their requirements",
+                
                 makeURL("San Diego State University", "http://www.sdsu.edu/"),
                 makeURL("Click to View", "http://www.isc.sdsu.edu/content/Future/HealthInsurance.html"),
                 makeURL("Click to View", "http://www.isc.sdsu.edu/content/Future/HealthInsurance.html"),
-
+                "Consult your school about their requirements",
+                
                 makeURL("Stanford University (CA)", "http://www.stanford.edu/"),
                 makeURL("Click to View", "http://www.stanford.edu/group/vaden/insurance/using_your_own.html"),
                 makeURL("Click to View", "http://icenter.stanford.edu/quick_reference/healthinsurance.html#J1reqs"),
-
+                makeURL("Stanford International Scholars and Students", "http://taianfinancial.com/#ista"),
+                
                 makeURL("SUNY Albany (NY)", "http://www.albany.edu/"),
                 makeURL("Click to View", "http://www.albany.edu/ship/waiving_out.shtml"),
                 makeURL("Click to View", "http://www.albany.edu/isss/pdf/faculty/State%20Department%20J-1%20Health%20Insurance.pdf"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("SUNY Binghamton (NY)", "http://www.binghamton.edu/"),
                 makeURL("Click to View", "http://www2.binghamton.edu/isss/health-insurance/waiverinfo.html"),
                 makeURL("Click to View", "http://www2.binghamton.edu/isss/health-insurance/waiverinfo.html"),
-
-                makeURL("SUNY Buffalo (CA)", "http://www.buffalo.edu/"),
+                "Consult your school about their requirements",
+                
+                makeURL("SUNY Buffalo (NY)", "http://www.buffalo.edu/"),
                 makeURL("Click to View", "http://wings.buffalo.edu/intlservices/health_stu.html"),
                 makeURL("Click to View", "http://wings.buffalo.edu/intlservices/health_sch.html"),
-
+                "Consult your school about their requirements",
+                
                 makeURL("SUNY Stony Brook (NY)", "http://www.sunysb.edu/"),
                 makeURL("Click to View", "http://studentaffairs.stonybrook.edu/shs/intl.shtml"),
                 makeURL("Click to View", "http://studentaffairs.stonybrook.edu/shs/intl_visop.shtml"),
-
+                "Consult your school about their requirements",
+                
                 makeURL("Syracuse University (NY)", "http://www.syr.edu/"),
                 makeURL("Click to View", "http://international.syr.edu/new-students/health-insurance/index.html"),
                 makeURL("Click to View", "http://international.syr.edu/international-faculty-staff/j1-exchange-visitors/index.html"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Temple University (PA)", "http://www.temple.edu/"),
                 makeURL("Click to View", "http://www.temple.edu/hr/students/waiver.htm"),
                 makeURL("Click to View", "http://www.temple.edu/isss/home/h1b1j1/MandatoryHealthinsuranceRequirementsforJExchangeVisitors.htm"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Texas A&M University System (TX)", "http://www.tamu.edu/"),
                 makeURL("Click to View", "http://international.tamu.edu/iss/insurance/forstudents.asp"),
                 makeURL("Click to View", "http://ifss.tamu.edu/J/insurance"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Texas Tech University", "http://www.ttu.edu/"),
                 makeURL("Click to View", "http://www.ttuhsc.edu/studenthealth/"),
                 makeURL("Click to View", "http://www.iaff.ttu.edu/Main/ISSS/CurrentStudentscholars/JInsReqs.asp"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Tufts University (MA)", "http://www.tufts.edu/"),
                 makeURL("Click to View", "http://medicine.tufts.edu/Who-We-Are/Administrative-Offices/Student-"),
                 makeURL("Click to View", "http://ase.tufts.edu/icenter/currentImmigrationFacultyJ1-2yrInsurance.htm"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Tulane University (LA)", "http://www.tulane.edu/"),
                 makeURL("Click to View", "http://pandora.tcs.tulane.edu/acctrec/healthinsurance.asp"),
                 makeURL("Click to View", "https://greenspace.tulane.edu/ciss/www/J-1 Insurance Requirement.pdf"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Alabama -Tuscaloosa (AL)", "http://www.ua.edu/"),
                 makeURL("Click to View", "http://is.ua.edu/insurance-medical-care/medical-insurance/"),
                 makeURL("Click to View", "http://is.ua.edu/international-faculty-staff/j-1-exchange-visitors/j-1-overview-categories/"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Alabama - Birmingham (AL)", "http://www.uab.edu/"),
                 makeURL("Click to View", "http://www.uab.edu/studenthealth/insurance-and-waivers/mandatory-insurance-waivers"),
                 makeURL("Click to View", "https://www.uab.edu/students/international/scholars"),
-
+                "Consult your school about their requirements",
+                
                 makeURL("University of Alabama - Huntsville (AL)", "http://www.uah.edu/"),
                 makeURL("Click to View", "http://www.uah.edu/ISSO/Students/newstudents.php"),
                 makeURL("Click to View", "http://www.uah.edu/admin/immigration/medins.html"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Alaska - Fairbanks (AK)", "http://www.uaf.edu/"),
                 makeURL("Click to View", "http://www.uaf.edu/files/oip/F-1InsuranceFlyer.pdf"),
                 makeURL("Click to View", "http://www.uaf.edu/oip/information-for-uaf-depar/j-1-visa-category/"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Arizona (AZ)", "http://www.arizona.edu/"),
                 makeURL("Click to View", "http://www.health.arizona.edu/pdf/insurance/Health%20Coverage%20Guidelines%20for%20an%20Exemption.pdf"),
                 makeURL("Click to View", "http://www.health.arizona.edu/pdf/insurance/J1%20Visiting%20Scholars%20Ins%20Requirement.pdf"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Arkansas - Fayetteville(AR)", "http://www.uark.edu/"),
                 makeURL("Click to View", "http://iss.uark.edu/2186.php"),
                 makeURL("Click to View", "http://iss.uark.edu/2104.php"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of California Berkeley (CA)", "http://www.berkeley.edu/"),
                 makeURL("Click to View", "http://www.uhs.berkeley.edu/students/insurance/waiver/compcoverage.shtml"),
                 makeURL("Click to View", "http://internationaloffice.berkeley.edu/j_insurance"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of California Davis (CA)", "http://www.ucdavis.edu/"),
                 makeURL("Click to View", "http://shcs.ucdavis.edu/information/newstudent/international-ins.html"),
                 makeURL("Click to View", "http://siss.ucdavis.edu/health_j1.cfm"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of California Irvine (CA)", "http://www.uci.edu/"),
                 makeURL("Click to View", "http://summer.uci.edu/pdfs/forms/intl_insuranceWaiver.pdf"),
                 makeURL("Click to View", "http://www.ic.uci.edu/Scholars/J-1/healthinsurance.php"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of California Los Angeles (CA)", "http://www.ucla.edu/"),
                 makeURL("Click to View", "http://www.admissions.ucla.edu/NewBruins/Intl_insurance.htm"),
                 makeURL("Click to View", "http://www.internationalcenter.ucla.edu/home/J1Visa/74/75/Overview"),
-
+                makeURL("UCLA International Scholars and Students", "http://taianfinancial.com/#iucla"),
+                
                 makeURL("University of California Riverside (CA)", "http://www.ucr.edu/"),
                 makeURL("Click to View", "http://www.campushealth.ucr.edu/SiteCollectionDocuments/ucrub1011.pdf"),
                 makeURL("Click to View", "http://internationalcenter.ucr.edu/SiteCollectionDocuments/importantregulationsforj1students.pdf"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of California San Diego (CA)", "http://www.ucsd.edu/"),
                 makeURL("Click to View", "http://studenthealth.ucsd.edu/shipwaiver.shtml#howto"),
                 makeURL("Click to View", "http://icenter.ucsd.edu/iso/living-in-sd/insurance/"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of California San Francisco (CA)", "http://www.ucsf.edu/"),
                 makeURL("Click to View", "http://studenthealth.ucsf.edu/waiver#eli"),
                 makeURL("Click to View", "http://isso.ucsf.edu/immigration-visas/for-scholars/j-1-scholars/health-insurance-requirement"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of California Santa Barbara (CA)", "http://www.ucsb.edu/"),
                 makeURL("Click to View", "http://studenthealth.sa.ucsb.edu/CMSMedia/Documents/UCSHIP%20Policy%20Brochure.pdf"),
                 makeURL("Click to View", "http://oiss.sa.ucsb.edu/scholars/Insurance.aspx"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of California Santa Cruz (CA)", "http://www.ucsc.edu/"),
                 makeURL("Click to View", "http://shs-manual.ucsc.edu/policy/student-health-insurance"),
                 makeURL("Click to View", "http://ieo.ucsc.edu/intl-scholars/j1/post-arrival-insurance.html#Federal"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Chicago (IL)", "http://www.uchicago.edu/"),
                 makeURL("Click to View", "http://studenthealth.uchicago.edu/page/enrollment-and-waivers"),
                 makeURL("Click to View", "https://internationalaffairs.uchicago.edu/page/health-insurance-requirements-j-1-exchange-visitors"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Cincinnati (OH)", "http://www.uc.edu/"),
                 makeURL("Click to View", "http://www.uc.edu/uhs/student_health_insurance.html"),
                 makeURL("Click to View", "http://www.uc.edu/international/services/scholars/maintaining_status/health_insurance.html"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Colorado at Boulder", "http://www.colorado.edu/"),
                 makeURL("Click to View", "http://www.colorado.edu/oie/international-student-and-scholar-services/forms-handouts"),
                 makeURL("Click to View", "http://www.colorado.edu/oie/international-student-and-scholar-services/forms-handouts"),
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
                 
                 makeURL("University of Connecticut (CT)", "http://www.uconn.edu/"),
                 makeURL("Click to View ", "http://global.uconn.edu/?page_id=972"),
                 makeURL("Click to View", "http://global.uconn.edu/about/immigration-services/visiting-scholars/insurance-requirements-for-j-1-exchange-visitors/"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Dayton (OH)", "http://www.udayton.edu/"),
                 makeURL("Click to View", "http://www.udayton.edu/international/isss/arrival_and_orientation/health_insurance.php"),
                 makeURL("Click to View", "http://www.udayton.edu/international/isss/arrival_and_orientation/health_insurance.php"),
-
+                "Consult your school about their requirements",
+                
                 makeURL("University of Delaware (DE)", "http://www.udel.edu/"),
                 makeURL("Click to View", "http://www.udel.edu/oiss/forms/insurance_waiver_international.pdf"),
                 makeURL("Click to View", "http://www.udel.edu/oiss/VS/J/pre_arrival_info.html"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Florida (FL)", "http://www.ufl.edu/"),
                 makeURL("Click to View", "http://www.ufic.ufl.edu/ISS/Forms/Insurance%20Verification.pdf"),
                 makeURL("Click to View", "http://www.ufic.ufl.edu/evs/Insurance.html"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Georgia (GA)", "http://www.uga.edu/"),
                 makeURL("Click to View", "http://www.hr.uga.edu/benefits/stuins/ins_min_table.html"),
                 makeURL("Click to View", "http://issis.uga.edu/docs/Fac_Scholar_Section/Health_%20Ins_Companies_Requirements.pdf"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Hawaii - Manoa (HI)", "http://www.uhm.hawaii.edu/"),
                 makeURL("Click to View", "http://www.hawaii.edu/shs/international.html"),
                 makeURL("Click to View", "http://www.hawaii.edu/fsis/downloads/JHealthComplianceForm.pdf"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Houston (TX)", "http://www.uh.edu/"),
                 makeURL("Click to View", "http://www.issso.uh.edu/pdf/HealthInsuranceRequirementsforNon-ImmigrantInternationalStudentsFall2011.pdf"),
                 makeURL("Click to View", "http://www.issso.uh.edu/finances/healthinsurance.html"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Idaho (ID)", "http://www.uidaho.edu/"),
                 makeURL("Click to View", "http://www.uidaho.edu/international/issfs/international-"),
                 makeURL("Click to View", "http://www.uidaho.edu/~/media/Files/orgs/Academic%20Affairs/IPO/ISSS/International%20Scholars/JI%20PreArrival%20Document.ashx"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Illinois ,Urbana-Champaign (IL)", "http://www.uiuc.edu/"),
                 makeURL("Click to View", "http://www.si.uiuc.edu/Default.aspx?tabid=64"),
                 makeURL("Click to View", "http://www.si.uiuc.edu/Default.aspx?tabid=64"),
-
+                makeURL("UIUC International Scholars and Students", "http://taianfinancial.com/#iuiuc"),
+                
                 makeURL("University of Illinois, Chicago (IL)", "http://www.uic.edu/"),
                 makeURL("Click to View", "https://www.google.com/url?q=http://www.obfs.uillinois.edu/common/pages/DisplayFile.aspx%3FitemId%3D929186&amp;sa=U&amp;ei=V93jT-nTAcWNmQWZ6JCSCw&amp;ved=0CAgQFjAB&amp;client=internal-uds-cse&amp;usg=AFQjCNEUIscgKqfoSRPZ3LjDurIWAfOkKQ"),
                 makeURL("Click to View", "http://www.ois.uic.edu/cms/one.aspx?portalId=1138157&pageId=1143737"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Iowa (IA)", "http://www.uiowa.edu/"),
                 makeURL("Click to View", "http://www.uiowa.edu/admissions/undergrad/international/exempt-guidelines.htm"),
                 makeURL("Click to View", "http://international.uiowa.edu/international-scholars/health-insurance-requirements"),
-
+                "Consult your school about their requirements",
+                
                 makeURL("University of Kansas (KS)", "http://www.ku.edu/"),
                 makeURL("Click to View", "http://www.iss.ku.edu/insurance/index.shtml"),
                 makeURL("Click to View", "http://www.iss.ku.edu/insurance/"),
-
+                "Consult your school about their requirements",
+                
                 makeURL("University of Kentucky (KY)", "http://www.uky.edu/"),
                 makeURL("Click to View", "https://www.academichealthplans.com/enroll_waive/index.php5?school_id=136"),
                 makeURL("Click to View", "http://www.uky.edu/international/Health_Insurance_J1"),
-
+                "Consult your school about their requirements",
+                
                 makeURL("University of Louisville (KY)", "http://www.louisville.edu"),
                 makeURL("Click to View", "http://louisville.edu/campushealth/forms/international%20insurance%20waiver%20Description.pdf"),
                 makeURL("Click to View", "http://louisville.edu/internationalcenter/iss/forms-and-documents/The%20Exchange%20Visitor%20Program%20Welcome%20Brochure.pdf"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Maine - Orono (ME)", "http://www.umaine.edu/"),
                 makeURL("Click to View", "http://umaine.edu/international/files/2010/07/Insurance-Waiver-Spring-2012-2.pdf"),
                 makeURL("Click to View", "http://umaine.edu/international/current-students/health-insurance/"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Maryland - College Park (MD)", "http://www.umcp.umd.edu/"),
                 makeURL("Click to View", "https://studentcenter.uhcsr.com/umd/?type=waiver"),
                 makeURL("Click to View", "http://www.international.umd.edu/ies/2750"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Massachusetts - Amherst (MA)", "http://www.umass.edu/"),
                 makeURL("Click to View", "http://www.umass.edu/uhs/insurance/ship/"),
                 makeURL("Click to View", "http://www.umass.edu/ipo/iss/health.php"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Massachusetts - Lowell (MA)", "http://www.uml.edu/"),
                 "",
                 makeURL("Click to View", "http://www.uml.edu/ISSO/Employment/j1-training.aspx"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Miami (FL)", "http://www.miami.edu/"),
                 makeURL("Click to View", "http://www.miami.edu/sa/index.php/student_health_center/insurance_information/"),
                 makeURL("Click to View", "http://www.miami.edu/sa/index.php/isss/current_international_scholars/health_insurance_requirement/"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Michigan - Ann Arbor (MI)", "http://www.umich.edu/"),
                 makeURL("Click to View", "http://internationalcenter.umich.edu/healthins/waiver.html#standards"),
                 makeURL("Click to View", "http://internationalcenter.umich.edu/healthins/requirements.html"),
-
+                "Consult your school about their requirements",
+                
                 makeURL("University of Minnesota - Twin Cities (MN)", "http://www.umn.edu/"),
                 "",
                 makeURL("Click to View", "http://www.isss.umn.edu/Departments/InsuranceRJlet.pdf"),
-
+                "Consult your school about their requirements",
+                
                 makeURL("University of Mississippi (MS)", "http://www.olemiss.edu/"),
                 makeURL("Click to View", "http://www.olemiss.edu/gradschool/student_health_insurance.html"),
                 makeURL("Click to View", "http://www.international.olemiss.edu/healthinsurancenewly.html"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Missouri - Columbia (MO)", "http://www.missouri.edu/"),
                 "",
                 makeURL("Click to View", "http://international.missouri.edu/come-to-mu/faculty-staff/j1-scholars/insurance.php"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Nebraska - Lincoln (NE)", "http://www.unl.edu/"),
                 makeURL("Click to View", "http://health.unl.edu/billing/insurancewaiverpolicy/"),
                 makeURL("Click to View", "http://isso.unl.edu/j.status.health.insurance.requirement"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of New Hampshire (NH)", "http://www.unh.edu/"),
                 makeURL("Click to View", "http://www.unh.edu/health-services/shbp/"),
                 makeURL("Click to View", "http://unh.edu/oiss/department-state-mandatory-j-1-insurance-regulations"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of New Mexico (NM)", "http://www.unm.edu/"),
                 makeURL("Click to View", "http://www.unm.edu/oips/health_information.html"),
                 makeURL("Click to View", "http://geo.unm.edu/health_insurance_scholar.html"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of North Carolina - Chapel Hill (NC)", "http://www.unc.edu/"),
                 "",
                 makeURL("Click to View", "http://oisss.unc.edu/academic_staff/j/j_insurance.pdf"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Notre Dame (IN)", "http://www.nd.edu/"),
                 makeURL("Click to View", "http://uhs.nd.edu/insurance-billing/"),
                 makeURL("Click to View", "https://hr.nd.edu/assets/20192/j_1_visa.pdf"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Oklahoma (OK)", "http://www.ou.edu/"),
                 makeURL("Click to View", "http://hr.ou.edu/studenthealth/StudentHealthWaiver.asp"),
                 makeURL("Click to View", "http://hr.ou.edu/%5C/ifss/documents/J-1MedicalHealthInsuranceRequirement.pdf"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Oregon (OR)", "http://www.uoregon.edu/"),
                 makeURL("Click to View", "http://www.google.com/url?q=https://healthcenter.uoregon.edu/Portals/0/fall2012-intl-waiver-requirements.doc&amp;sa=U&amp;ei=n2fLT_TqMeXYigewveS3Bg&amp;ved=0CBEQFjAG&amp;client=internal-uds-cse&amp;usg=AFQjCNHjtiSLKWN1y3FxZr2pQkoTuCGpPA"),
                 makeURL("Click to View", "http://international.uoregon.edu/sites/default/files/J-INSURANCE-REQUIREMENTS.pdf"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Pennsylvania (PA)", "http://www.upenn.edu/"),
                 makeURL("Click to View", "http://www.vpul.upenn.edu/shs/insurance.php"),
                 makeURL("Click to View", "http://global.upenn.edu/isss/prearrival"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Pittsburgh (PA)", "http://www.pitt.edu/"),
                 makeURL("Click to View", "http://www.ois.pitt.edu/immigration-related-stuff/health-insurance/#student"),
                 makeURL("Click to View", "http://www.ois.pitt.edu/immigration-related-stuff/health-insurance/#nonstudent"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Rhode Island (RI)", "http://www.uri.edu/"),
                 makeURL("Click to View", "http://www.uri.edu/businessservices/pdfs/Cert%20of%20Ins_Standard%20Requirements.pdf"),
                 makeURL("Click to View", "http://www.uri.edu/iss/PDF/j%20insurance%20info.pdf"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Rochester (NY)", "http://www.rochester.edu/"),
                 makeURL("Click to View", "http://www.rochester.edu/uhs/main/InsCriteria2012.pdf"),
                 makeURL("Click to View", "http://www.iso.rochester.edu/employment/scholars/insurance.html"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of South Carolina - Columbia (SC)", "http://www.sc.edu/"),
                 makeURL("Click to View", "http://www.sa.sc.edu/shs/billing/insurance/"),
                 makeURL("Click to View", "http://iss.sc.edu/index.php?option=com_docman&task=doc_view&gid=493&Itemid="),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Southern California (CA)", "http://www.usc.edu/"),
                 makeURL("Click to View", "http://www.usc.edu/student-affairs/Health_Center/insurance/waiver.information.shtml#criteria"),
                 makeURL("Click to View", "http://sait.usc.edu/ois/j1-scholars/scholar-resources/insurance.aspx"),
-
+                makeURL("USC International Scholars and Students", "http://taianfinancial.com/#iusc"),
+                
                 makeURL("University of South Florida (FL)", "http://www.usf.edu/"),
                 makeURL("Click to View", "http://www.shs.usf.edu/insurance.aspx"),
                 makeURL("Click to View", "http://global.usf.edu/is/downloads/J1_DS2019.pdf"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Tennessee - Knoxville (TN)", "http://www.utk.edu/"),
                 makeURL("Click to View", "http://studenthealth.utk.edu/files/intl_student_insurance.pdf"),
                 makeURL("Click to View", "http://international.utk.edu/isss/health-insurance-information/scholars/"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Texas - Austin (TX)", "http://www.utexas.edu/"),
                 makeURL("Click to View", "http://world.utexas.edu/forms/isss/PVT_Waiver.pdf"),
                 makeURL("Click to View", "http://world.utexas.edu/isss/insurance/vs-overview"),
-
+                makeURL("UT Austin International Scholars and Students", "http://taianfinancial.com/#iutaustin"),
+                
                 makeURL("University of Texas - Arlington (TX)", "http://www.uta.edu/"),
                 makeURL("Click to View", "http://www.uta.edu/oie/forms/HealthInsuranceWaiver.php"),
                 makeURL("Click to View", "http://www.uta.edu/oie/JScholar/jscholar.php"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Utah (UT)", "http://www.utah.edu/"),
                 makeURL("Click to View", "http://studenthealth.utah.edu/pdfs/INTERNATIONALSTUDENTFrontpageformfield.pdf"),
                 makeURL("Click to View", "http://studenthealth.utah.edu/pdfs/INTERNATIONALSTUDENTFrontpageformfield.pdf"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Vermont (VT)", "http://www.uvm.edu/"),
                 makeURL("Click to View", "http://www.uvm.edu/~CHWB/insurance/?Page=mandatory.html"),
                 makeURL("Click to View", "https://www.uvm.edu/oie/?Page=services/intl_students_health.html"),
-
+                "Consult your school about their requirements",
+                
                 makeURL("University of Virginia (VA)", "http://www.virginia.edu/"),
                 makeURL("Click to View", "http://www.virginia.edu/studenthealth/insurance/HardWaiver1011.html"),
                 makeURL("Click to View", "http://www.virginia.edu/iso/issp/NewWindows/HealthInsScholarExchange.html"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Washington", "http://www.washington.edu/"),
                 makeURL("Click to View", "http://iss.washington.edu/health-insurance"),
                 makeURL("Click to View", "http://iss.washington.edu/health-insurance"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("University of Wisconsin - Madison (WI)", "http://www.wisc.edu/"),
                 makeURL("Click to View", "http://www.uhs.wisc.edu/ship/documents/ship-waiver.pdf"),
                 makeURL("Click to View", "http://www.uhs.wisc.edu/ship/documents/ship-waiver.pdf"),
-
+                "Consult your school about their requirements",
+                
                 makeURL("Utah State University (UT)", "http://www.usu.edu/"),
                 makeURL("Click to View", "http://www.usu.edu/oiss/htm/current-students/insurance"),
                 makeURL("Click to View", "http://globalengagement.usu.edu/htm/study-abroad/incoming-students/health-insurance"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Vanderbilt University (TN)", "http://www.vanderbilt.edu/"),
                 makeURL("Click to View", "http://www.vanderbilt.edu/isss/wp-content/uploads/HealthInsWaiverRequest.pdf"),
                 makeURL("Click to View", "http://www.vanderbilt.edu/isss/financial-statements/j-1-student-intern/j-1-student-intern-orientation/"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Virginia Commonwealth University (VA)", "http://www.vcu.edu/"),
                 makeURL("Click to View", "http://www.global.vcu.edu/students/connections/started/insurance.html"),
                 makeURL("Click to View", "http://www.global.vcu.edu/pdf/immigration/j1/J-1_Health_Insurance_Requirements.pdf"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Virginia Tech (VA)", "http://www.vt.edu/"),
                 makeURL("Click to View", "http://graduateschool.vt.edu/igss/application_prearrival/insurance.html"),
                 makeURL("Click to View", "http://www.oired.vt.edu/iss/jvisa/health-insurance.html"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Washington State University", "http://www.wsu.edu/"),
                 makeURL("Click to View", "http://hws.wsu.edu/Content/Files/angie/spring%202012%20international%20student%20waiver.pdf"),
                 makeURL("Click to View", "http://ip.wsu.edu/global-services/scholars/J-1/medical-insurance.html"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Washington University in St. Louis (MO)", "http://www.wustl.edu/"),
                 "",
                 makeURL("Click to View", "http://oisshome.wustl.edu/scholars/J1EV/J1HealthInsurance.pdf"),
-
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos"),
+                
                 makeURL("Wayne State University (MI)", "http://www.wayne.edu/"),
                 makeURL("Click to View", "http://www.oiss.wayne.edu/health-insurance/health-insurance.php#scholars"),
                 makeURL("Click to View", "http://www.oiss.wayne.edu/health-insurance/health-insurance.php#student"),
-
+                "Consult your school about their requirements",
+                
                 makeURL("West Virginia University (WV)", "http://www.wvu.edu/"),
                 makeURL("Click to View", "http://oiss.wvu.edu/students/current_students/health_insurance_requirements_for_all_international_students"),
                 makeURL("Click to View", "http://well.wvu.edu/medical/insurance/international-students"),
-
+                "Consult your school about their requirements",
+                
                 makeURL("Yale University (CT)", "http://www.yale.edu/"),
                 "",
-                makeURL("Click to View", "http://www.yale.edu/oiss/immigration/common/j1students/health.html")
-
+                makeURL("Click to View", "http://www.yale.edu/oiss/immigration/common/j1students/health.html"),
+                makeURL("International Scholar and Student Insurance", "http://taianfinancial.com/#usdos")
                 ]));
     endRow();
     endSection();
@@ -1804,7 +1947,11 @@ function writeSections(legacy) {
     if (hasIStPartnerContent) {
         internationalStudentPartnerContent();
     }
-   
+
+    startRow();
+    writeText(makePivotURL("pivot-school-waiver", "Requirements for all schools for F and J visa"));
+    endRow();
+    
     startRow();
     writeText("Our highlighted plans:");
     endRow();
@@ -1830,7 +1977,7 @@ function writeSections(legacy) {
             "Coinsurance", "No coinsurance in PPO", "No coinsurance in PPO", 
             "Hospital Room & Board", "Average semi-private room", "Average semi-private room", 
             "Intensive Care", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)", 
-            "Maternity", "URC", "N/A", 
+            "Maternity", "URC - If not pregnant when you purchase.   Not covered - If you are pregnant when you purchase.", "N/A", 
             "Mental Health", "In-patient URC to $10,000, out-patient $50/day to $500", "N/A", 
             "Emergency Room", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", 
             "Prescription Drugs", "In-patient URC, out-patient 50%", "URC", 
@@ -1896,6 +2043,7 @@ function writeSections(legacy) {
 
                 "Plan Highlights",
                 makeBulletedListWithTitle("", [
+                        "Maternity covered if you are not pregnant when you purchase.",
                         "Routine Nursery Care: $750 maximum per period of coverage",
                         "Emergency Room: Injury: URC; Illness resulting in hospitalization: URC; Illness without hospitalization: Subject to addtional $250 deductible",
                         "Physical Therapy: URC -limit once per day",
@@ -1957,7 +2105,7 @@ function writeSections(legacy) {
     endRow();
 
     startRow();
-    writeText(makePivotURL("pivot-school-waiver", "Check your school waiver requirements.") + " " + loc("Contact us to ensure a plan meets your requirements."));
+    writeText("Contact us to ensure a plan meets your requirements.");
     endRow();
 
     startRow();

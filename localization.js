@@ -21,6 +21,23 @@ function langTag() {
 }
 
 var l = {};
+l['Columbia special page'] = "Columbia 专用网页";
+l['IU special page'] = "IU 专用网页";
+l['NYU special page'] = "NYU 专用网页";
+l['Purdue special page'] = "Purdue 专用网页";
+l['Stanford special page'] = "Stanford 专用网页";
+l['UCLA special page'] = "UCLA 专用网页";
+l['UIUC special page'] = "UIUC 专用网页";
+l['USC special page'] = "USC 专用网页";
+l['UT Austin special page'] = "UT Austin 专用网页";
+l['Maternity covered if you are not pregnant when you purchase.'] = "生育保险必须是在怀孕之前购买才有效";
+l['Requirements for all schools for F and J visa'] = " 全美各校F鉴证和J签证医疗保险的标准";
+l['URC - If not pregnant when you purchase.   Not covered - If you are pregnant when you purchase.'] = "URC(通常合理的惯例的费用)，必须是在怀孕之前购买. 购买之前的怀孕，保险不Cover";
+l['Consult your school about their requirements'] = "请咨询学校";
+l['Insurance that meets your school scholar requirements'] = "满足你校标准的访问学者医疗保险";
+l['School Waiver Requirements'] = "Waive 学校保险的要求";
+l['Plan that meets this school\'s standards for J scholar'] = " 满足该校标准的J签证访问学者保险计划";
+l['Taian Scholar/Student Insurance Plan A and Plan B meet your school J scholar standards. Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to your school as proof of insurance.'] = "泰安访问学者/留学生保险计划A和B满足你校对J 鉴证访问学者的标准， 其具体要求是： 1.每次生病或受伤的最高赔付至少为$50,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上成功提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明你已经购买符合学校标准的保险。";
 l['International Scholar/Student'] = "访问学者/留学生";
 l['Groups of 2 or more save about 10% with Plan B Group'] = "两人或两人以上享受团体优惠10%";
 l['Taian Scholar/Student Insurance Plan A and Plan B meet UCLA J scholar standards. Some scholars are required to have coverage of $100,000 per illness or injury and the waiver is approved by VSISP/Garnett-Powers. This requirement is met by Taian Scholar/Student Plan A or Plan B with $250,000 benefit per illness or injury.  Other scholars have the waiver approved at the Dashew Center for International Students and Scholars.  They are required to have coverage of $50,000 per illness or injury. This requirement is met by Taian Scholar/Student Plan B with $50,000 benefit per illness or injury. Each of these requirements meets the US Department of State standards. You can check your required coverage level at the link below.'] = "UCLA对访问学者购买医疗保险的要求有两种，这两种要求的差别在于每次生病或受伤的最高赔付：一种是对于需要在VSISP/Garnett-Powers 办理Waiver 的访问学者，UCLA要求保险含有$100,000。泰安访问学者/留学生计划A或计划B里的$250,000 per illness or injury 满足这一要求。另一种是对于需要在Dashew国际学生学者中心办理Waiver 的访问学者，UCLA要求保险含有$50,000。泰安访问学者/留学生计划B里的$50,000 per illness or injury 满足这一要求。这两种要求都符合美国国务院的标准，详见以下链接。";
