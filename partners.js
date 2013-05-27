@@ -64,7 +64,16 @@ function getPartnership(partner) {
                             "pivot-international-student",
                             "pivot-global-medical",
                             "pivot-travel-insurance"
-                          ]
+                          ],
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("IUPUI allows both international students and J scholars to waive the school plan. Students and scholars have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500; 5. Maternity benefits for females only. For males, Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. For females, Plan A meets the requirements.  Shortly after submitting an application you will receive confirmation of your coverage which you can send to IUPUI to waive the school plan.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("IUPUI Student Requirements", "http://iservices.iupui.edu/health-insurance/students/"),
+                                makeURL("IUPUI Scholar Requirements", "http://iservices.iupui.edu/health-insurance/scholars/")                               
+                                ]));
+                        endRow();
+                    }                          
               },   
 
        jhmi: {
@@ -101,10 +110,9 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet USC J scholar standards. Exchange visitors (J visa) enrolled in under 6 credits have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to USC to waive the school plan.");
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet USC J scholar standards. Exchange visitors (J visa) enrolled in under 6 credits have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to USC to waive the school plan.");
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("USC Scholar Requirements", "http://sait.usc.edu/ois/j1-scholars/scholar-resources/insurance.aspx"),
-                                makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/")
+                                makeURL("USC Scholar Requirements", "http://sait.usc.edu/ois/j1-scholars/scholar-resources/insurance.aspx")
                                 ]));
                         endRow();
                     }
@@ -122,10 +130,10 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Stanford University J scholar standards. Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Stanford to waive the school plan.");
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Stanford University J scholar standards. Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Stanford to waive the school plan.");
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("Stanford Scholar Requirements", "http://icenter.stanford.edu/quick_reference/healthinsurance.html#J1reqs"),
-                                makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/")
+                                makeURL("Stanford Scholar Requirements", "http://icenter.stanford.edu/quick_reference/healthinsurance.html#J1reqs")
+
                                 ]));
                         endRow();
                     }
@@ -143,11 +151,10 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Johns Hopkins University and Johns Hopkins Medical Institutions J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Johns Hopkins University or Johns Hopkins Medical Institutions as proof of insurance.");
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Johns Hopkins University and Johns Hopkins Medical Institutions J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Johns Hopkins University or Johns Hopkins Medical Institutions as proof of insurance.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Johns Hopkins University Scholar Requirements", "http://oisss.jhu.edu/Presentations/Understanding%20the%20J1%20Visa%20Program.pdf"),
-                                makeURL("Johns Hopkins Medical Institutions Scholar Requirements", "http://www.hopkinsmedicine.org/intlsvcs/j1insurance.html"),                         
-                                makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/")
+                                makeURL("Johns Hopkins Medical Institutions Scholar Requirements", "http://www.hopkinsmedicine.org/intlsvcs/j1insurance.html")
                                 ]));
                         endRow();
                     }
@@ -165,10 +172,9 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Maryland J scholar standards. Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Maryland as proof of insurance.");
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Maryland J scholar standards. Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Maryland as proof of insurance.");
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("University of Maryland Scholar Requirements", "http://www.international.umd.edu/ies/2750"),
-                                makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/")
+                                makeURL("University of Maryland Scholar Requirements", "http://www.international.umd.edu/ies/2750")
                                 ]));
                         endRow();
                     }
@@ -186,11 +192,10 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Pittsburgh enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Pittsburgh as proof of insurance.");
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Pittsburgh enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Pittsburgh as proof of insurance.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Pittsburgh Scholar Requirements", "http://www.ois.pitt.edu/immigration-related-stuff/health-insurance/#nonstudent"),
-                                makeURL("University of Pittsburgh Student Requirements", "http://www.ois.pitt.edu/immigration-related-stuff/health-insurance/#student"),                         
-                                makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/")
+                                makeURL("University of Pittsburgh Student Requirements", "http://www.ois.pitt.edu/immigration-related-stuff/health-insurance/#student")                        
                                 ]));
                         endRow();
                     }
@@ -208,12 +213,11 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Clemson University enrolled international student standards and J scholar standards.  Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Clemson University as proof of insurance.");
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Clemson University enrolled international student standards and J scholar standards.  Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Clemson University as proof of insurance.");
                         writeText("Enrolled international students have to buy Plan A to meet Clemson University standards, and complete an online waiver.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Clemson University Scholar Requirements", "http://www.clemson.edu/administration/ia/services/students/scholars.html"),
-                                makeURL("Clemson University Student Requirements", "http://www.studentinsurance.com/Schools/SC/Clemson/WaiverRequirements.asp?Show=Int&MenuNum=2"),                         
-                                makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/")
+                                makeURL("Clemson University Student Requirements", "http://www.studentinsurance.com/Schools/SC/Clemson/WaiverRequirements.asp?Show=Int&MenuNum=2")                        
                                 ]));
                         endRow();
                     }
@@ -231,10 +235,9 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet North Carolina State University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to North Carolina State University as proof of insurance.");
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet North Carolina State University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to North Carolina State University as proof of insurance.");
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("North Carolina State University Scholar Requirements", "http://www.ncsu.edu/ois/research/j1require.php"),                        
-                                makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/")
+                                makeURL("North Carolina State University Scholar Requirements", "http://www.ncsu.edu/ois/research/j1require.php")                       
                                 ]));
                         endRow();
                     }
@@ -252,14 +255,54 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Pennsylvania J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Pennsylvania as proof of insurance.");
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Pennsylvania J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Pennsylvania as proof of insurance.");
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("University of Pennsylvania Scholar Requirements", "http://global.upenn.edu/isss/prearrival"),                         
-                                makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/")
+                                makeURL("University of Pennsylvania Scholar Requirements", "http://global.upenn.edu/isss/prearrival")                         
+
                                 ]));
                         endRow();
                     }
-              },   
+              }, 
+
+        utmda: {
+                    windowTitle: "TaiAn Health Insurance for University of Texas MD Anderson",
+                    pageTitle: "TaiAn Health Insurance for University of Texas MD Anderson",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Texas MD Anderson J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Texas MD Anderson as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("University of Texas MD Anderson Scholar Requirements", "https://www.academichealthplans.com/uthouston/2012-2013/FAQs.php")                         
+                                ]));
+                        endRow();
+                    }
+              }, 
+
+        uva: {
+                    windowTitle: "TaiAn Health Insurance for University of Virginia",
+                    pageTitle: "TaiAn Health Insurance for University of Virginia",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Virginia J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Virginia as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("University of Virginia Scholar Requirements", "http://www.virginia.edu/iso/issp/NewWindows/HealthInsScholarExchange.html")                        
+                                ]));
+                        endRow();
+                    }
+              },              
  
         uiuc: {
                     windowTitle: "TaiAn Health Insurance for University of Illinois Urbana Champaign",
@@ -273,11 +316,12 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Insurance Plan A and Plan B meet UIUC scholar and student insurance standards.  Students are required to carry $200,000 per illness or injury.  J Scholars must meet the US department of State $50,000 minimum.");
-
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UIUC enrolled international student standards and J scholar standards.  Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UIUC as proof of insurance.");
+                        writeText("Enrolled international students are required to carry $200,000 per illness or injury and complete a waiver. Taian Scholar/Student Insurance Plan B with $250,000 benefit per illness or injury is the most affordable plan that meets the standards.");
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("Student Requirements", "http://www.si.uiuc.edu/Default.aspx?tabid=64"),
-                                makeURL("US Department of State and UIUC Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/")
+                                makeURL("UIUC Student Requirements", "http://www.si.uiuc.edu/Default.aspx?tabid=64"),
+                                makeURL("UIUC Scholar Requirements", "http://isss.illinois.edu/download_forms/handbooks/j1_prog_handbook.pdf")                                
+
                                 ]));
                         endRow();
                     }
@@ -295,10 +339,9 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet NYU J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to NYU as proof of insurance.");
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet NYU J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to NYU as proof of insurance.");
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("NYU Scholar Requirements", "http://www.nyu.edu/global/international-immigration-services/faculty-and-scholars/inbound-to-nyc/pre-arrival/exchange-visitor/health-insurance-requirement.html"),                               
-                                makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/")
+                                makeURL("NYU Scholar Requirements", "http://www.nyu.edu/global/international-immigration-services/faculty-and-scholars/inbound-to-nyc/pre-arrival/exchange-visitor/health-insurance-requirement.html")                              
                                 ]));
                         endRow();
                     }
@@ -315,10 +358,9 @@ function getPartnership(partner) {
                           ],
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Purdue University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Purdue as proof of insurance.");
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Purdue University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Purdue as proof of insurance.");
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("Purdue University Scholar Requirements", "http://www.iss.purdue.edu/Current/J1/HealthInsurance.cfm"),                               
-                                makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/")
+                                makeURL("Purdue University Scholar Requirements", "http://www.iss.purdue.edu/Current/J1/HealthInsurance.cfm")                               
                                 ]));
                         endRow();
                     }
@@ -336,9 +378,6 @@ function getPartnership(partner) {
                     internationalStudentContent: function () {
                         startRow();
                         writeText("Taian Scholar/Student Insurance Plan A and Plan B meet your school J scholar standards. Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to your school as proof of insurance.");
-                        document.write(makeBulletedListWithTitle("", [                               
-                                makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/")                                
-                                ]));
                         endRow();
                     }
               },                
@@ -355,10 +394,9 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Columbia J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Columbia as proof of insurance.");
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Columbia J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Columbia as proof of insurance.");
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("Columbia Scholar Requirements", "http://www.columbia.edu/cu/isso/visa/scholar/J_health.html"),                               
-                                makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/")
+                                makeURL("Columbia Scholar Requirements", "http://www.columbia.edu/cu/isso/visa/scholar/J_health.html")                               
                                 ]));
                         endRow(); 
                     }
@@ -379,8 +417,7 @@ function getPartnership(partner) {
                         writeText("");
                          writeText("A few minutes after submitting an application, you will receive a confirmation letter of your coverage which you can send to UCLA to waive the school mandatory plan.");                       
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("UCLA Scholar Requirements", "http://www.internationalcenter.ucla.edu/home/J1Visa/74/75/Overview#divHealth"),
-                                makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/")
+                                makeURL("UCLA Scholar Requirements", "http://www.internationalcenter.ucla.edu/home/J1Visa/74/75/Overview#divHealth")
                                 ]));
                         endRow();
                     }
@@ -394,7 +431,15 @@ function getPartnership(partner) {
                             "pivot-international-student",
                             "pivot-global-medical",
                             "pivot-travel-insurance"
-                          ]
+                          ],
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UC Davis J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UC Davis as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("UC Davis Scholar Requirements", "http://siss.ucdavis.edu/health_j1.cfm")                              
+                                ]));
+                        endRow();
+                    }                          
               },                  
               
         iu: {
@@ -408,11 +453,10 @@ function getPartnership(partner) {
                           ],
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Indiana University - Bloomington allows both international students and J scholars to waive the school plan. Students and scholars have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500; 5. Maternity benefits for females only. For males, Plan B with $50,000 benefit per illness or injury meets the standards, and the US Department of State requirements. For females, Plan A meets the requirements.  Shortly after submitting an application you will receive confirmation of your coverage which you can send to IU Bloomington to waive the school plan.");
+                        writeText("Indiana University - Bloomington allows both international students and J scholars to waive the school plan. Students and scholars have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500; 5. Maternity benefits for females only. For males, Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. For females, Plan A meets the requirements.  Shortly after submitting an application you will receive confirmation of your coverage which you can send to IU Bloomington to waive the school plan.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("IU Bloomington Student Requirements", "http://ois.indiana.edu/newstudents/livingintheus/insurance/"),
-                                makeURL("IU Bloomington Scholar Requirements", "http://ois.indiana.edu/scholars/status/med_insurance.php"),                               
-                                makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/")
+                                makeURL("IU Bloomington Scholar Requirements", "http://ois.indiana.edu/scholars/status/med_insurance.php")                               
                                 ]));
                         endRow();
                     }
@@ -430,11 +474,10 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UT Austin enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UT Austin as proof of insurance.");
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UT Austin enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UT Austin as proof of insurance.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("UT Austin Student Waiver", "http://world.utexas.edu/forms/isss/PVT_Waiver.pdf"), 
-                                makeURL("UT Austin Scholar requirements", "http://world.utexas.edu/isss/insurance/vs-overview"),                                
-                                makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/")
+                                makeURL("UT Austin Scholar requirements", "http://world.utexas.edu/isss/insurance/vs-overview")                               
                                 ]));
                         endRow();
                     }
@@ -451,10 +494,7 @@ function getPartnership(partner) {
                           ],
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Univtemplate allows both international students and J scholars to waive the school plan. Students and scholars have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500; 5. Maternity benefits for females only. For males, Plan B with $50,000 benefit per illness or injury meets the standards, and the US Department of State requirements. For females, Plan A meets the requirements.  Shortly after submitting an application you will receive confirmation of your coverage which you can send to Univtemplate to waive the school plan.");
-                        document.write(makeBulletedListWithTitle("", [
-                                makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/")
-                                ]));
+                        writeText("Univtemplate allows both international students and J scholars to waive the school plan. Students and scholars have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500; 5. Maternity benefits for females only. For males, Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. For females, Plan A meets the requirements.  Shortly after submitting an application you will receive confirmation of your coverage which you can send to Univtemplate to waive the school plan.");
                         endRow();
                     }                          
               },                  
