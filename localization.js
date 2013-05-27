@@ -409,6 +409,7 @@ l['Call: 1-317-318-8259 (English)'] = "电话：1-317-318-8259(美国，英语�
 l['WeChat ID: wxid_taian_usa'] = "微信： wxid_taian_usa";
 l['Skype: chris.lee136'] = "Skype: chris.lee136";
 l['Email: chris@taianfinancial.com'] = "电子邮件：chris@taianfinancial.com";
+l['Call: 317-318-8258 (Chinese), 317-318-8259 (English), Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>'] = "电话：317-318-8258（中文）, 317-318-8259（英语）, 电子邮件：<a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>";
 l['TaiAn Financial'] = "泰安国际医疗保险";
 l['Student Representatives and Travel Agents contact us for collaboration opportunities'] = "学生代表和旅行社请联系我们商讨合作";
 l['WeChat ID: wxid_taian_usa'] = "微信: wxid_taian_usa";

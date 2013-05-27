@@ -1989,7 +1989,7 @@ function writeSections(legacy) {
     endRow();
     
     startRow();
-    writeText("Our highlighted plans:");
+    writeText("Call: 317-318-8258 (Chinese), 317-318-8259 (English), Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>");
     endRow();
 
     startRow();
@@ -2332,7 +2332,7 @@ function writeSections(legacy) {
     endRow();
 
     startRow();
-    writeText("Our highlighted example plans:");
+    writeText("Call: 317-318-8258 (Chinese), 317-318-8259 (English), Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>");
     endRow();
 
     startRow();
@@ -2511,7 +2511,7 @@ function writeSections(legacy) {
 
     startRow();
 
-    writeText("Sample rates and benefits for Patriot Travel Medical Insurance:");
+    writeText("Call: 317-318-8258 (Chinese), 317-318-8259 (English), Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>");
     document.write(makeTable(3, [
                 "Taian Travel Insurance",
                 makeRawURL("Patriot America For non-US citizens traveling internationally", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
@@ -2611,6 +2611,8 @@ function writeSections(legacy) {
     startSubsection("patriot-platinum");
 
     startRow();
+    writeText("Call: 317-318-8258 (Chinese), 317-318-8259 (English), Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>");
+    writeText("");    
     writeText("Patriot Platinum Travel Medical Insurance is a similar plan with more coverage (up to $8,000,000):");
     document.write(makeTable(2, [
                 "", makeRawURL("Patriot Platinum Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot_platinum?imgac=80000699"),
