@@ -11,8 +11,8 @@ function getPartnership(partner) {
                     logoImage: "longevity.gif",
                     logoHeight: "30",
                     logoWidth: "30",
-                    contactInfo: ["Call: +1 (317) 318-8258 (Chinese)",
-                                  "Call: +1 (317) 318-8259 (English)",
+                    contactInfo: ["Call from US: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English)",
+                                  "Call from China: 950-4044-2336 (Chinese, Beijing time 7-11am)",
                                   "WeChat ID: wxid_taian_usa",
                                   "Skype: chris.lee136",
                                   "Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>"
@@ -736,8 +736,8 @@ function getPartnership(partner) {
               },              
               
         springivy: {
-                    contactInfo: ["Call: 1-317-318-8258 (Chinese)",
-                                  "Call: 1-317-318-8259 (English)",
+                    contactInfo: ["Call from US: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English)",
+                                  "Call from China: 950-4044-2336 (Chinese, Beijing time 7-11am)",
                                   "WeChat ID: wxid_taian_usa",
                                   "Skype: chris.lee136",
                                   "Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>"

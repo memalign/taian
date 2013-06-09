@@ -1329,7 +1329,7 @@ function writeSectionForSchoolWaiverRequirements() {
     // School waiver requirements
     startSection("pivot-school-waiver", "Requirements for all schools for F and J visa");
     startRow();
-    writeText("Contact us to ensure a plan meets your requirements.");
+    writeText("Call from US: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English), Call from China: 950-4044-2336 (Chinese, Beijing time 7-11am), Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>");
     endRow();
 
     startRow();
@@ -1563,7 +1563,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 "Consult your school about their requirements",
                 
                 makeURL("Princeton University (NJ)", "http://www.princeton.edu/"),
-                makeURL("School F1 requirement", "http://www.internationalstudentguidetotheusa.com/articles/healthcare_insurance.php"),
+                makeURL("School F1 requirement", "http://www.princeton.edu/uhs/student-insurance/student-health-plan/"),
                 makeURL("School J1 requirement", "http://www.princeton.edu/intlctr/scholars/new-scholarsfaculty/j-1-exchange-visitor/health-insurance-requirem/"),
                 makeURL("Plan that meets this school's standards for J scholar", "http://taianfinancial.com/#usdos"),
                 
@@ -1638,7 +1638,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Plan that meets this school's standards for J scholar", "http://taianfinancial.com/#usdos"),
                 
                 makeURL("Tufts University (MA)", "http://www.tufts.edu/"),
-                makeURL("School F1 requirement", "http://medicine.tufts.edu/Who-We-Are/Administrative-Offices/Student-"),
+                makeURL("School F1 requirement", "http://fletcher.tufts.edu/Congratulations/enrolling/intlstudents"),
                 makeURL("School J1 requirement", "http://ase.tufts.edu/icenter/currentImmigrationFacultyJ1-2yrInsurance.htm"),
                 makeURL("Plan that meets this school's standards for J scholar", "http://taianfinancial.com/#usdos"),
                 
@@ -1758,7 +1758,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Health insurance for University of Florida Scholars", "http://taianfinancial.com/#iufl"),
                 
                 makeURL("University of Georgia (GA)", "http://www.uga.edu/"),
-                makeURL("School F1 requirement", "http://www.hr.uga.edu/benefits/stuins/ins_min_table.html"),
+                makeURL("School F1 requirement", "http://www.hr.uga.edu/waiver-minimum-requirements"),
                 makeURL("School J1 requirement", "http://issis.uga.edu/docs/Fac_Scholar_Section/Health_%20Ins_Companies_Requirements.pdf"),
                 makeURL("Plan that meets this school's standards for J scholar", "http://taianfinancial.com/#usdos"),
                 
@@ -2008,7 +2008,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 "Consult your school about their requirements",
                 
                 makeURL("Yale University (CT)", "http://www.yale.edu/"),
-                "",
+                makeURL("School F1 requirement", "https://www.yhpstudentwaiver.yale.edu/"),
                 makeURL("School J1 requirement", "http://www.yale.edu/oiss/immigration/common/j1students/health.html"),
                 makeURL("Plan that meets this school's standards for J scholar", "http://taianfinancial.com/#usdos")
                 ]));
@@ -2074,7 +2074,7 @@ function writeSections(legacy) {
     endRow();   
     
     startRow();
-    writeText("Call: 317-318-8258 (Chinese), 317-318-8259 (English), Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>");
+    writeText("Call from US: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English), Call from China: 950-4044-2336 (Chinese, Beijing time 7-11am), Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>");
     endRow();
 
     startRow();
@@ -2095,7 +2095,7 @@ function writeSections(legacy) {
 
 
             "Deductible", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", 
-            "Coinsurance", "No coinsurance in PPO", "No coinsurance in PPO", 
+            "Coinsurance", "No coinsurance in PPO", "No coinsurance", 
             "Hospital Room & Board", "Average semi-private room", "Average semi-private room", 
             "Intensive Care", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)", 
             "Maternity", "URC - If not pregnant when you purchase.   Not covered - If you are pregnant when you purchase.", "N/A", 
@@ -2417,7 +2417,7 @@ function writeSections(legacy) {
     endRow();
 
     startRow();
-    writeText("Call: 317-318-8258 (Chinese), 317-318-8259 (English), Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>");
+    writeText("Call from US: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English), Call from China: 950-4044-2336 (Chinese, Beijing time 7-11am), Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>");
     endRow();
 
     startRow();
@@ -2596,7 +2596,7 @@ function writeSections(legacy) {
 
     startRow();
 
-    writeText("Call: 317-318-8258 (Chinese), 317-318-8259 (English), Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>");
+    writeText("Call from US: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English), Call from China: 950-4044-2336 (Chinese, Beijing time 7-11am), Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>");
     document.write(makeTable(3, [
                 "Taian Travel Insurance",
                 makeRawURL("Patriot America For non-US citizens traveling internationally", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
@@ -2696,7 +2696,7 @@ function writeSections(legacy) {
     startSubsection("patriot-platinum");
 
     startRow();
-    writeText("Call: 317-318-8258 (Chinese), 317-318-8259 (English), Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>");
+    writeText("Call from US: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English), Call from China: 950-4044-2336 (Chinese, Beijing time 7-11am), Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>");
     writeText("");    
     writeText("Patriot Platinum Travel Medical Insurance is a similar plan with more coverage (up to $8,000,000):");
     document.write(makeTable(2, [
