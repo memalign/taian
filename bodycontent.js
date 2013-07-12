@@ -271,6 +271,12 @@ function showPivot(pivotName) {
         gmusc: "l=en&partner=musc&p=pivot-international-student&adid=gmusc",
         acnmusc: "l=cn&partner=musc&p=pivot-international-student&adid=acnmusc", 
         imusc: "l=en&partner=musc&p=pivot-international-student",        
+        ucberkeley: "l=en&partner=ucberkeley&p=pivot-home&adid=sucberkeley",
+        cnucberkeley: "l=cn&partner=ucberkeley&p=pivot-home&adid=scnucberkeley",   
+        gcnucberkeley: "l=cn&partner=ucberkeley&p=pivot-international-student&adid=gcnucberkeley",
+        gucberkeley: "l=en&partner=ucberkeley&p=pivot-international-student&adid=gucberkeley",
+        acnucberkeley: "l=cn&partner=ucberkeley&p=pivot-international-student&adid=acnucberkeley", 
+        iucberkeley: "l=en&partner=ucberkeley&p=pivot-international-student", 
         
         ncsu: "l=en&partner=ncsu&p=pivot-home&adid=sncsu",
         cnncsu: "l=cn&partner=ncsu&p=pivot-home&adid=scnncsu",   
@@ -1820,8 +1826,8 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("University of California Berkeley (CA)", "http://www.berkeley.edu/"),
                 makeURL("School F1 requirement", "http://www.uhs.berkeley.edu/students/insurance/waiver/compcoverage.shtml"),
-                makeURL("School J1 requirement", "http://internationaloffice.berkeley.edu/j_insurance"),
-                makeURL("Plan that meets this school's standards for J scholar", "http://taianfinancial.com/#usdos"),
+                makeURL("School J1 requirement", "http://www.uhs.berkeley.edu/vspd/visitingscholar.shtml"),
+                makeURL("Health insurance for UC Berkeley Scholars", "http://taianfinancial.com/#iucberkeley"),
                 
                 makeURL("University of California Davis (CA)", "http://www.ucdavis.edu/"),
                 makeURL("School F1 requirement", "http://shcs.ucdavis.edu/information/newstudent/international-ins.html"),
@@ -2557,6 +2563,15 @@ function writeSections(legacy) {
     writeText(loc("Global insurance designed for non-US citizens to use worldwide, and US citizens to use outside of the United States.") + "    " + loc("A good choice for a baby born in the US and living outside the US."));
     endRow();
 
+
+    var partnerShip = getPartnership(getPageAttribute("partner"));
+    var globalCitizenPartnerContent = partnerShip["globalCitizenContent"];
+    var hasGCiPartnerContent = !(typeof globalCitizenPartnerContent === "undefined")
+    if (hasGCiPartnerContent) {
+        globalCitizenPartnerContent();
+    }
+    
+    
     startRow();
     writeText("Call from US: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English), Call from China: 950-4044-2336 (Chinese, Beijing time 7-11am), Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>");
     endRow();

@@ -505,6 +505,39 @@ function getPartnership(partner) {
                                 ]));
                         endRow();
                     }
+              },    
+
+        ucberkeley: {
+                    windowTitle: "TaiAn Health Insurance for University of California at Berkeley",
+                    pageTitle: "TaiAn Health Insurance for University of California at Berkeley",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance"
+                          ],
+                          
+                    globalCitizenContent: function () {
+                        startRow();
+                        writeText("Taian Global Medical Silver Plan with $250.00 deductible meets UC Berkeley J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $100,000 per illness/injury; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Annual deductible not over $250.00. Global Silver plan with $250.00 deductible is the most affordable plan that meets the standards, and the US Department of State requirements. After your application is reviewed you will receive confirmation of your coverage which you can send to UC Berkeley as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("UC Berkeley Scholar Requirements", "http://www.uhs.berkeley.edu/vspd/visitingscholar.shtml")                         
+
+                                ]));
+                        endRow();
+                    },
+
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Global Medical Silver Plan with $250.00 deductible meets UC Berkeley J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $100,000 per illness/injury; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Annual deductible not over $250.00. Global Silver plan with $250.00 deductible is the most affordable plan that meets the standards, and the US Department of State requirements. After your application is reviewed you will receive confirmation of your coverage which you can send to UC Berkeley as proof of insurance.");
+                        writeText("Please click on Global Medical tab at top of page.  Student Plan A and Plan B do not meet UC Berkeley requirements.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("UC Berkeley Scholar Requirements", "http://www.uhs.berkeley.edu/vspd/visitingscholar.shtml")                         
+
+                                ]));
+                        endRow();
+                    }                    
+                    
               },               
 
         ufl: {
