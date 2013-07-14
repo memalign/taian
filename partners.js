@@ -139,10 +139,11 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Stanford University J scholar standards. Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Stanford to waive the school plan.");
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Stanford University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500.  Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Stanford to waive the school plan.");
+                        writeText("Enrolled students with F or J visa are required to have additional coverage (see link below). Taian Plan A meets these requirements.  Shortly after submitting an application you will receive confirmation of your coverage.  You will then need to submit a certification form to Stanford which we can help you with.");
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("Stanford Scholar Requirements", "http://icenter.stanford.edu/quick_reference/healthinsurance.html#J1reqs")
-
+                                makeURL("Stanford Scholar Requirements", "http://icenter.stanford.edu/quick_reference/healthinsurance.html#J1reqs"),
+                                makeURL("Stanford Student Requirements", "http://www.stanford.edu/group/vaden/insurance/using_your_own.html"),
                                 ]));
                         endRow();
                     }
@@ -519,7 +520,7 @@ function getPartnership(partner) {
                           
                     globalCitizenContent: function () {
                         startRow();
-                        writeText("Taian Global Medical Silver Plan with $250.00 deductible meets UC Berkeley J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $100,000 per illness/injury; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Annual deductible not over $250.00. Global Silver plan with $250.00 deductible is the most affordable plan that meets the standards, and the US Department of State requirements. After your application is reviewed you will receive confirmation of your coverage which you can send to UC Berkeley as proof of insurance.");
+                        writeText("Taian Global Medical Silver Plan with $250.00 deductible meets UC Berkeley J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $100,000 per illness/injury; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Annual deductible not over $250.00. Global Silver plan with $250.00 deductible is the most affordable plan that meets the standards, and the US Department of State requirements. After your application is reviewed and approved without exclusion of any pre-existing condition, this means you don\'t have pre-existing conditions, your coverage will meet your school requirement about pre-existing conditions. You will receive confirmation of your coverage which you can send to UC Berkeley as proof of insurance.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("UC Berkeley Scholar Requirements", "http://www.uhs.berkeley.edu/vspd/visitingscholar.shtml")                         
 
@@ -529,7 +530,7 @@ function getPartnership(partner) {
 
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Global Medical Silver Plan with $250.00 deductible meets UC Berkeley J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $100,000 per illness/injury; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Annual deductible not over $250.00. Global Silver plan with $250.00 deductible is the most affordable plan that meets the standards, and the US Department of State requirements. After your application is reviewed you will receive confirmation of your coverage which you can send to UC Berkeley as proof of insurance.");
+                        writeText("Taian Global Medical Silver Plan with $250.00 deductible meets UC Berkeley J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $100,000 per illness/injury; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Annual deductible not over $250.00. Global Silver plan with $250.00 deductible is the most affordable plan that meets the standards, and the US Department of State requirements. After your application is reviewed and approved without exclusion of any pre-existing condition, this means you don\'t have pre-existing conditions, your coverage will meet your school requirement about pre-existing conditions. You will receive confirmation of your coverage which you can send to UC Berkeley as proof of insurance.");
                         writeText("Please click on Global Medical tab at top of page.  Student Plan A and Plan B do not meet UC Berkeley requirements.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("UC Berkeley Scholar Requirements", "http://www.uhs.berkeley.edu/vspd/visitingscholar.shtml")                         
