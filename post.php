@@ -1,6 +1,7 @@
 <?
 $message = "Form submission from ".$_SERVER["REMOTE_ADDR"]."\n";
 $message .= "Form name: ".$_POST["formName"]."\n";
+$message .= "Partner ID: ".$_POST["partnerID"]."\n";
 
 foreach ($_POST as $key => $value) {
     if ($key != "successPage") {

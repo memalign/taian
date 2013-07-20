@@ -1205,6 +1205,8 @@ function startForm(name, target, successPage) {
     var hash = getHashForMap(map);
     document.write("<input type='hidden' name='formName' value='"+name+"' />");
     document.write("<input type='hidden' name='successPage' value='/"+hash+"' />");
+    var partner = getPageAttribute("partner");
+    document.write("<input type='hidden' name='partnerID' value='/"+partner+"' />");
 }
 
 function endForm() {
