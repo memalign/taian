@@ -1020,6 +1020,8 @@ function writeSectionsForForms() {
                 makeFormTextInput("Date of Departure from Home Country"),
                 makeFormTextInput("Date of Return to Home Country"),
                 makeFormTextInput("Date of Arrival in the U.S. (Required for non-US citizens over 65 and visiting the US)"),
+                makeFormTextInput("Name of your prior student insurance provider (If you have been in the US 6 months or longer)?"),
+                makeFormTextInput("Prior coverage expiration date (If you have been in the US 6 months or longer)?"),                
                 makeFormTextInput("Do you want optional coverage for higher risk sports?  (Most people say no)"),                
                 makeFormTextInput("Do you want the ad on benefit for loss of baggage, legal assistance, and personal liability (Most people say no)")
                 ]));

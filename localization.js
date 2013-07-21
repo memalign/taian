@@ -21,6 +21,8 @@ function langTag() {
 }
 
 var l = {};
+l['Name of your prior student insurance provider (If you have been in the US 6 months or longer)?'] = "你之前的学生保险的保险公司名称（如果你一直在美国6个月或更长的时间）？";
+l['Prior coverage expiration date (If you have been in the US 6 months or longer)?'] = "之前的保险何时过期的（如果你一直在美国6个月或更长的时间）？";
 l['School F1 requirement'] = "学校F1标准";
 l['School J1 requirement'] = "学校J1标准";
 l['Taian Scholar/Student Insurance Plan A and Plan B meet Johns Hopkins University and Johns Hopkins Medical Institutions J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Johns Hopkins University or Johns Hopkins Medical Institutions as proof of insurance.'] = "Johns Hopkins University and Johns Hopkins Medical Institutions 对J1访问学者（不包括全日制在校学生)购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$50,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明你已购买满足学校要求的保险。";
