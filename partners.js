@@ -1097,6 +1097,86 @@ function getPartnership(partner) {
                     }
               },           
 
+        wustl: {
+                    windowTitle: "TaiAn Health Insurance for Washington University in St. Louis",
+                    pageTitle: "TaiAn Health Insurance for Washington University in St. Louis",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Washington University in St. Louis J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Washington University in St. Louis as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("Washington University in St. Louis Scholar Requirements", "http://oisshome.wustl.edu/scholars/J1EV/J1HealthInsurance.pdf")                        
+                                ]));
+                        endRow();
+                    }
+              }, 
+
+        ucsf: {
+                    windowTitle: "TaiAn Health Insurance for UC San Francisco",
+                    pageTitle: "TaiAn Health Insurance for UC San Francisco",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UC San Francisco J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UC San Francisco as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("UC San Francisco Scholar Requirements", "http://isso.ucsf.edu/immigration-visas/for-scholars/j-1-scholars/health-insurance-requirement")                        
+                                ]));
+                        endRow();
+                    }
+              },
+
+        uci: {
+                    windowTitle: "TaiAn Health Insurance for UC Irvine",
+                    pageTitle: "TaiAn Health Insurance for UC Irvine",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UC Irvine J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UC Irvine as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("UC Irvine Scholar Requirements", "http://www.ic.uci.edu/Scholars/J-1/healthinsurance.php")                        
+                                ]));
+                        endRow();
+                    }
+              },
+
+        uic: {
+                    windowTitle: "TaiAn Health Insurance for University of Illinois at Chicago",
+                    pageTitle: "TaiAn Health Insurance for University of Illinois at Chicago",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Illinois at Chicago J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Illinois at Chicago as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("University of Illinois at Chicago Scholar Requirements", "http://www.ois.uic.edu/cms/one.aspx?portalId=1138157&pageId=1143737")                        
+                                ]));
+                        endRow();
+                    }
+              },
+
         brandeis: {
                     windowTitle: "TaiAn Health Insurance for Brandeis University",
                     pageTitle: "TaiAn Health Insurance for Brandeis University",
@@ -1115,7 +1195,7 @@ function getPartnership(partner) {
                                 ]));
                         endRow();
                     }
-              }, 
+              },              
 
         duke: {
                     windowTitle: "TaiAn Health Insurance for Duke University",
