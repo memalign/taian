@@ -1965,7 +1965,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("University of California Berkeley (CA)", "http://www.berkeley.edu/"),
                 makeURL("School F1 requirement", "http://www.uhs.berkeley.edu/students/insurance/waiver/compcoverage.shtml"),
-                makeURL("School J1 requirement", "http://www.uhs.berkeley.edu/vspd/visitingscholar.shtml"),
+                makeURL("School J1 requirement", "http://www.garnett-powers.com/academics/ucb/"),
                 makeURL("Health insurance for UC Berkeley Scholars", "http://taianfinancial.com/#iucberkeley"),
                 
                 makeURL("University of California Davis (CA)", "http://www.ucdavis.edu/"),
@@ -2872,6 +2872,13 @@ function writeSections(legacy) {
     startRow();
     writeText("Taian Travel Insurance is designed for anyone (U.S. and non-U.S. citizens) traveling out of their home country, regardless of visa requirements. Cost starts at about $1/day. Purchase 5 days - 1 year, and renewable up to 2 years if 1 month or more is purchased initially.");
     endRow();
+    
+    var partnerShip = getPartnership(getPageAttribute("partner"));
+    var travelStudentPartnerContent = partnerShip["travelStudentContent"];
+    var hasTStPartnerContent = !(typeof travelStudentPartnerContent === "undefined")
+    if (hasTStPartnerContent) {
+        travelStudentPartnerContent();
+    }    
 
     startRow();
     document.write(makeTableWithStyle("invisibleTableNormalText", 3, [

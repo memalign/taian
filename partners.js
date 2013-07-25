@@ -723,11 +723,11 @@ function getPartnership(partner) {
                             "pivot-travel-insurance"
                           ],
                           
-                    globalCitizenContent: function () {
+                    travelStudentContent: function () {
                         startRow();
-                        writeText("Taian Global Medical Silver Plan with $250.00 deductible meets UC Berkeley J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $100,000 per illness/injury; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Annual deductible not over $250.00. Global Silver plan with $250.00 deductible is the most affordable plan that meets the standards, and the US Department of State requirements. After your application is reviewed and approved without exclusion of any pre-existing condition, this means you don\'t have pre-existing conditions, your coverage will meet your school requirement about pre-existing conditions. You will receive confirmation of your coverage which you can send to UC Berkeley as proof of insurance.");
+                        writeText("Taian Travel Insurance Plan with $250.00 deductible and $500,000 benefit meets UC Berkeley J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $500,000 per illness/injury; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Annual deductible not over $250.00. Travel plan with $250.00 deductible and $500,000 maximum (we suggest $1,000,000 maximum) is the most affordable plan that meets the standards, and the US Department of State requirements.  Shortly after submitting an application you will receive confirmation of your coverage which you can send to UC Berkeley as proof of insurance.");
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("UC Berkeley Scholar Requirements", "http://www.uhs.berkeley.edu/vspd/visitingscholar.shtml")                         
+                                makeURL("UC Berkeley Scholar Requirements", "http://www.garnett-powers.com/academics/ucb/")                         
 
                                 ]));
                         endRow();
@@ -735,10 +735,10 @@ function getPartnership(partner) {
 
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Global Medical Silver Plan with $250.00 deductible meets UC Berkeley J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $100,000 per illness/injury; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Annual deductible not over $250.00. Global Silver plan with $250.00 deductible is the most affordable plan that meets the standards, and the US Department of State requirements. After your application is reviewed and approved without exclusion of any pre-existing condition, this means you don\'t have pre-existing conditions, your coverage will meet your school requirement about pre-existing conditions. You will receive confirmation of your coverage which you can send to UC Berkeley as proof of insurance.");
-                        writeText("Please click on Global Medical tab at top of page.  Student Plan A and Plan B do not meet UC Berkeley requirements.");
+                        writeText("Taian Travel Insurance Plan with $250.00 deductible and $500,000 benefit meets UC Berkeley J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $500,000 per illness/injury; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Annual deductible not over $250.00. Travel plan with $250.00 deductible and $500,000 maximum (we suggest $1,000,000 maximum) is the most affordable plan that meets the standards, and the US Department of State requirements.  Shortly after submitting an application you will receive confirmation of your coverage which you can send to UC Berkeley as proof of insurance.");
+                        writeText("Please click on Travel Insurance tab at top of page.  Student Plan A and Plan B do not meet UC Berkeley requirements.");
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("UC Berkeley Scholar Requirements", "http://www.uhs.berkeley.edu/vspd/visitingscholar.shtml")                         
+                                makeURL("UC Berkeley Scholar Requirements", "http://www.garnett-powers.com/academics/ucb/")                         
 
                                 ]));
                         endRow();
