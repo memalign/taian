@@ -2344,7 +2344,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Health insurance for Western Washington University Students and Scholars", "http://taianfinancial.com/#iwwu"),
                 
                 makeURL("Yale University (CT)", "http://www.yale.edu/"),
-                makeURL("School F1 requirement", "https://www.yhpstudentwaiver.yale.edu/"),
+                makeURL("School F1 requirement", "http://www.yale.edu/oiss/life/practical/health/index.html"),
                 makeURL("School J1 requirement", "http://www.yale.edu/oiss/immigration/common/j1students/health.html"),
                 makeURL("Health insurance for Yale University International Students and Scholars", "http://taianfinancial.com/#iyale")
                 ]));

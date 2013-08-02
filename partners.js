@@ -1679,7 +1679,7 @@ function getPartnership(partner) {
                         startRow();
                         writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Yale University enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Yale University as proof of insurance.");
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("Yale University Student requirements", "https://www.yhpstudentwaiver.yale.edu/"), 
+                                makeURL("Yale University Student requirements", "http://www.yale.edu/oiss/life/practical/health/index.html"), 
                                 makeURL("Yale University Scholar requirements", "http://www.yale.edu/oiss/immigration/common/j1students/health.html")                               
                                 ]));
                         endRow();
