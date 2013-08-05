@@ -2411,6 +2411,7 @@ function writeSections(legacy) {
     endRow();   
     
     startRow();
+    writeText("If you buy Plan B be sure to select Standard plan, Basic plan does not meet J visa requirements.");
     writeText("Call from US: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English), Call from China: 950-4044-2336 (Chinese, Beijing time 7-11am, no long distance charges), Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>");
     endRow();
 
@@ -2424,7 +2425,7 @@ function writeSections(legacy) {
 
             // Rest of the table:
             // Row 2
-            "Plan Type", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Renewable up to 5 years if 3 months or more are purchased. For those who have been in the US for less than 6 months.", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Renewable up to 4 years if 3 months or more are purchased.",
+            "Plan Type", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Renewable up to 5 years if 3 months or more are purchased. For those who have been in the US for less than 6 months.", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Renewable up to 4 years if 1 month or more is purchased.",
 
             // Row 3
             "Maximum Limit", "$500,000 lifetime maximum, $300,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $250,000 or $500,000 per illness/injury",
@@ -2602,7 +2603,7 @@ function writeSections(legacy) {
 
             // Rest of the table:
             // Row 2
-            "Plan Type", "Designed specifically for international scholars (J1,J2). Renewable up to 5 years if 3 months or more are purchased. For those who have been in the US for less than 6 months.", "Designed specifically for international scholars (J1,J2). Renewable up to 4 years if 3 months or more are purchased.",
+            "Plan Type", "Designed specifically for international scholars (J1,J2). Renewable up to 5 years if 3 months or more are purchased. For those who have been in the US for less than 6 months.", "Designed specifically for international scholars (J1,J2). Renewable up to 4 years if 1 month or more is purchased.",
 
             // Row 3
             "Maximum Limit", "$500,000 lifetime maximum, $300,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $250,000 or $500,000 per illness/injury",
