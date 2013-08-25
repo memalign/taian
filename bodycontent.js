@@ -356,7 +356,23 @@ function showPivot(pivotName) {
         gdartmouth: "l=en&partner=dartmouth&p=pivot-international-student&adid=gdartmouth",
         acndartmouth: "l=cn&partner=dartmouth&p=pivot-international-student&adid=acndartmouth", 
         idartmouth: "l=en&partner=dartmouth&p=pivot-international-student",
-        icndartmouth: "l=cn&partner=dartmouth&p=pivot-international-student",         
+        icndartmouth: "l=cn&partner=dartmouth&p=pivot-international-student",  
+
+        vcu: "l=en&partner=vcu&p=pivot-home&adid=svcu",
+        cnvcu: "l=cn&partner=vcu&p=pivot-home&adid=scnvcu",   
+        gcnvcu: "l=cn&partner=vcu&p=pivot-international-student&adid=gcnvcu",
+        gvcu: "l=en&partner=vcu&p=pivot-international-student&adid=gvcu",
+        acnvcu: "l=cn&partner=vcu&p=pivot-international-student&adid=acnvcu", 
+        ivcu: "l=en&partner=vcu&p=pivot-international-student",
+        icnvcu: "l=cn&partner=vcu&p=pivot-international-student",
+
+        murraystate: "l=en&partner=murraystate&p=pivot-home&adid=smurraystate",
+        cnmurraystate: "l=cn&partner=murraystate&p=pivot-home&adid=scnmurraystate",   
+        gcnmurraystate: "l=cn&partner=murraystate&p=pivot-international-student&adid=gcnmurraystate",
+        gmurraystate: "l=en&partner=murraystate&p=pivot-international-student&adid=gmurraystate",
+        acnmurraystate: "l=cn&partner=murraystate&p=pivot-international-student&adid=acnmurraystate", 
+        imurraystate: "l=en&partner=murraystate&p=pivot-international-student",
+        icnmurraystate: "l=cn&partner=murraystate&p=pivot-international-student",        
         
         musc: "l=en&partner=musc&p=pivot-home&adid=smusc",
         cnmusc: "l=cn&partner=musc&p=pivot-home&adid=scnmusc",   
@@ -1878,6 +1894,11 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School J1 requirement", "http://www.admissions.msstate.edu/pdf/international/exchange-visitor.pdf"),
                 makeURL("Health insurance for Mississippi State University Scholars", "http://taianfinancial.com/#imsstate"),
                 
+                makeURL("Murray State University (KY)", "http://www.murraystate.edu/"),
+                makeURL("School F1 requirement", "http://www.murraystate.edu/Students/International/IIS/StudentScholarServices/HealthcareInsurance.aspx"),
+                makeURL("School J1 requirement", "http://www.murraystate.edu/Students/International/IIS/StudentScholarServices/HealthcareInsurance.aspx"),
+                makeURL("Health insurance for Murray State University Students and Scholars", "http://taianfinancial.com/#imurraystate"),                
+                
                 makeURL("New Jersey Institute of Technology (NJ)", "http://www.njit.edu/"),
                 makeURL("School F1 requirement", "http://www.njit.edu/healthservices/health-insurance.php"),
                 makeURL("School J1 requirement", "http://www.njit.edu/humanresources/divisions/employment/request_for_DS-2019_J-1_status_sponsorship.pdf"),
@@ -2361,7 +2382,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Virginia Commonwealth University (VA)", "http://www.vcu.edu/"),
                 makeURL("School F1 requirement", "http://www.global.vcu.edu/students/connections/started/insurance.html"),
                 makeURL("School J1 requirement", "http://www.global.vcu.edu/pdf/immigration/j1/J-1_Health_Insurance_Requirements.pdf"),
-                makeURL("Plan that meets this school's standards for J scholar", "http://taianfinancial.com/#usdos"),
+                makeURL("Health insurance for Virginia Commonwealth Students and Scholars", "http://taianfinancial.com/#ivcu"),
                 
                 makeURL("Virginia Tech (VA)", "http://www.vt.edu/"),
                 makeURL("School F1 requirement", "http://graduateschool.vt.edu/igss/application_prearrival/insurance.html"),

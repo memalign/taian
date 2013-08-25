@@ -349,6 +349,27 @@ function getPartnership(partner) {
                     }
               },             
 
+         murraystate: {
+                    windowTitle: "TaiAn Health Insurance for Murray State University",
+                    pageTitle: "TaiAn Health Insurance for Murray State University",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Murray State University enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Murray State University as proof of insurance.");                        
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("Murray State University Scholar Requirements", "http://www.murraystate.edu/Students/International/IIS/StudentScholarServices/HealthcareInsurance.aspx"),
+                                makeURL("Murray State University Student Requirements", "http://www.murraystate.edu/Students/International/IIS/StudentScholarServices/HealthcareInsurance.aspx")                        
+                                ]));
+                        endRow();
+                    }
+              },               
+              
          wwu: {
                     windowTitle: "TaiAn Health Insurance for Western Washington University",
                     pageTitle: "TaiAn Health Insurance for Western Washington University",
@@ -456,7 +477,29 @@ function getPartnership(partner) {
                                 ]));
                         endRow();
                     }
-              },               
+              },
+
+         vcu: {
+                    windowTitle: "TaiAn Health Insurance for Virginia Commonwealth University",
+                    pageTitle: "TaiAn Health Insurance for Virginia Commonwealth University",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Virginia Commonwealth University enrolled international student standards and J scholar standards.  Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Virginia Commonwealth University as proof of insurance.");
+                        writeText("Enrolled international students are required to carry $250,000 per illness or injury. Taian Scholar/Student Insurance Plan B with $250,000 benefit per illness or injury is the most affordable plan that meets the standards.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("Virginia Commonwealth Scholar Requirements", "http://www.global.vcu.edu/pdf/immigration/j1/J-1_Health_Insurance_Requirements.pdf"),
+                                makeURL("Virginia Commonwealth Student Requirements", "http://www.global.vcu.edu/students/connections/started/insurance.html")                        
+                                ]));
+                        endRow();
+                    }
+              },              
               
          ncsu: {
                     windowTitle: "TaiAn Health Insurance for North Carolina State University",
@@ -1643,7 +1686,7 @@ function getPartnership(partner) {
                     internationalStudentContent: function () {
                         startRow();
                         writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Purdue enrolled international student standards and J scholar standards. Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Purdue as proof of insurance.");
-                        writeText("Enrolled international students are allowed to waive only if they are an exchange student visiting through an official exchange program.  They are required to carry $200,000 per illness or injury and complete a waiver. Taian Scholar/Student Insurance Plan B with $250,000 benefit per illness or injury is the most affordable plan that meets the standards.");
+                        writeText("Enrolled international students are allowed to waive only if they are an exchange student visiting through an official exchange program. They are required to carry $200,000 per illness or injury and complete a waiver. Taian Scholar/Student Insurance Plan B with $250,000 benefit per illness or injury is the most affordable plan that meets the standards. You need to complete the Waiver Form, submit it along with your I-20(or DS2019), insurance ID card and Visa Letter.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Purdue University Scholar Requirements", "http://www.iss.purdue.edu/Current/J1/HealthInsurance.cfm"),
                                 makeURL("Purdue University Student Requirements", "http://www.purdue.edu/push/insurance/waivers.shtml")                                
