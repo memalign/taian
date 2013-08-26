@@ -6,7 +6,7 @@ function getPartnership(partner) {
     var partnerShips = {
 
         taian: {
-                    windowTitle: "TaiAn International Health Insurance",
+                    windowTitle: "TaiAn International Health Insurance | 泰安国际医疗保险",
                     pageTitle: "TaiAn International Health Insurance",
                     logoImage: "longevity.gif",
                     logoHeight: "30",
