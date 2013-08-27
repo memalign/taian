@@ -318,6 +318,14 @@ function showPivot(pivotName) {
         acngeorgetown: "l=cn&partner=georgetown&p=pivot-international-student&adid=acngeorgetown", 
         igeorgetown: "l=en&partner=georgetown&p=pivot-international-student", 
 
+        nd: "l=en&partner=nd&p=pivot-home&adid=snd",
+        cnnd: "l=cn&partner=nd&p=pivot-home&adid=scnnd",   
+        gcnnd: "l=cn&partner=nd&p=pivot-international-student&adid=gcnnd",
+        gnd: "l=en&partner=nd&p=pivot-international-student&adid=gnd",
+        acnnd: "l=cn&partner=nd&p=pivot-international-student&adid=acnnd", 
+        ind: "l=en&partner=nd&p=pivot-international-student",
+        icnnd: "l=cn&partner=nd&p=pivot-international-student",        
+        
         utoledo: "l=en&partner=utoledo&p=pivot-home&adid=sutoledo",
         cnutoledo: "l=cn&partner=utoledo&p=pivot-home&adid=scnutoledo",   
         gcnutoledo: "l=cn&partner=utoledo&p=pivot-international-student&adid=gcnutoledo",
@@ -2267,7 +2275,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("University of Notre Dame (IN)", "http://www.nd.edu/"),
                 makeURL("School F1 requirement", "http://uhs.nd.edu/insurance-billing/"),
                 makeURL("School J1 requirement", "https://hr.nd.edu/assets/20192/j_1_visa.pdf"),
-                makeURL("Plan that meets this school's standards for J scholar", "http://taianfinancial.com/#usdos"),
+                makeURL("Health insurance for University of Notre Dame Students and Scholars", "http://taianfinancial.com/#ind"),
                 
                 makeURL("University of Oklahoma (OK)", "http://www.ou.edu/"),
                 makeURL("School F1 requirement", "http://hr.ou.edu/studenthealth/StudentHealthWaiver.asp"),

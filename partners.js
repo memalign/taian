@@ -797,6 +797,28 @@ function getPartnership(partner) {
                         endRow();
                     }
               }, 
+              
+        nd: {
+                    windowTitle: "TaiAn Health Insurance for University of Notre Dame",
+                    pageTitle: "TaiAn Health Insurance for University of Notre Dame",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Notre Dame enrolled international student standards and J scholar standards.  Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Notre Dame as proof of insurance.");
+                        writeText("Enrolled international students are required to carry $500,000 per illness or injury and complete a waiver. Taian Scholar/Student Insurance Plan B with $500,000 benefit per illness or injury is the most affordable plan that meets the standards.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("University of Notre Dame Scholar Requirements", "https://hr.nd.edu/assets/20192/j_1_visa.pdf"),                         
+                                makeURL("University of Notre Dame Student Requirements", "http://uhs.nd.edu/insurance-billing/")
+                                ]));
+                        endRow();
+                    }
+              },               
 
         utoledo: {
                     windowTitle: "TaiAn Health Insurance for University of Toledo",
@@ -963,7 +985,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Florida J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Florida as proof of insurance.");
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Florida J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500; 5. Policy shall not unreasonably exclude risks inherent to the exchange program; 6. The insurance must meet certain credit rating criteria; 7. Must be accepted in all medical facilities. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Florida as proof of insurance.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Florida Scholar Requirements", "http://www.ufic.ufl.edu/evs/Insurance.html")                         
 
