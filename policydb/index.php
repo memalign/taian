@@ -24,15 +24,41 @@ END;
 }
 
 function writeTextInput($label, $name, $value) {
-    echo "$label: <input type=\"text\" name=\"$name\" value=\"$value\"><br />";
+    echo "$label: <input type=\"text\" name=\"$name\" value=\"$value\"><br />\n";
+}
+
+function writeIndividual($index, $individual) {
+    echo "Individual<br />\n";
+
+    foreach ($individual as $key => $value) {
+        $formInputName = "";
+
+        if (startsWith($key, "Insured Person(s)")) {
+            $formInputName = "name";
+        } elseif (startsWith($key, "Insured ID")) {
+            $formInputName = "insuredID";
+        } elseif (startsWith($key, "Effective Date")) {
+            $formInputName = "effectiveDate";
+        } elseif (startsWith($key, "Expiration Date")) {
+            $formInputName = "expirationDate";
+        } elseif (startsWith($key, "Premium")) {
+            $formInputName = "premium";
+        } elseif (startsWith($key, "Date of Birth")) {
+            $formInputName = "dateOfBirth";
+        }
+
+        if (strlen($formInputName) > 0) {
+            writeTextInput($key, "individual_" . $index . "_" . $formInputName, $value);
+        }
+    }
+
+    echo "<br /><br />\n";
 }
 
 $emailbody = $_POST['emailbody'];
 
-if (is_null($emailbody)) {
-    printEmailForm();
-} else {
-    echo "Found email body: $emailbody<br />";
+if (!is_null($emailbody)) {
+    #echo "Found email body: $emailbody<br />";
 
     $certificateNumber = "";
     $productType = "";
@@ -52,10 +78,14 @@ if (is_null($emailbody)) {
 
     $lines = explode("\n", $emailbody);
     foreach ($lines as $line) {
-        echo "Line: $line<br />";
+      #  echo "Line: $line<br />";
         $tokens = explode("\t", $line);
-        foreach ($tokens as $token) {
-            echo "    token \"$token\"<br />";
+      #  foreach ($tokens as $token) {
+      #      echo "    token \"$token\"<br />";
+      #  }
+
+        if (startsWith($line, "Mailing Address:")) {
+            $parsingIndividuals = false;
         }
 
         if (!$parsingIndividuals) {
@@ -103,7 +133,7 @@ if (is_null($emailbody)) {
                 $individual = array();
                 for ($i = 0; $i < $numCols; $i++) {
                     $individual[$individualColumnNames[$i]] = $tokens[$i];
-                    echo "Setting individual $individCount's ".$individualColumnNames[$i]." to ".$tokens[$i]."<br />";
+                   # echo "Setting individual $individCount's ".$individualColumnNames[$i]." to ".$tokens[$i]."<br />";
                 }
                 array_push($individuals, $individual);
             }
@@ -111,9 +141,8 @@ if (is_null($emailbody)) {
     }
 
     echo "<form name=\"parsedInfoForm\" action=\"index.php\" method=\"post\">";
-
+    echo "<input type=\"hidden\" name=\"originalemail\" value=\"$emailbody\">";
     # These are global attributes:
-    writeTextInput("Email Address", "emailAddress", "");
     writeTextInput("Certificate Number", "certificateNumber", $certificateNumber);
     writeTextInput("Product Type", "productType", $productType);
     writeTextInput("Group Name", "groupName", $groupName);
@@ -126,12 +155,28 @@ if (is_null($emailbody)) {
     writeTextInput("Mailing Address", "mailingAddress", $mailingAddress);
     writeTextInput("Phone", "phone", $phone);
 
-    # These are individual attributes:
-    #warning I need to add form attributes for each individual - probably make a function for it. Note that some attributes will be missing for individuals.
+    echo "<br /><br />";
 
+    # These are individual attributes:
+    $individCount = count($individuals);
+    for ($i = 0; $i < $individCount; $i++) {
+        $individual = $individuals[$i];
+        writeIndividual($i, $individual);
+    }
+
+    # One last global attribute:
+    writeTextInput("Email Address", "emailAddress", "");
 
     echo "<input type=\"submit\" value=\"Submit\">";
     echo "</form>";
+} elseif (!is_null($_POST['originalemail'])) {
+
+    # parse individual_x_vvvvvv out and put them into nested dictionaries
+    # go over the individuals parsed out and put them each in the database
+
+
+} else {
+    printEmailForm();
 }
 
 # Once the parsed info form is submitted, write the individuals to the database.
