@@ -50,7 +50,7 @@ function sqlDateFromString($stringDate) {
     if (strlen($month) == 0) {
         return "";
     } else {
-        return "$year-$month-$day";
+        return sqlite_escape_string("$year-$month-$day");
     }
 }
 
@@ -234,27 +234,7 @@ if (!is_null($emailbody)) {
     $lines = explode("\r\n", $tabbedData);
     echo "There are " . count($lines) . " lines.<br />";
 
-    $columnNames = null;
-    $individuals = array();
-    foreach ($lines as $line) {
-        $tokens = explode("\t", $line);
-        if ($columnNames == null) {
-            $columnNames = $tokens;
-        } else {
-            $numCols = count($columnNames);
-            $individCount = count($individuals);
-            $individual = array();
-            for ($i = 0; $i < $numCols; $i++) {
-                $individual[$columnNames[$i]] = $tokens[$i];
-                echo "Setting individual $individCount's ".$columnNames[$i]." to ".$tokens[$i]."<br />";
-            }
-            array_push($individuals, $individual);
-        }
-
-        echo "$line<br />";
-    }
-
-
+    
     $colMap = array (
         "Purchase Date" => "purchase_date",
         "Producer Number" => "producer_number",
@@ -318,10 +298,140 @@ if (!is_null($emailbody)) {
         "Fax" => "fax"
     );
 
-    # Make sure to deal with the special date columns as well
+    $orderedColumns = array(
+        "purchase_date",
+        "producer_number",
+        "product_type",
+        "certificate_type",
+        "certificate_number",
+        "primary_insured_name",
+        "government_issued_id_number",
+        "group_name",
+        "effective_date",
+        "premium",
+        "currency",
+        "pay_frequency",
+        "certificate_status",
+        "renewal",
+        "trip_lite",
+        "pri_dep",
+        "user_defined_variable",
+        "application_type",
+        "insured_id",
+        "insured_name",
+        "date_of_birth",
+        "gender",
+        "citizenship",
+        "home_country",
+        "primary_destination",
+        "current_carrier_information",
+        "other_email_address",  
+        "departure_date",
+        "expiration_date",
+        "date_of_arrival",
+        "primary_email_address",
+        "internet_application",
+        "daily_indemnity",
+        "fulfillment_type",
+        "policy_maximum",
+        "deductible",
+        "accidental_death",
+        "life_amount",
+        "supplemental_life_amount",
+        "leisure_sports_rider",
+        "adventure_sports_rider",
+        "citizenship_return_rider",
+        "terrorism_rider",
+        "coinsurance_rider",
+        "chaperone_rider",
+        "personal_liability_rider",
+        "heart_care_plus_rider",
+        "evacuation_plus_rider",
+        "six_month_rider",
+        "dependent_class",
+        "mailing_name",
+        "mailing_address_1",
+        "mailing_address_2",
+        "mailing_city",
+        "mailing_county",
+        "mailing_state",
+        "mailing_postal_code",
+        "mailing_country",
+        "phone",
+        "fax"
+    );
 
-    # Construct a statement to insert our new dudes
+    $specialDateCols = array(
+        "date_of_arrival_fmt",
+        "expiration_date_fmt",
+        "departure_date_fmt",
+        "date_of_birth_fmt",
+        "effective_date_fmt",
+        "purchase_date_fmt"
+    );
+
+    $columnNames = null;
+    $individuals = array();
+    foreach ($lines as $line) {
+        $tokens = explode("\t", $line);
+        if ($columnNames == null) {
+            $columnNames = $tokens;
+        } else {
+            $numCols = count($columnNames);
+            $individCount = count($individuals);
+            $individual = array();
+            for ($i = 0; $i < $numCols; $i++) {
+                $individual[$colMap[$columnNames[$i]]] = $tokens[$i];
+                echo "Setting individual $individCount's ".$colMap[$columnNames[$i]]." to ".$tokens[$i]."<br />";
+            }
+            array_push($individuals, $individual);
+        }
+
+        echo "$line<br />";
+    }
+
+    $dbhandle = sqlite_open('/home1/taianfin/policy.db', 0666, $error);
+    if (!$dbhandle) die ($error);
+
+    $insertStatement = "insert into policy (".implode(",", $orderedColumns) . "," . implode(",", $specialDateCols) . ") values (";
+
+    foreach ($individuals as $individual) {
+        $individualInsert = $insertStatement;
+
+        $comma = "";
+        foreach ($orderedColumns as $col) {
+            $individualInsert .= $comma . "\"" . sqlite_escape_string(str_replace("\\\"", "", $individual[$col])) . "\"";
+            $comma = ",";
+        }
+
+        $individualInsert .= $comma . "\"" . sqlDateFromString($individual["date_of_arrival"]) . "\"";
+        $individualInsert .= $comma . "\"" . sqlDateFromString($individual["expiration_date"]) . "\"";
+        $individualInsert .= $comma . "\"" . sqlDateFromString($individual["departure_date"]) . "\"";
+        $individualInsert .= $comma . "\"" . sqlDateFromString($individual["date_of_birth"]) . "\"";
+        $individualInsert .= $comma . "\"" . sqlDateFromString($individual["effective_date"]) . "\"";
+        $individualInsert .= $comma . "\"" . sqlDateFromString($individual["purchase_date"]) . "\"";
+
+        $individualInsert .= ");";
+
+        echo "$individualInsert <br />\n";
+
+        $ok = sqlite_exec($dbhandle, $individualInsert, $error);
+        if (!$ok)
+            echo "Couldn't insert $individual. $error\n";
+    }
+
     # Should we try to deduplicate lines here?
+
+    $query = "SELECT * FROM policy";
+    $result = sqlite_query($dbhandle, $query);
+    if (!$result) die("Cannot execute query.");
+
+    while ($row = sqlite_fetch_array($result, SQLITE_ASSOC)) {
+        print_r($row);
+        echo "<br>";
+    }
+
+    sqlite_close($dbhandle);
 
 } else {
     printImportForms();
