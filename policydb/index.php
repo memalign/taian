@@ -7,16 +7,69 @@
 
 <?php
 
+function sqlDateFromString($stringDate) {
+    # These dates look like this: 24-Aug-2013
+
+    # We can convert this to julianday('YYYY-MM-DD')
+    $components = explode("-", $stringDate);
+    $day = $components[0];
+    if (strlen($day) < 2) {
+        $day = "0" . $day;
+    }
+
+    $year = $components[2];
+
+    $monthName = $components[1];
+    $month = "";
+    if (startsWith($monthName, "Jan")) {
+        $month = "01";
+    } elseif (startsWith($monthName, "Feb")) {
+        $month = "02";
+    } elseif (startsWith($monthName, "Mar")) {
+        $month = "03";
+    } elseif (startsWith($monthName, "Apr")) {
+        $month = "04";
+    } elseif (startsWith($monthName, "May")) {
+        $month = "05";
+    } elseif (startsWith($monthName, "Jun")) {
+        $month = "06";
+    } elseif (startsWith($monthName, "Jul")) {
+        $month = "07";
+    } elseif (startsWith($monthName, "Aug")) {
+        $month = "08";
+    } elseif (startsWith($monthName, "Sep")) {
+        $month = "09";
+    } elseif (startsWith($monthName, "Oct")) {
+        $month = "10";
+    } elseif (startsWith($monthName, "Nov")) {
+        $month = "11";
+    } elseif (startsWith($monthName, "Dec")) {
+        $month = "12";
+    }
+
+    if (strlen($month) == 0) {
+        return "";
+    } else {
+        return "$year-$month-$day";
+    }
+}
+
 function startsWith($haystack, $needle) {
     return $needle === "" || strpos($haystack, $needle) === 0;
 }
 
-function printEmailForm() {
+function printImportForms() {
     echo <<<END
-<form name="emailform" action="index.php" method="post">
+<form name="importform" action="index.php" method="post">
+    IMG Tab-delimited spreadsheet:<br />
+<textarea name="tabbeddata" rows="20" cols="120">
+</textarea><br />
+<!--
     IMG Policy Email:<br />
 <textarea name="emailbody" rows="20" cols="120">
 </textarea><br />
+
+-->
 <input type="submit" value="Submit">
 </form>
 
@@ -56,6 +109,7 @@ function writeIndividual($index, $individual) {
 }
 
 $emailbody = $_POST['emailbody'];
+$tabbedData = $_POST['tabbeddata'];
 
 if (!is_null($emailbody)) {
     #echo "Found email body: $emailbody<br />";
@@ -175,8 +229,102 @@ if (!is_null($emailbody)) {
     # go over the individuals parsed out and put them each in the database
 
 
+} elseif (!is_null($tabbedData)) {
+    # Split by (dos) lines
+    $lines = explode("\r\n", $tabbedData);
+    echo "There are " . count($lines) . " lines.<br />";
+
+    $columnNames = null;
+    $individuals = array();
+    foreach ($lines as $line) {
+        $tokens = explode("\t", $line);
+        if ($columnNames == null) {
+            $columnNames = $tokens;
+        } else {
+            $numCols = count($columnNames);
+            $individCount = count($individuals);
+            $individual = array();
+            for ($i = 0; $i < $numCols; $i++) {
+                $individual[$columnNames[$i]] = $tokens[$i];
+                echo "Setting individual $individCount's ".$columnNames[$i]." to ".$tokens[$i]."<br />";
+            }
+            array_push($individuals, $individual);
+        }
+
+        echo "$line<br />";
+    }
+
+
+    $colMap = array (
+        "Purchase Date" => "purchase_date",
+        "Producer Number" => "producer_number",
+        "Product Type" => "product_type",
+        "Certificate Type" => "certificate_type",
+        "Certificate Number" => "certificate_number",
+        "Primary Insured Name" => "primary_insured_name",
+        "Government Issued ID Number" => "government_issued_id_number",
+        "Group Name" => "group_name",
+        "Effective Date" => "effective_date",
+        "Premium" => "premium",
+        "Currency" => "currency",
+        "Pay Frequency" => "pay_frequency",
+        "Certificate Status" => "certificate_status",
+        "Renewal" => "renewal",
+        "T.R.I.P. Lite" => "trip_lite",
+        "Pri/Dep" => "pri_dep",
+        "User Defined Variable" => "user_defined_variable",
+        "Application Type" => "application_type",
+        "Insured ID" => "insured_id",
+        "Insured Name" => "insured_name",
+        "Date Of Birth" => "date_of_birth",
+        "Gender" => "gender",
+        "Citizenship" => "citizenship",
+        "Home Country" => "home_country",
+        "Primary Destination" => "primary_destination",
+        "Current Carrier Information" => "current_carrier_information",
+        "Other Email Address" => "other_email_address",  
+        "Departure Date" => "departure_date",
+        "Expiration Date" => "expiration_date",
+        "Date Of Arrival" => "date_of_arrival",
+        "Primary Email Address" => "primary_email_address",
+        "Internet Application" => "internet_application",
+        "Daily Indemnity" => "daily_indemnity",
+        "Fulfillment Type" => "fulfillment_type",
+        "Policy Maximum" => "policy_maximum",
+        "Deductible" => "deductible",
+        "Accidental Death" => "accidental_death",
+        "Life Amount" => "life_amount",
+        "Supplemental Life Amount" => "supplemental_life_amount",
+        "Leisure Sports Rider" => "leisure_sports_rider",
+        "Adventure Sports Rider" => "adventure_sports_rider",
+        "Citizenship Return Rider" => "citizenship_return_rider",
+        "Terrorism Rider" => "terrorism_rider",
+        "Coinsurance Rider" => "coinsurance_rider",
+        "Chaperone Rider" => "chaperone_rider",
+        "Personal Liability Rider" => "personal_liability_rider",
+        "Heart Care Plus Rider" => "heart_care_plus_rider",
+        "Evacuation Plus Rider" => "evacuation_plus_rider",
+        "Six Month Pre-existing Condition Rider" => "six_month_rider",
+        "Dependent Class" => "dependent_class",
+        "Mailing Name" => "mailing_name",
+        "Mailing Address 1" => "mailing_address_1",
+        "Mailing Address 2" => "mailing_address_2",
+        "Mailing City" => "mailing_city",
+        "Mailing County/Region" => "mailing_county",
+        "Mailing State/Province" => "mailing_state",
+        "Mailing Postal Code" => "mailing_postal_code",
+        "Mailing Country" => "mailing_country",
+        "Primary Telephone" => "phone",
+        "Fax" => "fax"
+    );
+
+    # Make sure to deal with the special date columns as well
+
+    # Construct a statement to insert our new dudes
+    # Should we try to deduplicate lines here?
+
 } else {
-    printEmailForm();
+    printImportForms();
 }
 
 # Once the parsed info form is submitted, write the individuals to the database.
