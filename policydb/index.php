@@ -61,7 +61,7 @@ function startsWith($haystack, $needle) {
 function printImportForms() {
     echo <<<END
 <form name="importform" action="index.php" method="post">
-    IMG Tab-delimited spreadsheet:<br />
+    IMG CSV spreadsheet:<br />
 <textarea name="tabbeddata" rows="20" cols="120">
 </textarea><br />
 <!--
@@ -373,7 +373,20 @@ if (!is_null($emailbody)) {
     $columnNames = null;
     $individuals = array();
     foreach ($lines as $line) {
-        $tokens = explode("\t", $line);
+        # Workaround for str_getcsv being unavailable on the php version on our host
+        $fh = fopen('php://temp', 'r+');
+        $line = str_replace("\\\"", "\"", $line);
+        fwrite($fh, $line);
+        rewind($fh);
+        $rawTokens = fgetcsv($fh);
+
+        fclose($fh);
+        #$tokens = str_getcsv($line); # csv format
+        #$tokens = explode("\t", $line); # tab-delimited
+
+        $tokens = $rawTokens;
+        echo "Got tokens $tokens <br />";
+
         if ($columnNames == null) {
             $columnNames = $tokens;
         } else {
