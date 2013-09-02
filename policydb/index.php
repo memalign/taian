@@ -379,7 +379,6 @@ if (!is_null($emailbody)) {
         fwrite($fh, $line);
         rewind($fh);
         $rawTokens = fgetcsv($fh);
-
         fclose($fh);
         #$tokens = str_getcsv($line); # csv format
         #$tokens = explode("\t", $line); # tab-delimited
