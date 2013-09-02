@@ -4,6 +4,7 @@
 </head>
 
 <body>
+<a href=".">Back to main page.</a><br /><br />
 
 <?php
 require_once('db.php');
@@ -18,7 +19,7 @@ if (!$dbhandle) die ($error);
 //   - They haven't been reminded since before the day before expiration
 //   AND
 //   - They've gotten a reminder and today is later than the day before expiration
-$soonToExpireQuery = "select distinct expiration_date_fmt, certificate_number, certificate_status, primary_insured_name, insured_name, primary_email_address, other_email_address from policy where julianday(expiration_date_fmt) >= julianday(\"now\", \"-20 days\") and julianday(expiration_date_fmt) <= julianday(\"now\", \"+10 days\") and ( (last_reminder_date_fmt IS NULL) or (length(last_reminder_date_fmt) = 0) or ( (julianday(last_reminder_date_fmt) < julianday(expiration_date_fmt, \"-1 day\")) AND (julianday(\"now\") >= julianday(expiration_date_fmt, \"-1 day\"))  )   )";
+$soonToExpireQuery = "select distinct expiration_date_fmt, effective_date_fmt, certificate_number, certificate_status, primary_insured_name, insured_name, primary_email_address, other_email_address from policy where julianday(expiration_date_fmt) >= julianday(\"now\", \"-20 days\") and julianday(expiration_date_fmt) <= julianday(\"now\", \"+10 days\") and ( (last_reminder_date_fmt IS NULL) or (length(last_reminder_date_fmt) = 0) or ( (julianday(last_reminder_date_fmt) < julianday(expiration_date_fmt, \"-1 day\")) AND (julianday(\"now\") >= julianday(expiration_date_fmt, \"-1 day\"))  )   )";
 
 $result = sqlite_query($dbhandle, $soonToExpireQuery, $error);
 if (!$result) {
@@ -32,12 +33,30 @@ while ($row = sqlite_fetch_array($result, SQLITE_ASSOC)) {
 }
 
 
-# Prune out any results that aren't relevant.
+echo "There are about " . count($allResults) . " policies to process.<br /><br />";
+
+# Prune ones that are no longer relevant - "CANCELLED TO INCEPTION", "DECLINED, PAYMENT", "SOLD, PART TERMINATED"
+# What to do about "PENDNG RENEWAL"?
+$pruneStatuses = array("CANCELLED TO INCEPTION", "DECLINED, PAYMENT", "SOLD, PART TERMINATED");
+foreach ($allResults as $key=>$value) {
+    if (in_array($value["certificate_status"], $pruneStatuses)) {
+        unset($allResults[$key]);
+    }
+}
+
+echo "After pruning, there are about " . count($allResults) . " policies to process.<br /><br />";
 
 
-echo "There are about " . count($allResults) . " policies to process.<br />";
+# Prune ones with a newer effective date for the same person - find the siblings and check their effective date.
 
-echo array2table(array($allResults[0]));
+
+
+
+$firstKey = key($allResults);
+
+# Find any others with the same certificate number
+
+echo array2table(array($allResults[$firstKey]));
 
 # Go one at a time?
 # How to mark an entry as processed? Just set the date on it?
