@@ -230,6 +230,9 @@ if (!is_null($emailbody)) {
 
 
 } elseif (!is_null($tabbedData)) {
+    echo "<a href=\".\">Back to main page.</a><br />";
+    echo "<a href=\"./reminders.php\">Process reminder emails.</a><br />";
+
     # Split by (dos) lines
     $lines = explode("\r\n", $tabbedData);
     echo "There are " . count($lines) . " lines.<br />";
@@ -384,7 +387,6 @@ if (!is_null($emailbody)) {
         #$tokens = explode("\t", $line); # tab-delimited
 
         $tokens = $rawTokens;
-        echo "Got tokens $tokens <br />";
 
         if ($columnNames == null) {
             $columnNames = $tokens;
@@ -434,6 +436,7 @@ if (!is_null($emailbody)) {
 
     # Should we try to deduplicate lines here?
 
+    /*
     $query = "SELECT * FROM policy";
     $result = sqlite_query($dbhandle, $query);
     if (!$result) die("Cannot execute query.");
@@ -442,10 +445,12 @@ if (!is_null($emailbody)) {
         print_r($row);
         echo "<br>";
     }
-
+     */
     sqlite_close($dbhandle);
 
 } else {
+    echo "<a href=\"./reminders.php\">Process reminder emails.</a>";
+    echo "<br /><br />";
     printImportForms();
 }
 
