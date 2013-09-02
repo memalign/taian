@@ -528,6 +528,7 @@ function showPivot(pivotName) {
         acnufl: "l=cn&partner=ufl&p=pivot-international-student&adid=acnufl",        
         gufl: "l=en&partner=ufl&p=pivot-international-student&adid=gufl",
         iufl: "l=en&partner=ufl&p=pivot-international-student",
+        icnufl: "l=cn&partner=ufl&p=pivot-international-student",        
         northeastern: "l=en&partner=northeastern&p=pivot-home&adid=snortheastern",
         cnnortheastern: "l=cn&partner=northeastern&p=pivot-home&adid=scnnortheastern",   
         gcnnortheastern: "l=cn&partner=northeastern&p=pivot-international-student&adid=gcnnortheastern",
@@ -1789,7 +1790,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("Cornell University (NY)", "http://www.cornell.edu/"),
                 makeURL("School F1 requirement", "http://www.gannett.cornell.edu/insurance/undergrads/enrollment/"),
-                makeURL("School J1 requirement", "http://www.isso.cornell.edu/immigration/j1student/j1insurance.php"),
+                makeURL("School J1 requirement", "http://www.isso.cornell.edu/academicstaff/j1insurance.php"),
                 makeURL("Health insurance for Cornell University Scholars", "http://taianfinancial.com/#icornell"),
                 
                 makeURL("Dartmouth College (NH)", "http://www.dartmouth.edu/"),

@@ -84,9 +84,9 @@ if (!is_null($_POST['query'])) {
         return;
     }
 
-    $result = sqlite_query($dbhandle, stripslashes($_POST['query']));
+    $result = sqlite_query($dbhandle, stripslashes($_POST['query']), $error);
     if (!$result) {
-        echo "Cannot execute query.";
+        echo "Cannot execute query $error.";
         return;
     }
 
