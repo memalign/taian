@@ -124,7 +124,7 @@ while ($row = sqlite_fetch_array($result, SQLITE_ASSOC)) {
 }
 
 
-echo "There are about " . count($allResults) . " policies to process.<br /><br />";
+echo "There are about " . count($allResults) . " policies to process.<br />";
 
 # Prune ones that are no longer relevant - "CANCELLED TO INCEPTION", "DECLINED, PAYMENT", "SOLD, PART TERMINATED", "PENDNG RENEWAL"
 $pruneStatuses = array("CANCELLED TO INCEPTION", "DECLINED, PAYMENT", "SOLD, PART TERMINATED", "PENDNG RENEWAL");
@@ -134,7 +134,7 @@ foreach ($allResults as $key=>$value) {
     }
 }
 
-echo "After pruning by certificate status, there are about " . count($allResults) . " policies to process.<br /><br />";
+echo "After pruning by certificate status, there are about " . count($allResults) . " policies to process.<br />";
 
 # Prune rows that lack an insured_name. These are group policy contact info rows.
 
@@ -144,9 +144,10 @@ foreach ($allResults as $key=>$value) {
     }
 }
 
-echo "After pruning by insured name, there are about " . count($allResults) . " policies to process.<br /><br />";
+echo "After pruning by insured name, there are about " . count($allResults) . " policies to process.<br />";
 
 # Prune ones with a newer effective date for the same person - find the siblings and check their effective date.
+# To improve performance, I can find the first non-nuked entry in $allResults and then only bother with other entries on the same certificate number
 foreach ($allResults as $key=>$value) {
     # Find the siblings
     $siblings = siblings($dbhandle, $value);
@@ -155,26 +156,77 @@ foreach ($allResults as $key=>$value) {
 
     $epsilon = 0.0001;
 
-    /*
+    $effectiveDateKey = "julianday(effective_date_fmt)";
+    $myEffectiveDate = floatval($value[$effectiveDateKey]);
+    $myRowID = intval($value["rowid"]);
+
     # Check sibling effective dates, unset us if any sibling has a higher one
     foreach ($siblings as $sibling) {
-        $effectiveDateKey = "julianday(effective_date_fmt)";
-        echo "Comparing " .floatval($sibling[$effectiveDateKey]) . " to " . floatval($value[$effectiveDateKey]) . "<br />";
-        if (floatval($sibling[$effectiveDateKey]) > floatval($value[$effectiveDateKey])) {
+        $sibEffectiveDate = floatval($sibling[$effectiveDateKey]);
+        $sibRowID = intval($sibling["rowid"]);
+
+        #echo "Comparing $sibEffectiveDate to $myEffectiveDate<br />";
+
+        if (abs($myEffectiveDate - $sibEffectiveDate) < $epsilon) {
+            # See if the sibling is dead policy
+            if (in_array($sibling["certificate_status"], $pruneStatuses)) {
+                # The sibling is a dead policy... is it newer or older than us based on rowid?
+                if ($sibRowID > $myRowID) {
+                    # Sibling is newer, nuke us.
+                    unset($allResults[$key]);
+                    break;
+                } else {
+                    # Sibling is older, ignore it.
+                }
+            } else {
+                # Both my sibling and I are active policies.
+                if (strlen($value["last_reminder_date_fmt"]) > 0) {
+                    # My row has been used for reminder emails, ignore sibling
+                } elseif (strlen($sibling["last_reminder_date_fmt"]) > 0) {
+                    # Sibling has been used for reminder emails, nuke me
+                    unset($allResults[$key]);
+                    break;
+                } else {
+                    # Neither of us has been used for reminders. Use the most recent rowid.
+                    if ($sibRowID > $myRowID) {
+                        # Sibling is newer, nuke us.
+                        unset($allResults[$key]);
+                        break;
+                    } else {
+                        # Sibling is older, ignore it.
+                    }
+                }
+            }
+        } elseif ($sibEffectiveDate < $myEffectiveDate) {
+            # Ignore the sibling, my effective date is newer.
+        } else {
+            # The sibling has a newer effective date, nuke my entry.
             unset($allResults[$key]);
             break;
         }
     }
-     */
 }
 
+echo "After pruning by equivalent updated policies, there are about " . count($allResults) . " policies to process.<br />";
 
 reset($allResults); # Reset internal next pointer since we've removed some elements
 $firstKey = key($allResults);
 
 # Find any others with the same certificate number
+# Find all other policies in our results with the same certificate number, then find all of their siblings
 
-echo array2table(array($allResults[$firstKey]));
+# Be able to get the email addresses out of siblings call.
+
+echo "<br />";
+
+$policy = $allResults[$firstKey];
+$siblings = siblings($policy);
+if (count($siblings) > 0) {
+    echo "Previous history: <br />";
+    echo array2table(siblings($policy));
+}
+echo "Policy due for a reminder:<br />";
+echo array2table(array($policy));
 
 # Go one at a time?
 # How to mark an entry as processed? Just set the date on it?
