@@ -9,7 +9,7 @@
 <?php
 require_once('db.php');
 
-$importantColumns = "rowid, expiration_date_fmt, effective_date_fmt, julianday(effective_date_fmt), last_reminder_date_fmt, certificate_number, certificate_status, certificate_type, primary_insured_name, insured_name, primary_email_address, other_email_address";
+$importantColumns = "rowid, expiration_date_fmt, effective_date_fmt, julianday(effective_date_fmt), last_reminder_date_fmt, certificate_number, certificate_status, certificate_type, primary_insured_name, insured_name, group_name, primary_email_address, other_email_address";
 
 function siblingsAndEmails($dbhandle, $individual) {
     global $importantColumns;
@@ -120,13 +120,13 @@ if (!is_null($_POST['processedRows'])) {
 }
 
 // People who need emails:
-// These are the people who will be expired between 20 days prior to today and 10 days from now (or before) who have:
+// These are the people who will be expired between 20 days prior to today and at most 10 days from now who have:
 // - Never been reminded
 // OR
 //   - They haven't been reminded since before the day before expiration
 //   AND
 //   - They've gotten a reminder and today is later than the day before expiration
-$soonToExpireQuery = "select $importantColumns from policy where julianday(expiration_date_fmt) >= julianday(\"now\", \"-20 days\") and julianday(expiration_date_fmt) <= julianday(\"now\", \"+10 days\") and ( (last_reminder_date_fmt IS NULL) or (length(last_reminder_date_fmt) = 0) or ( (julianday(last_reminder_date_fmt) < julianday(expiration_date_fmt, \"-1 day\")) AND (julianday(\"now\") >= julianday(expiration_date_fmt, \"-1 day\"))  )   )";
+$soonToExpireQuery = "select $importantColumns from policy where julianday(expiration_date_fmt) >= julianday(\"now\", \"-20 days\") and julianday(expiration_date_fmt) <= julianday(\"now\", \"+10 days\") and ( (last_reminder_date_fmt IS NULL) or (length(last_reminder_date_fmt) = 0) or ( (julianday(last_reminder_date_fmt) < julianday(expiration_date_fmt, \"-1 day\")) AND (julianday(\"now\") >= julianday(expiration_date_fmt, \"-1 day\"))  )   ) order by rowid desc";
 
 $result = sqlite_query($dbhandle, $soonToExpireQuery, $error);
 if (!$result) {
@@ -164,7 +164,13 @@ echo "After pruning by insured name, there are about " . count($allResults) . " 
 
 # Prune ones with a newer effective date for the same person - find the siblings and check their effective date.
 # To improve performance, I can find the first non-nuked entry in $allResults and then only bother with other entries on the same certificate number
+$relevantCertificateNumber = null;
+
 foreach ($allResults as $key=>$value) {
+    if (($relevantCertificateNumber != null) && ($relevantCertificateNumber != $value['certificate_number'])) {
+        continue;
+    }
+
     # Find the siblings
     list($siblings, $emails) = siblingsAndEmails($dbhandle, $value);
 
@@ -175,6 +181,8 @@ foreach ($allResults as $key=>$value) {
     $effectiveDateKey = "julianday(effective_date_fmt)";
     $myEffectiveDate = floatval($value[$effectiveDateKey]);
     $myRowID = intval($value["rowid"]);
+
+    $nukedSelf = false;
 
     # Check sibling effective dates, unset us if any sibling has a higher one
     foreach ($siblings as $sibling) {
@@ -190,6 +198,7 @@ foreach ($allResults as $key=>$value) {
                 if ($sibRowID > $myRowID) {
                     # Sibling is newer, nuke us.
                     unset($allResults[$key]);
+                    $nukedSelf = true;
                     break;
                 } else {
                     # Sibling is older, ignore it.
@@ -201,12 +210,14 @@ foreach ($allResults as $key=>$value) {
                 } elseif (strlen($sibling["last_reminder_date_fmt"]) > 0) {
                     # Sibling has been used for reminder emails, nuke me
                     unset($allResults[$key]);
+                    $nukedSelf = true;
                     break;
                 } else {
                     # Neither of us has been used for reminders. Use the most recent rowid.
                     if ($sibRowID > $myRowID) {
                         # Sibling is newer, nuke us.
                         unset($allResults[$key]);
+                        $nukedSelf = true;
                         break;
                     } else {
                         # Sibling is older, ignore it.
@@ -218,12 +229,19 @@ foreach ($allResults as $key=>$value) {
         } else {
             # The sibling has a newer effective date, nuke my entry.
             unset($allResults[$key]);
+            $nukedSelf = true;
             break;
+        }
+    }
+
+    if (is_null($_GET['slow'])) {
+        if (!$nukedSelf) {
+            $relevantCertificateNumber = $value['certificate_number'];
         }
     }
 }
 
-echo "After pruning by equivalent updated policies, there are about " . count($allResults) . " policies to process.<br />";
+echo "After pruning by equivalent updated policies, there are about " . count($allResults) . " policies to process. (This is an over-estimate. Precise numbers take too long to calculate.)<br />";
 
 reset($allResults); # Reset internal next pointer since we've removed some elements
 $firstKey = key($allResults);
@@ -253,7 +271,7 @@ foreach ($policiesOnSameCertificate as $eachPolicy) {
     if (!(count($emails) > 0)) {
         $emails = $eachEmails;
     }
-    $allSiblings = array_unique(array_merge($allSiblings, $siblings));
+    $allSiblings = array_merge($allSiblings, $siblings);
 }
 
 if (count($allSiblings) > 0) {
