@@ -9,7 +9,11 @@
 <?php
 require_once('db.php');
 
-function siblings($dbhandle, $individual) {
+$importantColumns = "rowid, expiration_date_fmt, effective_date_fmt, julianday(effective_date_fmt), last_reminder_date_fmt, certificate_number, certificate_status, certificate_type, primary_insured_name, insured_name, primary_email_address, other_email_address";
+
+function siblingsAndEmails($dbhandle, $individual) {
+    global $importantColumns;
+
     $siblings = array();
 
     # Find my email addresses based on what's in primary_email_address, other_email_address, and email addresses for my certificate_number
@@ -84,7 +88,7 @@ function siblings($dbhandle, $individual) {
         # given the actualCertNumbers, find the rows with that cert number and insured_name
         if (count($actualCertNumbers) > 0) {
             $actualCertNumbersString = "\"" . implode("\",\"", $actualCertNumbers) . "\"";
-            $query = "select rowid, expiration_date_fmt, effective_date_fmt, julianday(effective_date_fmt), last_reminder_date_fmt, certificate_number, certificate_status, primary_insured_name, insured_name, primary_email_address, other_email_address from policy where certificate_number in ($actualCertNumbersString) and insured_name = \"$myName\" and rowid != ".$individual["rowid"];
+            $query = "select $importantColumns from policy where certificate_number in ($actualCertNumbersString) and insured_name = \"$myName\" and rowid != ".$individual["rowid"];
 
             $result = sqlite_query($dbhandle, $query, $error);
             if (!$result) {
@@ -97,11 +101,23 @@ function siblings($dbhandle, $individual) {
         }
     }
 
-    return $siblings;
+    return array($siblings, array_keys($emailAddressMap));
 }
 
 $dbhandle = sqlite_open('/home1/taianfin/policy.db', 0666, $error);
 if (!$dbhandle) die ($error);
+
+if (!is_null($_POST['processedRows'])) {
+    $query = "update policy set last_reminder_date_fmt = strftime(\"%Y-%m-%d\", \"now\") where rowid in (".sqlite_escape_string($_POST['processedRows']).")";
+    echo "Query: $query<br />";
+    $ok = sqlite_exec($dbhandle, $query, $error);
+    if (!$ok) {
+        echo "Couldn't update processed rows $query. $error<br />\n";
+    } else {
+        $count = count(explode(",", $_POST['processedRows']));
+        echo "Processed $count rows.<br /><br />";
+    }
+}
 
 // People who need emails:
 // These are the people who will be expired between 20 days prior to today and 10 days from now (or before) who have:
@@ -110,7 +126,7 @@ if (!$dbhandle) die ($error);
 //   - They haven't been reminded since before the day before expiration
 //   AND
 //   - They've gotten a reminder and today is later than the day before expiration
-$soonToExpireQuery = "select distinct rowid, expiration_date_fmt, effective_date_fmt, julianday(effective_date_fmt), last_reminder_date_fmt, certificate_number, certificate_status, primary_insured_name, insured_name, primary_email_address, other_email_address from policy where julianday(expiration_date_fmt) >= julianday(\"now\", \"-20 days\") and julianday(expiration_date_fmt) <= julianday(\"now\", \"+10 days\") and ( (last_reminder_date_fmt IS NULL) or (length(last_reminder_date_fmt) = 0) or ( (julianday(last_reminder_date_fmt) < julianday(expiration_date_fmt, \"-1 day\")) AND (julianday(\"now\") >= julianday(expiration_date_fmt, \"-1 day\"))  )   )";
+$soonToExpireQuery = "select $importantColumns from policy where julianday(expiration_date_fmt) >= julianday(\"now\", \"-20 days\") and julianday(expiration_date_fmt) <= julianday(\"now\", \"+10 days\") and ( (last_reminder_date_fmt IS NULL) or (length(last_reminder_date_fmt) = 0) or ( (julianday(last_reminder_date_fmt) < julianday(expiration_date_fmt, \"-1 day\")) AND (julianday(\"now\") >= julianday(expiration_date_fmt, \"-1 day\"))  )   )";
 
 $result = sqlite_query($dbhandle, $soonToExpireQuery, $error);
 if (!$result) {
@@ -150,7 +166,7 @@ echo "After pruning by insured name, there are about " . count($allResults) . " 
 # To improve performance, I can find the first non-nuked entry in $allResults and then only bother with other entries on the same certificate number
 foreach ($allResults as $key=>$value) {
     # Find the siblings
-    $siblings = siblings($dbhandle, $value);
+    list($siblings, $emails) = siblingsAndEmails($dbhandle, $value);
 
     #echo "Siblings: <br />" . array2table($siblings);
 
@@ -212,24 +228,55 @@ echo "After pruning by equivalent updated policies, there are about " . count($a
 reset($allResults); # Reset internal next pointer since we've removed some elements
 $firstKey = key($allResults);
 
-# Find any others with the same certificate number
-# Find all other policies in our results with the same certificate number, then find all of their siblings
+$policy = $allResults[$firstKey];
 
-# Be able to get the email addresses out of siblings call.
+$policiesOnSameCertificate = array();
+
+foreach ($allResults as $key=>$value) {
+    if ($value["certificate_number"] == $policy["certificate_number"]) {
+        array_push($policiesOnSameCertificate, $value);
+    }
+}
+
 
 echo "<br />";
 
-$policy = $allResults[$firstKey];
-$siblings = siblings($policy);
-if (count($siblings) > 0) {
-    echo "Previous history: <br />";
-    echo array2table(siblings($policy));
-}
-echo "Policy due for a reminder:<br />";
-echo array2table(array($policy));
+$emails = null;
+$allSiblings = array();
+$rowNumbers = "";
+$comma = "";
+foreach ($policiesOnSameCertificate as $eachPolicy) {
+    $rowNumbers .= $comma . $eachPolicy["rowid"];
+    $comma = ",";
 
+    list($siblings, $eachEmails) = siblingsAndEmails($dbhandle, $eachPolicy);
+    if (!(count($emails) > 0)) {
+        $emails = $eachEmails;
+    }
+    $allSiblings = array_unique(array_merge($allSiblings, $siblings));
+}
+
+if (count($allSiblings) > 0) {
+    echo "Previous history: <br />";
+    echo array2table($allSiblings);
+}
+echo "Policies with the same certificate number due for a reminder:<br />";
+echo array2table($policiesOnSameCertificate);
+
+echo "Contact email addresses: " . implode(", ", $emails) . "<br />";
+
+# Display my suggestion for action and provide a "Mark as Processed" button
 # Go one at a time?
 # How to mark an entry as processed? Just set the date on it?
+
+    echo <<<END
+<br />
+<form name="importform" action="./reminders.php" method="post">
+<input type="hidden" name="processedRows" value="$rowNumbers">
+<input type="submit" value="Mark as Processed">
+</form>
+END;
+
 
 sqlite_close($dbhandle);
 
