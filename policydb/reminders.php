@@ -283,9 +283,7 @@ echo array2table($policiesOnSameCertificate);
 
 echo "Contact email addresses: " . implode(", ", $emails) . "<br />";
 
-# Display my suggestion for action and provide a "Mark as Processed" button
-# Go one at a time?
-# How to mark an entry as processed? Just set the date on it?
+# Suggest an email template and try to fill it in
 
     echo <<<END
 <br />
