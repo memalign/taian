@@ -291,9 +291,9 @@ END;
               startsWith($certificateNumber, "PPLA")) {
         if ($isAtLeastMonth) {
             if ($tooLateToRenew) {
-                $renewEmail = $longTravelRenew;
-            } else {
                 $renewEmail = $travelExpiresToday;
+            } else {
+                $renewEmail = $longTravelRenew;
             }
         } else {
             $renewEmail = $shortTravelRebuy;
@@ -347,7 +347,10 @@ while ($row = sqlite_fetch_array($result, SQLITE_ASSOC)) {
     array_push($allResults, $row);
 }
 
-
+$requestedSkips = intval($_POST['requestedSkips']);
+if ($requestedSkips > 0) {
+    echo "You have requested to skip $requestedSkips polic".($requestedSkips == 1 ? "y" : "ies").".<br />";
+}
 echo "There are about " . count($allResults) . " policies to process.<br />";
 
 # Prune ones that are no longer relevant - "CANCELLED TO INCEPTION", "DECLINED, PAYMENT", "SOLD, PART TERMINATED", "PENDNG RENEWAL"
@@ -370,9 +373,11 @@ foreach ($allResults as $key=>$value) {
 
 echo "After pruning by insured name, there are about " . count($allResults) . " policies to process.<br />";
 
+
 # Prune ones with a newer effective date for the same person - find the siblings and check their effective date.
 # To improve performance, I can find the first non-nuked entry in $allResults and then only bother with other entries on the same certificate number
 $relevantCertificateNumber = null;
+$skipCount = 0;
 
 foreach ($allResults as $key=>$value) {
     if (($relevantCertificateNumber != null) && ($relevantCertificateNumber != $value['certificate_number'])) {
@@ -444,7 +449,12 @@ foreach ($allResults as $key=>$value) {
 
     if (is_null($_GET['slow'])) {
         if (!$nukedSelf) {
-            $relevantCertificateNumber = $value['certificate_number'];
+            if ($skipCount >= $requestedSkips) {
+                $relevantCertificateNumber = $value['certificate_number'];
+            } else {
+                $skipCount++;
+                unset($allResults[$key]);
+            }
         }
     }
 }
@@ -489,12 +499,18 @@ if (count($allSiblings) > 0) {
 echo "Policies with the same certificate number due for a reminder:<br />";
 echo array2table($policiesOnSameCertificate);
 
+$nextSkipCount = $requestedSkips + 1;
 
     echo <<<END
 <br />
 <form name="importform" action="./reminders.php" method="post">
 <input type="hidden" name="processedRows" value="$rowNumbers">
+<input type="hidden" name="requestedSkips" value="$requestedSkips">
 <input type="submit" value="Mark as Processed">
+</form>
+<form name="skipform" action="./reminders.php" method="post">
+<input type="hidden" name="requestedSkips" value="$nextSkipCount">
+<input type="submit" value="Skip">
 </form>
 END;
 
@@ -503,9 +519,8 @@ END;
 $emailTemplate = emailTemplateForIndividuals($policiesOnSameCertificate);
 
 echo "Copy and paste this email:<br />";
-echo "Contact email addresses: " . implode(", ", $emails) . "<br />";
-
 echo "<div id='faketextarea' style='border: 1px solid black; width:900px; overflow:auto' contenteditable>";
+echo implode(", ", $emails) . "<br />";
 echo nl2br($emailTemplate);
 echo "</div>";
 
