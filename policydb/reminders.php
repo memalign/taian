@@ -289,14 +289,14 @@ END;
     } elseif (startsWith($certificateNumber, "PATA") ||
               startsWith($certificateNumber, "PATI") ||
               startsWith($certificateNumber, "PPLA")) {
-        if ($isAtLeastMonth) {
-            if ($tooLateToRenew) {
-                $renewEmail = $travelExpiresToday;
-            } else {
-                $renewEmail = $longTravelRenew;
-            }
+        if ($tooLateToRenew) {
+            $renewEmail = $travelExpiresToday;
         } else {
-            $renewEmail = $shortTravelRebuy;
+             if ($isAtLeastMonth) {
+                  $renewEmail = $longTravelRenew;
+             } else {
+                  $renewEmail = $shortTravelRebuy;
+             }
         }
     }
 
