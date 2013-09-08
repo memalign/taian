@@ -241,13 +241,38 @@ function getPartnership(partner) {
                     internationalStudentContent: function () {
                         startRow();
                         writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Pittsburgh enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Pittsburgh as proof of insurance.");
+                        writeText("Enrolled students are required to attest that they have coverage at the beginning of each fall semester.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Pittsburgh Scholar Requirements", "http://www.ois.pitt.edu/immigration-related-stuff/health-insurance/#nonstudent"),
-                                makeURL("University of Pittsburgh Student Requirements", "http://www.ois.pitt.edu/immigration-related-stuff/health-insurance/#student")                        
+                                makeURL("University of Pittsburgh Student Requirements", "http://www.ois.pitt.edu/immigration-related-stuff/health-insurance/#student"),  
+                                makeURL("Student attestation", " https://my.pitt.edu/")                                
                                 ]));
                         endRow();
                     }
               }, 
+              
+         hawaii: {
+                    windowTitle: "TaiAn Health Insurance for University of Hawaii",
+                    pageTitle: "TaiAn Health Insurance for University of Hawaii",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Hawaii standards for F visa and J visa  standards. J visa holders (enrolled students or visiting scholars) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Hawaii as proof of insurance.  J students have their insurance approved by ISS.");
+                        writeText("University of Hawaii F visa student insurance is approved by Student Health Insurance Office.  F visa holders have required coverage as follows: 1. Medical benefits of $100,000 per accident or illness; 2. Coinsurance coverage of 75% or more and mental nervous benefits ; 3.Repatriation of remains of $7,500; 4. Medical evacuation of $10,000; 5. Deductible not over $500; 6. Pre-existing waiting period not over 6 months.  Plan A is the most affordable plan that meets the standards. You need to select the optional rider for a 6 month pre-existing condition waiting period.");                        
+                        writeText("We can assist with the forms required for each visa.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("University of Hawaii J scholar", "http://www.hawaii.edu/fsis/downloads/JHealthComplianceForm.pdf"),
+                                makeURL("University of Hawaii F or J student", "http://www.hawaii.edu/issmanoa/pages/home/health-insurance.php")                        
+                                ]));
+                        endRow();
+                    }
+              },               
               
          unc: {
                     windowTitle: "TaiAn Health Insurance for University of North Carolina",
@@ -1254,6 +1279,26 @@ function getPartnership(partner) {
                     }
               }, 
 
+        utah: {
+                    windowTitle: "TaiAn Health Insurance for University of Utah",
+                    pageTitle: "TaiAn Health Insurance for University of Utah",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Utah J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Utah as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("University of Utah Scholar Requirements", "http://ic.utah.edu/scholars/family-dependents/health.php")                        
+                                ]));
+                        endRow();
+                    }
+              },              
+              
         uva: {
                     windowTitle: "TaiAn Health Insurance for University of Virginia",
                     pageTitle: "TaiAn Health Insurance for University of Virginia",
@@ -1648,11 +1693,22 @@ function getPartnership(partner) {
                             "pivot-global-medical",
                             "pivot-travel-insurance"
                           ],
+
+                    travelStudentContent: function () {
+                        startRow();
+                        writeText("UIUC enrolled international students are required to carry: 1. $500,000 per illness or injury; 2. Not over $2,000 deductible; 3. Plan must be effective by the first day UIUC plan is effective. Students are also required to complete an on line waiver.  The last acceptable effective date for spring semester is January 18, 2014.  Taian Travel Plan with $500,000 per illness or injury and $1,000 deductible is the most affordable plan that meets the standard.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("UIUC Student Requirements", "http://www.si.uiuc.edu/Default.aspx?tabid=64")                         
+
+                                ]));
+                        endRow();
+                    },
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UIUC enrolled international student standards and J scholar standards.  Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UIUC as proof of insurance.");
-                        writeText("Enrolled international students are required to carry $200,000 per illness or injury and complete a waiver. Taian Scholar/Student Insurance Plan B with $250,000 benefit per illness or injury is the most affordable plan that meets the standards.");
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UIUC J scholar standards. Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UIUC as proof of insurance.");
+                        writeText("UIUC enrolled international students are required to carry: 1. $500,000 per illness or injury; 2. Not over $2,000 deductible; 3. Plan must be effective by the first day UIUC plan is effective. Students are also required to complete an on line waiver.  The last acceptable effective date for spring semester is January 18, 2014.  Taian Travel Plan with $500,000 per illness or injury and $1,000 deductible is the most affordable plan that meets the standard.  Please click on the travel tab on the top of the page.");
+                        writeText("Scholars look at Plan B below.  Students please click on Travel Insurance tab at top of page. The travel plan is the most affordable plan that meets your requirements.");                        
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("UIUC Student Requirements", "http://www.si.uiuc.edu/Default.aspx?tabid=64"),
                                 makeURL("UIUC Scholar Requirements", "http://isss.illinois.edu/download_forms/handbooks/j1_prog_handbook.pdf")                                

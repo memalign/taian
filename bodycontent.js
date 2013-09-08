@@ -118,7 +118,17 @@ function showPivot(pivotName) {
         gcnuva: "l=cn&partner=uva&p=pivot-international-student&adid=gcnuva",
         guva: "l=en&partner=uva&p=pivot-international-student&adid=guva",
         acnuva: "l=cn&partner=uva&p=pivot-international-student&adid=acnuva",  
-        iuva: "l=en&partner=uva&p=pivot-international-student",             
+        iuva: "l=en&partner=uva&p=pivot-international-student",
+        icnuva: "l=cn&partner=uva&p=pivot-international-student",
+        
+        utah: "l=en&partner=utah&p=pivot-home&adid=sutah",
+        cnutah: "l=cn&partner=utah&p=pivot-home&adid=scnutah",   
+        gcnutah: "l=cn&partner=utah&p=pivot-international-student&adid=gcnutah",
+        gutah: "l=en&partner=utah&p=pivot-international-student&adid=gutah",
+        acnutah: "l=cn&partner=utah&p=pivot-international-student&adid=acnutah",  
+        iutah: "l=en&partner=utah&p=pivot-international-student",        
+        icnutah: "l=cn&partner=utah&p=pivot-international-student",
+        
         uom: "l=en&partner=uom&p=pivot-home&adid=suom",
         cnuom: "l=cn&partner=uom&p=pivot-home&adid=scnuom",   
         gcnuom: "l=cn&partner=uom&p=pivot-international-student&adid=gcnuom",
@@ -318,15 +328,13 @@ function showPivot(pivotName) {
         ggeorgetown: "l=en&partner=georgetown&p=pivot-international-student&adid=ggeorgetown",
         acngeorgetown: "l=cn&partner=georgetown&p=pivot-international-student&adid=acngeorgetown", 
         igeorgetown: "l=en&partner=georgetown&p=pivot-international-student", 
-
         nd: "l=en&partner=nd&p=pivot-home&adid=snd",
         cnnd: "l=cn&partner=nd&p=pivot-home&adid=scnnd",   
         gcnnd: "l=cn&partner=nd&p=pivot-international-student&adid=gcnnd",
         gnd: "l=en&partner=nd&p=pivot-international-student&adid=gnd",
         acnnd: "l=cn&partner=nd&p=pivot-international-student&adid=acnnd", 
         ind: "l=en&partner=nd&p=pivot-international-student",
-        icnnd: "l=cn&partner=nd&p=pivot-international-student",        
-        
+        icnnd: "l=cn&partner=nd&p=pivot-international-student",                
         utoledo: "l=en&partner=utoledo&p=pivot-home&adid=sutoledo",
         cnutoledo: "l=cn&partner=utoledo&p=pivot-home&adid=scnutoledo",   
         gcnutoledo: "l=cn&partner=utoledo&p=pivot-international-student&adid=gcnutoledo",
@@ -334,7 +342,6 @@ function showPivot(pivotName) {
         acnutoledo: "l=cn&partner=utoledo&p=pivot-international-student&adid=acnutoledo", 
         iutoledo: "l=en&partner=utoledo&p=pivot-international-student",
         icnutoledo: "l=cn&partner=utoledo&p=pivot-international-student",  
-
         ucincinnati: "l=en&partner=ucincinnati&p=pivot-home&adid=sucincinnati",
         cnucincinnati: "l=cn&partner=ucincinnati&p=pivot-home&adid=scnucincinnati",   
         gcnucincinnati: "l=cn&partner=ucincinnati&p=pivot-international-student&adid=gcnucincinnati",
@@ -342,7 +349,6 @@ function showPivot(pivotName) {
         acnucincinnati: "l=cn&partner=ucincinnati&p=pivot-international-student&adid=acnucincinnati", 
         iucincinnati: "l=en&partner=ucincinnati&p=pivot-international-student",
         icnucincinnati: "l=cn&partner=ucincinnati&p=pivot-international-student",    
-
         umb: "l=en&partner=umb&p=pivot-home&adid=sumb",
         cnumb: "l=cn&partner=umb&p=pivot-home&adid=scnumb",   
         gcnumb: "l=cn&partner=umb&p=pivot-international-student&adid=gcnumb",
@@ -350,7 +356,6 @@ function showPivot(pivotName) {
         acnumb: "l=cn&partner=umb&p=pivot-international-student&adid=acnumb", 
         iumb: "l=en&partner=umb&p=pivot-international-student",
         icnumb: "l=cn&partner=umb&p=pivot-international-student",          
-
         usf: "l=en&partner=usf&p=pivot-home&adid=susf",
         cnusf: "l=cn&partner=usf&p=pivot-home&adid=scnusf",   
         gcnusf: "l=cn&partner=usf&p=pivot-international-student&adid=gcnusf",
@@ -358,7 +363,6 @@ function showPivot(pivotName) {
         acnusf: "l=cn&partner=usf&p=pivot-international-student&adid=acnusf", 
         iusf: "l=en&partner=usf&p=pivot-international-student",
         icnusf: "l=cn&partner=usf&p=pivot-international-student",   
-
         dartmouth: "l=en&partner=dartmouth&p=pivot-home&adid=sdartmouth",
         cndartmouth: "l=cn&partner=dartmouth&p=pivot-home&adid=scndartmouth",   
         gcndartmouth: "l=cn&partner=dartmouth&p=pivot-international-student&adid=gcndartmouth",
@@ -366,7 +370,6 @@ function showPivot(pivotName) {
         acndartmouth: "l=cn&partner=dartmouth&p=pivot-international-student&adid=acndartmouth", 
         idartmouth: "l=en&partner=dartmouth&p=pivot-international-student",
         icndartmouth: "l=cn&partner=dartmouth&p=pivot-international-student",  
-
         vcu: "l=en&partner=vcu&p=pivot-home&adid=svcu",
         cnvcu: "l=cn&partner=vcu&p=pivot-home&adid=scnvcu",   
         gcnvcu: "l=cn&partner=vcu&p=pivot-international-student&adid=gcnvcu",
@@ -374,7 +377,6 @@ function showPivot(pivotName) {
         acnvcu: "l=cn&partner=vcu&p=pivot-international-student&adid=acnvcu", 
         ivcu: "l=en&partner=vcu&p=pivot-international-student",
         icnvcu: "l=cn&partner=vcu&p=pivot-international-student",
-
         murraystate: "l=en&partner=murraystate&p=pivot-home&adid=smurraystate",
         cnmurraystate: "l=cn&partner=murraystate&p=pivot-home&adid=scnmurraystate",   
         gcnmurraystate: "l=cn&partner=murraystate&p=pivot-international-student&adid=gcnmurraystate",
@@ -382,6 +384,14 @@ function showPivot(pivotName) {
         acnmurraystate: "l=cn&partner=murraystate&p=pivot-international-student&adid=acnmurraystate", 
         imurraystate: "l=en&partner=murraystate&p=pivot-international-student",
         icnmurraystate: "l=cn&partner=murraystate&p=pivot-international-student",        
+
+        hawaii: "l=en&partner=hawaii&p=pivot-home&adid=shawaii",
+        cnhawaii: "l=cn&partner=hawaii&p=pivot-home&adid=scnhawaii",   
+        gcnhawaii: "l=cn&partner=hawaii&p=pivot-international-student&adid=gcnhawaii",
+        ghawaii: "l=en&partner=hawaii&p=pivot-international-student&adid=ghawaii",
+        acnhawaii: "l=cn&partner=hawaii&p=pivot-international-student&adid=acnhawaii", 
+        ihawaii: "l=en&partner=hawaii&p=pivot-international-student",
+        icnhawaii: "l=cn&partner=hawaii&p=pivot-international-student",
         
         musc: "l=en&partner=musc&p=pivot-home&adid=smusc",
         cnmusc: "l=cn&partner=musc&p=pivot-home&adid=scnmusc",   
@@ -496,29 +506,25 @@ function showPivot(pivotName) {
         gcnharvard: "l=cn&partner=harvard&p=pivot-international-student&adid=gcnharvard",
         acnharvard: "l=cn&partner=harvard&p=pivot-international-student&adid=acnharvard",        
         gharvard: "l=en&partner=harvard&p=pivot-international-student&adid=gharvard",
-        iharvard: "l=en&partner=harvard&p=pivot-international-student",
-        
+        iharvard: "l=en&partner=harvard&p=pivot-international-student",        
         uta: "l=en&partner=uta&p=pivot-home&adid=suta",
         cnuta: "l=cn&partner=uta&p=pivot-home&adid=scnuta",   
         gcnuta: "l=cn&partner=uta&p=pivot-international-student&adid=gcnuta",
         acnuta: "l=cn&partner=uta&p=pivot-international-student&adid=acnuta",        
         guta: "l=en&partner=uta&p=pivot-international-student&adid=guta",
         iuta: "l=en&partner=uta&p=pivot-international-student",
-
         gsu: "l=en&partner=gsu&p=pivot-home&adid=sgsu",
         cngsu: "l=cn&partner=gsu&p=pivot-home&adid=scngsu",   
         gcngsu: "l=cn&partner=gsu&p=pivot-international-student&adid=gcngsu",
         acngsu: "l=cn&partner=gsu&p=pivot-international-student&adid=acngsu",        
         ggsu: "l=en&partner=gsu&p=pivot-international-student&adid=ggsu",
         igsu: "l=en&partner=gsu&p=pivot-international-student",
-
         msstate: "l=en&partner=msstate&p=pivot-home&adid=smsstate",
         cnmsstate: "l=cn&partner=msstate&p=pivot-home&adid=scnmsstate",   
         gcnmsstate: "l=cn&partner=msstate&p=pivot-international-student&adid=gcnmsstate",
         acnmsstate: "l=cn&partner=msstate&p=pivot-international-student&adid=acnmsstate",        
         gmsstate: "l=en&partner=msstate&p=pivot-international-student&adid=gmsstate",
-        imsstate: "l=en&partner=msstate&p=pivot-international-student",        
-        
+        imsstate: "l=en&partner=msstate&p=pivot-international-student",                
         bu: "l=en&partner=bu&p=pivot-home&adid=sbu",
         cnbu: "l=cn&partner=bu&p=pivot-home&adid=scnbu",   
         gcnbu: "l=cn&partner=bu&p=pivot-international-student&adid=gcnbu",
@@ -1673,7 +1679,8 @@ function writePatriotTravelTable() {
                     "Trip cancellation, travel delay and baggage delay benefits available",
                     "Universal Rx pharmacy discount savings",
                     "24 hour secure access from anywhere in the world to manage your account at any time",
-                    "Groups of 5 or more can purchase Patriot Travel Group offering at a lower price"
+                    "Groups of 5 or more can purchase Patriot Travel Group offering at a lower price",
+                    "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays."
                     ]),
 
 
@@ -2162,9 +2169,14 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Health insurance for University of Georgia Scholars", "http://taianfinancial.com/#iuga"),
                 
                 makeURL("University of Hawaii - Manoa (HI)", "http://www.uhm.hawaii.edu/"),
-                makeURL("School F1 requirement", "http://www.hawaii.edu/shs/international.html"),
-                makeURL("School J1 requirement", "http://www.hawaii.edu/fsis/downloads/JHealthComplianceForm.pdf"),
-                makeURL("Plan that meets this school's standards for J scholar", "http://taianfinancial.com/#usdos"),
+                makeURL("School F1 requirement", "http://www.hawaii.edu/issmanoa/pages/home/health-insurance.php"),
+                    makeBulletedListWithTitle("", [
+                        makeURL("J1 student requirement", 
+                        "http://www.hawaii.edu/issmanoa/pages/home/health-insurance.php"),
+                        makeURL("J1 scholar requirement", 
+                        "http://www.hawaii.edu/fsis/downloads/JHealthComplianceForm.pdf")
+                        ]),  
+                makeURL("Health Insurance for University of Hawaii Students and Scholars", "http://taianfinancial.com/#ihawaii"),
                 
                 makeURL("University of Houston (TX)", "http://www.uh.edu/"),
                 makeURL("School F1 requirement", "http://www.issso.uh.edu/pdf/HealthInsuranceRequirementsforNon-ImmigrantInternationalStudentsFall2011.pdf"),
@@ -2357,9 +2369,9 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Health insurance for University of Toledo Students and Scholars", "http://taianfinancial.com/#iutoledo"),                
                 
                 makeURL("University of Utah (UT)", "http://www.utah.edu/"),
-                makeURL("School F1 requirement", "http://studenthealth.utah.edu/pdfs/INTERNATIONALSTUDENTFrontpageformfield.pdf"),
-                makeURL("School J1 requirement", "http://studenthealth.utah.edu/pdfs/INTERNATIONALSTUDENTFrontpageformfield.pdf"),
-                makeURL("Plan that meets this school's standards for J scholar", "http://taianfinancial.com/#usdos"),
+                makeURL("School F1 requirement", "http://studenthealth.utah.edu/services/international.htm"),
+                makeURL("School J1 requirement", "http://ic.utah.edu/scholars/family-dependents/health.php"),
+                makeURL("Health insurance for University of Utah Scholars", "http://taianfinancial.com/#iutah"),
                 
                 makeURL("University of Vermont (VT)", "http://www.uvm.edu/"),
                 makeURL("School F1 requirement", "http://www.uvm.edu/~CHWB/insurance/?Page=mandatory.html"),
@@ -2586,6 +2598,7 @@ function writeSections(legacy) {
                 makeBulletedListWithTitle("", [
                         "Maternity covered if you are not pregnant when you purchase.",
                         "Routine Nursery Care: $750 maximum per period of coverage",
+                        "Newborn care is covered for 31 days after birth if the birth is covered under the plan.",                        
                         "Emergency Room: Injury: URC; Illness resulting in hospitalization: URC; Illness without hospitalization: Subject to addtional $250 deductible",
                         "Physical Therapy: URC -limit once per day",
                         "Local Ambulance: Per injury up to $350, Per illness only if admitted in-patient up to $350",
@@ -2593,7 +2606,10 @@ function writeSections(legacy) {
                         "Intercollegiate/Interscholastic/intramural or club sports: $5,000 per injury/illness medical expenses only",
                         "Incidental home country coverage: up to cumulative two weeks",
                         "Terrorism coverage: up to 50,000 lifetime maximum",
-                        "Dependents can only purchase when the student purchases"
+                        "Dependents can only purchase when the student purchases",
+                        "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays.",                        
+                        "Optional benefit change in Florida, Hawaii, Idaho, Massachusetts to shorten the preexisting condition exclusion from 12 months to 6 months.",
+                        "With 6 month preexisting condition benefit change there is a 10 month wait for maternity benefits."                        
                         ]),
 
 
@@ -2616,7 +2632,8 @@ function writeSections(legacy) {
                         "F2/J2 can buy Patriot Exchange alone (if F1/J1 buys schools plan) or buy with F1/J1",                        
                         "Patriot Exchange Group plan available for groups of 2 or more",
                         "Patriot Exchange Basic Plan available at a lower cost (may not meet your visa requirements - ask us!)",
-                        "Other available options include: travel protection for baggage and valuables, legal assistance, personal liability coverage, adventure sports coverage"
+                        "Other available options include: travel protection for baggage and valuables, legal assistance, personal liability coverage, adventure sports coverage",
+                        "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays."
                         ]),
 
                 "Full Brochures", 
@@ -2754,6 +2771,7 @@ function writeSections(legacy) {
                 "Plan Highlights",
                 makeBulletedListWithTitle("", [
                         "Routine Nursery Care: $750 maximum per period of coverage",
+                        "Newborn care is covered for 31 days after birth if the birth is covered under the plan.",                        
                         "Emergency Room: Injury: URC; Illness resulting in hospitalization: URC; Illness without hospitalization: Subject to addtional $250 deductible",
                         "Physical Therapy: URC -limit once per day",
                         "Local Ambulance: Per injury up to $350, Per illness only if admitted in-patient up to $350",
@@ -2761,7 +2779,10 @@ function writeSections(legacy) {
                         "Intercollegiate/Interscholastic/intramural or club sports: $5,000 per injury/illness medical expenses only",
                         "Incidental home country coverage: up to cumulative two weeks",
                         "Terrorism coverage: up to 50,000 lifetime maximum",
-                        "Dependents can only purchase when the student purchases"
+                        "Dependents can only purchase when the student purchases",
+                        "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays.",
+                        "Optional benefit change in Florida, Hawaii, Idaho, Massachusetts to shorten the preexisting condition exclusion from 12 months to 6 months.",
+                        "With 6 month preexisting condition benefit change there is a 10 month wait for maternity benefits."
                         ]),
 
 
@@ -2783,7 +2804,8 @@ function writeSections(legacy) {
                         "J2 can buy Patriot Exchange alone (if J1 buys schools plan) or buy with J1",                        
                         "Patriot Exchange Group plan available for groups of 2 or more",
                         "Patriot Exchange Basic Plan available at a lower cost (may not meet your visa requirements - ask us!)",
-                        "Other available options include: travel protection for baggage and valuables, legal assistance, personal liability coverage, adventure sports coverage"
+                        "Other available options include: travel protection for baggage and valuables, legal assistance, personal liability coverage, adventure sports coverage",
+                        "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays."
                         ]),
 
                 "Full Brochures", 
@@ -2963,7 +2985,8 @@ function writeSections(legacy) {
                         "Emergency Medical Evacuation and other evacuation benefits",
                         "Medical Concierge Program",
                         "Medical professionals to coordinate your care",
-                        "24 hour access to information"
+                        "24 hour access to information",
+                        "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays."                        
                         ]),
 
                 "Who the plan is designed for",
