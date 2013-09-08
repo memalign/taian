@@ -15,7 +15,7 @@ function getPageAttributes() {
     // Defaults
     // Language
     if (!map["l"] || map["l"].length <= 0) {
-        map["l"] = "en";
+        map["l"] = "cn";
     }
 
     // Page

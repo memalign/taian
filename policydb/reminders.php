@@ -387,7 +387,8 @@ foreach ($allResults as $key=>$value) {
     # Find the siblings
     list($siblings, $emails) = siblingsAndEmails($dbhandle, $value);
 
-    #echo "Siblings: <br />" . array2table($siblings);
+    if ($_GET['debug'])
+        echo "Siblings of ".$value["certificate_number"]." (exp: ".$value["expiration_date"]."): <br />" . array2table($siblings);
 
     $epsilon = 0.0001;
 
