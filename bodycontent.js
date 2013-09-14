@@ -15,7 +15,7 @@ function getPageAttributes() {
     // Defaults
     // Language
     if (!map["l"] || map["l"].length <= 0) {
-        map["l"] = "cn";
+        map["l"] = "en";
     }
 
     // Page
@@ -94,7 +94,8 @@ function showPivot(pivotName) {
 
     var referrals = {
         cn1: "l=cn&p=pivot-school-waiver",
-        cn2: "l=cn&p=pivot-school-waiver",        
+        cn2: "l=cn&p=pivot-school-waiver", 
+        emuch: "l=cn&p=pivot-school-waiver&adid=emuch",        
         jhu: "l=en&partner=jhu&p=pivot-home&adid=sjhu",
         cnjhu: "l=cn&partner=jhu&p=pivot-home&adid=scnjhu",   
         gcnjhu: "l=cn&partner=jhu&p=pivot-international-student&adid=gcnjhu",
@@ -484,9 +485,11 @@ function showPivot(pivotName) {
         acncolumbia: "l=cn&partner=columbia&p=pivot-international-student&adid=acncol",        
         ucla: "l=en&partner=ucla&p=pivot-home&adid=sucla",
         cnucla: "l=cn&partner=ucla&p=pivot-home&adid=scnucla",   
-        gcnucla: "l=cn&partner=ucla&p=pivot-international-student&adid=gcnucla",
-        acnucla: "l=cn&partner=ucla&p=pivot-international-student&adid=acnucla",        
-        gucla: "l=en&partner=ucla&p=pivot-international-student&adid=gucla",
+        gcnucla: "l=cn&partner=ucla&p=pivot-j-scholar&adid=gcnucla",
+        acnucla: "l=cn&partner=ucla&p=pivot-j-scholar&adid=acnucla",        
+        gucla: "l=en&partner=ucla&p=pivot-j-scholar&adid=gucla",
+        iucla: "l=en&partner=ucla&p=pivot-j-scholar",        
+        icnucla: "l=cn&partner=ucla&p=pivot-j-scholar",        
         uclaj: "l=cn&partner=uclaj&p=pivot-international-student&adid=uclaj",  
         uclajs: "l=cn&partner=uclajs&p=pivot-international-student&adid=uclajs",        
         ucdav: "l=en&partner=ucdav&p=pivot-home&adid=sucdav",
@@ -1614,6 +1617,7 @@ function writeTabs() {
     var topLevelNames = { "pivot-home": "Home",
                           "pivot-international-student": "International Scholar/Student",
                           "pivot-international-scholar": "International Scholar",
+                          "pivot-j-scholar": "J Scholar",                          
                           "pivot-global-medical": "Global Medical",
                           "pivot-travel-insurance": "Travel Insurance",
                           "pivot-indiana-residents": "Indiana Residents",
@@ -2678,6 +2682,111 @@ function writeSections(legacy) {
     endSection();
 
     
+    // J Scholar
+    startSection("pivot-j-scholar", "J Scholar");
+
+    var partnerShip = getPartnership(getPageAttribute("partner"));
+    var jScholarPartnerContent = partnerShip["jScholarContent"];
+    var hasISPartnerContent = !(typeof jScholarPartnerContent === "undefined")
+    if (hasISPartnerContent) {
+        jScholarPartnerContent();
+    }
+
+    startRow();
+    writeText(makePivotURL("pivot-school-waiver", "Requirements for all schools for F and J visa"));
+    endRow();
+   
+    startRow();
+    writeText(makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/"));
+    endRow(); 
+
+
+
+    startRow();
+
+    writeText("Call from US: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English), Call from China: 950-4044-2336 (Chinese, Beijing time 7-11am, no long distance charges), Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>");
+    document.write(makeTable(3, [
+                "Taian Travel Insurance",
+                makeRawURL("Patriot America For non-US citizens traveling internationally", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+                makeRawURL("Patriot International For US citizens traveling outside  home country", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+                "Lifetime maximum", "$50,000, $100,000, $500,000, $1,000,000", "$50,000, $100,000, $500,000, $1,000,000", 
+                "Term", "5 days to 2 years", "5 days to 2 years", 
+                "Deductible", "$0, $100, $250, $500, $1,000, $2,500", "$0, $100, $250, $500, $1,000, $2,500", 
+                "Coinsurance", "In-PPO 90% to $5,000, then 100%<br />Out-PPO, 80% to $5,000 then 100%", "No coinsurance outside of U.S.",
+                "Intensive care unit", "Up to the Maximum", "Up to the Maximum",
+                "Hospitalization / room & board", "Up to the Max for average semi-private room rate", "Up to the Maximum for average semi-private room rate",
+                "Hospital Daily Indemnity", "$100 per day.  10 day maximum.", "$100 per day.  10 day maximum.",
+                "Prescription Drugs", "Up to the Maximum", "Up to the Maximum",
+                "Emergency Room", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization",
+                "Local Ambulance", "Up to the Maximum", "Up to the Maximum",
+                "Accidental Dental Injury", "Up to the Maximum", "Up to the Maximum",
+                "Sport & Activities Coverage", "Up to the Maximum for basic sports", "Up to the Maximum for basic sports",
+                "Trip Interruption", "Up to $5,000", "Up to $5,000", 
+                "Accidental Death & Dismemberment", "$25,000 principal sum", "$25,000 principal sum", 
+                "Emergency Medical Evacuation", "$500,000", "$500,000", 
+                "Repatriation of remains", "$50,000", "$50,000", 
+                "Pre-existing conditions", "Up to $50,000 coverage ($2,500 for over 65 years old) for sudden and unexpected recurrence. Otherwise not covered.", "Up to policy limit for sudden and unexpected recurrence if covered by domestic health policy ($2,500 for over 65 years old). Up to $20,000 if not covered by domestic policy.",
+
+
+                "",
+                makeBuyURL("Buy Patriot Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+                makeBuyURL("Buy Patriot Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot?imgac=80000699")
+
+                ]));
+    endRow();
+
+    startRow();
+    writeText("");
+    endRow();
+    
+    startRow();
+    writeText("More about Patriot Travel");
+    endRow();
+    
+    startRow();
+    writePatriotTravelTable();
+    endRow();
+
+
+
+
+
+
+
+
+
+    startRow();
+    writeText("");
+    endRow();
+
+    startRow();
+    writeText("Why do I need travel medical insurance?");
+    endRow();
+
+    startRow();
+    document.write(makeTableWithStyle("invisibleTableNormalText", 3, [
+                makeText(makeBold("Most medical insurance coverage will not provide benefits in a different country.")+ " "+ loc("If you are a US citizen, your passport says, \"Health Insurance: Medical costs abroad can be extremely expensive. Does your insurance apply overseas, including medical evacuation, payment to the overseas hospital or doctor, or reimbursement to you later?.....Medicare/Medicaid does not cover healthcare costs outside the US.\"")),
+                makeText(makeBold("Medical Evacuation is an important benefit.") + " " + loc("Maybe you are visiting a part of the world with a lesser developed healthcare system. You planned ahead and had your travel vaccines before you left, but what if you get injured on your trip? You might need to be evacuated to an adequate hospital. A medical evacuation benefit will provide what you need.")),
+                makeText(makeBold("Trip cancellation, lost baggage, travel delay benefits.")+ " " + loc("You spent a year planning for and saving for your trip. Now, you arrive at the airport for a connecting flight and the flight is cancelled. You don’t need a health insurance benefit, but you sure could use a travel insurance benefit. Help cover your costs for unforeseen travel problems with the right travel insurance coverage for you."))
+                ]));
+    endRow();
+
+    startRow();
+    writeText("");
+    document.write(makeBulletedListWithTitle("Travel Tips", [
+                loc("Visit") + " " + makeURL("CDC (Center for Disease Control)", "http://www.cdc.gov/") + " " + loc(" to learn about travel vaccine recommendations. They provide an up to date list by country of which travel vaccinations are required or recommended. They also provide up to date health information by location. Did you know a vaccine booster for Polio is recommended for travel to some locations? Also, the vaccines for Hepatitis A and B are good for life – be safe once now and you are covered forever! Once you have your passport health care preparations are critical."),
+                loc("Travel visa requirements depend on the country you are visiting. A US citizen might need a visa depending on where they are going. A visitor to the United States might need a visa depending on the nature of their visit. For details see the") + " " + makeURL("State Department website", "http://travel.state.gov/visa/visa_1750.html") + "."
+                ]));
+    endRow();
+
+    writeDontSeeWhatYouNeedRow();
+
+    endSection();
+ 
+
+   
+   
     // International Scholar
     startSection("pivot-international-scholar", "International Scholar");
 
@@ -2850,6 +2959,8 @@ function writeSections(legacy) {
     endSection();
     
 
+    
+    
     // Global Medical
     //
     startSection("pivot-global-medical", "Global Medical");

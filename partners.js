@@ -1824,20 +1824,76 @@ function getPartnership(partner) {
                     tabs: [
                             "pivot-home",
                             "pivot-international-student",
+                            "pivot-j-scholar",                            
                             "pivot-global-medical",
                             "pivot-travel-insurance"
                           ],
-                    internationalStudentContent: function () {
+                    jScholarContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UCLA J scholar standards. Some scholars are required to have coverage of $100,000 per illness or injury and the waiver is approved by VSISP/Garnett-Powers. This requirement is met by Taian Scholar/Student Plan A or Plan B with $250,000 benefit per illness or injury.  Other scholars have the waiver approved at the Dashew Center for International Students and Scholars.  They are required to have coverage of $50,000 per illness or injury. This requirement is met by Taian Scholar/Student Plan B with $50,000 benefit per illness or injury. Each of these requirements meets the US Department of State standards. You can check your required coverage level at the link below.");
-                        writeText("");
-                         writeText("A few minutes after submitting an application, you will receive a confirmation letter of your coverage which you can send to UCLA to waive the school mandatory plan.");                       
+                        writeText("J-1 scholars including visiting scholars, visiting graduate researchers or non-degree students at UCLA (other than those visitors described below) are required to enroll OR opt out of the Visiting Scholar Injury and Sickness Insurance Plan (VSISP) through Garnett-Powers & Associates. To waive VSISP plan, J-1 scholars are required to show proof of health insurance with the following minimum coverage:");
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("UCLA Scholar Requirements", "http://www.internationalcenter.ucla.edu/home/J1Visa/74/75/Overview#divHealth")
+                                "$100,000 per accident/illness in medical coverage",
+                                "An annual deductible of no more than $250",
+                                "Coinsurance that does not exceed 25%",
+                                "Medical evacuation up to $10,000",
+                                "Repatriation up to $7,500"                                
                                 ]));
-                        endRow();
-                    }
-              },      
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("Waiver information", "http://www.garnett-powers.com/academics/ucla/index.htm")
+                                ]));
+
+                        writeText("The groups exempt from VSISP include; (A)  Postdoctoral Scholars - required to enroll in the Postdoctoral Scholar Benefits Plan (PSBP); (B)  Degree, EAP, UCLA Exchange (IEO) students - must enroll in the UCLA USHIP  plan; (C)  UCLA Staff & Faculty.");
+                     
+                        writeText("Taian Travel insurance plan (Patriot America) with a $100,000 benefit and a $250 deductible meets the waiver requirements for UCLA scholars subject to VSISP coverage. This plan is the least expensive option for meeting this requirement.  Shortly after submitting an application you will receive confirmation of your coverage including a visa letter which you can send to UCLAVSISP@Garnett-Powers.com for a waiver.  After receiving waiver confirmation by email, J-1 scholar brings the waiver confirmation and proof of medical insurance to check-in. ");
+
+                        startRow();
+                            document.write(makeTable(2,
+                            [
+                            // Column headers:
+
+                            "Price for $100,000 benefit $250 deductible", "Price for $100,000 benefit $0 deductible",
+
+
+                            // Table within a table
+
+                                makeTable(4, [
+                                "Age",     "J1", "Spouse", "Children",
+                                "&lt; 30", "$46.00",   "$46.00",   "$41.00",
+                                "30-39",   "$62.00",   "$62.00",   "$41.00",
+                                "40-49",   "$90.00",  "$90.00",   "$41.00"
+
+                                ]), 
+
+       
+                                makeTable(4, [
+                                "Age",     "J1", "Spouse", "Children",
+                                "&lt; 30", "$57.50",   "$57.50",   "$51.25",
+                                "30-39",   "$77.50",   "$77.50",   "$51.25",
+                                "40-49",   "$112.50",  "$112.50",   "$51.25"
+                                ]), 
+                    
+
+                                makeBuyURL("Buy Patriot America Medical Insurance", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+                                makeBuyURL("Buy Patriot America Medical Insurance", "https://purchase.imglobal.com/quote/patriot?imgac=80000699")
+
+
+                                   ])
+                                    );
+                                endRow();                 
+                        
+                                startRow();
+                                writeText("");
+                                endRow();                        
+                          
+                                startRow();
+                                writeText(makeURL("UCLA Scholar Requirements", "http://www.internationalcenter.ucla.edu/home/J1Visa/74/75/Overview#divHealth"));
+                                endRow();                               
+                                endRow();
+                                
+                                
+                                
+                                }
+                                },      
               
         uclajs: {
                     windowTitle: "TaiAn Health Insurance for UCLA",

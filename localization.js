@@ -30,7 +30,19 @@ l['School F1 requirement'] = "学校F1标准";
 l['School J1 requirement'] = "学校J1标准";
 l['Optional benefit change in Florida, Hawaii, Idaho, Massachusetts to shorten the preexisting condition exclusion from 12 months to 6 months.'] = "在Florida, Hawaii, Idaho, Massachusetts州，可以选择将先前疾病免责期从12个月缩短为6个月。";
 l['With 6 month preexisting condition benefit change there is a 10 month wait for maternity benefits.'] = "如果将先前疾病免责期选为6个月，生育险就有10个月的免责期。";
-l[''] = "";
+
+l['J-1 scholars including visiting scholars, visiting graduate researchers or non-degree students at UCLA (other than those visitors described below) are required to enroll OR opt out of the Visiting Scholar Injury and Sickness Insurance Plan (VSISP) through Garnett-Powers & Associates. To waive VSISP plan, J-1 scholars are required to show proof of health insurance with the following minimum coverage:'] = "UCLA的J-1学者(包括访问学者，访问研究生或者非学位学生）（不包括下述三种类型）需要通过Garnett-Powers & Associates 购买访问学者受伤和疾病保险计划（VSISP）或申请waive VSISP计划。 Waive VSISP计划的保险需要符合以下标准：";
+l['$100,000 per accident/illness in medical coverage'] = " 每次生病或受伤的最高赔付为$100,000";
+l['An annual deductible of no more than $250'] = " 年免赔额不高于$250";
+l['Coinsurance that does not exceed 25%'] = " 共同赔付不超过25%";
+l['Medical evacuation up to $10,000'] = " 紧急救援$10,000";
+l['Repatriation up to $7,500'] = " 遗体返送$7,500";
+l['The groups exempt from VSISP include; (A)  Postdoctoral Scholars - required to enroll in the Postdoctoral Scholar Benefits Plan (PSBP); (B)  Degree, EAP, UCLA Exchange (IEO) students - must enroll in the UCLA USHIP  plan; (C)  UCLA Staff & Faculty.'] = "VSISP计划不包括这三种类型（A）博士后 - 需要加入博士后福利计划（PSBP）;（B）学位学生，EAP和交换的学生 - 必须加入UCLA USHIP计划; （C）UCLA的职员。";
+l['Taian Travel insurance plan (Patriot America) with a $100,000 benefit and a $250 deductible meets the waiver requirements for UCLA scholars subject to VSISP coverage. This plan is the least expensive option for meeting this requirement.  Shortly after submitting an application you will receive confirmation of your coverage including a visa letter which you can send to UCLAVSISP@Garnett-Powers.com for a waiver.  After receiving waiver confirmation by email, J-1 scholar brings the waiver confirmation and proof of medical insurance to check-in. '] = "泰安旅游医疗保险（Patriot America）中$100,000 最高赔付和$250免赔额选项符合UCLA 对J1学者waive VSISP的要求，并且最为经济实惠。网上提交申请几分钟后你就会收到Email，其中有保险卡和确认信（visa letter）。将确认信发送到uclavsisp@garnett-powers.com申请waiver。收到waiver 批准的Email后，将waiver 批准信和visa letter 交给学校登记入学。";
+l['Price for $100,000 benefit $250 deductible'] = "$100,000最高赔付和 $250免赔额的月费";
+l['Price for $100,000 benefit $0 deductible'] = "$100,000最高赔付和 $0 免赔额的月费";
+l['Buy Patriot America Medical Insurance'] = "购买爱国者旅游医疗保险";
+
 l['Taian Scholar/Student Insurance Plan A and Plan B meet Johns Hopkins University and Johns Hopkins Medical Institutions J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Johns Hopkins University or Johns Hopkins Medical Institutions as proof of insurance.'] = "Johns Hopkins University and Johns Hopkins Medical Institutions 对J1访问学者（不包括全日制在校学生)购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$50,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明你已购买满足学校要求的保险。";
 l['Johns Hopkins University Scholar Requirements'] = "Johns Hopkins University 访问学者医疗保险的标准";
 l['Johns Hopkins Medical Institutions Scholar Requirements'] = "Johns Hopkins Medical Institutions 访问学者医疗保险的标准";
