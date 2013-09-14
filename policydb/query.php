@@ -10,8 +10,8 @@ require_once('db.php');
 $query = stripslashes($_POST['query']);
 ?>
 
-<form name="queryform" action="query.php" method="post">
 <?php
+ echo '<form name="queryform" action="query.php'.(!is_null($_GET['exec']) ? '?exec=1' : '').'" method="post">';
  echo '<input type="text" name="query" size=300'. (!is_null($query) ? " value='$query'" : "") .'><br />';
 ?>
 <input type="submit" value="Submit">
@@ -29,10 +29,18 @@ if (!is_null($_POST['query'])) {
         return;
     }
 
-    $result = sqlite_query($dbhandle, stripslashes($_POST['query']), $error);
-    if (!$result) {
-        echo "Cannot execute query $error.";
-        return;
+    if (!is_null($_GET['exec'])) {
+        $ok = sqlite_exec($dbhandle, stripslashes($_POST['query']), $error);
+        if (!$ok) {
+            echo "Couldn't execute query. $error\n";
+            return;
+        }
+    } else {
+        $result = sqlite_query($dbhandle, stripslashes($_POST['query']), $error);
+        if (!$result) {
+            echo "Cannot execute query $error.";
+            return;
+        }
     }
 
     $allResults = array();

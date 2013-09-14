@@ -10,11 +10,16 @@ $stm = "CREATE TABLE policy (phone TEXT, fax TEXT, mailing_country TEXT, mailing
 .
 "date_of_arrival_fmt TEXT, expiration_date_fmt TEXT, departure_date_fmt TEXT, date_of_birth_fmt TEXT, effective_date_fmt TEXT, purchase_date_fmt TEXT,"
 .
-"last_reminder_date_fmt TEXT);";
+"last_reminder_date_fmt TEXT, should_ignore INTEGER default 0);";
 
 $ok = sqlite_exec($dbhandle, $stm, $error);
 if (!$ok)
     echo "Couldn't create policy table or it already exists. $error\n";
+
+$stm = "create index ignore_index on policy (should_ignore)";
+$ok = sqlite_exec($dbhandle, $stm, $error);
+if (!$ok)
+    echo "Couldn't create ignore_index or it already exists. $error\n";
 
 sqlite_close($dbhandle);
 

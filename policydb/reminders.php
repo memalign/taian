@@ -12,7 +12,7 @@ require_once('db.php');
 set_time_limit(300);
 //error_reporting(E_ALL);
 
-$importantColumns = "rowid, expiration_date_fmt, expiration_date, effective_date_fmt, julianday(effective_date_fmt), last_reminder_date_fmt, certificate_number, certificate_status, certificate_type, primary_insured_name, insured_name, group_name, primary_email_address, other_email_address, (julianday(\"now\")-julianday(\"expiration_date_fmt\") > -1) as too_late_to_renew, (julianday(\"expiration_date_fmt\")-julianday(\"effective_date_fmt\") > 27) as is_at_least_month";
+$importantColumns = "rowid, expiration_date_fmt, expiration_date, effective_date_fmt, julianday(effective_date_fmt), last_reminder_date_fmt, certificate_number, certificate_status, certificate_type, primary_insured_name, insured_name, group_name, primary_email_address, other_email_address, (julianday(\"now\")-julianday(\"expiration_date_fmt\") > -1) as too_late_to_renew, (julianday(\"expiration_date_fmt\")-julianday(\"effective_date_fmt\") > 27) as is_at_least_month, should_ignore";
 
 function siblingsAndEmails($dbhandle, $individual) {
     global $importantColumns;
@@ -313,6 +313,15 @@ function startsWith($haystack, $needle) {
     return $needle === "" || strpos($haystack, $needle) === 0;
 }
 
+function updateToIgnore($dbhandle, $rowid) {
+    echo "Updating db to ignore $rowid<br />";
+    $query = "update policy set should_ignore = 1 where rowid in ($rowid)";
+    $ok = sqlite_exec($dbhandle, $query, $error);
+    if (!$ok) {
+        echo "Couldn't update ignored rows $query. $error<br />\n";
+    }
+}
+
 
 $dbhandle = sqlite_open('/home1/taianfin/policy.db', 0666, $error);
 if (!$dbhandle) die ($error);
@@ -336,7 +345,7 @@ if (!is_null($_POST['processedRows'])) {
 //   - They haven't been reminded since before the day before expiration
 //   AND
 //   - They've gotten a reminder and today is later than the day before expiration
-$soonToExpireQuery = "select $importantColumns from policy where julianday(expiration_date_fmt) >= julianday(\"now\", \"-20 days\") and julianday(expiration_date_fmt) <= julianday(\"now\", \"+10 days\") and ( (last_reminder_date_fmt IS NULL) or (length(last_reminder_date_fmt) = 0) or ( (julianday(last_reminder_date_fmt) < julianday(expiration_date_fmt, \"-1 day\")) AND (julianday(\"now\") >= julianday(expiration_date_fmt, \"-1 day\"))  )   ) order by rowid desc";
+$soonToExpireQuery = "select $importantColumns from policy where (should_ignore = 0) and julianday(expiration_date_fmt) >= julianday(\"now\", \"-20 days\") and julianday(expiration_date_fmt) <= julianday(\"now\", \"+10 days\") and ( (last_reminder_date_fmt IS NULL) or (length(last_reminder_date_fmt) = 0) or ( (julianday(last_reminder_date_fmt) < julianday(expiration_date_fmt, \"-1 day\")) AND (julianday(\"now\") >= julianday(expiration_date_fmt, \"-1 day\"))  )   ) order by rowid desc";
 
 $result = sqlite_query($dbhandle, $soonToExpireQuery, $error);
 if (!$result) {
@@ -359,6 +368,7 @@ echo "There are about " . count($allResults) . " policies to process.<br />";
 $pruneStatuses = array("CANCELLED TO INCEPTION", "DECLINED, PAYMENT", "SOLD, PART TERMINATED", "PENDNG RENEWAL");
 foreach ($allResults as $key=>$value) {
     if (in_array($value["certificate_status"], $pruneStatuses)) {
+        updateToIgnore($dbhandle, $value['rowid']);
         unset($allResults[$key]);
     }
 }
@@ -369,6 +379,7 @@ echo "After pruning by certificate status, there are about " . count($allResults
 
 foreach ($allResults as $key=>$value) {
     if (!strlen($value["insured_name"])) {
+        updateToIgnore($dbhandle, $value['rowid']);
         unset($allResults[$key]);
     }
 }
@@ -413,18 +424,22 @@ foreach ($allResults as $key=>$value) {
                 # The sibling is a dead policy... is it newer or older than us based on rowid?
                 if ($sibRowID > $myRowID) {
                     # Sibling is newer, nuke us.
+                    updateToIgnore($dbhandle, $myRowID);
                     unset($allResults[$key]);
                     $nukedSelf = true;
                     break;
                 } else {
                     # Sibling is older, ignore it.
+                    updateToIgnore($dbhandle, $sibRowID);
                 }
             } else {
                 # Both my sibling and I are active policies.
                 if (strlen($value["last_reminder_date_fmt"]) > 0) {
                     # My row has been used for reminder emails, ignore sibling
+                    updateToIgnore($dbhandle, $sibRowID);
                 } elseif (strlen($sibling["last_reminder_date_fmt"]) > 0) {
                     # Sibling has been used for reminder emails, nuke me
+                    updateToIgnore($dbhandle, $myRowID);
                     unset($allResults[$key]);
                     $nukedSelf = true;
                     break;
@@ -432,18 +447,22 @@ foreach ($allResults as $key=>$value) {
                     # Neither of us has been used for reminders. Use the most recent rowid.
                     if ($sibRowID > $myRowID) {
                         # Sibling is newer, nuke us.
+                        updateToIgnore($dbhandle, $myRowID);
                         unset($allResults[$key]);
                         $nukedSelf = true;
                         break;
                     } else {
                         # Sibling is older, ignore it.
+                        updateToIgnore($dbhandle, $sibRowID);
                     }
                 }
             }
         } elseif ($sibEffectiveDate < $myEffectiveDate) {
             # Ignore the sibling, my effective date is newer.
+            updateToIgnore($dbhandle, $sibRowID);
         } else {
             # The sibling has a newer effective date, nuke my entry.
+            updateToIgnore($dbhandle, $myRowID);
             unset($allResults[$key]);
             $nukedSelf = true;
             break;
