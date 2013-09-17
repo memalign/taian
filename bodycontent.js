@@ -394,6 +394,22 @@ function showPivot(pivotName) {
         ihawaii: "l=en&partner=hawaii&p=pivot-international-student",
         icnhawaii: "l=cn&partner=hawaii&p=pivot-international-student",
         
+        kent: "l=en&partner=kent&p=pivot-home&adid=skent",
+        cnkent: "l=cn&partner=kent&p=pivot-home&adid=scnkent",   
+        gcnkent: "l=cn&partner=kent&p=pivot-international-student&adid=gcnkent",
+        gkent: "l=en&partner=kent&p=pivot-international-student&adid=gkent",
+        acnkent: "l=cn&partner=kent&p=pivot-international-student&adid=acnkent", 
+        ikent: "l=en&partner=kent&p=pivot-international-student",
+        icnkent: "l=cn&partner=kent&p=pivot-international-student",
+
+        uakron: "l=en&partner=uakron&p=pivot-home&adid=suakron",
+        cnuakron: "l=cn&partner=uakron&p=pivot-home&adid=scnuakron",   
+        gcnuakron: "l=cn&partner=uakron&p=pivot-international-student&adid=gcnuakron",
+        guakron: "l=en&partner=uakron&p=pivot-international-student&adid=guakron",
+        acnuakron: "l=cn&partner=uakron&p=pivot-international-student&adid=acnuakron", 
+        iuakron: "l=en&partner=uakron&p=pivot-international-student",
+        icnuakron: "l=cn&partner=uakron&p=pivot-international-student",        
+        
         musc: "l=en&partner=musc&p=pivot-home&adid=smusc",
         cnmusc: "l=cn&partner=musc&p=pivot-home&adid=scnmusc",   
         gcnmusc: "l=cn&partner=musc&p=pivot-international-student&adid=gcnmusc",
@@ -402,10 +418,11 @@ function showPivot(pivotName) {
         imusc: "l=en&partner=musc&p=pivot-international-student",        
         ucberkeley: "l=en&partner=ucberkeley&p=pivot-home&adid=sucberkeley",
         cnucberkeley: "l=cn&partner=ucberkeley&p=pivot-home&adid=scnucberkeley",   
-        gcnucberkeley: "l=cn&partner=ucberkeley&p=pivot-international-student&adid=gcnucberkeley",
-        gucberkeley: "l=en&partner=ucberkeley&p=pivot-international-student&adid=gucberkeley",
-        acnucberkeley: "l=cn&partner=ucberkeley&p=pivot-international-student&adid=acnucberkeley", 
-        iucberkeley: "l=en&partner=ucberkeley&p=pivot-international-student",         
+        gcnucberkeley: "l=cn&partner=ucberkeley&p=pivot-j-scholar&adid=gcnucberkeley",
+        gucberkeley: "l=en&partner=ucberkeley&p=pivot-j-scholar&adid=gucberkeley",
+        acnucberkeley: "l=cn&partner=ucberkeley&p=pivot-j-scholar&adid=acnucberkeley", 
+        iucberkeley: "l=en&partner=ucberkeley&p=pivot-j-scholar",
+        icnucberkeley: "l=en&partner=ucberkeley&p=pivot-j-scholar",        
         ncsu: "l=en&partner=ncsu&p=pivot-home&adid=sncsu",
         cnncsu: "l=cn&partner=ncsu&p=pivot-home&adid=scnncsu",   
         gcnncsu: "l=cn&partner=ncsu&p=pivot-international-student&adid=gcnncsu",
@@ -457,7 +474,7 @@ function showPivot(pivotName) {
         inyu: "l=en&partner=nyu&p=pivot-international-student",
         ipurdue: "l=en&partner=purdue&p=pivot-international-student",
         icolumbia: "l=en&partner=columbia&p=pivot-international-student",
-        iucla: "l=en&partner=ucla&p=pivot-international-student",
+
         iiu: "l=en&partner=iu&p=pivot-international-student",
         iutaustin: "l=en&partner=utaustin&p=pivot-international-student",                
         uiuc: "l=en&partner=uiuc&p=pivot-home&adid=suiuc",
@@ -469,7 +486,8 @@ function showPivot(pivotName) {
         cnnyu: "l=cn&partner=nyu&p=pivot-home&adid=scnnyu",   
         gcnnyu: "l=cn&partner=nyu&p=pivot-international-student&adid=gcnnyu",
         gnyu: "l=en&partner=nyu&p=pivot-international-student&adid=gnyu",
-        acnnyu: "l=cn&partner=nyu&p=pivot-international-student&adid=acnnyu",         
+        acnnyu: "l=cn&partner=nyu&p=pivot-international-student&adid=acnnyu",
+        nyar: "l=cn&partner=nyu&p=pivot-international-student&adid=nyar",        
         purdue: "l=en&partner=purdue&p=pivot-home&adid=spurdue",
         cnpurdue: "l=cn&partner=purdue&p=pivot-home&adid=scnpurdue",   
         gcnpurdue: "l=cn&partner=purdue&p=pivot-international-student&adid=gcnpur",
@@ -1886,7 +1904,13 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School F1 requirement", "http://www.k-state.edu/isss/current/healthinsurance.html"),
                 makeURL("School J1 requirement", "http://www.k-state.edu/isss/j-1/jhealthins.html"),
                 makeURL("Health Insurance for Kansas State University International Students and Scholars", "http://taianfinancial.com/#ikstate"),
-                
+    
+                makeURL("Kent State University (OH)", "http://www.kent.edu"),
+                makeURL("School F1 requirement", "http://www.kent.edu/isss/futurestudents/upload/welcome-guide-aug-2013-4.pdf"),
+                makeURL("School J1 requirement", "http://www.kent.edu/isss/scholars/upload/j1-student-and-scholar-guide.pdf"),
+                makeURL("Health insurance for Kent State University Students and Scholars", "http://taianfinancial.com/#ikent"),
+
+    
                 makeURL("Lehigh University (PA)", "http://www.lehigh.edu/"),
                 makeURL("School F1 requirement", "http://www.lehigh.edu/~intnl/undergraduate.html"),
                 makeURL("School J1 requirement", "http://www.lehigh.edu/oiss/j1health.html"),
@@ -2048,14 +2072,20 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Plan that meets this school's standards for J scholar", "http://taianfinancial.com/#usdos"),
                 
                 makeURL("Tufts University (MA)", "http://www.tufts.edu/"),
-                makeURL("School F1 requirement", "http://fletcher.tufts.edu/Congratulations/enrolling/intlstudents"),
-                makeURL("School J1 requirement", "http://ase.tufts.edu/icenter/currentImmigrationFacultyJ1-2yrInsurance.htm"),
+                makeURL("School F1 requirement", "http://ase.tufts.edu/healthservice/business.htm"),
+                makeURL("School J1 requirement", "http://ase.tufts.edu/icenter/life/healthcareScholar.asp"),
                 makeURL("Health insurance for Tufts University Scholars", "http://taianfinancial.com/#itufts"),
                 
                 makeURL("Tulane University (LA)", "http://www.tulane.edu/"),
                 makeURL("School F1 requirement", "http://pandora.tcs.tulane.edu/acctrec/healthinsurance.asp"),
                 makeURL("School J1 requirement", "https://greenspace.tulane.edu/ciss/www/J-1 Insurance Requirement.pdf"),
                 makeURL("Health insurance for Tulane University Students and Scholars", "http://taianfinancial.com/#itulane"),
+
+                makeURL("University of Akron (OH)", "http://www.uakron.edu/"),
+                makeURL("School F1 requirement", "http://www.uakron.edu/oip/immigration/f1/insurance-for-international-students.dot"),
+                makeURL("School J1 requirement", "http://www.uakron.edu/oip/immigration/insurance-for-j1-scholar.dot"),
+                makeURL("Health insurance for University of Akron Scholars", "http://taianfinancial.com/#iuakron"),
+
                 
                 makeURL("University of Alabama -Tuscaloosa (AL)", "http://www.ua.edu/"),
                 makeURL("School F1 requirement", "http://is.ua.edu/insurance-medical-care/medical-insurance/"),

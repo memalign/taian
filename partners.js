@@ -381,7 +381,28 @@ function getPartnership(partner) {
                                 ]));
                         endRow();
                     }
-              },             
+              },    
+
+         kent: {
+                    windowTitle: "TaiAn Health Insurance for Kent State University",
+                    pageTitle: "TaiAn Health Insurance for Kent State University",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Kent State University enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Kent State University as proof of insurance.");                        
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("Kent State University Scholar Requirements", "http://www.kent.edu/isss/scholars/upload/j1-student-and-scholar-guide.pdf"),
+                                makeURL("Kent State University Student Requirements", "http://www.kent.edu/isss/futurestudents/upload/welcome-guide-aug-2013-4.pdf")                        
+                                ]));
+                        endRow();
+                    }
+              },              
 
          murraystate: {
                     windowTitle: "TaiAn Health Insurance for Murray State University",
@@ -940,38 +961,70 @@ function getPartnership(partner) {
                     }
               },               
 
+
+
         ucberkeley: {
                     windowTitle: "TaiAn Health Insurance for University of California at Berkeley",
                     pageTitle: "TaiAn Health Insurance for University of California at Berkeley",
                     tabs: [
                             "pivot-home",
-                            "pivot-international-student",
+                            "pivot-j-scholar",                            
                             "pivot-global-medical",
                             "pivot-travel-insurance"
                           ],
-                          
-                    travelStudentContent: function () {
+                    jScholarContent: function () {
                         startRow();
                         writeText("Taian Travel Insurance Plan with $250.00 deductible and $500,000 benefit meets UC Berkeley J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $500,000 per illness/injury; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Annual deductible not over $250.00. Travel plan with $250.00 deductible and $500,000 maximum (we suggest $1,000,000 maximum) is the most affordable plan that meets the standards, and the US Department of State requirements.  Shortly after submitting an application you will receive confirmation of your coverage which you can send to UC Berkeley as proof of insurance.");
-                        document.write(makeBulletedListWithTitle("", [
-                                makeURL("UC Berkeley Scholar Requirements", "http://www.garnett-powers.com/academics/ucb/")                         
 
-                                ]));
-                        endRow();
-                    },
 
-                    internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Travel Insurance Plan with $250.00 deductible and $500,000 benefit meets UC Berkeley J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $500,000 per illness/injury; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Annual deductible not over $250.00. Travel plan with $250.00 deductible and $500,000 maximum (we suggest $1,000,000 maximum) is the most affordable plan that meets the standards, and the US Department of State requirements.  Shortly after submitting an application you will receive confirmation of your coverage which you can send to UC Berkeley as proof of insurance.");
-                        writeText("Please click on Travel Insurance tab at top of page.  Student Plan A and Plan B do not meet UC Berkeley requirements.");
-                        document.write(makeBulletedListWithTitle("", [
-                                makeURL("UC Berkeley Scholar Requirements", "http://www.garnett-powers.com/academics/ucb/")                         
+                            document.write(makeTable(2,
+                            [
+                            // Column headers:
 
-                                ]));
-                        endRow();
-                    }                    
+                            "Price for $500,000 benefit $250 deductible", "Price for $500,000 benefit $0 deductible",
+
+
+                            // Table within a table
+
+                                makeTable(4, [
+                                "Age",     "J1", "Spouse", "Children",
+                                "&lt; 30", "$59.00",   "$59.00",   "$53.00",
+                                "30-39",   "$78.00",   "$78.00",   "$53.00",
+                                "40-49",   "$119.00",  "$119.00",   "$53.00"
+
+                                ]), 
+
+       
+                                makeTable(4, [
+                                "Age",     "J1", "Spouse", "Children",
+                                "&lt; 30", "$73.75",   "$73.75",   "$66.25",
+                                "30-39",   "$97.50",   "$97.50",   "$66.25",
+                                "40-49",   "$148.75",  "$148.75",   "$66.25"
+                                ]), 
                     
-              },               
+
+                                makeBuyURL("Buy Patriot America Medical Insurance", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+                                makeBuyURL("Buy Patriot America Medical Insurance", "https://purchase.imglobal.com/quote/patriot?imgac=80000699")
+
+
+                                   ])
+                                    );
+                                endRow();                 
+                        
+                                startRow();
+                                writeText("");
+                                endRow();                        
+                          
+                                startRow();
+                                writeText(makeURL("UC Berkeley Scholar Requirements", "http://www.garnett-powers.com/academics/ucb/"));
+                                endRow();                               
+                                endRow();
+                                
+                                
+                                
+                                }
+                                },                  
 
         kstate: {
                     windowTitle: "TaiAn Health Insurance for Kansas State University",
@@ -1152,7 +1205,28 @@ function getPartnership(partner) {
                                 ]));
                         endRow();
                     }
-              },   
+              },  
+
+        uakron: {
+                    windowTitle: "TaiAn Health Insurance for University of Akron",
+                    pageTitle: "TaiAn Health Insurance for University of Akron",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Akron J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Akron as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("University of Akron Scholar Requirements", "http://www.uakron.edu/oip/immigration/insurance-for-j1-scholar.dot")                         
+
+                                ]));
+                        endRow();
+                    }
+              },              
 
         uchicago: {
                     windowTitle: "TaiAn Health Insurance for University of Chicago",
@@ -1373,7 +1447,7 @@ function getPartnership(partner) {
                         startRow();
                         writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Tufts University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Tufts University as proof of insurance.");
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("Tufts University Scholar Requirements", "http://ase.tufts.edu/icenter/currentImmigrationFacultyJ1-2yrInsurance.htm")                        
+                                makeURL("Tufts University Scholar Requirements", "http://ase.tufts.edu/icenter/life/healthcareScholar.asp")                        
                                 ]));
                         endRow();
                     }
@@ -1823,7 +1897,6 @@ function getPartnership(partner) {
                     pageTitle: "TaiAn Health Insurance for UCLA",
                     tabs: [
                             "pivot-home",
-                            "pivot-international-student",
                             "pivot-j-scholar",                            
                             "pivot-global-medical",
                             "pivot-travel-insurance"
