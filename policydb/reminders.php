@@ -12,7 +12,7 @@ require_once('db.php');
 set_time_limit(300);
 //error_reporting(E_ALL);
 
-$importantColumns = "rowid, expiration_date_fmt, expiration_date, effective_date_fmt, julianday(effective_date_fmt), last_reminder_date_fmt, certificate_number, certificate_status, certificate_type, primary_insured_name, insured_name, group_name, primary_email_address, other_email_address, (julianday(\"now\")-julianday(\"expiration_date_fmt\") > -1) as too_late_to_renew, (julianday(\"expiration_date_fmt\")-julianday(\"effective_date_fmt\") > 27) as is_at_least_month, should_ignore";
+$importantColumns = "rowid, expiration_date_fmt, expiration_date, effective_date_fmt, julianday(effective_date_fmt), last_reminder_date_fmt, certificate_number, certificate_status, certificate_type, primary_insured_name, insured_name, group_name, primary_email_address, other_email_address, (julianday(\"now\")-julianday(\"expiration_date_fmt\") > -1) as too_late_to_renew, (julianday(\"expiration_date_fmt\")-julianday(\"effective_date_fmt\") > 27) as is_at_least_month, (julianday(\"expiration_date_fmt\")-julianday(\"effective_date_fmt\") > 87) as is_at_least_three_months, should_ignore";
 
 function siblingsAndEmails($dbhandle, $individual) {
     global $importantColumns;
@@ -125,6 +125,27 @@ Dear __PRIMARY_INSURED_NAME__,
 
 Chris
 美国电话: +1 (317)318-8258 (中文), +1 (317)318-8259 (英语)
+中国电话: 950-4044-2336 (中文, 北京时间上午7-11点，直接拨号，无长途费)
+taianfinancial.com/chinese
+END;
+
+    $studentAShortRebuy = <<<END
+Dear __PRIMARY_INSURED_NAME__,
+
+您购买的泰安访问学者留学生保险计划A (Student Health Advantage) __EXPIRATION_DATE__ 就要过期了。 如果您仍然满足购买该保险的条件(您的签证和身份没有变化)并且需要继续购买的話，请在过期日期之前提交申请。
+请点击购买链接： https://purchase.imglobal.com/Quote/student_health_advantage/pre-quote?imgac=80000699
+计划A产品说明链接： http://taianfinancial.com/#l=cn&p=pivot-international-student
+
+请注意，此保险购买三个月或三个月以上，以后就可以按月续保。保险期间所产生的疾病续保时就不是 pre-existing condition，而重新购买新保险就不具备这个好处。
+
+另外，续保时请选择邮寄接收方式，这样您既可收到 Email confirmation, 又可以在几天后收到IMG邮寄的保险卡。
+
+非常感谢您对我们公司的信任和支持。对我们工作的不足之处，请给我们一个提醒。把我们泰安介绍给您的家人朋友和同事是对我们工作的最大的肯定。泰安公司非常希望得到您的继续支持。
+
+再次深表感谢，祝您平安健康！
+
+Chris
+美国电话: +1 (317)318-8258 (中文), +1 (317)318-8259 (英语)
 中国电话: 950-4044-2336 (中文, 北京时间上午7-11点，直接拨号，无长途费)
 taianfinancial.com/chinese
 END;
@@ -257,14 +278,55 @@ Chris
 taianfinancial.com/chinese
 END;
 
+    $patriotExchangeGroupRenew = <<<END
+Dear __PRIMARY_INSURED_NAME__,
+
+您购买的泰安访问学者留学生团体保险计划B(Patriot Exchange Group) __EXPIRATION_DATE__ 就要过期了。 如果您们仍然满足购买该保险的条件(签证和身份没有变化)并且需要续保的話，请在过期日期之前联系我们，申请团体延期。即使团体中只有一位成员需要续保，团体也是可以继续存在并延期的。
+
+请注意，保险期间所产生的疾病续保时就不是 pre-existing condition，而重新购买新保险就不具备这个好处。
+
+另外，续保时请选择邮寄接收方式，这样您既可收到 Email confirmation, 又可以在几天后收到IMG邮寄的保险卡。
+
+非常感谢您对我们公司的信任和支持。
+对我们工作的不足之处，请给我们一个提醒。把我们泰安介绍给您的家人朋友和同事是对我们工作的最大的肯定。泰安公司非常希望得到您的继续支持。
+
+再次深表感谢，祝您和团体成员平安健康！
+
+Chris
+美国电话: +1 (317)318-8258 (中文), +1 (317)318-8259 (英语)
+中国电话: 950-4044-2336 (中文, 北京时间上午7-11点，直接拨号，无长途费)
+taianfinancial.com/chinese
+END;
+
+    $patriotExchangeGroupExpiresToday = <<<END
+Dear __PRIMARY_INSURED_NAME__,
+
+您购买的泰安访问学者留学生团体保险计划B(Patriot Exchange Group) 今天就要过期了。 如果您们仍然满足购买该保险的条件(签证和身份没有变化)并且需要继续购买的話，请点击下面的链结中的购买团体计划B。
+
+http://taianfinancial.com/#l=cn&p=pivot-international-student
+
+非常感谢您对我们公司的信任和支持。
+对我们工作的不足之处，请给我们一个提醒。把我们泰安介绍给您的家人朋友和同事是对我们工作的最大的肯定。泰安公司非常希望得到您的继续支持。
+
+再次深表感谢，祝您和团体成员平安健康！
+
+Chris
+美国电话: +1 (317)318-8258 (中文), +1 (317)318-8259 (英语)
+中国电话: 950-4044-2336 (中文, 北京时间上午7-11点，直接拨号，无长途费)
+taianfinancial.com/chinese
+END;
+
+
     $primaryInsuredName = $individuals[0]["primary_insured_name"];
     $expirationDate = $individuals[0]["expiration_date"];
     $certificateNumber = $individuals[0]["certificate_number"];
     $tooLateToRenew = (intval($individuals[0]["too_late_to_renew"]) > 0);
     $isAtLeastMonth = (intval($individuals[0]["is_at_least_month"]) > 0);
+    $isAtLeastThreeMonths = (intval($individuals[0]["is_at_least_three_months"]) > 0);
 
     /*
-        Student A renewal  - Start with SHA
+        Student A renewal  - Start with SHA, policy at least 3 months
+        Student A short rebuy - Start with SHA, policy < 3 months
         Student B renewal - start with EPSN
         Student B Basic plan renewal - start with EPBN
         Long term travel plan renew - PATA, PATI, PPLA  plus initial term (effective date to termination date) one month or more
@@ -272,13 +334,19 @@ END;
         Student A expires today rebuy - Start with SHA
         Student B expires today rebuy - start with EPSN
         Long term travel rebuy - PATA, PATI, PPLA  plus initial term (effective date to termination date) one month or more
+        Patriot Exchange group renewal - Starts with EPSWN
+        Patriot Exchange group rebuy - Starts with EPSWN
      */
     $renewEmail = "";
     if (startsWith($certificateNumber, "SHA")) {
         if ($tooLateToRenew) {
             $renewEmail = $studentAExpiresToday;
         } else {
-            $renewEmail = $studentARenew;
+            if (!$isAtLeastThreeMonths) {
+                $renewEmail = $studentAShortRebuy;
+            } else {
+                $renewEmail = $studentARenew;
+            }
         }
     } elseif (startsWith($certificateNumber, "EPSN")) {
         if ($tooLateToRenew) {
@@ -299,6 +367,12 @@ END;
              } else {
                   $renewEmail = $shortTravelRebuy;
              }
+        }
+    } elseif (startsWith($certificateNumber, "EPSWN")) {
+        if ($tooLateToRenew) {
+            $renewEmail = $patriotExchangeGroupExpiresToday;
+        } else {
+            $renewEmail = $patriotExchangeGroupRenew;
         }
     }
 
