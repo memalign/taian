@@ -111,7 +111,7 @@ function emailTemplateForIndividuals($individuals) {
     $studentARenew = <<<END
 Dear __PRIMARY_INSURED_NAME__,
 
-您购买的泰安访问学者留学生保险计划A (Student Health Advantage) （__EXPIRATION_DATE__）就要过期了。 如果您仍然满足购买该保险的条件(您的签证和身份没有变化)并且需要续保的話，请在过期日期之前提交申请以完成续保。
+您购买的泰安访问学者留学生保险计划A (Student Health Advantage) __EXPIRATION_DATE__ 就要过期了。 如果您仍然满足购买该保险的条件(您的签证和身份没有变化)并且需要续保的話，请在过期日期之前提交申请以完成续保。
 
 请点击此链接申请续保：  https://purchase.imglobal.com/beginrenewal?CertificateNumber=__CERTIFICATE_NUMBER__
 
@@ -132,7 +132,7 @@ END;
     $studentBRenew = <<<END
 Dear __PRIMARY_INSURED_NAME__,
 
-您购买的泰安访问学者留学生保险计划B(Patriot Exchange Program) （__EXPIRATION_DATE__）就要过期了。 如果您仍然满足购买该保险的条件(您的签证和身份没有变化)并且需要续保的話，请在过期日期之前提交申请以完成续保。
+您购买的泰安访问学者留学生保险计划B(Patriot Exchange Program) __EXPIRATION_DATE__ 就要过期了。 如果您仍然满足购买该保险的条件(您的签证和身份没有变化)并且需要续保的話，请在过期日期之前提交申请以完成续保。
 
 请点击此链接申请续保： https://purchase.imglobal.com/beginrenewal?CertificateNumber=__CERTIFICATE_NUMBER__
 
@@ -153,7 +153,7 @@ END;
     $studentBBasicRenew = <<<END
 Dear __PRIMARY_INSURED_NAME__,
 
-您购买的泰安访问学者留学生保险(__EXPIRATION_DATE__)就要过期了。 如果您仍然满足购买该保险的条件(您的签证和身份没有变化)并且需要续保的話，请在过期日期之前提交申请以完成续保。
+您购买的泰安访问学者留学生保险 __EXPIRATION_DATE__ 就要过期了。 如果您仍然满足购买该保险的条件(您的签证和身份没有变化)并且需要续保的話，请在过期日期之前提交申请以完成续保。
 
 请点击此链接申请续保： https://purchase.imglobal.com/beginrenewal?CertificateNumber=__CERTIFICATE_NUMBER__
 
@@ -174,7 +174,7 @@ END;
     $longTravelRenew = <<<END
 Dear __PRIMARY_INSURED_NAME__,
 
-您购买的国际旅游医疗保险（__EXPIRATION_DATE__）就要过期了。 如果您仍然满足购买该保险的条件(您的签证和身份没有变化)且还想继续购买的話，请在过期日期之前提交申请以完成续保。
+您购买的国际旅游医疗保险 __EXPIRATION_DATE__ 就要过期了。 如果您仍然满足购买该保险的条件(您的签证和身份没有变化)且还想继续购买的話，请在过期日期之前提交申请以完成续保。
 
 请点击此链接申请续保： https://purchase.imglobal.com/beginrenewal?CertificateNumber=__CERTIFICATE_NUMBER__
 
@@ -195,7 +195,7 @@ END;
     $shortTravelRebuy = <<<END
 Dear __PRIMARY_INSURED_NAME__,
 
-您购买的国际旅游医疗保险（__EXPIRATION_DATE__）就要过期了。 如果您还需要继续购买此保险的話，请点击链接 http://taianfinancial.com/#l=cn&p=pivot-travel-insurance
+您购买的国际旅游医疗保险 __EXPIRATION_DATE__ 就要过期了。 如果您还需要继续购买此保险的話，请点击链接 http://taianfinancial.com/#l=cn&p=pivot-travel-insurance
 
 此保险购买一个月或一个月以上，以后您就可以按月续保，手续非常简单。保险期间所产生的疾病续保时就不是 pre-existing condition，而重新购买新保险就不具备这个好处。
 
