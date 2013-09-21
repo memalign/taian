@@ -10,7 +10,7 @@
  * @param       bool   $recursive  Recursively generate tables for multi-dimensional arrays
  * @param       string $null       String to output for blank cells
  */
-function array2table($array, $recursive = false, $null = '&nbsp;') {
+function array2table($array, $unique = false, $recursive = false, $null = '&nbsp;') {
     // Sanity check
     if (empty($array) || !is_array($array)) {
         return false;
@@ -19,6 +19,10 @@ function array2table($array, $recursive = false, $null = '&nbsp;') {
     if (!isset($array[0]) || !is_array($array[0])) {
         $array = array($array);
     }
+
+    $uniqueLines = null;
+    if ($unique)
+        $uniqueLines = array();
 
     // Start the table
     $table = "<table>\n";
@@ -36,23 +40,39 @@ function array2table($array, $recursive = false, $null = '&nbsp;') {
 
     // The body
     foreach ($array as $row) {
-        $table .= "\t<tr>";
-        foreach ($row as $cell) {
-            $table .= '<td>';
+        $rowText = "\t<tr>";
+        $rowCompareText = "";
+        foreach ($row as $colName => $cell) {
+            $valueText = "";
+            $valueText .= '<td>';
 
             // Cast objects
             if (is_object($cell)) { $cell = (array) $cell; }
 
             if ($recursive === true && is_array($cell) && !empty($cell)) {
                 // Recursive mode
-                $table .= "\n" . array2table($cell, true, true) . "\n";
+                $valueText .= "\n" . array2table($cell, false, true, true) . "\n";
             } else {
-                $table .= (strlen($cell) > 0) ?  htmlspecialchars((string) $cell) : $null;
+                $valueText .= (strlen($cell) > 0) ?  htmlspecialchars((string) $cell) : $null;
             }
 
-            $table .= '</td>';
+            $valueText .= '</td>';
+
+            $rowText .= $valueText;
+            if ($colName != "rowid")
+                $rowCompareText .= $valueText;
         }
-        $table .= "</tr>\n";
+
+        $rowText .= "</tr>\n";
+
+        if ($unique) {
+            if (!isset($uniqueLines[$rowCompareText])) {
+                $table .= $rowText;
+                $uniqueLines[$rowCompareText] = true;
+            }
+        } else {
+            $table .= $rowText;
+        }
     }
     $table .= '</table>';
     return $table;

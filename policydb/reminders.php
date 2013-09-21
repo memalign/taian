@@ -314,7 +314,9 @@ function startsWith($haystack, $needle) {
 }
 
 function updateToIgnore($dbhandle, $rowid) {
-    echo "Updating db to ignore $rowid<br />";
+    if ($_GET['debug'])
+        echo "Updating db to ignore $rowid<br />";
+
     $query = "update policy set should_ignore = 1 where rowid in ($rowid)";
     $ok = sqlite_exec($dbhandle, $query, $error);
     if (!$ok) {
@@ -516,7 +518,7 @@ foreach ($policiesOnSameCertificate as $eachPolicy) {
 
 if (count($allSiblings) > 0) {
     echo "Previous history: <br />";
-    echo array2table($allSiblings);
+    echo array2table($allSiblings, true);
 }
 echo "Policies with the same certificate number due for a reminder:<br />";
 echo array2table($policiesOnSameCertificate);
