@@ -705,6 +705,8 @@ function showPivot(pivotName) {
     // Special behaviors for the various pages upon being shown:
     if (pivotName == "pivot-travel-insurance") {
         showSubsection("travel-subsections", "patriot-travel");
+    } else if (pivotName == "pivot-letters") {
+        showSubsection("letters-subsections", "patriot-addmembertogroup");
     } else {
         analyticsTrackEvent("view", pivotName, 1, false);
         analyticsTrackAdView(pivotName);
@@ -1361,11 +1363,21 @@ function endRow() {
 }
 
 function makeText(text) {
-    return '<p align="left">'+loc(text)+'</p>';
+    text = loc(text);
+    text = text.replace(/\n/g, '<br />');
+    return '<p align="left">'+text+'</p>';
 }
 
 function writeText(text) {
     document.write(makeText(text));
+}
+
+function writeTextArea(text) {
+    document.write("<div id='faketextarea' style='border: 1px solid black; width:900px; overflow:auto; margin-left:auto; margin-right:auto; ' contenteditable>");
+    text = loc(text);
+    text = text.replace(/\n/g, '<br />');
+    document.write(text);
+    document.write("</div>");
 }
 
 function makeImage(filename) {
@@ -3420,6 +3432,86 @@ function writeSections(legacy) {
 
     endSection();
 
+    
+    // Letters
+    startSection("pivot-letters", "Form Letters");
+
+   
+
+    startRow();
+    document.write(makeTableWithStyle("invisibleTableNormalText", 1, [
+                makeSubsectionURL("letters-subsections", "patriot-addmembertogroup", "Add a Member to Patriot Exchange Group"),
+                makeSubsectionURL("letters-subsections", "patriot-extendgroupcoverage", "Extend Group Coverage")
+                ]));
+    writeText("");
+    endRow();
+
+    var letterExplanation = "Sample Email to add a member to a group\n" +
+                            "To ___PURPOSE___, you can send an email to IMG.   A sample email is below.\n" +
+                            "\n" +
+                            "Thanks for your business!\n" +
+                            "\n" +
+                            "Chris\n" +
+                            "317-318-8258 (Chinese)\n" +
+                            "317-318-8259 (English)\n" +
+                            "\n" +
+                            "_____________________________________________________________________\n";
+
+
+    startSubsections("letters-subsections");
+
+    startSubsection("patriot-addmembertogroup");
+
+    startRow();
+
+    writeTextArea(loc(letterExplanation).replace("___PURPOSE___", loc("add a member to your group plan")) +
+                  "\n\n" +
+                  "Send to: insurance@imglobal.com\n" +
+                  "please copy to chris@taianfinancial.com\n" +
+                  "\n" +
+                  "Dear IMG,\n" +
+                  "\n" +
+                  "I am (fill in your name here).  I have group policy number (put group policy number here).  I would like to add these members to my group plan:\n" +
+                  "(list name and member ID number of members you want to extend coverage for).\n" +
+                  "Please charge the credit card on file for this purchase.\n" +
+                  "Also, please send me an email that shows my coverage has been updated.\n" +
+                  "Thanks for your help.\n" +
+                  "(your name)\n");
+    endRow();
+
+
+    endSubsection();
+
+
+    startSubsection("patriot-extendgroupcoverage");
+
+    startRow();
+    writeTextArea(loc(letterExplanation).replace("___PURPOSE___", loc("extend coverage in your group plan")) +
+                  "\n\n" +
+                  "Send to: insurance@imglobal.com\n" +
+                  "please copy to chris@taianfinancial.com\n" +
+                  "\n" +
+                  "Dear IMG,\n" +
+                  "\n" +
+                  "I am (fill in your name here).  I have group policy number (put group policy number here).  I would like to extend the coverage of:\n" +
+                  "(list name and member ID number of members you want to extend coverage for).\n" +
+                  "Please extend by (you choose one month, two months, three months or other number of months).\n" +
+                  "Please charge the credit card on file for this purchase.\n" +
+                  "Also, please send me an email that shows my coverage has been extended.\n" +
+                  "Thanks for your help.\n" +
+                  "(your name)\n");
+    endRow();
+
+    endSubsection();
+
+
+
+    endSubsections();
+
+
+
+    endSection();
+    
 
     // Indiana Residents
     startSection("pivot-indiana-residents", "Indiana Residents");
