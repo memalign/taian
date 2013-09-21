@@ -387,14 +387,21 @@ function startsWith($haystack, $needle) {
     return $needle === "" || strpos($haystack, $needle) === 0;
 }
 
-function updateToIgnore($dbhandle, $rowid) {
-    if ($_GET['debug'])
-        echo "Updating db to ignore $rowid<br />";
+function updateToIgnore($dbhandle, $row) {
+    $rowid = $row['rowid'];
 
-    $query = "update policy set should_ignore = 1 where rowid in ($rowid)";
-    $ok = sqlite_exec($dbhandle, $query, $error);
-    if (!$ok) {
-        echo "Couldn't update ignored rows $query. $error<br />\n";
+    if ($_GET['debug'])
+        echo "Updating db to ignore $rowid. Already ignored? ".$row['should_ignore']."<br />";
+
+    if (intval($row['should_ignore']) == 0) {
+        $query = "update policy set should_ignore = 1 where rowid in ($rowid)";
+        $ok = sqlite_exec($dbhandle, $query, $error);
+        if (!$ok) {
+            echo "Couldn't update ignored rows $query. $error<br />\n";
+        }
+    } else {
+        if ($_GET['debug'])
+            echo "Skipping ...<br />";
     }
 }
 
@@ -444,7 +451,7 @@ echo "There are about " . count($allResults) . " policies to process.<br />";
 $pruneStatuses = array("CANCELLED TO INCEPTION", "DECLINED, PAYMENT", "SOLD, PART TERMINATED", "PENDNG RENEWAL");
 foreach ($allResults as $key=>$value) {
     if (in_array($value["certificate_status"], $pruneStatuses)) {
-        updateToIgnore($dbhandle, $value['rowid']);
+        updateToIgnore($dbhandle, $value);
         unset($allResults[$key]);
     }
 }
@@ -455,7 +462,7 @@ echo "After pruning by certificate status, there are about " . count($allResults
 
 foreach ($allResults as $key=>$value) {
     if (!strlen($value["insured_name"])) {
-        updateToIgnore($dbhandle, $value['rowid']);
+        updateToIgnore($dbhandle, $value);
         unset($allResults[$key]);
     }
 }
@@ -484,6 +491,7 @@ foreach ($allResults as $key=>$value) {
     $effectiveDateKey = "julianday(effective_date_fmt)";
     $myEffectiveDate = floatval($value[$effectiveDateKey]);
     $myRowID = intval($value["rowid"]);
+    $myRow = $value;
 
     $nukedSelf = false;
 
@@ -500,22 +508,22 @@ foreach ($allResults as $key=>$value) {
                 # The sibling is a dead policy... is it newer or older than us based on rowid?
                 if ($sibRowID > $myRowID) {
                     # Sibling is newer, nuke us.
-                    updateToIgnore($dbhandle, $myRowID);
+                    updateToIgnore($dbhandle, $myRow);
                     unset($allResults[$key]);
                     $nukedSelf = true;
                     break;
                 } else {
                     # Sibling is older, ignore it.
-                    updateToIgnore($dbhandle, $sibRowID);
+                    updateToIgnore($dbhandle, $sibling);
                 }
             } else {
                 # Both my sibling and I are active policies.
                 if (strlen($value["last_reminder_date_fmt"]) > 0) {
                     # My row has been used for reminder emails, ignore sibling
-                    updateToIgnore($dbhandle, $sibRowID);
+                    updateToIgnore($dbhandle, $sibling);
                 } elseif (strlen($sibling["last_reminder_date_fmt"]) > 0) {
                     # Sibling has been used for reminder emails, nuke me
-                    updateToIgnore($dbhandle, $myRowID);
+                    updateToIgnore($dbhandle, $myRow);
                     unset($allResults[$key]);
                     $nukedSelf = true;
                     break;
@@ -523,22 +531,22 @@ foreach ($allResults as $key=>$value) {
                     # Neither of us has been used for reminders. Use the most recent rowid.
                     if ($sibRowID > $myRowID) {
                         # Sibling is newer, nuke us.
-                        updateToIgnore($dbhandle, $myRowID);
+                        updateToIgnore($dbhandle, $myRow);
                         unset($allResults[$key]);
                         $nukedSelf = true;
                         break;
                     } else {
                         # Sibling is older, ignore it.
-                        updateToIgnore($dbhandle, $sibRowID);
+                        updateToIgnore($dbhandle, $sibling);
                     }
                 }
             }
         } elseif ($sibEffectiveDate < $myEffectiveDate) {
             # Ignore the sibling, my effective date is newer.
-            updateToIgnore($dbhandle, $sibRowID);
+            updateToIgnore($dbhandle, $sibling);
         } else {
             # The sibling has a newer effective date, nuke my entry.
-            updateToIgnore($dbhandle, $myRowID);
+            updateToIgnore($dbhandle, $myRow);
             unset($allResults[$key]);
             $nukedSelf = true;
             break;
