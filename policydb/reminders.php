@@ -345,7 +345,7 @@ if (!is_null($_POST['processedRows'])) {
 //   - They haven't been reminded since before the day before expiration
 //   AND
 //   - They've gotten a reminder and today is later than the day before expiration
-$soonToExpireQuery = "select $importantColumns from policy where (should_ignore = 0) and julianday(expiration_date_fmt) >= julianday(\"now\", \"-20 days\") and julianday(expiration_date_fmt) <= julianday(\"now\", \"+10 days\") and ( (last_reminder_date_fmt IS NULL) or (length(last_reminder_date_fmt) = 0) or ( (julianday(last_reminder_date_fmt) < julianday(expiration_date_fmt, \"-1 day\")) AND (julianday(\"now\") >= julianday(expiration_date_fmt, \"-1 day\"))  )   ) order by rowid desc";
+$soonToExpireQuery = "select $importantColumns from policy where (should_ignore = 0) and julianday(expiration_date_fmt) >= julianday(\"now\", \"-18 days\") and julianday(expiration_date_fmt) <= julianday(\"now\", \"+10 days\") and ( (last_reminder_date_fmt IS NULL) or (length(last_reminder_date_fmt) = 0) or ( (julianday(last_reminder_date_fmt) < julianday(expiration_date_fmt, \"-1 day\")) AND (julianday(\"now\") >= julianday(expiration_date_fmt, \"-1 day\"))  )   ) order by rowid desc";
 
 $result = sqlite_query($dbhandle, $soonToExpireQuery, $error);
 if (!$result) {
