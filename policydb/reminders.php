@@ -316,6 +316,9 @@ Chris
 taianfinancial.com/chinese
 END;
 
+    $renewalSubject = "泰安保险续保通知";
+    $rebuySubject = "泰安保险过期提醒";
+    $expiresTodaySubject = "您的泰安保险今天过期";
 
     $primaryInsuredName = $individuals[0]["primary_insured_name"];
     $expirationDate = $individuals[0]["expiration_date"];
@@ -338,41 +341,53 @@ END;
         Patriot Exchange group rebuy - Starts with EPSWN
      */
     $renewEmail = "";
+    $subject = "";
     if (startsWith($certificateNumber, "SHA")) {
         if ($tooLateToRenew) {
             $renewEmail = $studentAExpiresToday;
+            $subject = $expiresTodaySubject;
         } else {
             if (!$isAtLeastThreeMonths) {
                 $renewEmail = $studentAShortRebuy;
+                $subject = $rebuySubject;
             } else {
                 $renewEmail = $studentARenew;
+                $subject = $renewalSubject;
             }
         }
     } elseif (startsWith($certificateNumber, "EPSN")) {
         if ($tooLateToRenew) {
             $renewEmail = $studentBExpiresToday;
+            $subject = $expiresTodaySubject;
         } else {
             $renewEmail = $studentBRenew;
+            $subject = $renewalSubject;
         }
     } elseif (startsWith($certificateNumber, "EPBN")) {
         $renewEmail = $studentBBasicRenew;
+        $subject = $renewalSubject;
     } elseif (startsWith($certificateNumber, "PATA") ||
               startsWith($certificateNumber, "PATI") ||
               startsWith($certificateNumber, "PPLA")) {
         if ($tooLateToRenew) {
             $renewEmail = $travelExpiresToday;
+            $subject = $expiresTodaySubject;
         } else {
              if ($isAtLeastMonth) {
                   $renewEmail = $longTravelRenew;
+                  $subject = $renewalSubject;
              } else {
                   $renewEmail = $shortTravelRebuy;
+                  $subject = $rebuySubject;
              }
         }
     } elseif (startsWith($certificateNumber, "EPSWN")) {
         if ($tooLateToRenew) {
             $renewEmail = $patriotExchangeGroupExpiresToday;
+            $subject = $expiresTodaySubject;
         } else {
             $renewEmail = $patriotExchangeGroupRenew;
+            $subject = $renewalSubject;
         }
     }
 
@@ -380,7 +395,7 @@ END;
     $renewEmail = str_replace("__EXPIRATION_DATE__", $expirationDate, $renewEmail);
     $renewEmail = str_replace("__CERTIFICATE_NUMBER__", $certificateNumber, $renewEmail);
 
-    return $renewEmail;
+    return $subject . "\n" . $renewEmail;
 }
 
 function startsWith($haystack, $needle) {
