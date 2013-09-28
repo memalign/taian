@@ -12,8 +12,6 @@ require_once('db.php');
 set_time_limit(300);
 //error_reporting(E_ALL);
 
-$importantColumns = "rowid, expiration_date_fmt, expiration_date, effective_date_fmt, julianday(effective_date_fmt), last_reminder_date_fmt, certificate_number, certificate_status, certificate_type, primary_insured_name, insured_name, group_name, primary_email_address, other_email_address, (julianday(\"now\")-julianday(\"expiration_date_fmt\") > -1) as too_late_to_renew, (julianday(\"expiration_date_fmt\")-julianday(\"effective_date_fmt\") > 27) as is_at_least_month, (julianday(\"expiration_date_fmt\")-julianday(\"effective_date_fmt\") > 87) as is_at_least_three_months, should_ignore";
-
 function siblingsAndEmails($dbhandle, $individual) {
     global $importantColumns;
 
