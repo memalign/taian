@@ -15,7 +15,7 @@ function getPartnership(partner) {
                                   "Call from China: 950-4044-2336 (Chinese, Beijing time 7-11am, no long distance charges)",
                                   "WeChat ID: wxid_taian_usa",
                                   "Skype: chris.lee136",
-                                  "Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>"
+                                  "Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>"
                                  ],
                     tabs: [
                             "pivot-home",
@@ -27,6 +27,7 @@ function getPartnership(partner) {
                             "pivot-life-insurance",
                             "pivot-partnerships"
                           ]
+                            
                },
 
         using: {
@@ -55,6 +56,15 @@ function getPartnership(partner) {
                             "pivot-travel-insurance"
                           ]
               },   
+              
+        upgrade: {
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance"
+                          ]
+              },                 
               
         uclaj: {
                     tabs: [
@@ -639,7 +649,28 @@ function getPartnership(partner) {
                                 ]));
                         endRow();
                     }
-              },    
+              },   
+
+        bc: {
+                    windowTitle: "TaiAn Health Insurance for Boston College",
+                    pageTitle: "TaiAn Health Insurance for Boston College",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Boston College J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Boston College as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("Boston College Scholar Requirements", "http://www.bc.edu/content/bc/offices/oiss/scholars/department.html")                         
+
+                                ]));
+                        endRow();
+                    }
+              },               
 
         brown: {
                     windowTitle: "TaiAn Health Insurance for Brown University",
@@ -976,15 +1007,15 @@ function getPartnership(partner) {
                           ],
                     jScholarContent: function () {
                         startRow();
-                        writeText("Taian Travel Insurance Plan with $250.00 deductible and $500,000 benefit meets UC Berkeley J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $500,000 per illness/injury; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Annual deductible not over $250.00. Travel plan with $250.00 deductible and $500,000 maximum (we suggest $1,000,000 maximum) is the most affordable plan that meets the standards, and the US Department of State requirements.  Shortly after submitting an application you will receive confirmation of your coverage which you can send to UC Berkeley as proof of insurance.");
-
+                        writeText("Taian Travel Insurance Plan (Patriot America) with $250.00 deductible and $500,000 benefit meets UC Berkeley J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $500,000 per illness/injury; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Annual deductible not over $250.00. Travel plan with $250.00 deductible and $500,000 maximum (we suggest $1,000,000 maximum) is the most affordable plan that meets the standards, and the US Department of State requirements. The chart on the left below shows the monthly premium rates for this plan.  The chart on the right shows premium rates to choose a $0 deductible plan with the same benefits (a little more expensive).  Shortly after submitting an application you will receive confirmation of your coverage which you can send to UC Berkeley as proof of insurance.");
+                        writeText("J-2 dependents are subject to the same benefit requirements.  Your J-2 dependents can buy with you, or buy a separate plan.  If your J-2 dependents are not going to be in the US for the same time period you will be here, you can buy a separate plan with different coverage dates to match their stay in the US.");
 
                         startRow();
                             document.write(makeTable(2,
                             [
                             // Column headers:
 
-                            "Price for $500,000 benefit $250 deductible", "Price for $500,000 benefit $0 deductible",
+                            "Monthly Price for $500,000 benefit $250 deductible", "Monthly Price for $500,000 benefit $0 deductible",
 
 
                             // Table within a table
@@ -1547,11 +1578,41 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UC Riverside J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UC Riverside as proof of insurance.");
+                        writeText("Taian Scholar/Student Insurance Plan B meets UC Riverside J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $500,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $50,000; 4. Deductible not over $250. Plan B with $500,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UC Riverside as proof of insurance.");
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("UC Riverside Scholar Requirements", "http://internationalcenter.ucr.edu/SiteCollectionDocuments/importantregulationsforj1students.pdf")                        
+                                makeURL("UC Riverside Scholar Requirements", "http://internationalcenter.ucr.edu/InternationalStudents/Pages/HealthandMoneyMatters.aspx")                        
                                 ]));
                         endRow();
+                        
+                        startRow();
+                            document.write(makeTable(1,
+                            [
+                            // Column headers:
+
+                            "Monthly Price for $500,000 benefit", 
+
+
+                            // Table within a table
+
+                                makeTable(4, [
+                                "Age",     "J1", "Spouse", "Children",
+                                "&lt; 25", "$63.66",   "$63.66",   "$63.66",
+                                "25-49",   "$82.90",   "$82.90",   "$63.66",
+                                "50-64",   "$177.53",  "$177.53",   "$63.66"
+
+                                ]), 
+
+
+                    
+
+                                makeBuyURL("Patriot Exchange Program - Standard", "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699")
+
+
+
+                                   ])
+                                    );
+                        endRow();                        
+                        
                     }
               },
 
@@ -1926,7 +1987,7 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                            "Price for $100,000 benefit $250 deductible", "Price for $100,000 benefit $0 deductible",
+                            "Monthly Price for $100,000 benefit $250 deductible", "Monthly Price for $100,000 benefit $0 deductible",
 
 
                             // Table within a table
@@ -2051,6 +2112,27 @@ function getPartnership(partner) {
                     }
               },   
 
+        utdallas: {
+                    windowTitle: "TaiAn Health Insurance for UT Dallas",
+                    pageTitle: "TaiAn Health Insurance for UT Dallas",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UT Dallas enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UT Dallas as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("UT Dallas Student Requirements", "http://www.utdallas.edu/healthcenter/insurance/intl-waivers.html"), 
+                                makeURL("UT Dallas Scholar Requirements", "http://www.utdallas.edu/hrm/forms/insreqvisitors.pdf")                               
+                                ]));
+                        endRow();
+                    }
+              },              
+              
         uta: {
                     windowTitle: "TaiAn Health Insurance for UT Arlington",
                     pageTitle: "TaiAn Health Insurance for UT Arlington",
@@ -2138,7 +2220,7 @@ function getPartnership(partner) {
                                   "Call from China: 950-4044-2336 (Chinese, Beijing time 7-11am)",
                                   "WeChat ID: wxid_taian_usa",
                                   "Skype: chris.lee136",
-                                  "Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>"
+                                  "Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>"
                                  ],
                     tabs: [
                             "pivot-home",

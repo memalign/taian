@@ -432,6 +432,7 @@ function showPivot(pivotName) {
         acnncsu: "l=cn&partner=ncsu&p=pivot-international-student&adid=acnncsu",  
         incsu: "l=en&partner=ncsu&p=pivot-international-student",        
         mei: "l=cn&partner=mei",
+        upgrade: "l=cn&partner=upgrade&p=pivot-home&adid=upgrade",        
         lng: "l=cn&partner=lng",
         lngglbl: "l=cn&partner=lng&p=pivot-global-medical&adid=lng",
         lngglblform: "l=cn&partner=lng&p=global-form&adid=lng",        
@@ -476,9 +477,7 @@ function showPivot(pivotName) {
         inyu: "l=en&partner=nyu&p=pivot-international-student",
         ipurdue: "l=en&partner=purdue&p=pivot-international-student",
         icolumbia: "l=en&partner=columbia&p=pivot-international-student",
-
-        iiu: "l=en&partner=iu&p=pivot-international-student",
-        iutaustin: "l=en&partner=utaustin&p=pivot-international-student",                
+        iiu: "l=en&partner=iu&p=pivot-international-student",                
         uiuc: "l=en&partner=uiuc&p=pivot-home&adid=suiuc",
         cnuiuc: "l=cn&partner=uiuc&p=pivot-home&adid=scnuiuc",   
         gcnuiuc: "l=cn&partner=uiuc&p=pivot-international-student&adid=gcnuiuc",
@@ -509,9 +508,9 @@ function showPivot(pivotName) {
         acnucla: "l=cn&partner=ucla&p=pivot-j-scholar&adid=acnucla",        
         gucla: "l=en&partner=ucla&p=pivot-j-scholar&adid=gucla",
         iucla: "l=en&partner=ucla&p=pivot-j-scholar",        
-        icnucla: "l=cn&partner=ucla&p=pivot-j-scholar",        
-        uclaj: "l=cn&partner=uclaj&p=pivot-international-student&adid=uclaj",  
-        uclajs: "l=cn&partner=uclajs&p=pivot-international-student&adid=uclajs",        
+        icnucla: "l=cn&partner=ucla&p=pivot-j-scholar",         
+        uclajt: "l=cn&partner=ucla&p=pivot-j-scholar&adid=uclajt",  
+        uclajs: "l=cn&p=pivot-international-student&adid=uclajs",         
         ucdav: "l=en&partner=ucdav&p=pivot-home&adid=sucdav",
         cnucdav: "l=cn&partner=ucdav&p=pivot-home&adid=scnucdav",   
         gcnucdav: "l=cn&partner=ucdav&p=pivot-international-student&adid=gcnucdav",
@@ -554,6 +553,16 @@ function showPivot(pivotName) {
         acnbu: "l=cn&partner=bu&p=pivot-international-student&adid=acnbu",        
         gbu: "l=en&partner=bu&p=pivot-international-student&adid=gbu",
         ibu: "l=en&partner=bu&p=pivot-international-student",
+        icnbu: "l=cn&partner=bu&p=pivot-international-student",
+        
+        bc: "l=en&partner=bc&p=pivot-home&adid=sbc",
+        cnbc: "l=cn&partner=bc&p=pivot-home&adid=scnbc",   
+        gcnbc: "l=cn&partner=bc&p=pivot-international-student&adid=gcnbc",
+        acnbc: "l=cn&partner=bc&p=pivot-international-student&adid=acnbc",        
+        gbc: "l=en&partner=bc&p=pivot-international-student&adid=gbc",
+        ibc: "l=en&partner=bc&p=pivot-international-student",  
+        icnbc: "l=cn&partner=bc&p=pivot-international-student",
+        
         ufl: "l=en&partner=ufl&p=pivot-home&adid=sufl",
         cnufl: "l=cn&partner=ufl&p=pivot-home&adid=scnufl",   
         gcnufl: "l=cn&partner=ufl&p=pivot-international-student&adid=gcnufl",
@@ -667,12 +676,24 @@ function showPivot(pivotName) {
         gcncornell: "l=cn&partner=cornell&p=pivot-international-student&adid=gcncornell",
         acncornell: "l=cn&partner=cornell&p=pivot-international-student&adid=acncornell",        
         gcornell: "l=en&partner=cornell&p=pivot-international-student&adid=gcornell",
-        icornell: "l=en&partner=cornell&p=pivot-international-student",        
+        icornell: "l=en&partner=cornell&p=pivot-international-student",
+        
         utaustin: "l=en&partner=utaustin&p=pivot-home&adid=sut",
         cnutaustin: "l=cn&partner=utaustin&p=pivot-home&adid=scnut",   
         gcnutaustin: "l=cn&partner=utaustin&p=pivot-international-student&adid=gcnut",
         acnutaustin: "l=cn&partner=utaustin&p=pivot-international-student&adid=acnut",        
         gutaustin: "l=en&partner=utaustin&p=pivot-international-student&adid=gut",
+        iutaustin: "l=en&partner=utaustin&p=pivot-international-student",
+        icnutaustin: "l=cn&partner=utaustin&p=pivot-international-student",  
+        
+        utdallas: "l=en&partner=utdallas&p=pivot-home&adid=sutdallas",
+        cnutdallas: "l=cn&partner=utdallas&p=pivot-home&adid=scnutdallas",   
+        gcnutdallas: "l=cn&partner=utdallas&p=pivot-international-student&adid=gcnutdallas",
+        acnutdallas: "l=cn&partner=utdallas&p=pivot-international-student&adid=acnutdallas",        
+        gutdallas: "l=en&partner=utdallas&p=pivot-international-student&adid=gutdallas",
+        iutdallas: "l=en&partner=utdallas&p=pivot-international-student",
+        icnutdallas: "l=cn&partner=utdallas&p=pivot-international-student",
+        
         iu: "l=en&partner=iu&p=pivot-home&adid=siu",
         cniu: "l=cn&partner=iu&p=pivot-home&adid=scniu",   
         gcniu: "l=cn&partner=iu&p=pivot-international-student&adid=gcniu",
@@ -706,7 +727,7 @@ function showPivot(pivotName) {
     if (pivotName == "pivot-travel-insurance") {
         showSubsection("travel-subsections", "patriot-travel");
     } else if (pivotName == "pivot-letters") {
-        showSubsection("letters-subsections", "patriot-addmembertogroup");
+        showSubsection("letters-subsections", "patriot-whereisidcard");
     } else {
         analyticsTrackEvent("view", pivotName, 1, false);
         analyticsTrackAdView(pivotName);
@@ -1770,6 +1791,11 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School J1 requirement", "http://www.auburn.edu/academic/international/isss/insurance/"),
                 "Consult your school about their requirements",                 
 
+                makeURL("Boston College (MA)", "http://www.bc.edu/"),
+                makeURL("School F1 requirement", "http://www.bc.edu/content/bc/offices/oiss/incoming/pre/health.html"),
+                makeURL("School J1 requirement", "http://www.bc.edu/content/bc/offices/oiss/scholars/department.html"),
+                makeURL("Health insurance for Boston College Scholars", "http://taianfinancial.com/#ibc"),                
+                
                 makeURL("Boston University (MA)", "http://www.bu.edu/"),
                 makeURL("School F1 requirement", "http://www.bu.edu/studentaccountingservices/resources/medical-insurance/"),
                 makeURL("School J1 requirement", "http://www.bu.edu/isso/administrators/j1/ev-overview.html"),
@@ -2154,7 +2180,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("University of California Riverside (CA)", "http://www.ucr.edu/"),
                 makeURL("School F1 requirement", "http://internationalcenter.ucr.edu/InternationalStudents/Pages/HealthandMoneyMatters.aspx"),
-                makeURL("School J1 requirement", "http://internationalcenter.ucr.edu/SiteCollectionDocuments/importantregulationsforj1students.pdf"),
+                makeURL("School J1 requirement", "http://internationalcenter.ucr.edu/InternationalStudents/Pages/HealthandMoneyMatters.aspx"),
                 makeURL("Health insurance for UC Riverside Scholars", "http://taianfinancial.com/#iucr"),
                 
                 makeURL("University of California San Diego (CA)", "http://www.ucsd.edu/"),
@@ -2407,6 +2433,12 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School J1 requirement", "http://www.uta.edu/oie/?page=JScholar"),
                 makeURL("Health Insurance for　UT Arlington International Students and Scholars", "http://taianfinancial.com/#iuta"),
 
+                 makeURL("University of Texas - Dallas (TX)", "http://www.utdallas.edu/"),
+                makeURL("School F1 requirement", "http://www.utdallas.edu/healthcenter/insurance/intl-waivers.html"),
+                makeURL("School J1 requirement", "http://www.utdallas.edu/hrm/forms/insreqvisitors.pdf"),
+                makeURL("Health Insurance for UT Dallas International Students and Scholars", "http://taianfinancial.com/#iutdallas"),               
+                
+                
                 makeURL("University of Texas - MD Anderson (TX)", "http://www.mdanderson.org/"),
                 makeURL("School F1 requirement", "http://www.mdanderson.org/education-and-research/education-and-training/schools-and-programs/school-of-health-professions/school-of-health-professions-student-catalog/policies-and-procedures/student-health-insurance.html"),
                 makeURL("School J1 requirement", "https://www.academichealthplans.com/uthouston/2012-2013/FAQs.php"),
@@ -2539,7 +2571,7 @@ function writeSections(legacy) {
     startSection("pivot-international-student", "International Scholars and Students");
 
     startRow();
-    writeText("Taian International Health Insurance provides International Scholar and Student Insurance for US visa holders (F1 visa, J1 visa, OPT, and M1 visa) and their dependents. Taian Insurance Plan A and Plan B meet many schools' student insurance standards and almost every schools' J1 scholar insurance standards and are more affordable than most school plans.");
+    writeText("Taian International Health Insurance provides International Scholar and Student Insurance for US visa holders (F1 visa, J1 visa, OPT, and M1 visa) and their dependents. Taian Insurance Plan A and Plan B meet many schools' student insurance standards and almost every schools' J1 scholar insurance standards and are more affordable than most school plans. All J visa holders are required to meet the  US Department of State (USDOS) requirements and their school requirements for the duration of their visa. Plan B with $50,000 benefit per illness or injury (Standard Plan) is the most affordable plan that meets the USDOS requirements. Most schools requirements for J1 scholars are the same as the USDOS, however some schools have higher requirements. Please click the links below to see your school requirements and US Department of State requirements.");
     endRow();
 
     var partnerShip = getPartnership(getPageAttribute("partner"));
@@ -3434,21 +3466,53 @@ function writeSections(legacy) {
 
     
     // Letters
-    startSection("pivot-letters", "Form Letters");
+    startSection("pivot-letters", "Sample Letters");
 
 
+    startRow();  
+    writeText("EMAILS FROM TAIAN TO THE CUSTOMER FOR GENERAL QUESTIONS ABOUT HOSPITAL DOCTOR AND CLAIMS");    
+    document.write(makeTableWithStyle("invisibleTableNormalText", 1, [
 
+                makeSubsectionURL("letters-subsections", "patriot-whereisidcard", "Where is my ID card?"),
+                makeSubsectionURL("letters-subsections", "patriot-findprovider", "How do I Find a Provider?"),                
+                makeSubsectionURL("letters-subsections", "patriot-languageassistance", "Precertification of significant claim with Chinese language assistance"),
+                makeSubsectionURL("letters-subsections", "patriot-seeadoctor", "How to see a doctor - Explain hospital, doctor, and Urgent Care."),
+                makeSubsectionURL("letters-subsections", "patriot-directbilling", "Explain Direct billing vs paying at the doctor and how to get the doctor to work with IMG to direct bill"),
+                makeSubsectionURL("letters-subsections", "patriot-askdocaboutdirectbill", "Language to ask a doctor if they will accept direct billing"),
+                makeSubsectionURL("letters-subsections", "patriot-useurxcard", "How to use URX discount card to buy prescription medicine"),
+                makeSubsectionURL("letters-subsections", "patriot-immunizationandphysical", "Where to go for low cost physical exam or immunizations"),
+                makeSubsectionURL("letters-subsections", "patriot-extensionofbenefits", "What is the 60 day extension of benefits?"),
+                makeSubsectionURL("letters-subsections", "patriot-caraccident", "Will I be covered if I am in a car accident?"),
+                makeSubsectionURL("letters-subsections", "patriot-fileaclaim", "How do I file a claim?"),
+                makeSubsectionURL("letters-subsections", "patriot-claimstatus", "How do I check the status of a claim I filed - MyIMG?"),
+                makeSubsectionURL("letters-subsections", "patriot-myimg", "MyIMG account troubleshooting"),
+                makeSubsectionURL("letters-subsections", "patriot-chinesehelp", "Phone assistance in Chinese with IMG about a claim"),
+                makeSubsectionURL("letters-subsections", "patriot-claimpaymentchina", "What happens to my claim payment if I am back in China?")                
+                ]));
+    writeText("");    
+    
+    endRow(); 
+    
+    startRow();  
+    writeText("EMAILS FROM TAIAN TO THE CUSTOMER ABOUT GENERAL QUESTIONS");    
+    document.write(makeTableWithStyle("invisibleTableNormalText", 1, [
+
+                makeSubsectionURL("letters-subsections", "patriot-newpurchasedeclinepayment", "New customer for Declined Payment")
+                ]));
+    writeText("");    
+    
+    endRow();     
     
 
     startRow();
     writeText("EMAILS FOR THE CUSTOMER TO SEND TO IMG");    
     document.write(makeTableWithStyle("invisibleTableNormalText", 1, [
-                makeSubsectionURL("letters-subsections", "patriot-addmembertogroup", "Email for Customer to send to IMG to Add a Member to Patriot Exchange Group"),
-                makeSubsectionURL("letters-subsections", "patriot-extendgroupcoverage", "Email for Customer to send to IMG to Extend Group Coverage"),
-                makeSubsectionURL("letters-subsections", "patriot-idcard", "Email for Customer to send to IMG to Have IMG send a Fulfillment Kit including ID Card"),
-                makeSubsectionURL("letters-subsections", "patriot-getareceipt", "Email for Customer to send to IMG to Have IMG send a receipt"),
-                makeSubsectionURL("letters-subsections", "patriot-renewalcreditcardproblem", "Email for Customer to send to IMG to solve a Renewal Credit Card Problem by Having IMG Charge the Card on File"),
-                makeSubsectionURL("letters-subsections", "patriot-changeaddressorphonenumber", "Email for Customer to send to IMG to Update Address or Phone Number")               
+                makeSubsectionURL("letters-subsections", "patriot-addmembertogroup", "Add a Member to Patriot Exchange Group"),
+                makeSubsectionURL("letters-subsections", "patriot-extendgroupcoverage", "Extend Group Coverage"),
+                makeSubsectionURL("letters-subsections", "patriot-idcard", "Have IMG send a Fulfillment Kit including ID Card"),
+                makeSubsectionURL("letters-subsections", "patriot-getareceipt", "Have IMG send a receipt"),
+                makeSubsectionURL("letters-subsections", "patriot-renewalcreditcardproblem", "Solve a Renewal Credit Card Problem by Having IMG Charge the Card on File"),
+                makeSubsectionURL("letters-subsections", "patriot-changeaddressorphonenumber", "Update Address or Phone Number")               
 
 
                 ]));
@@ -3460,31 +3524,24 @@ function writeSections(legacy) {
     writeText("EMAILS FOR THE CUSTOMER TO SEND TO IMG ABOUT POLICY CANCELLATIONS - DO NOT USE THESE FOR BASIC PLAN CANCEL TO BUY STANDARD");    
     document.write(makeTableWithStyle("invisibleTableNormalText", 1, [
 
-                makeSubsectionURL("letters-subsections", "patriot-cancelbeforestartplanschanged", "Email for Customer to send to IMG to Cancel a Policy Before Coverage Started because Travel Plans Changed"),
-                makeSubsectionURL("letters-subsections", "patriot-cancelbeforestartschoolwaiverdecline", "Email for Customer to send to IMG to Cancel a Policy Before Coverage Started because School Waiver Declined"),                
-                makeSubsectionURL("letters-subsections", "patriot-partialcancelearlyforrefund", "Email for Customer to send to IMG to Cancel a Policy Early but After Coverage Started to get a Partial Refund")
+                makeSubsectionURL("letters-subsections", "patriot-cancelbeforestartplanschanged", "Cancel a Policy Before Coverage Started because Travel Plans Changed"),
+                makeSubsectionURL("letters-subsections", "patriot-cancelbeforestartschoolwaiverdecline", "Cancel a Policy Before Coverage Started because School Waiver Declined"),                
+                makeSubsectionURL("letters-subsections", "patriot-partialcancelearlyforrefund", "Cancel a Policy Early but After Coverage Started to get a Partial Refund")
 
                 ]));
     writeText("");
     
     endRow();    
     
-    startRow();  
-    writeText("EMAILS FROM TAIAN TO THE CUSTOMER");    
-    document.write(makeTableWithStyle("invisibleTableNormalText", 1, [
-
-                makeSubsectionURL("letters-subsections", "patriot-newpurchasedeclinepayment", "Email to New customer for Declined Payment")
-                ]));
-    writeText("");    
     
-    endRow();    
     
-    var letterExplanationa = "Sample Email:\n" +
+    var letterExplanationa = "Dear \[Customer Name\]\n" +
                             "You can send an email to IMG to ___PURPOSE___.   A sample email is below. Please fill in the content in the brackets and send the email to IMG.\n" +
                             "\n" +
                             "Thanks for your business!\n" +
                             "\n" +
-                            "Chris\n" +
+                            "Customer Service\n" +
+                            "taianfinancial.com\n" +
                             "317-318-8258 (Chinese)\n" +
                             "317-318-8259 (English)\n" +
                             "\n" +
@@ -3492,7 +3549,7 @@ function writeSections(legacy) {
 
     var letterExplanationb = "NOTE TO TAIAN STAFF:\n" +
                             "You can send an email to the customer to ___PURPOSE___.   A sample email is below. \n"+
-                            "Please fill in the content in the brackets and send the email to Customer.\n";
+                            "Please fill in customer name and check the content in the brackets \[ \] before sending the email to Customer.\n";
                             
                             
     startSubsections("letters-subsections");
@@ -3502,9 +3559,10 @@ function writeSections(legacy) {
     startRow();
 
     writeTextArea(loc(letterExplanationa).replace("___PURPOSE___", loc("add a member to your group plan")) +
+                  loc(
                   "\n\n" +
                   "Send to: insurance@imglobal.com\n" +
-                  "please copy to chris@taianfinancial.com\n" +
+                  "Please copy to: chris@taianfinancial.com\n" +
                   "\n" +
                   "Dear IMG,\n" +
                   "\n" +
@@ -3514,7 +3572,7 @@ function writeSections(legacy) {
                   "Date of Birth:(Add Date of Birth)\n" + 
                   "Sex:(Add Sex)\n" +
                   "Passport Number:(Add Passport Number)\n" +
-                  "Visa Type:(Add Add Visa Type)\n" +
+                  "Visa Type:(Add Visa Type)\n" +
                   "Country of Citizenship:(Add Country of Citizenship)\n" +
                   "Home Country:(Add Home Country)\n" +
                   "Primary Destination Country:(Add Primary Destination Country)\n" +  
@@ -3523,7 +3581,8 @@ function writeSections(legacy) {
                   "Please charge the credit card on file for this purchase.\n" +
                   "Also, please send me an email that shows my coverage has been updated.\n" +
                   "Thanks for your help.\n" +
-                  "(your name)\n");
+                  "(your name)\n")
+                  );
     endRow();
 
 
@@ -3534,9 +3593,10 @@ function writeSections(legacy) {
 
     startRow();
     writeTextArea(loc(letterExplanationa).replace("___PURPOSE___", loc("have IMG send you a receipt")) +
+                  loc(                  
                   "\n\n" +
                   "Send to: insurance@imglobal.com\n" +
-                  "please copy to chris@taianfinancial.com\n" +
+                  "Please copy to: chris@taianfinancial.com\n" +
                   "\n" +
                   "Dear IMG,\n" +
                   "\n" +
@@ -3546,7 +3606,8 @@ function writeSections(legacy) {
                   "(Your Address or email address)\n" +
                   "\n" +
                   "Thanks for your help.\n" +
-                  "(your name)\n");
+                  "(your name)\n")
+                  );
     endRow();
 
     endSubsection();
@@ -3555,24 +3616,22 @@ function writeSections(legacy) {
 
     startRow();
     writeTextArea(loc(letterExplanationa).replace("___PURPOSE___", loc("solve a renewal credit card problem by having IMG charge the credit card on file")) +
+                  loc(                  
                   "\n\n" +
                   "Send to: insurance@imglobal.com\n" +
-                  "please copy to chris@taianfinancial.com\n" +
+                  "Please copy to: chris@taianfinancial.com\n" +
                   "\n" +
                   "Dear IMG,\n" +
                   "\n" +
                   "I purchased insurance from IMG Certificate Number: (certificate number), Insured ID: (insured ID), Insured Name: (insured name).\n" +
-                  "It is about to expire on (EXPIRATION DATE).   I tried to extend the policy to expire\n" +
-                  "on  (NEW EXPIRATION DATE) by using the online extension link.\n" +
+                  "It is about to expire on (EXPIRATION DATE).   I tried to extend the policy to expire on  (NEW EXPIRATION DATE) by using the online extension link.\n" +
                   "\n" +
-                  "I could not get the website to accept my credit card.  I want to use the same \n" +
-                  "credit card I have on file with IMG that I used for my purchase.  Can you please \n" +
-                  "process this extension for me?  Also, please send me an email with my new \n" + 
-                  "certificate.  \n" + 
+                  "I could not get the website to accept my credit card.  I want to use the same credit card I have on file with IMG that I used for my purchase.  Can you please process this extension for me?  Also, please send me an email with my new certificate.  \n" + 
                   "\n" +  
                   "\n" +
                   "Thanks for your help.\n" +
-                  "(YOUR NAME)\n");
+                  "(YOUR NAME)\n")
+                  );
     endRow();
 
     endSubsection(); 
@@ -3581,22 +3640,22 @@ function writeSections(legacy) {
 
     startRow();
     writeTextArea(loc(letterExplanationa).replace("___PURPOSE___", loc("cancel a policy early for a partial refund.  For use after a policy is effective")) +
+                  loc(                  
                   "\n\n" +
                   "Send to: insurance@imglobal.com\n" +
-                  "please copy to chris@taianfinancial.com\n" +
+                  "Please copy to: chris@taianfinancial.com\n" +
                   "\n" +
                   "Dear IMG,\n" +
                   "\n" +
                   "I purchased insurance from IMG Certificate Number: (certificate number), Insured ID: (insured ID), Insured Name: (insured name).\n" +
-                  "I am returning to my home country sooner than expected, and no longer need my insurance coverage.\n" +
-                  "I am leaving (OR ALREADY LEFT) the US on (ENTER DATE OF RETURN TO HOME COUNTRY).  I would like to\n" +
-                  "terminate my coverage on that date.  I would also like to get a refund of the premium as a result of \n" +
-                  "shortening the coverage period.  Please refund the premium to the credit card charged for the insurance.\n" +
+                  "I am returning to my home country sooner than expected, and no longer need my insurance coverage.  I am leaving (OR ALREADY LEFT) the US on (ENTER DATE OF RETURN TO HOME COUNTRY).  I would like to terminate my coverage on that date.  I would also like to get a refund of the premium as a result of shortening the coverage period.  Please refund the premium to the credit card charged for the insurance.\n" +
+                  "\n" + 
                   "Please send me an email to let me know how much of a refund I am getting.\n" +
                   "\n" + 
                   "\n" +
                   "Thanks for your help.\n" +
-                  "(YOUR NAME)\n");
+                  "(YOUR NAME)\n")
+                  );
     endRow();
 
     endSubsection();    
@@ -3604,22 +3663,23 @@ function writeSections(legacy) {
     startSubsection("patriot-cancelbeforestartplanschanged");
 
     startRow();
-    writeTextArea(loc(letterExplanationa).replace("___PURPOSE___", loc("cancel a policy before it starts because customers travel plans changed.  For use before a policy is effective")) +
+    writeTextArea(loc(letterExplanationa).replace("___PURPOSE___", loc("cancel a policy before it starts because your travel plans changed.  For use before a policy is effective")) +
+                  loc(                  
                   "\n\n" +
                   "Send to: insurance@imglobal.com\n" +
-                  "please copy to chris@taianfinancial.com\n" +
+                  "Please copy to: chris@taianfinancial.com\n" +
                   "\n" +
                   "Dear IMG,\n" +
                   "\n" +
                   "I purchased insurance from IMG Certificate Number: (certificate number), Insured ID: (insured ID), Insured Name: (insured name).\n" +
-                  "My policy is not yet effective and my travel plans have changed.  I no longer need my insurance coverage.\n" +
-                  "I would like to cancel my coverage and get a refund of the premium.\n" +
-                  "Please refund the premium to the credit card charged for the insurance.\n" +
+                  "My policy is not yet effective and my travel plans have changed.  I no longer need my insurance coverage.  I would like to cancel my coverage and get a refund of the premium.  Please refund the premium to the credit card charged for the insurance.\n" +
+                  "\n" +
                   "Please send me an email to let me know this has been completed.\n" +
                   "\n" + 
                   "\n" +
                   "Thanks for your help.\n" +
-                  "(YOUR NAME)\n");
+                  "(YOUR NAME)\n")
+                  );
     endRow();
 
     endSubsection();
@@ -3628,21 +3688,22 @@ function writeSections(legacy) {
 
     startRow();
     writeTextArea(loc(letterExplanationa).replace("___PURPOSE___", loc("cancel a policy before effective date because the school waiver was declined.  For use before a policy is effective")) +
+                  loc(                  
                   "\n\n" +
                   "Send to: insurance@imglobal.com\n" +
-                  "please copy to chris@taianfinancial.com\n" +
+                  "Please copy to: chris@taianfinancial.com\n" +
                   "\n" +
                   "Dear IMG,\n" +
                   "\n" +
                   "I purchased insurance from IMG Certificate Number: (certificate number), Insured ID: (insured ID), Insured Name: (insured name).\n" +
-                  "My policy is not yet effective and my school declined my application to waive the school plan.  I no longer need my insurance coverage.\n" +
-                  "I would like to cancel my coverage and get a refund of the premium.\n" +
-                  "Please refund the premium to the credit card charged for the insurance.\n" +
+                  "My policy is not yet effective and my school declined my application to waive the school plan.  I no longer need my insurance coverage.  I would like to cancel my coverage and get a refund of the premium.  Please refund the premium to the credit card charged for the insurance.\n" +
+                  "\n" + 
                   "Please send me an email to let me know this has been completed.\n" +
                   "\n" + 
                   "\n" +
                   "Thanks for your help.\n" +
-                  "(YOUR NAME)\n");
+                  "(YOUR NAME)\n")
+                  );
     endRow();
 
     endSubsection();    
@@ -3651,9 +3712,10 @@ function writeSections(legacy) {
 
     startRow();
     writeTextArea(loc(letterExplanationa).replace("___PURPOSE___", loc("have IMG send you a fulfillment kit including ID card")) +
+                  loc(                  
                   "\n\n" +
                   "Send to: insurance@imglobal.com\n" +
-                  "please copy to chris@taianfinancial.com\n" +
+                  "Please copy to: chris@taianfinancial.com\n" +
                   "\n" +
                   "Dear IMG,\n" +
                   "\n" +
@@ -3663,7 +3725,8 @@ function writeSections(legacy) {
                   "(Your Address)\n" +
                   "\n" +
                   "Thanks for your help.\n" +
-                  "(your name)\n");
+                  "(your name)\n")
+                  );
     endRow();
 
     endSubsection();    
@@ -3672,9 +3735,10 @@ function writeSections(legacy) {
 
     startRow();
     writeTextArea(loc(letterExplanationa).replace("___PURPOSE___", loc("extend coverage in your group plan")) +
+                  loc(                 
                   "\n\n" +
                   "Send to: insurance@imglobal.com\n" +
-                  "please copy to chris@taianfinancial.com\n" +
+                  "Please copy to: chris@taianfinancial.com\n" +
                   "\n" +
                   "Dear IMG,\n" +
                   "\n" +
@@ -3683,8 +3747,11 @@ function writeSections(legacy) {
                   "Please extend by (you choose one month, two months, three months or other number of months).\n" +
                   "Please charge the credit card on file for this purchase.\n" +
                   "Also, please send me an email that shows my coverage has been extended.\n" +
+                  "\n" +
                   "Thanks for your help.\n" +
-                  "(your name)\n");
+                  "\n" +
+                  "(your name)\n")
+                  );
     endRow();
 
     endSubsection();
@@ -3693,9 +3760,10 @@ function writeSections(legacy) {
 
     startRow();
     writeTextArea(loc(letterExplanationa).replace("___PURPOSE___", loc("correct your address or phone number")) +
+                  loc(                  
                   "\n\n" +
                   "Send to: insurance@imglobal.com\n" +
-                  "please copy to chris@taianfinancial.com\n" +
+                  "Please copy to: chris@taianfinancial.com\n" +
                   "\n" +
                   "Dear IMG,\n" +
                   "\n" +
@@ -3705,7 +3773,8 @@ function writeSections(legacy) {
                   "I would like to change the address that you have on file for me to:(correct address)\n" +
                   "Also, please send me an email that shows my changes.\n" +                  
                   "Thanks for your help.\n" +
-                  "(your name)\n");
+                  "(your name)\n")
+                  );
     endRow();
 
     endSubsection();    
@@ -3714,27 +3783,21 @@ function writeSections(legacy) {
 
     startRow();
     writeTextArea(loc(letterExplanationb).replace("___PURPOSE___", loc("assist a new customer after a payment decline")) +
+                  loc(                 
                   "\n\n" +
-                  "Dear (CUSTOMER NAME);\n" +
+                  "Dear \[CUSTOMER NAME\]\n" +
                   "\n" +
-                  "I see that you attempted to purchase your insurance for your trip to the US.  My \n" +
-                  "online system shows that your credit card payment was declined, so your insurance \n" +
-                  "is not active.\n" +
+                  "I see that you attempted to purchase your international insurance.  My online system shows that your credit card payment was declined, so your insurance is not active.\n" +
                   "\n" +
                   "Some common reasons for a declined payment are:\n" +
                   "\n" +
-                  "-Sometimes the address is difficult to translate.  You can try putting your address in \n" +
-                  "your native language into google maps and have it translated to English.  When \n" +                 
-                  "address is a problem this usually helps.\n" +
+                  "-Sometimes the billing address is difficult to translate.  You can try putting your billing address in your native language into google maps and have it translated to English.  When address is a problem this usually helps.\n" +
                   "\n" +  
-                  "-When IMG asks for billing address, you need to fill in the address that your credit card bill is sent.\n" +  
-                  "This will not impact where your insurance materials are sent, but is needed to verify your card.\n" +
+                  "-When IMG asks for billing address, you need to fill in the address that your credit card bill is sent.  This will not impact where your insurance materials are sent, but is needed to verify your card.\n" +
                   "\n" +                  
-                  "-Some banks need to be notified in advance when you make a credit card charge \n" +                  
-                  "outside your home country - you may need to call the number on the back of your \n" +
-                  "card to tell them this is a genuine charge.\n" +                  
+                  "-Some banks need to be notified in advance when you make a credit card charge outside your home country - you may need to call the number on the back of your card to tell them this is a genuine charge.\n" +                  
                   "\n" +
-                  "Let me know if you'd like assistance.\n" +
+                  "Let me know if you would like assistance.\n" +
                   "\n" +                  
                   "Thanks for your business.\n" +
                   "\n" + 
@@ -3742,10 +3805,380 @@ function writeSections(legacy) {
                   "taianfinancial.com\n" +
                   "317-318-8258 (Chinese)\n" +
                   "317-318-8259 (English)\n" +                  
-                  "\n");
+                  "\n")
+                  );
     endRow();
 
+    endSubsection();     
+    
+    startSubsection("patriot-whereisidcard");
+
+    startRow();
+    writeTextArea(loc(letterExplanationb).replace("___PURPOSE___", loc("explain about electronic or paper ID card")) +
+                  loc(                 
+                  "\n\n" +
+                  "Dear \[CUSTOMER NAME\]\n" +
+                  "\n" +
+                  "IMG sent you an email with an electronic policy and ID card (insurance card) link. In the Email click the \"ID Card\" link, and you can print it.  There are many links in blue font to useful documents.  If at time of purchase you chose electronic delivery, you will not receive materials by mail.  If you chose at time of purchase to receive mail, IMG will mail you Fulfillment Documents. These documents include a thicker paper set of insurance cards.  The card has perforated edges and can easily be removed from the paper. If you need to see a doctor, you need to bring the insurance cards and a photo ID (such as driver's license, passport, etc.) to prove your identity.\n" +
+                  "\n" +                  
+                  "Thanks for your business.\n" +
+                  "\n" + 
+                  "Customer Service\n" +
+                  "taianfinancial.com\n" +
+                  "317-318-8258 (Chinese)\n" +
+                  "317-318-8259 (English)\n" +                  
+                  "\n")
+                  );
+    endRow();    
+
     endSubsection(); 
+ 
+    startSubsection("patriot-findprovider");
+
+    startRow();
+    writeTextArea(loc(letterExplanationb).replace("___PURPOSE___", loc("explain how to find a medical provider")) +
+                  loc(                 
+                  "\n\n" +
+                  "Dear \[CUSTOMER NAME\]\n" +
+                  "\n" +
+                  "1. To find a medical provider in the United States \"First Health Network\" PPO network, first go to this link: http://www.providerlookuponline.com/coventry/po7/gateway.aspx?plancode=141 enter your zip code and click \"Go\". You can choose to search for \"hospital\", \"medical\", \"urgent care\" or \"specialists\".\n" +
+                  "\n" +
+                  "2. Outside of the United States you can go to any doctor or hospital and receive the same benefits.  You can identify medical providers or find providers that offer direct billing with IMG by searching the International Provider link.\n" +
+                  "\n" +
+                  "3. To find medical providers outside the US first go to this link: http://www.imglobal.com/client-resources/international-provider-access.aspx  Some providers on this list offer direct billing arrangements.  Medical providers decide to accept direct billing on a case by case basis, so ask your provider if they will direct bill IMG.\n" +
+                  "\n" +                  
+                  "Thanks for your business.\n" +
+                  "\n" + 
+                  "Customer Service\n" +
+                  "taianfinancial.com\n" +
+                  "317-318-8258 (Chinese)\n" +
+                  "317-318-8259 (English)\n" +                  
+                  "\n")
+                  );
+    endRow();    
+
+    endSubsection(); 
+
+    startSubsection("patriot-languageassistance");
+
+    startRow();
+    writeTextArea(loc(letterExplanationb).replace("___PURPOSE___", loc("explain how to call IMG and get Chinese language assistance for precertification of a significant claim")) +
+                  loc(                 
+                  "\n\n" +
+                  "Dear \[CUSTOMER NAME\]\n" +
+                  "\n" +
+                  "If you require hospitalization, surgery, CAT scan, MRI, organ transplant, or other expensive proceedure you should contact IMG in advance.  For an emergency, you should contact IMG within 48 hours.  These large claims need to have pre-certification. IMG sent you a Pre-certification link by email in your declaration of insurance document. If you need foreign language assistance when you call for Pre-certification, first have your insurance card ready when you call. Call: 1-800-628-4664 or 317-655-4500. After the voice prompts select \"0\". When speaking with the operator say \"I would like to have foreign language assistance\". The operator will arrange a three way call with a translator.\n" +
+                  "\n" +                  
+                  "Thanks for your business.\n" +
+                  "\n" + 
+                  "Customer Service\n" +
+                  "taianfinancial.com\n" +
+                  "317-318-8258 (Chinese)\n" +
+                  "317-318-8259 (English)\n" +                  
+                  "\n")
+                  );
+    endRow();    
+
+    endSubsection();
+
+    startSubsection("patriot-seeadoctor");
+
+    startRow();
+    writeTextArea(loc(letterExplanationb).replace("___PURPOSE___", loc("explain when to go to a doctor, hospital, or urgent care center, and how to find a provider.")) +
+                  loc(                 
+                  "\n\n" +
+                  "Dear \[CUSTOMER NAME\]\n" +
+                  "\n" +
+                  "If you need to go to a doctor in the United States, you need an appointment.  Sometimes there isn\'t time to wait for an appointment because of an urgent medical need. If you have Patriot Exchange or Student Health Advantage you can try first going to the Student health center where you will have a $5 copay.  If you need urgent care and the student health center won\'t meet your needs, an Urgent Care center might.  They usually have evening and weekend hours and no appointment is necessary. In the United States if you do not have an appointment and go directly to the hospital, you go to the Emergency Room. If you go to the Emergency room and are not admitted to the hospital you have to pay a $250 additional deductible. In a real emergency situation (that is life-threatening or disabling), go to the nearest Emergency Room.  In other situations, for your own benefit, usually try to go to IMG\'s designated provider (doctor, hospital or urgent care center). In the United States you can search \"First Health Network\" PPO network link to find a medical provider: http://www.providerlookuponline.com/coventry/po7/gateway.aspx?plancode=141. When you see a doctor carry your insurance card and personal ID (to verify your identity).\n" +
+                  "\n" +                  
+                  "Thanks for your business.\n" +
+                  "\n" + 
+                  "Customer Service\n" +
+                  "taianfinancial.com\n" +
+                  "317-318-8258 (Chinese)\n" +
+                  "317-318-8259 (English)\n" +                  
+                  "\n")
+                  );
+    endRow();    
+
+    endSubsection();    
+ 
+    startSubsection("patriot-directbilling");
+
+    startRow();
+    writeTextArea(loc(letterExplanationb).replace("___PURPOSE___", loc("explain Direct billing vs paying at the doctor and how to get the doctor to work with IMG to direct bill")) +
+                  loc(                 
+                  "\n\n" +
+                  "Dear \[CUSTOMER NAME\]\n" +
+                  "\n" +
+                  "Most medical providers will settle bills directly with IMG.  They will charge you your deductible, copay  and coinsurance then settle the bill with IMG and then bill you any balance due.  Some smaller providers have not yet established a direct billing arrangement with IMG.  You can ask them to contact IMG to provide direct billing.  If you still can not arrange direct billing, you may need to pay the provider first, and then submit bills to IMG.  Make sure you get an itemized bill and submit those plus any receipts or other documents to IMG.   In this case IMG will pay medical reimbursement directly to you.  If IMG reprices the claim based on the network reimbursement to a rate less than you paid, you can go back to the clinic to be reimbursed.  Because of this complexity it is usually better to find a provider who will direct bill IMG.  You can call a provider before medical services are rendered and tell them you have IMG insurance and the network is First Health Network.  You can ask at that time if the will provide direct billing.\n" +
+                  "\n" +                  
+                  "Thanks for your business.\n" +
+                  "\n" + 
+                  "Customer Service\n" +
+                  "taianfinancial.com\n" +
+                  "317-318-8258 (Chinese)\n" +
+                  "317-318-8259 (English)\n" +                  
+                  "\n")
+                  );
+    endRow();    
+
+    endSubsection();
+
+
+    startSubsection("patriot-askdocaboutdirectbill");
+
+    startRow();
+    writeTextArea(loc(letterExplanationb).replace("___PURPOSE___", loc("give them language to ask a doctor if they will accept direct billing")) +
+                  loc(                 
+                  "\n\n" +
+                  "Dear \[CUSTOMER NAME\]\n" +
+                  "\n" +
+                  "Hello,  My name is (CUSTOMER NAME). I have an insurance policy from IMG, International Medical Group.  The policy has the First Health Network. If I come to you to get treatment I want to know if you will use direct billing, and not charge me when I come in except for the deductible.\n" +
+                  "\n" +                  
+                  "Thanks for your business.\n" +
+                  "\n" + 
+                  "Customer Service\n" +
+                  "taianfinancial.com\n" +
+                  "317-318-8258 (Chinese)\n" +
+                  "317-318-8259 (English)\n" +                  
+                  "\n")
+                  );
+    endRow();    
+
+    endSubsection();    
+ 
+
+    startSubsection("patriot-useurxcard");
+
+    startRow();
+    writeTextArea(loc(letterExplanationb).replace("___PURPOSE___", loc("use URX discount card to buy prescription medicine")) +
+                  loc(                 
+                  "\n\n" +
+                  "Dear \[CUSTOMER NAME\]\n" +
+                  "\n" +
+                  "When you need to fill a prescription you go to the pharmacy with the prescription you received from the doctor.  Make sure to bring the Universal URX Discount Card (if applicable) with you.  To find your card, see the email you received from IMG when you purchased your policy.  Click the link that says, \”Cover Letter, Certificate Wording, & Universal URX Discount Card\”.  You will have to pay for your prescription at the pharmacy but may receive a 10% to 50% discount with the card.  You can then submit your receipts and a claim for to IMG for reimbursement.\n" +
+                  "\n" +                  
+                  "Thanks for your business.\n" +
+                  "\n" + 
+                  "Customer Service\n" +
+                  "taianfinancial.com\n" +
+                  "317-318-8258 (Chinese)\n" +
+                  "317-318-8259 (English)\n" +                  
+                  "\n")
+                  );
+    endRow();    
+
+    endSubsection();
+ 
+ 
+    startSubsection("patriot-immunizationandphysical");
+
+    startRow();
+    writeTextArea(loc(letterExplanationb).replace("___PURPOSE___", loc("know where to go for a low cost physical exam or immunizations")) +
+                  loc(                 
+                  "\n\n" +
+                  "Dear \[CUSTOMER NAME\]\n" +
+                  "\n" +
+                  "To find inexpensive, and sometimes free, vaccines or immunizations you can contact your County Public Health Department.  This is usually the most affordable solution.  Another option is to go to a pharmacy like CVS or Walgreen.  Many of these have nurses who provide child physical exams and vaccines.  This will be much more affordable than a doctors office.  Some schools also offer baby clinic admission examinations.\n" +
+                  "\n" +                  
+                  "Thanks for your business.\n" +
+                  "\n" + 
+                  "Customer Service\n" +
+                  "taianfinancial.com\n" +
+                  "317-318-8258 (Chinese)\n" +
+                  "317-318-8259 (English)\n" +                  
+                  "\n")
+                  );
+    endRow();    
+
+    endSubsection(); 
+
+    startSubsection("patriot-extensionofbenefits");
+
+    startRow();
+    writeTextArea(loc(letterExplanationb).replace("___PURPOSE___", loc("understand the 60 day extension of benefits")) +
+                  loc(                 
+                  "\n\n" +
+                  "Dear \[CUSTOMER NAME\]\n" +
+                  "\n" +
+                  "\n" +
+                  "If a person has a claim that is covered during a policy, they have coverage for this chronic condition for 60 days. Here are a few important facts.\n" +
+                  "1) The hospital can not make a determination if a claim is covered or not.  The only people that can decide this is IMG.\n" + 
+                  "2) If the claim originated during a valid policy, and it was covered, IMG will need to decide if the subsequent claim is for the same illness and covered under the 60 day Treatment period.\n" +                  
+                  "This customer should submit the claim to IMG - both the initial claim, and the subsequent claim.\n" + 
+                  "\n" + 
+                  "Thanks for your business.\n" +
+                  "\n" + 
+                  "Customer Service\n" +
+                  "taianfinancial.com\n" +
+                  "317-318-8258 (Chinese)\n" +
+                  "317-318-8259 (English)\n" +                  
+                  "\n")
+                  );
+    endRow();    
+
+    endSubsection();
+
+    
+    startSubsection("patriot-caraccident");
+
+    startRow();
+    writeTextArea(loc(letterExplanationb).replace("___PURPOSE___", loc("explain coverage if customer is in a car accident")) +
+                  loc(                 
+                  "\n\n" +
+                  "Dear \[CUSTOMER NAME\]\n" +
+                  "\n" +
+                  "\n" +
+                  "This insurance is not intended to replace auto insurance. If you are driving you need auto insurance too.  If you are injured in an auto accident this insurance will coordinate coverage with your auto insurer.  The auto insurance is first but this would cover any gaps in auto coverage.\n" +
+                  "\n" + 
+                  "Thanks for your business.\n" +
+                  "\n" + 
+                  "Customer Service\n" +
+                  "taianfinancial.com\n" +
+                  "317-318-8258 (Chinese)\n" +
+                  "317-318-8259 (English)\n" +                  
+                  "\n")
+                  );
+    endRow();    
+
+    endSubsection();
+
+    startSubsection("patriot-fileaclaim");
+
+    startRow();
+    writeTextArea(loc(letterExplanationb).replace("___PURPOSE___", loc("explain how to file a claim")) +
+                  loc(                 
+                  "\n\n" +
+                  "Dear \[CUSTOMER NAME\]\n" +
+                  "\n" +
+                  "If you have medical expenses it is your responsibility to complete an IMG claims form.  This is true even if your provider is direct billing IMG for services.  If your provider is direct billing IMG, you just submit the claims form.  If you paid the provider and are seeking reimbursement from IMG submit the claims form and attach all original bills (save yourself a copy).  Note: All bills must indicate the patient\'s name, date of visit, diagnosis and itemized services. Mail to:\n" +
+                  "International Medical Group, Inc.\n" +
+                  "Claim Department\n" +
+                  "P. O. Box 88500\n" +
+                  "Indianapolis, Indiana 46208-0500 USA\n" +
+                  "See the email IMG sent to at the time of your purchase for a link to Claim Filing Instructions and Claim Form.\n" +
+                  "\n" +
+                  "Thanks for your business.\n" +
+                  "\n" + 
+                  "Customer Service\n" +
+                  "taianfinancial.com\n" +
+                  "317-318-8258 (Chinese)\n" +
+                  "317-318-8259 (English)\n" +                  
+                  "\n")
+                  );
+    endRow();    
+
+    endSubsection();
+
+    startSubsection("patriot-claimstatus");
+
+    startRow();
+    writeTextArea(loc(letterExplanationb).replace("___PURPOSE___", loc("show the customer how to check claim status on MyIMG")) +
+                  loc(                 
+                  "\n\n" +
+                  "Dear \[CUSTOMER NAME\]\n" +
+                  "\n" +
+                  "To check the status of your claim you can register on the website MyIMG and see all of your claims information.  Here are the steps to follow:\n" +
+                  "1.Login https://myimg.imglobal.com/unauth/AccountInfo.aspx\n" +
+                  "2. Enter your Certificate Number and Date of Birth, click \"continue\"\n" + 
+                  "3. Establish your User Name and Password. Enter your email and \"submit\". Then you have your MyIMG account. Now you can check the progress of your claim.\n" +                  
+                  "\n" + 
+                  "\n" + 
+                  "Thanks for your business.\n" +
+                  "\n" + 
+                  "Customer Service\n" +
+                  "taianfinancial.com\n" +
+                  "317-318-8258 (Chinese)\n" +
+                  "317-318-8259 (English)\n" +                  
+                  "\n")
+                  );
+    endRow();    
+
+    endSubsection();
+
+    startSubsection("patriot-myimg");
+
+    startRow();
+    writeTextArea(loc(letterExplanationb).replace("___PURPOSE___", loc("troubleshoot problems signing into MyIMG")) +
+                  loc(                 
+                  "\n\n" +
+                  "Dear \[CUSTOMER NAME\]\n" +
+                  "\n" +
+                  "To create an account:  https://myimg.imglobal.com/unauth/AccountInfo.aspx  Here you will need to enter your certificate number and date of birth.\n" +
+                  "If you already created an account and forgot your user ID go here: https://myimg.imglobal.com/unauth/AccountHelpUserIdRequest.aspx\n" +
+                  "If you have an account and know your user ID but your password is not working try resetting the password here: https://myimg.imglobal.com/unauth/AccountHelpPasswordReset.aspx\n" + 
+                  "If all else fails to help you can email IMG at insurance@imglobal.com (include your name and certificate number),or call them at 800.628.4664 for assistance.\n" +                  
+                  "\n" + 
+                  "\n" + 
+                  "Thanks for your business.\n" +
+                  "\n" + 
+                  "Customer Service\n" +
+                  "taianfinancial.com\n" +
+                  "317-318-8258 (Chinese)\n" +
+                  "317-318-8259 (English)\n" +                  
+                  "\n")
+                  );
+    endRow();    
+
+    endSubsection();
+
+    startSubsection("patriot-chinesehelp");
+
+    startRow();
+    writeTextArea(loc(letterExplanationb).replace("___PURPOSE___", loc("help customer know how to call IMG about a specific claim or coverage question in Chinese language")) +
+                  loc(                 
+                  "\n\n" +
+                  "Dear \[CUSTOMER NAME\]\n" +
+                  "\n" +
+                  "Chinese explains how to get help in Chinese\n" +
+                  "\n" +
+                  "\n" + 
+                  "\n" +                  
+                  "\n" + 
+                  "\n" +                  
+                  "Thanks for your business.\n" +
+                  "\n" + 
+                  "Customer Service\n" +
+                  "taianfinancial.com\n" +
+                  "317-318-8258 (Chinese)\n" +
+                  "317-318-8259 (English)\n" +                  
+                  "\n")
+                  );
+    endRow();    
+
+    endSubsection();
+
+    startSubsection("patriot-claimpaymentchina");
+
+    startRow();
+    writeTextArea(loc(letterExplanationb).replace("___PURPOSE___", loc("explain how they receive claims payment after they return to China")) +
+                  loc(                 
+                  "\n\n" +
+                  "Dear \[CUSTOMER NAME\]\n" +
+                  "\n" +
+                  "Chinese explains claims payment mailed to China\n" +
+                  "\n" +
+                  "\n" + 
+                  "\n" +                  
+                  "\n" + 
+                  "\n" + 
+                  "Thanks for your business.\n" +
+                  "\n" + 
+                  "Customer Service\n" +
+                  "taianfinancial.com\n" +
+                  "317-318-8258 (Chinese)\n" +
+                  "317-318-8259 (English)\n" +                  
+                  "\n")
+                  );
+    endRow();    
+
+    endSubsection();    
+    
+    
+    
+    
+    
     
     
     endSubsections();
