@@ -706,11 +706,11 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Caltech enrolled international student standards and J scholar standards.  Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Caltech as proof of insurance.");
-                        writeText("Enrolled international students have to buy Plan A to meet Caltech standards, and complete an online waiver.");       
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Caltech J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Caltech as proof of insurance.");
+      
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("Caltech Scholar Requirements", "http://www.international.caltech.edu/maintainstatus/j1scholar"),                         
-                                makeURL("Caltech Student Requirements", "http://www.gradoffice.caltech.edu/documents/94-student_waiver_requirements_2011-2012.pdf")
+                                makeURL("Caltech Scholar Requirements", "http://www.international.caltech.edu/maintainstatus/j1scholar")                        
+
                                 ]));
                         endRow();
                     }
@@ -1571,25 +1571,25 @@ function getPartnership(partner) {
                     pageTitle: "TaiAn Health Insurance for UC Riverside",
                     tabs: [
                             "pivot-home",
-                            "pivot-international-student",
+                            "pivot-international-studentandscholar",
                             "pivot-global-medical",
                             "pivot-travel-insurance"
                           ],
                           
-                    internationalStudentContent: function () {
+                    internationalStudentandscholarContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan B meets UC Riverside J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $500,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $50,000; 4. Deductible not over $250. Plan B with $500,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UC Riverside as proof of insurance.");
+                        writeText("UC Riverside requirements for J1 scholar (not for enrolled students) health insurance are: 1. Medical benefits of $500,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $50,000; 4. Deductible not over $250. Taian Scholar/Student Insurance Plan B and Plan C with $500,000 benefit per illness or injury is the most affordable plan that meets the school requirements and the US Department of State requirements (which plan is more affordable depends on your age and family members). Shortly after submitting an application you will receive confirmation of your coverage which you can send to school as proof of insurance.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("UC Riverside Scholar Requirements", "http://internationalcenter.ucr.edu/InternationalStudents/Pages/HealthandMoneyMatters.aspx")                        
                                 ]));
                         endRow();
                         
                         startRow();
-                            document.write(makeTable(1,
+                            document.write(makeTable(2,
                             [
                             // Column headers:
 
-                            "Monthly Price for $500,000 benefit", 
+                            "Monthly Price for Plan B ($500,000 per illness or injury)", "Monthly Price for Plan C ($500,000 benefit, $250 deductible)",
 
 
                             // Table within a table
@@ -1602,12 +1602,23 @@ function getPartnership(partner) {
 
                                 ]), 
 
+                                makeTable(4, [
+                                "Age",     "J1", "Spouse", "Children",
+                                "&lt; 30", "$59.00",   "$59.00",   "$53.00",
+                                "30-39",   "$78.00",   "$78.00",   "$53.00",
+                                "40-49",   "$119.00",  "$119.00",   "$53.00",
+                                "50-59",   "$169.00",  "$169.00",   "$53.00"
+                                ]),                                
+
 
                     
 
-                                makeBuyURL("Patriot Exchange Program - Standard", "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699")
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Patriot Exchange Program - Standard"), "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
 
+                                makeBuyURL(loc("Buy Group") + "<br />" + loc("Group for 2 or more"), "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699")                                 
 
                                    ])
                                     );
@@ -1616,6 +1627,199 @@ function getPartnership(partner) {
                     }
               },
 
+        uiuc: {
+                    windowTitle: "TaiAn Health Insurance for University of Illinois Urbana Champaign",
+                    pageTitle: "TaiAn Health Insurance for University of Illinois Urbana Champaign",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-studentandscholar",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance"
+                          ],
+
+                    internationalStudentandscholarContent: function () {
+                        startRow();
+                        writeText("J SCHOLARS  (J STUDENTS AND F STUDENTS SCROLL DOWN THE PAGE)");                        
+                        writeText("");
+                        writeText("UIUC exchange visitors (J visa) have required health insurance coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Taian Scholar/Student Insurance Plan B ($100 deductible) and Plan C ($500 deductible) with $50,000 benefit per illness or injury is the most affordable plan that meets the school requirements and the US Department of State requirements (which plan is more affordable depends on your age and family members). Shortly after submitting an application you will receive confirmation of your coverage which you can send to your school as proof of insurance.");                        
+                        document.write(makeBulletedListWithTitle("", [
+                        
+                                makeURL("UIUC Scholar Requirements", "http://isss.illinois.edu/download_forms/handbooks/j1_prog_handbook.pdf") 
+                                ]));
+                        endRow();
+
+                        startRow();
+                            document.write(makeTable(3,
+                            [
+                            // Column headers:
+
+                            "Plan A (Student Health Advantage) $300,000 / $100 deductible / Maternity", "Plan B (Patriot Exchange) $50,000 / $100 deductible", "Plan C (Patriot Travel) $50,000 /$500 deductible",
+                            "Monthly Premium", "Monthly Premium", "Monthly Premium",
+                            "(J Scholar - Recommended if you want maternity benefit)", "(J Scholar - Recommended Plan)", "(J Scholar)",
+
+                            // Table within a table
+
+                                makeTable(4, [
+                                "Age",     "J1 Scholar", "Spouse", "Children",
+                                "&lt; 19", "$72",   "$386",   "$82",
+                                "19-23",   "$95",   "$386",   "$82",
+                                "24-30",   "$110",  "$426",   "$82",
+                                "31-40",   "$197",  "$567",   "$82",
+                                "41-50",   "$322",  "$586",   "$82",
+                                "51-64",   "$430",  "$567",   "$82"
+                                
+                                ]), 
+
+                                makeTable(4, [
+                                "Age",     "J1 Scholar", "Spouse", "Children",
+                                "&lt; 25", "$48.62",   "$48.62",   "$48.62",
+                                "25-49",   "$63.37",   "$63.37",   "$48.62",
+                                "50-64",   "$135.70",  "$135.70",   "$63.66"
+                                ]),                                
+
+                                makeTable(4, [
+                                "Age",     "J1 Scholar", "Spouse", "Children",
+                                "&lt; 30", "$33.30",   "$33.30",   "$30.60",
+                                "30-39",   "$44.10",   "$44.10",   "$30.60",
+                                "40-49",   "$65.70",  "$65.70",   "$30.60",
+                                "50-59",   "$96.30",  "$96.30",   "$30.60"
+                                ]),                                 
+
+                    
+                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Patriot Exchange Program - Standard"), "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+                                "",
+                                makeBuyURL(loc("Buy Group") + "<br />" + loc("Group for 2 or more"), "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699")                                 
+
+                                   ])
+                                    );
+                        endRow();  
+
+                        startRow();
+                        writeText("");
+                        writeText("J STUDENTS");                        
+                        writeText("");
+                        writeText("UIUC enrolled students with a J visa have required health insurance coverage as follows: 1. $500,000 per illness or injury; 2. Deductible not over $500; 3. Repatriation of remains of $7,500; 4. Medical evacuation of $10,000; 5. Plan must be effective by the first day UIUC plan is effective (Must have coverage by January 18, 2014 for spring semester).  Taian Scholar/Student Insurance Plan B ($100 deductible) and Plan C ($500 deductible) with $500,000 benefit is the most affordable plan that meets the school requirements and the US Department of State requirements (which plan is more affordable depends on your age and family members).  Students are required to complete an on line waiver.");                        
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("UIUC Student Requirements", "http://www.si.uiuc.edu/Default.aspx?tabid=64")                      
+
+                                ]));
+                        endRow();
+
+                        startRow();
+                            document.write(makeTable(2,
+                            [
+                            // Column headers:
+
+                            "Plan B (Patriot Exchange) $500,000 / $100 deductible", "Plan C (Patriot Travel) $500,000 /$500 deductible",
+                            "Monthly Premium", "Monthly Premium", 
+                            "(J Student - Recommended Plan)", "(J Student - Recommended Plan)",
+
+                            // Table within a table
+
+
+
+                                makeTable(4, [
+                                "Age",     "J1 Student", "Spouse", "Children",
+                                "&lt; 25", "$63.66",   "$63.66",   "$63.66",
+                                "25-49",   "$82.90",   "$82.90",   "$63.66",
+                                "50-64",   "$177.53",  "$177.53",   "$63.66"
+                                ]),                                
+
+                                makeTable(4, [
+                                "Age",     "J1 Student", "Spouse", "Children",
+                                "&lt; 30", "$53.10",   "$53.10",   "$47.70",
+                                "30-39",   "$70.20",   "$70.20",   "$47.70",
+                                "40-49",   "$107.10",  "$107.10",    "$47.70",
+                                "50-59",   "$152.10",  "$152.10",   "$47.70"
+                                ]),                                 
+
+                    
+
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Patriot Exchange Program - Standard"), "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+
+                                makeBuyURL(loc("Buy Group") + "<br />" + loc("Group for 2 or more"), "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699")                                 
+
+                                   ])
+                                    );
+                        endRow();
+                        
+                        startRow();
+                        writeText("");
+                        writeText("F STUDENTS");                        
+                        writeText("");
+                        writeText("UIUC enrolled F visa international students have required health insurance coverage as follows: 1. $500,000 per illness or injury; 2. Not over $2,000 deductible; 3. Plan must be effective by the first day UIUC plan is effective (Must have coverage by January 18, 2014 for spring semester).  Taian Scholar/Student Insurance Plan B ($100 deductible) and Plan C ($1,000 deductible) with $500,000 benefit per illness or injury is the most affordable plan that meets the school requirements (which plan is more affordable depends on your age and family members).  Students are required to complete an on line waiver.");                        
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("UIUC Student Requirements", "http://www.si.uiuc.edu/Default.aspx?tabid=64")                      
+
+                                ]));
+                        endRow();
+
+                        startRow();
+                            document.write(makeTable(3,
+                            [
+                            // Column headers:
+
+                            "Plan B (Patriot Exchange) $500,000 / $100 deductible", "Plan C (Patriot Travel) $500,000 /$500 deductible", "Plan C (Patriot Travel) $500,000 / $1000 deductible",
+                            "Monthly Premium", "Monthly Premium", "Monthly Premium",
+                            "(F Student - Recommended Plan)", "(F Student - Recommended Plan)", "(F Student)",
+
+                            // Table within a table
+
+
+
+                                makeTable(4, [
+                                "Age",     "F1 Student", "Spouse", "Children",
+                                "&lt; 25", "$63.66",   "$63.66",   "$63.66",
+                                "25-49",   "$82.90",   "$82.90",   "$63.66",
+                                "50-64",   "$177.53",  "$177.53",   "$63.66"
+                                ]),                                
+
+                                makeTable(4, [
+                                "Age",     "F1 Student", "Spouse", "Children",
+                                "&lt; 30", "$53.10",   "$53.10",   "$47.70",
+                                "30-39",   "$70.20",   "$70.20",   "$47.70",
+                                "40-49",   "$107.10",  "$107.10",    "$47.70",
+                                "50-59",   "$152.10",  "$152.10",   "$47.70"
+                                ]),       
+
+                                makeTable(4, [
+                                "Age",     "F1 Student", "Spouse", "Children",
+                                "&lt; 30", "$47.20",   "$47.20",   "$42.40",
+                                "30-39",   "$62.40",   "$62.40",   "$42.40",
+                                "40-49",   "$95.20",  "$95.20",    "$42.40",
+                                "50-59",   "$135.20",  "$135.20",   "$42.40"
+                                ]),                                      
+
+                    
+
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Patriot Exchange Program - Standard"), "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+                                makeBuyURL(loc("Buy Group") + "<br />" + loc("Group for 2 or more"), "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),                                 
+                                makeBuyURL(loc("Buy Group")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699")
+                                
+
+                                
+                                   ])
+                                    );
+                        endRow();                        
+                        
+                        
+                    }
+              },
+                        
+    
+              
+              
         ucsb: {
                     windowTitle: "TaiAn Health Insurance for UC Santa Barbara",
                     pageTitle: "TaiAn Health Insurance for UC Santa Barbara",
@@ -1821,39 +2025,6 @@ function getPartnership(partner) {
                     }
               },     
  
-        uiuc: {
-                    windowTitle: "TaiAn Health Insurance for University of Illinois Urbana Champaign",
-                    pageTitle: "TaiAn Health Insurance for University of Illinois Urbana Champaign",
-                    tabs: [
-                            "pivot-home",
-                            "pivot-international-student",
-                            "pivot-global-medical",
-                            "pivot-travel-insurance"
-                          ],
-
-                    travelStudentContent: function () {
-                        startRow();
-                        writeText("UIUC enrolled international students are required to carry: 1. $500,000 per illness or injury; 2. Not over $2,000 deductible; 3. Plan must be effective by the first day UIUC plan is effective. Students are also required to complete an on line waiver.  The last acceptable effective date for spring semester is January 18, 2014.  Taian Travel Plan with $500,000 per illness or injury and $1,000 deductible is the most affordable plan that meets the standard.");
-                        document.write(makeBulletedListWithTitle("", [
-                                makeURL("UIUC Student Requirements", "http://www.si.uiuc.edu/Default.aspx?tabid=64")                         
-
-                                ]));
-                        endRow();
-                    },
-                          
-                    internationalStudentContent: function () {
-                        startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UIUC J scholar standards. Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UIUC as proof of insurance.");
-                        writeText("UIUC enrolled international students are required to carry: 1. $500,000 per illness or injury; 2. Not over $2,000 deductible; 3. Plan must be effective by the first day UIUC plan is effective. Students are also required to complete an on line waiver.  The last acceptable effective date for spring semester is January 18, 2014.  Taian Travel Plan with $500,000 per illness or injury and $1,000 deductible is the most affordable plan that meets the standard.  Please click on the travel tab on the top of the page.");
-                        writeText("Scholars look at Plan B below.  Students please click on Travel Insurance tab at top of page. The travel plan is the most affordable plan that meets your requirements.");                        
-                        document.write(makeBulletedListWithTitle("", [
-                                makeURL("UIUC Student Requirements", "http://www.si.uiuc.edu/Default.aspx?tabid=64"),
-                                makeURL("UIUC Scholar Requirements", "http://isss.illinois.edu/download_forms/handbooks/j1_prog_handbook.pdf")                                
-
-                                ]));
-                        endRow();
-                    }
-              },     
 
         msu: {
                     windowTitle: "TaiAn Health Insurance for Michigan State University",
@@ -1960,11 +2131,11 @@ function getPartnership(partner) {
                     pageTitle: "TaiAn Health Insurance for UCLA",
                     tabs: [
                             "pivot-home",
-                            "pivot-j-scholar",                            
+                            "pivot-international-studentandscholar",                            
                             "pivot-global-medical",
                             "pivot-travel-insurance"
                           ],
-                    jScholarContent: function () {
+                    internationalStudentandscholarContent: function () {
                         startRow();
                         writeText("J-1 scholars including visiting scholars, visiting graduate researchers or non-degree students at UCLA (other than those visitors described below) are required to enroll OR opt out of the Visiting Scholar Injury and Sickness Insurance Plan (VSISP) through Garnett-Powers & Associates. To waive VSISP plan, J-1 scholars are required to show proof of health insurance with the following minimum coverage:");
                         document.write(makeBulletedListWithTitle("", [
@@ -1980,27 +2151,48 @@ function getPartnership(partner) {
 
                         writeText("The groups exempt from VSISP include; (A)  Postdoctoral Scholars - required to enroll in the Postdoctoral Scholar Benefits Plan (PSBP); (B)  Degree, EAP, UCLA Exchange (IEO) students - must enroll in the UCLA USHIP  plan; (C)  UCLA Staff & Faculty.");
                      
-                        writeText("Taian Travel insurance plan (Patriot America) with a $100,000 benefit and a $250 deductible meets the waiver requirements for UCLA scholars subject to VSISP coverage. This plan is the least expensive option for meeting this requirement. The chart on the left below shows the monthly premium rates for this plan.  The chart on the right shows premium rates to choose a $0 deductible plan with the same benefits (a little more expensive).  Shortly after submitting an application you will receive confirmation of your coverage including a visa letter which you can send to UCLAVSISP@Garnett-Powers.com for a waiver. After receiving waiver confirmation by email, J-1 scholar brings the waiver confirmation and proof of medical insurance to check-in.");
-                        writeText("J-2 dependents are subject to the same benefit requirements.  Your J-2 dependents can buy with you, or buy a separate plan.  If your J-2 dependents are not going to be in the US for the same time period you will be here, you can buy a separate plan with different coverage dates to match their stay in the US.");
+                        writeText("Plan A Student Health Advantage, Plan B Patriot Exchange with $250,000 benefit and Plan C Patriot Travel Medical with $100,000 benefit and $250 deductible meet the waiver requirements for UCLA scholars subject to VSISP coverage. Plan A may be best for someone seeking maternity benefits.  Plan B and Plan C are the most affordable plans that meets the school requirements and the US Department of State requirements (which plan is more affordable depends on your age and family members). Shortly after submitting an application you will receive confirmation of your coverage including a visa letter which you can send to UCLAVSISP@Garnett-Powers.com for a waiver. After receiving waiver confirmation by email, J-1 scholar brings the waiver confirmation and proof of medical insurance to check-in.");
+
                         startRow();
-                            document.write(makeTable(2,
+                            document.write(makeTable(3,
                             [
                             // Column headers:
 
-                            "Monthly Price for $100,000 benefit $250 deductible", "Monthly Price for $100,000 benefit $0 deductible",
+                            "Plan A (Student Health Advantage) $300,000 / $100 deductible / Maternity", "Plan B (Patriot Exchange) $250,000 / $100 deductible", "Plan C (Patriot Travel) $100,000 / $250 deductible", 
+                            "Monthly Premium", "Monthly Premium", "Monthly Premium",                            
+             
 
 
                             // Table within a table
 
+                                makeTable(4, [
+                                "Age",     "J1 Scholar", "Spouse", "Children",
+                                "&lt; 19", "$72",   "$386",   "$82",
+                                "19-23",   "$95",   "$386",   "$82",
+                                "24-30",   "$110",  "$426",   "$82",
+                                "31-40",   "$197",  "$567",   "$82",
+                                "41-50",   "$322",  "$586",   "$82",
+                                "51-64",   "$430",  "$567",   "$82"
+                                
+                                ]), 
+                                
+                                makeTable(4, [
+                                "Age",     "J1 Scholar", "Spouse", "Children",
+                                "&lt; 25", "$60.36",   "$60.36",   "$60.36",
+                                "25-49",   "$78.59",   "$78.59",   "$60.36",
+                                "50-64",   "$168.27",  "$168.27",   "$60.36"
+                                ]),                                 
+                            
+                                loc("$100,000 benefit $250 deductible") +                              
                                 makeTable(4, [
                                 "Age",     "J1", "Spouse", "Children",
                                 "&lt; 30", "$46.00",   "$46.00",   "$41.00",
                                 "30-39",   "$62.00",   "$62.00",   "$41.00",
                                 "40-49",   "$90.00",  "$90.00",   "$41.00"
 
-                                ]), 
+                                ]) +  
 
-       
+                                loc("$100,000 benefit $0 deductible") +       
                                 makeTable(4, [
                                 "Age",     "J1", "Spouse", "Children",
                                 "&lt; 30", "$57.50",   "$57.50",   "$51.25",
@@ -2008,10 +2200,15 @@ function getPartnership(partner) {
                                 "40-49",   "$112.50",  "$112.50",   "$51.25"
                                 ]), 
                     
+                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Patriot Exchange Program - Standard"), "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
-                                makeBuyURL("Buy Patriot America Medical Insurance", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
-                                makeBuyURL("Buy Patriot America Medical Insurance", "https://purchase.imglobal.com/quote/patriot?imgac=80000699")
+                                "",
+                                makeBuyURL(loc("Buy Group") + "<br />" + loc("Group for 2 or more"), "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699")                                 
 
+             
 
                                    ])
                                     );
