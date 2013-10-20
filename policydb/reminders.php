@@ -281,14 +281,11 @@ END;
     $patriotExchangeGroupRenew = <<<END
 Dear __PRIMARY_INSURED_NAME__,
 
-您购买的泰安访问学者留学生团体保险计划B(Patriot Exchange Group) __EXPIRATION_DATE__ 就要过期了。 如果您们仍然满足购买该保险的条件(签证和身份没有变化)并且需要续保的話，请在过期日期之前联系我们，申请团体延期。即使团体中只有一位成员需要续保，团体也是可以继续存在并延期的。
+您购买的泰安访问学者留学生团体保险计划B(Patriot Exchange Group) __EXPIRATION_DATE__ 就要过期了。 如果您们仍然满足购买该保险的条件(签证和身份没有变化)并且需要续保的話，请在过期日期申请团体延期。 即使团体中只有一位成员需要续保，团体可以继续存在并延期。请注意，保险期间所产生的疾病续保时就不是 pre-existing condition，而重新购买新保险就不具备这个好处。
 
-请注意，保险期间所产生的疾病续保时就不是 pre-existing condition，而重新购买新保险就不具备这个好处。
+您可以发email给IMG，要求团体保险延期。请见下面我们为您写的Email草稿。填入括号中的内容，将Email发给IMG。
 
-另外，续保时请选择邮寄接收方式，这样您既可收到 Email confirmation, 又可以在几天后收到IMG邮寄的保险卡。
-
-非常感谢您对我们公司的信任和支持。
-对我们工作的不足之处，请给我们一个提醒。把我们泰安介绍给您的家人朋友和同事是对我们工作的最大的肯定。泰安公司非常希望得到您的继续支持。
+非常感谢您对我们公司的信任和支持。对我们工作的不足之处，请给我们一个提醒。把我们泰安介绍给您的家人朋友和同事是对我们工作的最大的肯定。泰安公司非常希望得到您的继续支持。
 
 再次深表感谢，祝您和团体成员平安健康！
 
@@ -296,6 +293,34 @@ Chris
 美国电话: +1 (317)318-8258 (中文), +1 (317)318-8259 (英语)
 中国电话: 950-4044-2336 (中文, 北京时间上午7-11点，直接拨号，无长途费)
 taianfinancial.com/chinese
+
+-----------------------------------------------------------------
+
+Email发给: insurance@imglobal.com
+请抄送给: chris@taianfinancial.com
+
+Dear IMG,
+
+I am (填入您的姓名). I have group policy number (填Certificate number). I would like to extend the coverage of:
+
+(填入需要延期的成员1的姓名和 Insured ID number).
+Please extend by (填入成员1需要延期几个月， 例如： two months, five months).
+
+(填入需要延期的成员2的姓名和 Insured ID number).
+Please extend by (填入成员2需要延期几个月， 例如： two months, five months).
+
+(填入需要延期的成员3的姓名和 Insured ID number).
+Please extend by (填入成员3需要延期几个月， 例如： two months, five months).
+
+....
+....
+
+Please charge the credit card on file for this purchase.
+Also, please send me an email that shows my coverage has been extended.
+
+Thanks for your help.
+
+(填入您的姓名)
 END;
 
     $patriotExchangeGroupExpiresToday = <<<END
@@ -317,6 +342,7 @@ taianfinancial.com/chinese
 END;
 
     $renewalSubject = "泰安保险续保通知";
+    $patriotExchangeGroupRenewalSubject = "泰安团体保险延期通知";
     $rebuySubject = "泰安保险过期提醒";
     $expiresTodaySubject = "您的泰安保险今天过期";
 
@@ -387,7 +413,7 @@ END;
             $subject = $expiresTodaySubject;
         } else {
             $renewEmail = $patriotExchangeGroupRenew;
-            $subject = $renewalSubject;
+            $subject = $patriotExchangeGroupRenewalSubject;
         }
     }
 
