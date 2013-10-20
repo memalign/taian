@@ -231,6 +231,7 @@ if (!is_null($emailbody)) {
 
 } elseif (!is_null($tabbedData)) {
     echo "<a href=\".\">Back to main page.</a><br />";
+    echo "<a href=\"./reminders.php?slow=1\">Precompute then process reminder emails.</a><br />";
     echo "<a href=\"./reminders.php\">Process reminder emails.</a><br />";
 
     # Split by (dos) lines
@@ -449,6 +450,7 @@ if (!is_null($emailbody)) {
     sqlite_close($dbhandle);
 
 } else {
+    echo "<a href=\"./reminders.php?slow=1\">Precompute then process reminder emails.</a><br />";
     echo "<a href=\"./reminders.php\">Process reminder emails.</a><br />";
     echo "<a href=\"./adid.php\">Process AdIDs.</a><br />";
     echo "<br /><br />";
