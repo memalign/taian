@@ -11,7 +11,7 @@ function getPartnership(partner) {
                     logoImage: "longevity.gif",
                     logoHeight: "30",
                     logoWidth: "30",
-                    contactInfo: ["Call from US: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English)",
+                    contactInfo: ["Call from US - 9:00AM to 10:00PM Eastern time - Includes weekend: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English)",
                                   "Call from China: 950-4044-2336 (Chinese, Beijing time 7-11am, no long distance charges)",
                                   "WeChat ID: wxid_taian_usa",
                                   "Skype: chris.lee136",
@@ -91,7 +91,16 @@ function getPartnership(partner) {
                             "pivot-global-medical",
                             "pivot-travel-insurance"
                           ]
-              },                
+              },              
+
+        xyf: {
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance"
+                          ]
+              },                           
 
         iupui: {
                     windowTitle: "TaiAn Health Insurance for IUPUI",
@@ -1064,32 +1073,127 @@ function getPartnership(partner) {
                     pageTitle: "TaiAn Health Insurance for Kansas State University",
                     tabs: [
                             "pivot-home",
-                            "pivot-international-student",
+                            "pivot-international-studentandscholar",
                             "pivot-global-medical",
                             "pivot-travel-insurance"
                           ],
                           
-                    travelStudentContent: function () {
-                        startRow();
-                        writeText("Taian Travel Insurance Plan with $500.00 deductible and $500,000 benefit meets Kansas State University enrolled student standards (F or J visa). Enrolled students have required coverage as follows: 1. Medical benefits of $500,000 per illness/injury; 2. Repatriation of remains of $10,000; 3. Medical evacuation of $15,000; 4. Annual deductible not over $500.00. Our travel plan with $500.00 deductible and $500,000 maximum (we suggest $1,000,000 maximum) is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage.  You will need to complete Kansas State University on line waiver.");
-                        writeText("");
-                        document.write(makeBulletedListWithTitle("", [
-                                makeURL("Kansas State University Scholar Requirements", "http://www.k-state.edu/isss/j-1/jhealthins.html"),                         
-                                makeURL("Kansas State University Student Requirements", "http://www.k-state.edu/isss/current/healthinsurance.html")
-                                ]));
-                        endRow();
-                    },
 
-                    internationalStudentContent: function () {
+                    internationalStudentandscholarContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Kansas State University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Kansas State University as proof of insurance.");
-                        writeText("Enrolled students please click on Travel Insurance tab at top of page. Student Plan A and Plan B do not meet Kansas State University enrolled student requirements.");
+                        writeText("J SCHOLARS  (STUDENTS SCROLL DOWN THE PAGE)");                        
+                        writeText("");
+                        writeText("Kansas State University exchange visitors (J visa) have required health insurance coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Taian Scholar/Student Insurance Plan B ($100 deductible) and Plan C ($500 deductible) with $50,000 benefit per illness or injury is the most affordable plan that meets the school requirements and the US Department of State requirements (which plan is more affordable depends on your age and family members). Shortly after submitting an application you will receive confirmation of your coverage which you can send to your school as proof of insurance.");                        
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("Kansas State University Scholar Requirements", "http://www.k-state.edu/isss/j-1/jhealthins.html"),                         
-                                makeURL("Kansas State University Student Requirements", "http://www.k-state.edu/isss/current/healthinsurance.html")
+                        
+                                makeURL("Kansas State University Scholar Requirements", "http://www.k-state.edu/isss/j-1/jhealthins.html") 
                                 ]));
                         endRow();
-                    }                    
+
+                        startRow();
+                            document.write(makeTable(3,
+                            [
+                            // Column headers:
+
+                            "Plan A (Student Health Advantage) $300,000 / $100 deductible / Maternity", "Plan B (Patriot Exchange) $50,000 / $100 deductible", "Plan C (Patriot Travel) $50,000 /$500 deductible",
+                            "Monthly Premium", "Monthly Premium", "Monthly Premium",
+                            "(J Scholar - Recommended if you want maternity benefit)", "(J Scholar - Recommended Plan)", "(J Scholar)",
+
+                            // Table within a table
+
+                                makeTable(4, [
+                                "Age",     "J1 Scholar", "Spouse", "Children",
+                                "&lt; 19", "$72",   "$386",   "$82",
+                                "19-23",   "$95",   "$386",   "$82",
+                                "24-30",   "$110",  "$426",   "$82",
+                                "31-40",   "$197",  "$567",   "$82",
+                                "41-50",   "$322",  "$586",   "$82",
+                                "51-64",   "$430",  "$567",   "$82"
+                                
+                                ]), 
+
+                                makeTable(4, [
+                                "Age",     "J1 Scholar", "Spouse", "Children",
+                                "&lt; 25", "$48.62",   "$48.62",   "$48.62",
+                                "25-49",   "$63.37",   "$63.37",   "$48.62",
+                                "50-64",   "$135.70",  "$135.70",   "$63.66"
+                                ]),                                
+
+                                makeTable(4, [
+                                "Age",     "J1 Scholar", "Spouse", "Children",
+                                "&lt; 30", "$33.30",   "$33.30",   "$30.60",
+                                "30-39",   "$44.10",   "$44.10",   "$30.60",
+                                "40-49",   "$65.70",  "$65.70",   "$30.60",
+                                "50-59",   "$96.30",  "$96.30",   "$30.60"
+                                ]),                                 
+
+                    
+                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Patriot Exchange Program - Standard"), "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+                                "",
+                                makeBuyURL(loc("Buy Group") + "<br />" + loc("Group for 2 or more"), "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699")                                 
+
+                                   ])
+                                    );
+                        endRow();  
+
+                        startRow();
+                        writeText("");
+                        writeText("F or J STUDENTS");                        
+                        writeText("");
+                        writeText("Kansas State University enrolled students with an F or J visa have required health insurance coverage as follows: 1. $500,000 per illness or injury; 2. Deductible not over $500 per policy year; 3. Repatriation of remains of $10,000; 4. Medical evacuation of $15,000. Taian Scholar/Student Insurance Plan C ($500 deductible) with $500,000 benefit is the most affordable plan that meets the school requirements and the US Department of State requirements. Students are required to complete an on line waiver.");                        
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("Kansas State University Student Requirements", "http://www.k-state.edu/isss/current/healthinsurance.html")                      
+
+                                ]));
+                        endRow();
+
+                        startRow();
+                            document.write(makeTable(1,
+                            [
+                            // Column headers:
+
+                            "Plan C (Patriot Travel) $500,000 /$500 deductible",
+                            "Monthly Premium", 
+                            "(F or J Student - Recommended Plan)",
+
+                            // Table within a table
+
+
+
+                                                              
+
+                                makeTable(4, [
+                                "Age",     "F1/J1 Student", "Spouse", "Children",
+                                "&lt; 30", "$53.10",   "$53.10",   "$47.70",
+                                "30-39",   "$70.20",   "$70.20",   "$47.70",
+                                "40-49",   "$107.10",  "$107.10",    "$47.70",
+                                "50-59",   "$152.10",  "$152.10",   "$47.70"
+                                ]),                                 
+
+                    
+
+
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+
+
+                                makeBuyURL(loc("Buy Group")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699")                                 
+
+                                   ])
+                                    );
+                        endRow();
+                        
+
+
+                        
+                        
+                        
+                    }
+
                     
               },              
               
