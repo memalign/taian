@@ -144,12 +144,12 @@ l['Plan B (Patriot Exchange) $250,000 / $100 deductible'] = "计划B(Patriot Exc
 l['Plan C (Patriot Travel) $100,000 / $250 deductible'] = "计划C(Patriot Travel) 最高赔付$100,000 / 免赔额$250";
 l['$100,000 benefit $250 deductible'] = "最高赔付$100,000 免赔额$250";
 l['$100,000 benefit $0 deductible'] = "最高赔付$100,000 免赔额$0";
-l[''] = "";
-l[''] = "";
-l[''] = "";
-l[''] = "";
-l[''] = "";
-l[''] = "";
+l['(F or J Student - Recommended Plan)'] = "(F/J 国际学生 - 推荐计划)";
+l['F1/J1 Student'] = "F1/J1 国际学生";
+l['F or J STUDENTS'] = "F/J 国际学生";
+l['J SCHOLARS  (STUDENTS SCROLL DOWN THE PAGE)'] = "J1访问学者 (J1和F1国际学生见本页下面 )";
+l['Kansas State University enrolled students with an F or J visa have required health insurance coverage as follows: 1. $500,000 per illness or injury; 2. Deductible not over $500 per policy year; 3. Repatriation of remains of $10,000; 4. Medical evacuation of $15,000. Taian Scholar/Student Insurance Plan C ($500 deductible) with $500,000 benefit is the most affordable plan that meets the school requirements and the US Department of State requirements. Students are required to complete an on line waiver.'] = "Kansas State University对在校F1/J1国际学生医疗保险的要求是：1. 每次生病或受伤的最高赔付为$500,000; 2. 遗体返送$10,000; 3. 紧急救护$15,000; 4. 年度免赔额不超过$500。泰安访问学者/留学生保险计划C（免赔额$500) 里的最高赔付$500,000选项是满足学校标准的最经济实惠的保险计划，同时也符合美国国务院对J签证的标准。网上提 交申请几分钟后你就会收到Email电子保单，其中含有你的保险卡和确认信（Visa Letter)。国际学生需要完成网上waiver申请。";
+l['Kansas State University exchange visitors (J visa) have required health insurance coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Taian Scholar/Student Insurance Plan B ($100 deductible) and Plan C ($500 deductible) with $50,000 benefit per illness or injury is the most affordable plan that meets the school requirements and the US Department of State requirements (which plan is more affordable depends on your age and family members). Shortly after submitting an application you will receive confirmation of your coverage which you can send to your school as proof of insurance.'] = "Kansas State University对J1访问学者医疗保险的要求是：1. 每次生病或受伤的最高赔付为$50,000; 2. 遗体返送$7,500; 3. 紧急救护$10,000; 4. 免赔额不超过$500。泰安访问学者/留学生保险计划B（免赔额$100) 和计划C（免赔额$500) 里的每次生病或受伤最高赔付$50,000选项是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准。哪个计划更划算取决于你的年龄。网上提交申请几分钟后你就会收到Email电子保单，其中含有你的保险卡和确认信（Visa Letter)。你可以将确认信发给学校证明已经购买满足学校要求的保险。";
 
 
 l['UC Riverside requirements for J1 scholar (not for enrolled students) health insurance are: 1. Medical benefits of $500,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $50,000; 4. Deductible not over $250. Taian Scholar/Student Insurance Plan B and Plan C with $500,000 benefit per illness or injury is the most affordable plan that meets the school requirements and the US Department of State requirements (which plan is more affordable depends on your age and family members). Shortly after submitting an application you will receive confirmation of your coverage which you can send to school as proof of insurance.'] = "UC Riverside 对J1访问学者(不包括在校学生)医疗保险的要求是：1. 每次生病或受伤的最高赔付为$500,000; 2. 遗体返送$7,500; 3. 紧急救护$50,000; 4. 免赔额不超过$250。泰安访问学者/留学生保险计划B和计划C里的每次生病或受伤最高赔付$500,000选项是满足此标准和美国国务院标准的最经济实惠的保险计划(哪个计划更划算取决于你的年龄和家属成员）。 网上提交申请几分钟后你就会收到Email电子保单，其中含有保险卡和确认信(Visa Letter)。将确认信发给学校证明你已购买满足学校要求的保险。";
@@ -805,7 +805,7 @@ l['Spouse\'s Date of Birth'] = "配偶的出生日期 (如果配偶不买保险�
 l['Spouse\'s Gender'] = "配偶的性别(如果配偶不买保险，此处留空）";
 l['Number of Dependent Children Age 9 years or below'] = "年龄9岁或以下的子女数(如果子女不买保险，此处留空）";
 l['Number of Dependent Children Ages 10 to 18'] = "年龄10到18岁的子女数(如果子女不买保险，此处留空）";
-l['Silver/Gold/Platinum'] = "银质计划/金质计划/铂金计划";
+l['Silver/Gold/Gold Plus/Platinum'] = "银质/金质/金加/铂金计划";
 l['Deductible ($100, $250, $500, $1000, $2500, $5000, $10,000)'] = "免赔额（$100，$250，$500，$1000，$2500，$5000，$10,000）";
 l['Primary Insured-First Name'] = "主申请人-名字";
 l['Primary Insured-Last Name'] = "主申请人-姓";
@@ -980,14 +980,14 @@ l['We work with only the most financially secure insurers with top quality ratin
 l['We are accustomed to working with people in the United States and China via email, phone, WeChat, and Skype.'] = "我们在中美两国之间的通讯联络方式多种多样，包括电子邮件，电话，微信，QQ和Skype。";
 l['Our website is accessible around the world, including mainland China.'] = "我们的网站在世界各地都能点击进入，包括中国内地。";
 l['Want to know more? Contact us:'] = "想了解更多吗？请与我们联系：";
-l['Call from US: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English)'] = "美国电话: +1 (317)318-8258 (中文), +1 (317)318-8259 (英语)";
+l['Call from US - 9:00AM to 10:00PM Eastern time - Includes weekend: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English)'] = "美国电话(美东时间9am-10pm, 包括周末): +1 (317)318-8258 (中文), +1 (317)318-8259 (英语)";
 l['Call from China: 950-4044-2336 (Chinese, Beijing time 7-11am, no long distance charges)'] = "中国电话: 950-4044-2336 (中文, 北京时间上午7-11点, 直接拨打，无长途费)";
 l['Call: +1 (317) 318-8259 (English)'] = "电话：+1（317）318-8259（英语）";
 l['Call: 1-317-318-8259 (English)'] = "电话：1-317-318-8259(美国，英语）";
 l['WeChat ID: wxid_taian_usa'] = "微信： wxid_taian_usa";
 l['Skype: chris.lee136'] = "Skype: chris.lee136";
 l['Email: chris@taianfinancial.com, taianfinancialllc@gmail.com'] = "电子邮件：chris@taianfinancial.com, taianfinancialllc@gmail.com";
-l['Call from US: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English), Call from China: 950-4044-2336 (Chinese, Beijing time 7-11am, no long distance charges), Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>'] = "美国电话: +1 (317)318-8258 (中文), +1 (317)318-8259 (英语), 中国电话: 950-4044-2336 (中文, 北京时间上午7-11点, 直接拨打，无长途费), 电子邮件：<a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>";
+l['Call from US - 9:00AM to 10:00PM Eastern time - Includes weekend: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time 7-11am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>'] = "美国电话(美东时间9am-10pm, 包括周末): +1 (317)318-8258 (中文), +1 (317)318-8259 (英语)。 中国电话: 950-4044-2336 (中文, 北京时间上午7-11点, 直接拨打, 无长途费)。 电子邮件：<a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>";
 l['TaiAn Financial'] = "泰安国际医疗保险";
 l['Student Representatives and Travel Agents contact us for collaboration opportunities'] = "学生代表和旅行社请联系我们商讨合作";
 l['WeChat ID: wxid_taian_usa'] = "微信: wxid_taian_usa";
