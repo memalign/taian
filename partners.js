@@ -545,11 +545,11 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Virginia Tech enrolled international student standards and J scholar standards.  Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Virginia Tech as proof of insurance.");
-                        writeText("Enrolled international students have to buy Plan A to meet Virginia Tech standards, and complete an online waiver.");
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Virginia Tech J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Virginia Tech as proof of insurance.");
+
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("Virginia Tech Scholar Requirements", "http://www.oired.vt.edu/iss/jvisa/health-insurance.html"),
-                                makeURL("Virginia Tech Student Requirements", "http://graduateschool.vt.edu/igss/application_prearrival/insurance.html")                        
+                                makeURL("Virginia Tech Scholar Requirements", "http://www.oired.vt.edu/iss/jvisa/health-insurance.html")
+                        
                                 ]));
                         endRow();
                     }

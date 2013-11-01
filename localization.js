@@ -532,10 +532,10 @@ l['Dartmouth College Student Requirements'] = "Dartmouth College 留学生医疗
 l['TaiAn Health Insurance for Dartmouth College'] = "泰安国际医疗保险 - Dartmouth College";
 l['Health insurance for Dartmouth College Students and Scholars'] = "符合Dartmouth College标准的访问学者和留学生医疗保险";
 
-l['Taian Scholar/Student Insurance Plan A and Plan B meet Virginia Tech enrolled international student standards and J scholar standards.  Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Virginia Tech as proof of insurance.'] = "Virginia Tech 对访问学者购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$50,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明已经购买满足学校要求的保险。";
-l['Enrolled international students have to buy Plan A to meet Virginia Tech standards, and complete an online waiver.'] = "全日制留学生可以购买泰安访问学者/留学生保险计划A以满足学校对留学生保险的要求。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。将确认信和填写好的Waiver Form 一起发给学校要求waiver， 泰安公司可以协助填写Waiver Form.";
+l['Taian Scholar/Student Insurance Plan A and Plan B meet Virginia Tech J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Virginia Tech as proof of insurance.'] = "Virginia Tech 对J1访问学者（不包括全日制在校学生)购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$50,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明你已购买满足学校要求的保险。";
+
 l['Virginia Tech Scholar Requirements'] = "Virginia Tech 访问学者医疗保险的标准";
-l['Virginia Tech Student Requirements'] = "Virginia Tech 留学生医疗保险的标准";
+
 l['TaiAn Health Insurance for Virginia Tech'] = "泰安国际医疗保险 - Virginia Tech";
 
 l['Taian Scholar/Student Insurance Plan A and Plan B meet Virginia Commonwealth University enrolled international student standards and J scholar standards.  Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Virginia Commonwealth University as proof of insurance.'] = "Virginia Commonwealth University 对访问学者购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$50,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明已经购买满足学校要求的保险。";
@@ -568,7 +568,7 @@ l['Up to policy limit for sudden and unexpected recurrence if covered by domesti
 l['Hospital Daily Indemnity increases from $100 per day 10 day maximum to $250 per day 10 day maximum.'] = " 住院补贴由$100/天，最多10天增加至$250/天，最多10天";
 l['Health insurance for Columbia Scholars'] = "符合Columbia标准的访问学者医疗保险";
 l['Health Insurance for IU International Students and Scholars'] = "符合IU标准的留学生和访问学者医疗保险";
-l['Health insurance for Virginia Tech International Students and Scholars'] = "符合Virginia Tech标准的留学生和访问学者医疗保险";
+l['Health insurance for Virginia Tech Scholars'] = "符合Virginia Tech标准的访问学者医疗保险";
 l['Health insurance for Yale University International Students and Scholars'] = "符合Yale University标准的留学生和访问学者医疗保险";
 l['Health Insurance for IUPUI International Students and Scholars'] = "符合IUPUI标准的留学生和访问学者医疗保险";
 l['Health insurance for NYU Scholars'] = "符合NYU标准的访问学者医疗保险";
