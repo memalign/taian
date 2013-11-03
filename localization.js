@@ -660,7 +660,6 @@ l['UIUC enrolled international students are required to carry: 1. $500,000 per i
 l['Taian Scholar/Student Insurance Plan A and Plan B meet UIUC J scholar standards. Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UIUC as proof of insurance.'] = "UIUC 对J1访问学者购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$50,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明已经购买满足学校要求的保险。";
 l['UIUC enrolled international students are required to carry: 1. $500,000 per illness or injury; 2. Not over $2,000 deductible; 3. Plan must be effective by the first day UIUC plan is effective. Students are also required to complete an on line waiver.  The last acceptable effective date for spring semester is January 18, 2014.  Taian Travel Plan with $500,000 per illness or injury and $1,000 deductible is the most affordable plan that meets the standard.  Please click on the travel tab on the top of the page.'] = "UIUC对国际学生购买保险的要求是: 1. 每次生病或受伤的最高赔付至少为$500,000; 2. 免赔额不超过 $2,000； 3. 购买保险的生效日期不迟于UIUC保险的开始日期； 4. 需要在截至日期前完成waiver申请。 泰安国际旅游保险$500,000 最高赔付和 $1,000 免赔额选项是符合该标准的最经济实惠的保险计划。 请点击页面顶部的国际旅游医疗保险按钮。 2014年春季申请waiver的截止日期是2014年1月18日。";
 l['Scholars look at Plan B below.  Students please click on Travel Insurance tab at top of page. The travel plan is the most affordable plan that meets your requirements.'] = "访问学者请见本页下面的计划B。 国际学生请点击页面顶部的国际旅游医疗保险，泰安旅游保险是满足UIUC要求的最经济实惠的计划。";
-l[''] = "";
 l['UIUC Student Requirements'] = "UIUC学校对留学生的要求";
 l['UIUC Scholar Requirements'] = "UIUC访问学者医疗保险的标准";
 l['International Scholars and Students'] = "访问学者和留学生";
@@ -687,7 +686,7 @@ l['Please fill in the answers in English.  You can use your preferred language i
 l['Coverage Start Date'] = "保险开始日期";
 l['Coverage End Date'] = "保险终止日期";
 l['Patriot Exchange Information Submitted'] = "Patriot Exchange (学生保险计划B)申请信息递交成功！";
-l['Patriot Exchange Application'] = "Patriot Exchange (学生保险计划B) 申请表";
+l['Patriot Exchange (Taian Plan B) pre-application'] = "Patriot Exchange (泰安计划B)预申请表";
 l['Patriot Exchange Application Information'] = "Patriot Exchange (学生保险计划B) 申请信息";
 l['Maximum Limit per illness or injury ($50,000, $250,000, $500,000) (We suggest at least $250,000 to make sure you have adequate coverage)'] = "每次生病或受伤的最高赔付($50,000, $250,000, $500,000)（建议选择$250,000）";
 l['Primary Insured-Home Country'] = "主申请人-长居国家";
@@ -700,7 +699,6 @@ l['TaiAn Health Insurance for University of Southern California'] = "泰安国�
 l['TaiAn Health Insurance for Stanford University'] = "泰安国际医疗保险 - Stanford University";
 l['TaiAn Health Insurance for University of Illinois Urbana Champaign'] = "泰安国际医疗保险 - University of Illinois Urbana Champaign";
 l['TaiAn Health Insurance for New York University'] = "泰安国际医疗保险 - New York University";
-l['TaiAn Health Insurance for IUPUI'] = "泰安国际医疗保险 - IUPUI";
 l['TaiAn Health Insurance for Pennsylvania State University'] = "泰安国际医疗保险 - Pennsylvania State University";
 l['TaiAn Health Insurance for JHMI'] = "泰安国际医疗保险 - JHMI";
 l['TaiAn Health Insurance for Purdue University'] = "泰安国际医疗保险 - Purdue University";
@@ -957,11 +955,40 @@ l['Child 2 Family doctor Country'] = "子女2-家庭医生的国家";
 l['Child 2 Family doctor Telephone'] = "子女2-家庭医生的电话";
 l['Child 2 Family doctor Date Last Seen'] = "子女2-最近一次看医生的日期";
 l['Child 2 Family doctor Reason'] = "子女2-最近一次看医生的原因";
-l['Partnerships'] = "合作";
+l['About Us'] = "关于我们";
+l['Who is TaiAn Financial LLC, an IMG Endorsed Independent Chinese Sales Center!'] = "泰安国际医疗保险公司，IMG授权的独立的IMG中文销售中心！";
+l['International Medical Group (IMG) is a worldwide leader in the International medical insurance business, and TaiAn Financial LLC is an IMG Endorsed Independent Chinese Sales Center.  As an IMG Endorsed Independent Chinese Sales Center, we can provide our customers professional, prompt service and make their insurance experience as easy as possible.'] = "国际医疗集团（IMG）是世界上国际医疗保险行业的佼佼者，而泰安保险公司是IMG授权的独立的IMG中文销售中心。作为独立的IMG中文销售中心，我们可以为客户提供更加专业快捷的服务。 地道的中文和英语专业服务确保客户的保险体验尽可能完美顺利。";
+l['We have more than 27 years of health insurance experience serving the people in the Unites States and globally.'] = "我们有超过27年的医疗保险经验。 我们服务于在美国生活的外国人和世界各地的国际人士以及美国当地居民。";
+l['We specialize in service for international scholars, educators and students with both native Chinese speakers and native English speakers.'] = "我们专长服务于以汉语或英语为母语的国际学者，教育者和学生。";
+l['We are located in the United States and have extended work hours to serve our customers whenever they need us. Our work hours are 7 days a week, 9:00am-11:00pm Eastern Time.'] = "我们位于美国印第安那州。 为了客户在需要时能够得到及时的帮助，我们延长的工作时间为每周7天，美国东部时间9:00am-11:00pm。";
+l['We have both English and Chinese local phone numbers in the US. We also have China local phone service, by calling this number our customers in China don\'t pay long distance charges. We communicate with our customers through  WeChat and Skype as well.'] = "在美国我们有本地的英语电话线和中文电话线。 在中国我们也有中国本地电话，客户在中国直接拨打此电话不支付长途费用。我们还可以与客户通过微信和Skype交流。";
+l['We have a highly experienced IT team to keep our website up-to-date to make sure our customers get the most updated information. For example, we check our webpage'] = "";
+l[' every week or whenever our customers tell us their school requirements changed. This webpage is very popular because it provides requirements for all schools for F and J visa, and identifies the insurance plan that is best for each schools international scholars and students.'] = "";
+l['Partnering with TaiAn Financial'] = "与泰安保险合作";
+l['Universities, Colleges, Institutes and other schools'] = "大学，学院，研究所和其他学校";
+l['If your school is sending students or teachers abroad, or has students or teachers visiting we would make a good partner.'] = "如果您的学校需要派送教师或学生出国工作学习或访问，我们都有机会建立良好的合作关系。";
+l['Confucius Teachers and Volunteers'] = "孔院汉语教师志愿者";
+l['The Confucius Institutes\' rapid development has provided the opportunity for people all over the world to learn about Chinese language and culture. They are both a platform for cultural exchange between China and the world, and a bridge reinforcing friendship and cooperation between China and the rest of the world.'] = "快速发展的孔子学院已经成为世界各国人民学习汉语了解中华文化的园地和中外文化交流的平台，同时也成为加强中国人民与世界各国人民友谊合作的桥梁。";
+l['Confucius Institute volunteer teachers come to the US with J1 visas. Their exchange program requires them to have health insurance that meets the US Department of State (USDOS) requirements for the duration of their stay. Taian International Health Insurance provides insurance for J1 educators and their dependents. Taian Insurance Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the USDOS requirements.  Many Confucius teachers choose Plan B with $250,000 or $500,000 of benefits to get the best coverage within the limit of what the Confucius institute will reimburse them for.  Taian Insurance Plan A also meets the requirements and offers affordable coverage with maternity benefits.  Plan A and Plan B are also good for Confucius teachers anywhere around the world, not just in the US.'] = "孔院汉语教师志愿者持J1签证来到美国。 他们的中美交流计划要求他们在美期间具有符合美国国务院要求的医疗保险。 泰安国际医疗保险公司为持有J签证的孔院汉语教师志愿者及他们的家属提供满足国务院标准的保险。  泰安保险计划B里的$50,000每次疾病或损伤是满足国务院标准的最经济实惠的保险计划，许多孔院教师志愿者选择$250,000和$500,000以得到最佳的保险赔付并且不超过政府补贴。 泰安保险计划A也满足国务院标准，并且含有产科保险。 泰安保险计划A和B适合世界各地孔子学院的汉语教师和志愿者。";
+l['The USDOS requires:'] = "美国国务院J签证医疗保险的标准";
+l['Medical benefits of at least $50,000 per accident or illness'] = "每次生病或受伤的最高赔付至少为$50,000";
+l['Repatriation of remains in the amount of $7,500'] = " 遗体返送$7,500";
+l['Expenses associated with the medical evacuation of the exchange visitor to his or her home country in the amount of $10,000'] = " 紧急救护$10,000";
+l['A deductible not to exceed $500 per accident or illness.'] = " 每次生病或受伤的免赔额不超过$500";
+l['TaiAn Insurance for Educators'] = "泰安J1教育者保险";
+l['Designed specifically for international scholars，educators，students and their families (US visa J1/J2, F1/F2).  Purchase monthly, renewable up to 5 years if 3 months or more are purchased.'] = "计划专为持J签证和F签证的学者，教育者，学生和家属而设计。按月购买，如果购买3个月以上可以续保至5年。";
+l['Designed specifically for international scholars，educators，students and their families (US visa J1/J2, F1/F2).  Purchase monthly, renewable up to 4 years.'] = "计划专为持J签证和F签证的学者，教育者，学生和家属而设计。按月购买，可以续保至4年。";
+l['TaiAn International Health Insurance for Confucius Institutes'] = "泰安国际医疗保险 - 孔子学院";
+
+l['J1 insurance requirement'] = "J1保险标准";
+
+
+
+
 l['Teachers'] = "教师";
 l['Whether you are traveling abroad with your students, have foreign students coming to the US to your class, or are sending US students abroad we have solutions for you.'] = "无论是你的学生需要出国旅游学习还是外国学生来美国上你的课，我们都可以为他们提供适合的保险计划";
 l['Schools'] = "学校";
-l['If your school is sending students or teachers abroad, or has students or teachers visting we would make a good partner.'] = "送学生或教师出国学习工作，或外国学生或教师来你校学习工作，我们都可以成为很好的合作伙伴";
+
 l['Who should consider collaborating with TaiAn Financial?'] = "合作对象";
 l['Travel Agents'] = "旅行社";
 l['Students'] = "学生";

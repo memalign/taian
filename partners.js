@@ -23,9 +23,9 @@ function getPartnership(partner) {
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                             "pivot-indiana-residents",
-                            "pivot-texas-residents",
-                            "pivot-life-insurance",
-                            "pivot-partnerships"
+
+
+                            "pivot-aboutus"
                           ]
                             
                },
@@ -103,8 +103,8 @@ function getPartnership(partner) {
               },                           
 
         iupui: {
-                    windowTitle: "TaiAn Health Insurance for IUPUI",
-                    pageTitle: "TaiAn Health Insurance for IUPUI",
+                    windowTitle: "TaiAn International Health Insurance",
+                    pageTitle: "TaiAn International Health Insurance",
                     tabs: [
                             "pivot-home",
                             "pivot-international-student",
@@ -2332,26 +2332,7 @@ function getPartnership(partner) {
                                 }
                                 },      
               
-        uclajs: {
-                    windowTitle: "TaiAn Health Insurance for UCLA",
-                    pageTitle: "TaiAn Health Insurance for UCLA",
-                    tabs: [
-                            "pivot-home",
-                            "pivot-international-student",
-                            "pivot-global-medical",
-                            "pivot-travel-insurance"
-                          ],
-                    internationalStudentContent: function () {
-                        startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UCLA J scholar standards. Some scholars are required to have coverage of $100,000 per illness or injury and the waiver is approved by VSISP/Garnett-Powers. This requirement is met by Taian Scholar/Student Plan A or Plan B with $250,000 benefit per illness or injury.  Other scholars have the waiver approved at the Dashew Center for International Students and Scholars.  They are required to have coverage of $50,000 per illness or injury. This requirement is met by Taian Scholar/Student Plan B with $50,000 benefit per illness or injury. Each of these requirements meets the US Department of State standards. You can check your required coverage level at the link below.");
-                        writeText("");
-                         writeText("A few minutes after submitting an application, you will receive a confirmation letter of your coverage which you can send to UCLA to waive the school mandatory plan.");                       
-                        document.write(makeBulletedListWithTitle("", [
-                                makeURL("UCLA Scholar Requirements", "http://www.internationalcenter.ucla.edu/home/J1Visa/74/75/Overview#divHealth")
-                                ]));
-                        endRow();
-                    }
-              },                  
+                  
               
         ucdav: {
                     windowTitle: "TaiAn Health Insurance for UC Davis",

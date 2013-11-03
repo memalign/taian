@@ -92,7 +92,8 @@ function referralSubstitution(key) {
     var referrals = {
         cn1: "l=cn&p=pivot-school-waiver",
         cn2: "l=cn&p=pivot-school-waiver", 
-        
+
+        confucius: "p=pivot-confucius-educator",        
         xyf1: "l=cn&partner=xyf&p=pivot-travel-insurance&adid=xyf1",
         xyf2: "l=cn&partner=xyf&p=pivot-home&adid=xyf2",
         emuch: "l=cn&p=pivot-school-waiver&adid=emuch",        
@@ -1215,7 +1216,7 @@ function writeSectionsForForms() {
     endRow();
     endSection();
 
-    startSection("exchange-form", "Patriot Exchange Application");
+    startSection("exchange-form", "Patriot Exchange (Taian Plan B) pre-application");
     writeText("Please fill in the answers in English.  You can use your preferred language if you do not know the English answer");
     startRow();
     startForm("Patriot Exchange Application Information", "post.php", "exchange-form-success");
@@ -1717,9 +1718,9 @@ function writeTabs() {
                           "pivot-global-medical": "Global Medical",
                           "pivot-travel-insurance": "Travel Insurance",
                           "pivot-indiana-residents": "Indiana Residents",
-                          "pivot-texas-residents": "Texas Residents",
-                          "pivot-life-insurance": "Life Insurance",
-                          "pivot-partnerships": "Partnerships"
+
+
+                          "pivot-aboutus": "About Us"
     };
 
     var partnership = getPartnership(getPageAttribute("partner"));
@@ -1902,6 +1903,11 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School F1 requirement", "http://health.columbia.edu/insurance/enroll-upgrade-waive/request-waiver"),
                 makeURL("School J1 requirement", "http://www.columbia.edu/cu/isso/visa/scholar/J_health.html"),
                 makeURL("Health insurance for Columbia Scholars", "#icolumbia"),
+ 
+                "Confucius Institute (World Wide)",
+                makeURL("", ""),
+                makeURL("J1 insurance requirement", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/"),
+                makeURL("TaiAn International Health Insurance for Confucius Institutes", "#confucius"),
                 
                 makeURL("Cornell University (NY)", "http://www.cornell.edu/"),
                 makeURL("School F1 requirement", "http://www.gannett.cornell.edu/insurance/undergrads/enrollment/"),
@@ -2801,6 +2807,215 @@ function writeSections(legacy) {
     writeDontSeeWhatYouNeedRow();
     endSection();
 
+    
+    // Confucius Educator
+    startSection("pivot-confucius-educator", "Confucius Teachers and Volunteers");
+
+    startRow();
+    writeText("The Confucius Institutes' rapid development has provided the opportunity for people all over the world to learn about Chinese language and culture. They are both a platform for cultural exchange between China and the world, and a bridge reinforcing friendship and cooperation between China and the rest of the world.");
+    endRow();
+
+    startRow();
+    writeText("Confucius Institute volunteer teachers come to the US with J1 visas. Their exchange program requires them to have health insurance that meets the US Department of State (USDOS) requirements for the duration of their stay. Taian International Health Insurance provides insurance for J1 educators and their dependents. Taian Insurance Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the USDOS requirements.  Many Confucius teachers choose Plan B with $250,000 or $500,000 of benefits to get the best coverage within the limit of what the Confucius institute will reimburse them for.  Taian Insurance Plan A also meets the requirements and offers affordable coverage with maternity benefits.  Plan A and Plan B are also good for Confucius teachers anywhere around the world, not just in the US.");
+    endRow();    
+
+    startRow();    
+    document.write(makeBulletedListWithTitle("The USDOS requires:", [
+
+                        "Medical benefits of at least $50,000 per accident or illness",
+                        "Repatriation of remains in the amount of $7,500",
+                        "Expenses associated with the medical evacuation of the exchange visitor to his or her home country in the amount of $10,000",
+                        "A deductible not to exceed $500 per accident or illness."
+                       
+                        ]));
+
+    endRow();
+                        
+    startRow();
+    writeText(makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/"));
+    endRow();   
+    
+    startRow();
+
+    writeText("Call from US - 9:00AM to 10:00PM Eastern time - Includes weekend: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time 7-11am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>");
+    endRow();
+
+    startRow();
+    document.write(makeTable(3,
+            [
+            // Column headers:
+            "TaiAn Insurance for Educators",
+            makeRawURL("Plan A (Student Health Advantage)", "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+            makeRawURL("Plan B (Standard) (Patriot Exchange Program)", "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
+
+            // Rest of the table:
+            // Row 2
+            "Plan Type", "Designed specifically for international scholars，educators，students and their families (US visa J1/J2, F1/F2).  Purchase monthly, renewable up to 5 years if 3 months or more are purchased.", "Designed specifically for international scholars，educators，students and their families (US visa J1,J2).  Purchase monthly, renewable up to 4 years.",
+
+            // Row 3
+            "Maximum Limit", "$500,000 lifetime maximum, $300,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $250,000 or $500,000 per illness/injury",
+
+
+
+            "Deductible", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", 
+            "Coinsurance", "No coinsurance in PPO", "No coinsurance", 
+            "Hospital Room & Board", "Average semi-private room", "Average semi-private room", 
+            "Intensive Care", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)", 
+            "Maternity", "URC - If not pregnant when you purchase.   Not covered - If you are pregnant when you purchase.", "N/A", 
+            "Mental Health", "In-patient URC to $10,000, out-patient $50/day to $500", "N/A", 
+            "Emergency Room", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", 
+            "Prescription Drugs", "In-patient URC, out-patient 50%", "URC", 
+            "Accident Dental", "Injury $500, Sudden pain $350", "Injury $500, Sudden pain $350", 
+            "Accidental Death & Dismemberment", "$25,000", "$25,000", 
+            "Medical Evacuation", "$500,000", "$50,000", 
+            "Repatriation of remains", "$50,000", "$25,000", 
+            "Pre-existing conditions", "After 12 months of continuous coverage", "After 12 months of continuous coverage",
+            "Group Pricing", "N/A", "2 or more primary insured have about 10% discount", 
+            // Table within a table
+            "Cost Per Month (Non-US Citizens)",
+            makeTable(4, [
+                    "Age",     "F1/J1", "Spouse", "Children",
+                    "&lt; 19", "$72",   "$386",   "$82",
+                    "19-23",   "$95",   "$386",   "$82",
+                    "24-30",   "$110",  "$426",   "$82",
+                    "31-40",   "$197",  "$567",   "$82",
+                    "41-50",   "$322",  "$586",   "$82",
+                    "51-64",   "$430",  "$567",   "$82"
+                    ]), 
+
+            loc("$50,000 per illness/injury") +         
+            makeTable(4, [
+                    "Age",     "F1/J1", "Spouse", "Children",
+                    "&lt; 25", "$48.62","$48.62",  "$48.62",
+                    "25-49",   "$63.37","$63.37",  "$48.62",
+                    "50-64",   "$135.70","$135.70","$48.62"
+                    ]) +
+
+                   
+                    
+            loc("$250,000 per illness/injury") +         
+            makeTable(4, [
+                    "Age",     "F1/J1", "Spouse", "Children",
+                    "&lt; 25", "$60.36","$60.36",  "$60.36",
+                    "25-49",   "$78.59","$78.59",  "$60.36",
+                    "50-64",   "$168.27","$168.27","$60.36"
+                    ]) + 
+
+            loc("$500,000 per illness/injury") +         
+            makeTable(4, [
+                    "Age",     "F1/J1", "Spouse", "Children",
+                    "&lt; 25", "$63.66","$63.66",  "$63.66",
+                    "25-49",   "$82.90","$82.90",  "$63.66",
+                    "50-64",   "$177.53","$177.53","$63.66"
+                    ]),         
+            "", 
+            makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+            makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Patriot Exchange Program - Standard"), "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
+
+                "", 
+                "",
+            makeBuyURL(loc("Buy Group") + "<br />" + loc("Group for 2 or more"), "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699")            
+
+            ])
+            );
+    endRow();
+
+    startRow();
+    writeText("");
+    endRow();    
+
+    
+
+    startRow();
+    writeText("");
+    endRow();
+            
+    startRow();
+    writeText("More plan details:");
+    writeText("");
+    document.write(makeTable(2, [
+                "Plan", "Student Health Advantage more benefits",
+
+                "Plan Highlights",
+                makeBulletedListWithTitle("", [
+                        "Maternity covered if you are not pregnant when you purchase.",
+                        "Routine Nursery Care: $750 maximum per period of coverage",
+                        "Newborn care is covered for 31 days after birth if the birth is covered under the plan.",                        
+                        "Emergency Room: Injury: URC; Illness resulting in hospitalization: URC; Illness without hospitalization: Subject to addtional $250 deductible",
+                        "Physical Therapy: URC -limit once per day",
+                        "Local Ambulance: Per injury up to $350, Per illness only if admitted in-patient up to $350",
+                        "Dental: Injury due to covered accident $500; Sudden & unexpected pain $350",
+                        "Intercollegiate/Interscholastic/intramural or club sports: $5,000 per injury/illness medical expenses only",
+                        "Incidental home country coverage: up to cumulative two weeks",
+                        "Terrorism coverage: up to 50,000 lifetime maximum",
+                        "Dependents can only purchase when the student purchases",
+                        "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays.",                        
+                        "Optional benefit change in Florida, Hawaii, Idaho, Massachusetts to shorten the preexisting condition exclusion from 12 months to 6 months.",
+                        "With 6 month preexisting condition benefit change there is a 10 month wait for maternity benefits."                        
+                        ]),
+
+
+                "Full Brochure", makeURL("Full Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1938&a=80000699")
+
+
+
+                ]));
+
+    endRow();
+
+    startRow();
+    writeText("");
+    document.write(makeTable(2, [
+                "Plan", "More on Patriot Exchange",
+
+                "Plan Highlights",
+                makeBulletedListWithTitle("", [
+                        "Patriot Exchange Plan B Standard Plan with $50,000 limit per illness/injury meets the US Dept of state standards for Exchange visitors (J visa) which are: At least $50,000 per illness, repatriation of remains of $7,500, Medical evacuation benefits of $10,000, and a deductible not over $500.",
+                        "F2/J2 can buy Patriot Exchange alone (if F1/J1 buys schools plan) or buy with F1/J1",                        
+                        "Patriot Exchange Group plan available for groups of 2 or more",
+                        "Patriot Exchange Basic Plan available at a lower cost (may not meet your visa requirements - ask us!)",
+                        "Other available options include: travel protection for baggage and valuables, legal assistance, personal liability coverage, adventure sports coverage",
+                        "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays."
+                        ]),
+
+                "Full Brochures", 
+                makeBulletedListWithTitle("", [
+                        makeURL("Patriot Exchange Brochure", 
+                        "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1932&a=80000699"),
+
+                        makeURL("Patriot Exchange Group Brochure", 
+                        "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1905&a=80000699")
+                        ])
+
+
+               ]));
+
+    endRow();
+
+    startRow();
+    writeText("");
+    endRow();
+
+    startRow();
+    writeText("We have native English and Chinese speakers to answer all of your questions.");
+    endRow();
+
+    startRow();
+    writeText("Contact us to ensure a plan meets your requirements.");
+    endRow();
+
+    startRow();
+    writeText(loc("Other plans that cover more visa types:") + " " + makePivotURL("pivot-global-medical", "Global Medical") + " " + loc("and") + " " + makePivotURL("pivot-travel-insurance", "Patriot Travel"));
+    endRow();
+
+    startRow();
+    writeText("Insurance policy is underwritten by a health insurance company that is 'A' rated by A.M.Best");
+    endRow();
+
+    writeDontSeeWhatYouNeedRow();
+    endSection();
+    
+    
 
     // International Student and scholar
     startSection("pivot-international-studentandscholar", "International Scholars and Students");
@@ -3726,112 +3941,64 @@ function writeSections(legacy) {
 
     endSection();
 
-    // Texas Residents
-    startSection("pivot-texas-residents", "Texas Residents");
 
-    writeRowForUnitedHealthOne();
 
-    endSection();
 
-    // Life Insurance
-    startSection("pivot-life-insurance", "Life Insurance");
 
-    startRow();
-    document.write(makeTableWithStyle("invisibleTable", 2, [
-                makeImage("oneamerica.png"),
-                "Delivering on our promise to provide peace of mind and financial security for clients has been the focus of American United Life Insurance Company® (AUL) a OneAmerica company, for more than 130 years. OneAmerica and its operating companies’ ratings have remained stable, providing peace of mind to our customers. A.M. Best rating A (Excellent) positive outlook The third-highest of 15 possible ratings, according to the release dated June 9, 2010. Standard & Poor’s rating AA- (Very Strong) stable outlook The fourth-highest of 21 possible ratings, according to the report dated August 3, 2010."
-                ]));
-    endRow();
+    // About Us
+    startSection("pivot-aboutus", "About Us");
+
+
 
 
     startRow();
-    writeText("");
-    writeText(loc("Low Cost Term Life Insurance") + " - " + loc("Sample (most preferred) rates:"));
-    document.write(makeTable(3, [
-                "Term Life Insurance",
-                "10 yr level $249,999",
-                "20 yr level $249,999",
-
-                "30 yrs old Male",
-                "$142.50/yr",
-                "$215.00/yr",
-
-                "30 yrs old Female",
-                "$127.50/yr",
-                "$170.00/yr",
-
-                "40 yrs old Male",
-                "$175.00/yr",
-                "$325.85/yr",
-
-                "40 yrs old Female",
-                "$167.50/yr",
-                "$237.50/yr"
-                ]));
-    writeText("Call or email for a quote!");
-    writeText("We also offer Whole Life Insurance and Annuities. Please call or email for a quote!");
-    endRow();
-
-
-    writeDontSeeWhatYouNeedRow();
-
-    endSection();
-
-
-    // Partnerships
-    startSection("pivot-partnerships", "Partnerships");
-    startRow();
-    writeText("<h2>" + loc("Who should consider collaborating with TaiAn Financial?") + "</h2>");
-    endRow();
-
-    startRow();
-
-    document.write(makeTableWithStyle("invisibleTableNormalText", 3, [
-                makeLinesWithTitle("Travel Agents", [
-                    "Pairing travel services with travel and health insurance can be mutually beneficial."
-                    ]),
-
-                makeLinesWithTitle("Schools", [
-                    "If your school is sending students or teachers abroad, or has students or teachers visting we would make a good partner."
-                    ]),
-
-                makeLinesWithTitle("Organizations", [
-                    "We work with representatives of International organizations, student or scholar organizations, and travel clubs to help your membership with their travel insurance needs."
-                    ]),
-
-                makeLinesWithTitle("Teachers", [
-                    "Whether you are traveling abroad with your students, have foreign students coming to the US to your class, or are sending US students abroad we have solutions for you."
-                    ]),
-
-                makeLinesWithTitle("Students", [
-                    "Help your peers find the insurance they need as they travel abroad for university or vacation."
-                    ]),
-
-                makeLinesWithTitle("Anyone with International Ties", [
-                        "Bring an understanding of travel and health insurance to your own international community."
-                    ])
-    ]));
-
-    endRow();
-
-    startRow();
-    document.write(makeBulletedListWithTitle("What's involved in a partnership?", [
-                "We work closely with our partners to design a custom solution that is mutually beneficial.",
-                "Collaborating can be as simple as providing you with a way to easily refer potential customers.",
-                "In more complex partnerships, we can work together to provide the best solution using the technologies at our disposal."
-                ]));
-    endRow();
-
-    startRow();
-    document.write(makeBulletedListWithTitle("Why work with TaiAn Financial?", [
-                "We are qualified insurance agents with over 20 years experience working with insurance companies.",
-                "We have native English and Chinese professionals who create a unique advantage enabling us to help Chinese visitors to the United States and American visitors to China.",
-                "We are available for your customers and friends before and after they purchase the insurance they need.",
+    document.write(makeBulletedListWithTitle("Who is TaiAn Financial LLC, an IMG Endorsed Independent Chinese Sales Center!", [
+                "International Medical Group (IMG) is a worldwide leader in the International medical insurance business, and TaiAn Financial LLC is an IMG Endorsed Independent Chinese Sales Center.  As an IMG Endorsed Independent Chinese Sales Center, we can provide our customers professional, prompt service and make their insurance experience as easy as possible.",
+                "We have more than 27 years of health insurance experience serving the people in the Unites States and globally.",
+                "We specialize in service for international scholars, educators and students with both native Chinese speakers and native English speakers.",
+                "We are located in the United States and have extended work hours to serve our customers whenever they need us. Our work hours are 7 days a week, 9:00am-11:00pm Eastern Time.",   
+                "We have both English and Chinese local phone numbers in the US. We also have China local phone service, by calling this number our customers in China don't pay long distance charges. We communicate with our customers through  WeChat and Skype as well.",
+                loc("We have a highly experienced IT team to keep our website up-to-date to make sure our customers get the most updated information. For example, we check our webpage") + " " + makePivotURL("pivot-school-waiver", "Requirements for all schools for F and J visa") + loc(" every week or whenever our customers tell us their school requirements changed. This webpage is very popular because it provides requirements for all schools for F and J visa, and identifies the insurance plan that is best for each schools international scholars and students."),                
                 "We work with only the most financially secure insurers with top quality ratings from A.M. Best and Standard and Poor's.",
-                "We are accustomed to working with people in the United States and China via email, phone, WeChat, and Skype.",
                 "Our website is accessible around the world, including mainland China."
                 ]));
     endRow();
+
+
+    
+    startRow();
+    document.write(makeBulletedListWithTitle("Partnering with TaiAn Financial", [
+
+
+                     makeLinesWithTitle("Universities, Colleges, Institutes and other schools", [
+                         "If your school is sending students or teachers abroad, or has students or teachers visiting we would make a good partner."
+                         ]),
+
+                     makeLinesWithTitle("Teachers", [
+                         "Whether you are traveling abroad with your students, have foreign students coming to the US to your class, or are sending US students abroad we have solutions for you."
+                         ]),
+
+                     makeLinesWithTitle("Students", [
+                         "Help your peers find the insurance they need as they travel abroad for university or vacation."
+                         ]),
+                         
+                     makeLinesWithTitle("Travel Agents", [
+                         "Pairing travel services with travel and health insurance can be mutually beneficial."
+                         ]),
+
+
+                     makeLinesWithTitle("Organizations", [
+                         "We work with representatives of International organizations, student or scholar organizations, and travel clubs to help your membership with their travel insurance needs."
+                         ])
+
+
+
+
+    ]));
+
+    endRow();    
+    
+
 
     startRow();
     document.write(makeBulletedListWithTitle("Want to know more? Contact us:", getContactInfo()));
