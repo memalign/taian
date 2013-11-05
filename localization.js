@@ -957,13 +957,13 @@ l['Child 2 Family doctor Date Last Seen'] = "子女2-最近一次看医生的日
 l['Child 2 Family doctor Reason'] = "子女2-最近一次看医生的原因";
 l['About Us'] = "关于我们";
 l['Who is TaiAn Financial LLC, an IMG Endorsed Independent Chinese Sales Center!'] = "泰安国际医疗保险公司，IMG授权的独立的IMG中文销售中心！";
-l['International Medical Group (IMG) is a worldwide leader in the International medical insurance business, and TaiAn Financial LLC is an IMG Endorsed Independent Chinese Sales Center.  As an IMG Endorsed Independent Chinese Sales Center, we can provide our customers professional, prompt service and make their insurance experience as easy as possible.'] = "国际医疗集团（IMG）是世界上国际医疗保险行业的佼佼者，而泰安保险公司是IMG授权的独立的IMG中文销售中心。作为独立的IMG中文销售中心，我们可以为客户提供更加专业快捷的服务。 地道的中文和英语专业服务确保客户的保险体验尽可能完美顺利。";
+l['International Medical Group (IMG) is a worldwide leader in the International medical insurance business, and TaiAn Financial LLC is an IMG Endorsed Independent Chinese Sales Center.  As an IMG Endorsed Independent Chinese Sales Center, we can provide our customers professional, prompt service and make their insurance experience as easy as possible.'] = "国际医疗集团 (IMG) 是世界领先的国际医疗保险公司，而泰安保险公司是IMG授权的独立的IMG中文销售中心。作为IMG中文销售中心，我们可以为客户提供更加专业快捷的服务。 泰安免费的中文和英语专业服务确保客户的保险体验尽可能完美顺利。";
 l['We have more than 27 years of health insurance experience serving the people in the Unites States and globally.'] = "我们有超过27年的医疗保险经验。 我们服务于在美国生活的外国人和世界各地的国际人士以及美国当地居民。";
 l['We specialize in service for international scholars, educators and students with both native Chinese speakers and native English speakers.'] = "我们专长服务于以汉语或英语为母语的国际学者，教育者和学生。";
-l['We are located in the United States and have extended work hours to serve our customers whenever they need us. Our work hours are 7 days a week, 9:00am-11:00pm Eastern Time.'] = "我们位于美国印第安那州。 为了客户在需要时能够得到及时的帮助，我们延长的工作时间为每周7天，美国东部时间9:00am-11:00pm。";
+l['We are located in the United States and have extended work hours to serve our customers whenever they need us. Our work hours are 7 days a week, 9:00am-11:00pm Eastern Time.'] = "泰安公司地处美国。 为了客户在需要时能够得到及时的帮助，我们延长的工作时间为每周7天，美国东部时间9:00am-11:00pm。";
 l['We have both English and Chinese local phone numbers in the US. We also have China local phone service, by calling this number our customers in China don\'t pay long distance charges. We communicate with our customers through  WeChat and Skype as well.'] = "在美国我们有本地的英语电话线和中文电话线。 在中国我们也有中国本地电话，客户在中国直接拨打此电话不支付长途费用。我们还可以与客户通过微信和Skype交流。";
-l['We have a highly experienced IT team to keep our website up-to-date to make sure our customers get the most updated information. For example, we check our webpage'] = "";
-l[' every week or whenever our customers tell us their school requirements changed. This webpage is very popular because it provides requirements for all schools for F and J visa, and identifies the insurance plan that is best for each schools international scholars and students.'] = "";
+l['We have a highly experienced IT team to keep our website up-to-date to make sure our customers get the most updated information. For example, we check our webpage'] = "我们有一支经验丰富的IT团队使我们的网站实时更新以确保我们的客户得到最新的信息。例如，我们每周或随时得到学校政策有变时都会检查我们的网页:";
+l[' every week or whenever our customers tell us their school requirements changed. This webpage is very popular because it provides requirements for all schools for F and J visa, and identifies the insurance plan that is best for each schools international scholars and students.'] = "这个网页非常受欢迎，因为它提供了全美各校F和J签证保险的标准，并为各校的学者，教育者和学生们推荐最适合他们的保险计划。";
 l['Partnering with TaiAn Financial'] = "与泰安保险合作";
 l['Universities, Colleges, Institutes and other schools'] = "大学，学院，研究所和其他学校";
 l['If your school is sending students or teachers abroad, or has students or teachers visiting we would make a good partner.'] = "如果您的学校需要派送教师或学生出国工作学习或访问，我们都有机会建立良好的合作关系。";
@@ -986,7 +986,7 @@ l['J1 insurance requirement'] = "J1保险标准";
 
 
 l['Teachers'] = "教师";
-l['Whether you are traveling abroad with your students, have foreign students coming to the US to your class, or are sending US students abroad we have solutions for you.'] = "无论是你的学生需要出国旅游学习还是外国学生来美国上你的课，我们都可以为他们提供适合的保险计划";
+l['Whether you are traveling abroad with your students, have foreign students coming to the US to your class, or are sending US students abroad we have solutions for you.'] = "无论是您的学生需要出国旅游学习还是外国学生来美国读书，我们都可以为他们提供适合的保险计划。";
 l['Schools'] = "学校";
 
 l['Who should consider collaborating with TaiAn Financial?'] = "合作对象";
@@ -1073,6 +1073,7 @@ l['Maximum Limit'] = "最高赔付";
 l['$500,000 lifetime maximum, $300,000 per illness/injury'] = "$500,000 终身最高赔付, $300,000/疾病或受伤";
 l['$50,000 per illness/injury'] = "$50,000/疾病或受伤";
 l['$250,000 per illness/injury'] = "$250,000/疾病或受伤";
+l['$500,000 per illness/injury'] = "$500,000/疾病或受伤";
 l['$5,000,000 lifetime. Options $50,000, $250,000 or $500,000 per illness/injury'] = "$5,000,000 终身最高赔付。 可选$50,000, $250,000 or $500,000/疾病或受伤";
 l['Deductible'] = "免赔额";
 l['$100 per illness/injury, $5 co-pay per visit in Student Health Center.'] = "$100/疾病或受伤, $5 co-pay 就诊学生医疗中心 ";

@@ -53,7 +53,9 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"                            
+                            
                           ]
               },   
               
@@ -62,7 +64,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ]
               },                 
               
@@ -71,7 +74,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ]
               },                
               
@@ -80,7 +84,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ]
               },                 
 
@@ -89,7 +94,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ]
               },              
 
@@ -98,7 +104,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ]
               },                           
 
@@ -109,7 +116,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                     internationalStudentContent: function () {
                         startRow();
@@ -129,7 +137,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ]
               },  
 
@@ -140,7 +149,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ]
               },                
 
@@ -151,7 +161,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -171,7 +182,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -193,7 +205,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -214,7 +227,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -236,7 +250,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -256,7 +271,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -279,7 +295,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -302,7 +319,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -324,7 +342,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -346,7 +365,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -368,7 +388,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -390,7 +411,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -411,7 +433,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -432,7 +455,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -453,7 +477,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -474,7 +499,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -496,7 +522,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -518,7 +545,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -540,7 +568,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -562,7 +591,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -584,7 +614,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -604,7 +635,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -625,7 +657,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -646,7 +679,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -667,7 +701,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -688,7 +723,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -710,7 +746,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -732,7 +769,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -753,7 +791,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -774,7 +813,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -795,7 +835,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -816,7 +857,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -837,7 +879,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -858,7 +901,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -880,7 +924,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -902,7 +947,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -924,7 +970,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -946,7 +993,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -968,7 +1016,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -989,7 +1038,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -1012,7 +1062,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-j-scholar",                            
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                     jScholarContent: function () {
                         startRow();
@@ -1075,7 +1126,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-studentandscholar",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
 
@@ -1204,7 +1256,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -1225,7 +1278,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -1246,7 +1300,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -1267,7 +1322,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -1288,7 +1344,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -1309,7 +1366,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -1330,7 +1388,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -1351,7 +1410,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -1372,7 +1432,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -1393,7 +1454,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -1414,7 +1476,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -1435,7 +1498,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -1456,7 +1520,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -1477,7 +1542,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -1497,7 +1563,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -1517,7 +1584,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -1537,7 +1605,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -1557,7 +1626,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -1577,7 +1647,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -1597,7 +1668,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -1617,7 +1689,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -1637,7 +1710,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -1657,7 +1731,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -1677,7 +1752,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-studentandscholar",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentandscholarContent: function () {
@@ -1738,7 +1814,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-studentandscholar",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
 
                     internationalStudentandscholarContent: function () {
@@ -1931,7 +2008,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -1951,7 +2029,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -1971,7 +2050,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -1991,7 +2071,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -2014,7 +2095,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -2034,7 +2116,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -2056,7 +2139,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -2076,7 +2160,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -2096,7 +2181,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -2116,7 +2202,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -2137,7 +2224,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -2160,7 +2248,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -2180,7 +2269,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                     internationalStudentContent: function () {
                         startRow();
@@ -2201,7 +2291,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                     internationalStudentContent: function () {
                         startRow();
@@ -2217,7 +2308,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -2237,7 +2329,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-studentandscholar",                            
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                     internationalStudentandscholarContent: function () {
                         startRow();
@@ -2341,7 +2434,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                     internationalStudentContent: function () {
                         startRow();
@@ -2360,7 +2454,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                     internationalStudentContent: function () {
                         startRow();
@@ -2380,7 +2475,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -2401,7 +2497,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -2422,7 +2519,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -2443,7 +2541,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                           
                     internationalStudentContent: function () {
@@ -2464,7 +2563,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ],
                     internationalStudentContent: function () {
                         startRow();
@@ -2493,7 +2593,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ]
               },              
               
@@ -2508,7 +2609,8 @@ function getPartnership(partner) {
                             "pivot-home",
                             "pivot-international-student",
                             "pivot-global-medical",
-                            "pivot-travel-insurance"
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
                           ]
               }
               
