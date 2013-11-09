@@ -2785,7 +2785,7 @@ function writeSections(legacy) {
     endRow();   
     
     startRow();
-    writeText("If you buy Plan B be sure to select Standard plan, Basic plan does not meet J visa requirements.");
+
     writeText("Call from US - 9:00AM to 10:00PM Eastern time - Includes weekend: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time 7-11am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>");
     endRow();
 
@@ -3198,7 +3198,7 @@ function writeSections(legacy) {
     endRow();   
     
     startRow();
-    writeText("If you buy Plan B be sure to select Standard plan, Basic plan does not meet J visa requirements.");
+
     writeText("Call from US - 9:00AM to 10:00PM Eastern time - Includes weekend: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time 7-11am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>");
     endRow();
 

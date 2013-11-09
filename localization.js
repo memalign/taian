@@ -172,7 +172,7 @@ l['$0, $100, $250, $500, $1,000, $2,500 annual deductible'] = "$0, $100, $250, $
 
 l['To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays.'] = "为了您的最大利益,  住院治疗前应取得预认证。如果是紧急住院，也应尽早通知IMG。";
 l['Newborn care is covered for 31 days after birth if the birth is covered under the plan.'] = "计划包括新生儿出生后31天的护理。";
-l['If you buy Plan B be sure to select Standard plan, Basic plan does not meet J visa requirements.'] = "购买计划B时，J1签证必须选择Standard Plan。 Basic Plan不符合美国国务院对J1签证保险的标准";
+
 l['Name of your prior student insurance provider (If you have been in the US 6 months or longer)?'] = "你之前的学生保险的保险公司名称（如果你一直在美国6个月或更长的时间）？";
 l['Prior coverage expiration date (If you have been in the US 6 months or longer)?'] = "之前的保险何时过期的（如果你一直在美国6个月或更长的时间）？";
 l['School F1 requirement'] = "学校F1标准";
