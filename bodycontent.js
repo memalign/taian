@@ -558,7 +558,9 @@ function referralSubstitution(key) {
         guakron: "partner=uakron&p=pivot-international-student&adid=guakron",
         acnuakron: "l=cn&partner=uakron&p=pivot-international-student&adid=acnuakron", 
         iuakron: "partner=uakron&p=pivot-international-student",
-        icnuakron: "l=cn&partner=uakron&p=pivot-international-student",        
+        icnuakron: "l=cn&partner=uakron&p=pivot-international-student",
+        icnimga: "l=cn&p=pivot-international-scholar&partner=img&adid=icnimga",
+        iimga: "p=pivot-international-scholar&partner=img&adid=iimga",
         
         musc: "partner=musc&p=pivot-home&adid=smusc",
         cnmusc: "l=cn&partner=musc&p=pivot-home&adid=scnmusc",   
@@ -2771,7 +2773,7 @@ function writeSections(legacy) {
 
     var partnerShip = getPartnership(getPageAttribute("partner"));
     var internationalStudentPartnerContent = partnerShip["internationalStudentContent"];
-    var hasIStPartnerContent = !(typeof internationalStudentPartnerContent === "undefined")
+    var hasIStPartnerContent = !(typeof internationalStudentPartnerContent === "undefined");
     if (hasIStPartnerContent) {
         internationalStudentPartnerContent();
     }
@@ -3180,8 +3182,8 @@ function writeSections(legacy) {
 
     var partnerShip = getPartnership(getPageAttribute("partner"));
     var internationalStudentandscholarPartnerContent = partnerShip["internationalStudentandscholarContent"];
-    var hasIStPartnerContent = !(typeof internationalStudentandscholarPartnerContent === "undefined")
-    if (hasIStPartnerContent) {
+    var hasIStSchPartnerContent = !(typeof internationalStudentandscholarPartnerContent === "undefined");
+    if (hasIStSchPartnerContent) {
         internationalStudentandscholarPartnerContent();
     }
 
@@ -3355,7 +3357,7 @@ function writeSections(legacy) {
 
     var partnerShip = getPartnership(getPageAttribute("partner"));
     var jScholarPartnerContent = partnerShip["jScholarContent"];
-    var hasISPartnerContent = !(typeof jScholarPartnerContent === "undefined")
+    var hasISPartnerContent = !(typeof jScholarPartnerContent === "undefined");
     if (hasISPartnerContent) {
         jScholarPartnerContent();
     }
@@ -3460,26 +3462,35 @@ function writeSections(legacy) {
 
     var partnerShip = getPartnership(getPageAttribute("partner"));
     var internationalScholarPartnerContent = partnerShip["internationalScholarContent"];
-    var hasISPartnerContent = !(typeof internationalScholarPartnerContent === "undefined")
-    if (hasISPartnerContent) {
+    var hasISchPartnerContent = !(typeof internationalScholarPartnerContent === "undefined");
+    if (hasISchPartnerContent) {
         internationalScholarPartnerContent();
     }
+
+    startRow();
+    writeText(makePivotURL("pivot-school-waiver", "Requirements for all schools for F and J visa"));
+    endRow();
    
     startRow();
-    writeText("Our highlighted plans:");
+    writeText(makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/"));
+    endRow();   
+    
+    startRow();
+
+    writeText("Call from US - 9:00AM to 10:00PM Eastern time - Includes weekend: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time 7-11am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>");
     endRow();
 
     startRow();
     document.write(makeTable(3,
             [
             // Column headers:
-            "TaiAn International Scholars",
+            "TaiAn Scholars",
             makeRawURL("Plan A (Student Health Advantage)", "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
             makeRawURL("Plan B (Standard) (Patriot Exchange Program)", "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
 
             // Rest of the table:
             // Row 2
-            "Plan Type", "Designed specifically for international scholars (J1,J2). Renewable up to 5 years if 3 months or more are purchased. For those who have been in the US for less than 6 months.", "Designed specifically for international scholars (J1,J2). Renewable up to 4 years if 1 month or more is purchased.",
+            "Plan Type", "Designed specifically for international scholars (J1,J2). Purchase monthly, renewable up to 5 years if 3 months or more are purchased.", "Designed specifically for international scholars(J1,J2). Purchase monthly, renewable up to 4 years.",
 
             // Row 3
             "Maximum Limit", "$500,000 lifetime maximum, $300,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $250,000 or $500,000 per illness/injury",
@@ -3487,10 +3498,10 @@ function writeSections(legacy) {
 
 
             "Deductible", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", 
-            "Coinsurance", "No coinsurance in PPO", "No coinsurance in PPO", 
+            "Coinsurance", "No coinsurance in PPO", "No coinsurance", 
             "Hospital Room & Board", "Average semi-private room", "Average semi-private room", 
             "Intensive Care", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)", 
-            "Maternity", "URC", "N/A", 
+            "Maternity", "URC - If not pregnant when you purchase.   Not covered - If you are pregnant when you purchase.", "N/A", 
             "Mental Health", "In-patient URC to $10,000, out-patient $50/day to $500", "N/A", 
             "Emergency Room", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", 
             "Prescription Drugs", "In-patient URC, out-patient 50%", "URC", 
@@ -3499,7 +3510,7 @@ function writeSections(legacy) {
             "Medical Evacuation", "$500,000", "$50,000", 
             "Repatriation of remains", "$50,000", "$25,000", 
             "Pre-existing conditions", "After 12 months of continuous coverage", "After 12 months of continuous coverage",
-
+            "Group Pricing", "N/A", "2 or more primary insured have about 10% discount", 
             // Table within a table
             "Cost Per Month (Non-US Citizens)",
             makeTable(4, [
@@ -3526,19 +3537,38 @@ function writeSections(legacy) {
                     "&lt; 25", "$60.36","$60.36",  "$60.36",
                     "25-49",   "$78.59","$78.59",  "$60.36",
                     "50-64",   "$168.27","$168.27","$60.36"
-                    ]),         
+                    ]) + 
+
+            loc("$500,000 per illness/injury") +         
+            makeTable(4, [
+                    "Age",     "J1", "Spouse", "Children",
+                    "&lt; 25", "$63.66","$63.66",  "$63.66",
+                    "25-49",   "$82.90","$82.90",  "$63.66",
+                    "50-64",   "$177.53","$177.53","$63.66"
+                    ]),                      
+     
             "", 
             makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
-            makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Patriot Exchange Program - Standard"), "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699")
+            makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Patriot Exchange Program - Standard"), "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
+
+                "", 
+                "",
+            makeBuyURL(loc("Buy Group") + "<br />" + loc("Group for 2 or more"), "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699")            
 
             ])
             );
     endRow();
+
+    startRow();
+    writeText("");
+    endRow();    
+
     
+
     startRow();
     writeText("");
     endRow();
-
+            
     startRow();
     writeText("More plan details:");
     writeText("");
@@ -3547,6 +3577,7 @@ function writeSections(legacy) {
 
                 "Plan Highlights",
                 makeBulletedListWithTitle("", [
+                        "Maternity covered if you are not pregnant when you purchase.",
                         "Routine Nursery Care: $750 maximum per period of coverage",
                         "Newborn care is covered for 31 days after birth if the birth is covered under the plan.",                        
                         "Emergency Room: Injury: URC; Illness resulting in hospitalization: URC; Illness without hospitalization: Subject to addtional $250 deductible",
@@ -3556,15 +3587,15 @@ function writeSections(legacy) {
                         "Intercollegiate/Interscholastic/intramural or club sports: $5,000 per injury/illness medical expenses only",
                         "Incidental home country coverage: up to cumulative two weeks",
                         "Terrorism coverage: up to 50,000 lifetime maximum",
-                        "Dependents can only purchase when the student purchases",
-                        "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays.",
+                        "Dependents can only purchase when the scholar purchases",
+                        "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays.",                        
                         "Optional benefit change in Florida, Hawaii, Idaho, Massachusetts to shorten the preexisting condition exclusion from 12 months to 6 months.",
-                        "With 6 month preexisting condition benefit change there is a 10 month wait for maternity benefits."
+                        "With 6 month preexisting condition benefit change there is a 10 month wait for maternity benefits."                        
                         ]),
 
 
-                "Full Brochure", makeURL("Full Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1938&a=80000699"),
-                "", makeBuyURL("Buy Student Health Advantage", "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")
+                "Full Brochure", makeURL("Full Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1938&a=80000699")
+
 
 
                 ]));
@@ -3578,9 +3609,9 @@ function writeSections(legacy) {
 
                 "Plan Highlights",
                 makeBulletedListWithTitle("", [
+                        "Patriot Exchange Plan B Standard Plan with $50,000 limit per illness/injury meets the US Dept of state standards for Exchange visitors (J visa) which are: At least $50,000 per illness, repatriation of remains of $7,500, Medical evacuation benefits of $10,000, and a deductible not over $500.",
                         "J2 can buy Patriot Exchange alone (if J1 buys schools plan) or buy with J1",                        
                         "Patriot Exchange Group plan available for groups of 2 or more",
-                        "Patriot Exchange Basic Plan available at a lower cost (may not meet your visa requirements - ask us!)",
                         "Other available options include: travel protection for baggage and valuables, legal assistance, personal liability coverage, adventure sports coverage",
                         "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays."
                         ]),
@@ -3592,13 +3623,9 @@ function writeSections(legacy) {
 
                         makeURL("Patriot Exchange Group Brochure", 
                         "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1905&a=80000699")
-                        ]),
-
-                "Apply Now", 
-                makeBulletedListWithTitle("", [
-                        makeBuyURL("Buy Plan B (Patriot Exchange Program)", "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
-                        makeBuyURL("Buy Plan B Group (Patriot Exchange Group)", "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699")
                         ])
+
+
                ]));
 
     endRow();
@@ -3612,7 +3639,7 @@ function writeSections(legacy) {
     endRow();
 
     startRow();
-    writeText(makePivotURL("pivot-school-waiver", "Check your school waiver requirements.") + " " + loc("Contact us to ensure a plan meets your requirements."));
+    writeText("Contact us to ensure a plan meets your requirements.");
     endRow();
 
     startRow();
@@ -3640,7 +3667,7 @@ function writeSections(legacy) {
 
     var partnerShip = getPartnership(getPageAttribute("partner"));
     var globalCitizenPartnerContent = partnerShip["globalCitizenContent"];
-    var hasGCiPartnerContent = !(typeof globalCitizenPartnerContent === "undefined")
+    var hasGCiPartnerContent = !(typeof globalCitizenPartnerContent === "undefined");
     if (hasGCiPartnerContent) {
         globalCitizenPartnerContent();
     }
@@ -3801,7 +3828,7 @@ function writeSections(legacy) {
     
     var partnerShip = getPartnership(getPageAttribute("partner"));
     var travelStudentPartnerContent = partnerShip["travelStudentContent"];
-    var hasTStPartnerContent = !(typeof travelStudentPartnerContent === "undefined")
+    var hasTStPartnerContent = !(typeof travelStudentPartnerContent === "undefined");
     if (hasTStPartnerContent) {
         travelStudentPartnerContent();
     }    
