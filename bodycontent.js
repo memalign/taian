@@ -561,6 +561,7 @@ function referralSubstitution(key) {
         icnuakron: "l=cn&partner=uakron&p=pivot-international-student",
         icnimga: "l=cn&p=pivot-international-scholar&partner=img&adid=icnimga",
         iimga: "p=pivot-international-scholar&partner=img&adid=iimga",
+
         
         musc: "partner=musc&p=pivot-home&adid=smusc",
         cnmusc: "l=cn&partner=musc&p=pivot-home&adid=scnmusc",   
