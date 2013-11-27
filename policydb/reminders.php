@@ -12,7 +12,7 @@ require_once('db.php');
 set_time_limit(1200);
 //error_reporting(E_ALL);
 
-$importantColumns = "rowid, expiration_date_fmt, expiration_date, effective_date_fmt, julianday(effective_date_fmt), last_reminder_date_fmt, certificate_number, certificate_status, certificate_type, primary_insured_name, insured_name, group_name, primary_email_address, other_email_address, (julianday(\"now\")-julianday(\"expiration_date_fmt\") > -1) as too_late_to_renew, (julianday(\"expiration_date_fmt\")-julianday(\"effective_date_fmt\") > 27) as is_at_least_month, (julianday(\"expiration_date_fmt\")-julianday(\"effective_date_fmt\") > 87) as is_at_least_three_months, should_ignore";
+$importantColumns = "rowid, citizenship, home_country, expiration_date_fmt, expiration_date, effective_date_fmt, julianday(effective_date_fmt), last_reminder_date_fmt, certificate_number, certificate_status, certificate_type, primary_insured_name, insured_name, group_name, primary_email_address, other_email_address, (julianday(\"now\")-julianday(\"expiration_date_fmt\") > -1) as too_late_to_renew, (julianday(\"expiration_date_fmt\")-julianday(\"effective_date_fmt\") > 27) as is_at_least_month, (julianday(\"expiration_date_fmt\")-julianday(\"effective_date_fmt\") > 87) as is_at_least_three_months, should_ignore";
 
 function siblingsAndEmails($dbhandle, $individual) {
     global $importantColumns;
@@ -354,8 +354,10 @@ END;
     $isAtLeastThreeMonths = (intval($individuals[0]["is_at_least_three_months"]) > 0);
 
     /*
-        Student A renewal  - Start with SHA, policy at least 3 months
-        Student A short rebuy - Start with SHA, policy < 3 months
+        // These rules are not quite right for SHA policies. To renew the first time, the policy must be >= 3 months. Subsequent renewals can happen only 1 month apart.
+        Student A renewal  - Start with SHA, policy at least 1 months
+        Student A short rebuy - Start with SHA, policy < 1 months
+
         Student B renewal - start with EPSN
         Student B Basic plan renewal - start with EPBN
         Long term travel plan renew - PATA, PATI, PPLA  plus initial term (effective date to termination date) one month or more
@@ -373,7 +375,7 @@ END;
             $renewEmail = $studentAExpiresToday;
             $subject = $expiresTodaySubject;
         } else {
-            if (!$isAtLeastThreeMonths) {
+            if (!$isAtLeastMonth) {
                 $renewEmail = $studentAShortRebuy;
                 $subject = $rebuySubject;
             } else {
