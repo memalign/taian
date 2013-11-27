@@ -40,7 +40,7 @@ function siblingsAndEmails($dbhandle, $individual) {
         if (!$result) {
             echo "Cannot execute individual email query $error.";
         } else {
-            while ($row = sqlite_fetch_array($result, SQLITE_ASSOC)) {
+            while ($row = sqlite_fetch_array($result)) {
                 foreach ($emailAddressKeys as $key) {
                     $addy = $row[$key];
 
@@ -63,7 +63,7 @@ function siblingsAndEmails($dbhandle, $individual) {
         if (!$result) {
             echo "Cannot execute individual peer cert number query $error.";
         } else {
-            while ($row = sqlite_fetch_array($result, SQLITE_ASSOC)) {
+            while ($row = sqlite_fetch_array($result)) {
                 if (strlen($row["certificate_number"])) {
                     array_push($potentialCertNumbers, $row["certificate_number"]);
                 }
@@ -81,7 +81,7 @@ function siblingsAndEmails($dbhandle, $individual) {
             if (!$result) {
                 echo "Cannot execute individual peer cert number query $error.";
             } else {
-                while ($row = sqlite_fetch_array($result, SQLITE_ASSOC)) {
+                while ($row = sqlite_fetch_array($result)) {
                     if (strlen($row["certificate_number"])) {
                         array_push($actualCertNumbers, $row["certificate_number"]);
                     }
@@ -97,7 +97,7 @@ function siblingsAndEmails($dbhandle, $individual) {
             if (!$result) {
                 echo "Cannot execute individual sibling query $error.";
             } else {
-                while ($row = sqlite_fetch_array($result, SQLITE_ASSOC)) {
+                while ($row = sqlite_fetch_array($result)) {
                     array_push($siblings, $row);
                 }
             }
@@ -478,7 +478,7 @@ if (!$result) {
 }
 
 $allResults = array();
-while ($row = sqlite_fetch_array($result, SQLITE_ASSOC)) {
+while ($row = sqlite_fetch_array($result)) {
     array_push($allResults, $row);
 }
 

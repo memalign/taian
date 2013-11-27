@@ -27,7 +27,7 @@ if (!is_null($adid)) {
     if (!$result) {
         echo "Cannot execute cert number query $error.";
     } else {
-        while ($row = sqlite_fetch_array($result, SQLITE_ASSOC)) {
+        while ($row = sqlite_fetch_array($result)) {
             if (strlen($row["certificate_number"])) {
                 array_push($certNumbers, $row["certificate_number"]);
             }
@@ -45,7 +45,7 @@ if (!is_null($adid)) {
         if (!$result) {
             echo "Cannot execute policies query $error.";
         } else {
-            while ($row = sqlite_fetch_array($result, SQLITE_ASSOC)) {
+            while ($row = sqlite_fetch_array($result)) {
                 array_push($policies, $row);
             }
         }
@@ -83,7 +83,7 @@ $result = sqlite_query($dbhandle, $query, $error);
 if (!$result) {
     echo "Cannot execute variable query $error.";
 } else {
-    while ($row = sqlite_fetch_array($result, SQLITE_ASSOC)) {
+    while ($row = sqlite_fetch_array($result)) {
         $var = $row["user_defined_variable"];
         if (strlen($var) > 0) {
             echo "<a href='./adid.php?adid=".$var."'>$var</a> ";

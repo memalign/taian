@@ -44,7 +44,7 @@ if (!is_null($_POST['query'])) {
     }
 
     $allResults = array();
-    while ($row = sqlite_fetch_array($result, SQLITE_ASSOC)) {
+    while ($row = sqlite_fetch_array($result)) {
         #print_r($row);
         #echo "<br />";
         array_push($allResults, $row);

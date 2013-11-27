@@ -1,5 +1,40 @@
 <?
 
+function sqlite_open($location,$mode) { 
+    $handle = new SQLite3($location); 
+    return $handle; 
+} 
+
+function sqlite_query($dbhandle,$query) { 
+    $result = $dbhandle->query($query); 
+    return $result; 
+} 
+
+function sqlite_exec($dbhandle,$query) { 
+    $result = $dbhandle->exec($query); 
+    return $result; 
+} 
+
+function sqlite_fetch_array(&$result) { 
+    #Get Columns 
+    $i = 0; 
+    while ($result->columnName($i)) { 
+        $columns[ ] = $result->columnName($i); 
+        $i++; 
+    } 
+
+    $resx = $result->fetchArray(SQLITE3_ASSOC); 
+    return $resx; 
+} 
+
+function sqlite_close($handle) {
+    $handle->close();
+}
+
+function sqlite_escape_string($str) {
+    return SQLite3::escapeString($str);
+}
+
 /**
  * Translate a result array into a HTML table
  *

@@ -442,7 +442,7 @@ if (!is_null($emailbody)) {
     $result = sqlite_query($dbhandle, $query);
     if (!$result) die("Cannot execute query.");
 
-    while ($row = sqlite_fetch_array($result, SQLITE_ASSOC)) {
+    while ($row = sqlite_fetch_array($result)) {
         print_r($row);
         echo "<br>";
     }
