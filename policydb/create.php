@@ -1,8 +1,10 @@
 
 <?php
 
-$dbhandle = sqlite_open('/home1/taianfin/policy.db', 0666, $error);
-if (!$dbhandle) die ($error);
+require_once('db.php');
+
+$dbhandle = sqlite_open('/home1/taianfin/policy.db', 0666);
+if (!$dbhandle) die ("Couldn't create dbhandle!");
 
 echo "Opened policy db file.<br />";
 

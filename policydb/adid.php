@@ -12,8 +12,8 @@ require_once('db.php');
 set_time_limit(300);
 //error_reporting(E_ALL);
 
-$dbhandle = sqlite_open('/home1/taianfin/policy.db', 0666, $error);
-if (!$dbhandle) die ($error);
+$dbhandle = sqlite_open('/home1/taianfin/policy.db', 0666);
+if (!$dbhandle) die ("Couldn't create dbhandle!");
 
 $importantColumns = "purchase_date, effective_date, premium, certificate_status, certificate_number, primary_insured_name, insured_name, group_name, user_defined_variable";
 

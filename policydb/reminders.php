@@ -449,8 +449,8 @@ function updateToIgnore($dbhandle, $row, $reason) {
 }
 
 
-$dbhandle = sqlite_open('/home1/taianfin/policy.db', 0666, $error);
-if (!$dbhandle) die ($error);
+$dbhandle = sqlite_open('/home1/taianfin/policy.db', 0666);
+if (!$dbhandle) die ("Couldn't create dbhandle!");
 
 if (!is_null($_POST['processedRows'])) {
     $query = "update policy set last_reminder_date_fmt = strftime(\"%Y-%m-%d\", \"now\") where rowid in (".sqlite_escape_string($_POST['processedRows']).")";
@@ -484,7 +484,7 @@ while ($row = sqlite_fetch_array($result)) {
     array_push($allResults, $row);
 }
 
-$requestedSkips = intval($_POST['requestedSkips']);
+$requestedSkips = max(intval($_POST['requestedSkips']), intval($_GET['requestedSkips']));
 if ($requestedSkips > 0) {
     echo "You have requested to skip $requestedSkips polic".($requestedSkips == 1 ? "y" : "ies").".<br />";
 }

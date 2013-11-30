@@ -23,9 +23,9 @@ $query = stripslashes($_POST['query']);
 if (!is_null($_POST['query'])) {
     echo "Results for query: " . $_POST['query'] . "<br />";
 
-    $dbhandle = sqlite_open('/home1/taianfin/policy.db', 0666, $error);
+    $dbhandle = sqlite_open('/home1/taianfin/policy.db', 0666);
     if (!$dbhandle) {
-        echo $error;
+        echo "Couldn't create dbhandle!\n";
         return;
     }
 

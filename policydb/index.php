@@ -7,6 +7,8 @@
 
 <?php
 
+require_once('db.php');
+
 function sqlDateFromString($stringDate) {
     # These dates look like this: 24-Aug-2013
 
@@ -405,8 +407,8 @@ if (!is_null($emailbody)) {
         echo "$line<br />";
     }
 
-    $dbhandle = sqlite_open('/home1/taianfin/policy.db', 0666, $error);
-    if (!$dbhandle) die ($error);
+    $dbhandle = sqlite_open('/home1/taianfin/policy.db', 0666);
+    if (!$dbhandle) die ("Couldn't create dbhandle!");
 
     $insertStatement = "insert into policy (".implode(",", $orderedColumns) . "," . implode(",", $specialDateCols) . ") values (";
 
