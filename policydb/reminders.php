@@ -203,10 +203,16 @@ END;
     $studentAExpiresToday = <<<END
 Dear __PRIMARY_INSURED_NAME__,
 
-您购买的泰安访问学者留学生保险计划A（Student Health Advantage)今天就要过期了。 如果您仍然满足购买该保险的条件(您的签证和身份没有变化)且还想继续购买的話，请在今天点击下面的链接购买计划A（Student Health Advantage) ：
-http://taianfinancial.com/#l=cn&p=pivot-international-student
+您购买的泰安保险A（Student Health Advantage)今天就要过期了。 如果您仍然满足购买该保险的条件(您的签证和身份没有变化)并且需要续保的話，今天是最后一天仍可续保。 请点击下面的链接申请续保： 
 
-如有问题请随时与我们联系。
+https://purchase.imglobal.com/beginrenewal?CertificateNumber=__CERTIFICATE_NUMBER__
+         
+请注意，保险期间所产生的疾病续保时就不是 pre-existing condition，而重新购买新保险就不具备这个好处。另外，续保时请选择邮寄接收方式，这样您既可收到 Email confirmation, 又可以在几天后收到IMG邮寄的保险卡。
+     
+
+如果您今天不能完成续保，以后您需要重新购买时， 请登陆泰安网站： http://taianfinancial.com/#l=cn&p=pivot-international-student
+
+非常感谢您对我们公司的信任和支持。对我们工作的不足之处，请给我们一个提醒。把我们泰安介绍给您的家人朋友和同事是对我们工作的最大的肯定。泰安公司非常希望得到您的继续支持。
 
 __SIGNATURE__
 END;
@@ -214,15 +220,38 @@ END;
     $studentBExpiresToday = <<<END
 Dear __PRIMARY_INSURED_NAME__,
 
-您购买的泰安访问学者留学生保险计划B（Patriot Exchange Program)今天就要过期了。 如果您仍然满足购买该保险的条件(您的签证和身份没有变化)且还想继续购买的話，请点击下面的链接购买计划B：
-http://taianfinancial.com/#l=cn&p=pivot-international-student
+您购买的泰安保险B（Patriot Exchange Program)今天就要过期了。 如果您仍然满足购买该保险的条件(您的签证和身份没有变化)并且需要续保的話，今天是最后一天仍可续保。 请点击下面的链接申请续保： 
 
-如有问题请随时与我们联系。
+https://purchase.imglobal.com/beginrenewal?CertificateNumber=__CERTIFICATE_NUMBER__
+         
+请注意，保险期间所产生的疾病续保时就不是 pre-existing condition，而重新购买新保险就不具备这个好处。另外，续保时请选择邮寄接收方式，这样您既可收到 Email confirmation, 又可以在几天后收到IMG邮寄的保险卡。
+     
+
+如果您今天不能完成续保，以后您需要重新购买时， 请登陆泰安网站： http://taianfinancial.com/#l=cn&p=pivot-international-student
+
+非常感谢您对我们公司的信任和支持。对我们工作的不足之处，请给我们一个提醒。把我们泰安介绍给您的家人朋友和同事是对我们工作的最大的肯定。泰安公司非常希望得到您的继续支持。
 
 __SIGNATURE__
 END;
 
-    $travelExpiresToday = <<<END
+    $longTravelExpiresToday = <<<END
+Dear __PRIMARY_INSURED_NAME__,
+
+您购买的泰安保险(Patriot Travel)今天就要过期了。 如果您仍然满足购买该保险的条件(您的签证和身份没有变化)并且需要续保的話，今天是最后一天仍可续保。 请点击下面的链接申请续保： 
+
+https://purchase.imglobal.com/beginrenewal?CertificateNumber=__CERTIFICATE_NUMBER__
+         
+请注意，保险期间所产生的疾病续保时就不是 pre-existing condition，而重新购买新保险就不具备这个好处。另外，续保时请选择邮寄接收方式，这样您既可收到 Email confirmation, 又可以在几天后收到IMG邮寄的保险卡。
+     
+
+如果您今天不能完成续保，以后您需要重新购买时， 请登陆泰安网站：http://taianfinancial.com/#l=cn&p=pivot-travel-insurance
+
+非常感谢您对我们公司的信任和支持。对我们工作的不足之处，请给我们一个提醒。把我们泰安介绍给您的家人朋友和同事是对我们工作的最大的肯定。泰安公司非常希望得到您的继续支持。
+
+__SIGNATURE__
+END;
+
+    $shortTravelExpiresToday = <<<END
 Dear __PRIMARY_INSURED_NAME__,
 
 您购买的国际旅游医疗保险今天就要过期了。 如果您仍然满足购买该保险的条件(您的签证和身份没有变化)且还想继续购买的話，请在今天提交申请。您可以点击下面的链接重新购买爱国者旅游医疗保险：
@@ -251,7 +280,7 @@ Email发给: insurance@imglobal.com
 
 Dear IMG,
 
-I am (填入您的姓名). I have group policy number (填Certificate number). I would like to extend the coverage of:
+I am (填入您的姓名). I have group policy number __CERTIFICATE_NUMBER__. I would like to extend the coverage of:
 
 (填入需要延期的成员1的姓名和 Insured ID number).
 Please extend by (填入成员1需要延期几个月， 例如： two months, five months).
@@ -276,14 +305,43 @@ END;
     $patriotExchangeGroupExpiresToday = <<<END
 Dear __PRIMARY_INSURED_NAME__,
 
-您购买的泰安访问学者留学生团体保险计划B(Patriot Exchange Group) 今天就要过期了。 如果您们仍然满足购买该保险的条件(签证和身份没有变化)并且需要继续购买的話，请点击下面的链结中的购买团体计划B。
+您购买的泰安访问学者留学生团体保险计划B(Patriot Group Exchange ) 今天就要过期了。 如果您们仍然满足购买该保险的条件(签证和身份没有变化)并且需要延期的話，今天是最后一天仍可申请团体保险延期。 即使团体中只有一位成员需要续保，团体可以继续存在并延期。请注意，保险期间所产生的疾病续保时就不是 pre-existing condition，而重新购买新保险就不具备这个好处。
 
-http://taianfinancial.com/#l=cn&p=pivot-international-student
+您可以发email给IMG，要求团体保险延期。请见下面我们为您写的Email草稿。填入括号中的内容，将Email发给IMG。
 
-非常感谢您对我们公司的信任和支持。
-对我们工作的不足之处，请给我们一个提醒。把我们泰安介绍给您的家人朋友和同事是对我们工作的最大的肯定。泰安公司非常希望得到您的继续支持。
+如果您今天不能完成保险延期，以后您需要重新购买时， 请登陆泰安网站： http://taianfinancial.com/#l=cn&p=pivot-international-student
+      
+非常感谢您对我们公司的信任和支持。对我们工作的不足之处，请给我们一个提醒。把我们泰安介绍给您的家人朋友和同事是对我们工作的最大的肯定。泰安公司非常希望得到您的继续支持。
 
 __SIGNATURE__
+
+-----------------------------------------------------------------
+
+Email发给: insurance@imglobal.com
+请抄送给: chris@taianfinancial.com
+
+Dear IMG,
+
+I am (填入您的姓名). I have group policy number __CERTIFICATE_NUMBER__. I would like to extend the coverage of:
+
+(填入需要延期的成员1的姓名和 Insured ID number).
+Please extend by (填入成员1需要延期几个月， 例如： two months, five months).
+
+(填入需要延期的成员2的姓名和 Insured ID number).
+Please extend by (填入成员2需要延期几个月， 例如： two months, five months).
+
+(填入需要延期的成员3的姓名和 Insured ID number).
+Please extend by (填入成员3需要延期几个月， 例如： two months, five months).
+
+....
+....
+
+Please charge the credit card on file for this purchase.
+Also, please send me an email that shows my coverage has been extended.
+
+Thanks for your help.
+
+(填入您的姓名)
 END;
 
     $renewalSubject = "泰安保险续保通知";
@@ -343,8 +401,13 @@ END;
               startsWith($certificateNumber, "PATI") ||
               startsWith($certificateNumber, "PPLA")) {
         if ($tooLateToRenew) {
-            $renewEmail = $travelExpiresToday;
-            $subject = $expiresTodaySubject;
+            if ($isAtLeastMonth) {
+                $renewEmail = $longTravelExpiresToday;
+                $subject = $expiresTodaySubject;
+            } else {
+                $renewEmail = $shortTravelExpiresToday;
+                $subject = $expiresTodaySubject;
+            }
         } else {
              if ($isAtLeastMonth) {
                   $renewEmail = $longTravelRenew;
