@@ -891,28 +891,7 @@ function getPartnership(partner) {
                     }
               }, 
 
-        tulane: {
-                    windowTitle: "TaiAn Health Insurance for Tulane University",
-                    pageTitle: "TaiAn Health Insurance for Tulane University",
-                    tabs: [
-                            "pivot-home",
-                            "pivot-international-student",
-                            "pivot-global-medical",
-                            "pivot-travel-insurance",
-                            "pivot-aboutus"
-                          ],
-                          
-                    internationalStudentContent: function () {
-                        startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Tulane University enrolled international student standards and J scholar standards.  Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Tulane as proof of insurance.");
-                        writeText("Enrolled international students are required to carry $250,000 per illness or injury and complete a waiver. Taian Scholar/Student Insurance Plan B with $250,000 benefit per illness or injury is the most affordable plan that meets the standards.");
-                        document.write(makeBulletedListWithTitle("", [
-                                makeURL("Tulane University Scholar Requirements", "https://greenspace.tulane.edu/ciss/www/J-1 Insurance Requirement.pdf"),                         
-                                makeURL("Tulane University Student Requirements", "http://pandora.tcs.tulane.edu/acctrec/healthinsurance.asp")
-                                ]));
-                        endRow();
-                    }
-              }, 
+ 
               
         georgetown: {
                     windowTitle: "TaiAn Health Insurance for Georgetown University",
