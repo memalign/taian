@@ -121,12 +121,7 @@ Dear __PRIMARY_INSURED_NAME__,
 
 非常感谢您对我们公司的信任和支持。对我们工作的不足之处，请给我们一个提醒。把我们泰安介绍给您的家人朋友和同事是对我们工作的最大的肯定。泰安公司非常希望得到您的继续支持。
 
-再次深表感谢，祝您平安健康！
-
-Chris
-美国电话: +1 (317)318-8258 (中文), +1 (317)318-8259 (英语)
-中国电话: 950-4044-2336 (中文, 北京时间上午7-11点，直接拨号，无长途费)
-taianfinancial.com/chinese
+__SIGNATURE__
 END;
 
     $studentAShortRebuy = <<<END
@@ -142,12 +137,7 @@ Dear __PRIMARY_INSURED_NAME__,
 
 非常感谢您对我们公司的信任和支持。对我们工作的不足之处，请给我们一个提醒。把我们泰安介绍给您的家人朋友和同事是对我们工作的最大的肯定。泰安公司非常希望得到您的继续支持。
 
-再次深表感谢，祝您平安健康！
-
-Chris
-美国电话: +1 (317)318-8258 (中文), +1 (317)318-8259 (英语)
-中国电话: 950-4044-2336 (中文, 北京时间上午7-11点，直接拨号，无长途费)
-taianfinancial.com/chinese
+__SIGNATURE__
 END;
 
     $studentBRenew = <<<END
@@ -163,12 +153,7 @@ Dear __PRIMARY_INSURED_NAME__,
 
 非常感谢您对我们公司的信任和支持。对我们工作的不足之处，请给我们一个提醒。把我们泰安介绍给您的家人朋友和同事是对我们工作的最大的肯定。泰安公司非常希望得到您的继续支持。
 
-再次深表感谢，祝您平安健康！
-
-Chris
-美国电话: +1 (317)318-8258 (中文), +1 (317)318-8259 (英语)
-中国电话: 950-4044-2336 (中文, 北京时间上午7-11点，直接拨号，无长途费)
-taianfinancial.com/chinese
+__SIGNATURE__
 END;
 
     $studentBBasicRenew = <<<END
@@ -184,12 +169,7 @@ Dear __PRIMARY_INSURED_NAME__,
 
 非常感谢您对我们公司的信任和支持。对我们工作的不足之处，请给我们一个提醒。把我们泰安介绍给您的家人朋友和同事是对我们工作的最大的肯定。泰安公司非常希望得到您的继续支持。
 
-再次深表感谢，祝您平安健康！
-
-Chris
-美国电话: +1 (317)318-8258 (中文), +1 (317)318-8259 (英语)
-中国电话: 950-4044-2336 (中文, 北京时间上午7-11点，直接拨号，无长途费)
-taianfinancial.com/chinese
+__SIGNATURE__
 END;
 
     $longTravelRenew = <<<END
@@ -205,12 +185,7 @@ Dear __PRIMARY_INSURED_NAME__,
 
 非常感谢您对我们公司的信任和支持。对我们工作的不足之处，请给我们一个提醒。把我们泰安介绍给您的家人朋友和同事是对我们工作的最大的肯定。泰安公司非常希望得到您的继续支持。
 
-再次深表感谢，祝您平安健康！
-
-Chris
-美国电话: +1 (317)318-8258 (中文), +1 (317)318-8259 (英语)
-中国电话: 950-4044-2336 (中文, 北京时间上午7-11点，直接拨号，无长途费)
-taianfinancial.com/chinese
+__SIGNATURE__
 END;
 
     $shortTravelRebuy = <<<END
@@ -222,12 +197,7 @@ Dear __PRIMARY_INSURED_NAME__,
 
 非常感谢您对我们公司的厚爱和支持。请转告您的亲人和朋友，我们期待着能有机会为您们服务。
 
-祝您平安健康！
-
-Chris
-美国电话: +1 (317)318-8258 (中文), +1 (317)318-8259 (英语)
-中国电话: 950-4044-2336 (中文, 北京时间上午7-11点，直接拨号，无长途费)
-taianfinancial.com/chinese
+__SIGNATURE__
 END;
 
     $studentAExpiresToday = <<<END
@@ -238,12 +208,7 @@ http://taianfinancial.com/#l=cn&p=pivot-international-student
 
 如有问题请随时与我们联系。
 
-非常感谢您对我们公司的厚爱和支持。祝您平安幸福！
-
-Chris
-美国电话: +1 (317)318-8258 (中文), +1 (317)318-8259 (英语)
-中国电话: 950-4044-2336 (中文, 北京时间上午7-11点，直接拨号，无长途费)
-taianfinancial.com/chinese
+__SIGNATURE__
 END;
 
     $studentBExpiresToday = <<<END
@@ -254,12 +219,7 @@ http://taianfinancial.com/#l=cn&p=pivot-international-student
 
 如有问题请随时与我们联系。
 
-非常感谢您对我们公司的厚爱和支持。祝您平安幸福！
-
-Chris
-美国电话: +1 (317)318-8258 (中文), +1 (317)318-8259 (英语)
-中国电话: 950-4044-2336 (中文, 北京时间上午7-11点，直接拨号，无长途费)
-taianfinancial.com/chinese
+__SIGNATURE__
 END;
 
     $travelExpiresToday = <<<END
@@ -270,12 +230,7 @@ http://taianfinancial.com/#l=cn&p=pivot-travel-insurance
 
 如有问题请随时与我们联系。
 
-非常感谢您对我们公司的厚爱和支持。祝您平安幸福！
-
-Chris
-美国电话: +1 (317)318-8258 (中文), +1 (317)318-8259 (英语)
-中国电话: 950-4044-2336 (中文, 北京时间上午7-11点，直接拨号，无长途费)
-taianfinancial.com/chinese
+__SIGNATURE__
 END;
 
     $patriotExchangeGroupRenew = <<<END
@@ -287,12 +242,7 @@ Dear __PRIMARY_INSURED_NAME__,
 
 非常感谢您对我们公司的信任和支持。对我们工作的不足之处，请给我们一个提醒。把我们泰安介绍给您的家人朋友和同事是对我们工作的最大的肯定。泰安公司非常希望得到您的继续支持。
 
-再次深表感谢，祝您和团体成员平安健康！
-
-Chris
-美国电话: +1 (317)318-8258 (中文), +1 (317)318-8259 (英语)
-中国电话: 950-4044-2336 (中文, 北京时间上午7-11点，直接拨号，无长途费)
-taianfinancial.com/chinese
+__SIGNATURE__
 
 -----------------------------------------------------------------
 
@@ -333,12 +283,7 @@ http://taianfinancial.com/#l=cn&p=pivot-international-student
 非常感谢您对我们公司的信任和支持。
 对我们工作的不足之处，请给我们一个提醒。把我们泰安介绍给您的家人朋友和同事是对我们工作的最大的肯定。泰安公司非常希望得到您的继续支持。
 
-再次深表感谢，祝您和团体成员平安健康！
-
-Chris
-美国电话: +1 (317)318-8258 (中文), +1 (317)318-8259 (英语)
-中国电话: 950-4044-2336 (中文, 北京时间上午7-11点，直接拨号，无长途费)
-taianfinancial.com/chinese
+__SIGNATURE__
 END;
 
     $renewalSubject = "泰安保险续保通知";
@@ -419,6 +364,18 @@ END;
         }
     }
 
+
+    $emailSignature = <<<END
+再次深表感谢，祝福平安健康！
+
+Chris
+泰安国际医疗保险 （IMG授权的独立的IMG中文销售中心） 
+美国电话: +1 (317)318-8258 (中文), +1 (317)318-8259 (英语)
+中国电话: 950-4044-2336 (中文, 北京时间上午7-11点，直接拨号，无长途费)
+taianfinancial.com/chinese
+END;
+    
+    $renewEmail = str_replace("__SIGNATURE__", $emailSignature, $renewEmail);
     $renewEmail = str_replace("__PRIMARY_INSURED_NAME__", $primaryInsuredName, $renewEmail);
     $renewEmail = str_replace("__EXPIRATION_DATE__", $expirationDate, $renewEmail);
     $renewEmail = str_replace("__CERTIFICATE_NUMBER__", $certificateNumber, $renewEmail);
