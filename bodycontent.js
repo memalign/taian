@@ -3712,7 +3712,7 @@ function writeSections(legacy) {
             "Repatriation of remains", "$25,000 per insured, not subject to deductible or coinsurance", "$25,000 per insured, not subject to deductible or coinsurance", "$50,000 per insured, not subject to deductible or coinsurance", 
             "Mental/Nervous", "Out-patient only, after 12 month of coverage", "$10,000 per year - $50,000 max, after 12 month of coverage", "$50,000 max, after 12 month of coverage", 
             "Pre-existing conditions", "May have limited coverage after 24 months or be excluded at time of underwriting", "May have limited coverage after 24 months or be excluded at time of underwriting", "May be covered same as any illness or excluded at time of underwriting",
-            "Maternity", "Optional Rider (cost $4000 per year) - $50,000 lifetime max. Max of $5000 for normal delivery, $7500 for C-section. $200 child wellness for first 12 month. new born care & congenital disorders max of $250,000 for the first 31 days (benefits reduced by 50% for births that occur in the 11th or 12th month of coverage)", "Optional Rider (cost $4000 per year) - $50,000 lifetime max. Max of $5000 for normal delivery, $7500 for C-section. $200 child wellness for first 12 month. new born care & congenital disorders max of $250,000 for the first 31 days (benefits reduced by 50% for births that occur in the 11th or 12th month of coverage)", "Maternity is covered same as any illness for any birth that occurs after 10 months of coverage- $1000 additional deductible, $50,000 lifetime max. $200 child wellness for the first 12 months. new born care & congenital disorders max of $250,000 for the first 31 days",
+            "Maternity", "Optional Rider (cost $4000 per year) - Maternity is covered same as any illness for any maternity related claim with a service date that occurs after 12 months of coverage. - $50,000 lifetime max. Max of $5000 for normal delivery, $7500 for C-section. $200 child wellness for first 12 month. new born care & congenital disorders max of $250,000 for the first 31 days (benefits reduced by 50% for births that occur in the 11th or 12th month of coverage).  Maternity related claims with dates of service before 10 months are not covered.", "Optional Rider (cost $4000 per year) - Maternity is covered same as any illness for any maternity related claim with a service date that occurs after 12 months of coverage. - $50,000 lifetime max. Max of $5000 for normal delivery, $7500 for C-section. $200 child wellness for first 12 month. new born care & congenital disorders max of $250,000 for the first 31 days (benefits reduced by 50% for births that occur in the 11th or 12th month of coverage).  Maternity related claims with dates of service before 10 months are not covered.", "Maternity is covered same as any illness for any maternity related claim with a service date that occurs after 10 months of coverage - $1000 additional deductible, $50,000 lifetime max. $200 child wellness for the first 12 months. new born care & congenital disorders max of $250,000 for the first 31 days. Maternity related claims with dates of service before 10 months are not covered.",
 
             "Monthly Rate",
             makeTable(3, [
@@ -3806,14 +3806,14 @@ function writeSections(legacy) {
                         "Coverage for individuals or families living or working abroad",
                         "Contract employees living and working abroad",
                         "Seniors with dual residencies six months or longer outside the U.S.",
-                        "Non-US citizens coming to the US to have a baby.  For maternity coverage you must purchase before becoming pregnant."
+                        "Non-US citizens coming to the US to have a baby. For maternity coverage you must purchase before becoming pregnant.  Maternity related claims with dates of service before 10 months are not covered."
                         ]),
 
                 "Which Plan is best for you?",
                 makeBulletedListWithTitle("", [
                         "Silver plan is most economical",
                         "Gold Plan is the best value",
-                        "Platinum is best for those wanting the best coverage or considering having a baby"
+                        "Platinum is best for those wanting the best coverage or considering having a baby.  Maternity related claims with dates of service before 10 months are not covered."
                         ]),
 
                 "", makeBuyURL("Buy Global Medical Insurance", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699")
