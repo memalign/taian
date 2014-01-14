@@ -577,7 +577,18 @@ function referralSubstitution(key) {
         gucberkeley: "partner=ucberkeley&p=pivot-j-scholar&adid=gucberkeley",
         acnucberkeley: "l=cn&partner=ucberkeley&p=pivot-j-scholar&adid=acnucberkeley", 
         iucberkeley: "partner=ucberkeley&p=pivot-j-scholar",
-        icnucberkeley: "partner=ucberkeley&p=pivot-j-scholar",        
+        icnucberkeley: "l=cn&partner=ucberkeley&p=pivot-j-scholar", 
+
+        duke: "partner=duke&p=pivot-home&adid=sduke",
+        cnduke: "l=cn&partner=duke&p=pivot-home&adid=scnduke",   
+        gcnduke: "l=cn&partner=duke&p=pivot-j-scholar&adid=gcnduke",
+        gduke: "partner=duke&p=pivot-j-scholar&adid=gduke",
+        acnduke: "l=cn&partner=duke&p=pivot-j-scholar&adid=acnduke", 
+        iduke: "partner=duke&p=pivot-j-scholar",
+        icnduke: "l=cn&partner=duke&p=pivot-j-scholar",
+        icndukez1: "l=cn&partner=duke&p=pivot-j-scholar&adid=icndukez1",        
+        
+        
         ncsu: "partner=ncsu&p=pivot-home&adid=sncsu",
         cnncsu: "l=cn&partner=ncsu&p=pivot-home&adid=scnncsu",   
         gcnncsu: "l=cn&partner=ncsu&p=pivot-international-student&adid=gcnncsu",
@@ -2077,7 +2088,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Duke University (NC)", "http://www.duke.edu/"),
                 makeURL("School F1 requirement", "http://studentaffairs.duke.edu/studenthealth/health-insurance/waiver-criteria"),
                 makeURL("School J1 requirement", "http://www.visaservices.duke.edu/J_Health_Insurance.html"),
-                "Consult your school about their requirements",
+                makeURL("Health insurance for Duke University Scholars", "#iduke"),
                 
                 makeURL("Emory University (GA)", "http://www.emory.edu/"),
                 makeURL("School F1 requirement", "http://studenthealth.emory.edu/hs/new_students/health_insurance/waiver%20fall%202013.html"),

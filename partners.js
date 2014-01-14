@@ -1095,6 +1095,65 @@ function getPartnership(partner) {
                                 }
                                 },                  
 
+        duke: {
+                    windowTitle: "TaiAn Health Insurance for Duke University",
+                    pageTitle: "TaiAn Health Insurance for Duke University",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-j-scholar",                            
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                    jScholarContent: function () {
+                        startRow();
+                        writeText("Taian Travel Insurance Plan (Patriot America) with $0.00 deductible and $1,000,000 benefit meets Duke University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $500,000 per illness/injury; 2. No Deductible; 3. Coinsurance not over 20%; 4. Medical evacuation of $10,000;  5.  Repatriation of remains of $7,500. Travel plan with $0.00 deductible and $1,000,000 maximum is the most affordable plan that meets the standards, and the US Department of State requirements.  Shortly after submitting an application you will receive confirmation of your coverage which you can send to Duke University as proof of insurance.");
+                        writeText("J-2 dependents are subject to the same benefit requirements.  Your J-2 dependents can buy with you, or buy a separate plan.  If your J-2 dependents are not going to be in the US for the same time period you will be here, you can buy a separate plan with different coverage dates to match their stay in the US.");
+
+                        startRow();
+                            document.write(makeTable(1,
+                            [
+                            // Column headers:
+
+                            "Monthly Price for $1,000,000 benefit $0 deductible", 
+
+
+                            // Table within a table
+
+                                makeTable(4, [
+                                "Age",     "J1", "Spouse", "Children",
+                                "&lt; 30", "$88.75",   "$88.75",   "$73.75",
+                                "30-39",   "$113.75",   "$113.75",   "$73.75",
+                                "40-49",   "$166.25",  "$166.25",   "$73.75"
+
+                                ]), 
+
+       
+                                
+                    
+
+
+                                makeBuyURL("Buy Patriot America Medical Insurance", "https://purchase.imglobal.com/quote/patriot?imgac=80000699")
+
+
+                                   ])
+                                    );
+                                endRow();                 
+                        
+                                startRow();
+                                writeText("");
+                                endRow();                        
+                          
+                                startRow();
+                                writeText(makeURL("Duke University Scholar Requirements", "http://www.visaservices.duke.edu/J_Health_Insurance.html"));
+                                endRow();                               
+                                endRow();
+                                
+                                
+                                
+                                }
+                                },                                    
+                                
         kstate: {
                     windowTitle: "TaiAn Health Insurance for Kansas State University",
                     pageTitle: "TaiAn Health Insurance for Kansas State University",

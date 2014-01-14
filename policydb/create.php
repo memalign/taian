@@ -23,6 +23,25 @@ $ok = sqlite_exec($dbhandle, $stm, $error);
 if (!$ok)
     echo "Couldn't create ignore_index or it already exists. $error\n";
 
+
+$stm = "create index certificate_number_index on policy (certificate_number)";
+$ok = sqlite_exec($dbhandle, $stm, $error);
+if (!$ok)
+    echo "Couldn't create certificate_number_index or it already exists. $error\n";
+
+
+$stm = "create index insured_name_index on policy (insured_name)";
+$ok = sqlite_exec($dbhandle, $stm, $error);
+if (!$ok)
+    echo "Couldn't create insured_name_index or it already exists. $error\n";
+
+
+$stm = "create index email_address_index on policy (certificate_number, primary_email_address, other_email_address)";
+$ok = sqlite_exec($dbhandle, $stm, $error);
+if (!$ok)
+    echo "Couldn't create email_address_index or it already exists. $error\n";
+
+
 sqlite_close($dbhandle);
 
 ?>

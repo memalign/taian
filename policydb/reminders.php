@@ -9,7 +9,7 @@
 
 <?php
 require_once('db.php');
-set_time_limit(1200);
+set_time_limit(2400);
 //error_reporting(E_ALL);
 
 $importantColumns = "rowid, citizenship, home_country, expiration_date_fmt, expiration_date, effective_date_fmt, julianday(effective_date_fmt), last_reminder_date_fmt, certificate_number, certificate_status, certificate_type, primary_insured_name, insured_name, group_name, primary_email_address, other_email_address, (julianday(\"now\")-julianday(\"expiration_date_fmt\") > -1) as too_late_to_renew, (julianday(\"expiration_date_fmt\")-julianday(\"effective_date_fmt\") > 27) as is_at_least_month, (julianday(\"expiration_date_fmt\")-julianday(\"effective_date_fmt\") > 87) as is_at_least_three_months, should_ignore";
@@ -491,7 +491,7 @@ if (!is_null($_POST['processedRows'])) {
 //   - They haven't been reminded since before the day before expiration
 //   AND
 //   - They've gotten a reminder and today is later than the day before expiration
-$soonToExpireQuery = "select $importantColumns from policy where (should_ignore = 0) and julianday(expiration_date_fmt) >= julianday(\"now\", \"-18 days\") and julianday(expiration_date_fmt) <= julianday(\"now\", \"+10 days\") and ( (last_reminder_date_fmt IS NULL) or (length(last_reminder_date_fmt) = 0) or ( (julianday(last_reminder_date_fmt) < julianday(expiration_date_fmt, \"-1 day\")) AND (julianday(\"now\") >= julianday(expiration_date_fmt, \"-1 day\"))  )   ) order by rowid desc";
+$soonToExpireQuery = "select $importantColumns from policy where (should_ignore = 0) and julianday(expiration_date_fmt) >= julianday(\"now\", \"-8 days\") and julianday(expiration_date_fmt) <= julianday(\"now\", \"+7 days\") and ( (last_reminder_date_fmt IS NULL) or (length(last_reminder_date_fmt) = 0) or ( (julianday(last_reminder_date_fmt) < julianday(expiration_date_fmt, \"-1 day\")) AND (julianday(\"now\") >= julianday(expiration_date_fmt, \"-1 day\"))  )   ) order by rowid desc";
 
 $result = sqlite_query($dbhandle, $soonToExpireQuery, $error);
 if (!$result) {
