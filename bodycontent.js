@@ -563,6 +563,15 @@ function referralSubstitution(key) {
         icnuakron: "l=cn&partner=uakron&p=pivot-international-student",
         icnimga: "l=cn&p=pivot-international-scholar&partner=img&adid=icnimga",
         iimga: "p=pivot-international-scholar&partner=img&adid=iimga",
+        
+        fordham: "partner=fordham&p=pivot-home&adid=sfordham",
+        cnfordham: "l=cn&partner=fordham&p=pivot-home&adid=scnfordham",   
+        gcnfordham: "l=cn&partner=fordham&p=pivot-international-studentandscholar&adid=gcnfordham",
+        gfordham: "partner=fordham&p=pivot-international-studentandscholar&adid=gfordham",
+        acnfordham: "l=cn&partner=fordham&p=pivot-international-studentandscholar&adid=acnfordham", 
+        ifordham: "partner=fordham&p=pivot-international-studentandscholar",
+        icnfordham: "l=cn&partner=fordham&p=pivot-international-studentandscholar",
+        
 
         
         musc: "partner=musc&p=pivot-home&adid=smusc",
@@ -2100,6 +2109,11 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School J1 requirement", "http://www.cge.fsu.edu/intlScholars/healthinsurance.cfm"),
                 makeURL("Health insurance for Florida State University Scholars", "#ifsu"),
                 
+                makeURL("Fordham University (NY)", "http://www.fordham.edu/"),
+                makeURL("School F1 requirement", "http://www.fordham.edu/academics/office_of_the_provos/international_educat/office_for_internati/current_students/health_and_safety/health_insurance_inf/"),
+                makeURL("School J1 requirement", "http://www.fordham.edu/academics/office_of_the_provos/international_educat/office_for_internati/current_students/health_and_safety/health_insurance_inf/"),
+                makeURL("Health insurance for Fordham University Students and Scholars", "#ifordham"),                
+                
                 makeURL("George Mason University (VA)", "http://www.gmu.edu/"),
                 makeURL("School F1 requirement", "http://eli.gmu.edu/status/health-insurance-requirement/"),
                 makeURL("School J1 requirement", "http://oips.gmu.edu/evp/maintain_j.php?type=1#ins"),
@@ -2715,7 +2729,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("Washington University in St. Louis (MO)", "http://www.wustl.edu/"),
                 makeURL("School F1 requirement", "http://shs.wustl.edu/Insurance/Pages/default.aspx"),
-                makeURL("School J1 requirement", "http://oisshome.wustl.edu/scholars/J1EV/J1HealthInsurance.pdf"),
+                makeURL("School J1 requirement", "http://oiss.wustl.edu/scholars/j-1-exchange-visitors/maintaining-j-1status/"),
                 makeURL("Health insurance for Washington University in St. Louis Scholars", "#iwustl"),
                 
                 makeURL("Wayne State University (MI)", "http://www.wayne.edu/"),

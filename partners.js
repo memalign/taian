@@ -1732,7 +1732,7 @@ function getPartnership(partner) {
                         startRow();
                         writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Washington University in St. Louis J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Washington University in St. Louis as proof of insurance.");
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("Washington University in St. Louis Scholar Requirements", "http://oisshome.wustl.edu/scholars/J1EV/J1HealthInsurance.pdf")                        
+                                makeURL("Washington University in St. Louis Scholar Requirements", "http://oiss.wustl.edu/scholars/j-1-exchange-visitors/maintaining-j-1status/")                        
                                 ]));
                         endRow();
                     }
@@ -1842,6 +1842,69 @@ function getPartnership(partner) {
                     }
               },
 
+        fordham: {
+                    windowTitle: "TaiAn Health Insurance for Fordham University",
+                    pageTitle: "TaiAn Health Insurance for Fordham University",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-studentandscholar",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentandscholarContent: function () {
+                        startRow();
+                        writeText("Fordham University requirements for F1 international students or J1 scholar health insurance are: 1. Medical benefits of $500,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Taian Scholar/Student Insurance Plan B and Plan C with $500,000 benefit per illness or injury is the most affordable plan that meets the school requirements and the US Department of State requirements (which plan is more affordable depends on your age and family members). Shortly after submitting an application you will receive confirmation of your coverage which you can send to your school as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("Fordham University Student and Scholar Requirements", "http://www.fordham.edu/academics/office_of_the_provos/international_educat/office_for_internati/current_students/health_and_safety/health_insurance_inf/")                        
+                                ]));
+                        endRow();
+                        
+                        startRow();
+                            document.write(makeTable(2,
+                            [
+                            // Column headers:
+
+                            "Monthly Price for Plan B ($500,000 per illness or injury)", "Monthly Price for Plan C ($500,000 benefit, $500 deductible)",
+
+
+                            // Table within a table
+
+                                makeTable(4, [
+                                "Age",     "J1", "Spouse", "Children",
+                                "&lt; 25", "$63.66",   "$63.66",   "$63.66",
+                                "25-49",   "$82.90",   "$82.90",   "$63.66",
+                                "50-64",   "$177.53",  "$177.53",   "$63.66"
+
+                                ]), 
+
+                                makeTable(4, [
+                                "Age",     "J1", "Spouse", "Children",
+                                "&lt; 30", "$53.10",   "$53.10",   "$47.70",
+                                "30-39",   "$70.20",   "$70.20",   "$47.70",
+                                "40-49",   "$107.10",  "$107.10",   "$47.70",
+                                "50-59",   "$152.10",  "$152.10",   "$47.70"
+                                ]),                                
+
+
+                    
+
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Patriot Exchange Program - Standard"), "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+
+                                makeBuyURL(loc("Buy Group") + "<br />" + loc("Group for 2 or more"), "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699")                                 
+
+                                   ])
+                                    );
+                        endRow();                        
+                        
+                    }
+              },              
+              
+              
         uiuc: {
                     windowTitle: "TaiAn Health Insurance for University of Illinois Urbana Champaign",
                     pageTitle: "TaiAn Health Insurance for University of Illinois Urbana Champaign",

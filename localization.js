@@ -155,6 +155,15 @@ l['Taian International Health Insurance provides International Scholar Insurance
 l['Dependents can only purchase when the scholar purchases'] = "家属不能单独购买，只能与J1访问学者一起购买。";
 l['J2 can buy Patriot Exchange alone (if J1 buys schools plan) or buy with J1'] = "如果J1在其学校购买了保险，J2就可以单独购买计划 B, 否则J2需要与J1一起购买计划 B";
 
+l['Health insurance for Fordham University Students and Scholars'] = "符合Fordham University标准的留学生和访问学者医疗保险";
+l['TaiAn Health Insurance for Fordham University'] = "泰安国际医疗保险 - Fordham University";
+l['Fordham University requirements for F1 international students or J1 scholar health insurance are: 1. Medical benefits of $500,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Taian Scholar/Student Insurance Plan B and Plan C with $500,000 benefit per illness or injury is the most affordable plan that meets the school requirements and the US Department of State requirements (which plan is more affordable depends on your age and family members). Shortly after submitting an application you will receive confirmation of your coverage which you can send to your school as proof of insurance.'] = "Fordham University对F1国际学生和J1访问学者医疗保险的要求是：1. 每次生病或受伤的最高赔付为$500,000; 2. 遗体返送$7,500; 3. 紧急救护$10,000; 4. 免赔额不超过$500。 泰安访问学者/留学生保险计划B和计划C里的每次生病或受伤最高赔付$500,000选项是满足此标准和美国国务院标准的最经济实惠的保险计划(哪个计划更划算取决于你的年龄和家属成员）。 网上提交申请几分钟后你就会收到Email电子保单，其中含有保险卡和确认信(Visa Letter)。将确认信发给学校证明你已购买满足学校要求的保险。";
+l['Fordham University Student and Scholar Requirements'] = "Fordham University 留学生和访问学者保险的标准";
+l['Monthly Price for Plan C ($500,000 benefit, $500 deductible)'] = "计划C的月费（$500,000最高赔付，$500免赔额）";
+l[''] = "";
+l[''] = "";
+l[''] = "";
+
 l['UC Riverside requirements for J1 scholar (not for enrolled students) health insurance are: 1. Medical benefits of $500,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $50,000; 4. Deductible not over $250. Taian Scholar/Student Insurance Plan B and Plan C with $500,000 benefit per illness or injury is the most affordable plan that meets the school requirements and the US Department of State requirements (which plan is more affordable depends on your age and family members). Shortly after submitting an application you will receive confirmation of your coverage which you can send to school as proof of insurance.'] = "UC Riverside 对J1访问学者(不包括在校学生)医疗保险的要求是：1. 每次生病或受伤的最高赔付为$500,000; 2. 遗体返送$7,500; 3. 紧急救护$50,000; 4. 免赔额不超过$250。泰安访问学者/留学生保险计划B和计划C里的每次生病或受伤最高赔付$500,000选项是满足此标准和美国国务院标准的最经济实惠的保险计划(哪个计划更划算取决于你的年龄和家属成员）。 网上提交申请几分钟后你就会收到Email电子保单，其中含有保险卡和确认信(Visa Letter)。将确认信发给学校证明你已购买满足学校要求的保险。";
 l['Monthly Price for Plan B ($500,000 per illness or injury)'] = "计划B的月费（$500,000每次生病最高赔付）";
 l['Monthly Price for Plan C ($500,000 benefit, $250 deductible)'] = "计划C的月费（$500,000最高赔付，$250免赔额）";
