@@ -572,6 +572,22 @@ function referralSubstitution(key) {
         ifordham: "partner=fordham&p=pivot-international-studentandscholar",
         icnfordham: "l=cn&partner=fordham&p=pivot-international-studentandscholar",
         
+        newschool: "partner=newschool&p=pivot-home&adid=snewschool",
+        cnnewschool: "l=cn&partner=newschool&p=pivot-home&adid=scnnewschool",   
+        gcnnewschool: "l=cn&partner=newschool&p=pivot-international-student&adid=gcnnewschool",
+        gnewschool: "partner=newschool&p=pivot-international-student&adid=gnewschool",
+        acnnewschool: "l=cn&partner=newschool&p=pivot-international-student&adid=acnnewschool", 
+        inewschool: "partner=newschool&p=pivot-international-student",
+        icnnewschool: "l=cn&partner=newschool&p=pivot-international-student",
+
+        cuny: "partner=cuny&p=pivot-home&adid=scuny",
+        cncuny: "l=cn&partner=cuny&p=pivot-home&adid=scncuny",   
+        gcncuny: "l=cn&partner=cuny&p=pivot-international-student&adid=gcncuny",
+        gcuny: "partner=cuny&p=pivot-international-student&adid=gcuny",
+        acncuny: "l=cn&partner=cuny&p=pivot-international-student&adid=acncuny", 
+        icuny: "partner=cuny&p=pivot-international-student",
+        icncuny: "l=cn&partner=cuny&p=pivot-international-student",   
+        
 
         
         musc: "partner=musc&p=pivot-home&adid=smusc",
@@ -606,6 +622,7 @@ function referralSubstitution(key) {
         incsu: "partner=ncsu&p=pivot-international-student",
         icnncsu: "l=cn&partner=ncsu&p=pivot-international-student",        
         mei: "l=cn&partner=mei",
+        friendship: "l=cn&partner=friendship&p=pivot-travel-insurance&adid=friendship",        
         upgrade: "l=cn&partner=upgrade&p=pivot-home&adid=upgrade",        
         lng: "l=cn&partner=lng",
         lngglbl: "l=cn&partner=lng&p=pivot-global-medical&adid=lng",
@@ -635,6 +652,7 @@ function referralSubstitution(key) {
         ucdavis: "partner=ucdavis&p=pivot-international-scholar&adid=sucdavis",
         econnect: "partner=econnect",        
         iupuiexch: "l=cn&partner=iupui&p=exchange-form", 
+        bcexch: "l=cn&partner=bc&p=exchange-form",        
         vcuexch: "l=cn&partner=vcu&p=exchange-form",        
         ucdavisbform: "l=cn&partner=ucdavis&p=exchange-form",        
         univtemplate: "partner=univtemplate",
@@ -649,6 +667,9 @@ function referralSubstitution(key) {
         gsta: "partner=sta&p=pivot-international-student&adid=gsta",
         acnsta: "l=cn&partner=sta&p=pivot-international-student&adid=acnsta", 
         usdos: "partner=usdos&p=pivot-international-student", 
+        usdosjapan: "partner=usdosjapan&p=pivot-international-student", 
+        usdoskorea: "partner=usdoskorea&p=pivot-international-student", 
+        usdosindia: "partner=usdosindia&p=pivot-international-student",         
         iusc: "partner=usc&p=pivot-international-student",
         ista: "partner=sta&p=pivot-international-student",
         iuiuc: "partner=uiuc&p=pivot-international-studentandscholar",
@@ -2089,6 +2110,11 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School J1 requirement", "http://www.isso.cornell.edu/academicstaff/j1insurance.php"),
                 makeURL("Health insurance for Cornell University Scholars", "#icornell"),
                 
+                makeURL("CUNY (NY)", "http://www.cuny.edu/index.html"),
+                makeURL("School F1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
+                makeURL("School J1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
+                makeURL("Health insurance for CUNY Students and Scholars", "#icuny"),                
+                
                 makeURL("Dartmouth College (NH)", "http://www.dartmouth.edu/"),
                 makeURL("School F1 requirement", "http://www.dartmouth.edu/~health/depts/insurance/waiver04.html"),
                 makeURL("School J1 requirement", "http://www.dartmouth.edu/~ovis/updates/j1/health.html"),
@@ -2219,11 +2245,17 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School F1 requirement", "http://www.njit.edu/healthservices/health-insurance.php"),
                 makeURL("School J1 requirement", "http://www.njit.edu/humanresources/divisions/employment/request_for_DS-2019_J-1_status_sponsorship.pdf"),
                 makeURL("Plan that meets this school's standards for J scholar", "#usdos"),
+
+                makeURL("New School (NY)", "http://www.newschool.edu/"),
+                makeURL("School F1 requirement", "https://www.universityhealthplans.com/secure/waiver.cgi"),
+                makeURL("School J1 requirement", "https://www.newschool.edu/international-student-services/resources/health-insurance-for-internationals/"),
+                makeURL("Health insurance for New School Scholars", "#inewschool"),                
+
                 
-                makeURL("New York University (NY)", "http://www.nyu.edu/"),
+                makeURL("New York University and NYU Poly (NY)", "http://www.nyu.edu/"),
                 makeURL("School F1 requirement", "http://www.nyu.edu/global/international-immigration-services/students/inbound-to-nyc/pre-arrival/required-health-insurance-coverage.html"),
                 makeURL("School J1 requirement", "http://www.nyu.edu/global/international-immigration-services/faculty-and-scholars/inbound-to-nyc/pre-arrival/exchange-visitor/health-insurance-requirement.html"),
-                makeURL("Health insurance for NYU Scholars", "#inyu"),
+                makeURL("Health insurance for NYU and NYU Poly Scholars", "#inyu"),
                 
                 makeURL("North Carolina State University (NC)", "http://www.ncsu.edu/"),
                 makeURL("School F1 requirement", " http://healthcenter.ncsu.edu/insurance/"),
@@ -2840,7 +2872,7 @@ function writeSections(legacy) {
 
 
             "Deductible", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", 
-            "Coinsurance", "No coinsurance in PPO", "No coinsurance", 
+            "Coinsurance", "No coinsurance in PPO", "No coinsurance in PPO or out of PPO", 
             "Hospital Room & Board", "Average semi-private room", "Average semi-private room", 
             "Intensive Care", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)", 
             "Maternity", "URC - If not pregnant when you purchase.   Not covered - If you are pregnant when you purchase.", "N/A", 
@@ -3047,7 +3079,7 @@ function writeSections(legacy) {
 
 
             "Deductible", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", 
-            "Coinsurance", "No coinsurance in PPO", "No coinsurance", 
+            "Coinsurance", "No coinsurance in PPO", "No coinsurance in PPO or out of PPO", 
             "Hospital Room & Board", "Average semi-private room", "Average semi-private room", 
             "Intensive Care", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)", 
             "Maternity", "URC - If not pregnant when you purchase.   Not covered - If you are pregnant when you purchase.", "N/A", 
@@ -3254,7 +3286,7 @@ function writeSections(legacy) {
 
 
             "Deductible", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$0, $100, $250, $500, $1,000, $2,500 annual deductible",
-            "Coinsurance", "No coinsurance in PPO", "No coinsurance", "In-PPO 90% to $5,000, then 100%<br />Out-PPO, 80% to $5,000 then 100%",
+            "Coinsurance", "No coinsurance in PPO", "No coinsurance in PPO or out of PPO", "In-PPO 90% to $5,000, then 100%<br />Out-PPO, 80% to $5,000 then 100%",
             "Hospital Room & Board", "Average semi-private room", "Average semi-private room", "Average semi-private room",
             "Intensive Care", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)",
             "Maternity", "URC - If not pregnant when you purchase.   Not covered - If you are pregnant when you purchase.", "N/A", "N/A",
@@ -3529,7 +3561,7 @@ function writeSections(legacy) {
 
 
             "Deductible", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", 
-            "Coinsurance", "No coinsurance in PPO", "No coinsurance", 
+            "Coinsurance", "No coinsurance in PPO", "No coinsurance in PPO or out of PPO", 
             "Hospital Room & Board", "Average semi-private room", "Average semi-private room", 
             "Intensive Care", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)", 
             "Maternity", "URC - If not pregnant when you purchase.   Not covered - If you are pregnant when you purchase.", "N/A", 
