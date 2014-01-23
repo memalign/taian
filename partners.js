@@ -724,6 +724,28 @@ function getPartnership(partner) {
                     }
               },   
 
+        babson: {
+                    windowTitle: "TaiAn Health Insurance for Babson College",
+                    pageTitle: "TaiAn Health Insurance for Babson College",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Babson College J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Babson College as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("Babson College Scholar Requirements", "http://www.babson.edu/about-babson/global/mie/isss/visiting-scholars/Pages/health-insurance-requirement.aspx")                         
+
+                                ]));
+                        endRow();
+                    }
+              },              
+              
         bc: {
                     windowTitle: "TaiAn Health Insurance for Boston College",
                     pageTitle: "TaiAn Health Insurance for Boston College",

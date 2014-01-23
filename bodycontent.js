@@ -572,6 +572,14 @@ function referralSubstitution(key) {
         ifordham: "partner=fordham&p=pivot-international-studentandscholar",
         icnfordham: "l=cn&partner=fordham&p=pivot-international-studentandscholar",
         
+        babson: "partner=babson&p=pivot-home&adid=sbabson",
+        cnbabson: "l=cn&partner=babson&p=pivot-home&adid=scnbabson",   
+        gcnbabson: "l=cn&partner=babson&p=pivot-international-student&adid=gcnbabson",
+        gbabson: "partner=babson&p=pivot-international-student&adid=gbabson",
+        acnbabson: "l=cn&partner=babson&p=pivot-international-student&adid=acnbabson", 
+        ibabson: "partner=babson&p=pivot-international-student",
+        icnbabson: "l=cn&partner=babson&p=pivot-international-student",        
+        
         newschool: "partner=newschool&p=pivot-home&adid=snewschool",
         cnnewschool: "l=cn&partner=newschool&p=pivot-home&adid=scnnewschool",   
         gcnnewschool: "l=cn&partner=newschool&p=pivot-international-student&adid=gcnnewschool",
@@ -2030,6 +2038,12 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School J1 requirement", "http://www.auburn.edu/academic/international/isss/insurance/"),
                 "Consult your school about their requirements",                 
 
+                makeURL("Babson College (MA)", "http://www.babson.edu/"),
+                makeURL("School F1 requirement", "http://www.babson.edu/student-life/health-wellness/pages/insurance-requirements.aspx"),
+                makeURL("School J1 requirement", "http://www.babson.edu/about-babson/global/mie/isss/visiting-scholars/Pages/health-insurance-requirement.aspx"),
+                makeURL("Health insurance for Babson College Scholars", "#ibabson"),                  
+                
+                
                 makeURL("Boston College (MA)", "http://www.bc.edu/"),
                 makeURL("School F1 requirement", "http://www.bc.edu/content/bc/offices/oiss/incoming/pre/health.html"),
                 makeURL("School J1 requirement", "http://www.bc.edu/content/bc/offices/oiss/scholars/department.html"),
