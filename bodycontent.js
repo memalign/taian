@@ -301,7 +301,17 @@ function referralSubstitution(key) {
         gcnclemson: "l=cn&partner=clemson&p=pivot-international-student&adid=gcnclemson",
         gclemson: "partner=clemson&p=pivot-international-student&adid=gclemson",
         acnclemson: "l=cn&partner=clemson&p=pivot-international-student&adid=acnclemson", 
-        iclemson: "partner=clemson&p=pivot-international-student",       
+        iclemson: "partner=clemson&p=pivot-international-student",
+        icnclemson: "l=cn&partner=clemson&p=pivot-international-student",
+        
+        cst: "partner=cst&p=pivot-home&adid=scst",
+        cncst: "l=cn&partner=cst&p=pivot-home&adid=scncst",   
+        gcncst: "l=cn&partner=cst&p=pivot-international-student&adid=gcncst",
+        gcst: "partner=cst&p=pivot-international-student&adid=gcst",
+        acncst: "l=cn&partner=cst&p=pivot-international-student&adid=acncst", 
+        icst: "partner=cst&p=pivot-international-student",
+        icncst: "l=cn&partner=cst&p=pivot-international-student",
+        
         vt: "partner=vt&p=pivot-home&adid=svt",
         cnvt: "l=cn&partner=vt&p=pivot-home&adid=scnvt",   
         gcnvt: "l=cn&partner=vt&p=pivot-international-student&adid=gcnvt",
@@ -355,7 +365,16 @@ function referralSubstitution(key) {
         gwustl: "partner=wustl&p=pivot-international-student&adid=gwustl",
         acnwustl: "l=cn&partner=wustl&p=pivot-international-student&adid=acnwustl", 
         iwustl: "partner=wustl&p=pivot-international-student",
-        icnwustl: "l=cn&partner=wustl&p=pivot-international-student",        
+        icnwustl: "l=cn&partner=wustl&p=pivot-international-student",  
+
+        wvu: "partner=wvu&p=pivot-home&adid=swvu",
+        cnwvu: "l=cn&partner=wvu&p=pivot-home&adid=scnwvu",   
+        gcnwvu: "l=cn&partner=wvu&p=pivot-international-student&adid=gcnwvu",
+        gwvu: "partner=wvu&p=pivot-international-student&adid=gwvu",
+        acnwvu: "l=cn&partner=wvu&p=pivot-international-student&adid=acnwvu", 
+        iwvu: "partner=wvu&p=pivot-international-student",
+        icnwvu: "l=cn&partner=wvu&p=pivot-international-student",  
+        
         ucsf: "partner=ucsf&p=pivot-home&adid=sucsf",
         cnucsf: "l=cn&partner=ucsf&p=pivot-home&adid=scnucsf",   
         gcnucsf: "l=cn&partner=ucsf&p=pivot-international-student&adid=gcnucsf",
@@ -2094,6 +2113,11 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School J1 requirement", "http://www.cwu.edu/international-programs/medical-insurance"),
                 makeURL("Health insurance for Central Washington University Students and Scholars", "#icwu"),
 
+                makeURL("Claremont School of Theology (CA)", "http://www.cst.edu/"),
+                makeURL("School F1 requirement", "http://www.cst.edu/international-students/incoming-students/health-insurance/"),
+                makeURL("School J1 requirement", "http://www.cst.edu/international-students/visiting-scholars/"),
+                makeURL("Health insurance for Claremont School of Theology Students and Scholars", "#icst"),                
+                
                 makeURL("Clemson University (SC)", "http://www.clemson.edu/"),
                 makeURL("School F1 requirement", "http://www.studentinsurance.com/Schools/SC/Clemson/WaiverRequirements.asp?Show=Int&MenuNum=2"),
                 makeURL("School J1 requirement", "http://www.clemson.edu/administration/ia/services/students/scholars.html"),
@@ -2786,7 +2810,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("West Virginia University (WV)", "http://www.wvu.edu/"),
                 makeURL("School F1 requirement", "http://oiss.wvu.edu/students/current_students/health_insurance_requirements_for_all_international_students"),
                 makeURL("School J1 requirement", "http://well.wvu.edu/medical/insurance/international-students"),
-                "Consult your school about their requirements",
+                makeURL("Health insurance for West Virginia University Scholars", "#iwvu"),
 
                 makeURL("Western Washington University (WA)", "http://www.wwu.edu/"),
                 makeURL("School F1 requirement", "http://www.wwu.edu/chw/student_health/billing.shtml"),

@@ -568,6 +568,29 @@ function getPartnership(partner) {
                     }
               }, 
               
+         cst: {
+                    windowTitle: "TaiAn Health Insurance for Claremont School of Theology",
+                    pageTitle: "TaiAn Health Insurance for Claremont School of Theology",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Claremont School of Theology enrolled international student standards and J scholar standards.  Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Claremont School of Theology as proof of insurance.");
+
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("Claremont School of Theology Scholar Requirements", "http://www.cst.edu/international-students/visiting-scholars/"),
+                                makeURL("Claremont School of Theology Student Requirements", "http://www.cst.edu/international-students/incoming-students/health-insurance/")                        
+                                ]));
+                        endRow();
+                    }
+              },               
+              
          dartmouth: {
                     windowTitle: "TaiAn Health Insurance for Dartmouth College",
                     pageTitle: "TaiAn Health Insurance for Dartmouth College",
@@ -1794,6 +1817,27 @@ function getPartnership(partner) {
                     }
               }, 
 
+        wvu: {
+                    windowTitle: "TaiAn Health Insurance for West Virginia University",
+                    pageTitle: "TaiAn Health Insurance for West Virginia University",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet West Virginia University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $100,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500; 5. Copay not over $10. Plan B with $250,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to West Virginia University in St. Louis as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("West Virginia University Scholar Requirements", "http://well.wvu.edu/medical/insurance/international-students")                        
+                                ]));
+                        endRow();
+                    }
+              },               
+              
         ucsf: {
                     windowTitle: "TaiAn Health Insurance for UC San Francisco",
                     pageTitle: "TaiAn Health Insurance for UC San Francisco",
