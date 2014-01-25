@@ -69,6 +69,17 @@ function getPartnership(partner) {
                             
                           ]
               },   
+              
+        gb1: {
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"                            
+                            
+                          ]
+              },                 
   
         upgrade: {
                     tabs: [
