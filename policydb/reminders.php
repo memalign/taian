@@ -12,7 +12,7 @@ require_once('db.php');
 set_time_limit(2400);
 //error_reporting(E_ALL);
 
-$importantColumns = "rowid, citizenship, home_country, expiration_date_fmt, expiration_date, effective_date_fmt, julianday(effective_date_fmt), last_reminder_date_fmt, certificate_number, certificate_status, certificate_type, primary_insured_name, insured_name, group_name, primary_email_address, other_email_address, (julianday(\"now\")-julianday(\"expiration_date_fmt\") > -1) as too_late_to_renew, (julianday(\"expiration_date_fmt\")-julianday(\"effective_date_fmt\") > 27) as is_at_least_month, (julianday(\"expiration_date_fmt\")-julianday(\"effective_date_fmt\") > 87) as is_at_least_three_months, should_ignore";
+$importantColumns = "rowid, citizenship, home_country, expiration_date_fmt, julianday(expiration_date_fmt), expiration_date, effective_date_fmt, julianday(effective_date_fmt), last_reminder_date_fmt, certificate_number, certificate_status, certificate_type, primary_insured_name, insured_name, group_name, primary_email_address, other_email_address, (julianday(\"now\")-julianday(\"expiration_date_fmt\") > -1) as too_late_to_renew, (julianday(\"expiration_date_fmt\")-julianday(\"effective_date_fmt\") > 27) as is_at_least_month, (julianday(\"expiration_date_fmt\")-julianday(\"effective_date_fmt\") > 87) as is_at_least_three_months, should_ignore";
 
 function siblingsAndEmails($dbhandle, $individual) {
     global $importantColumns;
@@ -553,19 +553,41 @@ foreach ($allResults as $key=>$value) {
 
     $effectiveDateKey = "julianday(effective_date_fmt)";
     $myEffectiveDate = floatval($value[$effectiveDateKey]);
+    $expirationDateKey = "julianday(expiration_date_fmt)";
+    $myExpirationDate = floatval($value[$expirationDateKey]); 
     $myRowID = intval($value["rowid"]);
     $myRow = $value;
 
     $nukedSelf = false;
 
     # Check sibling effective dates, unset us if any sibling has a higher one
+    # If effective dates are identical, compare expiration dates.
     foreach ($siblings as $sibling) {
         $sibEffectiveDate = floatval($sibling[$effectiveDateKey]);
+        $sibExpirationDate = floatval($sibling[$expirationDateKey]); 
         $sibRowID = intval($sibling["rowid"]);
 
         #echo "Comparing $sibEffectiveDate to $myEffectiveDate<br />";
 
+        $sameAge = false;
+        $iAmNewer = false;
+
         if (abs($myEffectiveDate - $sibEffectiveDate) < $epsilon) {
+            if (abs($myExpirationDate - $sibExpirationDate) < $epsilon) {
+                $sameAge = true;
+            } elseif ($sibExpirationDate < $myExpirationDate) {
+                $iAmNewer = true;
+            } else {
+                $iAmNewer = false;
+            }
+        } elseif ($sibEffectiveDate < $myEffectiveDate) {
+            $iAmNewer = true;
+        } else {
+            $iAmNewer = false;
+        }
+
+
+        if ($sameAge) {
             # See if the sibling is dead policy
             if (in_array($sibling["certificate_status"], $pruneStatuses)) {
                 # The sibling is a dead version of this policy... is it newer or older than us based on rowid?
@@ -608,12 +630,10 @@ foreach ($allResults as $key=>$value) {
                     }
                 }
             }
-        } elseif ($sibEffectiveDate < $myEffectiveDate) {
-            # Ignore the sibling, my effective date is newer.
-            updateToIgnore($dbhandle, $sibling, "Ignore sibling, my effective date is newer $myRowID");
+        } elseif ($iAmNewer) {
+            updateToIgnore($dbhandle, $sibling, "Ignore sibling, my (effective,expiration) date is newer $myRowID");
         } else {
-            # The sibling has a newer effective date, nuke my entry.
-            updateToIgnore($dbhandle, $myRow, "Sibling has newer effective date $sibRowID");
+            updateToIgnore($dbhandle, $myRow, "Sibling has newer (effective,expiration) date $sibRowID");
             unset($allResults[$key]);
             $nukedSelf = true;
             break;
