@@ -935,6 +935,28 @@ function getPartnership(partner) {
                         endRow();
                     }
               }, 
+              
+        clarku: {
+                    windowTitle: "TaiAn Health Insurance for Clark University",
+                    pageTitle: "TaiAn Health Insurance for Clark University",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Clark University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Clark University as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("Clark University Scholar Requirements", "http://www.clarku.edu/offices/oia/international/insurance.cfm")                         
+
+                                ]));
+                        endRow();
+                    }
+              },              
 
         gwu: {
                     windowTitle: "TaiAn Health Insurance for George Washington University",
@@ -1438,7 +1460,29 @@ function getPartnership(partner) {
                                 ]));
                         endRow();
                     }
-              },       
+              },  
+
+        gru: {
+                    windowTitle: "TaiAn Health Insurance for Georgia Regents University",
+                    pageTitle: "TaiAn Health Insurance for Georgia Regents University",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Georgia Regents University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Georgia Regents University as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("Georgia Regents University Scholar Requirements", "http://www.gru.edu/diversity/ipso/students/j1students.php")                         
+
+                                ]));
+                        endRow();
+                    }
+              },              
 
         asu: {
                     windowTitle: "TaiAn Health Insurance for Arizona State University",
@@ -2471,6 +2515,27 @@ function getPartnership(partner) {
                     }
               },  
               
+        nyit: {
+                    windowTitle: "TaiAn Health Insurance for New York Institute of Technology",
+                    pageTitle: "TaiAn Health Insurance for New York Institute of Technology",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet New York Institute of Technology scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to New York Institute of Technology as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("New York Institute of Technology Scholar Requirements", "http://www.nyit.edu/health_and_wellness/insurance/")                              
+                                ]));
+                        endRow();
+                    }
+              },              
+              
         newschool: {
                     windowTitle: "TaiAn Health Insurance for New School",
                     pageTitle: "TaiAn Health Insurance for New School",
@@ -2815,6 +2880,28 @@ function getPartnership(partner) {
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("UT Dallas Student Requirements", "http://www.utdallas.edu/healthcenter/insurance/intl-waivers.html"), 
                                 makeURL("UT Dallas Scholar Requirements", "http://www.utdallas.edu/hrm/forms/insreqvisitors.pdf")                               
+                                ]));
+                        endRow();
+                    }
+              },  
+
+        utsa: {
+                    windowTitle: "TaiAn Health Insurance for UT San Antonio",
+                    pageTitle: "TaiAn Health Insurance for UT San Antonio",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UT San Antonio enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $500,000 per person per policy year; 2. Medical benefits of $50,000 per accident or illness; 3. Repatriation of remains of $7,500; 4. Medical evacuation of $10,000; 5. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UT San Antonio as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("UT San Antonio Student Requirements", "http://international.utsa.edu/insurance/health-insurance-waiver/"), 
+                                makeURL("UT San Antonio Scholar Requirements", "http://international.utsa.edu/insurance/health-insurance-waiver/")                               
                                 ]));
                         endRow();
                     }
