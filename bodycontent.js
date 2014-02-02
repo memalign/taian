@@ -790,7 +790,8 @@ function referralSubstitution(key) {
         gcnharvard: "l=cn&partner=harvard&p=pivot-international-student&adid=gcnharvard",
         acnharvard: "l=cn&partner=harvard&p=pivot-international-student&adid=acnharvard",        
         gharvard: "partner=harvard&p=pivot-international-student&adid=gharvard",
-        iharvard: "partner=harvard&p=pivot-international-student",        
+        iharvard: "partner=harvard&p=pivot-international-student", 
+        icnharvard: "l=cn&partner=harvard&p=pivot-international-student",        
         uta: "partner=uta&p=pivot-home&adid=suta",
         cnuta: "l=cn&partner=uta&p=pivot-home&adid=scnuta",   
         gcnuta: "l=cn&partner=uta&p=pivot-international-student&adid=gcnuta",
@@ -2248,10 +2249,10 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School J1 requirement", "http://education.gsu.edu/international/docs/J-1_insurance_compliance_form.pdf"),
                 makeURL("Health insurance for Georgia State University Students and Scholars", "#igsu"),
                 
-                makeURL("Harvard University (MA)", "http://www.harvard.edu/"),
+                makeURL("Harvard University and Harvard Medical School(MA)", "http://www.harvard.edu/"),
                 makeURL("School F1 requirement", "http://www.hio.harvard.edu/healthcareandinsurance/students/healthinsurancerequirementsandwaivers/"),
                 makeURL("School J1 requirement", "http://www.hio.harvard.edu/healthcareandinsurance/scholars/requirementsforjvisaholders/"),
-                makeURL("Health insurance for Harvard University Scholars", "#iharvard"),
+                makeURL("Health insurance for Harvard University and Harvard Medical School Scholars", "#iharvard"),
                 
                 makeURL("Indiana University-Bloomington", "http://www.iub.edu/"),
                 makeURL("School F1 requirement", "http://ois.iu.edu/living-working/health/insurance/waiver.shtml"),
