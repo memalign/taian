@@ -487,7 +487,29 @@ function getPartnership(partner) {
                                 ]));
                         endRow();
                     }
-              },              
+              },     
+
+         depaul: {
+                    windowTitle: "TaiAn Health Insurance for Depaul University",
+                    pageTitle: "TaiAn Health Insurance for Depaul University",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Depaul University enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Depaul University as proof of insurance.");                        
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("Depaul University Scholar Requirements", "http://oiss.depaul.edu/docs/J-1_health_insurance_requirements_FQ_201.pdf"),
+                                makeURL("Depaul University Student Requirements", "http://oiss.depaul.edu/FAQ/index.asp")                        
+                                ]));
+                        endRow();
+                    }
+              },                
 
          murraystate: {
                     windowTitle: "TaiAn Health Insurance for Murray State University",
@@ -1724,6 +1746,49 @@ function getPartnership(partner) {
                         endRow();
                     }
               }, 
+              
+        utep: {
+                    windowTitle: "TaiAn Health Insurance for University of Texas El Paso",
+                    pageTitle: "TaiAn Health Insurance for University of Texas El Paso",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Texas El Paso J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Texas El Paso as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("University of Texas El Paso Scholar Requirements", "http://sa.utep.edu/oip/j-1-visa-requirements/")                         
+                                ]));
+                        endRow();
+                    }
+              },  
+
+        utb: {
+                    windowTitle: "TaiAn Health Insurance for University of Texas Brownsville",
+                    pageTitle: "TaiAn Health Insurance for University of Texas Brownsville",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Texas Brownsville J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Texas Brownsville as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("University of Texas Brownsville Scholar Requirements", "http://www.utb.edu/ba/hr/internationalfaculty/J1/Pages/J1Health.aspx")                         
+                                ]));
+                        endRow();
+                    }
+              },
+              
 
         utah: {
                     windowTitle: "TaiAn Health Insurance for University of Utah",
@@ -2885,6 +2950,29 @@ function getPartnership(partner) {
                     }
               },  
 
+        utpa: {
+                    windowTitle: "TaiAn Health Insurance for UT Pan American",
+                    pageTitle: "TaiAn Health Insurance for UT Pan American",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UT Pan American enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $500,000 per person per policy year; 2. Medical benefits of $50,000 per accident or illness; 3. Repatriation of remains of $7,500; 4. Medical evacuation of $10,000; 5. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UT Pan American as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("UT Pan American Student Requirements", "http://portal.utpa.edu/utpa_main/dsa_home/oias_home/resources/insurance"), 
+                                makeURL("UT Pan American Scholar Requirements", "https://portal.utpa.edu/portal/page/portal/utpa_main/daa_home/intlprograms_home/intlprg_imagesfiles/j-1_application_(rev_9-20-11_final).pdf")                               
+                                ]));
+                        endRow();
+                    }
+              },                 
+              
+              
         utsa: {
                     windowTitle: "TaiAn Health Insurance for UT San Antonio",
                     pageTitle: "TaiAn Health Insurance for UT San Antonio",
@@ -2902,6 +2990,28 @@ function getPartnership(partner) {
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("UT San Antonio Student Requirements", "http://international.utsa.edu/insurance/health-insurance-waiver/"), 
                                 makeURL("UT San Antonio Scholar Requirements", "http://international.utsa.edu/insurance/health-insurance-waiver/")                               
+                                ]));
+                        endRow();
+                    }
+              },   
+
+        uttyler: {
+                    windowTitle: "TaiAn Health Insurance for UT Tyler",
+                    pageTitle: "TaiAn Health Insurance for UT Tyler",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UT Tyler enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $500,000 per person per policy year; 2. Medical benefits of $50,000 per accident or illness; 3. Repatriation of remains of $7,500; 4. Medical evacuation of $10,000; 5. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UT Tyler as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("UT Tyler Student Requirements", "http://www.uttyler.edu/oip/insurance.php"), 
+                                makeURL("UT Tyler Scholar Requirements", "http://www.uttyler.edu/oip/issfs.php")                               
                                 ]));
                         endRow();
                     }
