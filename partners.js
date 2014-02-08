@@ -1747,6 +1747,49 @@ function getPartnership(partner) {
                     }
               }, 
               
+        utsouthwestern: {
+                    windowTitle: "TaiAn Health Insurance for University of Texas Southwestern Medical Center",
+                    pageTitle: "TaiAn Health Insurance for University of Texas Southwestern Medical Center",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Texas Southwestern Medical Center J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Texas Southwestern Medical Center as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("University of Texas Southwestern Medical Center Scholar Requirements", "http://www.utsouthwestern.edu/about-us/administrative-offices/international-affairs/visa-sponsorship-policies/j-1-visas/general-information.html#j1mandhealtins")                         
+                                ]));
+                        endRow();
+                    }
+              }, 
+
+        uth: {
+                    windowTitle: "TaiAn Health Insurance for University of Texas Health Center Houston",
+                    pageTitle: "TaiAn Health Insurance for University of Texas Health Center Houston",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Texas Health Center Houston J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Texas Health Center Houston as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("University of Texas Health Center Houston Scholar Requirements", "http://www.uth.edu/international-affairs/exchange-visitors-j-1/j-1-health-insurance.htm")                         
+                                ]));
+                        endRow();
+                    }
+              },               
+              
+              
         utep: {
                     windowTitle: "TaiAn Health Insurance for University of Texas El Paso",
                     pageTitle: "TaiAn Health Insurance for University of Texas El Paso",
@@ -2491,6 +2534,27 @@ function getPartnership(partner) {
                         endRow();
                     }
               }, 
+              
+        oakland: {
+                    windowTitle: "TaiAn Health Insurance for Oakland University",
+                    pageTitle: "TaiAn Health Insurance for Oakland University",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Oakland University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Oakland University as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("Oakland University Scholar Requirements", "http://www.oakland.edu/isso/scholarinformation/")                        
+                                ]));
+                        endRow();
+                    }
+              },               
 
         fsu: {
                     windowTitle: "TaiAn Health Insurance for Florida State University",
@@ -2970,7 +3034,75 @@ function getPartnership(partner) {
                                 ]));
                         endRow();
                     }
-              },                 
+              },      
+
+
+        uthscsa: {
+                    windowTitle: "TaiAn Health Insurance for UT Health Science Center San Antonio",
+                    pageTitle: "TaiAn Health Insurance for UT Health Science Center San Antonio",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UT Health Science Center San Antonio enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $500,000 per person per policy year; 2. Medical benefits of $50,000 per accident or illness; 3. Repatriation of remains of $7,500; 4. Medical evacuation of $10,000; 5. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UT Health Science Center San Antonio as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("UT Health Science Center San Antonio Student Requirements", "http://uthscsa.edu/ois/Insurance%20Attestation.pdf"), 
+                                makeURL("UT Health Science Center San Antonio Scholar Requirements", "http://uthscsa.edu/ois/faq.asp#q2")                               
+                                ]));
+                        endRow();
+                    }
+              },      
+
+        utmb: {
+                    windowTitle: "TaiAn Health Insurance for UT Medical Branch Galveston",
+                    pageTitle: "TaiAn Health Insurance for UT Medical Branch Galveston",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UT Medical Branch Galveston enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $500,000 per person per policy year; 2. Medical benefits of $50,000 per accident or illness; 3. Repatriation of remains of $7,500; 4. Medical evacuation of $10,000; 5. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UT Medical Branch Galveston as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("UT Medical Branch Galveston Student Requirements", "http://www.utmb.edu/studenthealth/insurance.asp"), 
+                                makeURL("UT Medical Branch Galveston Scholar Requirements", "http://www.utmb.edu/studenthealth/insurance.asp")                               
+                                ]));
+                        endRow();
+                    }
+              },      
+
+        utpb: {
+                    windowTitle: "TaiAn Health Insurance for UT Permian Basin",
+                    pageTitle: "TaiAn Health Insurance for UT Permian Basin",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UT Permian Basin enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $500,000 per person per policy year; 2. Medical benefits of $50,000 per accident or illness; 3. Repatriation of remains of $7,500; 4. Medical evacuation of $10,000; 5. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UT Permian Basin as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("UT Permian Basin Student Requirements", "http://ss.utpb.edu/admissions/apply-now/international/"), 
+                                makeURL("UT Permian Basin Scholar Requirements", "http://ss.utpb.edu/admissions/apply-now/international/")                               
+                                ]));
+                        endRow();
+                    }
+              },      
+              
               
               
         utsa: {

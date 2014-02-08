@@ -262,6 +262,22 @@ function referralSubstitution(key) {
         acnutmda: "l=cn&partner=utmda&p=pivot-international-student&adid=acnutmda",  
         iutmda: "partner=utmda&p=pivot-international-student",
         icnutmda: "l=cn&partner=utmda&p=pivot-international-student", 
+        
+        utsouthwestern: "partner=utsouthwestern&p=pivot-home&adid=sutsouthwestern",
+        cnutsouthwestern: "l=cn&partner=utsouthwestern&p=pivot-home&adid=scnutsouthwestern",   
+        gcnutsouthwestern: "l=cn&partner=utsouthwestern&p=pivot-international-student&adid=gcnutsouthwestern",
+        gutsouthwestern: "partner=utsouthwestern&p=pivot-international-student&adid=gutsouthwestern",
+        acnutsouthwestern: "l=cn&partner=utsouthwestern&p=pivot-international-student&adid=acnutsouthwestern",  
+        iutsouthwestern: "partner=utsouthwestern&p=pivot-international-student",
+        icnutsouthwestern: "l=cn&partner=utsouthwestern&p=pivot-international-student", 
+
+        uth: "partner=uth&p=pivot-home&adid=suth",
+        cnuth: "l=cn&partner=uth&p=pivot-home&adid=scnuth",   
+        gcnuth: "l=cn&partner=uth&p=pivot-international-student&adid=gcnuth",
+        guth: "partner=uth&p=pivot-international-student&adid=guth",
+        acnuth: "l=cn&partner=uth&p=pivot-international-student&adid=acnuth",  
+        iuth: "partner=uth&p=pivot-international-student",
+        icnuth: "l=cn&partner=uth&p=pivot-international-student",         
 
         utep: "partner=utep&p=pivot-home&adid=sutep",
         cnutep: "l=cn&partner=utep&p=pivot-home&adid=scnutep",   
@@ -364,13 +380,37 @@ function referralSubstitution(key) {
         iutsa: "partner=utsa&p=pivot-international-student",
         icnutsa: "l=cn&partner=utsa&p=pivot-international-student",    
         
+        uthscsa: "partner=uthscsa&p=pivot-home&adid=suthscsa",
+        cnuthscsa: "l=cn&partner=uthscsa&p=pivot-home&adid=scnuthscsa",   
+        gcnuthscsa: "l=cn&partner=uthscsa&p=pivot-international-student&adid=gcnuthscsa",
+        guthscsa: "partner=uthscsa&p=pivot-international-student&adid=guthscsa",
+        acnuthscsa: "l=cn&partner=uthscsa&p=pivot-international-student&adid=acnuthscsa", 
+        iuthscsa: "partner=uthscsa&p=pivot-international-student",
+        icnuthscsa: "l=cn&partner=uthscsa&p=pivot-international-student",     
+
+        utmb: "partner=utmb&p=pivot-home&adid=sutmb",
+        cnutmb: "l=cn&partner=utmb&p=pivot-home&adid=scnutmb",   
+        gcnutmb: "l=cn&partner=utmb&p=pivot-international-student&adid=gcnutmb",
+        gutmb: "partner=utmb&p=pivot-international-student&adid=gutmb",
+        acnutmb: "l=cn&partner=utmb&p=pivot-international-student&adid=acnutmb", 
+        iutmb: "partner=utmb&p=pivot-international-student",
+        icnutmb: "l=cn&partner=utmb&p=pivot-international-student",    
+
+        utpb: "partner=utpb&p=pivot-home&adid=sutpb",
+        cnutpb: "l=cn&partner=utpb&p=pivot-home&adid=scnutpb",   
+        gcnutpb: "l=cn&partner=utpb&p=pivot-international-student&adid=gcnutpb",
+        gutpb: "partner=utpb&p=pivot-international-student&adid=gutpb",
+        acnutpb: "l=cn&partner=utpb&p=pivot-international-student&adid=acnutpb", 
+        iutpb: "partner=utpb&p=pivot-international-student",
+        icnutpb: "l=cn&partner=utpb&p=pivot-international-student",    
+
         utpa: "partner=utpa&p=pivot-home&adid=sutpa",
         cnutpa: "l=cn&partner=utpa&p=pivot-home&adid=scnutpa",   
         gcnutpa: "l=cn&partner=utpa&p=pivot-international-student&adid=gcnutpa",
         gutpa: "partner=utpa&p=pivot-international-student&adid=gutpa",
         acnutpa: "l=cn&partner=utpa&p=pivot-international-student&adid=acnutpa", 
         iutpa: "partner=utpa&p=pivot-international-student",
-        icnutpa: "l=cn&partner=utpa&p=pivot-international-student",        
+        icnutpa: "l=cn&partner=utpa&p=pivot-international-student",            
 
         uttyler: "partner=uttyler&p=pivot-home&adid=suttyler",
         cnuttyler: "l=cn&partner=uttyler&p=pivot-home&adid=scnuttyler",   
@@ -507,6 +547,17 @@ function referralSubstitution(key) {
         gmiami: "partner=miami&p=pivot-international-student&adid=gmiami",
         acnmiami: "l=cn&partner=miami&p=pivot-international-student&adid=acnmiami", 
         imiami: "partner=miami&p=pivot-international-student",
+        icnmiami: "l=cn&partner=miami&p=pivot-international-student",   
+
+        oakland: "partner=oakland&p=pivot-home&adid=soakland",
+        cnoakland: "l=cn&partner=oakland&p=pivot-home&adid=scnoakland",   
+        gcnoakland: "l=cn&partner=oakland&p=pivot-international-student&adid=gcnoakland",
+        goakland: "partner=oakland&p=pivot-international-student&adid=goakland",
+        acnoakland: "l=cn&partner=oakland&p=pivot-international-student&adid=acnoakland", 
+        ioakland: "partner=oakland&p=pivot-international-student",
+        icnoakland: "l=cn&partner=oakland&p=pivot-international-student",          
+        
+        
         fsu: "partner=fsu&p=pivot-home&adid=sfsu",
         cnfsu: "l=cn&partner=fsu&p=pivot-home&adid=scnfsu",   
         gcnfsu: "l=cn&partner=fsu&p=pivot-international-student&adid=gcnfsu",
@@ -2117,7 +2168,7 @@ function writePatriotTravelTable() {
 
 function writeSectionForSchoolWaiverRequirements() {
     // School waiver requirements
-    startSection("pivot-school-waiver", "Requirements for all schools for F and J visa");
+    startSection("pivot-school-waiver", "School Requirements and Most Affordable Insurance Plan");
     startRow();
     writeText("Call from US - 9:00AM to 10:00PM Eastern time - Includes weekend: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time 7-11am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>");
     endRow();
@@ -2414,6 +2465,11 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School F1 requirement", "http://www.northwestern.edu/international/student/pre-arrival-information.html#health"),
                 makeURL("School J1 requirement", "http://www.northwestern.edu/risk/insurance/visiting-scholar/waiver-process.html"),                
                 "Consult your school about their requirements",
+                
+                makeURL("Oakland University (CA)", "https://www.oakland.edu/"),
+                makeURL("School F1 requirement", "https://www.oakland.edu/?id=11874&sid=115"),
+                makeURL("School J1 requirement", "http://www.oakland.edu/isso/scholarinformation/"),
+                makeURL("Health insurance for Oakland University Scholars", "#ioakland"),                
                 
                 makeURL("Ohio State University-Columbus(OH)", "http://www.osu.edu/"),
                 makeURL("School F1 requirement", "http://shi.osu.edu/coverage-comparison-tools/"),
@@ -2765,6 +2821,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School F1 requirement", "http://uhs.nd.edu/insurance-billing/"),
                 makeURL("School J1 requirement", "https://hr.nd.edu/assets/20192/j_1_visa.pdf"),
                 makeURL("Health insurance for University of Notre Dame Students and Scholars", "#ind"),
+                               
                 
                 makeURL("University of Oklahoma (OK)", "http://www.ou.edu/"),
                 makeURL("School F1 requirement", "http://hr.ou.edu/studenthealth/StudentHealthWaiver.asp"),
@@ -2845,23 +2902,48 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("University of Texas - El Paso (TX)", "http://utep.edu/"),
                 makeURL("School F1 requirement", "http://sa.utep.edu/oip/health-care-and-insurance/"),
                 makeURL("School J1 requirement", "http://sa.utep.edu/oip/j-1-visa-requirements/"),
-                makeURL("Health insurance for University of Texas El Paso Scholars", "#iutep"),                
+                makeURL("Health insurance for University of Texas El Paso Scholars", "#iutep"),  
+                
+                makeURL("University of Texas - Health Center Houston (TX)", "http://www.uth.edu"),
+                makeURL("School F1 requirement", ""),
+                makeURL("School J1 requirement", "http://www.uth.edu/international-affairs/exchange-visitors-j-1/j-1-health-insurance.htm"),
+                makeURL("Health insurance for University of Texas Health Center Houston Scholars", "#iuth"),                
+
+                makeURL("University of Texas - Health Science Center at San Antonio (TX)", "http://uthscsa.edu/"),
+                makeURL("School F1 requirement", "http://uthscsa.edu/ois/Insurance%20Attestation.pdf"),
+                makeURL("School J1 requirement", "http://uthscsa.edu/ois/faq.asp#q2"),
+                makeURL("Health Insurance for UT Health Science Center San Antonio International Students and Scholars", "#iuthscsa"),                
                 
                 makeURL("University of Texas - MD Anderson (TX)", "http://www.mdanderson.org/"),
                 makeURL("School F1 requirement", "http://www.mdanderson.org/education-and-research/education-and-training/schools-and-programs/school-of-health-professions/school-of-health-professions-student-catalog/policies-and-procedures/student-health-insurance.html"),
                 makeURL("School J1 requirement", "https://www.academichealthplans.com/uthouston/2012-2013/FAQs.php"),
                 makeURL("Health insurance for University of Texas MD Anderson Scholars", "#iutmda"),
+                
+                makeURL("University of Texas - Medical Branch at Galveston (TX)", "http://www.utmb.edu/"),
+                makeURL("School F1 requirement", "http://www.utmb.edu/studenthealth/insurance.asp"),
+                makeURL("School J1 requirement", "http://www.utmb.edu/studenthealth/insurance.asp"),
+                makeURL("Health Insurance for UT Medical Branch Galveston International Students and Scholars", "#iutmb"),                
 
                 makeURL("University of Texas - Pan American (TX)", "http://www.utpa.edu/"),
                 makeURL("School F1 requirement", "http://portal.utpa.edu/utpa_main/dsa_home/oias_home/resources/insurance"),
                 makeURL("School J1 requirement", "https://portal.utpa.edu/portal/page/portal/utpa_main/daa_home/intlprograms_home/intlprg_imagesfiles/j-1_application_(rev_9-20-11_final).pdf"),
                 makeURL("Health Insurance for UT Pan American International Students and Scholars", "#iutpa"),
+                
+                makeURL("University of Texas - Permian Basin (TX)", "http://www.utpb.edu/"),
+                makeURL("School F1 requirement", "http://ss.utpb.edu/admissions/apply-now/international/"),
+                makeURL("School J1 requirement", "http://ss.utpb.edu/admissions/apply-now/international/"),
+                makeURL("Health Insurance for UT Permian Basin International Students and Scholars", "#iutpb"),                
 
                 
                 makeURL("University of Texas - San Antonio (TX)", "https://utsa.edu/"),
                 makeURL("School F1 requirement", "http://international.utsa.edu/insurance/health-insurance-waiver/"),
                 makeURL("School J1 requirement", "http://international.utsa.edu/insurance/health-insurance-waiver/"),
-                makeURL("Health Insurance for UT San Antonio International Students and Scholars", "#iutsa"),                
+                makeURL("Health Insurance for UT San Antonio International Students and Scholars", "#iutsa"), 
+
+                makeURL("University of Texas - Southwestern Medical Center (TX)", "http://www.utsouthwestern.edu/"),
+                makeURL("School F1 requirement", "http://www.utsouthwestern.edu/edumedia/edufiles/about_us/admin_offices/human_resources/annual_enrollment/WaiveHealth07.pdf"),
+                makeURL("School J1 requirement", "http://www.utsouthwestern.edu/about-us/administrative-offices/international-affairs/visa-sponsorship-policies/j-1-visas/general-information.html#j1mandhealtins"),
+                makeURL("Health insurance for University of Texas Southwestern Medical Center Scholars", "#iutsouthwestern"),                
                 
                 makeURL("University of Texas - Tyler (TX)", "http://www.uttyler.edu/"),
                 makeURL("School F1 requirement", "http://www.uttyler.edu/oip/insurance.php"),
@@ -3007,7 +3089,7 @@ function writeSections(legacy) {
     }
 
     startRow();
-    writeText(makePivotURL("pivot-school-waiver", "Requirements for all schools for F and J visa"));
+    writeText(makePivotURL("pivot-school-waiver", "Find your school insurance requirements and most affordable plan here"));
     endRow();
    
     startRow();
@@ -3420,7 +3502,7 @@ function writeSections(legacy) {
     endRow();
     
     startRow();
-    writeText(makePivotURL("pivot-school-waiver", "Requirements for all schools for F and J visa"));
+    writeText(makePivotURL("pivot-school-waiver", "Find your school insurance requirements and most affordable plan here"));
     endRow();
    
     startRow();
@@ -3591,7 +3673,7 @@ function writeSections(legacy) {
     }
 
     startRow();
-    writeText(makePivotURL("pivot-school-waiver", "Requirements for all schools for F and J visa"));
+    writeText(makePivotURL("pivot-school-waiver", "Find your school insurance requirements and most affordable plan here"));
     endRow();
    
     startRow();
@@ -3696,7 +3778,7 @@ function writeSections(legacy) {
     }
 
     startRow();
-    writeText(makePivotURL("pivot-school-waiver", "Requirements for all schools for F and J visa"));
+    writeText(makePivotURL("pivot-school-waiver", "Find your school insurance requirements and most affordable plan here"));
     endRow();
    
     startRow();
@@ -4369,7 +4451,7 @@ function writeSections(legacy) {
                 "We specialize in service for international scholars, educators and students with both native Chinese speakers and native English speakers.",
                 "We are located in the United States and have extended work hours to serve our customers whenever they need us. Our work hours are 7 days a week, 9:00am-11:00pm Eastern Time.",   
                 "We have both English and Chinese local phone numbers in the US. We also have China local phone service, by calling this number our customers in China don't pay long distance charges. We communicate with our customers through  WeChat and Skype as well.",
-                loc("We have a highly experienced IT team to keep our website up-to-date to make sure our customers get the most updated information. For example, we check our webpage") + " " + makePivotURL("pivot-school-waiver", "Requirements for all schools for F and J visa") + loc(" every week or whenever our customers tell us their school requirements changed. This webpage is very popular because it provides requirements for all schools for F and J visa, and identifies the insurance plan that is best for each schools international scholars and students."),                
+                loc("We have a highly experienced IT team to keep our website up-to-date to make sure our customers get the most updated information. For example, we check our webpage") + " " + makePivotURL("pivot-school-waiver", "Find your school insurance requirements and most affordable plan here") + loc(" every week or whenever our customers tell us their school requirements changed. This webpage is very popular because it provides requirements for all schools for F and J visa, and identifies the insurance plan that is best for each schools international scholars and students."),                
                 "We work with only the most financially secure insurers with top quality ratings from A.M. Best and Standard and Poor's.",
                 "Our website is accessible around the world, including mainland China."
                 ]));
