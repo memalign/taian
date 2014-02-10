@@ -741,11 +741,11 @@ l['UT Arlington Student Requirements'] = "UT Arlington学校对留学生的要�
 
 l['Maternity covered if you are not pregnant when you purchase.'] = "生育保险必须是在怀孕之前购买才有效";
 l['Requirements for all schools for F and J visa'] = " 全美各校F鉴证和J签证医疗保险的标准";
-l['School Requirements and Most Affordable Insurance Plan'] = "全美各校F和J签证保险的标准以及符合各标准的保险计划";
+l['School Requirements and Most Affordable Insurance Plan'] = "全美各校F和J签证保险标准及符合各校标准的保险计划";
 l['Find your school insurance requirements and most affordable plan here'] = "全美各校F和J签证保险的标准以及符合各标准的保险计划";
 l['URC - If not pregnant when you purchase.   Not covered - If you are pregnant when you purchase.'] = "URC(通常合理的惯例的费用)，必须是在怀孕之前购买. 购买之前的怀孕，保险不Cover";
 l['Consult your school about their requirements'] = "请咨询学校";
-l['Insurance that meets school scholar requirements'] = " 符合学校标准的访问学者医疗保险";
+l['Affordable Insurance that Meets School Requirements'] = "符合各校标准的最经济实惠的保险计划";
 l['School Waiver Requirements'] = "Waive 学校保险的要求";
 l['Plan that meets this school\'s standards for J scholar'] = "符合该校标准的J签证访问学者保险计划";
 l['Taian Scholar/Student Insurance Plan A and Plan B meet your school J scholar standards. Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to your school as proof of insurance.'] = "泰安访问学者/留学生保险计划A和B满足你校对J 鉴证访问学者的标准， 其具体要求是： 1.每次生病或受伤的最高赔付至少为$50,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上成功提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明你已经购买符合学校标准的保险。";

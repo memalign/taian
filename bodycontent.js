@@ -810,7 +810,8 @@ function referralSubstitution(key) {
         iupuiexch: "l=cn&partner=iupui&p=exchange-form", 
         bcexch: "l=cn&partner=bc&p=exchange-form",        
         vcuexch: "l=cn&partner=vcu&p=exchange-form", 
-        csuohioexch: "l=cn&partner=csuohio&p=exchange-form",        
+        csuohioexch: "l=cn&partner=csuohio&p=exchange-form", 
+        utsouthwesternexch: "l=cn&partner=utsouthwestern&p=exchange-form",        
         ucdavisbform: "l=cn&partner=ucdavis&p=exchange-form",        
         univtemplate: "partner=univtemplate",
         usc: "partner=usc&p=pivot-home&adid=susc",
@@ -2176,7 +2177,7 @@ function writeSectionForSchoolWaiverRequirements() {
     startRow();
     document.write(makeTable(4,
                 [
-                "School", "F1 Visa", "J1 Visa", "Insurance that meets school scholar requirements",
+                "School", "F1 Visa", "J1 Visa", "Affordable Insurance that Meets School Requirements",
 
                 makeURL("Arizona State University (AZ)", "http://www.asu.edu/"),
                 makeURL("School F1 requirement", "https://students.asu.edu/internationalstudenthealth"),
