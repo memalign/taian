@@ -3112,7 +3112,7 @@ function writeSections(legacy) {
 
             // Rest of the table:
             // Row 2
-            "Plan Type", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly, renewable up to 5 years if 3 months or more are purchased.", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly, renewable up to 4 years.",
+            "Plan Type", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 5 years if initial purchase is 3 months or more.", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.",
 
             // Row 3
             "Maximum Limit", "$500,000 lifetime maximum, $300,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $250,000 or $500,000 per illness/injury",
@@ -3319,7 +3319,7 @@ function writeSections(legacy) {
 
             // Rest of the table:
             // Row 2
-            "Plan Type", "Designed specifically for international scholars，educators，students and their families (US visa J1/J2, F1/F2).  Purchase monthly, renewable up to 5 years if 3 months or more are purchased.", "Designed specifically for international scholars，educators，students and their families (US visa J1/J2, F1/F2).  Purchase monthly, renewable up to 4 years.",
+            "Plan Type", "Designed specifically for international scholars，educators，students and their families (US visa J1/J2, F1/F2). Purchase monthly increments (from 1 to 12 months), renewable up to 5 years if initial purchase is 3 months or more.", "Designed specifically for international scholars，educators，students and their families (US visa J1/J2, F1/F2). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.",
 
             // Row 3
             "Maximum Limit", "$500,000 lifetime maximum, $300,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $250,000 or $500,000 per illness/injury",
@@ -3526,7 +3526,7 @@ function writeSections(legacy) {
             
             // Rest of the table:
             // Row 2
-            "Plan Type", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly, renewable up to 5 years if 3 months or more are purchased.", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly, renewable up to 4 years.","Designed for anyone traveling outside their home country. F2/J2 can buy alone. Purchase daily (at least 5 days) or monthly, renewable up to 2 years if 1 month or more is purchased.",
+            "Plan Type", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 5 years if initial purchase is 3 months or more.", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.","Designed for anyone traveling outside their home country. F2/J2 can buy alone. Purchase daily (at least 5 days) or monthly, renewable up to 2 years if 1 month or more is purchased.",
 
             // Row 3
             "Maximum Limit", "$500,000 lifetime maximum, $300,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $250,000 or $500,000 per illness/injury", "$50,000, $100,000, $500,000, $1,000,000 lifetime maximum",
