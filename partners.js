@@ -443,7 +443,29 @@ function getPartnership(partner) {
                                 ]));
                         endRow();
                     }
-              },    
+              }, 
+
+         casew: {
+                    windowTitle: "TaiAn Health Insurance for Case Western Reserve",
+                    pageTitle: "TaiAn Health Insurance for Case Western Reserve",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Case Western Reserve enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Case Western Reserve as proof of insurance.");                        
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("Case Western Reserve Scholar Requirements", "http://www.case.edu/finadmin/humres/ffs/j1.html"),
+                                makeURL("Case Western Reserve Student Requirements", "http://studentaffairs.case.edu/medicalplan/news/4915.newx")                        
+                                ]));
+                        endRow();
+                    }
+              },              
               
          cuny: {
                     windowTitle: "TaiAn Health Insurance for CUNY",
@@ -2534,6 +2556,27 @@ function getPartnership(partner) {
                         endRow();
                     }
               }, 
+              
+        unl: {
+                    windowTitle: "TaiAn Health Insurance for University of Nebraska (Lincoln)",
+                    pageTitle: "TaiAn Health Insurance for University of Nebraska (Lincoln)",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Nebraska (Lincoln) J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Nebraska (Lincoln) as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("University of Nebraska (Lincoln) Scholar Requirements", "http://isso.unl.edu/j.status.health.insurance.requirement")                        
+                                ]));
+                        endRow();
+                    }
+              },               
               
         oakland: {
                     windowTitle: "TaiAn Health Insurance for Oakland University",
