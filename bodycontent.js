@@ -556,7 +556,16 @@ function referralSubstitution(key) {
         acnunl: "l=cn&partner=unl&p=pivot-international-student&adid=acnunl", 
         iunl: "partner=unl&p=pivot-international-student",
         icnunl: "l=cn&partner=unl&p=pivot-international-student", 
-        unlexch: "l=cn&partner=unl&p=exchange-form",        
+        unlexch: "l=cn&partner=unl&p=exchange-form",    
+
+        unomaha: "partner=unomaha&p=pivot-home&adid=sunomaha",
+        cnunomaha: "l=cn&partner=unomaha&p=pivot-home&adid=scnunomaha",   
+        gcnunomaha: "l=cn&partner=unomaha&p=pivot-international-student&adid=gcnunomaha",
+        gunomaha: "partner=unomaha&p=pivot-international-student&adid=gunomaha",
+        acnunomaha: "l=cn&partner=unomaha&p=pivot-international-student&adid=acnunomaha", 
+        iunomaha: "partner=unomaha&p=pivot-international-student",
+        icnunomaha: "l=cn&partner=unomaha&p=pivot-international-student", 
+        unomahaexch: "l=cn&partner=unomaha&p=exchange-form",           
 
         oakland: "partner=oakland&p=pivot-home&adid=soakland",
         cnoakland: "l=cn&partner=oakland&p=pivot-home&adid=scnoakland",   
@@ -573,6 +582,18 @@ function referralSubstitution(key) {
         gfsu: "partner=fsu&p=pivot-international-student&adid=gfsu",
         acnfsu: "l=cn&partner=fsu&p=pivot-international-student&adid=acnfsu", 
         ifsu: "partner=fsu&p=pivot-international-student",
+        icnfsu: "l=cn&partner=fsu&p=pivot-international-student",        
+        fsuexch: "l=cn&partner=fsu&p=exchange-form",  
+
+        fiu: "partner=fiu&p=pivot-home&adid=sfiu",
+        cnfiu: "l=cn&partner=fiu&p=pivot-home&adid=scnfiu",   
+        gcnfiu: "l=cn&partner=fiu&p=pivot-international-student&adid=gcnfiu",
+        gfiu: "partner=fiu&p=pivot-international-student&adid=gfiu",
+        acnfiu: "l=cn&partner=fiu&p=pivot-international-student&adid=acnfiu", 
+        ifiu: "partner=fiu&p=pivot-international-student",
+        icnfiu: "l=cn&partner=fiu&p=pivot-international-student",        
+        fiuexch: "l=cn&partner=fiu&p=exchange-form",       
+        
         lsu: "partner=lsu&p=pivot-home&adid=slsu",
         cnlsu: "l=cn&partner=lsu&p=pivot-home&adid=scnlsu",   
         gcnlsu: "l=cn&partner=lsu&p=pivot-international-student&adid=gcnlsu",
@@ -828,18 +849,33 @@ function referralSubstitution(key) {
         cnusc: "l=cn&partner=usc&p=pivot-home&adid=scnusc",   
         gcnusc: "l=cn&partner=usc&p=pivot-international-student&adid=gcnusc",
         gusc: "partner=usc&p=pivot-international-student&adid=gusc",
-        acnusc: "l=cn&partner=usc&p=pivot-international-student&adid=acnusc",    
+        acnusc: "l=cn&partner=usc&p=pivot-international-student&adid=acnusc",
+        
         sta: "partner=sta&p=pivot-home&adid=ssta",
         cnsta: "l=cn&partner=sta&p=pivot-home&adid=scnsta",   
         gcnsta: "l=cn&partner=sta&p=pivot-international-student&adid=gcnsta",
         gsta: "partner=sta&p=pivot-international-student&adid=gsta",
         acnsta: "l=cn&partner=sta&p=pivot-international-student&adid=acnsta", 
+        ista: "partner=sta&p=pivot-international-student",
+        icnsta: "l=cn&partner=sta&p=pivot-international-student",
+        staexch: "l=cn&partner=sta&p=exchange-form", 
+        
+        steinercollege: "partner=steinercollege&p=pivot-home&adid=ssteinercollege",
+        cnsteinercollege: "l=cn&partner=steinercollege&p=pivot-home&adid=scnsteinercollege",   
+        gcnsteinercollege: "l=cn&partner=steinercollege&p=pivot-international-student&adid=gcnsteinercollege",
+        gsteinercollege: "partner=steinercollege&p=pivot-international-student&adid=gsteinercollege",
+        acnsteinercollege: "l=cn&partner=steinercollege&p=pivot-international-student&adid=acnsteinercollege", 
+        isteinercollege: "partner=steinercollege&p=pivot-international-student",
+        icnsteinercollege: "l=cn&partner=steinercollege&p=pivot-international-student",
+        steinercollegeexch: "l=cn&partner=steinercollege&p=exchange-form",         
+
+        
+        
         usdos: "partner=usdos&p=pivot-international-student", 
         usdosjapan: "partner=usdosjapan&p=pivot-international-student", 
         usdoskorea: "partner=usdoskorea&p=pivot-international-student", 
         usdosindia: "partner=usdosindia&p=pivot-international-student",         
         iusc: "partner=usc&p=pivot-international-student",
-        ista: "partner=sta&p=pivot-international-student",
         iuiuc: "partner=uiuc&p=pivot-international-studentandscholar",
         icnuiuc: "l=cn&partner=uiuc&p=pivot-international-studentandscholar",        
         inyu: "partner=nyu&p=pivot-international-student",
@@ -2328,6 +2364,11 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School F1 requirement", "http://studenthealth.emory.edu/hs/new_students/health_insurance/waiver%20fall%202013.html"),
                 makeURL("School J1 requirement", "http://www.emory.edu/isss/scholars/maintaining_j1_status_scholars/health_insurance.html"),
                 makeURL("Health insurance for Emory University Scholars", "#iemory"),
+
+                makeURL("Florida International University (FL)", "https://www.fiu.edu/"),
+                makeURL("School F1 requirement", "http://studenthealth.fiu.edu/_assets/docs/Forms/Insurance%20Forms/Alternate%20Insurance%20Compliance%20Form%202013%20to%202014.pdf"),
+                makeURL("School J1 requirement", "http://isss.fiu.edu/j1scholars_health.htm"),
+                makeURL("Health insurance for Florida International University Students", "#ifiu"),
                 
                 makeURL("Florida State University (FL)", "http://www.fsu.edu/"),
                 makeURL("School F1 requirement", "http://studentinsurance.fsu.edu/forms/comparable_coverage_international.pdf"),
@@ -2530,6 +2571,12 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School F1 requirement", "http://oiss.rice.edu/gateway.aspx?id=208"),
                 makeURL("School J1 requirement", "http://oiss.rice.edu/gateway.aspx?id=228"),
                 "Consult your school about their requirements",
+
+                makeURL("Rudolf Steiner College (CA)", "http://www.steinercollege.edu/"),
+                makeURL("School F1 requirement", "http://www.steinercollege.edu/international"),
+                makeURL("School J1 requirement", "http://www.steinercollege.edu/international"),
+                makeURL("Health insurance for Rudolf Steiner College Students and Scholars", "#isteinercollege"),
+
                 
                 makeURL("Rutgers University (NJ)", "http://www.rutgers.edu/"),
                 makeURL("School F1 requirement", "http://internationalservices.rutgers.edu/content/Center_Staff_Services_and_Programs/Health_Insurance_Program/Rutgers_Health_Insurance_Requirement.html"),
@@ -2821,6 +2868,11 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School F1 requirement", "http://health.unl.edu/billing/insurancewaiverpolicy/"),
                 makeURL("School J1 requirement", "http://isso.unl.edu/j.status.health.insurance.requirement"),
                 makeURL("Health insurance for University of Nebraska (Lincoln) Scholars", "#iunl"),
+                
+                makeURL("University of Nebraska - Omaha (NE)", "http://www.unomaha.edu/"),
+                makeURL("School F1 requirement", "http://healthservices.unomaha.edu/insurance.php"),
+                makeURL("School J1 requirement", "http://healthservices.unomaha.edu/insurance.php"),
+                makeURL("Health insurance for University of Nebraska (Omaha) Scholars", "#iunomaha"),                
                 
                 makeURL("University of New Hampshire (NH)", "http://www.unh.edu/"),
                 makeURL("School F1 requirement", "http://www.unh.edu/health-services/shbp/"),

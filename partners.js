@@ -215,6 +215,29 @@ function getPartnership(partner) {
                                 ]));
                         endRow();
                     }
+              },  
+
+        steinercollege: {
+                    windowTitle: "TaiAn Health Insurance for Rudolf Steiner College",
+                    pageTitle: "TaiAn Health Insurance for Rudolf Steiner College",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Rudolf Steiner College lists no specific insurance requirements, so the US Department of State requirements apply.  Taian Scholar/Student Insurance Plan A and Plan B meet Rudolf Steiner College J scholar standards and enrolled students requirements. Exchange visitors (J visa) and students have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Rudolf Steiner College as proof of insurance.");
+
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("Rudolf Steiner College Scholar Requirements", "http://www.steinercollege.edu/international"),
+                                makeURL("Rudolf Steiner College Student Requirements", "http://www.steinercollege.edu/international")
+                                ]));
+                        endRow();
+                    }
               },               
 
          jhu: {
@@ -2576,6 +2599,27 @@ function getPartnership(partner) {
                                 ]));
                         endRow();
                     }
+              },    
+
+        unomaha: {
+                    windowTitle: "TaiAn Health Insurance for University of Nebraska (Omaha)",
+                    pageTitle: "TaiAn Health Insurance for University of Nebraska (Omaha)",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Nebraska (Omaha) J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Nebraska (Omaha) as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("University of Nebraska (Omaha) Scholar Requirements", "http://healthservices.unomaha.edu/insurance.php")                        
+                                ]));
+                        endRow();
+                    }
               },               
               
         oakland: {
@@ -2618,7 +2662,29 @@ function getPartnership(partner) {
                                 ]));
                         endRow();
                     }
-              },               
+              },     
+
+        fiu: {
+                    windowTitle: "TaiAn Health Insurance for Florida International University",
+                    pageTitle: "TaiAn Health Insurance for Florida International University",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Florida International University allows international students to waive the school plan. Students have required coverage as follows: 1. Medical benefits of $200,000 per accident or illness; 2. Repatriation of remains of $10,000; 3. Medical evacuation of $25,000; 4. Deductible not over $100, or not over $50 at student health center; 5. Maternity benefits; 6. Pre existing conditions covered after six months. Plan A with the six month preexisting conditions option selected meets the requirements. Shortly after submitting an application you will receive confirmation of your coverage.  You can then email us to complete your waiver form.");
+                        writeText("J visa scholars not enrolled in classes are not allowed to waive the school plan.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("Florida International University Student Requirements", "http://studenthealth.fiu.edu/_assets/docs/Forms/Insurance%20Forms/Alternate%20Insurance%20Compliance%20Form%202013%20to%202014.pdf")                        
+                                ]));
+                        endRow();
+                    }
+              },                 
  
         lsu: {
                     windowTitle: "TaiAn Health Insurance for Louisiana State University",
