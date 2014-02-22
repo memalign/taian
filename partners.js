@@ -491,8 +491,8 @@ function getPartnership(partner) {
               },              
               
          cuny: {
-                    windowTitle: "TaiAn Health Insurance for CUNY",
-                    pageTitle: "TaiAn Health Insurance for CUNY",
+                    windowTitle: "TaiAn Health Insurance for City University of New York (CUNY)",
+                    pageTitle: "TaiAn Health Insurance for City University of New York (CUNY)",
                     tabs: [
                             "pivot-home",
                             "pivot-international-student",
@@ -503,12 +503,47 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet CUNY enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to CUNY as proof of insurance.");                        
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet all City University of New York (CUNY) enrolled international student standards and J scholar standards (See CUNY School List Below). Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to CUNY as proof of insurance.");                        
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("CUNY Scholar Requirements", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
-                                makeURL("CUNY Student Requirements", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html")                        
+                                makeURL("CUNY Requirements for all CUNY schools Students and Scholars", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html")
+                       
                                 ]));
+                        writeText("CUNY School List:");  
                         endRow();
+
+            
+
+
+                        startRow();
+                            document.write(makeTableWithStyle("invisibleTableNormalText", 3, [
+                                 makeURL("Baruch College", "http://www.baruch.cuny.edu/studentaffairs/healthServices_ins.htm"),
+                                 makeURL("Borough of Manhattan Community College", "http://www.bmcc.cuny.edu/admissions/applyinfo-international.jsp"),
+                                 makeURL("Bronx Community College", "http://www.bcc.cuny.edu/InternationalStudents/?page=InternationalResources"),
+                                 makeURL("Brooklyn College", "http://www.brooklyn.cuny.edu/web/about/offices/iss/services.php"),
+                                 makeURL("City College", "http://www.ccny.cuny.edu/shs/health-insurance.cfm"),   
+                                 makeURL("CUNY Graduate School of Journalism", "http://www.journalism.cuny.edu/admissions/international-students/#.UwOR3_ldV8G"),                                 
+                                 makeURL("CUNY School of Law", "http://www.law.cuny.edu/admissions/international-applicants.html"),
+                                 makeURL("CUNY School of Professional Studies", "http://sps.cuny.edu/admissions/internationalstudents"),
+                                 makeURL("CUNY Graduate Center", "http://www.gc.cuny.edu/CUNY_GC/media/CUNY-Graduate-Center/PDF/Health/Health_and_Insurance_Guide.pdf?ext=.pdf"),                                 
+                                 makeURL("Hostos Community College", "http://www.hostos.cuny.edu/ooa/international/Index.html"),                                 
+                                 makeURL("Hunter College", "http://www.hunter.cuny.edu/studentservices/counseling-and-wellness/wellness/health-insurance-for-international-students"),                                 
+                                 makeURL("John Jay College of Criminal Justice", "http://www.jjay.cuny.edu/1996.php"),                                
+                                 makeURL("Kingsborough Community College", "http://www.kbcc.cuny.edu/isa/Pages/default.aspx"),                                 
+                                 makeURL("LaGuardia Community College", "http://esl.lagcc.cuny.edu/inter.htm"),                                 
+                                 makeURL("Lehman College", "http://www.lehman.edu/student-health-center/index.php"),
+                                 makeURL("Medgar Evers College", "http://www.mec.cuny.edu/Division-of-Student-Affairs/healthservices.aspx"),
+                                 makeURL("New York City College of Technology", "http://www.citytech.cuny.edu/files/admissions/handbook.pdf"),
+                                 makeURL("Queens College", "http://www.qc.cuny.edu/StudentLife/services/health/Pages/Health%20Insurance.aspx"),
+                                 makeURL("Queensborough Community College", "http://www.qcc.cuny.edu/ISA/f1.html"),
+                                 makeURL("College of Staten Island", "http://www.csi.cuny.edu/studentaffairs/healthservices/insurance.html"),
+                                 makeURL("York College", "http://www.york.cuny.edu/student/international")                                 
+                                 
+                            ]));
+                        writeText("");                            
+                            endRow();                            
+                        
+                        
+
                     }
               },                  
 

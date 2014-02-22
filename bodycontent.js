@@ -2249,6 +2249,20 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School J1 requirement", "http://www.babson.edu/about-babson/global/mie/isss/visiting-scholars/Pages/health-insurance-requirement.aspx"),
                 makeURL("Health insurance for Babson College Scholars", "#ibabson"),                  
                 
+                makeURL("Baruch College, CUNY (NY)", "http://www.baruch.cuny.edu/"),
+                makeURL("School F1 requirement", "http://www.baruch.cuny.edu/studentaffairs/healthServices_ins.htm"),
+                makeURL("School J1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
+                makeURL("Health insurance for CUNY Students and Scholars", "#icuny"),  
+
+                makeURL("Bellevue College (WA)", "http://bellevuecollege.edu/"),
+                makeURL("School F1 requirement", "http://bellevuecollege.edu/isp/insurance.html"),
+                makeURL("School J1 requirement", "http://bellevuecollege.edu/isp/insurance.html"),
+                makeURL("Health insurance for Bellevue College Students and Scholars", "#ibvc"),                  
+                
+                makeURL("Borough of Manhattan Community College, CUNY (NY)", "http://www.bmcc.cuny.edu/j2ee/index.jsp"),
+                makeURL("School F1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
+                makeURL("School J1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
+                makeURL("Health insurance for CUNY Students and Scholars", "#icuny"),
                 
                 makeURL("Boston College (MA)", "http://www.bc.edu/"),
                 makeURL("School F1 requirement", "http://www.bc.edu/content/bc/offices/oiss/incoming/pre/health.html"),
@@ -2258,12 +2272,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Boston University (MA)", "http://www.bu.edu/"),
                 makeURL("School F1 requirement", "http://www.bu.edu/studentaccountingservices/resources/medical-insurance/"),
                 makeURL("School J1 requirement", "http://www.bu.edu/isso/administrators/j1/ev-overview.html"),
-                makeURL("Health insurance for Boston University Scholars", "#ibu"),
-                
-                makeURL("Bellevue College (WA)", "http://bellevuecollege.edu/"),
-                makeURL("School F1 requirement", "http://bellevuecollege.edu/isp/insurance.html"),
-                makeURL("School J1 requirement", "http://bellevuecollege.edu/isp/insurance.html"),
-                makeURL("Health insurance for Bellevue College Students and Scholars", "#ibvc"),                
+                makeURL("Health insurance for Boston University Scholars", "#ibu"),                            
                 
                 makeURL("Brandeis University (MA)", "http://www.brandeis.edu/"),
                 makeURL("School F1 requirement", "http://heller.brandeis.edu/admissions/admitted-students/grad-selection-form-8-2011.pdf"),
@@ -2274,6 +2283,16 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School F1 requirement", "http://health.byu.edu/index2.php?page=/faq/hpfaq.php#2"),
                 makeURL("School J1 requirement", "https://internationalservices.byu.edu/content/insurance"),
                 makeURL("Plan that meets this school's standards for J scholar", "#usdos"),
+
+                makeURL("Bronx Community College, CUNY (NY)", "http://www.bcc.cuny.edu/"),
+                makeURL("School F1 requirement", "http://www.bcc.cuny.edu/InternationalStudents/?page=InternationalResources"),
+                makeURL("School J1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
+                makeURL("Health insurance for CUNY Students and Scholars", "#icuny"),
+
+                makeURL("Brooklyn College, CUNY (NY)", "http://www.brooklyn.cuny.edu/"),
+                makeURL("School F1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
+                makeURL("School J1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
+                makeURL("Health insurance for CUNY Students and Scholars", "#icuny"),
                 
                 makeURL("Brown University (RI)", "http://www.brown.edu/"),
                 makeURL("School F1 requirement", "http://www.universityhealthplans.com/letters/letter.cgi?school_id=165"),
@@ -2300,6 +2319,16 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School J1 requirement", "http://www.cwu.edu/international-programs/medical-insurance"),
                 makeURL("Health insurance for Central Washington University Students and Scholars", "#icwu"),
 
+                makeURL("City College of New York, CUNY (NY)", "http://www.ccny.cuny.edu/"),
+                makeURL("School F1 requirement", "http://www.ccny.cuny.edu/shs/health-insurance.cfm"),
+                makeURL("School J1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
+                makeURL("Health insurance for CUNY Students and Scholars", "#icuny"),                
+                
+                makeURL("City University of New York - CUNY (NY)", "http://www.cuny.edu/index.html"),
+                makeURL("School F1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
+                makeURL("School J1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
+                makeURL("Health insurance for CUNY Students and Scholars", "#icuny"),                
+                
                 makeURL("Claremont School of Theology (CA)", "http://www.cst.edu/"),
                 makeURL("School F1 requirement", "http://www.cst.edu/international-students/incoming-students/health-insurance/"),
                 makeURL("School J1 requirement", "http://www.cst.edu/international-students/visiting-scholars/"),
@@ -2319,7 +2348,12 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School F1 requirement", "http://www.csuohio.edu/offices/health/InsuranceWaiver.html"),
                 makeURL("School J1 requirement", "http://www.csuohio.edu/offices/international/academic/exchange_visitors/exchange_form.html"),
                 makeURL("Health insurance for Cleveland State University Scholars", "#icsuohio"),
-                
+ 
+                makeURL("College of Staten Island, CUNY (NY)", "http://www.csi.cuny.edu/"),
+                makeURL("School F1 requirement", "http://www.csi.cuny.edu/studentaffairs/healthservices/insurance.html"),
+                makeURL("School J1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
+                makeURL("Health insurance for CUNY Students and Scholars", "#icuny"),
+ 
                 makeURL("Colorado State University (CO)", "http://www.colostate.edu/"),
                 makeURL("School F1 requirement", "http://www.health.colostate.edu/pages/insurance.aspx"),
                 makeURL("School J1 requirement", "http://www.health.colostate.edu/pages/insurance.aspx"),
@@ -2338,9 +2372,24 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Cornell University (NY)", "http://www.cornell.edu/"),
                 makeURL("School F1 requirement", "http://www.gannett.cornell.edu/insurance/undergrads/enrollment/"),
                 makeURL("School J1 requirement", "http://www.isso.cornell.edu/academicstaff/j1insurance.php"),
-                makeURL("Health insurance for Cornell University Scholars", "#icornell"),
+                makeURL("Health insurance for Cornell University Scholars", "#icornell"),               
+
+                makeURL("CUNY Graduate Center, CUNY (NY)", "http://www.gc.cuny.edu/Home"),
+                makeURL("School F1 requirement", "http://www.gc.cuny.edu/CUNY_GC/media/CUNY-Graduate-Center/PDF/Health/Health_and_Insurance_Guide.pdf?ext=.pdf"),
+                makeURL("School J1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
+                makeURL("Health insurance for CUNY Students and Scholars", "#icuny"),                
                 
-                makeURL("CUNY (NY)", "http://www.cuny.edu/index.html"),
+                makeURL("CUNY Graduate School of Journalism, CUNY (NY)", "http://www.journalism.cuny.edu/"),
+                makeURL("School F1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
+                makeURL("School J1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
+                makeURL("Health insurance for CUNY Students and Scholars", "#icuny"),
+                
+                makeURL("CUNY School of Law, CUNY (NY)", "http://www.law.cuny.edu/index.html"),
+                makeURL("School F1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
+                makeURL("School J1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
+                makeURL("Health insurance for CUNY Students and Scholars", "#icuny"), 
+
+                makeURL("CUNY School of Professional Studies, CUNY (NY)", "http://sps.cuny.edu/"),
                 makeURL("School F1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
                 makeURL("School J1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
                 makeURL("Health insurance for CUNY Students and Scholars", "#icuny"),                
@@ -2414,6 +2463,16 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School F1 requirement", "http://www.hio.harvard.edu/healthcareandinsurance/students/healthinsurancerequirementsandwaivers/"),
                 makeURL("School J1 requirement", "http://www.hio.harvard.edu/healthcareandinsurance/scholars/requirementsforjvisaholders/"),
                 makeURL("Health insurance for Harvard University and Harvard Medical School Scholars", "#iharvard"),
+
+                makeURL("Hostos Community College, CUNY (NY)", "http://www.hostos.cuny.edu/"),
+                makeURL("School F1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
+                makeURL("School J1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
+                makeURL("Health insurance for CUNY Students and Scholars", "#icuny"),
+                
+                makeURL("Hunter College, CUNY (NY)", "http://www.hunter.cuny.edu/main/"),
+                makeURL("School F1 requirement", "http://www.hunter.cuny.edu/studentservices/counseling-and-wellness/wellness/health-insurance-for-international-students"),
+                makeURL("School J1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
+                makeURL("Health insurance for CUNY Students and Scholars", "#icuny"),                
                 
                 makeURL("Indiana University-Bloomington", "http://www.iub.edu/"),
                 makeURL("School F1 requirement", "http://ois.iu.edu/living-working/health/insurance/waiver.shtml"),
@@ -2439,7 +2498,12 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School F1 requirement", "http://ois.johnshopkins.edu/Life_in_Baltimore/Health_and_Safety/Health_Insurance/"),
                 makeURL("School J1 requirement", "http://ois.johnshopkins.edu/Immigration_and_%20Visas/J1_Scholar/Maintaining_J1_Scholar_Status/Health_Insurance_Requirements/index.html"),                
                 makeURL("Health insurance for Johns Hopkins Medical Scholars", "#ijhu"),
-                            
+
+                makeURL("John Jay College of Criminal Justice, (NY)", "http://www.jjay.cuny.edu/"),
+                makeURL("School F1 requirement", "http://www.jjay.cuny.edu/1996.php"),
+                makeURL("School J1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
+                makeURL("Health insurance for CUNY Students and Scholars", "#icuny"),
+                
                 makeURL("Kansas State University (KS)", "http://www.k-state.edu/"),
                 makeURL("School F1 requirement", "http://www.k-state.edu/isss/current/healthinsurance.html"),
                 makeURL("School J1 requirement", "http://www.k-state.edu/isss/j-1/jhealthins.html"),
@@ -2450,11 +2514,25 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School J1 requirement", "http://www.kent.edu/isss/scholars/upload/j1-student-and-scholar-guide.pdf"),
                 makeURL("Health insurance for Kent State University Students and Scholars", "#ikent"),
 
-    
+                makeURL("Kingsborough Community College, CUNY (NY)", "http://www.kbcc.cuny.edu/Pages/default.aspx"),
+                makeURL("School F1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
+                makeURL("School J1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
+                makeURL("Health insurance for CUNY Students and Scholars", "#icuny"),                
+
+                makeURL("LaGuardia Community College, CUNY (NY)", "http://www.laguardia.cuny.edu/home/"),
+                makeURL("School F1 requirement", "http://esl.lagcc.cuny.edu/inter.htm"),
+                makeURL("School J1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
+                makeURL("Health insurance for CUNY Students and Scholars", "#icuny"),
+                
                 makeURL("Lehigh University (PA)", "http://www.lehigh.edu/"),
                 makeURL("School F1 requirement", "http://www.lehigh.edu/~intnl/undergraduate.html"),
                 makeURL("School J1 requirement", "http://www.lehigh.edu/oiss/j1health.html"),
                 makeURL("Plan that meets this school's standards for J scholar", "#usdos"),
+                
+                makeURL("Lehman College, CUNY (NY)", "http://www.lehman.edu/"),
+                makeURL("School F1 requirement", "http://www.lehman.edu/student-health-center/health-insurance.php"),
+                makeURL("School J1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
+                makeURL("Health insurance for CUNY Students and Scholars", "#icuny"),                
                 
                 makeURL("LSU Baton Rouge(LA)", "http://www.lsu.edu"),
                 makeURL("School F1 requirement", "http://www.oip.lsu.edu/iso/iso_Insurance_Important_Info.htm"),
@@ -2466,6 +2544,11 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School J1 requirement", "http://web.mit.edu/scholars/intlscholars/healthinsurance/j1requirements.html"),
                 makeURL("Health insurance for MIT Scholars", "#imit"),
 
+                makeURL("Medgar Evers College, CUNY (NY)", "http://www.mec.cuny.edu/"),
+                makeURL("School F1 requirement", "http://www.mec.cuny.edu/Division-of-Student-Affairs/healthservices.aspx"),
+                makeURL("School J1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
+                makeURL("Health insurance for CUNY Students and Scholars", "#icuny"),                
+                
                 makeURL("Medical University of South Carolina (MUSC) (SC)", "http://academicdepartments.musc.edu/musc/"),
                 makeURL("School F1 requirement", "http://academicdepartments.musc.edu/esl/studenthealth/student_resources/healthinsinfo.html"),
                 makeURL("School J1 requirement", "http://academicdepartments.musc.edu/immigrationservices/j1procedures.html"),
@@ -2496,6 +2579,10 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School J1 requirement", "https://www.newschool.edu/international-student-services/resources/health-insurance-for-internationals/"),
                 makeURL("Health insurance for New School Scholars", "#inewschool"),                
 
+                makeURL("New York City College of Technology, CUNY (NY)", "http://www.citytech.cuny.edu/"),
+                makeURL("School F1 requirement", "http://www.citytech.cuny.edu/files/admissions/handbook.pdf"),
+                makeURL("School J1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
+                makeURL("Health insurance for CUNY Students and Scholars", "#icuny"),
                 
                 makeURL("New York University and NYU Poly (NY)", "http://www.nyu.edu/"),
                 makeURL("School F1 requirement", "http://www.nyu.edu/global/international-immigration-services/students/inbound-to-nyc/pre-arrival/required-health-insurance-coverage.html"),
@@ -2561,7 +2648,17 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School F1 requirement", "http://www.purdue.edu/push/insurance/waivers.shtml"),
                 makeURL("School J1 requirement", "http://www.iss.purdue.edu/Current/J1/HealthInsurance.cfm"),
                 makeURL("Health insurance for Purdue Students and Scholars", "#ipurdue"),
+ 
+                makeURL("Queens College, CUNY (NY)", "http://www.qc.cuny.edu/Pages/home.aspx"),
+                makeURL("School F1 requirement", "http://www.qc.cuny.edu/StudentLife/services/health/Pages/Health%20Insurance.aspx#internationalstudent"),
+                makeURL("School J1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
+                makeURL("Health insurance for CUNY Students and Scholars", "#icuny"),
                 
+                makeURL("Queensborough Community College, CUNY (NY)", "http://www.qcc.cuny.edu/"),
+                makeURL("School F1 requirement", "http://www.qcc.cuny.edu/ISA/f1.html"),
+                makeURL("School J1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
+                makeURL("Health insurance for CUNY Students and Scholars", "#icuny"),                
+ 
                 makeURL("Rensselaer Polytechnic Institute (NY)", "http://www.rpi.edu/"),
                 makeURL("School F1 requirement", "http://studenthealth.rpi.edu/insurance.php?catid=1035"),
                 makeURL("School J1 requirement", "http://doso.rpi.edu/update.do?artcenterkey=494"),
@@ -3101,7 +3198,13 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Yale University (CT)", "http://www.yale.edu/"),
                 makeURL("School F1 requirement", "http://www.yale.edu/oiss/life/practical/health/index.html"),
                 makeURL("School J1 requirement", "http://www.yale.edu/oiss/immigration/common/j1students/health.html"),
-                makeURL("Health insurance for Yale University International Students and Scholars", "#iyale")
+                makeURL("Health insurance for Yale University International Students and Scholars", "#iyale"),
+                
+                makeURL("York College, CUNY (NY)", "http://www.york.cuny.edu/"),
+                makeURL("School F1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
+                makeURL("School J1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
+                makeURL("Health insurance for CUNY Students and Scholars", "#icuny")                
+                
                 ]));
     endRow();
     endSection();
