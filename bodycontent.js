@@ -771,7 +771,8 @@ function referralSubstitution(key) {
         gcuny: "partner=cuny&p=pivot-international-student&adid=gcuny",
         acncuny: "l=cn&partner=cuny&p=pivot-international-student&adid=acncuny", 
         icuny: "partner=cuny&p=pivot-international-student",
-        icncuny: "l=cn&partner=cuny&p=pivot-international-student",   
+        icncuny: "l=cn&partner=cuny&p=pivot-international-student",  
+        cunyexch: "l=cn&partner=cuny&p=exchange-form",         
         
 
         
