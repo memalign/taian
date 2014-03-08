@@ -2615,6 +2615,30 @@ function getPartnership(partner) {
                     }
               }, 
               
+        umass: {
+                    windowTitle: "TaiAn Health Insurance for University of Massachusetts - Amherst, Dartmouth, and Lowell",
+                    pageTitle: "TaiAn Health Insurance for University of Massachusetts - Amherst, Dartmouth, and Lowell",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Massachusetts - Amherst, Dartmouth, and Lowell J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Massachusetts - Amherst, Dartmouth, and Lowell as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("University of Massachusetts - Amherst Scholar Requirements", "http://www.umass.edu/ipo/iss/health.php"), 
+                                makeURL("University of Massachusetts - Dartmouth Scholar Requirements", "http://www.umassd.edu/international_students/informationforj-1scholars/healthinsurance/"),
+                                makeURL("University of Massachusetts - Lowell Scholar Requirements", "http://www.uml.edu/ISSO/Employment/j1-training.aspx")                                
+                                ]));
+                        endRow();
+                    }
+              },               
+              
+              
         unl: {
                     windowTitle: "TaiAn Health Insurance for University of Nebraska (Lincoln)",
                     pageTitle: "TaiAn Health Insurance for University of Nebraska (Lincoln)",

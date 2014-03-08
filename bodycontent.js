@@ -556,7 +556,17 @@ function referralSubstitution(key) {
         acnunl: "l=cn&partner=unl&p=pivot-international-student&adid=acnunl", 
         iunl: "partner=unl&p=pivot-international-student",
         icnunl: "l=cn&partner=unl&p=pivot-international-student", 
-        unlexch: "l=cn&partner=unl&p=exchange-form",    
+        unlexch: "l=cn&partner=unl&p=exchange-form", 
+
+        umass: "partner=umass&p=pivot-home&adid=sumass",
+        cnumass: "l=cn&partner=umass&p=pivot-home&adid=scnumass",   
+        gcnumass: "l=cn&partner=umass&p=pivot-international-student&adid=gcnumass",
+        gumass: "partner=umass&p=pivot-international-student&adid=gumass",
+        acnumass: "l=cn&partner=umass&p=pivot-international-student&adid=acnumass", 
+        iumass: "partner=umass&p=pivot-international-student",
+        icnumass: "l=cn&partner=umass&p=pivot-international-student", 
+        umassexch: "l=cn&partner=umass&p=exchange-form",
+        
 
         unomaha: "partner=unomaha&p=pivot-home&adid=sunomaha",
         cnunomaha: "l=cn&partner=unomaha&p=pivot-home&adid=scnunomaha",   
@@ -671,13 +681,17 @@ function referralSubstitution(key) {
         acnucincinnati: "l=cn&partner=ucincinnati&p=pivot-international-student&adid=acnucincinnati", 
         iucincinnati: "partner=ucincinnati&p=pivot-international-student",
         icnucincinnati: "l=cn&partner=ucincinnati&p=pivot-international-student",    
+
         umb: "partner=umb&p=pivot-home&adid=sumb",
         cnumb: "l=cn&partner=umb&p=pivot-home&adid=scnumb",   
         gcnumb: "l=cn&partner=umb&p=pivot-international-student&adid=gcnumb",
         gumb: "partner=umb&p=pivot-international-student&adid=gumb",
         acnumb: "l=cn&partner=umb&p=pivot-international-student&adid=acnumb", 
         iumb: "partner=umb&p=pivot-international-student",
-        icnumb: "l=cn&partner=umb&p=pivot-international-student",          
+        icnumb: "l=cn&partner=umb&p=pivot-international-student", 
+
+
+        
         usf: "partner=usf&p=pivot-home&adid=susf",
         cnusf: "l=cn&partner=usf&p=pivot-home&adid=scnusf",   
         gcnusf: "l=cn&partner=usf&p=pivot-international-student&adid=gcnusf",
@@ -2925,17 +2939,22 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("University of Massachusetts - Amherst (MA)", "http://www.umass.edu/"),
                 makeURL("School F1 requirement", "http://www.umass.edu/uhs/insurance/ship/"),
                 makeURL("School J1 requirement", "http://www.umass.edu/ipo/iss/health.php"),
-                makeURL("Plan that meets this school's standards for J scholar", "#usdos"),
+                makeURL("Health insurance for UMASS Amherst Scholars", "#iumass"),
                 
                 makeURL("University of Massachusetts - Boston (MA)", "http://www.umb.edu/"),
                 makeURL("School F1 requirement", "http://cdn.umb.edu/images/healthservices/enrolling_in_or_waiving_student_health-insurance.pdf"),
                 makeURL("School J1 requirement", "http://www.umb.edu/academics/oita/isss/scholar_services#insurance"),
-                makeURL("Health insurance for UMASS Boston Scholars", "#iumb"),                
+                makeURL("Health insurance for UMASS Boston Scholars", "#iumb"),  
+
+                makeURL("University of Massachusetts - Dartmouth (MA)", "http://www.umassd.edu/"),
+                makeURL("School F1 requirement", "http://www.umassd.edu/studentaffairs/health/healthinsurance/"),
+                makeURL("School J1 requirement", "http://www.umassd.edu/international_students/informationforj-1scholars/healthinsurance/"),
+                makeURL("Health insurance for UMASS Dartmouth Scholars", "#iumass"),                
                 
                 makeURL("University of Massachusetts - Lowell (MA)", "http://www.uml.edu/"),
-                "",
+                makeURL("School F1 requirement", "http://www.uml.edu/Tuition-fees/Tuition-Costs/Undergraduate-Students/Additional-Fees.aspx"),
                 makeURL("School J1 requirement", "http://www.uml.edu/ISSO/Employment/j1-training.aspx"),
-                makeURL("Plan that meets this school's standards for J scholar", "#usdos"),
+                makeURL("Health insurance for UMASS Lowell Scholars", "#iumass"),
                 
                 makeURL("University of Miami (FL)", "http://www.miami.edu/"),
                 makeURL("School F1 requirement", "http://www.miami.edu/sa/index.php/student_health_center/insurance_information/"),
