@@ -160,9 +160,22 @@ l['TaiAn Health Insurance for Fordham University'] = "泰安国际医疗保险 -
 l['Fordham University requirements for F1 international students or J1 scholar health insurance are: 1. Medical benefits of $500,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Taian Scholar/Student Insurance Plan B and Plan C with $500,000 benefit per illness or injury is the most affordable plan that meets the school requirements and the US Department of State requirements (which plan is more affordable depends on your age and family members). Shortly after submitting an application you will receive confirmation of your coverage which you can send to your school as proof of insurance.'] = "Fordham University对F1国际学生和J1访问学者医疗保险的要求是：1. 每次生病或受伤的最高赔付为$500,000; 2. 遗体返送$7,500; 3. 紧急救护$10,000; 4. 免赔额不超过$500。 泰安访问学者/留学生保险计划B和计划C里的每次生病或受伤最高赔付$500,000选项是满足此标准和美国国务院标准的最经济实惠的保险计划(哪个计划更划算取决于你的年龄和家属成员）。 网上提交申请几分钟后你就会收到Email电子保单，其中含有保险卡和确认信(Visa Letter)。将确认信发给学校证明你已购买满足学校要求的保险。";
 l['Fordham University Student and Scholar Requirements'] = "Fordham University 留学生和访问学者保险的标准";
 l['Monthly Price for Plan C ($500,000 benefit, $500 deductible)'] = "计划C的月费（$500,000最高赔付，$500免赔额）";
-l[''] = "";
-l[''] = "";
-l[''] = "";
+
+
+l['Western University of Health Sciences exchange visitors (J visa) have required health insurance coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Taian Scholar/Student Insurance Plan B ($100 deductible) and Plan C ($500 deductible) with $50,000 benefit per illness or injury is the most affordable plan that meets the school requirements and the US Department of State requirements (which plan is more affordable depends on your age and family members). Shortly after submitting an application you will receive confirmation of your coverage which you can send to your school as proof of insurance.  See plan benefits in the chart below.'] = "";
+l['TaiAn Health Insurance for Western University of Health Sciences'] = "泰安国际医疗保险 - Western University of Health Sciences";
+l['Western University of Health Sciences Scholar Requirements'] = "Western University of Health Sciences 访问学者医疗保险的标准";
+l['STUDENTS (CA or OR)'] = "";
+l['Western University of Health Sciences enrolled F visa students have required health insurance coverage as follows: 1. Deductible not over $1,000 per policy year (and not over $2,000 for family). Taian Scholar/Student Insurance Plan C ($1000 deductible) with $50,000 benefit is the most affordable plan that meets the school requirements.'] = "";
+l['Western University of Health Sciences enrolled J visa students have required health insurance coverage as follows: 1. Deductible not over $500 per policy year (and not over $2,000 for family); 2. Repatriation of remains of $10,000; 3. Medical evacuation of $15,000. Taian Scholar/Student Insurance Plan C ($500 deductible) with $50,000 benefit is the most affordable plan that meets the school requirements and the US Department of State requirements.'] = "";
+l['Western University of Health Sciences (CA) Student Requirements'] = "Western University of Health Sciences (CA) 留学生医疗保险的标准";
+l['Western University of Health Sciences (OR) Student Requirements'] = "Western University of Health Sciences (OR) 留学生医疗保险的标准";
+l['Plan C (Patriot Travel) $50,000 /$1,000 deductible'] = "计划C(Patriot Travel) 最高赔付$50,000 / 免赔额$1,000";
+l['(All Student - Recommended Plan)'] = "";
+l['(F visa Student - Lowest Cost Plan)'] = "";
+l['CA F1 student requirement'] = "";
+l['OR F1 student requirement'] = "";
+l['Health insurance for Western University of Health Sciences Students and Scholars'] = "符合Western University of Health Sciences标准的留学生和访问学者医疗保险";
 
 l['UC Riverside requirements for J1 scholar (not for enrolled students) health insurance are: 1. Medical benefits of $500,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $50,000; 4. Deductible not over $250. Taian Scholar/Student Insurance Plan B and Plan C with $500,000 benefit per illness or injury is the most affordable plan that meets the school requirements and the US Department of State requirements (which plan is more affordable depends on your age and family members). Shortly after submitting an application you will receive confirmation of your coverage which you can send to school as proof of insurance.'] = "UC Riverside 对J1访问学者(不包括在校学生)医疗保险的要求是：1. 每次生病或受伤的最高赔付为$500,000; 2. 遗体返送$7,500; 3. 紧急救护$50,000; 4. 免赔额不超过$250。泰安访问学者/留学生保险计划B和计划C里的每次生病或受伤最高赔付$500,000选项是满足此标准和美国国务院标准的最经济实惠的保险计划(哪个计划更划算取决于你的年龄和家属成员）。 网上提交申请几分钟后你就会收到Email电子保单，其中含有保险卡和确认信(Visa Letter)。将确认信发给学校证明你已购买满足学校要求的保险。";
 l['Monthly Price for Plan B ($500,000 per illness or injury)'] = "计划B的月费（$500,000每次生病最高赔付）";

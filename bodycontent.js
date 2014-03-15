@@ -93,6 +93,11 @@ function referralSubstitution(key) {
         cn1: "l=cn&p=pivot-school-waiver",
         cn2: "l=cn&p=pivot-school-waiver", 
 
+        aebj: "l=cn&p=pivot-school-waiver&adid=aebj",  
+        aesh: "l=cn&p=pivot-school-waiver&adid=aesh",   
+        ucsh: "l=cn&p=pivot-school-waiver&adid=ucsh",
+        aeshmain: "l=cn&p=pivot-home&adid=aeshmain",        
+
         confucius: "p=pivot-confucius-educator", 
         cnconfucius: "p=pivot-confucius-educator&l=cn",         
         cnkongalfred: "p=pivot-confucius-educator&l=cn&adid=cnkongalfred",
@@ -270,6 +275,18 @@ function referralSubstitution(key) {
         acnutsouthwestern: "l=cn&partner=utsouthwestern&p=pivot-international-student&adid=acnutsouthwestern",  
         iutsouthwestern: "partner=utsouthwestern&p=pivot-international-student",
         icnutsouthwestern: "l=cn&partner=utsouthwestern&p=pivot-international-student", 
+        utsouthwesternexch: "l=cn&partner=utsouthwestern&p=exchange-form",
+        
+        westernu: "partner=westernu&p=pivot-home&adid=swesternu",
+        cnwesternu: "l=cn&partner=westernu&p=pivot-home&adid=scnwesternu",   
+        gcnwesternu: "l=cn&partner=westernu&p=pivot-international-studentandscholar&adid=gcnwesternu",
+        gwesternu: "partner=westernu&p=pivot-international-studentandscholar&adid=gwesternu",
+        acnwesternu: "l=cn&partner=westernu&p=pivot-international-studentandscholar&adid=acnwesternu",  
+        iwesternu: "partner=westernu&p=pivot-international-studentandscholar",
+        icnwesternu: "l=cn&partner=westernu&p=pivot-international-studentandscholar", 
+        westernuexch: "l=cn&partner=westernu&p=exchange-form",        
+
+        
 
         uth: "partner=uth&p=pivot-home&adid=suth",
         cnuth: "l=cn&partner=uth&p=pivot-home&adid=scnuth",   
@@ -857,7 +874,7 @@ function referralSubstitution(key) {
         vcuexch: "l=cn&partner=vcu&p=exchange-form", 
         csuohioexch: "l=cn&partner=csuohio&p=exchange-form", 
         murraystateexch: "l=cn&partner=murraystate&p=exchange-form",        
-        utsouthwesternexch: "l=cn&partner=utsouthwestern&p=exchange-form",        
+        
         ucdavisbform: "l=cn&partner=ucdavis&p=exchange-form",        
         univtemplate: "partner=univtemplate",
         usc: "partner=usc&p=pivot-home&adid=susc",
@@ -3187,7 +3204,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("Virginia Tech (VA)", "http://www.vt.edu/"),
                 makeURL("School F1 requirement", "http://graduateschool.vt.edu/igss/application_prearrival/insurance.html"),
-                makeURL("School J1 requirement", "http://www.oired.vt.edu/iss/jvisa/health-insurance.html"),
+                makeURL("School J1 requirement", "http://www.iss.vt.edu/index.php/foreign-national/j-1/health-insurance"),
                 makeURL("Health insurance for Virginia Tech Scholars", "#ivt"),
                 
                 makeURL("Washington State University", "http://www.wsu.edu/"),
@@ -3210,6 +3227,16 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School J1 requirement", "http://well.wvu.edu/medical/insurance/international-students"),
                 makeURL("Health insurance for West Virginia University Scholars", "#iwvu"),
 
+                makeURL("Western University of Health Sciences (CA, OR)", "http://www.westernu.edu/"),
+                    makeBulletedListWithTitle("", [
+                        makeURL("CA F1 student requirement", 
+                        "http://www.westernu.edu/students/students-services/students-services-insurance/"),
+                        makeURL("OR F1 student requirement", 
+                        "http://www.westernu.edu/students-or/students-services-or/students-services-insurance-or/")
+                        ]),  
+                makeURL("School J1 requirement", "http://www.westernu.edu/exchange-visitors/exchange-visitors-prospective-information/exchange-visitors-health-insurance/"),
+                makeURL("Health insurance for Western University of Health Sciences Students and Scholars", "#iwesternu"),                
+                
                 makeURL("Western Washington University (WA)", "http://www.wwu.edu/"),
                 makeURL("School F1 requirement", "http://www.wwu.edu/chw/student_health/billing.shtml"),
                 makeURL("School J1 requirement", "http://www.wwu.edu/chw/student_health/billing.shtml"),

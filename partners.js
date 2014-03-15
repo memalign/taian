@@ -633,7 +633,10 @@ function getPartnership(partner) {
                                 ]));
                         endRow();
                     }
-              },                  
+              },                
+
+
+                        
 
          uconn: {
                     windowTitle: "TaiAn Health Insurance for University of Connecticut",
@@ -743,7 +746,7 @@ function getPartnership(partner) {
                         writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Virginia Tech J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Virginia Tech as proof of insurance.");
 
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("Virginia Tech Scholar Requirements", "http://www.oired.vt.edu/iss/jvisa/health-insurance.html")
+                                makeURL("Virginia Tech Scholar Requirements", "http://www.iss.vt.edu/index.php/foreign-national/j-1/health-insurance")
                         
                                 ]));
                         endRow();
@@ -1497,7 +1500,149 @@ function getPartnership(partner) {
 
                     
               },              
-              
+        
+
+      
+        
+        westernu: {
+                    windowTitle: "TaiAn Health Insurance for Western University of Health Sciences",
+                    pageTitle: "TaiAn Health Insurance for Western University of Health Sciences",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-studentandscholar",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+
+                    internationalStudentandscholarContent: function () {
+                        startRow();
+                        writeText("J SCHOLARS  (STUDENTS SCROLL DOWN THE PAGE)");                        
+                        writeText("");
+                        writeText("Western University of Health Sciences exchange visitors (J visa) have required health insurance coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Taian Scholar/Student Insurance Plan B ($100 deductible) and Plan C ($500 deductible) with $50,000 benefit per illness or injury is the most affordable plan that meets the school requirements and the US Department of State requirements (which plan is more affordable depends on your age and family members). Shortly after submitting an application you will receive confirmation of your coverage which you can send to your school as proof of insurance.  See plan benefits in the chart below.");                        
+                        document.write(makeBulletedListWithTitle("", [
+                        
+                                makeURL("Western University of Health Sciences Scholar Requirements", "http://www.westernu.edu/exchange-visitors/exchange-visitors-prospective-information/exchange-visitors-health-insurance/") 
+                                ]));
+                        endRow();
+
+                        startRow();
+                            document.write(makeTable(3,
+                            [
+                            // Column headers:
+
+                            "Plan A (Student Health Advantage) $300,000 / $100 deductible / Maternity", "Plan B (Patriot Exchange) $50,000 / $100 deductible", "Plan C (Patriot Travel) $50,000 /$500 deductible",
+                            "Monthly Premium", "Monthly Premium", "Monthly Premium",
+                            "(J Scholar - Recommended if you want maternity benefit)", "(J Scholar - Recommended Plan)", "(J Scholar)",
+
+                            // Table within a table
+
+                                makeTable(4, [
+                                "Age",     "J1 Scholar", "Spouse", "Children",
+                                "&lt; 19", "$72",   "$386",   "$82",
+                                "19-23",   "$95",   "$386",   "$82",
+                                "24-30",   "$110",  "$426",   "$82",
+                                "31-40",   "$197",  "$567",   "$82",
+                                "41-50",   "$322",  "$586",   "$82",
+                                "51-64",   "$430",  "$567",   "$82"
+                                
+                                ]), 
+
+                                makeTable(4, [
+                                "Age",     "J1 Scholar", "Spouse", "Children",
+                                "&lt; 25", "$48.62",   "$48.62",   "$48.62",
+                                "25-49",   "$63.37",   "$63.37",   "$48.62",
+                                "50-64",   "$135.70",  "$135.70",   "$63.66"
+                                ]),                                
+
+                                makeTable(4, [
+                                "Age",     "J1 Scholar", "Spouse", "Children",
+                                "&lt; 30", "$33.30",   "$33.30",   "$30.60",
+                                "30-39",   "$44.10",   "$44.10",   "$30.60",
+                                "40-49",   "$65.70",  "$65.70",   "$30.60",
+                                "50-59",   "$96.30",  "$96.30",   "$30.60"
+                                ]),                                 
+
+                    
+                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Patriot Exchange Program - Standard"), "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+                                "",
+                                makeBuyURL(loc("Buy Group") + "<br />" + loc("Group for 2 or more"), "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699")                                 
+
+                                   ])
+                                    );
+                        endRow();  
+
+                        startRow();
+                        writeText("");
+                        writeText("STUDENTS (CA or OR)");                        
+                        writeText("");
+                        writeText("Western University of Health Sciences enrolled F visa students have required health insurance coverage as follows: 1. Deductible not over $1,000 per policy year (and not over $2,000 for family). Taian Scholar/Student Insurance Plan C ($1000 deductible) with $50,000 benefit is the most affordable plan that meets the school requirements.");                        
+                        writeText("Western University of Health Sciences enrolled J visa students have required health insurance coverage as follows: 1. Deductible not over $500 per policy year (and not over $2,000 for family); 2. Repatriation of remains of $10,000; 3. Medical evacuation of $15,000. Taian Scholar/Student Insurance Plan C ($500 deductible) with $50,000 benefit is the most affordable plan that meets the school requirements and the US Department of State requirements.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("Western University of Health Sciences (CA) Student Requirements", "http://www.westernu.edu/students/students-services/students-services-insurance/"),
+                                makeURL("Western University of Health Sciences (OR) Student Requirements", "http://www.westernu.edu/students-or/students-services-or/students-services-insurance-or/")                      
+
+                                ]));
+                        endRow();
+
+                        startRow();
+                            document.write(makeTable(2,
+                            [
+                            // Column headers:
+
+                            "Plan C (Patriot Travel) $50,000 /$500 deductible", "Plan C (Patriot Travel) $50,000 /$1,000 deductible",
+                            "Monthly Premium", "Monthly Premium",
+                            "(All Student - Recommended Plan)", "(F visa Student - Lowest Cost Plan)",
+
+                            // Table within a table
+
+
+
+                                                              
+
+                                makeTable(4, [
+                                "Age",     "F1/J1 Student", "Spouse", "Children",
+                                "&lt; 30", "$33.30",   "$33.30",   "$30.60",
+                                "30-39",   "$44.10",   "$44.10",   "$30.60",
+                                "40-49",   "$65.70",  "$65.70",   "$30.60",
+                                "50-59",   "$96.30",  "$96.30",   "$30.60"
+                                ]),                                 
+
+                                makeTable(4, [
+                                "Age",     "F1/J1 Student", "Spouse", "Children",
+                                "&lt; 30", "$29.60",   "$29.60",   "$27.20",
+                                "30-39",   "$39.20",   "$39.20",   "$27.20",
+                                "40-49",   "$58.40",  "$58.40",   "$27.20",
+                                "50-59",   "$85.60",  "$85.60",   "$27.20"
+                                ]),                     
+
+
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+
+                                makeBuyURL(loc("Buy Group")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),                                 
+                                makeBuyURL(loc("Buy Group")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699")
+                                   ])
+                                    );
+                        endRow();
+                        
+
+
+                        
+                        
+                        
+                    }
+
+                    
+              },              
+       
+        
         ufl: {
                     windowTitle: "TaiAn Health Insurance for University of Florida",
                     pageTitle: "TaiAn Health Insurance for University of Florida",
