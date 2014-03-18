@@ -578,6 +578,25 @@ l['Taian Scholar/Student Insurance Plan A and Plan B meet Murray State Universit
 l['Murray State University Scholar Requirements'] = "Murray State University 访问学者医疗保险的标准";
 l['Murray State University Student Requirements'] = "Murray State University 留学生医疗保险的标准";
 l['Health insurance for Murray State University Students and Scholars'] = "符合Murray State University标准的留学生和访问学者医疗保险";
+l['TaiAn Insurance Plan A, Plan B, and Plan C meet Murray State University F and J visa insurance requirements. J visa holders have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan C with $50,000 benefit and $500 deductible is the most affordable plan that meets the standards, and the US Department of State requirements.'] = "Murray State University 对J签证持有人购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$50,000; 2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500。 泰安保险计划C里的免赔额$500, 最高赔付$50,000选项是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准。";
+l['F visa holders are required to have $100,000 of coverage. Plan C with $100,000 benefit and $500 deductible is the most affordable plan that meets the standards.'] = "F签证持有人购买校外医疗保险要求最高赔付至少为$100,000。 泰安保险计划C里的免赔额$500, 最高赔付$100,000选项是满足此标准的最经济实惠的保险计划。";
+l['Shortly after submitting an application you will receive confirmation of your coverage which you can send to Murray State University as proof of insurance.'] = "网上提交申请几分钟后你就会收到Email电子保单，其中含有你的保险卡和确认信。你可以将确认信发给学校证明你已购买满足学校要求的保险。";
+l['Murray State University requirements'] = "Murray State University 医疗保险的标准";
+l['J VISA  (F VISA SCROLL DOWN THE PAGE)'] = " J 签证 (F 签证见本页下面)";
+l['Plan C (Patriot Travel) $50,000'] = "计划C(Patriot Travel) 最高赔付$50,000";
+l['(Recommended if you want maternity benefit)'] = "推荐 - 如需生育险";
+l['(J - Recommended Plan)'] = "J签证 - 推荐计划";
+l['(Lowest Cost Plan)'] = "最节省计划";
+l['$50,000 benefit $500 deductible.  '] = "$50,000 最高赔付，$500免赔额。  ";
+l['Lowest Cost Plan for J visa'] = "J签证最节省计划";
+l['$50,000 benefit $250 deductible.  '] = "$50,000 最高赔付，$250免赔额。  ";
+l['F VISA'] = "F 签证";
+l['$100,000 benefit $500 deductible.  '] = "$100,000 最高赔付，$500免赔额。  ";
+l['Lowest Cost Plan for F visa'] = "F签证最节省计划";
+l['$100,000 benefit $250 deductible.  '] = "$100,000 最高赔付，$250免赔额。  ";
+l['Plan C (Patriot Travel) $100,000'] = "计划C(Patriot Travel) 最高赔付$100,000";
+l['Plan B (Patriot Exchange) $100 deductible'] = "计划B (Patriot Exchange) $100免赔额";
+
 
 l['TaiAn Health Insurance for Western Washington University'] = "泰安国际医疗保险 - Western Washington University";
 l['Taian Scholar/Student Insurance Plan A and Plan B meet Western Washington University enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Western Washington University as proof of insurance.'] = "Western Washington University 对F1/J1国际学生和J1访问学者购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$50,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明你已购买满足学校要求的保险。";

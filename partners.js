@@ -596,20 +596,173 @@ function getPartnership(partner) {
                     pageTitle: "TaiAn Health Insurance for Murray State University",
                     tabs: [
                             "pivot-home",
-                            "pivot-international-student",
+                            "pivot-international-studentandscholar",
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                             "pivot-aboutus"
                           ],
                           
-                    internationalStudentContent: function () {
+                    internationalStudentandscholarContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Murray State University enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Murray State University as proof of insurance.");                        
+                        writeText("TaiAn Insurance Plan A, Plan B, and Plan C meet Murray State University F and J visa insurance requirements. J visa holders have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan C with $50,000 benefit and $500 deductible is the most affordable plan that meets the standards, and the US Department of State requirements.");  
+                        writeText("F visa holders are required to have $100,000 of coverage. Plan C with $100,000 benefit and $500 deductible is the most affordable plan that meets the standards.");
+                        writeText("Shortly after submitting an application you will receive confirmation of your coverage which you can send to Murray State University as proof of insurance.");                        
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("Murray State University Scholar Requirements", "http://www.murraystate.edu/Students/International/IIS/StudentScholarServices/HealthcareInsurance.aspx"),
-                                makeURL("Murray State University Student Requirements", "http://www.murraystate.edu/Students/International/IIS/StudentScholarServices/HealthcareInsurance.aspx")                        
+                                makeURL("Murray State University requirements", "http://www.murraystate.edu/Students/International/IIS/StudentScholarServices/HealthcareInsurance.aspx")
+                        
                                 ]));
                         endRow();
+                        startRow();
+                        writeText("J VISA  (F VISA SCROLL DOWN THE PAGE)");                        
+                        writeText("");                        
+                            document.write(makeTable(3,
+                            [
+                            // Column headers:
+
+                            "Plan A (Student Health Advantage) $300,000 / $100 deductible / Maternity", "Plan B (Patriot Exchange) $100 deductible", "Plan C (Patriot Travel) $50,000", 
+                            "Monthly Premium", "Monthly Premium", "Monthly Premium",                            
+                            "(Recommended if you want maternity benefit)", "(J - Recommended Plan)", "(Lowest Cost Plan)",             
+
+
+                            // Table within a table
+
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 19", "$72",   "$386",   "$82",
+                                "19-23",   "$95",   "$386",   "$82",
+                                "24-30",   "$110",  "$426",   "$82",
+                                "31-40",   "$197",  "$567",   "$82",
+                                "41-50",   "$322",  "$586",   "$82",
+                                "51-64",   "$430",  "$567",   "$82"
+                                
+                                ]), 
+                                
+                                loc("$50,000 per illness/injury") +         
+                                makeTable(4, [
+                                    "Age",     "F1/J1", "Spouse", "Children",
+                                    "&lt; 25", "$48.62","$48.62",  "$48.62",
+                                    "25-49",   "$63.37","$63.37",  "$48.62",
+                                    "50-64",   "$135.70","$135.70","$48.62"
+                                    ]) +
+
+                                loc("$250,000 per illness/injury") +         
+                                makeTable(4, [
+                                    "Age",     "F1/J1", "Spouse", "Children",
+                                    "&lt; 25", "$60.36","$60.36",  "$60.36",
+                                    "25-49",   "$78.59","$78.59",  "$60.36",
+                                    "50-64",   "$168.27","$168.27","$60.36"
+                                    ]), 
+ 
+                                loc("$50,000 benefit $500 deductible.  ") +  
+                                loc("Lowest Cost Plan for J visa") +                                  
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$33.30",   "$33.30",   "$30.60",
+                                "30-39",   "$44.10",   "$44.10",   "$30.60",
+                                "40-49",   "$65.70",  "$65.70",   "$30.60",
+                                "50-59",   "$96.30",  "$96.30",   "$30.60"
+                                ]) +
+                                
+                                loc("$50,000 benefit $250 deductible.  ") +  
+                                
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$37.00",   "$37.00",   "$34.00",
+                                "30-39",   "$49.00",   "$49.00",   "$34.00",
+                                "40-49",   "$73.00",  "$73.00",   "$34.00",
+                                "50-59",   "$107.00",  "$107.00",   "$34.00"
+                                ]), 
+                    
+                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Patriot Exchange Program - Standard"), "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+                                "",
+                                makeBuyURL(loc("Buy Group") + "<br />" + loc("Group for 2 or more"), "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699")                                 
+
+             
+
+                                   ])
+                                    );
+                        endRow();   
+
+                        startRow();
+                        writeText("");                          
+                        writeText("F VISA");                        
+                        writeText("");                        
+                            document.write(makeTable(3,
+                            [
+                            // Column headers:
+
+                            "Plan A (Student Health Advantage) $300,000 / $100 deductible / Maternity", "Plan B (Patriot Exchange) $250,000 / $100 deductible", "Plan C (Patriot Travel) $100,000", 
+                            "Monthly Premium", "Monthly Premium", "Monthly Premium",                            
+                            "(Recommended if you want maternity benefit)", "", "(Lowest Cost Plan)",             
+
+
+                            // Table within a table
+
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 19", "$72",   "$386",   "$82",
+                                "19-23",   "$95",   "$386",   "$82",
+                                "24-30",   "$110",  "$426",   "$82",
+                                "31-40",   "$197",  "$567",   "$82",
+                                "41-50",   "$322",  "$586",   "$82",
+                                "51-64",   "$430",  "$567",   "$82"
+                                
+                                ]), 
+                                
+
+
+                                loc("$250,000 per illness/injury") +         
+                                makeTable(4, [
+                                    "Age",     "F1/J1", "Spouse", "Children",
+                                    "&lt; 25", "$60.36","$60.36",  "$60.36",
+                                    "25-49",   "$78.59","$78.59",  "$60.36",
+                                    "50-64",   "$168.27","$168.27","$60.36"
+                                    ]), 
+ 
+                               
+                                  
+                                loc("$100,000 benefit $500 deductible.  ") + 
+                                 loc("Lowest Cost Plan for F visa") +                                
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$41.40",   "$41.40",   "$36.90",
+                                "30-39",   "$55.80",   "$55.80",   "$36.90",
+                                "40-49",   "$81.00",  "$81.00",   "$36.90",
+                                "50-59",   "$138.00",  "$138.00",   "$36.90"
+                                ]) +  
+
+                                loc("$100,000 benefit $250 deductible.  ") +                              
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$46.00",   "$46.00",   "$41.00",
+                                "30-39",   "$62.00",   "$62.00",   "$41.00",
+                                "40-49",   "$90.00",  "$90.00",   "$41.00",
+                                "50-59",   "$124.20",  "$124.20",   "$41.00"                                
+                                ]), 
+                    
+                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Patriot Exchange Program - Standard"), "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+                                "",
+                                makeBuyURL(loc("Buy Group") + "<br />" + loc("Group for 2 or more"), "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699")                                 
+
+             
+
+                                   ])
+                                    );
+                        endRow();                        
+                        
+                        startRow();
+                            writeText("");
+                        endRow();                       
+                        
+                        
                     }
               },               
               
