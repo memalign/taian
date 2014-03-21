@@ -99,6 +99,8 @@ function referralSubstitution(key) {
         ucsh: "l=cn&p=pivot-school-waiver&adid=ucsh",
         aeshmain: "l=cn&p=pivot-home&adid=aeshmain",        
 
+        chinamarketing: "partner=chinamarketing&p=pivot-home&adid=chinamarketing",        
+        
         confucius: "p=pivot-confucius-educator", 
         cnconfucius: "p=pivot-confucius-educator&l=cn",         
         cnkongalfred: "p=pivot-confucius-educator&l=cn&adid=cnkongalfred",
@@ -2345,7 +2347,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Case Western Reserve University (OH)", "http://www.case.edu"),
                 makeURL("School F1 requirement", "http://studentaffairs.case.edu/medicalplan/news/4915.newx"),
                 makeURL("School J1 requirement", "http://www.case.edu/finadmin/humres/ffs/j1.html"),
-                makeURL("Health insurance for Case Western Reserve Students and Scholars", "#icasew"),
+                makeURL("Health insurance for Case Western Reserve Scholars", "#icasew"),
                 
                 makeURL("Central Washington University (WA)", "http://www.cwu.edu/"),
                 makeURL("School F1 requirement", "http://www.cwu.edu/international-programs/medical-insurance"),
@@ -4244,40 +4246,40 @@ function writeSections(legacy) {
             "Monthly Rate",
             makeTable(3, [
                     "Age", "Male", "Female",
-                    "18", "$60",    "$60",
-                    "25", "$63",    "$85",
-                    "30", "$71",    "$94",
-                    "35", "$79",    "$111",
-                    "40", "$100",   "$122",
-                    "45", "$112",   "$135",
-                    "50", "$136",   "$150",
-                    "55", "$165",   "$165",
-                    "60", "$242",   "$228"
+                    "19-24", "$61",    "$76",
+                    "25-29", "$64",    "$87",
+                    "30-34", "$72",    "$96",
+                    "35-39", "$82",    "$116",
+                    "40-44", "$104",   "$127",
+                    "45-49", "$116",   "$140",
+                    "50-54", "$142",   "$156",
+                    "55-59", "$175",   "$175",
+                    "60-64", "$257",   "$242"
                     ]),
             makeTable(3, [
                     "Age", "Male", "Female",
-                    "18", "$71",    "$71",
-                    "25", "$73",    "$112",
-                    "30", "$77",    "$119",
-                    "35", "$79",    "$124",
-                    "40", "$110",   "$143",
-                    "45", "$127",   "$155",
-                    "50", "$149",   "$163",
-                    "55", "$192",   "$186",
-                    "60", "$283",   "$266"
+                    "19-24", "$73",    "$106",
+                    "25-29", "$74",    "$115",
+                    "30-34", "$79",    "$122",
+                    "35-39", "$82",    "$129",
+                    "40-44", "$115",   "$149",
+                    "45-49", "$132",   "$161",
+                    "50-54", "$155",   "$169",
+                    "55-59", "$204",   "$198",
+                    "60-64", "$300",   "$282"
                     ]),
 
              makeTable(3, [
                     "Age", "Male", "Female",
-                    "18", "$195",    "$195",
-                    "25", "$201",    "$354",
-                    "30", "$220",    "$401",
-                    "35", "$227",    "$437",
-                    "40", "$279",   "$478",
-                    "45", "$341",   "$381",
-                    "50", "$772",   "$825",
-                    "55", "$1006",   "$998",
-                    "60", "$1197",   "$1120"
+                    "19-24", "$199",    "$293",
+                    "25-29", "$205",    "$352",
+                    "30-34", "$224",    "$409",
+                    "35-39", "$236",    "$455",
+                    "40-44", "$290",   "$497",
+                    "45-49", "$355",   "$396",
+                    "50-54", "$803",   "$858",
+                    "55-59", "$1066",   "$1058",
+                    "60-64", "$1268",   "$1188"
                     ]),
 
 

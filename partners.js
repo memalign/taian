@@ -29,6 +29,31 @@ function getPartnership(partner) {
                           ]
                             
                },
+               
+        chinamarketing: {
+                    windowTitle: "China Marketing Co | 泰安国际医疗保险",
+                    pageTitle: "China Marketing CO",
+                    logoImage: "longevity.gif",
+                    logoHeight: "30",
+                    logoWidth: "30",
+                    contactInfo: ["CAN CHANGE ALL OF THISCall from US - 9:00AM to 10:00PM Eastern time - Includes weekend: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English)",
+                                  "Call from China: 950-4044-2336 (Chinese, Beijing time 7-11am, no long distance charges)",
+                                  "WeChat ID: wxid_taian_usa",
+                                  "Skype: chris.lee136",
+                                  "Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a> ALL THE WAY TO HERE"
+                                 ],
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+
+
+
+                            "pivot-aboutus"
+                          ]
+                            
+               },               
 
         using: {
                     windowTitle: "Using Education Group Insurance",
@@ -481,10 +506,10 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Case Western Reserve enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Case Western Reserve as proof of insurance.");                        
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Case Western Reserve J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Case Western Reserve as proof of insurance.");                        
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("Case Western Reserve Scholar Requirements", "http://www.case.edu/finadmin/humres/ffs/j1.html"),
-                                makeURL("Case Western Reserve Student Requirements", "http://studentaffairs.case.edu/medicalplan/news/4915.newx")                        
+                                makeURL("Case Western Reserve Scholar Requirements", "http://www.case.edu/finadmin/humres/ffs/j1.html")
+                        
                                 ]));
                         endRow();
                     }
@@ -2622,7 +2647,7 @@ function getPartnership(partner) {
                         writeText("");
                         writeText("J STUDENTS");                        
                         writeText("");
-                        writeText("UIUC enrolled students with a J visa have required health insurance coverage as follows: 1. $500,000 per illness or injury; 2. Deductible not over $500; 3. Repatriation of remains of $7,500; 4. Medical evacuation of $10,000; 5. Plan must be effective by the first day UIUC plan is effective (Must have coverage by January 18, 2014 for spring semester).  Taian Scholar/Student Insurance Plan B ($100 deductible) and Plan C ($500 deductible) with $500,000 benefit is the most affordable plan that meets the school requirements and the US Department of State requirements (which plan is more affordable depends on your age and family members).  Students are required to complete an on line waiver.");                        
+                        writeText("UIUC enrolled students with a J visa have required health insurance coverage as follows: 1. $500,000 per illness or injury; 2. Deductible not over $500; 3. Repatriation of remains of $7,500; 4. Medical evacuation of $10,000; 5. Plan must be effective by the first day UIUC plan is effective (Must have coverage by May 17, 2014 for summer semester).  Taian Scholar/Student Insurance Plan B ($100 deductible) and Plan C ($500 deductible) with $500,000 benefit is the most affordable plan that meets the school requirements and the US Department of State requirements (which plan is more affordable depends on your age and family members).  Students are required to complete an on line waiver.");                        
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("UIUC Student Requirements", "http://www.si.uiuc.edu/Default.aspx?tabid=64")                      
 
@@ -2674,7 +2699,7 @@ function getPartnership(partner) {
                         writeText("");
                         writeText("F STUDENTS");                        
                         writeText("");
-                        writeText("UIUC enrolled F visa international students have required health insurance coverage as follows: 1. $500,000 per illness or injury; 2. Not over $2,000 deductible; 3. Plan must be effective by the first day UIUC plan is effective (Must have coverage by January 18, 2014 for spring semester).  Taian Scholar/Student Insurance Plan B ($100 deductible) and Plan C ($1,000 deductible) with $500,000 benefit per illness or injury is the most affordable plan that meets the school requirements (which plan is more affordable depends on your age and family members).  Students are required to complete an on line waiver.");                        
+                        writeText("UIUC enrolled F visa international students have required health insurance coverage as follows: 1. $500,000 per illness or injury; 2. Not over $2,000 deductible; 3. Plan must be effective by the first day UIUC plan is effective (Must have coverage by May 17, 2014 for summer semester).  Taian Scholar/Student Insurance Plan B ($100 deductible) and Plan C ($1,000 deductible) with $500,000 benefit per illness or injury is the most affordable plan that meets the school requirements (which plan is more affordable depends on your age and family members).  Students are required to complete an on line waiver.");                        
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("UIUC Student Requirements", "http://www.si.uiuc.edu/Default.aspx?tabid=64")                      
 
