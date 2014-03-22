@@ -1287,7 +1287,7 @@ function writeSectionsForForms() {
                 makeFormTextInput("Primary Insured-Occupation (ok to leave blank)"),
                 makeFormTextInput("Primary Insured-Government Issued ID Number"),
                 makeFormTextInput("Primary Insured-Country of Citizenship"),
-                
+                makeFormTextInput("Primary Insured-Do you have a green card? (Y/N)"),                
                 makeFormTextInput("Primary Insured-Type of visa"), 
                 makeFormTextInput("Primary Insured-Visa issue date"), 
                 makeFormTextInput("Primary Insured-Visa expiration date"),
@@ -1295,6 +1295,7 @@ function writeSectionsForForms() {
                 
                 makeFormTextInput("Primary Insured-If US Citizen Date you did or will depart US"),
                 makeFormTextInput("Primary Insured-Is your expected length of residence outside the U.S. at least 6 of the next 12 months? "),
+                makeFormTextInput("How would you like to receive your insurance documents?  Email / Regular Mail / Expedited Mail ($25)"),
                 makeFormTextInput("Spouse-First Name (Leave spouse and children information blank if you are not buying insurance for them.)"),
                 makeFormTextInput("Spouse-Last Name"),
                 makeFormTextInput("Spouse-Gender"),
@@ -1306,6 +1307,7 @@ function writeSectionsForForms() {
                 makeFormTextInput("Spouse-Occupation (ok to leave blank)"),
                 makeFormTextInput("Spouse-Government Issued ID Number"),
                 makeFormTextInput("Spouse-Country of Citizenship"),
+                makeFormTextInput("Spouse-Do you have a green card? (Y/N)"),                
                 makeFormTextInput("Spouse-Type of visa"), 
                 makeFormTextInput("Spouse-Visa issue date"), 
                 makeFormTextInput("Spouse-Visa expiration date"),
@@ -1323,6 +1325,7 @@ function writeSectionsForForms() {
                 makeFormTextInput("Child 1-Occupation (ok to leave blank)"),
                 makeFormTextInput("Child 1-Government Issued ID Number"),
                 makeFormTextInput("Child 1-Country of Citizenship"), 
+                makeFormTextInput("Child 1-Do you have a green card? (Y/N)"),                
                 makeFormTextInput("Child 1-Type of visa"), 
                 makeFormTextInput("Child 1-Visa issue date"), 
                 makeFormTextInput("Child 1-Visa expiration date"),
@@ -1340,6 +1343,7 @@ function writeSectionsForForms() {
                 makeFormTextInput("Child 2-Occupation (ok to leave blank)"),
                 makeFormTextInput("Child 2-Government Issued ID Number"),
                 makeFormTextInput("Child 2-Country of Citizenship"),
+                makeFormTextInput("Child 2-Do you have a green card? (Y/N)"),                
                 makeFormTextInput("Child 2-Type of visa"), 
                 makeFormTextInput("Child 2-Visa issue date"), 
                 makeFormTextInput("Child 2-Visa expiration date"),
@@ -1369,10 +1373,12 @@ function writeSectionsForForms() {
                 makeFormTextInput("Have you or any other applicant ever had, been recommended to have, or are you currently on a waiting list for any organ transplant (other than corneal)?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"),
                 makeFormTextInput("Do you participate in professional sports?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"),
                 makeFormTextInput("Have you or any other applicant been diagnosed with or treated for any type of cancer or pre-cancerous condition during the past five (5) years?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"),
-                makeFormTextInput("If a non-U.S. citizen, do you or any other applicant have a U.S. visa or green card?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"),
-
                 makeFormTextInput("If a non-U.S. citizen, have you or any other applicant resided continuously in the U.S. for the last five (5) years?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"),
                 makeFormTextInput("Are you or any other applicant currently pregnant?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"),
+
+                loc("Have you or any family member applying for coverage EVER experienced symptoms of, suffered from, sought consultation, examination, testing or been treated for, or been diagnosed with, any problem relating to any of the following: (This language is for the following questions through the question about eyes)"), "",
+
+              
                 makeFormTextInput("Heart, cardiac, cardiovascular and/or circulatory, including, but not limited to: congestive heart failure, heart attack, angina, chest pain, arteriosclerosis, atherosclerosis, elevated blood pressure, hypertension, swelling of feet/ankles, thrombosis, phlebitis, rheumatic fever, or heart murmur?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"),
                 makeFormTextInput("Blood, blood vessels, spleen, arteries, veins or disorders of the blood, including, but not limited to: anemia, hemophilia, leukemia, hepatitis, lymph glands, or high cholesterol?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"),
                 makeFormTextInput("Diabetes, hyperglycemia or hypoglycemia?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"),
@@ -1387,12 +1393,13 @@ function writeSectionsForForms() {
                 makeFormTextInput("For female applicants, miscarriage, complicated pregnancy or delivery, or infertility consultation, advice, diagnosis or treatment, and disorders of the reproductive systems, including but not limited to: vaginal bleeding, fibroids, nodules or breast cysts, fallopian tubes, ovaries or uterus, and hormone replacement therapy?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"), 
                 makeFormTextInput("For male applicants, disorders of the reproductive systems, including but not limited to: prostate or elevated PSA level, or erectile dysfunction?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"), 
                 makeFormTextInput("Congenital, genetic, hereditary or other birth condition or defect including, but not limited to: mental retardation, Down Syndrome, or other chromosome disorder, physical disorder, deformity or defect?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"), 
-                makeFormTextInput("Digestive system, stomach, or intestines, including, but not limited to: esophageal regurgitation, gastritis, ulcers, colon, or rectum disorders?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"), 
+                makeFormTextInput("Digestive system, stomach, colon, rectum or intestines, including, but not limited to: esophageal regurgitation, gastritis, ulcers, Crohn’s Disease and/or diverticulitis?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"), 
                 makeFormTextInput("Eyes, ears, nose, mouth, throat or jaw, including, but not limited to: cataracts, glaucoma, nasal septum deviation, chronic sinusitis, or TMJ?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"), 
-                makeFormTextInput("Any other disease, medical problem, illness, injury or condition of any kind not listed?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"), 
                 makeFormTextInput("Do you or any family member applying for coverage currently use or during the past five years have you used tobacco in any form?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"), 
-                makeFormTextInput("Have you or any family member applying for coverage ever applied or purchased insurance through IMG?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"), 
+                makeFormTextInput("Any other disease, medical problem, illness, injury or condition of any kind not listed?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"),  
+ 
                 makeFormTextInput("During the last twelve (12) months, have you or any family member applying for coverage experienced manifestation or symptoms of, been diagnosed with, or received any consultation, examination, testing or treatment (including medications) for, any medical, health, mental, physical or nervous condition?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"), 
+                makeFormTextInput("Have you or any family member applying for coverage ever applied or purchased insurance through IMG?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"), 
                 makeFormTextInput("Have you or any family member applying for coverage ever been rejected, cancelled, rated or declined for coverage under any health, life or disability insurance policy?(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"), 
                 makeFormTextInput("During the last twelve (12) months, have you or any family member applying for coverage been covered under any health or medical insurance plan, including a government sponsored health care plan? If yes, please state the name and location of the insurance company, the policy/plan number, and the applicable dates of coverage.(Indicate No or Identify P for Primary, S for Spouse, C1 for child 1, C2 for child 2)"), 
                 makeFormTextInput("Please provide details on any yes answer including doctor name and address, date last seen, details of the condition"), 
@@ -1431,7 +1438,8 @@ function writeSectionsForForms() {
                 makeFormTextInput("Child 2 Family doctor Country"), 
                 makeFormTextInput("Child 2 Family doctor Telephone"), 
                 makeFormTextInput("Child 2 Family doctor Date Last Seen"), 
-                makeFormTextInput("Child 2 Family doctor Reason")
+                makeFormTextInput("Child 2 Family doctor Reason"),
+                makeFormTextInput("Do you want to add any optional riders to your plan?  Please indicate: None / Term Life Insurance / Daily Indemnity / Terrorism / Sports / Dental / Vision / Maternity (Note - Not all optional riders are available on all plans.)")                
                 ]));
     endForm();
     endRow();
@@ -4218,7 +4226,7 @@ function writeSections(legacy) {
             // Column headers:
             "TaiAn Global Medical",
             makeRawURL("Global Medical (Silver Plan) $250 deductible", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
-            makeRawURL("Global Medical (Gold Plan) $500 deductible", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
+            makeRawURL("Global Medical (Gold Plan and Gold Plus Plan) $500 deductible (See Notes below)", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
             makeRawURL("Global Medical (Platinum Plan) $1000 deductible", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
 
 
@@ -4227,15 +4235,15 @@ function writeSections(legacy) {
             "Lifetime Max limit", "$5,000,000 per individual",  "$5,000,000 per individual", "$8,000,000 per individual", 
             "Treatment inside the U.S.", "In-PPO: deductible 50% waived (up to $2500). No coinsurance.<br />Non-PPO: 20% of next $5000 expenses after deductible", "In-PPO: deductible 50% waived (up to $2500). No coinsurance.<br />Non-PPO: 20% of next $5000 expenses after deductible", "In-PPO: deductible 50% waived (up to $2500). No coinsurance<br />Non-PPO: 10% of next $5000 expenses after deductible",
             "Treatment outside the U.S.", "Subject to deductible. No coinsurance", "Subject to deductible. No coinsurance", "Subject to deductible. No coinsurance",
-            "Intensive care unit", "$1,500/day, 180 day /event", "URC", "URC",
+            "Intensive care unit", "$1,500/day, 180 day /event", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)",
             "Hospitalization/room & board", "In U.S. average semi-private room rate. Outside of U.S. URC of private room rate (not exceed 150% semi-private). All subject to $600/day, 240 day max", "In U.S. average semi-private room rate. Outside of U.S. URC of private room rate (not exceed 150% semi-private).", "Private room rate",
             "Emergency Room", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization",
             "Local Ambulance", "$1500/event - not subject to deductible or coinsurance", "URC", "URC",
             "Child Wellness (under 18 y/o)", "3 visit/period, $70 max/period. Available after 12 months of coverage", "$200/period, not subject to deductible or coinsurance. Available after 12 months of coverage", "$400/period, not subject to deductible or coinsurance. Available after 6 months of coverage",
             "Adult Wellness", "NA", "$250/period, not subject to deductible or coinsurance.  Available for those at least 30 years old after 12 months of coverage", "$500/period, not subject to deductible or coinsurance. Available for those at least 18 years old after 6 months of coverage", 
             "Emergency Dental (accident)", "$1,000/period", "URC", "URC", 
-            "Non-emergency Dental", "NA", "NA", "$750/year", 
-            "Vision", "NA", "NA", "Exams-up to $100. Materials-up to $150 per 24 months", 
+            "Non-emergency Dental", "Optional Rider", "Optional Rider", "$750/year", 
+            "Vision", "Optional Rider", "Optional Rider", "Exams-up to $100. Materials-up to $150 per 24 months", 
             "Surgery", "URC", "URC", "URC", 
             "Emergency Evacuation", "$50,000 per period, not subject to deductible or coinsurance", "Up to the maximum limit, not subject to deductible or coinsurance", "Up to the maximum limit, not subject to deductible or coinsurance", 
             "Repatriation of remains", "$25,000 per insured, not subject to deductible or coinsurance", "$25,000 per insured, not subject to deductible or coinsurance", "$50,000 per insured, not subject to deductible or coinsurance", 
@@ -4244,8 +4252,18 @@ function writeSections(legacy) {
             "Maternity", "Optional Rider (cost $4000 per year) - Maternity is covered same as any illness for any maternity related claim with a service date that occurs after 12 months of coverage. - $50,000 lifetime max. Max of $5000 for normal delivery, $7500 for C-section. $200 child wellness for first 12 month. new born care & congenital disorders max of $250,000 for the first 31 days (benefits reduced by 50% for births that occur in the 11th or 12th month of coverage).  Maternity related claims with dates of service before 10 months are not covered.", "Optional Rider (cost $4000 per year) - Maternity is covered same as any illness for any maternity related claim with a service date that occurs after 12 months of coverage. - $50,000 lifetime max. Max of $5000 for normal delivery, $7500 for C-section. $200 child wellness for first 12 month. new born care & congenital disorders max of $250,000 for the first 31 days (benefits reduced by 50% for births that occur in the 11th or 12th month of coverage).  Maternity related claims with dates of service before 10 months are not covered.", "Maternity is covered same as any illness for any maternity related claim with a service date that occurs after 10 months of coverage - $1000 additional deductible, $50,000 lifetime max. $200 child wellness for the first 12 months. new born care & congenital disorders max of $250,000 for the first 31 days. Maternity related claims with dates of service before 10 months are not covered.",
 
             "Monthly Rate",
+            loc("Dependent child - see notes below") +
             makeTable(3, [
                     "Age", "Male", "Female",
+    
+                    "14 days - 9", "$0/$26",    "$0/$26",  
+                    "10-18", "$27",    "$27"  
+
+                    ]) +
+              loc("Adult") +
+            makeTable(3, [
+                    "Age", "Male", "Female",
+                    
                     "19-24", "$61",    "$76",
                     "25-29", "$64",    "$87",
                     "30-34", "$72",    "$96",
@@ -4256,8 +4274,19 @@ function writeSections(legacy) {
                     "55-59", "$175",   "$175",
                     "60-64", "$257",   "$242"
                     ]),
+            loc("GOLD PLAN ") +                    
+            loc("Dependent child - see notes below") +                    
             makeTable(3, [
                     "Age", "Male", "Female",
+    
+                    "14 days - 9", "$0/$31",    "$0/$31",  
+                    "10-18", "$33",    "$33" 
+
+                    ]) +
+              loc("Adult") +                    
+            makeTable(3, [
+                    "Age", "Male", "Female",
+                    
                     "19-24", "$73",    "$106",
                     "25-29", "$74",    "$115",
                     "30-34", "$79",    "$122",
@@ -4267,10 +4296,20 @@ function writeSections(legacy) {
                     "50-54", "$155",   "$169",
                     "55-59", "$204",   "$198",
                     "60-64", "$300",   "$282"
-                    ]),
+                    ]),                     
 
+            loc("Dependent child - see notes below") +                    
              makeTable(3, [
                     "Age", "Male", "Female",
+    
+                    "14 days - 9", "$0/$125",    "$0/$125",  
+                    "10-18", "$130",    "$130" 
+
+                    ]) +
+              loc("Adult") +                     
+             makeTable(3, [
+                    "Age", "Male", "Female",
+                 
                     "19-24", "$199",    "$293",
                     "25-29", "$205",    "$352",
                     "30-34", "$224",    "$409",
@@ -4280,7 +4319,36 @@ function writeSections(legacy) {
                     "50-54", "$803",   "$858",
                     "55-59", "$1066",   "$1058",
                     "60-64", "$1268",   "$1188"
-                    ]),
+                    ]),   
+
+              "Monthly Rate", "",
+
+            loc("GOLD PLUS PLAN ") +      
+
+            loc("Dependent child - see notes below") +                    
+            makeTable(3, [
+                    "Age", "Male", "Female",
+    
+                    "14 days - 9", "$0/$41",    "$0/$41",  
+                    "10-18", "$43",    "$43" 
+
+                    ]) +
+              loc("Adult") +                    
+            makeTable(3, [
+                    "Age", "Male", "Female",
+                    
+                    "19-24", "$80",    "$112",
+                    "25-29", "$83",    "$125",
+                    "30-34", "$93",    "$144",
+                    "35-39", "$104",    "$162",
+                    "40-44", "$134",   "$179",
+                    "45-49", "$168",   "$193",
+                    "50-54", "$342",   "$368",
+                    "55-59", "$464",   "$455",
+                    "60-64", "$578",   "$530"
+                    ]),                     
+
+                    "",           
 
 
 
@@ -4288,7 +4356,7 @@ function writeSections(legacy) {
 
             "", 
             makeBuyURL("Buy Global Medical (Silver Plan)", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
-            makeBuyURL("Buy Global Medical (Gold Plan)", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
+            makeBuyURL("Buy Global Medical (Gold and Gold Plus)", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
             makeBuyURL("Buy Global Medical (Platinum Plan)", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699")
             ]));
     endRow();
@@ -4302,6 +4370,22 @@ function writeSections(legacy) {
     document.write(makeTable(2, [
                 "Plan", makeRawURL("Global Medical Insurance", "https://purchase.imglobal.com/quote/Global_Medical?imgac=80000699"),
 
+                "More about Child/Children Rates", 
+                makeBulletedListWithTitle("", [
+                        "Up to 2 dependent children 14 days to 9 years old are no charge for first year of coverage with two parents covered.",
+                        "One parent with dependent children 14 days to 9 years old use these rates (per child):  Silver  - $26, Gold - $31, Gold Plus - $41, Platinum - $125.",
+                        "Dependent child/children rates (ages 10- 18) are only available when one or two parents are covered. See chart for the rates.  The rates are per child.",
+                        "Children alone (14 days to 18 years old) use the single male 19 year old rate."
+                      
+                        ]),  
+                "More about Gold Plan and Gold Plus Plan", 
+                makeBulletedListWithTitle("", [
+                        "Benefits for Gold Plan and Gold Plus Plan are the same for the first three years.",
+                        "Gold Plan benefits are reduced after three years. Reduced benefits include: hospital room and board reimbursement rate, Intensive care reimbursement rate, physician charges, anesthetist and more.",
+                        "Gold Plus Plan is better for those planning to keep the policy over three years."
+                      
+                        ]),                        
+                
                 "Plan Highlights", 
                 makeBulletedListWithTitle("", [
                         "Annually renewable comprehensive worldwide medical coverage for non-US nationals worldwide or US citizen working abroad",
@@ -4314,10 +4398,10 @@ function writeSections(legacy) {
                         "Flexible, comprehensive medical coverage",
                         "Coverage for individuals and families",
                         "Four unique plan designs - Silver, Gold, Gold Plus and Platinum",
-                        "Optional riders: Global Term Life Insurance, Global Daily Indemnity, Maternity, Terrorism, Sports",
+                        "Optional riders: Global Term Life Insurance, Global Daily Indemnity, Maternity, Terrorism, Sports, Dental, Vision",
                         "Choose your area of coverage (worldwide or worldwide excluding the U.S., Canada, China, Hong Kong, Macau, Taiwan, Singapore and Japan)",
                         "Select from multiple deductible options",
-                        "Family premium covers first two children between 14 days and 9 years at no additional cost for the first year",
+
                         "Choose from several payment modes",
                         "Rates illustrated above are for annual premium, rates are higher for monthly payment",
                         "Multiple underwriting options to fit your needs",
