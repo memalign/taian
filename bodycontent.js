@@ -94,13 +94,14 @@ function referralSubstitution(key) {
         cn2: "l=cn&p=pivot-school-waiver", 
 
         aebj: "l=cn&p=pivot-school-waiver&adid=aebj",  
-        baidu1: "l=cn&p=pivot-school-waiver&adid=baidu1",        
+        baidu1: "l=cn&p=pivot-school-waiver&adid=baidu1",  
+        hn1: "l=cn&p=pivot-school-waiver&adid=hn1",        
         aesh: "l=cn&p=pivot-school-waiver&adid=aesh",   
         ucsh: "l=cn&p=pivot-school-waiver&adid=ucsh",
         aeshmain: "l=cn&p=pivot-home&adid=aeshmain",        
 
         chinamarketing: "partner=chinamarketing&p=pivot-home&adid=chinamarketing",        
-        
+        wll: "l=cn&partner=wll&p=pivot-home&adid=wll",         
         confucius: "p=pivot-confucius-educator", 
         cnconfucius: "p=pivot-confucius-educator&l=cn",         
         cnkongalfred: "p=pivot-confucius-educator&l=cn&adid=cnkongalfred",
@@ -848,7 +849,8 @@ function referralSubstitution(key) {
         lng: "l=cn&partner=lng",
         lngglbl: "l=cn&partner=lng&p=pivot-global-medical&adid=lng",
         lngglblform: "l=cn&partner=lng&p=global-form&adid=lng",        
-        mdy: "l=cn&partner=mdy&p=pivot-home&adid=mdy",        
+        mdy: "l=cn&partner=mdy&p=pivot-home&adid=mdy",  
+        mdys: "l=cn&partner=mdy&p=pivot-school-waiver&adid=mdy",        
         wxct: "l=cn&p=pivot-home&adid=wxct",
         springivy: "l=cn&partner=springivy",        
         iupui: "partner=iupui&p=pivot-home&adid=siupui",
@@ -3465,7 +3467,7 @@ function writeSections(legacy) {
                 makeBulletedListWithTitle("", [
                         "Patriot Exchange Plan B Standard Plan with $50,000 limit per illness/injury meets the US Dept of state standards for Exchange visitors (J visa) which are: At least $50,000 per illness, repatriation of remains of $7,500, Medical evacuation benefits of $10,000, and a deductible not over $500.",
                         "F2/J2 can buy Patriot Exchange alone (if F1/J1 buys schools plan) or buy with F1/J1",                        
-                        "Patriot Exchange Group plan available for groups of 2 or more",
+                        "Patriot Exchange Group plan available for groups of 2 or more primary applicants",
                         "Patriot Exchange Basic Plan available at a lower cost (may not meet your visa requirements - ask us!)",
                         "Other available options include: travel protection for baggage and valuables, legal assistance, personal liability coverage, adventure sports coverage",
                         "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays."
@@ -3673,7 +3675,7 @@ function writeSections(legacy) {
                 makeBulletedListWithTitle("", [
                         "Patriot Exchange Plan B Standard Plan with $50,000 limit per illness/injury meets the US Dept of state standards for Exchange visitors (J visa) which are: At least $50,000 per illness, repatriation of remains of $7,500, Medical evacuation benefits of $10,000, and a deductible not over $500.",
                         "F2/J2 can buy Patriot Exchange alone (if F1/J1 buys schools plan) or buy with F1/J1",                        
-                        "Patriot Exchange Group plan available for groups of 2 or more",
+                        "Patriot Exchange Group plan available for groups of 2 or more primary applicants",
                         "Patriot Exchange Basic Plan available at a lower cost (may not meet your visa requirements - ask us!)",
                         "Other available options include: travel protection for baggage and valuables, legal assistance, personal liability coverage, adventure sports coverage",
                         "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays."
@@ -3838,7 +3840,7 @@ function writeSections(legacy) {
                 makeBulletedListWithTitle("", [
                         "Patriot Exchange Plan B Standard Plan with $50,000 limit per illness/injury meets the US Dept of state standards for Exchange visitors (J visa) which are: At least $50,000 per illness, repatriation of remains of $7,500, Medical evacuation benefits of $10,000, and a deductible not over $500.",
                         "F2/J2 can buy Patriot Exchange alone (if F1/J1 buys schools plan) or buy with F1/J1",                        
-                        "Patriot Exchange Group plan available for groups of 2 or more",
+                        "Patriot Exchange Group plan available for groups of 2 or more primary applicants",
                         "Patriot Exchange Basic Plan available at a lower cost (may not meet your visa requirements - ask us!)",
                         "Other available options include: travel protection for baggage and valuables, legal assistance, personal liability coverage, adventure sports coverage",
                         "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays."
@@ -4154,7 +4156,7 @@ function writeSections(legacy) {
                 makeBulletedListWithTitle("", [
                         "Patriot Exchange Plan B Standard Plan with $50,000 limit per illness/injury meets the US Dept of state standards for Exchange visitors (J visa) which are: At least $50,000 per illness, repatriation of remains of $7,500, Medical evacuation benefits of $10,000, and a deductible not over $500.",
                         "J2 can buy Patriot Exchange alone (if J1 buys schools plan) or buy with J1",                        
-                        "Patriot Exchange Group plan available for groups of 2 or more",
+                        "Patriot Exchange Group plan available for groups of 2 or more primary applicants",
                         "Other available options include: travel protection for baggage and valuables, legal assistance, personal liability coverage, adventure sports coverage",
                         "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays."
                         ]),
