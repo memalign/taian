@@ -94,7 +94,7 @@ function referralSubstitution(key) {
         cn2: "l=cn&p=pivot-school-waiver", 
 
         aebj: "l=cn&p=pivot-school-waiver&adid=aebj",  
-        baidu1: "l=cn&p=pivot-school-waiver&adid=baidu1",  
+        baidu1: "partner=baidu1&l=cn&p=pivot-school-waiver&adid=baidu1",  
         hn1: "l=cn&p=pivot-school-waiver&adid=hn1",        
         aesh: "l=cn&p=pivot-school-waiver&adid=aesh",   
         ucsh: "l=cn&p=pivot-school-waiver&adid=ucsh",
@@ -587,6 +587,24 @@ function referralSubstitution(key) {
         iumass: "partner=umass&p=pivot-international-student",
         icnumass: "l=cn&partner=umass&p=pivot-international-student", 
         umassexch: "l=cn&partner=umass&p=exchange-form",
+        
+        umassl: "partner=umassl&p=pivot-home&adid=sumassl",
+        cnumassl: "l=cn&partner=umassl&p=pivot-home&adid=scnumassl",   
+        gcnumassl: "l=cn&partner=umassl&p=pivot-international-student&adid=gcnumassl",
+        gumassl: "partner=umassl&p=pivot-international-student&adid=gumassl",
+        acnumassl: "l=cn&partner=umassl&p=pivot-international-student&adid=acnumassl", 
+        iumassl: "partner=umassl&p=pivot-international-student",
+        icnumassl: "l=cn&partner=umassl&p=pivot-international-student", 
+        umassexchl: "l=cn&partner=umassl&p=exchange-form",
+
+        umassd: "partner=umassd&p=pivot-home&adid=sumassd",
+        cnumassd: "l=cn&partner=umassd&p=pivot-home&adid=scnumassd",   
+        gcnumassd: "l=cn&partner=umassd&p=pivot-international-student&adid=gcnumassd",
+        gumassd: "partner=umassd&p=pivot-international-student&adid=gumassd",
+        acnumassd: "l=cn&partner=umassd&p=pivot-international-student&adid=acnumassd", 
+        iumassd: "partner=umassd&p=pivot-international-student",
+        icnumassd: "l=cn&partner=umassd&p=pivot-international-student", 
+        umassexchd: "l=cn&partner=umassd&p=exchange-form",        
         
 
         unomaha: "partner=unomaha&p=pivot-home&adid=sunomaha",
@@ -2979,12 +2997,12 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("University of Massachusetts - Dartmouth (MA)", "http://www.umassd.edu/"),
                 makeURL("School F1 requirement", "http://www.umassd.edu/studentaffairs/health/healthinsurance/"),
                 makeURL("School J1 requirement", "http://www.umassd.edu/international_students/informationforj-1scholars/healthinsurance/"),
-                makeURL("Health insurance for UMASS Dartmouth Scholars", "#iumass"),                
+                makeURL("Health insurance for UMASS Dartmouth Scholars", "#iumassd"),                
                 
                 makeURL("University of Massachusetts - Lowell (MA)", "http://www.uml.edu/"),
                 makeURL("School F1 requirement", "http://www.uml.edu/Tuition-fees/Tuition-Costs/Undergraduate-Students/Additional-Fees.aspx"),
                 makeURL("School J1 requirement", "http://www.uml.edu/ISSO/Employment/j1-training.aspx"),
-                makeURL("Health insurance for UMASS Lowell Scholars", "#iumass"),
+                makeURL("Health insurance for UMASS Lowell Scholars", "#iumassl"),
                 
                 makeURL("University of Miami (FL)", "http://www.miami.edu/"),
                 makeURL("School F1 requirement", "http://www.miami.edu/sa/index.php/student_health_center/insurance_information/"),

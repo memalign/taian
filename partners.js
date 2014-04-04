@@ -30,6 +30,31 @@ function getPartnership(partner) {
                             
                },
                
+        baidu1: {
+                    windowTitle: "TaiAn International Health Insurance | 泰安国际医疗保险",
+                    pageTitle: "TaiAn International Health Insurance",
+                    logoImage: "longevity.gif",
+                    logoHeight: "30",
+                    logoWidth: "30",
+                    contactInfo: ["Call from US - 9:00AM to 10:00PM Eastern time - Includes weekend: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English)",
+                                  "Call from China: 950-4044-2336 (Chinese, Beijing time 7-11am, no long distance charges)",
+                                  "WeChat ID: wxid_taian_usa",
+                                  "Skype: chris.lee136",
+                                  "Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>"
+                                 ],
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance"
+
+
+
+
+                          ]
+                            
+               },               
+               
              wll: {
                     windowTitle: "TaiAn International Health Insurance for Wholala| 泰安国际医疗保险",
                     pageTitle: "TaiAn International Health Insurance for Wholala",
@@ -2964,8 +2989,8 @@ function getPartnership(partner) {
               }, 
               
         umass: {
-                    windowTitle: "TaiAn Health Insurance for University of Massachusetts - Amherst, Dartmouth, and Lowell",
-                    pageTitle: "TaiAn Health Insurance for University of Massachusetts - Amherst, Dartmouth, and Lowell",
+                    windowTitle: "TaiAn International Health Insurance",
+                    pageTitle: "TaiAn International Health Insurance",
                     tabs: [
                             "pivot-home",
                             "pivot-international-student",
@@ -2976,15 +3001,58 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Massachusetts - Amherst, Dartmouth, and Lowell J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Massachusetts - Amherst, Dartmouth, and Lowell as proof of insurance.");
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Massachusetts - Amherst J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Massachusetts - Amherst as proof of insurance.");
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("University of Massachusetts - Amherst Scholar Requirements", "http://www.umass.edu/ipo/iss/health.php"), 
-                                makeURL("University of Massachusetts - Dartmouth Scholar Requirements", "http://www.umassd.edu/international_students/informationforj-1scholars/healthinsurance/"),
-                                makeURL("University of Massachusetts - Lowell Scholar Requirements", "http://www.uml.edu/ISSO/Employment/j1-training.aspx")                                
+                                makeURL("University of Massachusetts - Amherst Scholar Requirements", "http://www.umass.edu/ipo/iss/health.php") 
+                                
                                 ]));
                         endRow();
                     }
-              },               
+              },  
+
+        umassd: {
+                    windowTitle: "TaiAn Health Insurance for University of Massachusetts - Dartmouth",
+                    pageTitle: "TaiAn Health Insurance for University of Massachusetts - Dartmouth",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Massachusetts - Dartmouth J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Massachusetts - Dartmouth as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("University of Massachusetts - Dartmouth Scholar Requirements", "http://www.umassd.edu/international_students/informationforj-1scholars/healthinsurance/") 
+                                
+                                ]));
+                        endRow();
+                    }
+              },  
+
+        umassl: {
+                    windowTitle: "TaiAn Health Insurance for University of Massachusetts - Lowell",
+                    pageTitle: "TaiAn Health Insurance for University of Massachusetts - Lowell",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Massachusetts - Lowell J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Massachusetts - Lowell as proof of insurance.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("University of Massachusetts - Lowell Scholar Requirements", "http://www.uml.edu/ISSO/Employment/j1-training.aspx") 
+                                
+                                ]));
+                        endRow();
+                    }
+              },              
               
               
         unl: {
