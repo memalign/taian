@@ -56,8 +56,8 @@ function getPartnership(partner) {
                },               
                
              wll: {
-                    windowTitle: "TaiAn International Health Insurance for Wholala| 泰安国际医疗保险",
-                    pageTitle: "TaiAn International Health Insurance for Wholala",
+                    windowTitle: "TaiAn International Health Insurance | 泰安国际医疗保险",
+                    pageTitle: "TaiAn International Health Insurance",
                     logoImage: "partnerLogos/wll.gif",
                     logoHeight: "90",
                     logoWidth: "90",
