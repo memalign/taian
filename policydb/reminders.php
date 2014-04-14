@@ -117,7 +117,7 @@ Dear __PRIMARY_INSURED_NAME__,
 
 请注意，保险期间所产生的疾病续保时就不是 pre-existing condition，而重新购买新保险就不具备这个好处。
 
-另外，续保时请选择邮寄接收方式，这样您既可收到 Email confirmation, 又可以在几天后收到IMG邮寄的保险卡。
+另外，在续保输入信息时，您可以更改您的电话号码，Email address, 邮寄地址。您还可以选择邮寄方式接收还是Email only。
 
 非常感谢您对我们公司的信任和支持。对我们工作的不足之处，请给我们一个提醒。把我们泰安介绍给您的家人朋友和同事是对我们工作的最大的肯定。泰安公司非常希望得到您的继续支持。
 
@@ -133,7 +133,7 @@ Dear __PRIMARY_INSURED_NAME__,
 
 请注意，此保险购买三个月或三个月以上，以后就可以按月续保。保险期间所产生的疾病续保时就不是 pre-existing condition，而重新购买新保险就不具备这个好处。
 
-另外，续保时请选择邮寄接收方式，这样您既可收到 Email confirmation, 又可以在几天后收到IMG邮寄的保险卡。
+另外，在续保输入信息时，您可以更改您的电话号码，Email address, 邮寄地址。您还可以选择邮寄方式接收还是Email only。
 
 非常感谢您对我们公司的信任和支持。对我们工作的不足之处，请给我们一个提醒。把我们泰安介绍给您的家人朋友和同事是对我们工作的最大的肯定。泰安公司非常希望得到您的继续支持。
 
@@ -149,7 +149,7 @@ Dear __PRIMARY_INSURED_NAME__,
 
 请注意，保险期间所产生的疾病续保时就不是 pre-existing condition，而重新购买新保险就不具备这个好处。
 
-另外，续保时请选择邮寄接收方式，这样您既可收到 Email confirmation, 又可以在几天后收到IMG邮寄的保险卡。
+另外，在续保输入信息时，您可以更改您的电话号码，Email address, 邮寄地址。您还可以选择邮寄方式接收还是Email only。
 
 非常感谢您对我们公司的信任和支持。对我们工作的不足之处，请给我们一个提醒。把我们泰安介绍给您的家人朋友和同事是对我们工作的最大的肯定。泰安公司非常希望得到您的继续支持。
 
@@ -181,7 +181,7 @@ Dear __PRIMARY_INSURED_NAME__,
 
 请注意，保险期间所产生的疾病续保时就不是 pre-existing condition，而重新购买新保险就不具备这个好处。
 
-另外，续保时请选择邮寄接收方式，这样您既可收到 Email confirmation, 又可以在几天后收到IMG邮寄的保险卡。
+另外，在续保输入信息时，您可以更改您的电话号码，Email address, 邮寄地址。您还可以选择邮寄方式接收还是Email only。
 
 非常感谢您对我们公司的信任和支持。对我们工作的不足之处，请给我们一个提醒。把我们泰安介绍给您的家人朋友和同事是对我们工作的最大的肯定。泰安公司非常希望得到您的继续支持。
 
@@ -207,7 +207,7 @@ Dear __PRIMARY_INSURED_NAME__,
 
 https://purchase.imglobal.com/beginrenewal?CertificateNumber=__CERTIFICATE_NUMBER__
          
-请注意，保险期间所产生的疾病续保时就不是 pre-existing condition，而重新购买新保险就不具备这个好处。另外，续保时请选择邮寄接收方式，这样您既可收到 Email confirmation, 又可以在几天后收到IMG邮寄的保险卡。
+请注意，保险期间所产生的疾病续保时就不是 pre-existing condition，而重新购买新保险就不具备这个好处。另外，在续保输入信息时，您可以更改您的电话号码，Email address, 邮寄地址。您还可以选择邮寄方式接收还是Email only。
      
 
 如果您今天不能完成续保，以后您需要重新购买时， 请登陆泰安网站： http://taianfinancial.com/#l=cn&p=pivot-international-student
@@ -224,7 +224,7 @@ Dear __PRIMARY_INSURED_NAME__,
 
 https://purchase.imglobal.com/beginrenewal?CertificateNumber=__CERTIFICATE_NUMBER__
          
-请注意，保险期间所产生的疾病续保时就不是 pre-existing condition，而重新购买新保险就不具备这个好处。另外，续保时请选择邮寄接收方式，这样您既可收到 Email confirmation, 又可以在几天后收到IMG邮寄的保险卡。
+请注意，保险期间所产生的疾病续保时就不是 pre-existing condition，而重新购买新保险就不具备这个好处。另外，在续保输入信息时，您可以更改您的电话号码，Email address, 邮寄地址。您还可以选择邮寄方式接收还是Email only。
      
 
 如果您今天不能完成续保，以后您需要重新购买时， 请登陆泰安网站： http://taianfinancial.com/#l=cn&p=pivot-international-student
@@ -241,7 +241,7 @@ Dear __PRIMARY_INSURED_NAME__,
 
 https://purchase.imglobal.com/beginrenewal?CertificateNumber=__CERTIFICATE_NUMBER__
          
-请注意，保险期间所产生的疾病续保时就不是 pre-existing condition，而重新购买新保险就不具备这个好处。另外，续保时请选择邮寄接收方式，这样您既可收到 Email confirmation, 又可以在几天后收到IMG邮寄的保险卡。
+请注意，保险期间所产生的疾病续保时就不是 pre-existing condition，而重新购买新保险就不具备这个好处。另外，在续保输入信息时，您可以更改您的电话号码，Email address, 邮寄地址。您还可以选择邮寄方式接收还是Email only。
      
 
 如果您今天不能完成续保，以后您需要重新购买时， 请登陆泰安网站：http://taianfinancial.com/#l=cn&p=pivot-travel-insurance
@@ -275,7 +275,7 @@ __SIGNATURE__
 
 -----------------------------------------------------------------
 
-Email发给: insurance@imglobal.com
+Email发给: GroupAdmin.UW@imglobal.com
 请抄送给: chris@taianfinancial.com
 
 Dear IMG,
@@ -317,7 +317,7 @@ __SIGNATURE__
 
 -----------------------------------------------------------------
 
-Email发给: insurance@imglobal.com
+Email发给: GroupAdmin.UW@imglobal.com
 请抄送给: chris@taianfinancial.com
 
 Dear IMG,
@@ -361,15 +361,15 @@ END;
         Student A renewal  - Start with SHA, policy at least 1 months
         Student A short rebuy - Start with SHA, policy < 1 months
 
-        Student B renewal - start with EPSN
+        Student B renewal - start with EPSN; Also TaiAn Patriot Exchange (for individuals) which start with TPE(followed by numbers), TPEY. Be careful -- TPE isn't enough since group is TPEG.
         Student B Basic plan renewal - start with EPBN
         Long term travel plan renew - PATA, PATI, PPLA  plus initial term (effective date to termination date) one month or more
         Short term travel plan rebuy (under one month can't renew) - PATA, PATI, PPLA  plus initial term (effective date to termination date) under one month
         Student A expires today rebuy - Start with SHA
-        Student B expires today rebuy - start with EPSN
+        Student B expires today rebuy - start with EPSN; Also TaiAn Patriot Exchange (for individuals) which start with TPE(followed by numbers), TPEY. Be careful -- TPE isn't enough since group is TPEG.
         Long term travel rebuy - PATA, PATI, PPLA  plus initial term (effective date to termination date) one month or more
-        Patriot Exchange group renewal - Starts with EPSWN
-        Patriot Exchange group rebuy - Starts with EPSWN
+        Patriot Exchange group renewal - Starts with EPSWN; Also TaiAn Patriot Exchange Group which start with TPEG (and TPEGY)
+        Patriot Exchange group rebuy - Starts with EPSWN; Also TaiAn Patriot Exchange Group which start with TPEG (and TPEGY)
      */
     $renewEmail = "";
     $subject = "";
@@ -386,7 +386,9 @@ END;
                 $subject = $renewalSubject;
             }
         }
-    } elseif (startsWith($certificateNumber, "EPSN")) {
+    } elseif (startsWith($certificateNumber, "EPSN") ||
+              startsWith($certificateNumber, "TPEY") ||
+              (startsWith($certificateNumber, "TPE") && !startsWith($certificateNumber, "TPEG"))) {
         if ($tooLateToRenew) {
             $renewEmail = $studentBExpiresToday;
             $subject = $expiresTodaySubject;
@@ -417,7 +419,8 @@ END;
                   $subject = $rebuySubject;
              }
         }
-    } elseif (startsWith($certificateNumber, "EPSWN")) {
+    } elseif (startsWith($certificateNumber, "EPSWN") ||
+              startsWith($certificateNumber, "TPEG")) {
         if ($tooLateToRenew) {
             $renewEmail = $patriotExchangeGroupExpiresToday;
             $subject = $expiresTodaySubject;
