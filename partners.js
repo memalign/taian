@@ -218,7 +218,7 @@ function getPartnership(partner) {
                           ],
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("IUPUI allows both international students and J scholars to waive the school plan. Students and scholars have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500; 5. Maternity benefits for females only. For males, Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. For females, Plan A meets the requirements.  Shortly after submitting an application you will receive confirmation of your coverage which you can send to IUPUI to waive the school plan.");
+                        writeText(loc("IUPUI ") + loc("J scholars and enrolled students (F or J) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500; 5. Maternity benefits for females only.  For males, Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. For females, Plan A meets the requirements.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
 
                         endRow();
                     }                          
@@ -261,7 +261,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet USC J scholar standards. Exchange visitors (J visa) enrolled in under 6 credits have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to USC to waive the school plan.");
+                        writeText(loc("University of Southern California ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("USC Scholar Requirements", "http://sait.usc.edu/ois/j1-scholars/scholar-resources/insurance.aspx")
                                 ]));
@@ -282,7 +282,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Stanford University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500.  Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Stanford to waive the school plan.");
+                        writeText(loc("Stanford University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         writeText("Enrolled students with F or J visa are required to have additional coverage (see link below). Taian Plan A meets these requirements.  Shortly after submitting an application you will receive confirmation of your coverage.  You will then need to submit a certification form to Stanford which we can help you with.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Stanford Scholar Requirements", "http://icenter.stanford.edu/quick_reference/healthinsurance.html#J1reqs"),
@@ -297,21 +297,103 @@ function getPartnership(partner) {
                     pageTitle: "TaiAn Health Insurance for Rudolf Steiner College",
                     tabs: [
                             "pivot-home",
-                            "pivot-international-student",
+                            "pivot-international-studentandscholar",
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                             "pivot-aboutus"
                           ],
                           
-                    internationalStudentContent: function () {
+                    internationalStudentandscholarContent: function () {
                         startRow();
-                        writeText("Rudolf Steiner College lists no specific insurance requirements, so the US Department of State requirements apply.  Taian Scholar/Student Insurance Plan A and Plan B meet Rudolf Steiner College J scholar standards and enrolled students requirements. Exchange visitors (J visa) and students have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Rudolf Steiner College as proof of insurance.");
 
+                        writeText(loc("Rudolf Steiner College ") + loc("J scholars and enrolled students (F or J) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+ 
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Rudolf Steiner College Scholar Requirements", "http://www.steinercollege.edu/international"),
                                 makeURL("Rudolf Steiner College Student Requirements", "http://www.steinercollege.edu/international")
                                 ]));
                         endRow();
+                                               
+                        startRow();
+                            document.write(makeTable(4,
+                            [
+                            // Column headers:
+
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+
+
+                            // Table within a table
+                               "Cost Per Month (Non-US Citizens)",
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 19", "$72",   "$386",   "$82",
+                                "19-23",   "$95",   "$386",   "$82",
+                                "24-30",   "$110",  "$426",   "$82",
+                                "31-40",   "$197",  "$567",   "$82",
+                                "41-50",   "$322",  "$586",   "$82",
+                                "51-64",   "$430",  "$567",   "$82"
+                                   ]), 
+                                loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$48.62","$48.62",  "$48.62",
+                                        "25-49",   "$63.37","$63.37",  "$48.62",
+                                        "50-64",   "$135.70","$135.70","$48.62"
+                                        ]) +
+
+                                loc("$50,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN<br />***Best Value***") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$47.16","$47.16",  "$47.16",
+                                        "25-49",   "$61.47","$61.47",  "$47.16",
+                                        "50-64",   "$131.63","$131.63","$47.16"
+                                        ])  + 
+
+                                loc("$100,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$54.76","$54.76",  "$54.76",
+                                        "25-49",   "$71.30","$71.30",  "$54.76",
+                                        "50-64",   "$152.63","$152.63","$54.76"
+                                        ]), 
+                                loc("$50,000 benefit, $500 annual deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$33.30",   "$33.30",   "$30.60",
+                                "30-39",   "$44.10",   "$44.10",   "$30.60",
+                                "40-49",   "$65.70",  "$65.70",   "$30.60",
+                                "50-59",   "$96.30",  "$96.30",   "$30.60"
+                                ]) + 
+                                loc("$50,000 benefit, no deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$46.25",   "$46.25",   "$42.50",
+                                "30-39",   "$61.25",   "$61.25",   "$42.50",
+                                "40-49",   "$91.25",  "$91.25",   "$42.50",
+                                "50-59",   "$133.75",  "$133.75",   "$42.50"
+                                ]),                                
+
+
+                                "",
+                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+                                "",
+                                "",
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
+                                "", 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
+
+                                   ])
+                                    );
+                        endRow();                        
+   
+                        
                     }
               },               
 
@@ -328,7 +410,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Johns Hopkins University and Johns Hopkins Medical Institutions J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Johns Hopkins University or Johns Hopkins Medical Institutions as proof of insurance.");
+                        writeText(loc("Johns Hopkins University and Johns Hopkins Medical Institutions ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Johns Hopkins University Scholar Requirements", "http://oisss.jhu.edu/Presentations/Understanding%20the%20J1%20Visa%20Program.pdf"),
                                 makeURL("Johns Hopkins Medical Institutions Scholar Requirements", "http://ois.johnshopkins.edu/Immigration_and_%20Visas/J1_Scholar/Maintaining_J1_Scholar_Status/Health_Insurance_Requirements/index.html")
@@ -342,21 +424,102 @@ function getPartnership(partner) {
                     pageTitle: "TaiAn Health Insurance for University of Maryland",
                     tabs: [
                             "pivot-home",
-                            "pivot-international-student",
+                            "pivot-international-studentandscholar",
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                             "pivot-aboutus"
                           ],
                           
-                    internationalStudentContent: function () {
+                    internationalStudentandscholarContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Maryland enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Maryland as proof of insurance.");
-                        writeText("Enrolled international students need to complete an online waiver.");
+                        writeText(loc("University of Maryland ") + loc("J scholars and enrolled students (F or J) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+                        writeText("Enrolled students need to purchase insurance before the start of the semester and complete an on line waiver.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Maryland Scholar Requirements", "http://www.international.umd.edu/ies/2750"),
                                 makeURL("University of Maryland Student Requirements", "http://www.international.umd.edu/ies/123")                                
                                 ]));
                         endRow();
+                        
+                          startRow();
+                            document.write(makeTable(4,
+                            [
+                            // Column headers:
+
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+
+
+                            // Table within a table
+                               "Cost Per Month (Non-US Citizens)",
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 19", "$72",   "$386",   "$82",
+                                "19-23",   "$95",   "$386",   "$82",
+                                "24-30",   "$110",  "$426",   "$82",
+                                "31-40",   "$197",  "$567",   "$82",
+                                "41-50",   "$322",  "$586",   "$82",
+                                "51-64",   "$430",  "$567",   "$82"
+                                   ]), 
+                                loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$48.62","$48.62",  "$48.62",
+                                        "25-49",   "$63.37","$63.37",  "$48.62",
+                                        "50-64",   "$135.70","$135.70","$48.62"
+                                        ]) +
+
+                                loc("$50,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN<br />***Best Value***") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$47.16","$47.16",  "$47.16",
+                                        "25-49",   "$61.47","$61.47",  "$47.16",
+                                        "50-64",   "$131.63","$131.63","$47.16"
+                                        ])  + 
+
+                                loc("$100,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$54.76","$54.76",  "$54.76",
+                                        "25-49",   "$71.30","$71.30",  "$54.76",
+                                        "50-64",   "$152.63","$152.63","$54.76"
+                                        ]), 
+                                loc("$50,000 benefit, $500 annual deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$33.30",   "$33.30",   "$30.60",
+                                "30-39",   "$44.10",   "$44.10",   "$30.60",
+                                "40-49",   "$65.70",  "$65.70",   "$30.60",
+                                "50-59",   "$96.30",  "$96.30",   "$30.60"
+                                ]) + 
+                                loc("$50,000 benefit, no deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$46.25",   "$46.25",   "$42.50",
+                                "30-39",   "$61.25",   "$61.25",   "$42.50",
+                                "40-49",   "$91.25",  "$91.25",   "$42.50",
+                                "50-59",   "$133.75",  "$133.75",   "$42.50"
+                                ]),                                
+
+
+                                "",
+                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+                                "",
+                                "",
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
+                                "", 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
+
+                                   ])
+                                    );
+                        endRow();                        
+                                           
+                        
                     }
               }, 
               
@@ -373,7 +536,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Massachusetts - Boston J scholar standards (and enrolled undergraduate students with 8 or fewer credit hours per semester and enrolled graduate students with 6 or fewer credit hours per semester). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Massachusetts - Boston as proof of insurance.");
+                        writeText(loc("UMASS Boston ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("UMASS Boston Scholar Requirements", "http://www.umb.edu/academics/oita/isss/scholar_services#insurance")
                                 ]));
@@ -386,15 +549,15 @@ function getPartnership(partner) {
                     pageTitle: "TaiAn Health Insurance for University of Pittsburgh",
                     tabs: [
                             "pivot-home",
-                            "pivot-international-student",
+                            "pivot-international-studentandscholar",
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                             "pivot-aboutus"
                           ],
                           
-                    internationalStudentContent: function () {
+                    internationalStudentandscholarContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Pittsburgh enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Pittsburgh as proof of insurance.");
+                        writeText(loc("University of Pittsburgh ") + loc("J scholars and enrolled students (F or J) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         writeText("Enrolled students are required to attest that they have coverage at the beginning of each fall semester.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Pittsburgh Scholar Requirements", "http://www.ois.pitt.edu/immigration-related-stuff/health-insurance/#nonstudent"),
@@ -402,6 +565,87 @@ function getPartnership(partner) {
                                 makeURL("Student attestation", " https://my.pitt.edu/")                                
                                 ]));
                         endRow();
+                        
+                        startRow();
+                            document.write(makeTable(4,
+                            [
+                            // Column headers:
+
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+
+
+                            // Table within a table
+                               "Cost Per Month (Non-US Citizens)",
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 19", "$72",   "$386",   "$82",
+                                "19-23",   "$95",   "$386",   "$82",
+                                "24-30",   "$110",  "$426",   "$82",
+                                "31-40",   "$197",  "$567",   "$82",
+                                "41-50",   "$322",  "$586",   "$82",
+                                "51-64",   "$430",  "$567",   "$82"
+                                   ]), 
+                                loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$48.62","$48.62",  "$48.62",
+                                        "25-49",   "$63.37","$63.37",  "$48.62",
+                                        "50-64",   "$135.70","$135.70","$48.62"
+                                        ]) +
+
+                                loc("$50,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN<br />***Best Value***") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$47.16","$47.16",  "$47.16",
+                                        "25-49",   "$61.47","$61.47",  "$47.16",
+                                        "50-64",   "$131.63","$131.63","$47.16"
+                                        ])  + 
+
+                                loc("$100,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$54.76","$54.76",  "$54.76",
+                                        "25-49",   "$71.30","$71.30",  "$54.76",
+                                        "50-64",   "$152.63","$152.63","$54.76"
+                                        ]), 
+                                loc("$50,000 benefit, $500 annual deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$33.30",   "$33.30",   "$30.60",
+                                "30-39",   "$44.10",   "$44.10",   "$30.60",
+                                "40-49",   "$65.70",  "$65.70",   "$30.60",
+                                "50-59",   "$96.30",  "$96.30",   "$30.60"
+                                ]) + 
+                                loc("$50,000 benefit, no deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$46.25",   "$46.25",   "$42.50",
+                                "30-39",   "$61.25",   "$61.25",   "$42.50",
+                                "40-49",   "$91.25",  "$91.25",   "$42.50",
+                                "50-59",   "$133.75",  "$133.75",   "$42.50"
+                                ]),                                
+
+
+                                "",
+                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+                                "",
+                                "",
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
+                                "", 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
+
+                                   ])
+                                    );
+                        endRow();                        
+                                            
+                        
                     }
               }, 
               
@@ -418,9 +662,9 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Hawaii standards for F visa and J visa  standards. J visa holders (enrolled students or visiting scholars) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Hawaii as proof of insurance.  J students have their insurance approved by ISS.");
-                        writeText("University of Hawaii F visa student insurance is approved by Student Health Insurance Office.  F visa holders have required coverage as follows: 1. Medical benefits of $100,000 per accident or illness; 2. Coinsurance coverage of 75% or more and mental nervous benefits ; 3.Repatriation of remains of $7,500; 4. Medical evacuation of $10,000; 5. Deductible not over $500; 6. Pre-existing waiting period not over 6 months.  Plan A is the most affordable plan that meets the standards. You need to select the optional rider for a 6 month pre-existing condition waiting period.");                        
-                        writeText("We can assist with the forms required for each visa.");
+                        writeText("University of Hawaii J visa holders (enrolled students or visiting scholars) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the USDOS. Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter).  You can send the confirmation letter to your school as proof of insurance.  J students need their insurance approved by ISS.");
+                        writeText("F visa student insurance is approved by Student Health Insurance Office. F visa holders have required coverage as follows: 1. Medical benefits of $100,000 per accident or illness; 2. Coinsurance coverage of 75% or more and mental nervous benefits ; 3.Repatriation of remains of $7,500; 4. Medical evacuation of $10,000; 5. Deductible not over $500; 6. Pre-existing waiting period not over 6 months. Plan A is the most affordable plan that meets the standards. You need to select the optional rider for a 6 month pre-existing condition waiting period.");                        
+                        writeText("We can assist with the waiver forms required for each visa.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Hawaii J scholar", "http://www.hawaii.edu/fsis/downloads/JHealthComplianceForm.pdf"),
                                 makeURL("University of Hawaii F or J student", "http://www.hawaii.edu/issmanoa/pages/home/health-insurance.php")                        
@@ -434,21 +678,102 @@ function getPartnership(partner) {
                     pageTitle: "TaiAn Health Insurance for University of North Carolina",
                     tabs: [
                             "pivot-home",
-                            "pivot-international-student",
+                            "pivot-international-studentandscholar",
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                             "pivot-aboutus"
                           ],
                           
-                    internationalStudentContent: function () {
+                    internationalStudentandscholarContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of North Carolina enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of North Carolina as proof of insurance.");
-                        writeText("Enrolled international students need to complete an online waiver.");                        
+                        writeText(loc("University of North Carolina ") + loc("J scholars and enrolled students (F or J) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+                        writeText("Enrolled students need to purchase insurance before the start of the semester and complete an on line waiver.");                        
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of North Carolina Scholar Requirements", "http://oisss.unc.edu/academic_staff/j/j_insurance.pdf"),
                                 makeURL("University of North Carolina Student Requirements", "https://www.bcbsnc.com/assets/studentblue/pdfs/U9308b%20International%20Brochure%20Enroll-Waiver%20Process%20FINAL%20for%20UNC.pdf")                        
                                 ]));
                         endRow();
+                        
+                          startRow();
+                            document.write(makeTable(4,
+                            [
+                            // Column headers:
+
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+
+
+                            // Table within a table
+                               "Cost Per Month (Non-US Citizens)",
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 19", "$72",   "$386",   "$82",
+                                "19-23",   "$95",   "$386",   "$82",
+                                "24-30",   "$110",  "$426",   "$82",
+                                "31-40",   "$197",  "$567",   "$82",
+                                "41-50",   "$322",  "$586",   "$82",
+                                "51-64",   "$430",  "$567",   "$82"
+                                   ]), 
+                                loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$48.62","$48.62",  "$48.62",
+                                        "25-49",   "$63.37","$63.37",  "$48.62",
+                                        "50-64",   "$135.70","$135.70","$48.62"
+                                        ]) +
+
+                                loc("$50,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN<br />***Best Value***") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$47.16","$47.16",  "$47.16",
+                                        "25-49",   "$61.47","$61.47",  "$47.16",
+                                        "50-64",   "$131.63","$131.63","$47.16"
+                                        ])  + 
+
+                                loc("$100,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$54.76","$54.76",  "$54.76",
+                                        "25-49",   "$71.30","$71.30",  "$54.76",
+                                        "50-64",   "$152.63","$152.63","$54.76"
+                                        ]), 
+                                loc("$50,000 benefit, $500 annual deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$33.30",   "$33.30",   "$30.60",
+                                "30-39",   "$44.10",   "$44.10",   "$30.60",
+                                "40-49",   "$65.70",  "$65.70",   "$30.60",
+                                "50-59",   "$96.30",  "$96.30",   "$30.60"
+                                ]) + 
+                                loc("$50,000 benefit, no deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$46.25",   "$46.25",   "$42.50",
+                                "30-39",   "$61.25",   "$61.25",   "$42.50",
+                                "40-49",   "$91.25",  "$91.25",   "$42.50",
+                                "50-59",   "$133.75",  "$133.75",   "$42.50"
+                                ]),                                
+
+
+                                "",
+                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+                                "",
+                                "",
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
+                                "", 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
+
+                                   ])
+                                    );
+                        endRow();                        
+                                           
+                        
                     }
               },   
 
@@ -457,21 +782,103 @@ function getPartnership(partner) {
                     pageTitle: "TaiAn Health Insurance for Temple University",
                     tabs: [
                             "pivot-home",
-                            "pivot-international-student",
+                            "pivot-international-studentandscholar",
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                             "pivot-aboutus"
                           ],
                           
-                    internationalStudentContent: function () {
+                    internationalStudentandscholarContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Temple University enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Temple University as proof of insurance.");
+                        writeText(loc("Temple University ") + loc("J scholars and enrolled students (F or J) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         writeText("Enrolled international students need to complete an online waiver.");                        
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Temple University Scholar Requirements", "http://www.temple.edu/isss/general/health-j-scholar.html"),
                                 makeURL("Temple University Student Requirements", "http://www.temple.edu/hr/students/healthinsurance/international/summary.htm")                        
                                 ]));
                         endRow();
+                       
+                        startRow();
+                            document.write(makeTable(4,
+                            [
+                            // Column headers:
+
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+
+
+                            // Table within a table
+                               "Cost Per Month (Non-US Citizens)",
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 19", "$72",   "$386",   "$82",
+                                "19-23",   "$95",   "$386",   "$82",
+                                "24-30",   "$110",  "$426",   "$82",
+                                "31-40",   "$197",  "$567",   "$82",
+                                "41-50",   "$322",  "$586",   "$82",
+                                "51-64",   "$430",  "$567",   "$82"
+                                   ]), 
+                                loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$48.62","$48.62",  "$48.62",
+                                        "25-49",   "$63.37","$63.37",  "$48.62",
+                                        "50-64",   "$135.70","$135.70","$48.62"
+                                        ]) +
+
+                                loc("$50,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN<br />***Best Value***") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$47.16","$47.16",  "$47.16",
+                                        "25-49",   "$61.47","$61.47",  "$47.16",
+                                        "50-64",   "$131.63","$131.63","$47.16"
+                                        ])  + 
+
+                                loc("$100,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$54.76","$54.76",  "$54.76",
+                                        "25-49",   "$71.30","$71.30",  "$54.76",
+                                        "50-64",   "$152.63","$152.63","$54.76"
+                                        ]), 
+                                loc("$50,000 benefit, $500 annual deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$33.30",   "$33.30",   "$30.60",
+                                "30-39",   "$44.10",   "$44.10",   "$30.60",
+                                "40-49",   "$65.70",  "$65.70",   "$30.60",
+                                "50-59",   "$96.30",  "$96.30",   "$30.60"
+                                ]) + 
+                                loc("$50,000 benefit, no deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$46.25",   "$46.25",   "$42.50",
+                                "30-39",   "$61.25",   "$61.25",   "$42.50",
+                                "40-49",   "$91.25",  "$91.25",   "$42.50",
+                                "50-59",   "$133.75",  "$133.75",   "$42.50"
+                                ]),                                
+
+
+                                "",
+                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+                                "",
+                                "",
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
+                                "", 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
+
+                                   ])
+                                    );
+                        endRow();                        
+                           
+                        
+                        
                     }
               }, 
 
@@ -480,21 +887,102 @@ function getPartnership(partner) {
                     pageTitle: "TaiAn Health Insurance for University of Colorado",
                     tabs: [
                             "pivot-home",
-                            "pivot-international-student",
+                            "pivot-international-studentandscholar",
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                             "pivot-aboutus"
                           ],
                           
-                    internationalStudentContent: function () {
+                    internationalStudentandscholarContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Colorado enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Colorado as proof of insurance.");
-                        writeText("Enrolled international students need to complete an online waiver.");                        
+                        writeText(loc("University of Colorado ") + loc("J scholars and enrolled students (F or J) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+                        writeText("Enrolled students need to purchase insurance before the start of the semester and complete an on line waiver.");                        
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Colorado Scholar Requirements", "http://www.colorado.edu/oie/sites/default/files/attached-files/21%20Insurance%20Compliance%20Form.pdf"),
                                 makeURL("University of Colorado Student Requirements", "http://www.colorado.edu/healthcenter/insurance")                        
                                 ]));
                         endRow();
+                        
+                         startRow();
+                            document.write(makeTable(4,
+                            [
+                            // Column headers:
+
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+
+
+                            // Table within a table
+                               "Cost Per Month (Non-US Citizens)",
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 19", "$72",   "$386",   "$82",
+                                "19-23",   "$95",   "$386",   "$82",
+                                "24-30",   "$110",  "$426",   "$82",
+                                "31-40",   "$197",  "$567",   "$82",
+                                "41-50",   "$322",  "$586",   "$82",
+                                "51-64",   "$430",  "$567",   "$82"
+                                   ]), 
+                                loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$48.62","$48.62",  "$48.62",
+                                        "25-49",   "$63.37","$63.37",  "$48.62",
+                                        "50-64",   "$135.70","$135.70","$48.62"
+                                        ]) +
+
+                                loc("$50,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN<br />***Best Value***") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$47.16","$47.16",  "$47.16",
+                                        "25-49",   "$61.47","$61.47",  "$47.16",
+                                        "50-64",   "$131.63","$131.63","$47.16"
+                                        ])  + 
+
+                                loc("$100,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$54.76","$54.76",  "$54.76",
+                                        "25-49",   "$71.30","$71.30",  "$54.76",
+                                        "50-64",   "$152.63","$152.63","$54.76"
+                                        ]), 
+                                loc("$50,000 benefit, $500 annual deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$33.30",   "$33.30",   "$30.60",
+                                "30-39",   "$44.10",   "$44.10",   "$30.60",
+                                "40-49",   "$65.70",  "$65.70",   "$30.60",
+                                "50-59",   "$96.30",  "$96.30",   "$30.60"
+                                ]) + 
+                                loc("$50,000 benefit, no deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$46.25",   "$46.25",   "$42.50",
+                                "30-39",   "$61.25",   "$61.25",   "$42.50",
+                                "40-49",   "$91.25",  "$91.25",   "$42.50",
+                                "50-59",   "$133.75",  "$133.75",   "$42.50"
+                                ]),                                
+
+
+                                "",
+                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+                                "",
+                                "",
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
+                                "", 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
+
+                                   ])
+                                    );
+                        endRow();                        
+                                            
+                        
                     }
               }, 
 
@@ -511,11 +999,11 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Bellevue College enrolled international student standards (J visa only) and J scholar standards. Both students and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Bellevue College as proof of insurance.");
-                        writeText("Enrolled international students with J visa need to complete a waiver.  Students with other visas can not waive school plan.");                        
+                        writeText("Bellevue College J scholars and students who are not full time have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS. Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.");
+                        
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("University of Bellevue College Scholar Requirements", "http://bellevuecollege.edu/isp/insurance.html"),
-                                makeURL("University of Bellevue College Student Requirements", "http://bellevuecollege.edu/isp/insurance.html")                        
+                                makeURL("Bellevue College Scholar Requirements", "http://www.bellevuecollege.edu/isp/current-students/student-life/medical-insurance/"),
+                                makeURL("Bellevue College Student Requirements", "http://www.bellevuecollege.edu/isp/current-students/student-life/medical-insurance/")                        
                                 ]));
                         endRow();
                     }
@@ -526,20 +1014,98 @@ function getPartnership(partner) {
                     pageTitle: "TaiAn Health Insurance for Central Washington University",
                     tabs: [
                             "pivot-home",
-                            "pivot-international-student",
+                            "pivot-international-studentandscholar",
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                             "pivot-aboutus"
                           ],
                           
-                    internationalStudentContent: function () {
+                    internationalStudentandscholarContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Central Washington University enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Central Washington University as proof of insurance.");                        
+                        writeText(loc("Central Washington University ") + loc("J scholars and enrolled students (F or J) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));                       
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Central Washington University Scholar Requirements", "http://www.cwu.edu/international-programs/medical-insurance"),
                                 makeURL("Central Washington University Student Requirements", "http://www.cwu.edu/international-programs/medical-insurance")                        
                                 ]));
                         endRow();
+                        startRow();
+                            document.write(makeTable(4,
+                            [
+                            // Column headers:
+
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+
+
+                            // Table within a table
+                               "Cost Per Month (Non-US Citizens)",
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 19", "$72",   "$386",   "$82",
+                                "19-23",   "$95",   "$386",   "$82",
+                                "24-30",   "$110",  "$426",   "$82",
+                                "31-40",   "$197",  "$567",   "$82",
+                                "41-50",   "$322",  "$586",   "$82",
+                                "51-64",   "$430",  "$567",   "$82"
+                                   ]), 
+                                loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$48.62","$48.62",  "$48.62",
+                                        "25-49",   "$63.37","$63.37",  "$48.62",
+                                        "50-64",   "$135.70","$135.70","$48.62"
+                                        ]) +
+
+                                loc("$50,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN<br />***Best Value***") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$47.16","$47.16",  "$47.16",
+                                        "25-49",   "$61.47","$61.47",  "$47.16",
+                                        "50-64",   "$131.63","$131.63","$47.16"
+                                        ])  + 
+
+                                loc("$100,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$54.76","$54.76",  "$54.76",
+                                        "25-49",   "$71.30","$71.30",  "$54.76",
+                                        "50-64",   "$152.63","$152.63","$54.76"
+                                        ]), 
+                                loc("$50,000 benefit, $500 annual deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$33.30",   "$33.30",   "$30.60",
+                                "30-39",   "$44.10",   "$44.10",   "$30.60",
+                                "40-49",   "$65.70",  "$65.70",   "$30.60",
+                                "50-59",   "$96.30",  "$96.30",   "$30.60"
+                                ]) + 
+                                loc("$50,000 benefit, no deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$46.25",   "$46.25",   "$42.50",
+                                "30-39",   "$61.25",   "$61.25",   "$42.50",
+                                "40-49",   "$91.25",  "$91.25",   "$42.50",
+                                "50-59",   "$133.75",  "$133.75",   "$42.50"
+                                ]),                                
+
+
+                                "",
+                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+                                "",
+                                "",
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
+                                "", 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
+
+                                   ])
+                                    );
+                        endRow();                         
                     }
               }, 
 
@@ -556,7 +1122,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Case Western Reserve J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Case Western Reserve as proof of insurance.");                        
+                        writeText(loc("Case Western Reserve ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));                       
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Case Western Reserve Scholar Requirements", "http://www.case.edu/finadmin/humres/ffs/j1.html")
                         
@@ -570,15 +1136,15 @@ function getPartnership(partner) {
                     pageTitle: "TaiAn Health Insurance for City University of New York (CUNY)",
                     tabs: [
                             "pivot-home",
-                            "pivot-international-student",
+                            "pivot-international-studentandscholar",
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                             "pivot-aboutus"
                           ],
                           
-                    internationalStudentContent: function () {
+                    internationalStudentandscholarContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet all City University of New York (CUNY) enrolled international student standards and J scholar standards (See CUNY School List Below). Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to CUNY as proof of insurance.");                        
+                        writeText("All City University of New York (CUNY - see CUNY School List Below) J scholars and enrolled students (F or J) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.");                        
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("CUNY Requirements for all CUNY schools Students and Scholars", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html")
                        
@@ -616,7 +1182,86 @@ function getPartnership(partner) {
                             ]));
                         writeText("");                            
                             endRow();                            
-                        
+                       
+                        startRow();
+                            document.write(makeTable(4,
+                            [
+                            // Column headers:
+
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+
+
+                            // Table within a table
+                               "Cost Per Month (Non-US Citizens)",
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 19", "$72",   "$386",   "$82",
+                                "19-23",   "$95",   "$386",   "$82",
+                                "24-30",   "$110",  "$426",   "$82",
+                                "31-40",   "$197",  "$567",   "$82",
+                                "41-50",   "$322",  "$586",   "$82",
+                                "51-64",   "$430",  "$567",   "$82"
+                                   ]), 
+                                loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$48.62","$48.62",  "$48.62",
+                                        "25-49",   "$63.37","$63.37",  "$48.62",
+                                        "50-64",   "$135.70","$135.70","$48.62"
+                                        ]) +
+
+                                loc("$50,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN<br />***Best Value***") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$47.16","$47.16",  "$47.16",
+                                        "25-49",   "$61.47","$61.47",  "$47.16",
+                                        "50-64",   "$131.63","$131.63","$47.16"
+                                        ])  + 
+
+                                loc("$100,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$54.76","$54.76",  "$54.76",
+                                        "25-49",   "$71.30","$71.30",  "$54.76",
+                                        "50-64",   "$152.63","$152.63","$54.76"
+                                        ]), 
+                                loc("$50,000 benefit, $500 annual deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$33.30",   "$33.30",   "$30.60",
+                                "30-39",   "$44.10",   "$44.10",   "$30.60",
+                                "40-49",   "$65.70",  "$65.70",   "$30.60",
+                                "50-59",   "$96.30",  "$96.30",   "$30.60"
+                                ]) + 
+                                loc("$50,000 benefit, no deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$46.25",   "$46.25",   "$42.50",
+                                "30-39",   "$61.25",   "$61.25",   "$42.50",
+                                "40-49",   "$91.25",  "$91.25",   "$42.50",
+                                "50-59",   "$133.75",  "$133.75",   "$42.50"
+                                ]),                                
+
+
+                                "",
+                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+                                "",
+                                "",
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
+                                "", 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
+
+                                   ])
+                                    );
+                        endRow();                        
+                           
                         
 
                     }
@@ -627,20 +1272,103 @@ function getPartnership(partner) {
                     pageTitle: "TaiAn Health Insurance for Kent State University",
                     tabs: [
                             "pivot-home",
-                            "pivot-international-student",
+                            "pivot-international-studentandscholar",
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                             "pivot-aboutus"
                           ],
                           
-                    internationalStudentContent: function () {
+                    internationalStudentandscholarContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Kent State University enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Kent State University as proof of insurance.");                        
+                        writeText(loc("Kent State University ") + loc("J scholars and enrolled students (F or J) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+                                              
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Kent State University Scholar Requirements", "http://www.kent.edu/isss/scholars/upload/j1-student-and-scholar-guide.pdf"),
                                 makeURL("Kent State University Student Requirements", "http://www.kent.edu/isss/futurestudents/upload/welcome-guide-aug-2013-4.pdf")                        
                                 ]));
                         endRow();
+                        
+                        startRow();
+                            document.write(makeTable(4,
+                            [
+                            // Column headers:
+
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+
+
+                            // Table within a table
+                               "Cost Per Month (Non-US Citizens)",
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 19", "$72",   "$386",   "$82",
+                                "19-23",   "$95",   "$386",   "$82",
+                                "24-30",   "$110",  "$426",   "$82",
+                                "31-40",   "$197",  "$567",   "$82",
+                                "41-50",   "$322",  "$586",   "$82",
+                                "51-64",   "$430",  "$567",   "$82"
+                                   ]), 
+                                loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$48.62","$48.62",  "$48.62",
+                                        "25-49",   "$63.37","$63.37",  "$48.62",
+                                        "50-64",   "$135.70","$135.70","$48.62"
+                                        ]) +
+
+                                loc("$50,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN<br />***Best Value***") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$47.16","$47.16",  "$47.16",
+                                        "25-49",   "$61.47","$61.47",  "$47.16",
+                                        "50-64",   "$131.63","$131.63","$47.16"
+                                        ])  + 
+
+                                loc("$100,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$54.76","$54.76",  "$54.76",
+                                        "25-49",   "$71.30","$71.30",  "$54.76",
+                                        "50-64",   "$152.63","$152.63","$54.76"
+                                        ]), 
+                                loc("$50,000 benefit, $500 annual deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$33.30",   "$33.30",   "$30.60",
+                                "30-39",   "$44.10",   "$44.10",   "$30.60",
+                                "40-49",   "$65.70",  "$65.70",   "$30.60",
+                                "50-59",   "$96.30",  "$96.30",   "$30.60"
+                                ]) + 
+                                loc("$50,000 benefit, no deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$46.25",   "$46.25",   "$42.50",
+                                "30-39",   "$61.25",   "$61.25",   "$42.50",
+                                "40-49",   "$91.25",  "$91.25",   "$42.50",
+                                "50-59",   "$133.75",  "$133.75",   "$42.50"
+                                ]),                                
+
+
+                                "",
+                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+                                "",
+                                "",
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
+                                "", 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
+
+                                   ])
+                                    );
+                        endRow();                        
+                          
+                        
+                        
                     }
               },     
 
@@ -649,20 +1377,102 @@ function getPartnership(partner) {
                     pageTitle: "TaiAn Health Insurance for Depaul University",
                     tabs: [
                             "pivot-home",
-                            "pivot-international-student",
+                            "pivot-international-studentandscholar",
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                             "pivot-aboutus"
                           ],
                           
-                    internationalStudentContent: function () {
+                    internationalStudentandscholarContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Depaul University enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Depaul University as proof of insurance.");                        
+                       
+                        writeText(loc("Depaul University ") + loc("J scholars and enrolled students (F or J) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Depaul University Scholar Requirements", "http://oiss.depaul.edu/docs/J-1_health_insurance_requirements_FQ_201.pdf"),
                                 makeURL("Depaul University Student Requirements", "http://oiss.depaul.edu/FAQ/index.asp")                        
                                 ]));
                         endRow();
+
+                        startRow();
+                            document.write(makeTable(4,
+                            [
+                            // Column headers:
+
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+
+
+                            // Table within a table
+                               "Cost Per Month (Non-US Citizens)",
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 19", "$72",   "$386",   "$82",
+                                "19-23",   "$95",   "$386",   "$82",
+                                "24-30",   "$110",  "$426",   "$82",
+                                "31-40",   "$197",  "$567",   "$82",
+                                "41-50",   "$322",  "$586",   "$82",
+                                "51-64",   "$430",  "$567",   "$82"
+                                   ]), 
+                                loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$48.62","$48.62",  "$48.62",
+                                        "25-49",   "$63.37","$63.37",  "$48.62",
+                                        "50-64",   "$135.70","$135.70","$48.62"
+                                        ]) +
+
+                                loc("$50,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN<br />***Best Value***") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$47.16","$47.16",  "$47.16",
+                                        "25-49",   "$61.47","$61.47",  "$47.16",
+                                        "50-64",   "$131.63","$131.63","$47.16"
+                                        ])  + 
+
+                                loc("$100,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$54.76","$54.76",  "$54.76",
+                                        "25-49",   "$71.30","$71.30",  "$54.76",
+                                        "50-64",   "$152.63","$152.63","$54.76"
+                                        ]), 
+                                loc("$50,000 benefit, $500 annual deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$33.30",   "$33.30",   "$30.60",
+                                "30-39",   "$44.10",   "$44.10",   "$30.60",
+                                "40-49",   "$65.70",  "$65.70",   "$30.60",
+                                "50-59",   "$96.30",  "$96.30",   "$30.60"
+                                ]) + 
+                                loc("$50,000 benefit, no deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$46.25",   "$46.25",   "$42.50",
+                                "30-39",   "$61.25",   "$61.25",   "$42.50",
+                                "40-49",   "$91.25",  "$91.25",   "$42.50",
+                                "50-59",   "$133.75",  "$133.75",   "$42.50"
+                                ]),                                
+
+
+                                "",
+                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+                                "",
+                                "",
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
+                                "", 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
+
+                                   ])
+                                    );
+                        endRow();                        
+                           
+                        
                     }
               },                
 
@@ -679,28 +1489,26 @@ function getPartnership(partner) {
                           
                     internationalStudentandscholarContent: function () {
                         startRow();
-                        writeText("TaiAn Insurance Plan A, Plan B, and Plan C meet Murray State University F and J visa insurance requirements. J visa holders have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan C with $50,000 benefit and $500 deductible is the most affordable plan that meets the standards, and the US Department of State requirements.");  
-                        writeText("F visa holders are required to have $100,000 of coverage. Plan C with $100,000 benefit and $500 deductible is the most affordable plan that meets the standards.");
-                        writeText("Shortly after submitting an application you will receive confirmation of your coverage which you can send to Murray State University as proof of insurance.");                        
+                        writeText("J VISA  (F VISA SCROLL DOWN THE PAGE)");                        
+                        writeText("");                        
+                        writeText("Murray State University J visa holders have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and $500 deductible) and Plan C (with $50,000 benefit and $500 deductible) are the most affordable plans that meet the requirements.  You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.");  
+                        
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Murray State University requirements", "http://www.murraystate.edu/Students/International/IIS/StudentScholarServices/HealthcareInsurance.aspx")
                         
                                 ]));
                         endRow();
-                        startRow();
-                        writeText("J VISA  (F VISA SCROLL DOWN THE PAGE)");                        
-                        writeText("");                        
-                            document.write(makeTable(3,
+                        
+                         startRow();
+                            document.write(makeTable(4,
                             [
                             // Column headers:
 
-                            "Plan A (Student Health Advantage) $300,000 / $100 deductible / Maternity", "Plan B (Patriot Exchange) $100 deductible", "Plan C (Patriot Travel) $50,000", 
-                            "Monthly Premium", "Monthly Premium", "Monthly Premium",                            
-                            "(Recommended if you want maternity benefit)", "(J - Recommended Plan)", "(Lowest Cost Plan)",             
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
-
+                               "Cost Per Month (Non-US Citizens)",
                                 makeTable(4, [
                                 "Age",     "F1/J1", "Spouse", "Children",
                                 "&lt; 19", "$72",   "$386",   "$82",
@@ -709,74 +1517,85 @@ function getPartnership(partner) {
                                 "31-40",   "$197",  "$567",   "$82",
                                 "41-50",   "$322",  "$586",   "$82",
                                 "51-64",   "$430",  "$567",   "$82"
-                                
-                                ]), 
-                                
-                                loc("$50,000 per illness/injury") +         
+                                   ]), 
+                                loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
-                                    "Age",     "F1/J1", "Spouse", "Children",
-                                    "&lt; 25", "$48.62","$48.62",  "$48.62",
-                                    "25-49",   "$63.37","$63.37",  "$48.62",
-                                    "50-64",   "$135.70","$135.70","$48.62"
-                                    ]) +
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$48.62","$48.62",  "$48.62",
+                                        "25-49",   "$63.37","$63.37",  "$48.62",
+                                        "50-64",   "$135.70","$135.70","$48.62"
+                                        ]) +
 
-                                loc("$250,000 per illness/injury") +         
+                                loc("$50,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN<br />") +         
                                 makeTable(4, [
-                                    "Age",     "F1/J1", "Spouse", "Children",
-                                    "&lt; 25", "$60.36","$60.36",  "$60.36",
-                                    "25-49",   "$78.59","$78.59",  "$60.36",
-                                    "50-64",   "$168.27","$168.27","$60.36"
-                                    ]), 
- 
-                                loc("$50,000 benefit $500 deductible.  ") +  
-                                loc("Lowest Cost Plan for J visa") +                                  
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$47.16","$47.16",  "$47.16",
+                                        "25-49",   "$61.47","$61.47",  "$47.16",
+                                        "50-64",   "$131.63","$131.63","$47.16"
+                                        ])  + 
+
+                                loc("$50,000 per illness/injury, $500 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$43.86","$43.86",  "$43.86",
+                                        "25-49",   "$57.17","$57.17",  "$43.86",
+                                        "50-64",   "$122.41","$122.41","$43.86"
+                                        ]), 
+                                loc("$50,000 benefit, $500 annual deductible<br />") + 
+                                 loc("Lowest Cost Plan for J visa") +                                 
                                 makeTable(4, [
                                 "Age",     "F1/J1", "Spouse", "Children",
                                 "&lt; 30", "$33.30",   "$33.30",   "$30.60",
                                 "30-39",   "$44.10",   "$44.10",   "$30.60",
                                 "40-49",   "$65.70",  "$65.70",   "$30.60",
                                 "50-59",   "$96.30",  "$96.30",   "$30.60"
-                                ]) +
-                                
-                                loc("$50,000 benefit $250 deductible.  ") +  
-                                
+                                ]) + 
+                                loc("$50,000 benefit, $250 annual deductible") +                                        
                                 makeTable(4, [
                                 "Age",     "F1/J1", "Spouse", "Children",
                                 "&lt; 30", "$37.00",   "$37.00",   "$34.00",
                                 "30-39",   "$49.00",   "$49.00",   "$34.00",
                                 "40-49",   "$73.00",  "$73.00",   "$34.00",
                                 "50-59",   "$107.00",  "$107.00",   "$34.00"
-                                ]), 
-                    
+                                ]),                                
+
+
+                                "",
                                 makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
-                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Patriot Exchange Program - Standard"), "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                makeBuyURL(loc("Buy Group") + "<br />" + loc("Group for 2 or more"), "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699"),
-                                makeBuyURL(loc("Buy Group")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699")                                 
-
-             
+                                "",
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
+                                "", 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
 
                                    ])
                                     );
-                        endRow();   
+                        endRow();                          
+                        
+ 
 
                         startRow();
                         writeText("");                          
                         writeText("F VISA");                        
-                        writeText("");                        
-                            document.write(makeTable(3,
+                        writeText(""); 
+                        writeText("F visa holders are required to have $100,000 of coverage. Taian Plan B (with $100,000 benefit per illness or injury and $500 deductible) and Plan C (with $100,000 benefit and $500 deductible) are the most affordable plans that meet the requirements.");                        
+
+                            document.write(makeTable(4,
                             [
                             // Column headers:
 
-                            "Plan A (Student Health Advantage) $300,000 / $100 deductible / Maternity", "Plan B (Patriot Exchange) $250,000 / $100 deductible", "Plan C (Patriot Travel) $100,000", 
-                            "Monthly Premium", "Monthly Premium", "Monthly Premium",                            
-                            "(Recommended if you want maternity benefit)", "", "(Lowest Cost Plan)",             
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
-
+                               "Cost Per Month (Non-US Citizens)",
                                 makeTable(4, [
                                 "Age",     "F1/J1", "Spouse", "Children",
                                 "&lt; 19", "$72",   "$386",   "$82",
@@ -785,21 +1604,30 @@ function getPartnership(partner) {
                                 "31-40",   "$197",  "$567",   "$82",
                                 "41-50",   "$322",  "$586",   "$82",
                                 "51-64",   "$430",  "$567",   "$82"
-                                
-                                ]), 
-                                
-
-
-                                loc("$250,000 per illness/injury") +         
+                                   ]), 
+                                loc("$100,000 per illness/injury, $100 per illness deductible") +         
                                 makeTable(4, [
-                                    "Age",     "F1/J1", "Spouse", "Children",
-                                    "&lt; 25", "$60.36","$60.36",  "$60.36",
-                                    "25-49",   "$78.59","$78.59",  "$60.36",
-                                    "50-64",   "$168.27","$168.27","$60.36"
-                                    ]), 
- 
-                               
-                                  
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$56.45","$56.45",  "$56.45",
+                                        "25-49",   "$73.50","$73.50",  "$56.45",
+                                        "50-64",   "$157.35","$157.35","$56.45"
+                                        ]) + 
+
+                                loc("$100,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$54.76","$54.76",  "$54.76",
+                                        "25-49",   "$71.30","$71.30",  "$54.76",
+                                        "50-64",   "$152.63","$152.63","$54.76"
+                                        ]) +  
+
+                                loc("$100,000 per illness/injury, $500 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$50.92","$50.92",  "$50.92",
+                                        "25-49",   "$66.30","$66.30",  "$50.92",
+                                        "50-64",   "$141.95","$141.95","$50.92"
+                                        ]), 
                                 loc("$100,000 benefit $500 deductible.  ") + 
                                  loc("Lowest Cost Plan for F visa") +                                
                                 makeTable(4, [
@@ -816,21 +1644,30 @@ function getPartnership(partner) {
                                 "&lt; 30", "$46.00",   "$46.00",   "$41.00",
                                 "30-39",   "$62.00",   "$62.00",   "$41.00",
                                 "40-49",   "$90.00",  "$90.00",   "$41.00",
-                                "50-59",   "$124.20",  "$124.20",   "$41.00"                                
-                                ]), 
-                    
+                                "50-59",   "$124.20",  "$124.20",   "$41.00" 
+                                ]),                                
+
+
+                                "",
                                 makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
-                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Patriot Exchange Program - Standard"), "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                makeBuyURL(loc("Buy Group") + "<br />" + loc("Group for 2 or more"), "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699"),
-                                makeBuyURL(loc("Buy Group")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699")                                 
-
-             
+                                "",
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
+                                "", 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
 
                                    ])
-                                    );
+                                    );                        
+
+
+
                         endRow();                        
                         
                         startRow();
@@ -846,20 +1683,102 @@ function getPartnership(partner) {
                     pageTitle: "TaiAn Health Insurance for Western Washington University",
                     tabs: [
                             "pivot-home",
-                            "pivot-international-student",
+                            "pivot-international-studentandscholar",
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                             "pivot-aboutus"
                           ],
                           
-                    internationalStudentContent: function () {
+                    internationalStudentandscholarContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Western Washington University enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Western Washington University as proof of insurance.");                        
+                        writeText(loc("Western Washington University ") + loc("J scholars and enrolled students (F or J) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));                     
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Western Washington University Scholar Requirements", "http://www.wwu.edu/chw/student_health/billing.shtml"),
                                 makeURL("Western Washington University Student Requirements", "http://www.wwu.edu/chw/student_health/billing.shtml")                        
                                 ]));
                         endRow();
+                        
+                       
+                        startRow();
+                            document.write(makeTable(4,
+                            [
+                            // Column headers:
+
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+
+
+                            // Table within a table
+                               "Cost Per Month (Non-US Citizens)",
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 19", "$72",   "$386",   "$82",
+                                "19-23",   "$95",   "$386",   "$82",
+                                "24-30",   "$110",  "$426",   "$82",
+                                "31-40",   "$197",  "$567",   "$82",
+                                "41-50",   "$322",  "$586",   "$82",
+                                "51-64",   "$430",  "$567",   "$82"
+                                   ]), 
+                                loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$48.62","$48.62",  "$48.62",
+                                        "25-49",   "$63.37","$63.37",  "$48.62",
+                                        "50-64",   "$135.70","$135.70","$48.62"
+                                        ]) +
+
+                                loc("$50,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN<br />***Best Value***") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$47.16","$47.16",  "$47.16",
+                                        "25-49",   "$61.47","$61.47",  "$47.16",
+                                        "50-64",   "$131.63","$131.63","$47.16"
+                                        ])  + 
+
+                                loc("$100,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$54.76","$54.76",  "$54.76",
+                                        "25-49",   "$71.30","$71.30",  "$54.76",
+                                        "50-64",   "$152.63","$152.63","$54.76"
+                                        ]), 
+                                loc("$50,000 benefit, $500 annual deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$33.30",   "$33.30",   "$30.60",
+                                "30-39",   "$44.10",   "$44.10",   "$30.60",
+                                "40-49",   "$65.70",  "$65.70",   "$30.60",
+                                "50-59",   "$96.30",  "$96.30",   "$30.60"
+                                ]) + 
+                                loc("$50,000 benefit, no deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$46.25",   "$46.25",   "$42.50",
+                                "30-39",   "$61.25",   "$61.25",   "$42.50",
+                                "40-49",   "$91.25",  "$91.25",   "$42.50",
+                                "50-59",   "$133.75",  "$133.75",   "$42.50"
+                                ]),                                
+
+
+                                "",
+                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+                                "",
+                                "",
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
+                                "", 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
+
+                                   ])
+                                    );
+                        endRow();                        
+                           
+                        
                     }
               },                
 
@@ -871,21 +1790,103 @@ function getPartnership(partner) {
                     pageTitle: "TaiAn Health Insurance for University of Connecticut",
                     tabs: [
                             "pivot-home",
-                            "pivot-international-student",
+                            "pivot-international-studentandscholar",
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                             "pivot-aboutus"
                           ],
                           
-                    internationalStudentContent: function () {
+                    internationalStudentandscholarContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Connecticut enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Connecticut as proof of insurance.");
-                        writeText("Enrolled international students need to complete an online waiver.");                        
+
+                        writeText(loc("University of Connecticut ") + loc("J scholars and enrolled students (F or J) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));                       
+                        writeText("Enrolled students need to purchase insurance before the start of the semester and complete an on line waiver.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Connecticut Scholar Requirements", "http://global.uconn.edu/about/immigration-services/visiting-scholars/insurance-requirements-for-j-1-exchange-visitors/"),
                                 makeURL("University of Connecticut Student Requirements", "http://www.shs.uconn.edu/insurance.html")                        
                                 ]));
                         endRow();
+                        
+                         startRow();
+                            document.write(makeTable(4,
+                            [
+                            // Column headers:
+
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+
+
+                            // Table within a table
+                               "Cost Per Month (Non-US Citizens)",
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 19", "$72",   "$386",   "$82",
+                                "19-23",   "$95",   "$386",   "$82",
+                                "24-30",   "$110",  "$426",   "$82",
+                                "31-40",   "$197",  "$567",   "$82",
+                                "41-50",   "$322",  "$586",   "$82",
+                                "51-64",   "$430",  "$567",   "$82"
+                                   ]), 
+                                loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$48.62","$48.62",  "$48.62",
+                                        "25-49",   "$63.37","$63.37",  "$48.62",
+                                        "50-64",   "$135.70","$135.70","$48.62"
+                                        ]) +
+
+                                loc("$50,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN<br />***Best Value***") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$47.16","$47.16",  "$47.16",
+                                        "25-49",   "$61.47","$61.47",  "$47.16",
+                                        "50-64",   "$131.63","$131.63","$47.16"
+                                        ])  + 
+
+                                loc("$100,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$54.76","$54.76",  "$54.76",
+                                        "25-49",   "$71.30","$71.30",  "$54.76",
+                                        "50-64",   "$152.63","$152.63","$54.76"
+                                        ]), 
+                                loc("$50,000 benefit, $500 annual deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$33.30",   "$33.30",   "$30.60",
+                                "30-39",   "$44.10",   "$44.10",   "$30.60",
+                                "40-49",   "$65.70",  "$65.70",   "$30.60",
+                                "50-59",   "$96.30",  "$96.30",   "$30.60"
+                                ]) + 
+                                loc("$50,000 benefit, no deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$46.25",   "$46.25",   "$42.50",
+                                "30-39",   "$61.25",   "$61.25",   "$42.50",
+                                "40-49",   "$91.25",  "$91.25",   "$42.50",
+                                "50-59",   "$133.75",  "$133.75",   "$42.50"
+                                ]),                                
+
+
+                                "",
+                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+                                "",
+                                "",
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
+                                "", 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
+
+                                   ])
+                                    );
+                        endRow();                        
+                                            
+                        
                     }
               },                           
 
@@ -902,7 +1903,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Clemson University enrolled international student standards and J scholar standards.  Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Clemson University as proof of insurance.");
+                        writeText(loc("Clemson University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         writeText("Enrolled international students have to buy Plan A to meet Clemson University standards, and complete an online waiver.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Clemson University Scholar Requirements", "http://www.clemson.edu/administration/ia/services/students/scholars.html"),
@@ -917,21 +1918,102 @@ function getPartnership(partner) {
                     pageTitle: "TaiAn Health Insurance for Claremont School of Theology",
                     tabs: [
                             "pivot-home",
-                            "pivot-international-student",
+                            "pivot-international-studentandscholar",
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                             "pivot-aboutus"
                           ],
                           
-                    internationalStudentContent: function () {
+                    internationalStudentandscholarContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Claremont School of Theology enrolled international student standards and J scholar standards.  Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Claremont School of Theology as proof of insurance.");
 
+                        writeText(loc("Claremont School of Theology ") + loc("J scholars and enrolled students (F or J) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Claremont School of Theology Scholar Requirements", "http://www.cst.edu/international-students/visiting-scholars/"),
                                 makeURL("Claremont School of Theology Student Requirements", "http://www.cst.edu/international-students/incoming-students/health-insurance/")                        
                                 ]));
                         endRow();
+                        startRow();
+                            document.write(makeTable(4,
+                            [
+                            // Column headers:
+
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+
+
+                            // Table within a table
+                               "Cost Per Month (Non-US Citizens)",
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 19", "$72",   "$386",   "$82",
+                                "19-23",   "$95",   "$386",   "$82",
+                                "24-30",   "$110",  "$426",   "$82",
+                                "31-40",   "$197",  "$567",   "$82",
+                                "41-50",   "$322",  "$586",   "$82",
+                                "51-64",   "$430",  "$567",   "$82"
+                                   ]), 
+                                loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$48.62","$48.62",  "$48.62",
+                                        "25-49",   "$63.37","$63.37",  "$48.62",
+                                        "50-64",   "$135.70","$135.70","$48.62"
+                                        ]) +
+
+                                loc("$50,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN<br />***Best Value***") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$47.16","$47.16",  "$47.16",
+                                        "25-49",   "$61.47","$61.47",  "$47.16",
+                                        "50-64",   "$131.63","$131.63","$47.16"
+                                        ])  + 
+
+                                loc("$100,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$54.76","$54.76",  "$54.76",
+                                        "25-49",   "$71.30","$71.30",  "$54.76",
+                                        "50-64",   "$152.63","$152.63","$54.76"
+                                        ]), 
+                                loc("$50,000 benefit, $500 annual deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$33.30",   "$33.30",   "$30.60",
+                                "30-39",   "$44.10",   "$44.10",   "$30.60",
+                                "40-49",   "$65.70",  "$65.70",   "$30.60",
+                                "50-59",   "$96.30",  "$96.30",   "$30.60"
+                                ]) + 
+                                loc("$50,000 benefit, no deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$46.25",   "$46.25",   "$42.50",
+                                "30-39",   "$61.25",   "$61.25",   "$42.50",
+                                "40-49",   "$91.25",  "$91.25",   "$42.50",
+                                "50-59",   "$133.75",  "$133.75",   "$42.50"
+                                ]),                                
+
+
+                                "",
+                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+                                "",
+                                "",
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
+                                "", 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
+
+                                   ])
+                                    );
+                        endRow();                        
+                           
+                        
+                        
                     }
               },               
               
@@ -948,11 +2030,11 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Dartmouth College enrolled international student standards and J scholar standards.  Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Dartmouth College as proof of insurance.");
-                        writeText("Enrolled international students have to buy Plan A to meet Dartmouth College standards, and complete a waiver.");
+                        writeText(loc("Dartmouth College ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.")); 
+
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("Dartmouth College Scholar Requirements", "http://www.dartmouth.edu/~ovis/updates/j1/health.html"),
-                                makeURL("Dartmouth College Student Requirements", "http://www.dartmouth.edu/~health/depts/insurance/waiver04.html")                        
+                                makeURL("Dartmouth College Scholar Requirements", "http://www.dartmouth.edu/~ovis/updates/j1/health.html")
+                       
                                 ]));
                         endRow();
                     }
@@ -971,7 +2053,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Virginia Tech J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Virginia Tech as proof of insurance.");
+                        writeText(loc("Virginia Tech ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
 
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Virginia Tech Scholar Requirements", "http://www.iss.vt.edu/index.php/foreign-national/j-1/health-insurance")
@@ -994,8 +2076,8 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Virginia Commonwealth University enrolled international student standards and J scholar standards.  Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Virginia Commonwealth University as proof of insurance.");
-                        writeText("Enrolled international students are required to carry $250,000 per illness or injury. Taian Scholar/Student Insurance Plan B with $250,000 benefit per illness or injury is the most affordable plan that meets the standards.");
+                        writeText(loc("Virginia Commonwealth University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+                        writeText("Enrolled international students are required to have medical benefits of $250,000 per illness or injury. Taian Plan B with $250,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the standards.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Virginia Commonwealth Scholar Requirements", "http://www.global.vcu.edu/pdf/immigration/j1/J-1_Health_Insurance_Requirements.pdf"),
                                 makeURL("Virginia Commonwealth Student Requirements", "http://www.global.vcu.edu/students/connections/started/insurance.html")                        
@@ -1017,7 +2099,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet North Carolina State University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to North Carolina State University as proof of insurance.");
+                        writeText(loc("North Carolina State University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("North Carolina State University Scholar Requirements", "http://www.ncsu.edu/ois/research/j1require.php")                       
                                 ]));
@@ -1038,7 +2120,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Pennsylvania J scholar standards and J student standards (Not F visa student standards).  J visa holders have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Pennsylvania as proof of insurance.");
+                        writeText("University of Pennsylvania J scholars and J students (not F visa students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS. Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Pennsylvania J1 student requirement", "http://global.upenn.edu/isss/j1"),                         
                                 makeURL("University of Pennsylvania J1 scholar requirement", "http://global.upenn.edu/isss/j1scholar") 
@@ -1060,7 +2142,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Harvard University and Harvard Medical School J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500; 5. Pre-existing condition coverage after a reasonable wait; 6. Patient share of expenses not over 25%.  Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Harvard University and Harvard Medical School as proof of insurance.");
+                        writeText("Harvard University and Harvard Medical School J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500; 5. Pre-existing condition coverage after a reasonable wait; 6. Patient share of expenses not over 25%. These requirements are the same as the USDOS. Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Harvard University and Harvard Medical School Scholar Requirements", "http://www.hio.harvard.edu/healthcareandinsurance/scholars/requirementsforjvisaholders/")                         
 
@@ -1082,7 +2164,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Boston University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Boston University as proof of insurance.");
+                        writeText(loc("Boston University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Boston University Scholar Requirements", "http://www.bu.edu/isso/administrators/j1/ev-overview.html")                         
 
@@ -1104,7 +2186,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Babson College J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Babson College as proof of insurance.");
+                        writeText(loc("Babson College ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Babson College Scholar Requirements", "http://www.babson.edu/about-babson/global/mie/isss/visiting-scholars/Pages/health-insurance-requirement.aspx")                         
 
@@ -1126,7 +2208,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Boston College J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Boston College as proof of insurance.");
+                        writeText(loc("Boston College ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Boston College Scholar Requirements", "http://www.bc.edu/content/bc/offices/oiss/scholars/department.html")                         
 
@@ -1148,7 +2230,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Brown University enrolled international student standards and J scholar standards.  Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Brown University as proof of insurance.");
+                        writeText(loc("Brown University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         writeText("Enrolled international students have to buy Plan A to meet Brown University standards, and complete an online waiver.");       
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Brown University Scholar Requirements", "http://brown.edu/Administration/OISSS/scholars/docs/J1_health_insurance_memo.pdf"),                         
@@ -1171,7 +2253,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Caltech J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Caltech as proof of insurance.");
+                        writeText(loc("Caltech ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
       
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Caltech Scholar Requirements", "http://www.international.caltech.edu/maintainstatus/j1scholar")                        
@@ -1194,7 +2276,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Rhode Island J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Rhode Island as proof of insurance.");
+                        writeText(loc("University of Rhode Island ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Rhode Island Scholar Requirements", "http://www.uri.edu/iss/PDF/j%20insurance%20info.pdf")                         
 
@@ -1216,7 +2298,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of South Florida J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of South Florida as proof of insurance.");
+                        writeText(loc("University of South Florida ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of South Florida Scholar Requirements", "http://global.usf.edu/is/downloads/J1_DS2019.pdf")                         
 
@@ -1238,7 +2320,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Washington State University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Washington State University as proof of insurance.");
+                        writeText(loc("Washington State University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Washington State University Scholar Requirements", "http://ip.wsu.edu/global-services/scholars/J-1/medical-insurance.html")                         
 
@@ -1260,7 +2342,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Cleveland State University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Cleveland State University as proof of insurance.");
+                        writeText(loc("Cleveland State University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.")); 
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Cleveland State University Scholar Requirements", "http://www.csuohio.edu/offices/international/academic/exchange_visitors/exchange_form.html")                         
 
@@ -1282,7 +2364,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Clark University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Clark University as proof of insurance.");
+                        writeText(loc("Clark University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.")); 
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Clark University Scholar Requirements", "http://www.clarku.edu/offices/oia/international/insurance.cfm")                         
 
@@ -1304,7 +2386,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet George Washington University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to George Washington University as proof of insurance.");
+                        writeText(loc("George Washington University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("George Washington University Scholar Requirements", "http://gwired.gwu.edu/iso/CurrentScholarsJ1/HealthInsuranceRequirementforJ1ExchangeVisitors")                         
 
@@ -1326,7 +2408,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Iowa State University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Iowa State University as proof of insurance.");
+                        writeText(loc("Iowa State University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Iowa State University Scholar Requirements", "https://www.isso.iastate.edu/joomla/index.php?option=com_content&view=article&id=206:health-insurance-information&catid=37&Itemid=261")                         
 
@@ -1342,21 +2424,101 @@ function getPartnership(partner) {
                     pageTitle: "TaiAn Health Insurance for Georgetown University",
                     tabs: [
                             "pivot-home",
-                            "pivot-international-student",
+                            "pivot-international-studentandscholar",
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                             "pivot-aboutus"
                           ],
                           
-                    internationalStudentContent: function () {
+                    internationalStudentandscholarContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Georgetown University enrolled international student standards and J scholar standards.  Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Georgetown as proof of insurance.");
-                        writeText("Enrolled international students are required to carry $500,000 per illness or injury and complete a waiver. Taian Scholar/Student Insurance Plan B with $500,000 benefit per illness or injury is the most affordable plan that meets the standards.");
+                        writeText(loc("Georgetown University ") + loc("J scholars have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS. Taian Plan B (with $50,000 benefit per illness or injury and deductible not over $500) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+                        writeText("Enrolled international students are required to have medical benefits of $500,000 per illness or injury, and submit a waiver.  Taian Plan B (with $500,000 benefit per illness or injury and deductible not over $500) and Plan C (with $500,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Georgetown University Scholar Requirements", "http://internationalservices.georgetown.edu/j-1scholars/healthinsurance/"),                         
                                 makeURL("Georgetown University Student Requirements", "http://studenthealth.georgetown.edu/insurance/requirements/full-time/waiver/approval/")
                                 ]));
                         endRow();
+                         startRow();
+                            document.write(makeTable(4,
+                            [
+                            // Column headers:
+
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+
+
+                            // Table within a table
+                               "Cost Per Month (Non-US Citizens)",
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 19", "$72",   "$386",   "$82",
+                                "19-23",   "$95",   "$386",   "$82",
+                                "24-30",   "$110",  "$426",   "$82",
+                                "31-40",   "$197",  "$567",   "$82",
+                                "41-50",   "$322",  "$586",   "$82",
+                                "51-64",   "$430",  "$567",   "$82"
+                                   ]), 
+                                loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$48.62","$48.62",  "$48.62",
+                                        "25-49",   "$63.37","$63.37",  "$48.62",
+                                        "50-64",   "$135.70","$135.70","$48.62"
+                                        ]) +
+
+                                loc("$50,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN<br />***Best Value***") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$47.16","$47.16",  "$47.16",
+                                        "25-49",   "$61.47","$61.47",  "$47.16",
+                                        "50-64",   "$131.63","$131.63","$47.16"
+                                        ])  + 
+
+                                  loc("$500,000 per illness/injury, $250 annual deductible") +         
+                                        makeTable(4, [
+                                                "Age",     "F1/J1", "Spouse", "Children",
+                                                "&lt; 25", "$61.75","$61.75",  "$61.75",
+                                                "25-49",   "$80.41","$80.41",  "$61.75",
+                                                "50-64",   "$172.20","$172.20","$61.75"
+                                                ]), 
+                                loc("$50,000 benefit, $500 annual deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$33.30",   "$33.30",   "$30.60",
+                                "30-39",   "$44.10",   "$44.10",   "$30.60",
+                                "40-49",   "$65.70",  "$65.70",   "$30.60",
+                                "50-59",   "$96.30",  "$96.30",   "$30.60"
+                                ]) + 
+                                loc("$500,000 benefit, $500 annual deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$53.10",   "$53.10",   "$47.70",
+                                "30-39",   "$70.20",   "$70.20",   "$47.70",
+                                "40-49",   "$107.10",  "$107.10",   "$47.70",
+                                "50-59",   "$152.10",  "$152.10",   "$47.70"
+                                ]),                                
+
+
+                                "",
+                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+                                "",
+                                "",
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
+                                "", 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
+
+                                   ])
+                                    );
+                        endRow();                        
+                        
+                        
                     }
               }, 
               
@@ -1373,8 +2535,8 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Notre Dame enrolled international student standards and J scholar standards.  Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Notre Dame as proof of insurance.");
-                        writeText("Enrolled international students are required to carry $500,000 per illness or injury and complete a waiver. Taian Scholar/Student Insurance Plan B with $500,000 benefit per illness or injury is the most affordable plan that meets the standards.");
+                        writeText("University of Notre Dame J scholars have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS. Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.");
+                        writeText("Enrolled international students are required to carry $500,000 lifetime maximum and complete a waiver. Taian Plan B with $50,000 benefit per illness or injury and three deductible options (accompanied by $5,000,000 lifetime maximum)  is the most affordable plan that meets the requirements.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Notre Dame Scholar Requirements", "https://hr.nd.edu/assets/20192/j_1_visa.pdf"),                         
                                 makeURL("University of Notre Dame Student Requirements", "http://uhs.nd.edu/insurance-billing/")
@@ -1396,8 +2558,8 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Toledo enrolled international student standards and J scholar standards.  Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Toledo as proof of insurance.");
-                        writeText("Enrolled international students are required to have a $500,000  lifetime maximum and complete an online waiver. Taian Scholar/Student Insurance Plan B with $50,000 benefit per illness or injury and $5,000,000 lifetime maximum is the most affordable plan that meets the standards.");
+                        writeText("University of Toledo J scholars have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS. Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.");
+                        writeText("Enrolled international students are required to have a $500,000 lifetime maximum and complete an online waiver. Taian Plan B with $50,000 benefit per illness or injury and three deductible options (accompanied by $5,000,000 lifetime maximum) is the most affordable plan that meets the standards.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Toledo Scholar Requirements", "http://www.utoledo.edu/cisp/international/ExchangeVisitors/pdfs/J-1%20Handbook.pdf"),                         
                                 makeURL("University of Toledo Student Requirements", "http://www.utoledo.edu/healthservices/student/health_insurance/Waiver_Criteria.html")
@@ -1411,21 +2573,101 @@ function getPartnership(partner) {
                     pageTitle: "TaiAn Health Insurance for Georgia State University",
                     tabs: [
                             "pivot-home",
-                            "pivot-international-student",
+                            "pivot-international-studentandscholar",
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                             "pivot-aboutus"
                           ],
                           
-                    internationalStudentContent: function () {
+                    internationalStudentandscholarContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Georgia State University enrolled international student standards and J scholar standards.  Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Georgia State as proof of insurance.");
-                        writeText("Enrolled international students are required to carry $500,000 per illness or injury and complete a waiver. Taian Scholar/Student Insurance Plan B with $500,000 benefit per illness or injury is the most affordable plan that meets the standards.");
+                        writeText(loc("Georgia State University ") + loc("J scholars have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS. Taian Plan B (with $50,000 benefit per illness or injury and deductible not over $500) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+                        writeText("Enrolled international students are required to have medical benefits of $500,000 per illness or injury, and submit a waiver.  Taian Plan B (with $500,000 benefit per illness or injury and deductible not over $500) and Plan C (with $500,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements.");
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("Georgia State University Scholar Requirements", "http://education.gsu.edu/international/docs/J-1_insurance_compliance_form.pdf"),                         
+                                makeURL("Georgia State University Scholar Requirements", "http://isss.gsu.edu/files/2013/02/J-1-Insurance-Compliance-Form.pdf"),                         
                                 makeURL("Georgia State University Student Requirements", "http://isss.gsu.edu/files/2013/02/Updated-FAQ.pdf")
                                 ]));
                         endRow();
+                        
+                         startRow();
+                            document.write(makeTable(4,
+                            [
+                            // Column headers:
+
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+
+
+                            // Table within a table
+                               "Cost Per Month (Non-US Citizens)",
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 19", "$72",   "$386",   "$82",
+                                "19-23",   "$95",   "$386",   "$82",
+                                "24-30",   "$110",  "$426",   "$82",
+                                "31-40",   "$197",  "$567",   "$82",
+                                "41-50",   "$322",  "$586",   "$82",
+                                "51-64",   "$430",  "$567",   "$82"
+                                   ]), 
+                                loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$48.62","$48.62",  "$48.62",
+                                        "25-49",   "$63.37","$63.37",  "$48.62",
+                                        "50-64",   "$135.70","$135.70","$48.62"
+                                        ]) +
+
+                                loc("$50,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN<br />***Best Value***") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$47.16","$47.16",  "$47.16",
+                                        "25-49",   "$61.47","$61.47",  "$47.16",
+                                        "50-64",   "$131.63","$131.63","$47.16"
+                                        ])  + 
+
+                                  loc("$500,000 per illness/injury, $250 annual deductible") +         
+                                        makeTable(4, [
+                                                "Age",     "F1/J1", "Spouse", "Children",
+                                                "&lt; 25", "$61.75","$61.75",  "$61.75",
+                                                "25-49",   "$80.41","$80.41",  "$61.75",
+                                                "50-64",   "$172.20","$172.20","$61.75"
+                                                ]), 
+                                loc("$50,000 benefit, $500 annual deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$33.30",   "$33.30",   "$30.60",
+                                "30-39",   "$44.10",   "$44.10",   "$30.60",
+                                "40-49",   "$65.70",  "$65.70",   "$30.60",
+                                "50-59",   "$96.30",  "$96.30",   "$30.60"
+                                ]) + 
+                                loc("$500,000 benefit, $500 annual deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$53.10",   "$53.10",   "$47.70",
+                                "30-39",   "$70.20",   "$70.20",   "$47.70",
+                                "40-49",   "$107.10",  "$107.10",   "$47.70",
+                                "50-59",   "$152.10",  "$152.10",   "$47.70"
+                                ]),                                
+
+
+                                "",
+                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+                                "",
+                                "",
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
+                                "", 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
+
+                                   ])
+                                    );
+                        endRow();                        
+                        
                     }
               },                
 
@@ -1442,7 +2684,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet MUSC J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to MUSC as proof of insurance.");
+                        writeText(loc("Medical University of South Carolina (MUSC) ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("MUSC Scholar Requirements", "http://academicdepartments.musc.edu/immigrationservices/j1procedures.html")                         
 
@@ -1464,7 +2706,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Cincinnati J scholar standards (and enrolled students with 5 or fewer credit hours per semester). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Cincinnati as proof of insurance.");
+                        writeText("University of Cincinnati J scholars and enrolled students with 5 or fewer credit hours per semester have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS. Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Cincinnati Scholar Requirements", "http://www.uc.edu/international/services/scholars/maintaining_status/health_insurance.html")                         
 
@@ -1480,50 +2722,62 @@ function getPartnership(partner) {
                     pageTitle: "TaiAn Health Insurance for University of California at Berkeley",
                     tabs: [
                             "pivot-home",
-                            "pivot-j-scholar",                            
+                            "pivot-scholar-student",                            
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                             "pivot-aboutus"
                           ],
-                    jScholarContent: function () {
+                    scholarStudentContent: function () {
                         startRow();
-                        writeText("Taian Travel Insurance Plan (Patriot America) with $250.00 deductible and $500,000 benefit meets UC Berkeley J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $500,000 per illness/injury; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Annual deductible not over $250.00. Travel plan with $250.00 deductible and $500,000 maximum (we suggest $1,000,000 maximum) is the most affordable plan that meets the standards, and the US Department of State requirements. The chart on the left below shows the monthly premium rates for this plan.  The chart on the right shows premium rates to choose a $0 deductible plan with the same benefits (a little more expensive).  Shortly after submitting an application you will receive confirmation of your coverage which you can send to UC Berkeley as proof of insurance.");
-                        writeText("J-2 dependents are subject to the same benefit requirements.  Your J-2 dependents can buy with you, or buy a separate plan.  If your J-2 dependents are not going to be in the US for the same time period you will be here, you can buy a separate plan with different coverage dates to match their stay in the US.");
+                        writeText("UC Berkeley J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $500,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Annual deductible not over $250. Taian Plan B and Plan C (both with $500,000 benefit and $250 annual deductible) are the most affordable plans that meet the school requirements and the USDOS requirements.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.");
+
 
                         startRow();
-                            document.write(makeTable(2,
+                            document.write(makeTable(3,
                             [
                             // Column headers:
 
-                            "Monthly Price for $500,000 benefit $250 deductible", "Monthly Price for $500,000 benefit $0 deductible",
+                               "TaiAn Scholars and Students", "Plan B ($500,000 per illness or injury), $250 annual deductible<br />Taian Exclusive!", "Plan C ($500,000 benefit, $250 annual deductible)",
 
 
                             // Table within a table
-
+                               "Cost Per Month (Non-US Citizens)",
+                                
+                                loc("$500,000 per illness/injury, $250 annual deductible") +         
                                 makeTable(4, [
-                                "Age",     "J1", "Spouse", "Children",
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 25", "$61.75","$61.75",  "$61.75",
+                                "25-49",   "$80.41","$80.41",  "$61.75",
+                                "50-64",   "$172.20","$172.20","$61.75"
+                                     ]),                    
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
                                 "&lt; 30", "$59.00",   "$59.00",   "$53.00",
                                 "30-39",   "$78.00",   "$78.00",   "$53.00",
-                                "40-49",   "$119.00",  "$119.00",   "$53.00"
+                                "40-49",   "$119.00",  "$119.00",   "$53.00",
+                                "50-59",   "$169.00",  "$169.00",   "$53.00"
+                                ]),                                
 
-                                ]), 
 
-       
-                                makeTable(4, [
-                                "Age",     "J1", "Spouse", "Children",
-                                "&lt; 30", "$73.75",   "$73.75",   "$66.25",
-                                "30-39",   "$97.50",   "$97.50",   "$66.25",
-                                "40-49",   "$148.75",  "$148.75",   "$66.25"
-                                ]), 
-                    
+                                "",
 
-                                makeBuyURL("Buy Patriot America Medical Insurance", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
-                                makeBuyURL("Buy Patriot America Medical Insurance", "https://purchase.imglobal.com/quote/patriot?imgac=80000699")
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
+                                "",
+
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
+ 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
 
                                    ])
                                     );
-                                endRow();                 
+                        endRow();                         
+                          
                         
                                 startRow();
                                 writeText("");
@@ -1615,109 +2869,174 @@ function getPartnership(partner) {
                         startRow();
                         writeText("J SCHOLARS  (STUDENTS SCROLL DOWN THE PAGE)");                        
                         writeText("");
-                        writeText("Kansas State University exchange visitors (J visa) have required health insurance coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Taian Scholar/Student Insurance Plan B ($100 deductible and $50,000 benefit per accident or illness) and Plan C ($500 deductible and $50,000 benefit) are the most affordable plans that meet the school requirements and the US Department of State requirements (which plan is more affordable depends on your age and family members). Shortly after submitting an application you will receive confirmation of your coverage which you can send to your school as proof of insurance.");                        
+                        writeText("Kansas State University J scholars (not for enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and deductible not over $500) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.");                        
                         document.write(makeBulletedListWithTitle("", [
                         
                                 makeURL("Kansas State University Scholar Requirements", "http://www.k-state.edu/isss/j-1/jhealthins.html") 
                                 ]));
                         endRow();
-
-                        startRow();
-                            document.write(makeTable(3,
+                        
+                         startRow();
+                            document.write(makeTable(4,
                             [
                             // Column headers:
 
-                            "Plan A (Student Health Advantage) $300,000 / $100 deductible / Maternity", "Plan B (Patriot Exchange) $50,000 / $100 deductible", "Plan C (Patriot Travel) $50,000 /$500 deductible",
-                            "Monthly Premium", "Monthly Premium", "Monthly Premium",
-                            "(J Scholar - Recommended if you want maternity benefit)", "(J Scholar - Recommended Plan)", "(J Scholar)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+
 
                             // Table within a table
-
+                               "Cost Per Month (Non-US Citizens)",
                                 makeTable(4, [
-                                "Age",     "J1 Scholar", "Spouse", "Children",
+                                "Age",     "F1/J1", "Spouse", "Children",
                                 "&lt; 19", "$72",   "$386",   "$82",
                                 "19-23",   "$95",   "$386",   "$82",
                                 "24-30",   "$110",  "$426",   "$82",
                                 "31-40",   "$197",  "$567",   "$82",
                                 "41-50",   "$322",  "$586",   "$82",
                                 "51-64",   "$430",  "$567",   "$82"
-                                
-                                ]), 
-
+                                   ]), 
+                                loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
-                                "Age",     "J1 Scholar", "Spouse", "Children",
-                                "&lt; 25", "$48.62",   "$48.62",   "$48.62",
-                                "25-49",   "$63.37",   "$63.37",   "$48.62",
-                                "50-64",   "$135.70",  "$135.70",   "$63.66"
-                                ]),                                
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$48.62","$48.62",  "$48.62",
+                                        "25-49",   "$63.37","$63.37",  "$48.62",
+                                        "50-64",   "$135.70","$135.70","$48.62"
+                                        ]) +
 
+                                loc("$50,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN<br />***Best Value***") +         
                                 makeTable(4, [
-                                "Age",     "J1 Scholar", "Spouse", "Children",
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$47.16","$47.16",  "$47.16",
+                                        "25-49",   "$61.47","$61.47",  "$47.16",
+                                        "50-64",   "$131.63","$131.63","$47.16"
+                                        ])  + 
+
+                                loc("$100,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$54.76","$54.76",  "$54.76",
+                                        "25-49",   "$71.30","$71.30",  "$54.76",
+                                        "50-64",   "$152.63","$152.63","$54.76"
+                                        ]), 
+                                loc("$50,000 benefit, $500 annual deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
                                 "&lt; 30", "$33.30",   "$33.30",   "$30.60",
                                 "30-39",   "$44.10",   "$44.10",   "$30.60",
                                 "40-49",   "$65.70",  "$65.70",   "$30.60",
                                 "50-59",   "$96.30",  "$96.30",   "$30.60"
-                                ]),                                 
+                                ]) + 
+                                loc("$50,000 benefit, no deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$46.25",   "$46.25",   "$42.50",
+                                "30-39",   "$61.25",   "$61.25",   "$42.50",
+                                "40-49",   "$91.25",  "$91.25",   "$42.50",
+                                "50-59",   "$133.75",  "$133.75",   "$42.50"
+                                ]),                                
 
-                    
+
+                                "",
                                 makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
-                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Patriot Exchange Program - Standard"), "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                makeBuyURL(loc("Buy Group") + "<br />" + loc("Group for 2 or more"), "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699"),
-                                makeBuyURL(loc("Buy Group")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699")                                 
+                                "",
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
+                                "", 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
 
                                    ])
                                     );
-                        endRow();  
+                        endRow();                         
 
+ 
                         startRow();
                         writeText("");
                         writeText("F or J STUDENTS");                        
                         writeText("");
-                        writeText("Kansas State University enrolled students with an F or J visa have required health insurance coverage as follows: 1. $500,000 per illness or injury; 2. Deductible not over $500 per policy year; 3. Repatriation of remains of $10,000; 4. Medical evacuation of $15,000. Taian Scholar/Student Insurance Plan C ($500 deductible) with $500,000 benefit is the most affordable plan that meets the school requirements and the US Department of State requirements. Students are required to complete an on line waiver.");                        
+                        writeText("Enrolled international students (F or J) are required to have medical benefits of $500,000 per illness or injury, and submit a waiver. Taian Plan B (with $500,000 benefit per illness or injury and deductible not over $500) and Plan C (with $500,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements.");                        
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Kansas State University Student Requirements", "http://www.k-state.edu/isss/current/healthinsurance.html")                      
 
                                 ]));
                         endRow();
-
-                        startRow();
-                            document.write(makeTable(1,
+                         startRow();
+                            document.write(makeTable(3,
                             [
                             // Column headers:
 
-                            "Plan C (Patriot Travel) $500,000 /$500 deductible",
-                            "Monthly Premium", 
-                            "(F or J Student - Recommended Plan)",
+                               "TaiAn Scholars and Students", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+
 
                             // Table within a table
-
-
-
-                                                              
-
+                               "Cost Per Month (Non-US Citizens)",  
+                                loc("$500,000 per illness/injury, $100 per illness deductible") +         
                                 makeTable(4, [
-                                "Age",     "F1/J1 Student", "Spouse", "Children",
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$63.66","$63.66",  "$63.66",
+                                        "25-49",   "$82.90","$82.90",  "$63.66",
+                                        "50-64",   "$177.53","$177.53","$63.66"
+
+                                        ]) +
+
+                                loc("$500,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$61.75","$61.75",  "$61.75",
+                                        "25-49",   "$80.41","$80.41",  "$61.75",
+                                        "50-64",   "$172.20","$172.20","$61.75"
+                                        ])  + 
+
+                                loc("$500,000 per illness/injury, $500 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$57.43","$57.43",  "$57.43",
+                                        "25-49",   "$74.78","$74.78",  "$57.43",
+                                        "50-64",   "$160.15","$160.15","$57.43"
+                                        ]), 
+                                loc("$500,000 benefit, $500 annual deductible") +                           
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
                                 "&lt; 30", "$53.10",   "$53.10",   "$47.70",
                                 "30-39",   "$70.20",   "$70.20",   "$47.70",
-                                "40-49",   "$107.10",  "$107.10",    "$47.70",
+                                "40-49",   "$107.10",  "$107.10",   "$47.70",
                                 "50-59",   "$152.10",  "$152.10",   "$47.70"
-                                ]),                                 
+                                ]) + 
+                                loc("$500,000 benefit, $250 annual deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$59.00",   "$59.00",   "$53.00",
+                                "30-39",   "$78.00",   "$78.00",   "$53.00",
+                                "40-49",   "$119.00",  "$119.00",   "$53.00",
+                                "50-59",   "$169.00",  "$169.00",   "$53.00"
+                                ]),                                
 
-                    
 
+                                "",
 
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
+                                "",
 
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
 
-                                makeBuyURL(loc("Buy Group")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699")                                 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
 
                                    ])
                                     );
-                        endRow();
+                        endRow();  
+ 
                         
 
 
@@ -1746,124 +3065,100 @@ function getPartnership(partner) {
 
                     internationalStudentandscholarContent: function () {
                         startRow();
-                        writeText("J SCHOLARS  (STUDENTS SCROLL DOWN THE PAGE)");                        
+                        writeText("J SCHOLARS");                        
                         writeText("");
-                        writeText("Western University of Health Sciences exchange visitors (J visa) have required health insurance coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Taian Scholar/Student Insurance Plan B ($100 deductible and $50,000 benefit per illness or injury) and Plan C ($500 deductible with $50,000 benefit) are the most affordable plans that meet the school requirements and the US Department of State requirements (which plan is more affordable depends on your age and family members). Shortly after submitting an application you will receive confirmation of your coverage which you can send to your school as proof of insurance. See plan benefits in the chart below.");                        
+                        writeText("Western University of Health Sciences J scholars (not for enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury, deductible not over $500) and Plan C (with $50,000 benefit, deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.");                        
+                        writeText("");
+                        writeText("STUDENTS (CA or OR)"); 
+                        writeText("Enrolled international students are required to have coverage as follows: 1. Medical benefits of $50,000 per illness or injury; 2. Deductible not over $1,000 (and not over $2,000 for family) for F visa, and not over $500 for J visa. Taian Plan B and Plan C with $50,000 benefit and deductible not over $1,000 (F visa) or $500 (J visa) are the most affordable plans that meet the requirements.");                        
+
                         document.write(makeBulletedListWithTitle("", [
                         
-                                makeURL("Western University of Health Sciences Scholar Requirements", "http://www.westernu.edu/exchange-visitors/exchange-visitors-prospective-information/exchange-visitors-health-insurance/") 
+                                makeURL("Western University of Health Sciences Scholar Requirements", "http://www.westernu.edu/exchange-visitors/exchange-visitors-prospective-information/exchange-visitors-health-insurance/"), 
+                                makeURL("Western University of Health Sciences (CA) Student Requirements", "http://www.westernu.edu/students/students-services/students-services-insurance/"),
+                                makeURL("Western University of Health Sciences (OR) Student Requirements", "http://www.westernu.edu/students-or/students-services-or/students-services-insurance-or/")                      
                                 ]));
                         endRow();
-
-                        startRow();
-                            document.write(makeTable(3,
+                          startRow();
+                            document.write(makeTable(4,
                             [
                             // Column headers:
 
-                            "Plan A (Student Health Advantage) $300,000 / $100 deductible / Maternity", "Plan B (Patriot Exchange) $50,000 / $100 deductible", "Plan C (Patriot Travel) $50,000 /$500 deductible",
-                            "Monthly Premium", "Monthly Premium", "Monthly Premium",
-                            "(J Scholar - Recommended if you want maternity benefit)", "(J Scholar - Recommended Plan)", "(J Scholar)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+
 
                             // Table within a table
-
+                               "Cost Per Month (Non-US Citizens)",
                                 makeTable(4, [
-                                "Age",     "J1 Scholar", "Spouse", "Children",
+                                "Age",     "F1/J1", "Spouse", "Children",
                                 "&lt; 19", "$72",   "$386",   "$82",
                                 "19-23",   "$95",   "$386",   "$82",
                                 "24-30",   "$110",  "$426",   "$82",
                                 "31-40",   "$197",  "$567",   "$82",
                                 "41-50",   "$322",  "$586",   "$82",
                                 "51-64",   "$430",  "$567",   "$82"
-                                
-                                ]), 
-
+                                   ]), 
+                                loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
-                                "Age",     "J1 Scholar", "Spouse", "Children",
-                                "&lt; 25", "$48.62",   "$48.62",   "$48.62",
-                                "25-49",   "$63.37",   "$63.37",   "$48.62",
-                                "50-64",   "$135.70",  "$135.70",   "$63.66"
-                                ]),                                
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$48.62","$48.62",  "$48.62",
+                                        "25-49",   "$63.37","$63.37",  "$48.62",
+                                        "50-64",   "$135.70","$135.70","$48.62"
+                                        ]) +
 
+                                loc("$50,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN<br />***Best Value***") +         
                                 makeTable(4, [
-                                "Age",     "J1 Scholar", "Spouse", "Children",
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$47.16","$47.16",  "$47.16",
+                                        "25-49",   "$61.47","$61.47",  "$47.16",
+                                        "50-64",   "$131.63","$131.63","$47.16"
+                                        ])  + 
+
+                                loc("$100,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$54.76","$54.76",  "$54.76",
+                                        "25-49",   "$71.30","$71.30",  "$54.76",
+                                        "50-64",   "$152.63","$152.63","$54.76"
+                                        ]), 
+                                loc("$50,000 benefit, $500 annual deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
                                 "&lt; 30", "$33.30",   "$33.30",   "$30.60",
                                 "30-39",   "$44.10",   "$44.10",   "$30.60",
                                 "40-49",   "$65.70",  "$65.70",   "$30.60",
                                 "50-59",   "$96.30",  "$96.30",   "$30.60"
-                                ]),                                 
+                                ]) + 
+                                loc("$50,000 benefit, $1000 annual deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$29.60",   "$29.60",   "$27.20",
+                                "30-39",   "$39.20",   "$39.20",   "$27.20",
+                                "40-49",   "$58.40",  "$58.40",   "$27.20",
+                                "50-59",   "$85.60",  "$85.60",   "$27.20"
+                                ]),                                
 
-                    
+
+                                "",
                                 makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
-                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Patriot Exchange Program - Standard"), "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                makeBuyURL(loc("Buy Group") + "<br />" + loc("Group for 2 or more"), "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699"),
-                                makeBuyURL(loc("Buy Group")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699")                                 
+                                "",
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
+                                "", 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
 
                                    ])
                                     );
                         endRow();  
 
-                        startRow();
-                        writeText("");
-                        writeText("STUDENTS (CA or OR)");                        
-                        writeText("");
-                        writeText("Western University of Health Sciences enrolled F visa students have required health insurance coverage as follows: 1. Deductible not over $1,000 per policy year (and not over $2,000 for family). Taian Scholar/Student Insurance Plan C ($1000 deductible) with $50,000 benefit is the most affordable plan that meets the school requirements.");                        
-                        writeText("Western University of Health Sciences enrolled J visa students have required health insurance coverage as follows: 1. Deductible not over $500 per policy year (and not over $2,000 for family); 2. Repatriation of remains of $10,000; 3. Medical evacuation of $15,000. Taian Scholar/Student Insurance Plan C ($500 deductible) with $50,000 benefit is the most affordable plan that meets the school requirements and the US Department of State requirements.");
-                        document.write(makeBulletedListWithTitle("", [
-                                makeURL("Western University of Health Sciences (CA) Student Requirements", "http://www.westernu.edu/students/students-services/students-services-insurance/"),
-                                makeURL("Western University of Health Sciences (OR) Student Requirements", "http://www.westernu.edu/students-or/students-services-or/students-services-insurance-or/")                      
-
-                                ]));
-                        endRow();
-
-                        startRow();
-                            document.write(makeTable(2,
-                            [
-                            // Column headers:
-
-                            "Plan C (Patriot Travel) $50,000 /$500 deductible", "Plan C (Patriot Travel) $50,000 /$1,000 deductible",
-                            "Monthly Premium", "Monthly Premium",
-                            "(All Student - Recommended Plan)", "(F visa Student - Lowest Cost Plan)",
-
-                            // Table within a table
-
-
-
-                                                              
-
-                                makeTable(4, [
-                                "Age",     "F1/J1 Student", "Spouse", "Children",
-                                "&lt; 30", "$33.30",   "$33.30",   "$30.60",
-                                "30-39",   "$44.10",   "$44.10",   "$30.60",
-                                "40-49",   "$65.70",  "$65.70",   "$30.60",
-                                "50-59",   "$96.30",  "$96.30",   "$30.60"
-                                ]),                                 
-
-                                makeTable(4, [
-                                "Age",     "F1/J1 Student", "Spouse", "Children",
-                                "&lt; 30", "$29.60",   "$29.60",   "$27.20",
-                                "30-39",   "$39.20",   "$39.20",   "$27.20",
-                                "40-49",   "$58.40",  "$58.40",   "$27.20",
-                                "50-59",   "$85.60",  "$85.60",   "$27.20"
-                                ]),                     
-
-
-                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
-                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
-
-
-                                makeBuyURL(loc("Buy Group")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),                                 
-                                makeBuyURL(loc("Buy Group")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699")
-                                   ])
-                                    );
-                        endRow();
-                        
-
-
-                        
-                        
+                                               
                         
                     }
 
@@ -1884,7 +3179,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Florida J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500; 5. Policy shall not unreasonably exclude risks inherent to the exchange program; 6. The insurance must meet certain credit rating criteria; 7. Must be accepted in all medical facilities. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Florida as proof of insurance.");
+                        writeText("University of Florida J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500; 5. Policy shall not unreasonably exclude risks inherent to the exchange program; 6. The insurance must meet certain credit rating criteria; 7. Must be accepted in all medical facilities. Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements and USDOS requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Florida Scholar Requirements", "http://www.ufic.ufl.edu/evs/Insurance.html")                         
 
@@ -1906,7 +3201,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Northeastern University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Northeastern University as proof of insurance.");
+                        writeText(loc("Northeastern University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Northeastern University Scholar Requirements", "http://www.northeastern.edu/issi/insurance.html")                         
 
@@ -1928,7 +3223,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Georgia Institute of Technology J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Georgia Institute of Technology as proof of insurance.");
+                        writeText(loc("Georgia Institute of Technology ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Georgia Institute of Technology Scholar Requirements", "http://www.oie.gatech.edu/scholars/procedures")                         
 
@@ -1950,7 +3245,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Georgia Regents University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Georgia Regents University as proof of insurance.");
+                        writeText(loc("Georgia Regents University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Georgia Regents University Scholar Requirements", "http://www.gru.edu/diversity/ipso/students/j1students.php")                         
 
@@ -1972,7 +3267,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Arizona State University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Arizona State University as proof of insurance.");
+                        writeText(loc("Arizona State University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Arizona State University Scholar Requirements", "https://global.asu.edu/sites/default/files/DS2019Packet.pdf")                         
 
@@ -1994,7 +3289,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Mississippi State University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Mississippi State University as proof of insurance.");
+                        writeText(loc("Mississippi State University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Mississippi State University Scholar Requirements", "http://www.admissions.msstate.edu/pdf/international/exchange-visitor.pdf")                         
 
@@ -2016,7 +3311,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UC San Diego J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UC San Diego as proof of insurance.");
+                        writeText(loc("UC San Diego ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("UC San Diego Scholar Requirements", "http://icenter.ucsd.edu/ifso/living-in-sd/insurance/index.html")                         
 
@@ -2038,7 +3333,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Arizona J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Arizona as proof of insurance.");
+                        writeText(loc("University of Arizona ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Arizona Scholar Requirements", "http://www.health.arizona.edu/pdf/insurance/J1%20Visiting%20Scholars%20Ins%20Requirement.pdf")                         
 
@@ -2060,7 +3355,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Akron J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Akron as proof of insurance.");
+                        writeText(loc("University of Akron ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Akron Scholar Requirements", "http://www.uakron.edu/oip/immigration/insurance-for-j1-scholar.dot")                         
 
@@ -2082,7 +3377,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Chicago J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Chicago as proof of insurance.");
+                        writeText(loc("University of Chicago ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Chicago Scholar Requirements", "https://internationalaffairs.uchicago.edu/page/health-insurance-requirements-j-1-exchange-visitors")                         
 
@@ -2104,7 +3399,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Emory University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Emory University as proof of insurance.");
+                        writeText(loc("Emory University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.")); 
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Emory University Scholar Requirements", "http://www.emory.edu/isss/scholars/maintaining_j1_status_scholars/health_insurance.html")                         
 
@@ -2126,7 +3421,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Texas A&M University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Texas A&M University as proof of insurance.");
+                        writeText(loc("Texas A&M ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Texas A&M University Scholar Requirements", "http://ifss.tamu.edu/J/insurance")                         
 
@@ -2148,7 +3443,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Cornell University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Cornell University as proof of insurance.");
+                        writeText(loc("Cornell University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.")); 
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Cornell University Scholar Requirements", "http://www.isso.cornell.edu/academicstaff/j1insurance.php")                         
 
@@ -2170,7 +3465,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Houston J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Houston as proof of insurance.");
+                        writeText(loc("University of Houston ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Houston Scholar Requirements", "http://www.issso.uh.edu/finances/healthinsurance.html")                         
 
@@ -2192,7 +3487,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Texas MD Anderson J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Texas MD Anderson as proof of insurance.");
+                        writeText(loc("University of Texas MD Anderson ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Texas MD Anderson Scholar Requirements", "https://www.academichealthplans.com/uthouston/2012-2013/FAQs.php")                         
                                 ]));
@@ -2213,7 +3508,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Texas Southwestern Medical Center J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Texas Southwestern Medical Center as proof of insurance.");
+                        writeText(loc("University of Texas Southwestern Medical Center ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Texas Southwestern Medical Center Scholar Requirements", "http://www.utsouthwestern.edu/about-us/administrative-offices/international-affairs/visa-sponsorship-policies/j-1-visas/general-information.html#j1mandhealtins")                         
                                 ]));
@@ -2234,7 +3529,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Texas Health Center Houston J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Texas Health Center Houston as proof of insurance.");
+                        writeText(loc("University of Texas Health Center Houston ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Texas Health Center Houston Scholar Requirements", "http://www.uth.edu/international-affairs/exchange-visitors-j-1/j-1-health-insurance.htm")                         
                                 ]));
@@ -2256,7 +3551,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Texas El Paso J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Texas El Paso as proof of insurance.");
+                        writeText(loc("University of Texas El Paso ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Texas El Paso Scholar Requirements", "http://sa.utep.edu/oip/j-1-visa-requirements/")                         
                                 ]));
@@ -2277,7 +3572,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Texas Brownsville J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Texas Brownsville as proof of insurance.");
+                        writeText(loc("University of Texas Brownsville ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Texas Brownsville Scholar Requirements", "http://www.utb.edu/ba/hr/internationalfaculty/J1/Pages/J1Health.aspx")                         
                                 ]));
@@ -2299,7 +3594,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Utah J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Utah as proof of insurance.");
+                        writeText(loc("University of Utah ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Utah Scholar Requirements", "http://ic.utah.edu/scholars/family-dependents/health.php")                        
                                 ]));
@@ -2320,7 +3615,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Virginia J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Virginia as proof of insurance.");
+                        writeText(loc("University of Virginia ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Virginia Scholar Requirements", "http://www.virginia.edu/iso/issp/NewWindows/HealthInsScholarExchange.html")                        
                                 ]));
@@ -2341,7 +3636,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet MIT J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to MIT as proof of insurance.");
+                        writeText(loc("Massachusetts Institute of Technology (MIT) ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("MIT Scholar Requirements", "http://web.mit.edu/scholars/intlscholars/healthinsurance/j1requirements.html")                        
                                 ]));
@@ -2362,7 +3657,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Princeton University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Princeton University as proof of insurance.");
+                        writeText(loc("Princeton University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Princeton University Scholar Requirements", "http://www.princeton.edu/intlctr/scholars/new-scholarsfaculty/j-1-exchange-visitor/health-insurance-requirem/")                        
                                 ]));
@@ -2383,7 +3678,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Tufts University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Tufts University as proof of insurance.");
+                        writeText(loc("Tufts University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Tufts University Scholar Requirements", "http://ase.tufts.edu/icenter/life/healthcareScholar.asp")                        
                                 ]));
@@ -2404,7 +3699,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Carnegie Mellon University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Carnegie Mellon University as proof of insurance.");
+                        writeText(loc("Carnegie Mellon University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Carnegie Mellon University Scholar Requirements", "http://www.studentaffairs.cmu.edu/oie/forscho/j1/conditions.html")                        
                                 ]));
@@ -2425,7 +3720,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Washington University in St. Louis J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Washington University in St. Louis as proof of insurance.");
+                        writeText(loc("Washington University in St. Louis ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Washington University in St. Louis Scholar Requirements", "http://oiss.wustl.edu/scholars/j-1-exchange-visitors/maintaining-j-1status/")                        
                                 ]));
@@ -2433,26 +3728,7 @@ function getPartnership(partner) {
                     }
               }, 
 
-        wvu: {
-                    windowTitle: "TaiAn Health Insurance for West Virginia University",
-                    pageTitle: "TaiAn Health Insurance for West Virginia University",
-                    tabs: [
-                            "pivot-home",
-                            "pivot-international-student",
-                            "pivot-global-medical",
-                            "pivot-travel-insurance",
-                            "pivot-aboutus"
-                          ],
-                          
-                    internationalStudentContent: function () {
-                        startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet West Virginia University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $100,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500; 5. Copay not over $10. Plan B with $250,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to West Virginia University in St. Louis as proof of insurance.");
-                        document.write(makeBulletedListWithTitle("", [
-                                makeURL("West Virginia University Scholar Requirements", "http://well.wvu.edu/medical/insurance/international-students")                        
-                                ]));
-                        endRow();
-                    }
-              },               
+            
               
         ucsf: {
                     windowTitle: "TaiAn Health Insurance for UC San Francisco",
@@ -2467,7 +3743,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UC San Francisco J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UC San Francisco as proof of insurance.");
+                        writeText(loc("UC San Francisco ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("UC San Francisco Scholar Requirements", "http://isso.ucsf.edu/immigration-visas/for-scholars/j-1-scholars/health-insurance-requirement")                        
                                 ]));
@@ -2488,7 +3764,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UC Irvine J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UC Irvine as proof of insurance.");
+                        writeText(loc("UC Irvine ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("UC Irvine Scholar Requirements", "http://www.ic.uci.edu/Scholars/J-1/healthinsurance.php")                        
                                 ]));
@@ -2501,40 +3777,47 @@ function getPartnership(partner) {
                     pageTitle: "TaiAn Health Insurance for UC Riverside",
                     tabs: [
                             "pivot-home",
-                            "pivot-international-studentandscholar",
+                            "pivot-scholar-student",
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                             "pivot-aboutus"
                           ],
                           
-                    internationalStudentandscholarContent: function () {
+                    scholarStudentContent: function () {
                         startRow();
-                        writeText("UC Riverside requirements for J1 scholar (not for enrolled students) health insurance are: 1. Medical benefits of $500,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $50,000; 4. Deductible not over $250. Taian Scholar/Student Insurance Plan B (with $500,000 benefit per accident or illness)  and Plan C (with $250 deductible and $500,000 benefit) are the most affordable plans that meet the school requirements and the US Department of State requirements (which plan is more affordable depends on your age and family members). Shortly after submitting an application you will receive confirmation of your coverage which you can send to school as proof of insurance.");
+                        writeText("UC Riverside J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $500,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Annual deductible not over $250. Taian Plan B (with $500,000 benefit and two deductible options) and Plan C (with $500,000 benefit and $250 deductible) are the most affordable plans that meet the school requirements and the USDOS requirements.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.");
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("UC Riverside Scholar Requirements", "http://internationalcenter.ucr.edu/InternationalStudents/Pages/HealthandMoneyMatters.aspx")                        
+                                makeURL("UC Riverside Scholar Requirements", "http://internationalscholars.ucr.edu/visa/joneinsurance.html")                        
                                 ]));
                         endRow();
                         
                         startRow();
-                            document.write(makeTable(2,
+                            document.write(makeTable(4,
                             [
                             // Column headers:
 
-                            "Monthly Price for Plan B ($500,000 per illness or injury)", "Monthly Price for Plan C ($500,000 benefit, $250 deductible)",
+                               "TaiAn Scholars and Students", "Plan B ($500,000 per illness or injury), $100 per illness deductible", "Plan B ($500,000 per illness or injury), $250 annual deductible<br />Taian Exclusive!", "Plan C ($500,000 benefit, $250 annual deductible)",
 
 
                             // Table within a table
-
+                               "Cost Per Month (Non-US Citizens)",
                                 makeTable(4, [
-                                "Age",     "J1", "Spouse", "Children",
+                                "Age",     "F1/J1", "Spouse", "Children",
                                 "&lt; 25", "$63.66",   "$63.66",   "$63.66",
                                 "25-49",   "$82.90",   "$82.90",   "$63.66",
                                 "50-64",   "$177.53",  "$177.53",   "$63.66"
 
                                 ]), 
-
+                                loc("$500,000 per illness/injury, $250 annual deductible") +         
                                 makeTable(4, [
-                                "Age",     "J1", "Spouse", "Children",
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 25", "$61.75","$61.75",  "$61.75",
+                                "25-49",   "$80.41","$80.41",  "$61.75",
+                                "50-64",   "$172.20","$172.20","$61.75"
+                                     ]), 
+                                     
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
                                 "&lt; 30", "$59.00",   "$59.00",   "$53.00",
                                 "30-39",   "$78.00",   "$78.00",   "$53.00",
                                 "40-49",   "$119.00",  "$119.00",   "$53.00",
@@ -2542,18 +3825,24 @@ function getPartnership(partner) {
                                 ]),                                
 
 
-                    
-
-                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Patriot Exchange Program - Standard"), "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
+                                "",
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
-
-                                makeBuyURL(loc("Buy Group") + "<br />" + loc("Group for 2 or more"), "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699"),
-                                makeBuyURL(loc("Buy Group")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699")                                 
+                                "",
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"), 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
 
                                    ])
                                     );
-                        endRow();                        
+                        endRow();                         
                         
                     }
               },
@@ -2563,13 +3852,13 @@ function getPartnership(partner) {
                     pageTitle: "TaiAn Health Insurance for Fordham University",
                     tabs: [
                             "pivot-home",
-                            "pivot-international-studentandscholar",
+                            "pivot-scholar-student",
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                             "pivot-aboutus"
                           ],
-                          
-                    internationalStudentandscholarContent: function () {
+      
+                    scholarStudentContent: function () {
                         startRow();
                         writeText("Fordham University requirements for F1 international students or J1 scholar health insurance are: 1. Medical benefits of $500,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Taian Scholar/Student Insurance Plan B (with $500,000 benefit per accident or illness) and Plan C (with $500 deductible and $500,000 benefit) are the most affordable plans that meet the school requirements and the US Department of State requirements (which plan is more affordable depends on your age and family members). Shortly after submitting an application you will receive confirmation of your coverage which you can send to your school as proof of insurance.");
                         document.write(makeBulletedListWithTitle("", [
@@ -2578,25 +3867,39 @@ function getPartnership(partner) {
                         endRow();
                         
                         startRow();
-                            document.write(makeTable(2,
+                            document.write(makeTable(4,
                             [
                             // Column headers:
 
-                            "Monthly Price for Plan B ($500,000 per illness or injury)", "Monthly Price for Plan C ($500,000 benefit, $500 deductible)",
+                               "TaiAn Scholars and Students", "Plan B ($500,000 per illness or injury), $100 per illness deductible", "Plan B ($500,000 per illness or injury), $250 and $500 annual deductible<br />Taian Exclusive!", "Plan C ($500,000 benefit, $500 annual deductible)",
 
 
                             // Table within a table
-
+                               "Cost Per Month (Non-US Citizens)",
                                 makeTable(4, [
-                                "Age",     "J1", "Spouse", "Children",
+                                "Age",     "F1/J1", "Spouse", "Children",
                                 "&lt; 25", "$63.66",   "$63.66",   "$63.66",
                                 "25-49",   "$82.90",   "$82.90",   "$63.66",
                                 "50-64",   "$177.53",  "$177.53",   "$63.66"
 
                                 ]), 
-
+                                loc("$500,000 per illness/injury, $250 annual deductible") +         
                                 makeTable(4, [
-                                "Age",     "J1", "Spouse", "Children",
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 25", "$61.75","$61.75",  "$61.75",
+                                "25-49",   "$80.41","$80.41",  "$61.75",
+                                "50-64",   "$172.20","$172.20","$61.75"
+                                     ]) +   
+ 
+                                loc("$500,000 per illness/injury, $500 annual deductible") +         
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 25", "$57.43","$57.43",  "$57.43",
+                                "25-49",   "$74.78","$74.78",  "$57.43",
+                                "50-64",   "$160.15","$160.15","$57.43"
+                                ]),                    
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
                                 "&lt; 30", "$53.10",   "$53.10",   "$47.70",
                                 "30-39",   "$70.20",   "$70.20",   "$47.70",
                                 "40-49",   "$107.10",  "$107.10",   "$47.70",
@@ -2604,14 +3907,20 @@ function getPartnership(partner) {
                                 ]),                                
 
 
-                    
-
-                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Patriot Exchange Program - Standard"), "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
+                                "",
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
-
-                                makeBuyURL(loc("Buy Group") + "<br />" + loc("Group for 2 or more"), "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699"),
-                                makeBuyURL(loc("Buy Group")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699")                                 
+                                "",
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"), 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
 
                                    ])
                                     );
@@ -2636,58 +3945,87 @@ function getPartnership(partner) {
                         startRow();
                         writeText("J SCHOLARS  (J STUDENTS AND F STUDENTS SCROLL DOWN THE PAGE)");                        
                         writeText("");
-                        writeText("UIUC exchange visitors (J visa) have required health insurance coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Taian Scholar/Student Insurance Plan B ($100 deductible and $50,000 benefit per accident or illness) and Plan C ($500 deductible and $50,000 benefit) are the most affordable plans that meet the school requirements and the US Department of State requirements (which plan is more affordable depends on your age and family members). Shortly after submitting an application you will receive confirmation of your coverage which you can send to your school as proof of insurance.");                        
+                        writeText("UIUC J scholars (not for enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury, deductible not over $500) and Plan C (with $50,000 benefit, deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.");                        
                         document.write(makeBulletedListWithTitle("", [
                         
                                 makeURL("UIUC Scholar Requirements", "http://isss.illinois.edu/download_forms/handbooks/j1_prog_handbook.pdf") 
                                 ]));
                         endRow();
 
-                        startRow();
-                            document.write(makeTable(3,
+                          startRow();
+                            document.write(makeTable(4,
                             [
                             // Column headers:
 
-                            "Plan A (Student Health Advantage) $300,000 / $100 deductible / Maternity", "Plan B (Patriot Exchange) $50,000 / $100 deductible", "Plan C (Patriot Travel) $50,000 /$500 deductible",
-                            "Monthly Premium", "Monthly Premium", "Monthly Premium",
-                            "(J Scholar - Recommended if you want maternity benefit)", "(J Scholar - Recommended Plan)", "(J Scholar)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+
 
                             // Table within a table
-
+                               "Cost Per Month (Non-US Citizens)",
                                 makeTable(4, [
-                                "Age",     "J1 Scholar", "Spouse", "Children",
+                                "Age",     "F1/J1", "Spouse", "Children",
                                 "&lt; 19", "$72",   "$386",   "$82",
                                 "19-23",   "$95",   "$386",   "$82",
                                 "24-30",   "$110",  "$426",   "$82",
                                 "31-40",   "$197",  "$567",   "$82",
                                 "41-50",   "$322",  "$586",   "$82",
                                 "51-64",   "$430",  "$567",   "$82"
-                                
-                                ]), 
-
+                                   ]), 
+                                loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
-                                "Age",     "J1 Scholar", "Spouse", "Children",
-                                "&lt; 25", "$48.62",   "$48.62",   "$48.62",
-                                "25-49",   "$63.37",   "$63.37",   "$48.62",
-                                "50-64",   "$135.70",  "$135.70",   "$63.66"
-                                ]),                                
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$48.62","$48.62",  "$48.62",
+                                        "25-49",   "$63.37","$63.37",  "$48.62",
+                                        "50-64",   "$135.70","$135.70","$48.62"
+                                        ]) +
 
+                                loc("$50,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN<br />***Best Value***") +         
                                 makeTable(4, [
-                                "Age",     "J1 Scholar", "Spouse", "Children",
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$47.16","$47.16",  "$47.16",
+                                        "25-49",   "$61.47","$61.47",  "$47.16",
+                                        "50-64",   "$131.63","$131.63","$47.16"
+                                        ])  + 
+
+                                loc("$100,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$54.76","$54.76",  "$54.76",
+                                        "25-49",   "$71.30","$71.30",  "$54.76",
+                                        "50-64",   "$152.63","$152.63","$54.76"
+                                        ]), 
+                                loc("$50,000 benefit, $500 annual deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
                                 "&lt; 30", "$33.30",   "$33.30",   "$30.60",
                                 "30-39",   "$44.10",   "$44.10",   "$30.60",
                                 "40-49",   "$65.70",  "$65.70",   "$30.60",
                                 "50-59",   "$96.30",  "$96.30",   "$30.60"
-                                ]),                                 
+                                ]) + 
+                                loc("$50,000 benefit, no deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$46.25",   "$46.25",   "$42.50",
+                                "30-39",   "$61.25",   "$61.25",   "$42.50",
+                                "40-49",   "$91.25",  "$91.25",   "$42.50",
+                                "50-59",   "$133.75",  "$133.75",   "$42.50"
+                                ]),                                
 
-                    
+
+                                "",
                                 makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
-                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Patriot Exchange Program - Standard"), "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                makeBuyURL(loc("Buy Group") + "<br />" + loc("Group for 2 or more"), "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699"),
-                                makeBuyURL(loc("Buy Group")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699")                                 
+                                "",
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
+                                "", 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
 
                                    ])
                                     );
@@ -2695,118 +4033,88 @@ function getPartnership(partner) {
 
                         startRow();
                         writeText("");
-                        writeText("J STUDENTS");                        
+                        writeText("F or J STUDENTS");                        
                         writeText("");
-                        writeText("UIUC enrolled students with a J visa have required health insurance coverage as follows: 1. $500,000 per illness or injury; 2. Deductible not over $500; 3. Repatriation of remains of $7,500; 4. Medical evacuation of $10,000; 5. Plan must be effective by the first day UIUC plan is effective (Must have coverage by May 17, 2014 for summer semester).  Taian Scholar/Student Insurance Plan B ($100 deductible) and Plan C ($500 deductible) with $500,000 benefit is the most affordable plan that meets the school requirements and the US Department of State requirements (which plan is more affordable depends on your age and family members).  Students are required to complete an on line waiver.");                        
+                        writeText("Enrolled international students are required to have coverage as follows: 1. Medical benefits of $500,000 per illness or injury; 2.  Plan must be effective by the first day UIUC plan is effective for the semester; 3. Deductible not over $2,000 for F visa, and not over $500 for J visa.  Taian Plan B and Plan C with $500,000 benefit and deductible not over $1,000 (F visa) or $500 (J visa) are the most affordable plans that meet the requirements.  Students are required to complete an on line waiver.");                        
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("UIUC Student Requirements", "http://www.si.uiuc.edu/Default.aspx?tabid=64")                      
 
                                 ]));
                         endRow();
 
-                        startRow();
-                            document.write(makeTable(2,
-                            [
-                            // Column headers:
-
-                            "Plan B (Patriot Exchange) $500,000 / $100 deductible", "Plan C (Patriot Travel) $500,000 /$500 deductible",
-                            "Monthly Premium", "Monthly Premium", 
-                            "(J Student - Recommended Plan)", "(J Student - Recommended Plan)",
-
-                            // Table within a table
-
-
-
-                                makeTable(4, [
-                                "Age",     "J1 Student", "Spouse", "Children",
-                                "&lt; 25", "$63.66",   "$63.66",   "$63.66",
-                                "25-49",   "$82.90",   "$82.90",   "$63.66",
-                                "50-64",   "$177.53",  "$177.53",   "$63.66"
-                                ]),                                
-
-                                makeTable(4, [
-                                "Age",     "J1 Student", "Spouse", "Children",
-                                "&lt; 30", "$53.10",   "$53.10",   "$47.70",
-                                "30-39",   "$70.20",   "$70.20",   "$47.70",
-                                "40-49",   "$107.10",  "$107.10",    "$47.70",
-                                "50-59",   "$152.10",  "$152.10",   "$47.70"
-                                ]),                                 
-
-                    
-
-                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Patriot Exchange Program - Standard"), "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
-                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
-
-
-                                makeBuyURL(loc("Buy Group") + "<br />" + loc("Group for 2 or more"), "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699"),
-                                makeBuyURL(loc("Buy Group")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699")                                 
-
-                                   ])
-                                    );
-                        endRow();
-                        
-                        startRow();
-                        writeText("");
-                        writeText("F STUDENTS");                        
-                        writeText("");
-                        writeText("UIUC enrolled F visa international students have required health insurance coverage as follows: 1. $500,000 per illness or injury; 2. Not over $2,000 deductible; 3. Plan must be effective by the first day UIUC plan is effective (Must have coverage by May 17, 2014 for summer semester).  Taian Scholar/Student Insurance Plan B ($100 deductible) and Plan C ($1,000 deductible) with $500,000 benefit per illness or injury is the most affordable plan that meets the school requirements (which plan is more affordable depends on your age and family members).  Students are required to complete an on line waiver.");                        
-                        document.write(makeBulletedListWithTitle("", [
-                                makeURL("UIUC Student Requirements", "http://www.si.uiuc.edu/Default.aspx?tabid=64")                      
-
-                                ]));
-                        endRow();
-
-                        startRow();
+                          startRow();
                             document.write(makeTable(3,
                             [
                             // Column headers:
 
-                            "Plan B (Patriot Exchange) $500,000 / $100 deductible", "Plan C (Patriot Travel) $500,000 /$500 deductible", "Plan C (Patriot Travel) $500,000 / $1000 deductible",
-                            "Monthly Premium", "Monthly Premium", "Monthly Premium",
-                            "(F Student - Recommended Plan)", "(F Student - Recommended Plan)", "(F Student)",
+                               "TaiAn Scholars and Students", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+
 
                             // Table within a table
-
-
-
+                               "Cost Per Month (Non-US Citizens)",  
+                                loc("$500,000 per illness/injury, $100 per illness deductible") +         
                                 makeTable(4, [
-                                "Age",     "F1 Student", "Spouse", "Children",
-                                "&lt; 25", "$63.66",   "$63.66",   "$63.66",
-                                "25-49",   "$82.90",   "$82.90",   "$63.66",
-                                "50-64",   "$177.53",  "$177.53",   "$63.66"
-                                ]),                                
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$63.66","$63.66",  "$63.66",
+                                        "25-49",   "$82.90","$82.90",  "$63.66",
+                                        "50-64",   "$177.53","$177.53","$63.66"
 
+                                        ]) +
+
+                                loc("$500,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
                                 makeTable(4, [
-                                "Age",     "F1 Student", "Spouse", "Children",
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$61.75","$61.75",  "$61.75",
+                                        "25-49",   "$80.41","$80.41",  "$61.75",
+                                        "50-64",   "$172.20","$172.20","$61.75"
+                                        ])  + 
+
+                                loc("$500,000 per illness/injury, $500 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$57.43","$57.43",  "$57.43",
+                                        "25-49",   "$74.78","$74.78",  "$57.43",
+                                        "50-64",   "$160.15","$160.15","$57.43"
+                                        ]), 
+                                loc("$500,000 benefit, $500 annual deductible") +                           
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
                                 "&lt; 30", "$53.10",   "$53.10",   "$47.70",
                                 "30-39",   "$70.20",   "$70.20",   "$47.70",
-                                "40-49",   "$107.10",  "$107.10",    "$47.70",
+                                "40-49",   "$107.10",  "$107.10",   "$47.70",
                                 "50-59",   "$152.10",  "$152.10",   "$47.70"
-                                ]),       
-
+                                ]) + 
+                                loc("$500,000 benefit, $1,000 annual deductible") +                                        
                                 makeTable(4, [
-                                "Age",     "F1 Student", "Spouse", "Children",
+                                "Age",     "F1/J1", "Spouse", "Children",
+
                                 "&lt; 30", "$47.20",   "$47.20",   "$42.40",
                                 "30-39",   "$62.40",   "$62.40",   "$42.40",
                                 "40-49",   "$95.20",  "$95.20",    "$42.40",
                                 "50-59",   "$135.20",  "$135.20",   "$42.40"
-                                ]),                                      
+                                ]),                                
 
-                    
 
-                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Patriot Exchange Program - Standard"), "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
+                                "",
+
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
-                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
-                                makeBuyURL(loc("Buy Group") + "<br />" + loc("Group for 2 or more"), "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699"),
-                                makeBuyURL(loc("Buy Group")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),                                 
-                                makeBuyURL(loc("Buy Group")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699")
-                                
+                                "",
 
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
+                                "",
+
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
+
                                    ])
                                     );
-                        endRow();                        
+                        endRow();                         
+                        
+                       
                         
                         
                     }
@@ -2828,7 +4136,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UC Santa Barbara J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UC Santa Barbara as proof of insurance.");
+                        writeText(loc("UC Santa Barbara ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("UC Santa Barbara Scholar Requirements", "http://oiss.sa.ucsb.edu/scholars/Insurance.aspx")                        
                                 ]));
@@ -2849,7 +4157,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UC Santa Cruz J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UC Santa Cruz as proof of insurance.");
+                        writeText(loc("UC Santa Cruz ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("UC Santa Cruz Scholar Requirements", "http://ieo.ucsc.edu/intl-scholars/j1/post-arrival-insurance.html#Federal")                        
                                 ]));
@@ -2870,7 +4178,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Illinois at Chicago J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Illinois at Chicago as proof of insurance.");
+                        writeText(loc("University of Illinois at Chicago ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Illinois at Chicago Scholar Requirements", "http://www.ois.uic.edu/cms/one.aspx?portalId=1138157&pageId=1143737")                        
                                 ]));
@@ -2891,7 +4199,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Brandeis University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Brandeis University as proof of insurance.");
+                        writeText(loc("Brandeis University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Brandeis University Scholar Requirements", "http://www.brandeis.edu/acserv/isso/scholar/currentscholars/healthinsurance.html")                        
                                 ]));
@@ -2915,7 +4223,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Georgia J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Georgia as proof of insurance.");
+                        writeText(loc("University of Georgia ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Georgia Scholar Requirements", "http://issis.uga.edu/docs/Fac_Scholar_Section/Health_%20Ins_Companies_Requirements.pdf")                        
                                 ]));
@@ -2936,8 +4244,8 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Washington enrolled international student standards and J scholar standards. Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Washington as proof of insurance.");
-                        writeText("Enrolled international students are allowed to waive only if they are an exchange student visiting through an official exchange program.  They are required to carry $200,000 per illness or injury and complete a waiver. Taian Scholar/Student Insurance Plan B with $250,000 benefit per illness or injury is the most affordable plan that meets the standards.");
+                        writeText(loc("University of Washington ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+                        writeText("Enrolled international students are allowed to waive only if they are an exchange student visiting through an official exchange program, or are sponsored by the government of the US or their home country. They are required to have medical benefits of $200,000 per illness or injury and complete an on line waiver. Taian Plan B with $250,000 benefit per illness or injury is the most affordable plan that meets the standards.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Washington Student Requirements", "http://iss.washington.edu/health-insurance"),
                                 makeURL("University of Washington Scholar Requirements", "http://iss.washington.edu/health-insurance")                        
@@ -2959,7 +4267,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Vanderbilt University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Vanderbilt University as proof of insurance.");
+                        writeText(loc("Vanderbilt University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Vanderbilt University Scholar Requirements", "http://www.vanderbilt.edu/isss/financial-statements/j-1-student-intern/j-1-student-intern-orientation/")                        
                                 ]));
@@ -2980,7 +4288,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Miami J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Miami as proof of insurance.");
+                        writeText(loc("University of Miami ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Miami Scholar Requirements", "http://www.miami.edu/sa/index.php/isss/current_international_scholars/health_insurance_requirement/")                        
                                 ]));
@@ -3001,7 +4309,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Massachusetts - Amherst J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Massachusetts - Amherst as proof of insurance.");
+                        writeText(loc("University of Massachusetts - Amherst ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Massachusetts - Amherst Scholar Requirements", "http://www.umass.edu/ipo/iss/health.php") 
                                 
@@ -3023,7 +4331,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Massachusetts - Dartmouth J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Massachusetts - Dartmouth as proof of insurance.");
+                        writeText(loc("University of Massachusetts - Dartmouth ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Massachusetts - Dartmouth Scholar Requirements", "http://www.umassd.edu/international_students/informationforj-1scholars/healthinsurance/") 
                                 
@@ -3045,7 +4353,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Massachusetts - Lowell J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Massachusetts - Lowell as proof of insurance.");
+                        writeText(loc("University of Massachusetts - Lowell ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Massachusetts - Lowell Scholar Requirements", "http://www.uml.edu/ISSO/Employment/j1-training.aspx") 
                                 
@@ -3068,7 +4376,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Nebraska (Lincoln) J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Nebraska (Lincoln) as proof of insurance.");
+                        writeText(loc("University of Nebraska - Lincoln ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Nebraska (Lincoln) Scholar Requirements", "http://isso.unl.edu/j.status.health.insurance.requirement")                        
                                 ]));
@@ -3089,7 +4397,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet University of Nebraska (Omaha) J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Nebraska (Omaha) as proof of insurance.");
+                        writeText(loc("University of Nebraska - Omaha ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Nebraska (Omaha) Scholar Requirements", "http://healthservices.unomaha.edu/insurance.php")                        
                                 ]));
@@ -3110,7 +4418,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Oakland University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Oakland University as proof of insurance.");
+                        writeText(loc("Oakland University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Oakland University Scholar Requirements", "http://www.oakland.edu/isso/scholarinformation/")                        
                                 ]));
@@ -3131,7 +4439,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Florida State University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Florida State University as proof of insurance.");
+                        writeText(loc("Florida State University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.")); 
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Florida State University Scholar Requirements", "http://www.cge.fsu.edu/intlScholars/healthinsurance.cfm")                        
                                 ]));
@@ -3174,7 +4482,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Louisiana State University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Louisiana State University as proof of insurance.");
+                        writeText(loc("Louisiana State University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Louisiana State University Scholar Requirements", "http://www.oip.lsu.edu/iso/pdfs/J-1%20Scholar%20Insurance%20Coverage%20Evaluation%20Form.pdf")                        
                                 ]));
@@ -3196,7 +4504,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Michigan State University enrolled international student standards and J scholar standards.  Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Michigan State University as proof of insurance.");
+                        writeText(loc("Michigan State University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         writeText("Enrolled international students are required to carry $250,000 per illness or injury, have coverage for mental nervous claims, and complete a waiver. Taian Scholar/Student Insurance Plan A is the most affordable plan that meets the standards.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Michigan State University Student Requirements", "http://oiss.isp.msu.edu/students/health/policy.htm"),
@@ -3220,7 +4528,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet NYU and NYU Poly J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to NYU as proof of insurance.");
+                        writeText(loc("New York University and NYU Poly ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("NYU and NYU Poly Scholar Requirements", "http://www.nyu.edu/global/international-immigration-services/faculty-and-scholars/inbound-to-nyc/pre-arrival/exchange-visitor/health-insurance-requirement.html")                              
                                 ]));
@@ -3241,7 +4549,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet New York Institute of Technology scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to New York Institute of Technology as proof of insurance.");
+                        writeText(loc("New York Institute of Technology ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("New York Institute of Technology Scholar Requirements", "http://www.nyit.edu/health_and_wellness/insurance/")                              
                                 ]));
@@ -3262,7 +4570,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet New School J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to New School as proof of insurance.");
+                        writeText(loc("New School ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("New School Scholar Requirements", "https://www.newschool.edu/international-student-services/resources/health-insurance-for-internationals/")                              
                                 ]));
@@ -3283,8 +4591,8 @@ function getPartnership(partner) {
                           ],
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Purdue enrolled international student standards and J scholar standards. Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Purdue as proof of insurance.");
-                        writeText("Enrolled international students are allowed to waive only if they are an exchange student visiting through an official exchange program. They are required to carry $200,000 per illness or injury and complete a waiver. Taian Scholar/Student Insurance Plan B with $250,000 benefit per illness or injury is the most affordable plan that meets the standards. You need to complete the Waiver Form, submit it along with your I-20(or DS2019), insurance ID card and Visa Letter.");
+                        writeText(loc("Purdue University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+                        writeText("Enrolled international students are allowed to waive only if they are an exchange student visiting through an official exchange program. They are required to have medical benefits of $200,000 per illness or injury and complete the Waiver Form, submit it along with your I-20(or DS2019), insurance ID card and Visa Letter. Taian Plan B with $250,000 benefit per illness or injury is the most affordable plan that meets the standards.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Purdue University Scholar Requirements", "http://www.iss.purdue.edu/Current/J1/HealthInsurance.cfm"),
                                 makeURL("Purdue University Student Requirements", "http://www.purdue.edu/push/insurance/waivers.shtml")                                
@@ -3305,7 +4613,7 @@ function getPartnership(partner) {
                           ],
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet your school J scholar standards. Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to your school as proof of insurance.");
+                        writeText("Your school J scholars have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS. Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.");
                         endRow();
                     }
               },  
@@ -3400,7 +4708,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Columbia J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Columbia as proof of insurance.");
+                        writeText(loc("Columbia University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.")); 
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Columbia Scholar Requirements", "http://www.columbia.edu/cu/isso/visa/scholar/J_health.html")                               
                                 ]));
@@ -3434,41 +4742,56 @@ function getPartnership(partner) {
 
                         writeText("The groups exempt from VSISP include; (A)  Postdoctoral Scholars - required to enroll in the Postdoctoral Scholar Benefits Plan (PSBP); (B)  Degree, EAP, UCLA Exchange (IEO) students - must enroll in the UCLA USHIP  plan; (C)  UCLA Staff & Faculty.");
                      
-                        writeText("Plan A Student Health Advantage, Plan B Patriot Exchange with $250,000 benefit and Plan C Patriot Travel Medical with $100,000 benefit and $250 deductible meet the waiver requirements for UCLA scholars subject to VSISP coverage. Plan A may be best for someone seeking maternity benefits.  Plan B and Plan C are the most affordable plans that meets the school requirements and the US Department of State requirements (which plan is more affordable depends on your age and family members). Shortly after submitting an application you will receive confirmation of your coverage including a visa letter which you can send to UCLAVSISP@Garnett-Powers.com for a waiver. After receiving waiver confirmation by email, J-1 scholar brings the waiver confirmation and proof of medical insurance to check-in.");
+                        writeText("Taian Plan B (with $100,000 benefit per illness or injury and deductible not over $250) and Plan C (with $100,000 benefit and deductible not over $250) are the most affordable plans that meet your school requirements and USDOS requirements.  You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  Shortly after submitting an application you will receive confirmation of your coverage including a visa letter which you can send to UCLAVSISP@Garnett-Powers.com for a waiver. After receiving waiver confirmation by email, J-1 scholar brings the waiver confirmation and proof of medical insurance to check-in.");
 
+             
+ 
                         startRow();
-                            document.write(makeTable(3,
+                            document.write(makeTable(4,
                             [
                             // Column headers:
 
-                            "Plan A (Student Health Advantage) $300,000 / $100 deductible / Maternity", "Plan B (Patriot Exchange) $250,000 / $100 deductible", "Plan C (Patriot Travel) $100,000 / $250 deductible", 
-                            "Monthly Premium", "Monthly Premium", "Monthly Premium",                            
-             
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
-
+                               "Cost Per Month (Non-US Citizens)",
                                 makeTable(4, [
-                                "Age",     "J1 Scholar", "Spouse", "Children",
+                                "Age",     "F1/J1", "Spouse", "Children",
                                 "&lt; 19", "$72",   "$386",   "$82",
                                 "19-23",   "$95",   "$386",   "$82",
                                 "24-30",   "$110",  "$426",   "$82",
                                 "31-40",   "$197",  "$567",   "$82",
                                 "41-50",   "$322",  "$586",   "$82",
                                 "51-64",   "$430",  "$567",   "$82"
-                                
-                                ]), 
-                                
+                                   ]), 
+                                loc("$100,000 per illness/injury, $100 per illness deductible") +         
                                 makeTable(4, [
-                                "Age",     "J1 Scholar", "Spouse", "Children",
-                                "&lt; 25", "$60.36",   "$60.36",   "$60.36",
-                                "25-49",   "$78.59",   "$78.59",   "$60.36",
-                                "50-64",   "$168.27",  "$168.27",   "$60.36"
-                                ]),                                 
-                            
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$56.45","$56.45",  "$56.45",
+                                        "25-49",   "$73.50","$73.50",  "$56.45",
+                                        "50-64",   "$157.35","$157.35","$56.45"
+                                        ]) +
+
+                                loc("$100,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$54.76","$54.76",  "$54.76",
+                                        "25-49",   "$71.30","$71.30",  "$54.76",
+                                        "50-64",   "$152.63","$152.63","$54.76"
+                                        ]) +  
+
+                                    loc("$250,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$58.55","$58.55",  "$58.55",
+                                        "25-49",   "$76.23","$76.23",  "$58.55",
+                                        "50-64",   "$163.22","$163.22","$58.55"
+
+                                        ]), 
                                 loc("$100,000 benefit $250 deductible") +                              
                                 makeTable(4, [
-                                "Age",     "J1", "Spouse", "Children",
+                                "Age",     "F1/J1", "Spouse", "Children",
                                 "&lt; 30", "$46.00",   "$46.00",   "$41.00",
                                 "30-39",   "$62.00",   "$62.00",   "$41.00",
                                 "40-49",   "$90.00",  "$90.00",   "$41.00"
@@ -3477,26 +4800,34 @@ function getPartnership(partner) {
 
                                 loc("$100,000 benefit $0 deductible") +       
                                 makeTable(4, [
-                                "Age",     "J1", "Spouse", "Children",
+                                "Age",     "F1/J1", "Spouse", "Children",
                                 "&lt; 30", "$57.50",   "$57.50",   "$51.25",
                                 "30-39",   "$77.50",   "$77.50",   "$51.25",
                                 "40-49",   "$112.50",  "$112.50",   "$51.25"
-                                ]), 
-                    
+                                ]),                                
+
+
+                                "",
                                 makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
-                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Patriot Exchange Program - Standard"), "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                makeBuyURL(loc("Buy Group") + "<br />" + loc("Group for 2 or more"), "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699"),
-                                makeBuyURL(loc("Buy Group")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699")                                 
-
-             
+                                "",
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
+                                "", 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
 
                                    ])
                                     );
-                                endRow();                 
-                        
+                        endRow();                        
+      
+
+ 
                                 startRow();
                                 writeText("");
                                 endRow();                        
@@ -3525,7 +4856,7 @@ function getPartnership(partner) {
                           ],
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UC Davis J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UC Davis as proof of insurance.");
+                        writeText(loc("UC Davis ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("UC Davis Scholar Requirements", "http://siss.ucdavis.edu/health_j1.cfm")                              
                                 ]));
@@ -3545,7 +4876,8 @@ function getPartnership(partner) {
                           ],
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Indiana University - Bloomington allows both international students and J scholars to waive the school plan. Students and scholars have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500; 5. Maternity benefits for females only. For males, Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. For females, Plan A meets the requirements.  Shortly after submitting an application you will receive confirmation of your coverage which you can send to IU Bloomington to waive the school plan.");
+                        writeText(loc("Indiana University - Bloomington ") + loc("J scholars and enrolled students (F or J) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500; 5. Maternity benefits for females only.  For males, Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. For females, Plan A meets the requirements.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+                        writeText("Enrolled students need to purchase insurance before the start of the semester and complete an on line waiver.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("IU Bloomington Student Requirements", "http://ois.iu.edu/living-working/health/insurance/waiver.shtml"),
                                 makeURL("IU Bloomington Scholar Requirements", "http://ois.iu.edu/living-working/health/insurance/index.shtml")                               
@@ -3559,20 +4891,100 @@ function getPartnership(partner) {
                     pageTitle: "TaiAn Health Insurance for UT Austin",
                     tabs: [
                             "pivot-home",
-                            "pivot-international-student",
+                            "pivot-scholar-student",
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                             "pivot-aboutus"
                           ],
                           
-                    internationalStudentContent: function () {
+                    internationalStudentandscholarContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UT Austin enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UT Austin as proof of insurance.");
+                        writeText(loc("UT Austin ") + loc("J scholars and enrolled students (F or J) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+                        writeText("Enrolled students need to purchase insurance before the start of the semester and send a waiver form along with your visa letter to the international office.  Taian can assist with your waiver form.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("UT Austin Student Requirements", "http://world.utexas.edu/forms/isss/PVT_Waiver.pdf"), 
                                 makeURL("UT Austin Scholar Requirements", "http://world.utexas.edu/isss/insurance/vs-overview")                               
                                 ]));
                         endRow();
+                        startRow();
+                            document.write(makeTable(4,
+                            [
+                            // Column headers:
+
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+
+
+                            // Table within a table
+                               "Cost Per Month (Non-US Citizens)",
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 19", "$72",   "$386",   "$82",
+                                "19-23",   "$95",   "$386",   "$82",
+                                "24-30",   "$110",  "$426",   "$82",
+                                "31-40",   "$197",  "$567",   "$82",
+                                "41-50",   "$322",  "$586",   "$82",
+                                "51-64",   "$430",  "$567",   "$82"
+                                   ]), 
+                                loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$48.62","$48.62",  "$48.62",
+                                        "25-49",   "$63.37","$63.37",  "$48.62",
+                                        "50-64",   "$135.70","$135.70","$48.62"
+                                        ]) +
+
+                                loc("$50,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN<br />***Best Value***") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$47.16","$47.16",  "$47.16",
+                                        "25-49",   "$61.47","$61.47",  "$47.16",
+                                        "50-64",   "$131.63","$131.63","$47.16"
+                                        ])  + 
+
+                                loc("$100,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$54.76","$54.76",  "$54.76",
+                                        "25-49",   "$71.30","$71.30",  "$54.76",
+                                        "50-64",   "$152.63","$152.63","$54.76"
+                                        ]), 
+                                loc("$50,000 benefit, $500 annual deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$33.30",   "$33.30",   "$30.60",
+                                "30-39",   "$44.10",   "$44.10",   "$30.60",
+                                "40-49",   "$65.70",  "$65.70",   "$30.60",
+                                "50-59",   "$96.30",  "$96.30",   "$30.60"
+                                ]) + 
+                                loc("$50,000 benefit, no deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$46.25",   "$46.25",   "$42.50",
+                                "30-39",   "$61.25",   "$61.25",   "$42.50",
+                                "40-49",   "$91.25",  "$91.25",   "$42.50",
+                                "50-59",   "$133.75",  "$133.75",   "$42.50"
+                                ]),                                
+
+
+                                "",
+                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+                                "",
+                                "",
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
+                                "", 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
+
+                                   ])
+                                    );
+                        endRow();                        
+                        
                     }
               },   
 
@@ -3581,20 +4993,104 @@ function getPartnership(partner) {
                     pageTitle: "TaiAn Health Insurance for UT Dallas",
                     tabs: [
                             "pivot-home",
-                            "pivot-international-student",
+                            "pivot-international-studentandscholar",
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                             "pivot-aboutus"
                           ],
                           
-                    internationalStudentContent: function () {
+                    internationalStudentandscholarContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UT Dallas enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UT Dallas as proof of insurance.");
+
+                        writeText(loc("UT Dallas ") + loc("J scholars and enrolled students (F or J) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+                        writeText("Enrolled students need to purchase insurance before the start of the semester and send a waiver form along with your visa letter to the international office.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("UT Dallas Student Requirements", "http://www.utdallas.edu/healthcenter/insurance/intl-waivers.html"), 
                                 makeURL("UT Dallas Scholar Requirements", "http://www.utdallas.edu/hrm/forms/insreqvisitors.pdf")                               
                                 ]));
                         endRow();
+                        
+                       
+                        startRow();
+                            document.write(makeTable(4,
+                            [
+                            // Column headers:
+
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+
+
+                            // Table within a table
+                               "Cost Per Month (Non-US Citizens)",
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 19", "$72",   "$386",   "$82",
+                                "19-23",   "$95",   "$386",   "$82",
+                                "24-30",   "$110",  "$426",   "$82",
+                                "31-40",   "$197",  "$567",   "$82",
+                                "41-50",   "$322",  "$586",   "$82",
+                                "51-64",   "$430",  "$567",   "$82"
+                                   ]), 
+                                loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$48.62","$48.62",  "$48.62",
+                                        "25-49",   "$63.37","$63.37",  "$48.62",
+                                        "50-64",   "$135.70","$135.70","$48.62"
+                                        ]) +
+
+                                loc("$50,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN<br />***Best Value***") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$47.16","$47.16",  "$47.16",
+                                        "25-49",   "$61.47","$61.47",  "$47.16",
+                                        "50-64",   "$131.63","$131.63","$47.16"
+                                        ])  + 
+
+                                loc("$100,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$54.76","$54.76",  "$54.76",
+                                        "25-49",   "$71.30","$71.30",  "$54.76",
+                                        "50-64",   "$152.63","$152.63","$54.76"
+                                        ]), 
+                                loc("$50,000 benefit, $500 annual deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$33.30",   "$33.30",   "$30.60",
+                                "30-39",   "$44.10",   "$44.10",   "$30.60",
+                                "40-49",   "$65.70",  "$65.70",   "$30.60",
+                                "50-59",   "$96.30",  "$96.30",   "$30.60"
+                                ]) + 
+                                loc("$50,000 benefit, no deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$46.25",   "$46.25",   "$42.50",
+                                "30-39",   "$61.25",   "$61.25",   "$42.50",
+                                "40-49",   "$91.25",  "$91.25",   "$42.50",
+                                "50-59",   "$133.75",  "$133.75",   "$42.50"
+                                ]),                                
+
+
+                                "",
+                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+                                "",
+                                "",
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
+                                "", 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
+
+                                   ])
+                                    );
+                        endRow();                        
+                           
+                        
                     }
               },  
 
@@ -3603,20 +5099,103 @@ function getPartnership(partner) {
                     pageTitle: "TaiAn Health Insurance for UT Pan American",
                     tabs: [
                             "pivot-home",
-                            "pivot-international-student",
+                            "pivot-international-studentandscholar",
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                             "pivot-aboutus"
                           ],
                           
-                    internationalStudentContent: function () {
+                    internationalStudentandscholarContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UT Pan American enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $500,000 per person per policy year; 2. Medical benefits of $50,000 per accident or illness; 3. Repatriation of remains of $7,500; 4. Medical evacuation of $10,000; 5. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UT Pan American as proof of insurance.");
+
+                        writeText(loc("UT Pan American ") + loc("J scholars and enrolled students (F or J) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+                        writeText("Enrolled students need to purchase insurance before the start of the semester and send a waiver form along with your visa letter to the international office.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("UT Pan American Student Requirements", "http://portal.utpa.edu/utpa_main/dsa_home/oias_home/resources/insurance"), 
                                 makeURL("UT Pan American Scholar Requirements", "https://portal.utpa.edu/portal/page/portal/utpa_main/daa_home/intlprograms_home/intlprg_imagesfiles/j-1_application_(rev_9-20-11_final).pdf")                               
                                 ]));
                         endRow();
+                        
+                        startRow();
+                            document.write(makeTable(4,
+                            [
+                            // Column headers:
+
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+
+
+                            // Table within a table
+                               "Cost Per Month (Non-US Citizens)",
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 19", "$72",   "$386",   "$82",
+                                "19-23",   "$95",   "$386",   "$82",
+                                "24-30",   "$110",  "$426",   "$82",
+                                "31-40",   "$197",  "$567",   "$82",
+                                "41-50",   "$322",  "$586",   "$82",
+                                "51-64",   "$430",  "$567",   "$82"
+                                   ]), 
+                                loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$48.62","$48.62",  "$48.62",
+                                        "25-49",   "$63.37","$63.37",  "$48.62",
+                                        "50-64",   "$135.70","$135.70","$48.62"
+                                        ]) +
+
+                                loc("$50,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN<br />***Best Value***") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$47.16","$47.16",  "$47.16",
+                                        "25-49",   "$61.47","$61.47",  "$47.16",
+                                        "50-64",   "$131.63","$131.63","$47.16"
+                                        ])  + 
+
+                                loc("$100,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$54.76","$54.76",  "$54.76",
+                                        "25-49",   "$71.30","$71.30",  "$54.76",
+                                        "50-64",   "$152.63","$152.63","$54.76"
+                                        ]), 
+                                loc("$50,000 benefit, $500 annual deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$33.30",   "$33.30",   "$30.60",
+                                "30-39",   "$44.10",   "$44.10",   "$30.60",
+                                "40-49",   "$65.70",  "$65.70",   "$30.60",
+                                "50-59",   "$96.30",  "$96.30",   "$30.60"
+                                ]) + 
+                                loc("$50,000 benefit, no deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$46.25",   "$46.25",   "$42.50",
+                                "30-39",   "$61.25",   "$61.25",   "$42.50",
+                                "40-49",   "$91.25",  "$91.25",   "$42.50",
+                                "50-59",   "$133.75",  "$133.75",   "$42.50"
+                                ]),                                
+
+
+                                "",
+                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+                                "",
+                                "",
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
+                                "", 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
+
+                                   ])
+                                    );
+                        endRow();                        
+                          
+                        
                     }
               },      
 
@@ -3626,20 +5205,104 @@ function getPartnership(partner) {
                     pageTitle: "TaiAn Health Insurance for UT Health Science Center San Antonio",
                     tabs: [
                             "pivot-home",
-                            "pivot-international-student",
+                            "pivot-international-studentandscholar",
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                             "pivot-aboutus"
                           ],
                           
-                    internationalStudentContent: function () {
+                    internationalStudentandscholarContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UT Health Science Center San Antonio enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $500,000 per person per policy year; 2. Medical benefits of $50,000 per accident or illness; 3. Repatriation of remains of $7,500; 4. Medical evacuation of $10,000; 5. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UT Health Science Center San Antonio as proof of insurance.");
+
+                        writeText(loc("UT Health Science Center San Antonio ") + loc("J scholars and enrolled students (F or J) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+                        writeText("Enrolled students need to purchase insurance before the start of the semester and send a waiver form along with your visa letter to the international office.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("UT Health Science Center San Antonio Student Requirements", "http://uthscsa.edu/ois/Insurance%20Attestation.pdf"), 
                                 makeURL("UT Health Science Center San Antonio Scholar Requirements", "http://uthscsa.edu/ois/faq.asp#q2")                               
                                 ]));
                         endRow();
+                        
+                        
+                        startRow();
+                            document.write(makeTable(4,
+                            [
+                            // Column headers:
+
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+
+
+                            // Table within a table
+                               "Cost Per Month (Non-US Citizens)",
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 19", "$72",   "$386",   "$82",
+                                "19-23",   "$95",   "$386",   "$82",
+                                "24-30",   "$110",  "$426",   "$82",
+                                "31-40",   "$197",  "$567",   "$82",
+                                "41-50",   "$322",  "$586",   "$82",
+                                "51-64",   "$430",  "$567",   "$82"
+                                   ]), 
+                                loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$48.62","$48.62",  "$48.62",
+                                        "25-49",   "$63.37","$63.37",  "$48.62",
+                                        "50-64",   "$135.70","$135.70","$48.62"
+                                        ]) +
+
+                                loc("$50,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN<br />***Best Value***") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$47.16","$47.16",  "$47.16",
+                                        "25-49",   "$61.47","$61.47",  "$47.16",
+                                        "50-64",   "$131.63","$131.63","$47.16"
+                                        ])  + 
+
+                                loc("$100,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$54.76","$54.76",  "$54.76",
+                                        "25-49",   "$71.30","$71.30",  "$54.76",
+                                        "50-64",   "$152.63","$152.63","$54.76"
+                                        ]), 
+                                loc("$50,000 benefit, $500 annual deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$33.30",   "$33.30",   "$30.60",
+                                "30-39",   "$44.10",   "$44.10",   "$30.60",
+                                "40-49",   "$65.70",  "$65.70",   "$30.60",
+                                "50-59",   "$96.30",  "$96.30",   "$30.60"
+                                ]) + 
+                                loc("$50,000 benefit, no deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$46.25",   "$46.25",   "$42.50",
+                                "30-39",   "$61.25",   "$61.25",   "$42.50",
+                                "40-49",   "$91.25",  "$91.25",   "$42.50",
+                                "50-59",   "$133.75",  "$133.75",   "$42.50"
+                                ]),                                
+
+
+                                "",
+                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+                                "",
+                                "",
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
+                                "", 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
+
+                                   ])
+                                    );
+                        endRow();                        
+                          
+                        
                     }
               },      
 
@@ -3648,20 +5311,103 @@ function getPartnership(partner) {
                     pageTitle: "TaiAn Health Insurance for UT Medical Branch Galveston",
                     tabs: [
                             "pivot-home",
-                            "pivot-international-student",
+                            "pivot-international-studentandscholar",
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                             "pivot-aboutus"
                           ],
                           
-                    internationalStudentContent: function () {
+                    internationalStudentandscholarContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UT Medical Branch Galveston enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $500,000 per person per policy year; 2. Medical benefits of $50,000 per accident or illness; 3. Repatriation of remains of $7,500; 4. Medical evacuation of $10,000; 5. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UT Medical Branch Galveston as proof of insurance.");
+
+                        writeText(loc("UT Medical Branch Galveston ") + loc("J scholars and enrolled students (F or J) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+                        writeText("Enrolled students need to purchase insurance before the start of the semester and send a waiver form along with your visa letter to the international office.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("UT Medical Branch Galveston Student Requirements", "http://www.utmb.edu/studenthealth/insurance.asp"), 
                                 makeURL("UT Medical Branch Galveston Scholar Requirements", "http://www.utmb.edu/studenthealth/insurance.asp")                               
                                 ]));
                         endRow();
+                        
+                        startRow();
+                            document.write(makeTable(4,
+                            [
+                            // Column headers:
+
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+
+
+                            // Table within a table
+                               "Cost Per Month (Non-US Citizens)",
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 19", "$72",   "$386",   "$82",
+                                "19-23",   "$95",   "$386",   "$82",
+                                "24-30",   "$110",  "$426",   "$82",
+                                "31-40",   "$197",  "$567",   "$82",
+                                "41-50",   "$322",  "$586",   "$82",
+                                "51-64",   "$430",  "$567",   "$82"
+                                   ]), 
+                                loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$48.62","$48.62",  "$48.62",
+                                        "25-49",   "$63.37","$63.37",  "$48.62",
+                                        "50-64",   "$135.70","$135.70","$48.62"
+                                        ]) +
+
+                                loc("$50,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN<br />***Best Value***") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$47.16","$47.16",  "$47.16",
+                                        "25-49",   "$61.47","$61.47",  "$47.16",
+                                        "50-64",   "$131.63","$131.63","$47.16"
+                                        ])  + 
+
+                                loc("$100,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$54.76","$54.76",  "$54.76",
+                                        "25-49",   "$71.30","$71.30",  "$54.76",
+                                        "50-64",   "$152.63","$152.63","$54.76"
+                                        ]), 
+                                loc("$50,000 benefit, $500 annual deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$33.30",   "$33.30",   "$30.60",
+                                "30-39",   "$44.10",   "$44.10",   "$30.60",
+                                "40-49",   "$65.70",  "$65.70",   "$30.60",
+                                "50-59",   "$96.30",  "$96.30",   "$30.60"
+                                ]) + 
+                                loc("$50,000 benefit, no deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$46.25",   "$46.25",   "$42.50",
+                                "30-39",   "$61.25",   "$61.25",   "$42.50",
+                                "40-49",   "$91.25",  "$91.25",   "$42.50",
+                                "50-59",   "$133.75",  "$133.75",   "$42.50"
+                                ]),                                
+
+
+                                "",
+                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+                                "",
+                                "",
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
+                                "", 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
+
+                                   ])
+                                    );
+                        endRow();                        
+                          
+                        
                     }
               },      
 
@@ -3670,20 +5416,103 @@ function getPartnership(partner) {
                     pageTitle: "TaiAn Health Insurance for UT Permian Basin",
                     tabs: [
                             "pivot-home",
-                            "pivot-international-student",
+                            "pivot-international-studentandscholar",
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                             "pivot-aboutus"
                           ],
                           
-                    internationalStudentContent: function () {
+                    internationalStudentandscholarContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UT Permian Basin enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $500,000 per person per policy year; 2. Medical benefits of $50,000 per accident or illness; 3. Repatriation of remains of $7,500; 4. Medical evacuation of $10,000; 5. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UT Permian Basin as proof of insurance.");
+
+                        writeText(loc("UT Permian Basin ") + loc("J scholars and enrolled students (F or J) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("UT Permian Basin Student Requirements", "http://ss.utpb.edu/admissions/apply-now/international/"), 
                                 makeURL("UT Permian Basin Scholar Requirements", "http://ss.utpb.edu/admissions/apply-now/international/")                               
                                 ]));
                         endRow();
+                       
+                        startRow();
+                            document.write(makeTable(4,
+                            [
+                            // Column headers:
+
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+
+
+                            // Table within a table
+                               "Cost Per Month (Non-US Citizens)",
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 19", "$72",   "$386",   "$82",
+                                "19-23",   "$95",   "$386",   "$82",
+                                "24-30",   "$110",  "$426",   "$82",
+                                "31-40",   "$197",  "$567",   "$82",
+                                "41-50",   "$322",  "$586",   "$82",
+                                "51-64",   "$430",  "$567",   "$82"
+                                   ]), 
+                                loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$48.62","$48.62",  "$48.62",
+                                        "25-49",   "$63.37","$63.37",  "$48.62",
+                                        "50-64",   "$135.70","$135.70","$48.62"
+                                        ]) +
+
+                                loc("$50,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN<br />***Best Value***") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$47.16","$47.16",  "$47.16",
+                                        "25-49",   "$61.47","$61.47",  "$47.16",
+                                        "50-64",   "$131.63","$131.63","$47.16"
+                                        ])  + 
+
+                                loc("$100,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$54.76","$54.76",  "$54.76",
+                                        "25-49",   "$71.30","$71.30",  "$54.76",
+                                        "50-64",   "$152.63","$152.63","$54.76"
+                                        ]), 
+                                loc("$50,000 benefit, $500 annual deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$33.30",   "$33.30",   "$30.60",
+                                "30-39",   "$44.10",   "$44.10",   "$30.60",
+                                "40-49",   "$65.70",  "$65.70",   "$30.60",
+                                "50-59",   "$96.30",  "$96.30",   "$30.60"
+                                ]) + 
+                                loc("$50,000 benefit, no deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$46.25",   "$46.25",   "$42.50",
+                                "30-39",   "$61.25",   "$61.25",   "$42.50",
+                                "40-49",   "$91.25",  "$91.25",   "$42.50",
+                                "50-59",   "$133.75",  "$133.75",   "$42.50"
+                                ]),                                
+
+
+                                "",
+                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+                                "",
+                                "",
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
+                                "", 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
+
+                                   ])
+                                    );
+                        endRow();                        
+                           
+                        
+                        
                     }
               },      
               
@@ -3702,7 +5531,7 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UT San Antonio enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $500,000 per person per policy year; 2. Medical benefits of $50,000 per accident or illness; 3. Repatriation of remains of $7,500; 4. Medical evacuation of $10,000; 5. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UT San Antonio as proof of insurance.");
+                        writeText("UT San Antonio both students (F or J visa) and exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $500,000 per person per policy year; 2. Medical benefits of $50,000 per accident or illness; 3. Repatriation of remains of $7,500; 4. Medical evacuation of $10,000; 5. Deductible not over $500. Taian Plan B with $50,000 benefit per illness or injury and three deductible options (accompanied by $5,000,000 lifetime maximum) is the most affordable plan that meets the requirements and USDOS requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("UT San Antonio Student Requirements", "http://international.utsa.edu/insurance/health-insurance-waiver/"), 
                                 makeURL("UT San Antonio Scholar Requirements", "http://international.utsa.edu/insurance/health-insurance-waiver/")                               
@@ -3716,20 +5545,104 @@ function getPartnership(partner) {
                     pageTitle: "TaiAn Health Insurance for UT Tyler",
                     tabs: [
                             "pivot-home",
-                            "pivot-international-student",
+                            "pivot-international-studentandscholar",
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                             "pivot-aboutus"
                           ],
                           
-                    internationalStudentContent: function () {
+                    internationalStudentandscholarContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UT Tyler enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $500,000 per person per policy year; 2. Medical benefits of $50,000 per accident or illness; 3. Repatriation of remains of $7,500; 4. Medical evacuation of $10,000; 5. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UT Tyler as proof of insurance.");
+
+                        writeText(loc("UT Tyler ") + loc("J scholars and enrolled students (F or J) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+                        writeText("Enrolled students need to purchase insurance before the start of the semester and send a waiver form along with your visa letter to the international office.  Taian can assist with your waiver form.");        
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("UT Tyler Student Requirements", "http://www.uttyler.edu/oip/insurance.php"), 
                                 makeURL("UT Tyler Scholar Requirements", "http://www.uttyler.edu/oip/issfs.php")                               
                                 ]));
                         endRow();
+                       
+                        startRow();
+                            document.write(makeTable(4,
+                            [
+                            // Column headers:
+
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+
+
+                            // Table within a table
+                               "Cost Per Month (Non-US Citizens)",
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 19", "$72",   "$386",   "$82",
+                                "19-23",   "$95",   "$386",   "$82",
+                                "24-30",   "$110",  "$426",   "$82",
+                                "31-40",   "$197",  "$567",   "$82",
+                                "41-50",   "$322",  "$586",   "$82",
+                                "51-64",   "$430",  "$567",   "$82"
+                                   ]), 
+                                loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$48.62","$48.62",  "$48.62",
+                                        "25-49",   "$63.37","$63.37",  "$48.62",
+                                        "50-64",   "$135.70","$135.70","$48.62"
+                                        ]) +
+
+                                loc("$50,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN<br />***Best Value***") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$47.16","$47.16",  "$47.16",
+                                        "25-49",   "$61.47","$61.47",  "$47.16",
+                                        "50-64",   "$131.63","$131.63","$47.16"
+                                        ])  + 
+
+                                loc("$100,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$54.76","$54.76",  "$54.76",
+                                        "25-49",   "$71.30","$71.30",  "$54.76",
+                                        "50-64",   "$152.63","$152.63","$54.76"
+                                        ]), 
+                                loc("$50,000 benefit, $500 annual deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$33.30",   "$33.30",   "$30.60",
+                                "30-39",   "$44.10",   "$44.10",   "$30.60",
+                                "40-49",   "$65.70",  "$65.70",   "$30.60",
+                                "50-59",   "$96.30",  "$96.30",   "$30.60"
+                                ]) + 
+                                loc("$50,000 benefit, no deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$46.25",   "$46.25",   "$42.50",
+                                "30-39",   "$61.25",   "$61.25",   "$42.50",
+                                "40-49",   "$91.25",  "$91.25",   "$42.50",
+                                "50-59",   "$133.75",  "$133.75",   "$42.50"
+                                ]),                                
+
+
+                                "",
+                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+                                "",
+                                "",
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
+                                "", 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
+
+                                   ])
+                                    );
+                        endRow();                        
+                           
+                        
+                        
                     }
               },              
               
@@ -3738,20 +5651,104 @@ function getPartnership(partner) {
                     pageTitle: "TaiAn Health Insurance for UT Arlington",
                     tabs: [
                             "pivot-home",
-                            "pivot-international-student",
+                            "pivot-international-studentandscholar",
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                             "pivot-aboutus"
                           ],
                           
-                    internationalStudentContent: function () {
+                    internationalStudentandscholarContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet UT Arlington enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UT Arlington as proof of insurance.");
+
+                        writeText(loc("UT Arlington ") + loc("J scholars and enrolled students (F or J) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+                        writeText("Enrolled students need to purchase insurance before the start of the semester and send a waiver form along with your visa letter to the international office.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("UT Arlington Student Requirements", "http://www.uta.edu/oie/?page=forms&form=HealthInsuranceWaiver"), 
                                 makeURL("UT Arlington Scholar Requirements", "http://www.uta.edu/oie/?page=JScholar")                               
                                 ]));
                         endRow();
+                        
+                        startRow();
+                            document.write(makeTable(4,
+                            [
+                            // Column headers:
+
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+
+
+                            // Table within a table
+                               "Cost Per Month (Non-US Citizens)",
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 19", "$72",   "$386",   "$82",
+                                "19-23",   "$95",   "$386",   "$82",
+                                "24-30",   "$110",  "$426",   "$82",
+                                "31-40",   "$197",  "$567",   "$82",
+                                "41-50",   "$322",  "$586",   "$82",
+                                "51-64",   "$430",  "$567",   "$82"
+                                   ]), 
+                                loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$48.62","$48.62",  "$48.62",
+                                        "25-49",   "$63.37","$63.37",  "$48.62",
+                                        "50-64",   "$135.70","$135.70","$48.62"
+                                        ]) +
+
+                                loc("$50,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN<br />***Best Value***") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$47.16","$47.16",  "$47.16",
+                                        "25-49",   "$61.47","$61.47",  "$47.16",
+                                        "50-64",   "$131.63","$131.63","$47.16"
+                                        ])  + 
+
+                                loc("$100,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$54.76","$54.76",  "$54.76",
+                                        "25-49",   "$71.30","$71.30",  "$54.76",
+                                        "50-64",   "$152.63","$152.63","$54.76"
+                                        ]), 
+                                loc("$50,000 benefit, $500 annual deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$33.30",   "$33.30",   "$30.60",
+                                "30-39",   "$44.10",   "$44.10",   "$30.60",
+                                "40-49",   "$65.70",  "$65.70",   "$30.60",
+                                "50-59",   "$96.30",  "$96.30",   "$30.60"
+                                ]) + 
+                                loc("$50,000 benefit, no deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$46.25",   "$46.25",   "$42.50",
+                                "30-39",   "$61.25",   "$61.25",   "$42.50",
+                                "40-49",   "$91.25",  "$91.25",   "$42.50",
+                                "50-59",   "$133.75",  "$133.75",   "$42.50"
+                                ]),                                
+
+
+                                "",
+                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+                                "",
+                                "",
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
+                                "", 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
+
+                                   ])
+                                    );
+                        endRow();                        
+                          
+                        
+                        
                     }
               },
               
@@ -3760,20 +5757,102 @@ function getPartnership(partner) {
                     pageTitle: "TaiAn Health Insurance for Yale University",
                     tabs: [
                             "pivot-home",
-                            "pivot-international-student",
+                            "pivot-international-studentandscholar",
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                             "pivot-aboutus"
                           ],
                           
-                    internationalStudentContent: function () {
+                    internationalStudentandscholarContent: function () {
                         startRow();
-                        writeText("Taian Scholar/Student Insurance Plan A and Plan B meet Yale University enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Yale University as proof of insurance.");
+                        writeText(loc("Yale University ") + loc("J scholars and enrolled students (F or J) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.")); 
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Yale University Student requirements", "http://www.yale.edu/oiss/life/practical/health/index.html"), 
                                 makeURL("Yale University Scholar requirements", "http://www.yale.edu/oiss/immigration/common/j1students/health.html")                               
                                 ]));
                         endRow();
+                        
+                          
+                        startRow();
+                            document.write(makeTable(4,
+                            [
+                            // Column headers:
+
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+
+
+                            // Table within a table
+                               "Cost Per Month (Non-US Citizens)",
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 19", "$72",   "$386",   "$82",
+                                "19-23",   "$95",   "$386",   "$82",
+                                "24-30",   "$110",  "$426",   "$82",
+                                "31-40",   "$197",  "$567",   "$82",
+                                "41-50",   "$322",  "$586",   "$82",
+                                "51-64",   "$430",  "$567",   "$82"
+                                   ]), 
+                                loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$48.62","$48.62",  "$48.62",
+                                        "25-49",   "$63.37","$63.37",  "$48.62",
+                                        "50-64",   "$135.70","$135.70","$48.62"
+                                        ]) +
+
+                                loc("$50,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN<br />***Best Value***") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$47.16","$47.16",  "$47.16",
+                                        "25-49",   "$61.47","$61.47",  "$47.16",
+                                        "50-64",   "$131.63","$131.63","$47.16"
+                                        ])  + 
+
+                                loc("$100,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$54.76","$54.76",  "$54.76",
+                                        "25-49",   "$71.30","$71.30",  "$54.76",
+                                        "50-64",   "$152.63","$152.63","$54.76"
+                                        ]), 
+                                loc("$50,000 benefit, $500 annual deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$33.30",   "$33.30",   "$30.60",
+                                "30-39",   "$44.10",   "$44.10",   "$30.60",
+                                "40-49",   "$65.70",  "$65.70",   "$30.60",
+                                "50-59",   "$96.30",  "$96.30",   "$30.60"
+                                ]) + 
+                                loc("$50,000 benefit, no deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$46.25",   "$46.25",   "$42.50",
+                                "30-39",   "$61.25",   "$61.25",   "$42.50",
+                                "40-49",   "$91.25",  "$91.25",   "$42.50",
+                                "50-59",   "$133.75",  "$133.75",   "$42.50"
+                                ]),                                
+
+
+                                "",
+                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+                                "",
+                                "",
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
+                                "", 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
+
+                                   ])
+                                    );
+                        endRow();                        
+                        
+                        
                     }
               },                
               
@@ -3794,18 +5873,7 @@ function getPartnership(partner) {
                     }                          
               },                  
               
-        ucdavis: {
-                    windowTitle: "TaiAn Health Insurance for UC Davis J Scholars",
-                    pageTitle: "TaiAn Health Insurance for UC Davis J Scholars",
-                    tabs: [
-                            "pivot-international-scholar"
-                          ],
-                    internationalScholarContent: function () {
-                        startRow();
-                        writeText("Taian International Health Insurance provides International Scholar Insurance for US visa scholars (J visa). Taian Scholar Insurance Plan A and Plan B meet UC Davis scholar insurance standards and are more affordable.  UC Davis requires a minimum of $50,000.00 per illness or injury and our Plan B Standard Plan meets this requirement.");
-                        endRow();
-                    }
-              },   
+
 
         img: {
                     windowTitle: "TaiAn International Health Insurance",
@@ -3826,7 +5894,7 @@ function getPartnership(partner) {
                         }      
                     
                         startRow();
-                        writeText("Taian International Health Insurance provides International Scholar Insurance for US J1 visa holders and their dependents (J2 visa holders).  All J visa holders are required to meet the US Department of State (USDOS) requirements for the duration of their visa. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the USDOS requirements. Plan A also meets the requirements and has affordable maternity coverage. You can click the links below to see your school requirements and US Department of State requirements.");
+                        writeText("The US Department of State (USDOS) requires J scholars to have coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.");
                         endRow();
                     }
               },                 

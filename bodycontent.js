@@ -336,24 +336,24 @@ function referralSubstitution(key) {
         
         uom: "partner=uom&p=pivot-home&adid=suom",
         cnuom: "l=cn&partner=uom&p=pivot-home&adid=scnuom",   
-        gcnuom: "l=cn&partner=uom&p=pivot-international-student&adid=gcnuom",
-        guom: "partner=uom&p=pivot-international-student&adid=guom",
-        acnuom: "l=cn&partner=uom&p=pivot-international-student&adid=acnuom",  
-        iuom: "partner=uom&p=pivot-international-student",
+        gcnuom: "l=cn&partner=uom&p=pivot-international-studentandscholar&adid=gcnuom",
+        guom: "partner=uom&p=pivot-international-studentandscholar&adid=guom",
+        acnuom: "l=cn&partner=uom&p=pivot-international-studentandscholar&adid=acnuom",  
+        iuom: "partner=uom&p=pivot-international-studentandscholar",
         upitt: "partner=upitt&p=pivot-home&adid=supitt",
         cnupitt: "l=cn&partner=upitt&p=pivot-home&adid=scnupitt",   
-        gcnupitt: "l=cn&partner=upitt&p=pivot-international-student&adid=gcnupitt",
-        gupitt: "partner=upitt&p=pivot-international-student&adid=gupitt",
-        acnupitt: "l=cn&partner=upitt&p=pivot-international-student&adid=acnupitt",  
-        icnupitt: "l=cn&partner=upitt&p=pivot-international-student", 
-        pix: "l=cn&partner=upitt&p=pivot-international-student&adid=pix",         
-        iupitt: "partner=upitt&p=pivot-international-student",       
+        gcnupitt: "l=cn&partner=upitt&p=pivot-international-studentandscholar&adid=gcnupitt",
+        gupitt: "partner=upitt&p=pivot-international-studentandscholar&adid=gupitt",
+        acnupitt: "l=cn&partner=upitt&p=pivot-international-studentandscholar&adid=acnupitt",  
+        icnupitt: "l=cn&partner=upitt&p=pivot-international-studentandscholar", 
+        pix: "l=cn&partner=upitt&p=pivot-international-studentandscholar&adid=pix",         
+        iupitt: "partner=upitt&p=pivot-international-studentandscholar",       
         unc: "partner=unc&p=pivot-home&adid=sunc",
         cnunc: "l=cn&partner=unc&p=pivot-home&adid=scnunc",   
-        gcnunc: "l=cn&partner=unc&p=pivot-international-student&adid=gcnunc",
-        gunc: "partner=unc&p=pivot-international-student&adid=gunc",
-        acnunc: "l=cn&partner=unc&p=pivot-international-student&adid=acnunc",  
-        iunc: "partner=unc&p=pivot-international-student",              
+        gcnunc: "l=cn&partner=unc&p=pivot-international-studentandscholar&adid=gcnunc",
+        gunc: "partner=unc&p=pivot-international-studentandscholar&adid=gunc",
+        acnunc: "l=cn&partner=unc&p=pivot-international-studentandscholar&adid=acnunc",  
+        iunc: "partner=unc&p=pivot-international-studentandscholar",              
         clemson: "partner=clemson&p=pivot-home&adid=sclemson",
         cnclemson: "l=cn&partner=clemson&p=pivot-home&adid=scnclemson",   
         gcnclemson: "l=cn&partner=clemson&p=pivot-international-student&adid=gcnclemson",
@@ -364,11 +364,11 @@ function referralSubstitution(key) {
         
         cst: "partner=cst&p=pivot-home&adid=scst",
         cncst: "l=cn&partner=cst&p=pivot-home&adid=scncst",   
-        gcncst: "l=cn&partner=cst&p=pivot-international-student&adid=gcncst",
-        gcst: "partner=cst&p=pivot-international-student&adid=gcst",
-        acncst: "l=cn&partner=cst&p=pivot-international-student&adid=acncst", 
-        icst: "partner=cst&p=pivot-international-student",
-        icncst: "l=cn&partner=cst&p=pivot-international-student",
+        gcncst: "l=cn&partner=cst&p=pivot-international-studentandscholar&adid=gcncst",
+        gcst: "partner=cst&p=pivot-international-studentandscholar&adid=gcst",
+        acncst: "l=cn&partner=cst&p=pivot-international-studentandscholar&adid=acncst", 
+        icst: "partner=cst&p=pivot-international-studentandscholar",
+        icncst: "l=cn&partner=cst&p=pivot-international-studentandscholar",
         
         clarku: "partner=clarku&p=pivot-home&adid=sclarku",
         cnclarku: "l=cn&partner=clarku&p=pivot-home&adid=scnclarku",   
@@ -404,43 +404,43 @@ function referralSubstitution(key) {
         
         uthscsa: "partner=uthscsa&p=pivot-home&adid=suthscsa",
         cnuthscsa: "l=cn&partner=uthscsa&p=pivot-home&adid=scnuthscsa",   
-        gcnuthscsa: "l=cn&partner=uthscsa&p=pivot-international-student&adid=gcnuthscsa",
-        guthscsa: "partner=uthscsa&p=pivot-international-student&adid=guthscsa",
-        acnuthscsa: "l=cn&partner=uthscsa&p=pivot-international-student&adid=acnuthscsa", 
-        iuthscsa: "partner=uthscsa&p=pivot-international-student",
-        icnuthscsa: "l=cn&partner=uthscsa&p=pivot-international-student",     
+        gcnuthscsa: "l=cn&partner=uthscsa&p=pivot-international-studentandscholar&adid=gcnuthscsa",
+        guthscsa: "partner=uthscsa&p=pivot-international-studentandscholar&adid=guthscsa",
+        acnuthscsa: "l=cn&partner=uthscsa&p=pivot-international-studentandscholar&adid=acnuthscsa", 
+        iuthscsa: "partner=uthscsa&p=pivot-international-studentandscholar",
+        icnuthscsa: "l=cn&partner=uthscsa&p=pivot-international-studentandscholar",     
 
         utmb: "partner=utmb&p=pivot-home&adid=sutmb",
         cnutmb: "l=cn&partner=utmb&p=pivot-home&adid=scnutmb",   
-        gcnutmb: "l=cn&partner=utmb&p=pivot-international-student&adid=gcnutmb",
-        gutmb: "partner=utmb&p=pivot-international-student&adid=gutmb",
-        acnutmb: "l=cn&partner=utmb&p=pivot-international-student&adid=acnutmb", 
-        iutmb: "partner=utmb&p=pivot-international-student",
-        icnutmb: "l=cn&partner=utmb&p=pivot-international-student",    
+        gcnutmb: "l=cn&partner=utmb&p=pivot-international-studentandscholar&adid=gcnutmb",
+        gutmb: "partner=utmb&p=pivot-international-studentandscholar&adid=gutmb",
+        acnutmb: "l=cn&partner=utmb&p=pivot-international-studentandscholar&adid=acnutmb", 
+        iutmb: "partner=utmb&p=pivot-international-studentandscholar",
+        icnutmb: "l=cn&partner=utmb&p=pivot-international-studentandscholar",    
 
         utpb: "partner=utpb&p=pivot-home&adid=sutpb",
         cnutpb: "l=cn&partner=utpb&p=pivot-home&adid=scnutpb",   
-        gcnutpb: "l=cn&partner=utpb&p=pivot-international-student&adid=gcnutpb",
-        gutpb: "partner=utpb&p=pivot-international-student&adid=gutpb",
-        acnutpb: "l=cn&partner=utpb&p=pivot-international-student&adid=acnutpb", 
-        iutpb: "partner=utpb&p=pivot-international-student",
-        icnutpb: "l=cn&partner=utpb&p=pivot-international-student",    
+        gcnutpb: "l=cn&partner=utpb&p=pivot-international-studentandscholar&adid=gcnutpb",
+        gutpb: "partner=utpb&p=pivot-international-studentandscholar&adid=gutpb",
+        acnutpb: "l=cn&partner=utpb&p=pivot-international-studentandscholar&adid=acnutpb", 
+        iutpb: "partner=utpb&p=pivot-international-studentandscholar",
+        icnutpb: "l=cn&partner=utpb&p=pivot-international-studentandscholar",    
 
         utpa: "partner=utpa&p=pivot-home&adid=sutpa",
         cnutpa: "l=cn&partner=utpa&p=pivot-home&adid=scnutpa",   
-        gcnutpa: "l=cn&partner=utpa&p=pivot-international-student&adid=gcnutpa",
-        gutpa: "partner=utpa&p=pivot-international-student&adid=gutpa",
-        acnutpa: "l=cn&partner=utpa&p=pivot-international-student&adid=acnutpa", 
-        iutpa: "partner=utpa&p=pivot-international-student",
-        icnutpa: "l=cn&partner=utpa&p=pivot-international-student",            
+        gcnutpa: "l=cn&partner=utpa&p=pivot-international-studentandscholar&adid=gcnutpa",
+        gutpa: "partner=utpa&p=pivot-international-studentandscholar&adid=gutpa",
+        acnutpa: "l=cn&partner=utpa&p=pivot-international-studentandscholar&adid=acnutpa", 
+        iutpa: "partner=utpa&p=pivot-international-studentandscholar",
+        icnutpa: "l=cn&partner=utpa&p=pivot-international-studentandscholar",            
 
         uttyler: "partner=uttyler&p=pivot-home&adid=suttyler",
         cnuttyler: "l=cn&partner=uttyler&p=pivot-home&adid=scnuttyler",   
-        gcnuttyler: "l=cn&partner=uttyler&p=pivot-international-student&adid=gcnuttyler",
-        guttyler: "partner=uttyler&p=pivot-international-student&adid=guttyler",
-        acnuttyler: "l=cn&partner=uttyler&p=pivot-international-student&adid=acnuttyler", 
-        iuttyler: "partner=uttyler&p=pivot-international-student",
-        icnuttyler: "l=cn&partner=uttyler&p=pivot-international-student",         
+        gcnuttyler: "l=cn&partner=uttyler&p=pivot-international-studentandscholar&adid=gcnuttyler",
+        guttyler: "partner=uttyler&p=pivot-international-studentandscholar&adid=guttyler",
+        acnuttyler: "l=cn&partner=uttyler&p=pivot-international-studentandscholar&adid=acnuttyler", 
+        iuttyler: "partner=uttyler&p=pivot-international-studentandscholar",
+        icnuttyler: "l=cn&partner=uttyler&p=pivot-international-studentandscholar",         
         
         
         vt: "partner=vt&p=pivot-home&adid=svt",
@@ -451,10 +451,10 @@ function referralSubstitution(key) {
         ivt: "partner=vt&p=pivot-international-student",
         yale: "partner=yale&p=pivot-home&adid=syale",
         cnyale: "l=cn&partner=yale&p=pivot-home&adid=scnyale",   
-        gcnyale: "l=cn&partner=yale&p=pivot-international-student&adid=gcnyale",
-        gyale: "partner=yale&p=pivot-international-student&adid=gyale",
-        acnyale: "l=cn&partner=yale&p=pivot-international-student&adid=acnyale", 
-        iyale: "partner=yale&p=pivot-international-student",
+        gcnyale: "l=cn&partner=yale&p=pivot-international-studentandscholar&adid=gcnyale",
+        gyale: "partner=yale&p=pivot-international-studentandscholar&adid=gyale",
+        acnyale: "l=cn&partner=yale&p=pivot-international-studentandscholar&adid=acnyale", 
+        iyale: "partner=yale&p=pivot-international-studentandscholar",
         mit: "partner=mit&p=pivot-home&adid=smit",
         cnmit: "l=cn&partner=mit&p=pivot-home&adid=scnmit",   
         gcnmit: "l=cn&partner=mit&p=pivot-international-student&adid=gcnmit",
@@ -498,13 +498,7 @@ function referralSubstitution(key) {
         iwustl: "partner=wustl&p=pivot-international-student",
         icnwustl: "l=cn&partner=wustl&p=pivot-international-student",  
 
-        wvu: "partner=wvu&p=pivot-home&adid=swvu",
-        cnwvu: "l=cn&partner=wvu&p=pivot-home&adid=scnwvu",   
-        gcnwvu: "l=cn&partner=wvu&p=pivot-international-student&adid=gcnwvu",
-        gwvu: "partner=wvu&p=pivot-international-student&adid=gwvu",
-        acnwvu: "l=cn&partner=wvu&p=pivot-international-student&adid=acnwvu", 
-        iwvu: "partner=wvu&p=pivot-international-student",
-        icnwvu: "l=cn&partner=wvu&p=pivot-international-student",  
+  
         
         ucsf: "partner=ucsf&p=pivot-home&adid=sucsf",
         cnucsf: "l=cn&partner=ucsf&p=pivot-home&adid=scnucsf",   
@@ -523,10 +517,10 @@ function referralSubstitution(key) {
         acnuciwb: "l=cn&partner=uci&p=pivot-international-student&adid=acnuciwb",        
         ucr: "partner=ucr&p=pivot-home&adid=sucr",
         cnucr: "l=cn&partner=ucr&p=pivot-home&adid=scnucr",   
-        gcnucr: "l=cn&partner=ucr&p=pivot-international-studentandscholar&adid=gcnucr",
-        gucr: "partner=ucr&p=pivot-international-studentandscholar&adid=gucr",
-        acnucr: "l=cn&partner=ucr&p=pivot-international-studentandscholar&adid=acnucr", 
-        iucr: "partner=ucr&p=pivot-international-studentandscholar",
+        gcnucr: "l=cn&partner=ucr&p=pivot-scholar-student&adid=gcnucr",
+        gucr: "partner=ucr&p=pivot-scholar-student&adid=gucr",
+        acnucr: "l=cn&partner=ucr&p=pivot-scholar-student&adid=acnucr", 
+        iucr: "partner=ucr&p=pivot-scholar-student",
         ucsb: "partner=ucsb&p=pivot-home&adid=sucsb",
         cnucsb: "l=cn&partner=ucsb&p=pivot-home&adid=scnucsb",   
         gcnucsb: "l=cn&partner=ucsb&p=pivot-international-student&adid=gcnucsb",
@@ -696,10 +690,10 @@ function referralSubstitution(key) {
         iiastate: "partner=iastate&p=pivot-international-student",
         georgetown: "partner=georgetown&p=pivot-home&adid=sgeorgetown",
         cngeorgetown: "l=cn&partner=georgetown&p=pivot-home&adid=scngeorgetown",   
-        gcngeorgetown: "l=cn&partner=georgetown&p=pivot-international-student&adid=gcngeorgetown",
-        ggeorgetown: "partner=georgetown&p=pivot-international-student&adid=ggeorgetown",
-        acngeorgetown: "l=cn&partner=georgetown&p=pivot-international-student&adid=acngeorgetown", 
-        igeorgetown: "partner=georgetown&p=pivot-international-student", 
+        gcngeorgetown: "l=cn&partner=georgetown&p=pivot-international-studentandscholar&adid=gcngeorgetown",
+        ggeorgetown: "partner=georgetown&p=pivot-international-studentandscholar&adid=ggeorgetown",
+        acngeorgetown: "l=cn&partner=georgetown&p=pivot-international-studentandscholar&adid=acngeorgetown", 
+        igeorgetown: "partner=georgetown&p=pivot-international-studentandscholar", 
         nd: "partner=nd&p=pivot-home&adid=snd",
         cnnd: "l=cn&partner=nd&p=pivot-home&adid=scnnd",   
         gcnnd: "l=cn&partner=nd&p=pivot-international-student&adid=gcnnd",
@@ -771,19 +765,19 @@ function referralSubstitution(key) {
         
         kent: "partner=kent&p=pivot-home&adid=skent",
         cnkent: "l=cn&partner=kent&p=pivot-home&adid=scnkent",   
-        gcnkent: "l=cn&partner=kent&p=pivot-international-student&adid=gcnkent",
-        gkent: "partner=kent&p=pivot-international-student&adid=gkent",
-        acnkent: "l=cn&partner=kent&p=pivot-international-student&adid=acnkent", 
-        ikent: "partner=kent&p=pivot-international-student",
-        icnkent: "l=cn&partner=kent&p=pivot-international-student",
+        gcnkent: "l=cn&partner=kent&p=pivot-international-studentandscholar&adid=gcnkent",
+        gkent: "partner=kent&p=pivot-international-studentandscholar&adid=gkent",
+        acnkent: "l=cn&partner=kent&p=pivot-international-studentandscholar&adid=acnkent", 
+        ikent: "partner=kent&p=pivot-international-studentandscholar",
+        icnkent: "l=cn&partner=kent&p=pivot-international-studentandscholar",
         
         depaul: "partner=depaul&p=pivot-home&adid=sdepaul",
         cndepaul: "l=cn&partner=depaul&p=pivot-home&adid=scndepaul",   
-        gcndepaul: "l=cn&partner=depaul&p=pivot-international-student&adid=gcndepaul",
-        gdepaul: "partner=depaul&p=pivot-international-student&adid=gdepaul",
-        acndepaul: "l=cn&partner=depaul&p=pivot-international-student&adid=acndepaul", 
-        idepaul: "partner=depaul&p=pivot-international-student",
-        icndepaul: "l=cn&partner=depaul&p=pivot-international-student",        
+        gcndepaul: "l=cn&partner=depaul&p=pivot-international-studentandscholar&adid=gcndepaul",
+        gdepaul: "partner=depaul&p=pivot-international-studentandscholar&adid=gdepaul",
+        acndepaul: "l=cn&partner=depaul&p=pivot-international-studentandscholar&adid=acndepaul", 
+        idepaul: "partner=depaul&p=pivot-international-studentandscholar",
+        icndepaul: "l=cn&partner=depaul&p=pivot-international-studentandscholar",        
 
         uakron: "partner=uakron&p=pivot-home&adid=suakron",
         cnuakron: "l=cn&partner=uakron&p=pivot-home&adid=scnuakron",   
@@ -797,11 +791,11 @@ function referralSubstitution(key) {
         
         fordham: "partner=fordham&p=pivot-home&adid=sfordham",
         cnfordham: "l=cn&partner=fordham&p=pivot-home&adid=scnfordham",   
-        gcnfordham: "l=cn&partner=fordham&p=pivot-international-studentandscholar&adid=gcnfordham",
-        gfordham: "partner=fordham&p=pivot-international-studentandscholar&adid=gfordham",
-        acnfordham: "l=cn&partner=fordham&p=pivot-international-studentandscholar&adid=acnfordham", 
-        ifordham: "partner=fordham&p=pivot-international-studentandscholar",
-        icnfordham: "l=cn&partner=fordham&p=pivot-international-studentandscholar",
+        gcnfordham: "l=cn&partner=fordham&p=pivot-scholar-student&adid=gcnfordham",
+        gfordham: "partner=fordham&p=pivot-scholar-student&adid=gfordham",
+        acnfordham: "l=cn&partner=fordham&p=pivot-scholar-student&adid=acnfordham", 
+        ifordham: "partner=fordham&p=pivot-scholar-student",
+        icnfordham: "l=cn&partner=fordham&p=pivot-scholar-student",
         
         babson: "partner=babson&p=pivot-home&adid=sbabson",
         cnbabson: "l=cn&partner=babson&p=pivot-home&adid=scnbabson",   
@@ -821,11 +815,11 @@ function referralSubstitution(key) {
 
         cuny: "partner=cuny&p=pivot-home&adid=scuny",
         cncuny: "l=cn&partner=cuny&p=pivot-home&adid=scncuny",   
-        gcncuny: "l=cn&partner=cuny&p=pivot-international-student&adid=gcncuny",
-        gcuny: "partner=cuny&p=pivot-international-student&adid=gcuny",
-        acncuny: "l=cn&partner=cuny&p=pivot-international-student&adid=acncuny", 
-        icuny: "partner=cuny&p=pivot-international-student",
-        icncuny: "l=cn&partner=cuny&p=pivot-international-student",  
+        gcncuny: "l=cn&partner=cuny&p=pivot-international-studentandscholar&adid=gcncuny",
+        gcuny: "partner=cuny&p=pivot-international-studentandscholar&adid=gcuny",
+        acncuny: "l=cn&partner=cuny&p=pivot-international-studentandscholar&adid=acncuny", 
+        icuny: "partner=cuny&p=pivot-international-studentandscholar",
+        icncuny: "l=cn&partner=cuny&p=pivot-international-studentandscholar",  
         cunyexch: "l=cn&partner=cuny&p=exchange-form",         
         
 
@@ -838,11 +832,11 @@ function referralSubstitution(key) {
         imusc: "partner=musc&p=pivot-international-student",        
         ucberkeley: "partner=ucberkeley&p=pivot-home&adid=sucberkeley",
         cnucberkeley: "l=cn&partner=ucberkeley&p=pivot-home&adid=scnucberkeley",   
-        gcnucberkeley: "l=cn&partner=ucberkeley&p=pivot-j-scholar&adid=gcnucberkeley",
-        gucberkeley: "partner=ucberkeley&p=pivot-j-scholar&adid=gucberkeley",
-        acnucberkeley: "l=cn&partner=ucberkeley&p=pivot-j-scholar&adid=acnucberkeley", 
-        iucberkeley: "partner=ucberkeley&p=pivot-j-scholar",
-        icnucberkeley: "l=cn&partner=ucberkeley&p=pivot-j-scholar", 
+        gcnucberkeley: "l=cn&partner=ucberkeley&p=pivot-scholar-student&adid=gcnucberkeley",
+        gucberkeley: "partner=ucberkeley&p=pivot-scholar-student&adid=gucberkeley",
+        acnucberkeley: "l=cn&partner=ucberkeley&p=pivot-scholar-student&adid=acnucberkeley", 
+        iucberkeley: "partner=ucberkeley&p=pivot-scholar-student",
+        icnucberkeley: "l=cn&partner=ucberkeley&p=pivot-scholar-student", 
 
         duke: "partner=duke&p=pivot-home&adid=sduke",
         cnduke: "l=cn&partner=duke&p=pivot-home&adid=scnduke",   
@@ -891,7 +885,7 @@ function referralSubstitution(key) {
         gcnjhmi: "l=cn&partner=jhmi&p=pivot-international-student&adid=gcnjhmi",
         acnjhmi: "l=cn&partner=jhmi&p=pivot-international-student&adid=acnjhmi",        
         gjhmi: "partner=jhmi&p=pivot-international-student&adid=gjhmi",         
-        ucdavis: "partner=ucdavis&p=pivot-international-scholar&adid=sucdavis",
+
         econnect: "partner=econnect",        
         iupuiexch: "l=cn&partner=iupui&p=exchange-form", 
         bcexch: "l=cn&partner=bc&p=exchange-form",        
@@ -918,11 +912,11 @@ function referralSubstitution(key) {
         
         steinercollege: "partner=steinercollege&p=pivot-home&adid=ssteinercollege",
         cnsteinercollege: "l=cn&partner=steinercollege&p=pivot-home&adid=scnsteinercollege",   
-        gcnsteinercollege: "l=cn&partner=steinercollege&p=pivot-international-student&adid=gcnsteinercollege",
-        gsteinercollege: "partner=steinercollege&p=pivot-international-student&adid=gsteinercollege",
-        acnsteinercollege: "l=cn&partner=steinercollege&p=pivot-international-student&adid=acnsteinercollege", 
-        isteinercollege: "partner=steinercollege&p=pivot-international-student",
-        icnsteinercollege: "l=cn&partner=steinercollege&p=pivot-international-student",
+        gcnsteinercollege: "l=cn&partner=steinercollege&p=pivot-international-studentandscholar&adid=gcnsteinercollege",
+        gsteinercollege: "partner=steinercollege&p=pivot-international-studentandscholar&adid=gsteinercollege",
+        acnsteinercollege: "l=cn&partner=steinercollege&p=pivot-international-studentandscholar&adid=acnsteinercollege", 
+        isteinercollege: "partner=steinercollege&p=pivot-international-studentandscholar",
+        icnsteinercollege: "l=cn&partner=steinercollege&p=pivot-international-studentandscholar",
         steinercollegeexch: "l=cn&partner=steinercollege&p=exchange-form",         
 
         
@@ -994,16 +988,16 @@ function referralSubstitution(key) {
         icnharvard: "l=cn&partner=harvard&p=pivot-international-student",        
         uta: "partner=uta&p=pivot-home&adid=suta",
         cnuta: "l=cn&partner=uta&p=pivot-home&adid=scnuta",   
-        gcnuta: "l=cn&partner=uta&p=pivot-international-student&adid=gcnuta",
-        acnuta: "l=cn&partner=uta&p=pivot-international-student&adid=acnuta",        
-        guta: "partner=uta&p=pivot-international-student&adid=guta",
-        iuta: "partner=uta&p=pivot-international-student",
+        gcnuta: "l=cn&partner=uta&p=pivot-international-studentandscholar&adid=gcnuta",
+        acnuta: "l=cn&partner=uta&p=pivot-international-studentandscholar&adid=acnuta",        
+        guta: "partner=uta&p=pivot-international-studentandscholar&adid=guta",
+        iuta: "partner=uta&p=pivot-international-studentandscholar",
         gsu: "partner=gsu&p=pivot-home&adid=sgsu",
         cngsu: "l=cn&partner=gsu&p=pivot-home&adid=scngsu",   
-        gcngsu: "l=cn&partner=gsu&p=pivot-international-student&adid=gcngsu",
-        acngsu: "l=cn&partner=gsu&p=pivot-international-student&adid=acngsu",        
-        ggsu: "partner=gsu&p=pivot-international-student&adid=ggsu",
-        igsu: "partner=gsu&p=pivot-international-student",
+        gcngsu: "l=cn&partner=gsu&p=pivot-international-studentandscholar&adid=gcngsu",
+        acngsu: "l=cn&partner=gsu&p=pivot-international-studentandscholar&adid=acngsu",        
+        ggsu: "partner=gsu&p=pivot-international-studentandscholar&adid=ggsu",
+        igsu: "partner=gsu&p=pivot-international-studentandscholar",
         msstate: "partner=msstate&p=pivot-home&adid=smsstate",
         cnmsstate: "l=cn&partner=msstate&p=pivot-home&adid=scnmsstate",   
         gcnmsstate: "l=cn&partner=msstate&p=pivot-international-student&adid=gcnmsstate",
@@ -1074,18 +1068,18 @@ function referralSubstitution(key) {
         iemory: "partner=emory&p=pivot-international-student",                
         temple: "partner=temple&p=pivot-home&adid=stemple",
         cntemple: "l=cn&partner=temple&p=pivot-home&adid=scntemple",   
-        gcntemple: "l=cn&partner=temple&p=pivot-international-student&adid=gcntemple",
-        acntemple: "l=cn&partner=temple&p=pivot-international-student&adid=acntemple",        
-        gtemple: "partner=temple&p=pivot-international-student&adid=gtemple",
-        itemple: "partner=temple&p=pivot-international-student",
+        gcntemple: "l=cn&partner=temple&p=pivot-international-studentandscholar&adid=gcntemple",
+        acntemple: "l=cn&partner=temple&p=pivot-international-studentandscholar&adid=acntemple",        
+        gtemple: "partner=temple&p=pivot-international-studentandscholar&adid=gtemple",
+        itemple: "partner=temple&p=pivot-international-studentandscholar",
         icntemple: "l=cn&partner=temple&p=pivot-international-student",        
         colorado: "partner=colorado&p=pivot-home&adid=scolorado",
         cncolorado: "l=cn&partner=colorado&p=pivot-home&adid=scncolorado",   
-        gcncolorado: "l=cn&partner=colorado&p=pivot-international-student&adid=gcncolorado",
-        acncolorado: "l=cn&partner=colorado&p=pivot-international-student&adid=acncolorado",        
-        gcolorado: "partner=colorado&p=pivot-international-student&adid=gcolorado",
-        icolorado: "partner=colorado&p=pivot-international-student", 
-        icncolorado: "l=cn&partner=colorado&p=pivot-international-student",
+        gcncolorado: "l=cn&partner=colorado&p=pivot-international-studentandscholar&adid=gcncolorado",
+        acncolorado: "l=cn&partner=colorado&p=pivot-international-studentandscholar&adid=acncolorado",        
+        gcolorado: "partner=colorado&p=pivot-international-studentandscholar&adid=gcolorado",
+        icolorado: "partner=colorado&p=pivot-international-studentandscholar", 
+        icncolorado: "l=cn&partner=colorado&p=pivot-international-studentandscholar",
 
         kstate: "partner=kstate&p=pivot-home&adid=skstate",
         cnkstate: "l=cn&partner=kstate&p=pivot-home&adid=scnkstate",   
@@ -1097,10 +1091,10 @@ function referralSubstitution(key) {
         
         uconn: "partner=uconn&p=pivot-home&adid=suconn",
         cnuconn: "l=cn&partner=uconn&p=pivot-home&adid=scnuconn",   
-        gcnuconn: "l=cn&partner=uconn&p=pivot-international-student&adid=gcnuconn",
-        acnuconn: "l=cn&partner=uconn&p=pivot-international-student&adid=acnuconn",        
-        guconn: "partner=uconn&p=pivot-international-student&adid=guconn",
-        iuconn: "partner=uconn&p=pivot-international-student",
+        gcnuconn: "l=cn&partner=uconn&p=pivot-international-studentandscholar&adid=gcnuconn",
+        acnuconn: "l=cn&partner=uconn&p=pivot-international-studentandscholar&adid=acnuconn",        
+        guconn: "partner=uconn&p=pivot-international-studentandscholar&adid=guconn",
+        iuconn: "partner=uconn&p=pivot-international-studentandscholar",
         ucsd: "partner=ucsd&p=pivot-home&adid=sucsd",
         cnucsd: "l=cn&partner=ucsd&p=pivot-home&adid=scnucsd",   
         gcnucsd: "l=cn&partner=ucsd&p=pivot-international-student&adid=gcnucsd",
@@ -1116,11 +1110,11 @@ function referralSubstitution(key) {
         ibvc: "partner=bvc&p=pivot-international-student",
         cwu: "partner=cwu&p=pivot-home&adid=scwu",
         cncwu: "l=cn&partner=cwu&p=pivot-home&adid=scncwu",   
-        gcncwu: "l=cn&partner=cwu&p=pivot-international-student&adid=gcncwu",
-        acncwu: "l=cn&partner=cwu&p=pivot-international-student&adid=acncwu",        
-        gcwu: "partner=cwu&p=pivot-international-student&adid=gcwu",
-        icwu: "partner=cwu&p=pivot-international-student",
-        icncwu: "l=cn&partner=cwu&p=pivot-international-student", 
+        gcncwu: "l=cn&partner=cwu&p=pivot-international-studentandscholar&adid=gcncwu",
+        acncwu: "l=cn&partner=cwu&p=pivot-international-studentandscholar&adid=acncwu",        
+        gcwu: "partner=cwu&p=pivot-international-studentandscholar&adid=gcwu",
+        icwu: "partner=cwu&p=pivot-international-studentandscholar",
+        icncwu: "l=cn&partner=cwu&p=pivot-international-studentandscholar", 
 
         casew: "partner=casew&p=pivot-home&adid=scasew",
         cncasew: "l=cn&partner=casew&p=pivot-home&adid=scncasew",   
@@ -1132,11 +1126,11 @@ function referralSubstitution(key) {
         
         wwu: "partner=wwu&p=pivot-home&adid=swwu",
         cnwwu: "l=cn&partner=wwu&p=pivot-home&adid=scnwwu",   
-        gcnwwu: "l=cn&partner=wwu&p=pivot-international-student&adid=gcnwwu",
-        acnwwu: "l=cn&partner=wwu&p=pivot-international-student&adid=acnwwu",        
-        gwwu: "partner=wwu&p=pivot-international-student&adid=gwwu",
-        iwwu: "partner=wwu&p=pivot-international-student", 
-        icnwwu: "l=cn&partner=wwu&p=pivot-international-student",        
+        gcnwwu: "l=cn&partner=wwu&p=pivot-international-studentandscholar&adid=gcnwwu",
+        acnwwu: "l=cn&partner=wwu&p=pivot-international-studentandscholar&adid=acnwwu",        
+        gwwu: "partner=wwu&p=pivot-international-studentandscholar&adid=gwwu",
+        iwwu: "partner=wwu&p=pivot-international-studentandscholar", 
+        icnwwu: "l=cn&partner=wwu&p=pivot-international-studentandscholar",        
         tamu: "partner=tamu&p=pivot-home&adid=stamu",
         cntamu: "l=cn&partner=tamu&p=pivot-home&adid=scntamu",   
         gcntamu: "l=cn&partner=tamu&p=pivot-international-student&adid=gcntamu",
@@ -1158,19 +1152,20 @@ function referralSubstitution(key) {
         
         utaustin: "partner=utaustin&p=pivot-home&adid=sut",
         cnutaustin: "l=cn&partner=utaustin&p=pivot-home&adid=scnut",   
-        gcnutaustin: "l=cn&partner=utaustin&p=pivot-international-student&adid=gcnut",
-        acnutaustin: "l=cn&partner=utaustin&p=pivot-international-student&adid=acnut",        
-        gutaustin: "partner=utaustin&p=pivot-international-student&adid=gut",
-        iutaustin: "partner=utaustin&p=pivot-international-student",
-        icnutaustin: "l=cn&partner=utaustin&p=pivot-international-student",  
+        gcnutaustin: "l=cn&partner=utaustin&p=pivot-international-studentandscholar&adid=gcnut",
+        acnutaustin: "l=cn&partner=utaustin&p=pivot-international-studentandscholar&adid=acnut", 
+        acnutguide: "l=cn&partner=utaustin&p=pivot-international-studentandscholar&adid=acnutguide",        
+        gutaustin: "partner=utaustin&p=pivot-international-studentandscholar&adid=gut",
+        iutaustin: "partner=utaustin&p=pivot-international-studentandscholar",
+        icnutaustin: "l=cn&partner=utaustin&p=pivot-international-studentandscholar",  
         
         utdallas: "partner=utdallas&p=pivot-home&adid=sutdallas",
         cnutdallas: "l=cn&partner=utdallas&p=pivot-home&adid=scnutdallas",   
-        gcnutdallas: "l=cn&partner=utdallas&p=pivot-international-student&adid=gcnutdallas",
-        acnutdallas: "l=cn&partner=utdallas&p=pivot-international-student&adid=acnutdallas",        
-        gutdallas: "partner=utdallas&p=pivot-international-student&adid=gutdallas",
-        iutdallas: "partner=utdallas&p=pivot-international-student",
-        icnutdallas: "l=cn&partner=utdallas&p=pivot-international-student",
+        gcnutdallas: "l=cn&partner=utdallas&p=pivot-international-studentandscholar&adid=gcnutdallas",
+        acnutdallas: "l=cn&partner=utdallas&p=pivot-international-studentandscholar&adid=acnutdallas",        
+        gutdallas: "partner=utdallas&p=pivot-international-studentandscholar&adid=gutdallas",
+        iutdallas: "partner=utdallas&p=pivot-international-studentandscholar",
+        icnutdallas: "l=cn&partner=utdallas&p=pivot-international-studentandscholar",
         
         iu: "partner=iu&p=pivot-home&adid=siu",
         cniu: "l=cn&partner=iu&p=pivot-home&adid=scniu",   
@@ -1241,7 +1236,9 @@ function showPivot(pivotName) {
 function urlsToAppIds() {
     var urlsToAppIds = {
         "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699" : "PatExchGroupPlanB",
+        "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699" : "TaianPatExchGroupPlanB",        
         "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699" : "PatExchPlanB",
+        "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699" : "TaianPatExchPlanB",
         "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699" : "SHAPlanA",
         "https://purchase.imglobal.com/quote/patriot?imgac=80000699" : "Travel",
         "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699" : "TravelGroup"
@@ -2189,8 +2186,9 @@ function writeContactInfo() {
 function writeTabs() {
     var topLevelNames = { "pivot-home": "Home",
                           "pivot-international-student": "International Scholar/Student",
+                          "pivot-international-scholar": "International Scholar/Student",                          
                           "pivot-international-studentandscholar": "International Scholar/Student",
-                          "pivot-international-scholar": "International Scholar",
+                          "pivot-scholar-student": "International Scholar/Student",
                           "pivot-j-scholar": "J Scholar",                          
                           "pivot-global-medical": "Global Medical",
                           "pivot-travel-insurance": "Travel Insurance",
@@ -2322,8 +2320,8 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Health insurance for CUNY Students and Scholars", "#icuny"),  
 
                 makeURL("Bellevue College (WA)", "http://bellevuecollege.edu/"),
-                makeURL("School F1 requirement", "http://bellevuecollege.edu/isp/insurance.html"),
-                makeURL("School J1 requirement", "http://bellevuecollege.edu/isp/insurance.html"),
+                makeURL("School F1 requirement", "http://www.bellevuecollege.edu/isp/current-students/student-life/medical-insurance/"),
+                makeURL("School J1 requirement", "http://www.bellevuecollege.edu/isp/current-students/student-life/medical-insurance/"),
                 makeURL("Health insurance for Bellevue College Students and Scholars", "#ibvc"),                  
                 
                 makeURL("Borough of Manhattan Community College, CUNY (NY)", "http://www.bmcc.cuny.edu/j2ee/index.jsp"),
@@ -2464,7 +2462,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Dartmouth College (NH)", "http://www.dartmouth.edu/"),
                 makeURL("School F1 requirement", "http://www.dartmouth.edu/~health/depts/insurance/waiver04.html"),
                 makeURL("School J1 requirement", "http://www.dartmouth.edu/~ovis/updates/j1/health.html"),
-                makeURL("Health insurance for Dartmouth College Students and Scholars", "#idartmouth"),
+                makeURL("Health insurance for Dartmouth College Scholars", "#idartmouth"),
                 
                 makeURL("Depaul University (IL)", "http://www.depaul.edu/Pages/default.aspx"),
                 makeURL("School F1 requirement", "http://oiss.depaul.edu/FAQ/index.asp"),
@@ -2523,7 +2521,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("Georgia State University", "http://www.gsu.edu/"),
                 makeURL("School F1 requirement", "http://isss.gsu.edu/files/2013/02/Updated-FAQ.pdf"),
-                makeURL("School J1 requirement", "http://education.gsu.edu/international/docs/J-1_insurance_compliance_form.pdf"),
+                makeURL("School J1 requirement", "http://isss.gsu.edu/files/2013/02/J-1-Insurance-Compliance-Form.pdf"),
                 makeURL("Health insurance for Georgia State University Students and Scholars", "#igsu"),
                 
                 makeURL("Harvard University and Harvard Medical School(MA)", "http://www.harvard.edu/"),
@@ -2865,7 +2863,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("University of California Riverside (CA)", "http://www.ucr.edu/"),
                 makeURL("School F1 requirement", "http://internationalcenter.ucr.edu/InternationalStudents/Pages/HealthandMoneyMatters.aspx"),
-                makeURL("School J1 requirement", "http://internationalcenter.ucr.edu/InternationalStudents/Pages/HealthandMoneyMatters.aspx"),
+                makeURL("School J1 requirement", "http://internationalscholars.ucr.edu/visa/joneinsurance.html"),
                 makeURL("Health insurance for UC Riverside Scholars", "#iucr"),
                 
                 makeURL("University of California San Diego (CA)", "http://www.ucsd.edu/"),
@@ -3259,8 +3257,8 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("West Virginia University (WV)", "http://www.wvu.edu/"),
                 makeURL("School F1 requirement", "http://oiss.wvu.edu/students/current_students/health_insurance_requirements_for_all_international_students"),
-                makeURL("School J1 requirement", "http://well.wvu.edu/medical/insurance/international-students"),
-                makeURL("Health insurance for West Virginia University Scholars", "#iwvu"),
+                makeURL("School J1 requirement", "http://well.wvu.edu/medical/insurance/insurance-tips-faqs"),
+                "Consult your school about their requirements",
 
                 makeURL("Western University of Health Sciences (CA, OR)", "http://www.westernu.edu/"),
                     makeBulletedListWithTitle("", [
@@ -3335,7 +3333,7 @@ function writeSections(legacy) {
     startSection("pivot-international-student", "International Scholars and Students");
 
     startRow();
-    writeText("Taian International Health Insurance provides International Scholar and Student Insurance for US visa holders (F1 visa, J1 visa, OPT, and M1 visa) and their dependents. Taian Insurance Plan A and Plan B meet many schools' student insurance standards and almost every schools' J1 scholar insurance standards and are more affordable than most school plans. All J visa holders are required to meet the  US Department of State (USDOS) requirements and their school requirements for the duration of their visa. Plan B with $50,000 benefit per illness or injury (Standard Plan) is the most affordable plan that meets the USDOS requirements. Most schools requirements for J1 scholars are the same as the USDOS, however some schools have higher requirements. Please click the links below to see your school requirements and US Department of State requirements.");
+    writeText("Taian International Health Insurance provides International Scholar and Student Insurance for US visa holders (F1 visa, J1 visa, OPT, and M1 visa) and their dependents. Taian Insurance Plan A and Plan B meet many schools\' student insurance standards and almost every schools\' J1 scholar insurance standards and are more affordable than most school plans. All J visa holders are required to meet the US Department of State (USDOS) requirements and their school requirements for the duration of their visa. Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the USDOS requirements. Most schools requirements for J1 scholars are the same as the USDOS, however some schools have higher requirements. Please click the links below to see your school requirements and US Department of State requirements.");
     endRow();
 
     var partnerShip = getPartnership(getPageAttribute("partner"));
@@ -3359,36 +3357,37 @@ function writeSections(legacy) {
     endRow();
 
     startRow();
-    document.write(makeTable(3,
+    document.write(makeTable(4,
             [
             // Column headers:
             "TaiAn Scholars and Students",
             makeRawURL("Plan A (Student Health Advantage)", "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
-            makeRawURL("Plan B (Standard) (Patriot Exchange Program)", "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
+            makeRawURL("Plan B (Taian Patriot Exchange), $100 per illness deductible", "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+            makeRawURL("Plan B (Taian Patriot Exchange)- Annual Deductible<br />ONLY AVAILABLE FROM TAIAN", "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),            
 
             // Rest of the table:
             // Row 2
-            "Plan Type", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 5 years if initial purchase is 3 months or more.", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.",
+            "Plan Type", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 5 years if initial purchase is 3 months or more.", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.",
 
             // Row 3
-            "Maximum Limit", "$500,000 lifetime maximum, $300,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $250,000 or $500,000 per illness/injury",
+            "Maximum Limit", "$500,000 lifetime maximum, $300,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury",
 
 
 
-            "Deductible", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", 
-            "Coinsurance", "No coinsurance in PPO", "No coinsurance in PPO or out of PPO", 
-            "Hospital Room & Board", "Average semi-private room", "Average semi-private room", 
-            "Intensive Care", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)", 
-            "Maternity", "URC - If not pregnant when you purchase.   Not covered - If you are pregnant when you purchase.", "N/A", 
-            "Mental Health", "In-patient URC to $10,000, out-patient $50/day to $500", "N/A", 
-            "Emergency Room", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", 
-            "Prescription Drugs", "In-patient URC, out-patient 50%", "URC", 
-            "Accident Dental", "Injury $500, Sudden pain $350", "Injury $500, Sudden pain $350", 
-            "Accidental Death & Dismemberment", "$25,000", "$25,000", 
-            "Medical Evacuation", "$500,000", "$50,000", 
-            "Repatriation of remains", "$50,000", "$25,000", 
-            "Pre-existing conditions", "After 12 months of continuous coverage", "After 12 months of continuous coverage",
-            "Group Pricing", "N/A", "2 or more primary insured have about 10% discount", 
+            "Deductible", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$250 or $500 annual deductible<br />Taian Exclusive!<br />$5 co-pay per visit in Student Health Center.",
+            "Coinsurance", "No coinsurance in PPO", "No coinsurance in PPO or out of PPO", "No coinsurance in PPO or out of PPO",
+            "Hospital Room & Board", "Average semi-private room", "Average semi-private room", "Average semi-private room", 
+            "Intensive Care", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)",
+            "Maternity", "URC - If not pregnant when you purchase.   Not covered - If you are pregnant when you purchase.", "N/A", "N/A",
+            "Mental Health", "In-patient URC to $10,000, out-patient $50/day to $500", "N/A", "N/A",
+            "Emergency Room", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization",
+            "Prescription Drugs", "In-patient URC, out-patient 50%", "URC", "URC",
+            "Accident Dental", "Injury $500, Sudden pain $350", "Injury $500, Sudden pain $350", "Injury $500, Sudden pain $350",
+            "Accidental Death & Loss of Limb", "$25,000", "$25,000", "$25,000",
+            "Medical Evacuation", "$500,000", "$50,000", "$50,000",
+            "Repatriation of remains", "$50,000", "$25,000", "$25,000",
+            "Pre-existing conditions", "After 12 months of continuous coverage", "After 12 months of continuous coverage", "After 12 months of continuous coverage",
+            "Group Pricing", "N/A", "2 or more primary insured have about 10% discount", "2 or more primary insured have about 10% discount", 
             // Table within a table
             "Cost Per Month (Non-US Citizens)",
             makeTable(4, [
@@ -3401,7 +3400,7 @@ function writeSections(legacy) {
                     "51-64",   "$430",  "$567",   "$82"
                     ]), 
 
-            loc("$50,000 per illness/injury") +         
+            loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
             makeTable(4, [
                     "Age",     "F1/J1", "Spouse", "Children",
                     "&lt; 25", "$48.62","$48.62",  "$48.62",
@@ -3409,7 +3408,7 @@ function writeSections(legacy) {
                     "50-64",   "$135.70","$135.70","$48.62"
                     ]) +
 
-            loc("$250,000 per illness/injury") +         
+            loc("$250,000 per illness/injury benefit, $100 per illness/injury deductible") +         
             makeTable(4, [
                     "Age",     "F1/J1", "Spouse", "Children",
                     "&lt; 25", "$60.36","$60.36",  "$60.36",
@@ -3417,21 +3416,50 @@ function writeSections(legacy) {
                     "50-64",   "$168.27","$168.27","$60.36"
                     ]) + 
 
-            loc("$500,000 per illness/injury") +         
+            loc("$500,000 per illness/injury benefit, $100 per illness/injury deductible") +         
             makeTable(4, [
                     "Age",     "F1/J1", "Spouse", "Children",
                     "&lt; 25", "$63.66","$63.66",  "$63.66",
                     "25-49",   "$82.90","$82.90",  "$63.66",
                     "50-64",   "$177.53","$177.53","$63.66"
                     ]),                      
-     
+
+            loc("$50,000 per illness/injury benefit, $500 annual deductible<br />***LOWEST PRICE***") +         
+            makeTable(4, [
+                    "Age",     "F1/J1", "Spouse", "Children",
+                    "&lt; 25", "$43.86","$43.86",  "$43.86",
+                    "25-49",   "$57.17","$57.17",  "$43.86",
+                    "50-64",   "$122.41","$122.41","$43.86"
+                    ]) +
+            loc("$50,000 per illness/injury benefit, $250 annual deductible<br />*******BEST VALUE*******") +         
+            makeTable(4, [
+                    "Age",     "F1/J1", "Spouse", "Children",
+                    "&lt; 25", "$47.16","$47.16",  "$47.16",
+                    "25-49",   "$61.47","$61.47",  "$47.16",
+                    "50-64",   "$131.63","$131.63","$47.16"
+                    ]) +
+            loc("$100,000 per illness/injury benefit, $250 annual deductible") +         
+            makeTable(4, [
+                    "Age",     "F1/J1", "Spouse", "Children",
+                    "&lt; 25", "$54.76","$54.76",  "$54.76",
+                    "25-49",   "$71.30","$71.30",  "$54.76",
+                    "50-64",   "$152.63","$152.63","$54.76"
+                    ]),                    
+ 
+                    
             "", 
             makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
-            makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Patriot Exchange Program - Standard"), "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
+            makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+            makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),            
 
                 "", 
                 "",
-            makeBuyURL(loc("Buy Group") + "<br />" + loc("Group for 2 or more"), "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699")            
+            makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+            makeBuyURL(loc("Buy Group B (10% off, $39 and up)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),            
+                "",
+                "",
+            makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"), 
+            makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange")            
 
             ])
             );
@@ -3483,25 +3511,25 @@ function writeSections(legacy) {
     startRow();
     writeText("");
     document.write(makeTable(2, [
-                "Plan", "More on Patriot Exchange",
+                "Plan", "More on Taian Patriot Exchange",
 
                 "Plan Highlights",
                 makeBulletedListWithTitle("", [
-                        "Patriot Exchange Plan B Standard Plan with $50,000 limit per illness/injury meets the US Dept of state standards for Exchange visitors (J visa) which are: At least $50,000 per illness, repatriation of remains of $7,500, Medical evacuation benefits of $10,000, and a deductible not over $500.",
+                        "Taian Patriot Exchange Plan B with $50,000 limit per illness/injury is the most affordable plan that meets the US Dept of State standards for Exchange visitors (J visa) which are: At least $50,000 per illness, repatriation of remains of $7,500, Medical evacuation benefits of $10,000, and a deductible not over $500.",
+                        "All Taian Patriot Exchange plans meet the USDOS standards.",
                         "F2/J2 can buy Patriot Exchange alone (if F1/J1 buys schools plan) or buy with F1/J1",                        
-                        "Patriot Exchange Group plan available for groups of 2 or more primary applicants",
-                        "Patriot Exchange Basic Plan available at a lower cost (may not meet your visa requirements - ask us!)",
+                        "Plastic ID card (ONLY AVAILABLE FROM TAIAN) available for purchases of six months or longer",
+                        "Taian Patriot Exchange Group plan available for groups of 2 or more primary applicants",
                         "Other available options include: travel protection for baggage and valuables, legal assistance, personal liability coverage, adventure sports coverage",
                         "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays."
                         ]),
 
                 "Full Brochures", 
                 makeBulletedListWithTitle("", [
-                        makeURL("Patriot Exchange Brochure", 
-                        "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1932&a=80000699"),
+                        makeURL("Taian Patriot Exchange Brochure", 
+                        "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1932&a=80000699")
 
-                        makeURL("Patriot Exchange Group Brochure", 
-                        "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1905&a=80000699")
+
                         ])
 
 
@@ -3532,30 +3560,24 @@ function writeSections(legacy) {
     writeDontSeeWhatYouNeedRow();
     endSection();
 
-    
-    // Confucius Educator
-    startSection("pivot-confucius-educator", "Confucius Teachers and Volunteers");
+    // International Scholar
+    startSection("pivot-international-scholar", "International Scholars and Students");
 
     startRow();
-    writeText("The Confucius Institutes' rapid development has provided the opportunity for people all over the world to learn about Chinese language and culture. They are both a platform for cultural exchange between China and the world, and a bridge reinforcing friendship and cooperation between China and the rest of the world.");
+    writeText("");
     endRow();
+
+    var partnerShip = getPartnership(getPageAttribute("partner"));
+    var internationalScholarPartnerContent = partnerShip["internationalScholarContent"];
+    var hasIStPartnerContent = !(typeof internationalScholarPartnerContent === "undefined");
+    if (hasIStPartnerContent) {
+        internationalScholarPartnerContent();
+    }
 
     startRow();
-    writeText("Confucius Institute volunteer teachers come to the US with J1 visas. Their exchange program requires them to have health insurance that meets the US Department of State (USDOS) requirements for the duration of their stay. Taian International Health Insurance provides insurance for J1 educators and their dependents. Taian Insurance Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the USDOS requirements.  Many Confucius teachers choose Plan B with $250,000 or $500,000 of benefits to get the best coverage within the limit of what the Confucius institute will reimburse them for.  Taian Insurance Plan A also meets the requirements and offers affordable coverage with maternity benefits.  Plan A and Plan B are also good for Confucius teachers anywhere around the world, not just in the US.");
-    endRow();    
-
-    startRow();    
-    document.write(makeBulletedListWithTitle("The USDOS requires:", [
-
-                        "Medical benefits of at least $50,000 per accident or illness",
-                        "Repatriation of remains in the amount of $7,500",
-                        "Expenses associated with the medical evacuation of the exchange visitor to his or her home country in the amount of $10,000",
-                        "A deductible not to exceed $500 per accident or illness."
-                       
-                        ]));
-
+    writeText(makePivotURL("pivot-school-waiver", "Find your school insurance requirements and most affordable plan here"));
     endRow();
-                        
+   
     startRow();
     writeText(makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/"));
     endRow();   
@@ -3566,36 +3588,37 @@ function writeSections(legacy) {
     endRow();
 
     startRow();
-    document.write(makeTable(3,
+    document.write(makeTable(4,
             [
             // Column headers:
-            "TaiAn Insurance for Educators",
+            "TaiAn Scholars and Students",
             makeRawURL("Plan A (Student Health Advantage)", "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
-            makeRawURL("Plan B (Standard) (Patriot Exchange Program)", "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
+            makeRawURL("Plan B (Taian Patriot Exchange), $100 per illness deductible", "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+            makeRawURL("Plan B (Taian Patriot Exchange)- Annual Deductible<br />ONLY AVAILABLE FROM TAIAN", "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),            
 
             // Rest of the table:
             // Row 2
-            "Plan Type", "Designed specifically for international scholars，educators，students and their families (US visa J1/J2, F1/F2). Purchase monthly increments (from 1 to 12 months), renewable up to 5 years if initial purchase is 3 months or more.", "Designed specifically for international scholars，educators，students and their families (US visa J1/J2, F1/F2). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.",
+            "Plan Type", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 5 years if initial purchase is 3 months or more.", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.",
 
             // Row 3
-            "Maximum Limit", "$500,000 lifetime maximum, $300,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $250,000 or $500,000 per illness/injury",
+            "Maximum Limit", "$500,000 lifetime maximum, $300,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury",
 
 
 
-            "Deductible", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", 
-            "Coinsurance", "No coinsurance in PPO", "No coinsurance in PPO or out of PPO", 
-            "Hospital Room & Board", "Average semi-private room", "Average semi-private room", 
-            "Intensive Care", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)", 
-            "Maternity", "URC - If not pregnant when you purchase.   Not covered - If you are pregnant when you purchase.", "N/A", 
-            "Mental Health", "In-patient URC to $10,000, out-patient $50/day to $500", "N/A", 
-            "Emergency Room", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", 
-            "Prescription Drugs", "In-patient URC, out-patient 50%", "URC", 
-            "Accident Dental", "Injury $500, Sudden pain $350", "Injury $500, Sudden pain $350", 
-            "Accidental Death & Dismemberment", "$25,000", "$25,000", 
-            "Medical Evacuation", "$500,000", "$50,000", 
-            "Repatriation of remains", "$50,000", "$25,000", 
-            "Pre-existing conditions", "After 12 months of continuous coverage", "After 12 months of continuous coverage",
-            "Group Pricing", "N/A", "2 or more primary insured have about 10% discount", 
+            "Deductible", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$250 or $500 annual deductible<br />Taian Exclusive!<br />$5 co-pay per visit in Student Health Center.",
+            "Coinsurance", "No coinsurance in PPO", "No coinsurance in PPO or out of PPO", "No coinsurance in PPO or out of PPO",
+            "Hospital Room & Board", "Average semi-private room", "Average semi-private room", "Average semi-private room", 
+            "Intensive Care", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)",
+            "Maternity", "URC - If not pregnant when you purchase.   Not covered - If you are pregnant when you purchase.", "N/A", "N/A",
+            "Mental Health", "In-patient URC to $10,000, out-patient $50/day to $500", "N/A", "N/A",
+            "Emergency Room", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization",
+            "Prescription Drugs", "In-patient URC, out-patient 50%", "URC", "URC",
+            "Accident Dental", "Injury $500, Sudden pain $350", "Injury $500, Sudden pain $350", "Injury $500, Sudden pain $350",
+            "Accidental Death & Loss of Limb", "$25,000", "$25,000", "$25,000",
+            "Medical Evacuation", "$500,000", "$50,000", "$50,000",
+            "Repatriation of remains", "$50,000", "$25,000", "$25,000",
+            "Pre-existing conditions", "After 12 months of continuous coverage", "After 12 months of continuous coverage", "After 12 months of continuous coverage",
+            "Group Pricing", "N/A", "2 or more primary insured have about 10% discount", "2 or more primary insured have about 10% discount", 
             // Table within a table
             "Cost Per Month (Non-US Citizens)",
             makeTable(4, [
@@ -3608,7 +3631,7 @@ function writeSections(legacy) {
                     "51-64",   "$430",  "$567",   "$82"
                     ]), 
 
-            loc("$50,000 per illness/injury") +         
+            loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
             makeTable(4, [
                     "Age",     "F1/J1", "Spouse", "Children",
                     "&lt; 25", "$48.62","$48.62",  "$48.62",
@@ -3616,9 +3639,7 @@ function writeSections(legacy) {
                     "50-64",   "$135.70","$135.70","$48.62"
                     ]) +
 
-                   
-                    
-            loc("$250,000 per illness/injury") +         
+            loc("$250,000 per illness/injury benefit, $100 per illness/injury deductible") +         
             makeTable(4, [
                     "Age",     "F1/J1", "Spouse", "Children",
                     "&lt; 25", "$60.36","$60.36",  "$60.36",
@@ -3626,20 +3647,50 @@ function writeSections(legacy) {
                     "50-64",   "$168.27","$168.27","$60.36"
                     ]) + 
 
-            loc("$500,000 per illness/injury") +         
+            loc("$500,000 per illness/injury benefit, $100 per illness/injury deductible") +         
             makeTable(4, [
                     "Age",     "F1/J1", "Spouse", "Children",
                     "&lt; 25", "$63.66","$63.66",  "$63.66",
                     "25-49",   "$82.90","$82.90",  "$63.66",
                     "50-64",   "$177.53","$177.53","$63.66"
-                    ]),         
+                    ]),                      
+
+            loc("$50,000 per illness/injury benefit, $500 annual deductible<br />***LOWEST PRICE***") +         
+            makeTable(4, [
+                    "Age",     "F1/J1", "Spouse", "Children",
+                    "&lt; 25", "$43.86","$43.86",  "$43.86",
+                    "25-49",   "$57.17","$57.17",  "$43.86",
+                    "50-64",   "$122.41","$122.41","$43.86"
+                    ]) +
+            loc("$50,000 per illness/injury benefit, $250 annual deductible<br />*******BEST VALUE*******") +         
+            makeTable(4, [
+                    "Age",     "F1/J1", "Spouse", "Children",
+                    "&lt; 25", "$47.16","$47.16",  "$47.16",
+                    "25-49",   "$61.47","$61.47",  "$47.16",
+                    "50-64",   "$131.63","$131.63","$47.16"
+                    ]) +
+            loc("$100,000 per illness/injury benefit, $250 annual deductible") +         
+            makeTable(4, [
+                    "Age",     "F1/J1", "Spouse", "Children",
+                    "&lt; 25", "$54.76","$54.76",  "$54.76",
+                    "25-49",   "$71.30","$71.30",  "$54.76",
+                    "50-64",   "$152.63","$152.63","$54.76"
+                    ]),                    
+ 
+                    
             "", 
             makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
-            makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Patriot Exchange Program - Standard"), "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
+            makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+            makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),            
 
                 "", 
                 "",
-            makeBuyURL(loc("Buy Group") + "<br />" + loc("Group for 2 or more"), "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699")            
+            makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+            makeBuyURL(loc("Buy Group B (10% off, $39 and up)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),            
+                "",
+                "",
+            makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"), 
+            makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange")            
 
             ])
             );
@@ -3691,25 +3742,260 @@ function writeSections(legacy) {
     startRow();
     writeText("");
     document.write(makeTable(2, [
-                "Plan", "More on Patriot Exchange",
+                "Plan", "More on Taian Patriot Exchange",
 
                 "Plan Highlights",
                 makeBulletedListWithTitle("", [
-                        "Patriot Exchange Plan B Standard Plan with $50,000 limit per illness/injury meets the US Dept of state standards for Exchange visitors (J visa) which are: At least $50,000 per illness, repatriation of remains of $7,500, Medical evacuation benefits of $10,000, and a deductible not over $500.",
+                        "Taian Patriot Exchange Plan B with $50,000 limit per illness/injury is the most affordable plan that meets the US Dept of State standards for Exchange visitors (J visa) which are: At least $50,000 per illness, repatriation of remains of $7,500, Medical evacuation benefits of $10,000, and a deductible not over $500.",
+                        "All Taian Patriot Exchange plans meet the USDOS standards.",
                         "F2/J2 can buy Patriot Exchange alone (if F1/J1 buys schools plan) or buy with F1/J1",                        
-                        "Patriot Exchange Group plan available for groups of 2 or more primary applicants",
-                        "Patriot Exchange Basic Plan available at a lower cost (may not meet your visa requirements - ask us!)",
+                        "Plastic ID card (ONLY AVAILABLE FROM TAIAN) available for purchases of six months or longer",
+                        "Taian Patriot Exchange Group plan available for groups of 2 or more primary applicants",
                         "Other available options include: travel protection for baggage and valuables, legal assistance, personal liability coverage, adventure sports coverage",
                         "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays."
                         ]),
 
                 "Full Brochures", 
                 makeBulletedListWithTitle("", [
-                        makeURL("Patriot Exchange Brochure", 
-                        "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1932&a=80000699"),
+                        makeURL("Taian Patriot Exchange Brochure", 
+                        "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1932&a=80000699")
 
-                        makeURL("Patriot Exchange Group Brochure", 
-                        "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1905&a=80000699")
+
+                        ])
+
+
+               ]));
+
+    endRow();
+
+    startRow();
+    writeText("");
+    endRow();
+
+    startRow();
+    writeText("We have native English and Chinese speakers to answer all of your questions.");
+    endRow();
+
+    startRow();
+    writeText("Contact us to ensure a plan meets your requirements.");
+    endRow();
+
+    startRow();
+    writeText(loc("Other plans that cover more visa types:") + " " + makePivotURL("pivot-global-medical", "Global Medical") + " " + loc("and") + " " + makePivotURL("pivot-travel-insurance", "Patriot Travel"));
+    endRow();
+
+    startRow();
+    writeText("Insurance policy is underwritten by a health insurance company that is 'A' rated by A.M.Best");
+    endRow();
+
+    writeDontSeeWhatYouNeedRow();
+    endSection();
+    
+    
+    // Confucius Educator
+    startSection("pivot-confucius-educator", "Confucius Teachers and Volunteers");
+
+    startRow();
+    writeText("Confucius Institute volunteer teachers come to the US with J1 visas. Their exchange program requires them to have health insurance that meets the US Department of State (USDOS) requirements for the duration of their stay. Taian International Health Insurance provides insurance for J1 educators and their dependents. Taian Insurance Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the USDOS requirements. Many Confucius teachers choose Plan B with $250,000 or $500,000 of benefits to get the best coverage. Taian Insurance Plan A also meets the requirements and offers affordable coverage with maternity benefits. Plan A and Plan B are also good for Confucius teachers anywhere around the world, not just in the US.");
+    endRow();
+   
+
+    startRow();    
+    document.write(makeBulletedListWithTitle("The USDOS requires:", [
+
+                        "Medical benefits of at least $50,000 per accident or illness",
+                        "Repatriation of remains in the amount of $7,500",
+                        "Expenses associated with the medical evacuation of the exchange visitor to his or her home country in the amount of $10,000",
+                        "A deductible not to exceed $500 per accident or illness."
+                       
+                        ]));
+
+    endRow();
+                        
+    startRow();
+    writeText(makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/"));
+    endRow();   
+    
+    startRow();
+
+    writeText("Call from US - 9:00AM to 10:00PM Eastern time - Includes weekend: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time 7-11am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>");
+    endRow();
+
+    startRow();
+    document.write(makeTable(4,
+            [
+            // Column headers:
+            "TaiAn Insurance for Educators",
+            makeRawURL("Plan A (Student Health Advantage)", "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+            makeRawURL("Plan B (Taian Patriot Exchange), $100 per illness deductible", "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+            makeRawURL("Plan B (Taian Patriot Exchange)- Annual Deductible<br />ONLY AVAILABLE FROM TAIAN", "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),            
+
+            // Rest of the table:
+            // Row 2
+            "Plan Type", "Designed specifically for international scholars，educators，students and their families (US visa J1/J2, F1/F2). Purchase monthly increments (from 1 to 12 months), renewable up to 5 years if initial purchase is 3 months or more.", "Designed specifically for international scholars，educators，students and their families (US visa J1/J2, F1/F2). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.", "Designed specifically for international scholars，educators，students and their families (US visa J1/J2, F1/F2). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.",
+
+            // Row 3
+            "Maximum Limit", "$500,000 lifetime maximum, $300,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury",
+
+
+
+            "Deductible", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$250 or $500 annual deductible<br />Taian Exclusive!<br />$5 co-pay per visit in Student Health Center.",
+            "Coinsurance", "No coinsurance in PPO", "No coinsurance in PPO or out of PPO", "No coinsurance in PPO or out of PPO",
+            "Hospital Room & Board", "Average semi-private room", "Average semi-private room", "Average semi-private room", 
+            "Intensive Care", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)",
+            "Maternity", "URC - If not pregnant when you purchase.   Not covered - If you are pregnant when you purchase.", "N/A", "N/A",
+            "Mental Health", "In-patient URC to $10,000, out-patient $50/day to $500", "N/A", "N/A",
+            "Emergency Room", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization",
+            "Prescription Drugs", "In-patient URC, out-patient 50%", "URC", "URC",
+            "Accident Dental", "Injury $500, Sudden pain $350", "Injury $500, Sudden pain $350", "Injury $500, Sudden pain $350",
+            "Accidental Death & Loss of Limb", "$25,000", "$25,000", "$25,000",
+            "Medical Evacuation", "$500,000", "$50,000", "$50,000",
+            "Repatriation of remains", "$50,000", "$25,000", "$25,000",
+            "Pre-existing conditions", "After 12 months of continuous coverage", "After 12 months of continuous coverage", "After 12 months of continuous coverage",
+            "Group Pricing", "N/A", "2 or more primary insured have about 10% discount", "2 or more primary insured have about 10% discount", 
+            // Table within a table
+            "Cost Per Month (Non-US Citizens)",
+            makeTable(4, [
+                    "Age",     "F1/J1", "Spouse", "Children",
+                    "&lt; 19", "$72",   "$386",   "$82",
+                    "19-23",   "$95",   "$386",   "$82",
+                    "24-30",   "$110",  "$426",   "$82",
+                    "31-40",   "$197",  "$567",   "$82",
+                    "41-50",   "$322",  "$586",   "$82",
+                    "51-64",   "$430",  "$567",   "$82"
+                    ]), 
+
+            loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
+            makeTable(4, [
+                    "Age",     "F1/J1", "Spouse", "Children",
+                    "&lt; 25", "$48.62","$48.62",  "$48.62",
+                    "25-49",   "$63.37","$63.37",  "$48.62",
+                    "50-64",   "$135.70","$135.70","$48.62"
+                    ]) +
+
+            loc("$250,000 per illness/injury benefit, $100 per illness/injury deductible") +         
+            makeTable(4, [
+                    "Age",     "F1/J1", "Spouse", "Children",
+                    "&lt; 25", "$60.36","$60.36",  "$60.36",
+                    "25-49",   "$78.59","$78.59",  "$60.36",
+                    "50-64",   "$168.27","$168.27","$60.36"
+                    ]) + 
+
+            loc("$500,000 per illness/injury benefit, $100 per illness/injury deductible") +         
+            makeTable(4, [
+                    "Age",     "F1/J1", "Spouse", "Children",
+                    "&lt; 25", "$63.66","$63.66",  "$63.66",
+                    "25-49",   "$82.90","$82.90",  "$63.66",
+                    "50-64",   "$177.53","$177.53","$63.66"
+                    ]),                      
+
+            loc("$50,000 per illness/injury benefit, $250 annual deductible") +         
+            makeTable(4, [
+                    "Age",     "F1/J1", "Spouse", "Children",
+                    "&lt; 25", "$47.16","$47.16",  "$47.16",
+                    "25-49",   "$61.47","$61.47",  "$47.16",
+                    "50-64",   "$131.63","$131.63","$47.16"
+                    ]) +
+
+            loc("$100,000 per illness/injury benefit, $250 annual deductible") +         
+            makeTable(4, [
+                    "Age",     "F1/J1", "Spouse", "Children",
+                    "&lt; 25", "$54.76","$54.76",  "$54.76",
+                    "25-49",   "$71.30","$71.30",  "$54.76",
+                    "50-64",   "$152.63","$152.63","$54.76"
+                    ]) +
+            loc("$500,000 per illness/injury, $250 annual deductible") +         
+            makeTable(4, [
+                    "Age",     "F1/J1", "Spouse", "Children",
+                    "&lt; 25", "$61.75","$61.75",  "$61.75",
+                    "25-49",   "$80.41","$80.41",  "$61.75",
+                    "50-64",   "$172.20","$172.20","$61.75"
+                    ]),                                     
+ 
+                    
+            "", 
+            makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+            makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+            makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),            
+
+                "", 
+                "",
+            makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+            makeBuyURL(loc("Buy Group B (10% off, $39 and up)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),            
+                "",
+                "",
+            makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"), 
+            makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange")            
+
+            ])
+            );
+    endRow();
+
+    startRow();
+    writeText("");
+    endRow();    
+
+    
+
+    startRow();
+    writeText("");
+    endRow();
+            
+    startRow();
+    writeText("More plan details:");
+    writeText("");
+    document.write(makeTable(2, [
+                "Plan", "Student Health Advantage more benefits",
+
+                "Plan Highlights",
+                makeBulletedListWithTitle("", [
+                        "Maternity covered if you are not pregnant when you purchase.",
+                        "Routine Nursery Care: $750 maximum per period of coverage",
+                        "Newborn care is covered for 31 days after birth if the birth is covered under the plan.",                        
+                        "Emergency Room: Injury: URC; Illness resulting in hospitalization: URC; Illness without hospitalization: Subject to addtional $250 deductible",
+                        "Physical Therapy: URC -limit once per day",
+                        "Local Ambulance: Per injury up to $350, Per illness only if admitted in-patient up to $350",
+                        "Dental: Injury due to covered accident $500; Sudden & unexpected pain $350",
+                        "Intercollegiate/Interscholastic/intramural or club sports: $5,000 per injury/illness medical expenses only",
+                        "Incidental home country coverage: up to cumulative two weeks",
+                        "Terrorism coverage: up to 50,000 lifetime maximum",
+                        "Dependents can only purchase when the student purchases",
+                        "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays.",                        
+                        "Optional benefit change in Florida, Hawaii, Idaho, Massachusetts to shorten the preexisting condition exclusion from 12 months to 6 months.",
+                        "With 6 month preexisting condition benefit change there is a 10 month wait for maternity benefits."                        
+                        ]),
+
+
+                "Full Brochure", makeURL("Full Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1938&a=80000699")
+
+
+
+                ]));
+
+    endRow();
+
+    startRow();
+    writeText("");
+    document.write(makeTable(2, [
+                "Plan", "More on Taian Patriot Exchange",
+
+                "Plan Highlights",
+                makeBulletedListWithTitle("", [
+                        "Taian Patriot Exchange Plan B with $50,000 limit per illness/injury is the most affordable plan that meets the US Dept of State standards for Exchange visitors (J visa) which are: At least $50,000 per illness, repatriation of remains of $7,500, Medical evacuation benefits of $10,000, and a deductible not over $500.",
+                        "All Taian Patriot Exchange plans meet the USDOS standards.",
+                        "F2/J2 can buy Patriot Exchange alone (if F1/J1 buys schools plan) or buy with F1/J1",                        
+                        "Plastic ID card (ONLY AVAILABLE FROM TAIAN) available for purchases of six months or longer",
+                        "Taian Patriot Exchange Group plan available for groups of 2 or more primary applicants",
+                        "Other available options include: travel protection for baggage and valuables, legal assistance, personal liability coverage, adventure sports coverage",
+                        "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays."
+                        ]),
+
+                "Full Brochures", 
+                makeBulletedListWithTitle("", [
+                        makeURL("Taian Patriot Exchange Brochure", 
+                        "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1932&a=80000699")
+
+
                         ])
 
 
@@ -3777,36 +4063,37 @@ function writeSections(legacy) {
             // Column headers:
             "TaiAn Scholars and Students",
             makeRawURL("Plan A (Student Health Advantage)", "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
-            makeRawURL("Plan B (Standard) (Patriot Exchange Program)", "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
-            makeRawURL("Plan C (Patriot Travel for non-US citizens)", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
-            
+
+            makeRawURL("Plan B (Taian Patriot Exchange)", "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"), 
+            makeRawURL("Plan C (Patriot Travel for non-US citizens)", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),            
+
             // Rest of the table:
             // Row 2
-            "Plan Type", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 5 years if initial purchase is 3 months or more.", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.","Designed for anyone traveling outside their home country. F2/J2 can buy alone. Purchase daily (at least 5 days) or monthly, renewable up to 2 years if 1 month or more is purchased.",
+            "Plan Type", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 5 years if initial purchase is 3 months or more.", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.", "Designed for anyone traveling outside their home country. F2/J2 can buy alone. Purchase daily (at least 5 days) or monthly, renewable up to 2 years if 1 month or more is purchased.",
 
             // Row 3
-            "Maximum Limit", "$500,000 lifetime maximum, $300,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $250,000 or $500,000 per illness/injury", "$50,000, $100,000, $500,000, $1,000,000 lifetime maximum",
+            "Maximum Limit", "$500,000 lifetime maximum, $300,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury", "$50,000, $100,000, $500,000, $1,000,000 lifetime maximum",
 
 
 
-            "Deductible", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$0, $100, $250, $500, $1,000, $2,500 annual deductible",
+            "Deductible Type", "$100 per illness/injury", "$100 per illness/injury;<br />$250 or $500 annual deductible<br />Annual deductible is Taian Exclusive!", "$0, $100, $250, $500, $1,000, $2,500 annual deductible",
+            "Student Health Center Copay", "$5 copay, no deductible", "$5 copay, no deductible", "N/A",
             "Coinsurance", "No coinsurance in PPO", "No coinsurance in PPO or out of PPO", "In-PPO 90% to $5,000, then 100%<br />Out-PPO, 80% to $5,000 then 100%",
-            "Hospital Room & Board", "Average semi-private room", "Average semi-private room", "Average semi-private room",
+            "Hospital Room & Board", "Average semi-private room", "Average semi-private room", "Average semi-private room", 
             "Intensive Care", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)",
             "Maternity", "URC - If not pregnant when you purchase.   Not covered - If you are pregnant when you purchase.", "N/A", "N/A",
             "Mental Health", "In-patient URC to $10,000, out-patient $50/day to $500", "N/A", "N/A",
             "Emergency Room", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization",
             "Prescription Drugs", "In-patient URC, out-patient 50%", "URC", "URC",
             "Accident Dental", "Injury $500, Sudden pain $350", "Injury $500, Sudden pain $350", "Injury up to policy max, Sudden pain N/A",
-            "Accidental Death & Dismemberment", "$25,000", "$25,000", "$25,000",
-            "Medical Evacuation", "$500,000", "$50,000", "$500,000", 
+            "Accidental Death & Loss of Limb", "$25,000", "$25,000", "$25,000",
+            "Medical Evacuation", "$500,000", "$50,000", "$500,000",
             "Repatriation of remains", "$50,000", "$25,000", "$50,000",
             "Pre-existing conditions", "After 12 months of continuous coverage", "After 12 months of continuous coverage", "Up to $50,000 coverage ($2,500 for over 65 years old) for sudden and unexpected recurrence. Otherwise not covered.",
             "Group Pricing", "N/A", "2 or more primary insured have about 10% discount", "5 or more primary insured have about 10% discount"
-            
-                
+
            
-            
+
             ])
             );
     endRow();
@@ -3815,6 +4102,7 @@ function writeSections(legacy) {
     writeText("");
     endRow();    
 
+    
 
     startRow();
     writeText("");
@@ -3845,8 +4133,8 @@ function writeSections(legacy) {
                         ]),
 
 
-                "Full Brochure", makeURL("Full Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1938&a=80000699"),
-                "", makeBuyURL("Buy Student Health Advantage", "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")
+                "Full Brochure", makeURL("Full Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1938&a=80000699")
+
 
 
                 ]));
@@ -3856,44 +4144,39 @@ function writeSections(legacy) {
     startRow();
     writeText("");
     document.write(makeTable(2, [
-                "Plan", "More on Patriot Exchange",
+                "Plan", "More on Taian Patriot Exchange",
 
                 "Plan Highlights",
                 makeBulletedListWithTitle("", [
-                        "Patriot Exchange Plan B Standard Plan with $50,000 limit per illness/injury meets the US Dept of state standards for Exchange visitors (J visa) which are: At least $50,000 per illness, repatriation of remains of $7,500, Medical evacuation benefits of $10,000, and a deductible not over $500.",
+                        "Taian Patriot Exchange Plan B with $50,000 limit per illness/injury is the most affordable plan that meets the US Dept of State standards for Exchange visitors (J visa) which are: At least $50,000 per illness, repatriation of remains of $7,500, Medical evacuation benefits of $10,000, and a deductible not over $500.",
+                        "All Taian Patriot Exchange plans meet the USDOS standards.",
                         "F2/J2 can buy Patriot Exchange alone (if F1/J1 buys schools plan) or buy with F1/J1",                        
-                        "Patriot Exchange Group plan available for groups of 2 or more primary applicants",
-                        "Patriot Exchange Basic Plan available at a lower cost (may not meet your visa requirements - ask us!)",
+                        "Plastic ID card (ONLY AVAILABLE FROM TAIAN) available for purchases of six months or longer",
+                        "Taian Patriot Exchange Group plan available for groups of 2 or more primary applicants",
                         "Other available options include: travel protection for baggage and valuables, legal assistance, personal liability coverage, adventure sports coverage",
                         "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays."
                         ]),
 
                 "Full Brochures", 
                 makeBulletedListWithTitle("", [
-                        makeURL("Patriot Exchange Brochure", 
-                        "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1932&a=80000699"),
+                        makeURL("Taian Patriot Exchange Brochure", 
+                        "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1932&a=80000699")
 
-                        makeURL("Patriot Exchange Group Brochure", 
-                        "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1905&a=80000699")
-                        ]),
-                "Apply Now", 
-                makeBulletedListWithTitle("", [
-                        makeBuyURL("Buy Plan B (Patriot Exchange Program)", "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
-                        makeBuyURL("Buy Plan B Group (Patriot Exchange Group)", "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699")
+
                         ])
+
 
                ]));
 
-    endRow();
-
+    endRow();    
+    
     startRow();
-    writeText("More about Patriot Travel");
+    writeText("");
     endRow();
     
     startRow();
     writePatriotTravelTable();
     endRow();    
-    
     startRow();
     writeText("");
     endRow();
@@ -3918,6 +4201,172 @@ function writeSections(legacy) {
     endSection();
 
 
+    // Taian Patriot Exchange Price Chart
+    startSection("pivot-taian-patriotexchange", "Taian Patriot Exchange Price Chart");
+
+
+
+    startRow();
+    writeText("");
+    endRow();
+    
+
+    startRow();
+
+    writeText("Call from US - 9:00AM to 10:00PM Eastern time - Includes weekend: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time 7-11am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>");
+    endRow();
+
+    startRow();
+    document.write(makeTable(4,
+            [
+            // Column headers:
+            "TaiAn Scholars and Students",
+
+            makeRawURL("Plan B (Taian Patriot Exchange), $100 per illness deductible", "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+            makeRawURL("Plan B (Taian Patriot Exchange), $250 annual deductible", "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+            makeRawURL("Plan B (Taian Patriot Exchange), $500 annual deductible", "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),            
+            
+            // Rest of the table:
+            // Row 2
+            "Plan Type", "Per Illness or Injury Deductible", "Annual Deductible", "Annual Deductible",
+
+            // Row 3
+            "Maximum Limit", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury",
+            "Deductible", "$100 per illness/injury", "$250 per policy year", "$500 per policy year",
+            "", "", "*******BEST VALUE*******", "******LOWEST PRICE******",
+
+            "Cost Per Month (Non-US Citizens)",
+            loc("$50,000 per illness/injury, $100 per illness deductible") +         
+            makeTable(4, [
+                    "Age",     "F1/J1", "Spouse", "Children",
+                    "&lt; 25", "$48.62","$48.62",  "$48.62",
+                    "25-49",   "$63.37","$63.37",  "$48.62",
+                    "50-64",   "$135.70","$135.70","$48.62"
+                    ]) +
+
+            loc("$100,000 per illness/injury, $100 per illness deductible") +         
+            makeTable(4, [
+                    "Age",     "F1/J1", "Spouse", "Children",
+                    "&lt; 25", "$56.45","$56.45",  "$56.45",
+                    "25-49",   "$73.50","$73.50",  "$56.45",
+                    "50-64",   "$157.35","$157.35","$56.45"
+                    ]) + 
+                    
+            loc("$250,000 per illness/injury, $100 per illness deductible") +         
+            makeTable(4, [
+                    "Age",     "F1/J1", "Spouse", "Children",
+                    "&lt; 25", "$60.36","$60.36",  "$60.36",
+                    "25-49",   "$78.59","$78.59",  "$60.36",
+                    "50-64",   "$168.27","$168.27","$60.36"
+                    ]) + 
+
+            loc("$500,000 per illness/injury, $100 per illness deductible") +         
+            makeTable(4, [
+                    "Age",     "F1/J1", "Spouse", "Children",
+                    "&lt; 25", "$63.66","$63.66",  "$63.66",
+                    "25-49",   "$82.90","$82.90",  "$63.66",
+                    "50-64",   "$177.53","$177.53","$63.66"
+                    ]),
+
+            loc("$50,000 per illness/injury, $250 annual deductible") +         
+            makeTable(4, [
+                    "Age",     "F1/J1", "Spouse", "Children",
+                    "&lt; 25", "$47.16","$47.16",  "$47.16",
+                    "25-49",   "$61.47","$61.47",  "$47.16",
+                    "50-64",   "$131.63","$131.63","$47.16"
+                    ]) +
+
+            loc("$100,000 per illness/injury, $250 annual deductible") +         
+            makeTable(4, [
+                    "Age",     "F1/J1", "Spouse", "Children",
+                    "&lt; 25", "$54.76","$54.76",  "$54.76",
+                    "25-49",   "$71.30","$71.30",  "$54.76",
+                    "50-64",   "$152.63","$152.63","$54.76"
+                    ]) + 
+                    
+            loc("$250,000 per illness/injury, $250 annual deductible") +         
+            makeTable(4, [
+                    "Age",     "F1/J1", "Spouse", "Children",
+                    "&lt; 25", "$58.55","$58.55",  "$58.55",
+                    "25-49",   "$76.23","$76.23",  "$58.55",
+                    "50-64",   "$163.22","$163.22","$58.55"
+                    ]) + 
+
+            loc("$500,000 per illness/injury, $250 annual deductible") +         
+            makeTable(4, [
+                    "Age",     "F1/J1", "Spouse", "Children",
+                    "&lt; 25", "$61.75","$61.75",  "$61.75",
+                    "25-49",   "$80.41","$80.41",  "$61.75",
+                    "50-64",   "$172.20","$172.20","$61.75"
+                    ]),   
+            loc("$50,000 per illness/injury, $500 annual deductible") +         
+            makeTable(4, [
+                    "Age",     "F1/J1", "Spouse", "Children",
+                    "&lt; 25", "$43.86","$43.86",  "$43.86",
+                    "25-49",   "$57.17","$57.17",  "$43.86",
+                    "50-64",   "$122.41","$122.41","$43.86"
+                    ]) +
+
+            loc("$100,000 per illness/injury, $500 annual deductible") +         
+            makeTable(4, [
+                    "Age",     "F1/J1", "Spouse", "Children",
+                    "&lt; 25", "$50.92","$50.92",  "$50.92",
+                    "25-49",   "$66.30","$66.30",  "$50.92",
+                    "50-64",   "$141.95","$141.95","$50.92"
+                    ]) + 
+                    
+            loc("$250,000 per illness/injury, $500 annual deductible") +         
+            makeTable(4, [
+                    "Age",     "F1/J1", "Spouse", "Children",
+                    "&lt; 25", "$54.45","$54.45",  "$54.45",
+                    "25-49",   "$70.90","$70.90",  "$54.45",
+                    "50-64",   "$151.80","$151.80","$54.45"
+                    ]) + 
+
+            loc("$500,000 per illness/injury, $500 annual deductible") +         
+            makeTable(4, [
+                    "Age",     "F1/J1", "Spouse", "Children",
+                    "&lt; 25", "$57.43","$57.43",  "$57.43",
+                    "25-49",   "$74.78","$74.78",  "$57.43",
+                    "50-64",   "$160.15","$160.15","$57.43"
+                    ]),                      
+     
+            "", 
+            makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+            makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+            makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+
+                "", 
+            makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+            makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+            makeBuyURL(loc("Buy Group B (10% off, $39 and up)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),            
+            
+            "", "Group price 10% below individual", "Group price 10% below individual", "Group price 10% below individual"
+            
+                
+           
+            
+            ])
+            );
+    endRow();
+
+    startRow();
+    writeText("");
+    endRow();    
+
+
+    startRow();
+    writeText("");
+    endRow();
+            
+
+
+
+    endSection();
+
+    
+    
+    
     
     // J Scholar
     startSection("pivot-j-scholar", "J Scholar");
@@ -3960,7 +4409,7 @@ function writeSections(legacy) {
                 "Accidental Dental Injury", "Up to the Maximum", "Up to the Maximum",
                 "Sport & Activities Coverage", "Up to the Maximum for basic sports", "Up to the Maximum for basic sports",
                 "Trip Interruption", "Up to $5,000", "Up to $5,000", 
-                "Accidental Death & Dismemberment", "$25,000 principal sum", "$25,000 principal sum", 
+                "Accidental Death & Loss of Limb", "$25,000 principal sum", "$25,000 principal sum", 
                 "Emergency Medical Evacuation", "$500,000", "$500,000", 
                 "Repatriation of remains", "$50,000", "$50,000", 
                 "Pre-existing conditions", "Up to $50,000 coverage ($2,500 for over 65 years old) for sudden and unexpected recurrence. Otherwise not covered.", "Up to policy limit for sudden and unexpected recurrence if covered by domestic health policy ($2,500 for over 65 years old). Up to $20,000 if not covered by domestic policy.",
@@ -4025,15 +4474,19 @@ function writeSections(legacy) {
    
    
     // International Scholar
-    startSection("pivot-international-scholar", "International Scholar");
+    startSection("pivot-scholar-student", "International Scholar/Student");
 
     var partnerShip = getPartnership(getPageAttribute("partner"));
-    var internationalScholarPartnerContent = partnerShip["internationalScholarContent"];
-    var hasISchPartnerContent = !(typeof internationalScholarPartnerContent === "undefined");
-    if (hasISchPartnerContent) {
-        internationalScholarPartnerContent();
+    var scholarStudentPartnerContent = partnerShip["scholarStudentContent"];
+    var hasSStuPartnerContent = !(typeof scholarStudentPartnerContent === "undefined");
+    if (hasSStuPartnerContent) {
+        scholarStudentPartnerContent();
     }
 
+    startRow();
+    writeText("");
+    endRow();
+    
     startRow();
     writeText(makePivotURL("pivot-school-waiver", "Find your school insurance requirements and most affordable plan here"));
     endRow();
@@ -4048,79 +4501,41 @@ function writeSections(legacy) {
     endRow();
 
     startRow();
-    document.write(makeTable(3,
+    document.write(makeTable(4,
             [
             // Column headers:
-            "TaiAn Scholars",
-            makeRawURL("Plan A (Student Health Advantage)", "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
-            makeRawURL("Plan B (Standard) (Patriot Exchange Program)", "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
+            "TaiAn Scholars and Students",
+            makeRawURL("Plan B (Taian Patriot Exchange), $100 per illness deductible", "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+
+            makeRawURL("Plan B (Taian Patriot Exchange)- Annual Deductible<br />ONLY AVAILABLE FROM TAIAN", "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"), 
+            makeRawURL("Plan C (Patriot Travel for non-US citizens)", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),            
 
             // Rest of the table:
             // Row 2
-            "Plan Type", "Designed specifically for international scholars (J1,J2). Purchase monthly, renewable up to 5 years if 3 months or more are purchased.", "Designed specifically for international scholars(J1,J2). Purchase monthly, renewable up to 4 years.",
+            "Plan Type", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.", "Designed for anyone traveling outside their home country. F2/J2 can buy alone. Purchase daily (at least 5 days) or monthly, renewable up to 2 years if 1 month or more is purchased.",
 
             // Row 3
-            "Maximum Limit", "$500,000 lifetime maximum, $300,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $250,000 or $500,000 per illness/injury",
+            "Maximum Limit", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury", "$50,000, $100,000, $500,000, $1,000,000 lifetime maximum",
 
 
 
-            "Deductible", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", 
-            "Coinsurance", "No coinsurance in PPO", "No coinsurance in PPO or out of PPO", 
-            "Hospital Room & Board", "Average semi-private room", "Average semi-private room", 
-            "Intensive Care", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)", 
-            "Maternity", "URC - If not pregnant when you purchase.   Not covered - If you are pregnant when you purchase.", "N/A", 
-            "Mental Health", "In-patient URC to $10,000, out-patient $50/day to $500", "N/A", 
-            "Emergency Room", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", 
-            "Prescription Drugs", "In-patient URC, out-patient 50%", "URC", 
-            "Accident Dental", "Injury $500, Sudden pain $350", "Injury $500, Sudden pain $350", 
-            "Accidental Death & Dismemberment", "$25,000", "$25,000", 
-            "Medical Evacuation", "$500,000", "$50,000", 
-            "Repatriation of remains", "$50,000", "$25,000", 
-            "Pre-existing conditions", "After 12 months of continuous coverage", "After 12 months of continuous coverage",
-            "Group Pricing", "N/A", "2 or more primary insured have about 10% discount", 
-            // Table within a table
-            "Cost Per Month (Non-US Citizens)",
-            makeTable(4, [
-                    "Age",     "J1", "Spouse", "Children",
-                    "&lt; 19", "$72",   "$386",   "$82",
-                    "19-23",   "$95",   "$386",   "$82",
-                    "24-30",   "$110",  "$426",   "$82",
-                    "31-40",   "$197",  "$567",   "$82",
-                    "41-50",   "$322",  "$586",   "$82",
-                    "51-64",   "$430",  "$567",   "$82"
-                    ]), 
+            "Deductible", "$100 per illness/injury", "$250 or $500 annual deductible<br />Annual deductible is Taian Exclusive!", "$0, $100, $250, $500, $1,000, $2,500 annual deductible",
+            "Student Health Center Copay", "$5 copay, no deductible", "$5 copay, no deductible", "N/A",
+            "Coinsurance", "No coinsurance in PPO or out of PPO", "No coinsurance in PPO or out of PPO", "In-PPO 90% to $5,000, then 100%<br />Out-PPO, 80% to $5,000 then 100%",
+            "Hospital Room & Board", "Average semi-private room", "Average semi-private room", "Average semi-private room", 
+            "Intensive Care", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)",
+            "Maternity", "N/A", "N/A", "N/A",
+            "Mental Health", "N/A", "N/A", "N/A",
+            "Emergency Room", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization",
+            "Prescription Drugs", "URC", "URC", "URC",
+            "Accident Dental", "Injury $500, Sudden pain $350", "Injury $500, Sudden pain $350", "Injury up to policy max, Sudden pain N/A",
+            "Accidental Death & Loss of Limb", "$25,000", "$25,000", "$25,000",
+            "Medical Evacuation", "$50,000", "$50,000", "$500,000",
+            "Repatriation of remains", "$25,000", "$25,000", "$50,000",
+            "Pre-existing conditions", "After 12 months of continuous coverage", "After 12 months of continuous coverage", "Up to $50,000 coverage ($2,500 for over 65 years old) for sudden and unexpected recurrence. Otherwise not covered.",
+            "Group Pricing", "2 or more primary insured have about 10% discount", "2 or more primary insured have about 10% discount", "5 or more primary insured have about 10% discount"
 
-            loc("$50,000 per illness/injury") +         
-            makeTable(4, [
-                    "Age",     "J1", "Spouse", "Children",
-                    "&lt; 25", "$48.62","$48.62",  "$48.62",
-                    "25-49",   "$63.37","$63.37",  "$48.62",
-                    "50-64",   "$135.70","$135.70","$48.62"
-                    ]) +
-
-            loc("$250,000 per illness/injury") +         
-            makeTable(4, [
-                    "Age",     "J1", "Spouse", "Children",
-                    "&lt; 25", "$60.36","$60.36",  "$60.36",
-                    "25-49",   "$78.59","$78.59",  "$60.36",
-                    "50-64",   "$168.27","$168.27","$60.36"
-                    ]) + 
-
-            loc("$500,000 per illness/injury") +         
-            makeTable(4, [
-                    "Age",     "J1", "Spouse", "Children",
-                    "&lt; 25", "$63.66","$63.66",  "$63.66",
-                    "25-49",   "$82.90","$82.90",  "$63.66",
-                    "50-64",   "$177.53","$177.53","$63.66"
-                    ]),                      
-     
-            "", 
-            makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
-            makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Patriot Exchange Program - Standard"), "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699"),
-
-                "", 
-                "",
-            makeBuyURL(loc("Buy Group") + "<br />" + loc("Group for 2 or more"), "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699")            
+           
 
             ])
             );
@@ -4136,67 +4551,44 @@ function writeSections(legacy) {
     writeText("");
     endRow();
             
-    startRow();
-    writeText("More plan details:");
-    writeText("");
-    document.write(makeTable(2, [
-                "Plan", "Student Health Advantage more benefits",
 
-                "Plan Highlights",
-                makeBulletedListWithTitle("", [
-                        "Maternity covered if you are not pregnant when you purchase.",
-                        "Routine Nursery Care: $750 maximum per period of coverage",
-                        "Newborn care is covered for 31 days after birth if the birth is covered under the plan.",                        
-                        "Emergency Room: Injury: URC; Illness resulting in hospitalization: URC; Illness without hospitalization: Subject to addtional $250 deductible",
-                        "Physical Therapy: URC -limit once per day",
-                        "Local Ambulance: Per injury up to $350, Per illness only if admitted in-patient up to $350",
-                        "Dental: Injury due to covered accident $500; Sudden & unexpected pain $350",
-                        "Intercollegiate/Interscholastic/intramural or club sports: $5,000 per injury/illness medical expenses only",
-                        "Incidental home country coverage: up to cumulative two weeks",
-                        "Terrorism coverage: up to 50,000 lifetime maximum",
-                        "Dependents can only purchase when the scholar purchases",
-                        "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays.",                        
-                        "Optional benefit change in Florida, Hawaii, Idaho, Massachusetts to shorten the preexisting condition exclusion from 12 months to 6 months.",
-                        "With 6 month preexisting condition benefit change there is a 10 month wait for maternity benefits."                        
-                        ]),
-
-
-                "Full Brochure", makeURL("Full Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1938&a=80000699")
-
-
-
-                ]));
-
-    endRow();
 
     startRow();
     writeText("");
     document.write(makeTable(2, [
-                "Plan", "More on Patriot Exchange",
+                "Plan", "More on Taian Patriot Exchange",
 
                 "Plan Highlights",
                 makeBulletedListWithTitle("", [
-                        "Patriot Exchange Plan B Standard Plan with $50,000 limit per illness/injury meets the US Dept of state standards for Exchange visitors (J visa) which are: At least $50,000 per illness, repatriation of remains of $7,500, Medical evacuation benefits of $10,000, and a deductible not over $500.",
-                        "J2 can buy Patriot Exchange alone (if J1 buys schools plan) or buy with J1",                        
-                        "Patriot Exchange Group plan available for groups of 2 or more primary applicants",
+                        "Taian Patriot Exchange Plan B with $50,000 limit per illness/injury is the most affordable plan that meets the US Dept of State standards for Exchange visitors (J visa) which are: At least $50,000 per illness, repatriation of remains of $7,500, Medical evacuation benefits of $10,000, and a deductible not over $500.",
+                        "All Taian Patriot Exchange plans meet the USDOS standards.",
+                        "F2/J2 can buy Patriot Exchange alone (if F1/J1 buys schools plan) or buy with F1/J1",                        
+                        "Plastic ID card (ONLY AVAILABLE FROM TAIAN) available for purchases of six months or longer",
+                        "Taian Patriot Exchange Group plan available for groups of 2 or more primary applicants",
                         "Other available options include: travel protection for baggage and valuables, legal assistance, personal liability coverage, adventure sports coverage",
                         "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays."
                         ]),
 
                 "Full Brochures", 
                 makeBulletedListWithTitle("", [
-                        makeURL("Patriot Exchange Brochure", 
-                        "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1932&a=80000699"),
+                        makeURL("Taian Patriot Exchange Brochure", 
+                        "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1932&a=80000699")
 
-                        makeURL("Patriot Exchange Group Brochure", 
-                        "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1905&a=80000699")
+
                         ])
 
 
                ]));
 
+    endRow();    
+    
+    startRow();
+    writeText("");
     endRow();
-
+    
+    startRow();
+    writePatriotTravelTable();
+    endRow();    
     startRow();
     writeText("");
     endRow();
@@ -4218,6 +4610,9 @@ function writeSections(legacy) {
     endRow();
 
     writeDontSeeWhatYouNeedRow();
+
+
+
     endSection();
     
 
@@ -4523,7 +4918,7 @@ function writeSections(legacy) {
                 "Accidental Dental Injury", "Up to the Maximum", "Up to the Maximum",
                 "Sport & Activities Coverage", "Up to the Maximum for basic sports", "Up to the Maximum for basic sports",
                 "Trip Interruption", "Up to $5,000", "Up to $5,000", 
-                "Accidental Death & Dismemberment", "$25,000 principal sum", "$25,000 principal sum", 
+                "Accidental Death & Loss of Limb", "$25,000 principal sum", "$25,000 principal sum", 
                 "Emergency Medical Evacuation", "$500,000", "$500,000", 
                 "Repatriation of remains", "$50,000", "$50,000", 
                 "Pre-existing conditions", "Up to $50,000 coverage ($2,500 for over 65 years old) for sudden and unexpected recurrence. Otherwise not covered.", "Up to policy limit for sudden and unexpected recurrence if covered by domestic health policy ($2,500 for over 65 years old). Up to $20,000 if not covered by domestic policy.",
@@ -4586,8 +4981,8 @@ function writeSections(legacy) {
                 
                 "", 
 
-                makeBuyURL(loc("Buy Group")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
-                makeBuyURL(loc("Buy Group")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699")
+                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699")
                 ]));
     endRow();
 
