@@ -3374,7 +3374,7 @@ function writeSections(legacy) {
 
 
 
-            "Deductible", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$250 or $500 annual deductible<br />Taian Exclusive!<br />$5 co-pay per visit in Student Health Center.",
+            "Deductible (Insured pays before insurance pays)", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$250 or $500 annual deductible<br />Taian Exclusive!<br />$5 co-pay per visit in Student Health Center.",
             "Coinsurance", "No coinsurance in PPO", "No coinsurance in PPO or out of PPO", "No coinsurance in PPO or out of PPO",
             "Hospital Room & Board", "Average semi-private room", "Average semi-private room", "Average semi-private room", 
             "Intensive Care", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)",
@@ -3422,7 +3422,8 @@ function writeSections(legacy) {
                     "&lt; 25", "$63.66","$63.66",  "$63.66",
                     "25-49",   "$82.90","$82.90",  "$63.66",
                     "50-64",   "$177.53","$177.53","$63.66"
-                    ]),                      
+                    ])
+                    + makeURL(loc("Click here for more benefit level and deductible options"),"#p=pivot-taian-patriotexchange"),                      
 
             loc("$50,000 per illness/injury benefit, $500 annual deductible<br />***LOWEST PRICE***") +         
             makeTable(4, [
@@ -3444,8 +3445,8 @@ function writeSections(legacy) {
                     "&lt; 25", "$54.76","$54.76",  "$54.76",
                     "25-49",   "$71.30","$71.30",  "$54.76",
                     "50-64",   "$152.63","$152.63","$54.76"
-                    ]),                    
- 
+                    ])                   
+                    + makeURL(loc("Click here for more benefit level and deductible options"),"#p=pivot-taian-patriotexchange"), 
                     
             "", 
             makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
@@ -3455,11 +3456,8 @@ function writeSections(legacy) {
                 "", 
                 "",
             makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
-            makeBuyURL(loc("Buy Group B (10% off, $39 and up)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),            
-                "",
-                "",
-            makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"), 
-            makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange")            
+            makeBuyURL(loc("Buy Group B (10% off, $39 and up)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699")            
+          
 
             ])
             );
@@ -3527,7 +3525,9 @@ function writeSections(legacy) {
                 "Full Brochures", 
                 makeBulletedListWithTitle("", [
                         makeURL("Taian Patriot Exchange Brochure", 
-                        "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1932&a=80000699")
+                        "http://producer.imglobal.com/producerdocuments.ashx?documentid=2857"),
+                        makeURL("Taian Patriot Exchange Group Brochure", 
+                        "http://producer.imglobal.com/producerdocuments.ashx?documentid=2858")                        
 
 
                         ])
@@ -3605,7 +3605,7 @@ function writeSections(legacy) {
 
 
 
-            "Deductible", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$250 or $500 annual deductible<br />Taian Exclusive!<br />$5 co-pay per visit in Student Health Center.",
+            "Deductible (Insured pays before insurance pays)", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$250 or $500 annual deductible<br />Taian Exclusive!<br />$5 co-pay per visit in Student Health Center.",
             "Coinsurance", "No coinsurance in PPO", "No coinsurance in PPO or out of PPO", "No coinsurance in PPO or out of PPO",
             "Hospital Room & Board", "Average semi-private room", "Average semi-private room", "Average semi-private room", 
             "Intensive Care", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)",
@@ -3653,7 +3653,8 @@ function writeSections(legacy) {
                     "&lt; 25", "$63.66","$63.66",  "$63.66",
                     "25-49",   "$82.90","$82.90",  "$63.66",
                     "50-64",   "$177.53","$177.53","$63.66"
-                    ]),                      
+                    ])
+                    + makeURL(loc("Click here for more benefit level and deductible options"),"#p=pivot-taian-patriotexchange"),                    
 
             loc("$50,000 per illness/injury benefit, $500 annual deductible<br />***LOWEST PRICE***") +         
             makeTable(4, [
@@ -3675,7 +3676,8 @@ function writeSections(legacy) {
                     "&lt; 25", "$54.76","$54.76",  "$54.76",
                     "25-49",   "$71.30","$71.30",  "$54.76",
                     "50-64",   "$152.63","$152.63","$54.76"
-                    ]),                    
+                    ])
+                    + makeURL(loc("Click here for more benefit level and deductible options"),"#p=pivot-taian-patriotexchange"),                    
  
                     
             "", 
@@ -3686,11 +3688,8 @@ function writeSections(legacy) {
                 "", 
                 "",
             makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
-            makeBuyURL(loc("Buy Group B (10% off, $39 and up)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),            
-                "",
-                "",
-            makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"), 
-            makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange")            
+            makeBuyURL(loc("Buy Group B (10% off, $39 and up)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699")            
+           
 
             ])
             );
@@ -3758,7 +3757,9 @@ function writeSections(legacy) {
                 "Full Brochures", 
                 makeBulletedListWithTitle("", [
                         makeURL("Taian Patriot Exchange Brochure", 
-                        "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1932&a=80000699")
+                        "http://producer.imglobal.com/producerdocuments.ashx?documentid=2857"),
+                        makeURL("Taian Patriot Exchange Group Brochure", 
+                        "http://producer.imglobal.com/producerdocuments.ashx?documentid=2858")                        
 
 
                         ])
@@ -3839,7 +3840,7 @@ function writeSections(legacy) {
 
 
 
-            "Deductible", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$250 or $500 annual deductible<br />Taian Exclusive!<br />$5 co-pay per visit in Student Health Center.",
+            "Deductible (Insured pays before insurance pays)", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$250 or $500 annual deductible<br />Taian Exclusive!<br />$5 co-pay per visit in Student Health Center.",
             "Coinsurance", "No coinsurance in PPO", "No coinsurance in PPO or out of PPO", "No coinsurance in PPO or out of PPO",
             "Hospital Room & Board", "Average semi-private room", "Average semi-private room", "Average semi-private room", 
             "Intensive Care", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)",
@@ -3887,7 +3888,8 @@ function writeSections(legacy) {
                     "&lt; 25", "$63.66","$63.66",  "$63.66",
                     "25-49",   "$82.90","$82.90",  "$63.66",
                     "50-64",   "$177.53","$177.53","$63.66"
-                    ]),                      
+                    ])
+                    + makeURL(loc("Click here for more benefit level and deductible options"),"#p=pivot-taian-patriotexchange"),                   
 
             loc("$50,000 per illness/injury benefit, $250 annual deductible") +         
             makeTable(4, [
@@ -3910,7 +3912,8 @@ function writeSections(legacy) {
                     "&lt; 25", "$61.75","$61.75",  "$61.75",
                     "25-49",   "$80.41","$80.41",  "$61.75",
                     "50-64",   "$172.20","$172.20","$61.75"
-                    ]),                                     
+                    ])
+                     + makeURL(loc("Click here for more benefit level and deductible options"),"#p=pivot-taian-patriotexchange"),                   
  
                     
             "", 
@@ -3921,11 +3924,8 @@ function writeSections(legacy) {
                 "", 
                 "",
             makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
-            makeBuyURL(loc("Buy Group B (10% off, $39 and up)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),            
-                "",
-                "",
-            makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"), 
-            makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange")            
+            makeBuyURL(loc("Buy Group B (10% off, $39 and up)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699")            
+           
 
             ])
             );
@@ -3993,8 +3993,9 @@ function writeSections(legacy) {
                 "Full Brochures", 
                 makeBulletedListWithTitle("", [
                         makeURL("Taian Patriot Exchange Brochure", 
-                        "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1932&a=80000699")
-
+                        "http://producer.imglobal.com/producerdocuments.ashx?documentid=2857"),
+                        makeURL("Taian Patriot Exchange Group Brochure", 
+                        "http://producer.imglobal.com/producerdocuments.ashx?documentid=2858")
 
                         ])
 
@@ -4076,7 +4077,7 @@ function writeSections(legacy) {
 
 
 
-            "Deductible Type", "$100 per illness/injury", "$100 per illness/injury;<br />$250 or $500 annual deductible<br />Annual deductible is Taian Exclusive!", "$0, $100, $250, $500, $1,000, $2,500 annual deductible",
+            "Deductible (Insured pays before insurance pays)", "$100 per illness/injury", "$100 per illness/injury;<br />$250 or $500 annual deductible<br />Annual deductible is Taian Exclusive!", "$0, $100, $250, $500, $1,000, $2,500 annual deductible",
             "Student Health Center Copay", "$5 copay, no deductible", "$5 copay, no deductible", "N/A",
             "Coinsurance", "No coinsurance in PPO", "No coinsurance in PPO or out of PPO", "In-PPO 90% to $5,000, then 100%<br />Out-PPO, 80% to $5,000 then 100%",
             "Hospital Room & Board", "Average semi-private room", "Average semi-private room", "Average semi-private room", 
@@ -4160,8 +4161,9 @@ function writeSections(legacy) {
                 "Full Brochures", 
                 makeBulletedListWithTitle("", [
                         makeURL("Taian Patriot Exchange Brochure", 
-                        "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1932&a=80000699")
-
+                        "http://producer.imglobal.com/producerdocuments.ashx?documentid=2857"),
+                        makeURL("Taian Patriot Exchange Group Brochure", 
+                        "http://producer.imglobal.com/producerdocuments.ashx?documentid=2858")
 
                         ])
 
@@ -4231,8 +4233,9 @@ function writeSections(legacy) {
             "Plan Type", "Per Illness or Injury Deductible", "Annual Deductible", "Annual Deductible",
 
             // Row 3
+            "Deductible (Insured pays before insurance pays)", "$100 per illness/injury", "$250 per policy year", "$500 per policy year",
             "Maximum Limit", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury",
-            "Deductible", "$100 per illness/injury", "$250 per policy year", "$500 per policy year",
+
             "", "", "*******BEST VALUE*******", "******LOWEST PRICE******",
 
             "Cost Per Month (Non-US Citizens)",
@@ -4519,7 +4522,7 @@ function writeSections(legacy) {
 
 
 
-            "Deductible", "$100 per illness/injury", "$250 or $500 annual deductible<br />Annual deductible is Taian Exclusive!", "$0, $100, $250, $500, $1,000, $2,500 annual deductible",
+            "Deductible (Insured pays before insurance pays)", "$100 per illness/injury", "$250 or $500 annual deductible<br />Annual deductible is Taian Exclusive!", "$0, $100, $250, $500, $1,000, $2,500 annual deductible",
             "Student Health Center Copay", "$5 copay, no deductible", "$5 copay, no deductible", "N/A",
             "Coinsurance", "No coinsurance in PPO or out of PPO", "No coinsurance in PPO or out of PPO", "In-PPO 90% to $5,000, then 100%<br />Out-PPO, 80% to $5,000 then 100%",
             "Hospital Room & Board", "Average semi-private room", "Average semi-private room", "Average semi-private room", 
@@ -4572,7 +4575,9 @@ function writeSections(legacy) {
                 "Full Brochures", 
                 makeBulletedListWithTitle("", [
                         makeURL("Taian Patriot Exchange Brochure", 
-                        "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1932&a=80000699")
+                        "http://producer.imglobal.com/producerdocuments.ashx?documentid=2857"),
+                        makeURL("Taian Patriot Exchange Group Brochure", 
+                        "http://producer.imglobal.com/producerdocuments.ashx?documentid=2858")                        
 
 
                         ])
