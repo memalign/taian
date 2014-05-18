@@ -99,8 +99,12 @@ function referralSubstitution(key) {
         aesh: "l=cn&p=pivot-school-waiver&adid=aesh", 
         shisu: "l=cn&p=pivot-school-waiver&adid=shisu",         
         ucsh: "l=cn&p=pivot-school-waiver&adid=ucsh",
-        aeshmain: "l=cn&p=pivot-home&adid=aeshmain",        
-
+        aeshmain: "l=cn&p=pivot-home&adid=aeshmain", 
+        nl2: "l=cn&p=pivot-international-student&adid=nl2",
+        nl: "l=cn&p=pivot-school-waiver&adid=nl",        
+        knl2: "l=cn&p=pivot-international-student&adid=knl2",
+        knl: "l=cn&p=pivot-school-waiver&adid=knl",         
+        
         chinamarketing: "partner=chinamarketing&p=pivot-home&adid=chinamarketing",        
         wll: "l=cn&partner=wll&p=pivot-home&adid=wll",         
         confucius: "p=pivot-confucius-educator", 
@@ -1574,21 +1578,22 @@ function writeSectionsForForms() {
 
     endSection();    
     
-    startSection("exchange-group-form-success", "Exchange Group Information Submitted");
+    startSection("exchange-group-form-success", "TaiAn Patriot Exchange Group Information Submitted");
     startRow();
     writeText("We will email you when the online application is ready for you to complete your purchase.");
     endRow();
     endSection();
 
-    startSection("exchange-group-form", "Exchange Group Application");
+    startSection("exchange-group-form", "TaiAn Patriot Exchange Group Application");
     writeText("Please fill in the answers in English.  You can use your preferred language if you do not know the English answer");    
     startRow();
-    startForm("Exchange Group Application Information", "post.php", "exchange-group-form-success");
+    startForm("TaiAn Patriot Exchange Group Application Information", "post.php", "exchange-group-form-success");
     document.write(makeTableWithStyle("formTable", 2, [
-                makeFormTextInput("Maximum Benefit per illness/injury ($50,000, $250,000, $500,000)"),
+                makeFormTextInput("Maximum Benefit per illness/injury ($50,000, $100,000, $250,000, $500,000)"),
+                makeFormTextInput("Do you want a $100 per illness deductible, $250 annual deductible, or $500 annual deductible?"),
                 makeFormTextInput("Do you want adventure sports rider?"),
                 makeFormTextInput("Do you want the add on benefit? (Covers lost baggage, legal assistance, personal liability, damage to third party, high school sports)"),
-                makeFormTextInput("Do you want STANDARD coverage that meets J visa requirements, or BASIC coverage that has less benefits?"),
+
                 makeFormTextInput("Sponsoring Organization"),
                 makeFormTextInput("Contact First name/Last name"),
                 makeFormTextInput("Address"),
@@ -1684,18 +1689,19 @@ function writeSectionsForForms() {
     endSection();        
  
 
-    startSection("exchange-form-success", "Patriot Exchange Information Submitted");
+    startSection("exchange-form-success", "TaiAn Patriot Exchange Information Submitted");
     startRow();
     writeText("We will email you when the online application is ready for you to complete your purchase.");
     endRow();
     endSection();
 
-    startSection("exchange-form", "Patriot Exchange (Taian Plan B) pre-application");
+    startSection("exchange-form", "TaiAn Patriot Exchange (TaiAn Plan B) pre-application");
     writeText("Please fill in the answers in English.  You can use your preferred language if you do not know the English answer");
     startRow();
-    startForm("Patriot Exchange Application Information", "post.php", "exchange-form-success");
+    startForm("TaiAn Patriot Exchange Application Information", "post.php", "exchange-form-success");
     document.write(makeTableWithStyle("formTable", 2, [
-                makeFormTextInput("Maximum Limit per illness or injury ($50,000, $250,000, $500,000) (We suggest at least $250,000 to make sure you have adequate coverage)"),
+                makeFormTextInput("Maximum Limit per illness or injury ($50,000, $100,000, $250,000, $500,000)"),
+                makeFormTextInput("Do you want a $100 per illness deductible, $250 annual deductible, or $500 annual deductible?"),
                 makeFormTextInput("Primary Insured-First Name"),
                 makeFormTextInput("Primary Insured-Last Name"),
                 makeFormTextInput("Primary Insured-Gender"),
@@ -3333,7 +3339,7 @@ function writeSections(legacy) {
     startSection("pivot-international-student", "International Scholars and Students");
 
     startRow();
-    writeText("Taian International Health Insurance provides International Scholar and Student Insurance for US visa holders (F1 visa, J1 visa, OPT, and M1 visa) and their dependents. Taian Insurance Plan A and Plan B meet many schools\' student insurance standards and almost every schools\' J1 scholar insurance standards and are more affordable than most school plans. All J visa holders are required to meet the US Department of State (USDOS) requirements and their school requirements for the duration of their visa. Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the USDOS requirements. Most schools requirements for J1 scholars are the same as the USDOS, however some schools have higher requirements. Please click the links below to see your school requirements and US Department of State requirements.");
+    writeText("Taian International Health Insurance provides IMG International Scholar and Student Insurance for US visa holders (F1 visa, J1 visa, OPT, and M1 visa) and their dependents. Taian Insurance Plan A and Plan B meet many schools\' student insurance standards and almost every schools\' J1 scholar insurance standards and are more affordable than most school plans. All J visa holders are required to meet the US Department of State (USDOS) requirements and their school requirements for the duration of their visa. Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the USDOS requirements. Most schools requirements for J1 scholars are the same as the USDOS, however some schools have higher requirements. Please click the links below to see your school requirements and US Department of State requirements.");
     endRow();
 
     var partnerShip = getPartnership(getPageAttribute("partner"));
@@ -3356,6 +3362,8 @@ function writeSections(legacy) {
     writeText("Call from US - 9:00AM to 10:00PM Eastern time - Includes weekend: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time 7-11am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>");
     endRow();
 
+   
+
     startRow();
     document.write(makeTable(4,
             [
@@ -3367,6 +3375,7 @@ function writeSections(legacy) {
 
             // Rest of the table:
             // Row 2
+            "Insurance Provider", "IMG (International Medical Group)", "IMG (International Medical Group)", "IMG (International Medical Group)",
             "Plan Type", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 5 years if initial purchase is 3 months or more.", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.",
 
             // Row 3
@@ -3374,7 +3383,8 @@ function writeSections(legacy) {
 
 
 
-            "Deductible (Insured pays before insurance pays)", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$250 or $500 annual deductible<br />Taian Exclusive!<br />$5 co-pay per visit in Student Health Center.",
+            "Deductible (Insured pays before insurance pays)", "$100 per illness/injury: For each illness or injury, insured pays $100 before insurance pays.", "$100 per illness/injury: For each illness or injury, insured pays $100 before insurance pays 100%.", "$250 or $500 annual deductible: During whole policy period (not over a year), insured pays $250 or $500 before insurance pays 100%.<br />IMG product, Taian Exclusive!",
+            "Student Health Center Copay", "$5 copay, no deductible", "$5 copay, no deductible", "$5 copay, no deductible",
             "Coinsurance", "No coinsurance in PPO", "No coinsurance in PPO or out of PPO", "No coinsurance in PPO or out of PPO",
             "Hospital Room & Board", "Average semi-private room", "Average semi-private room", "Average semi-private room", 
             "Intensive Care", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)",
@@ -3407,7 +3417,7 @@ function writeSections(legacy) {
                     "25-49",   "$63.37","$63.37",  "$48.62",
                     "50-64",   "$135.70","$135.70","$48.62"
                     ]) +
-
+            loc("<br /><br />") +
             loc("$250,000 per illness/injury benefit, $100 per illness/injury deductible") +         
             makeTable(4, [
                     "Age",     "F1/J1", "Spouse", "Children",
@@ -3415,7 +3425,7 @@ function writeSections(legacy) {
                     "25-49",   "$78.59","$78.59",  "$60.36",
                     "50-64",   "$168.27","$168.27","$60.36"
                     ]) + 
-
+            loc("<br /><br />") +
             loc("$500,000 per illness/injury benefit, $100 per illness/injury deductible") +         
             makeTable(4, [
                     "Age",     "F1/J1", "Spouse", "Children",
@@ -3432,6 +3442,7 @@ function writeSections(legacy) {
                     "25-49",   "$57.17","$57.17",  "$43.86",
                     "50-64",   "$122.41","$122.41","$43.86"
                     ]) +
+            loc("<br /><br />") +                    
             loc("$50,000 per illness/injury benefit, $250 annual deductible<br />*******BEST VALUE*******") +         
             makeTable(4, [
                     "Age",     "F1/J1", "Spouse", "Children",
@@ -3439,6 +3450,7 @@ function writeSections(legacy) {
                     "25-49",   "$61.47","$61.47",  "$47.16",
                     "50-64",   "$131.63","$131.63","$47.16"
                     ]) +
+            loc("<br /><br />") +                    
             loc("$100,000 per illness/injury benefit, $250 annual deductible") +         
             makeTable(4, [
                     "Age",     "F1/J1", "Spouse", "Children",
@@ -3598,6 +3610,7 @@ function writeSections(legacy) {
 
             // Rest of the table:
             // Row 2
+            "Insurance Provider", "IMG (International Medical Group)", "IMG (International Medical Group)", "IMG (International Medical Group)",            
             "Plan Type", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 5 years if initial purchase is 3 months or more.", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.",
 
             // Row 3
@@ -3605,7 +3618,8 @@ function writeSections(legacy) {
 
 
 
-            "Deductible (Insured pays before insurance pays)", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$250 or $500 annual deductible<br />Taian Exclusive!<br />$5 co-pay per visit in Student Health Center.",
+            "Deductible (Insured pays before insurance pays)", "$100 per illness/injury: For each illness or injury, insured pays $100 before insurance pays.", "$100 per illness/injury: For each illness or injury, insured pays $100 before insurance pays 100%.", "$250 or $500 annual deductible: During whole policy period (not over a year), insured pays $250 or $500 before insurance pays 100%.<br />IMG product, Taian Exclusive!",
+            "Student Health Center Copay", "$5 copay, no deductible", "$5 copay, no deductible", "$5 copay, no deductible",
             "Coinsurance", "No coinsurance in PPO", "No coinsurance in PPO or out of PPO", "No coinsurance in PPO or out of PPO",
             "Hospital Room & Board", "Average semi-private room", "Average semi-private room", "Average semi-private room", 
             "Intensive Care", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)",
@@ -3833,14 +3847,15 @@ function writeSections(legacy) {
 
             // Rest of the table:
             // Row 2
+            "Insurance Provider", "IMG (International Medical Group)", "IMG (International Medical Group)", "IMG (International Medical Group)",           
             "Plan Type", "Designed specifically for international scholars，educators，students and their families (US visa J1/J2, F1/F2). Purchase monthly increments (from 1 to 12 months), renewable up to 5 years if initial purchase is 3 months or more.", "Designed specifically for international scholars，educators，students and their families (US visa J1/J2, F1/F2). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.", "Designed specifically for international scholars，educators，students and their families (US visa J1/J2, F1/F2). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.",
 
             // Row 3
             "Maximum Limit", "$500,000 lifetime maximum, $300,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury",
 
 
-
-            "Deductible (Insured pays before insurance pays)", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$100 per illness/injury, $5 co-pay per visit in Student Health Center.", "$250 or $500 annual deductible<br />Taian Exclusive!<br />$5 co-pay per visit in Student Health Center.",
+            "Deductible (Insured pays before insurance pays)", "$100 per illness/injury: For each illness or injury, insured pays $100 before insurance pays.", "$100 per illness/injury: For each illness or injury, insured pays $100 before insurance pays 100%.", "$250 or $500 annual deductible: During whole policy period (not over a year), insured pays $250 or $500 before insurance pays 100%.<br />IMG product, Taian Exclusive!",
+            "Student Health Center Copay", "$5 copay, no deductible", "$5 copay, no deductible", "$5 copay, no deductible",
             "Coinsurance", "No coinsurance in PPO", "No coinsurance in PPO or out of PPO", "No coinsurance in PPO or out of PPO",
             "Hospital Room & Board", "Average semi-private room", "Average semi-private room", "Average semi-private room", 
             "Intensive Care", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)",
@@ -4070,6 +4085,7 @@ function writeSections(legacy) {
 
             // Rest of the table:
             // Row 2
+            "Insurance Provider", "IMG (International Medical Group)", "IMG (International Medical Group)", "IMG (International Medical Group)",            
             "Plan Type", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 5 years if initial purchase is 3 months or more.", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.", "Designed for anyone traveling outside their home country. F2/J2 can buy alone. Purchase daily (at least 5 days) or monthly, renewable up to 2 years if 1 month or more is purchased.",
 
             // Row 3
@@ -4077,7 +4093,7 @@ function writeSections(legacy) {
 
 
 
-            "Deductible (Insured pays before insurance pays)", "$100 per illness/injury", "$100 per illness/injury;<br />$250 or $500 annual deductible<br />Annual deductible is Taian Exclusive!", "$0, $100, $250, $500, $1,000, $2,500 annual deductible",
+            "Deductible (Insured pays before insurance pays)", "$100 per illness/injury", "Two options: 1) $100 per illness/injury; 2) Annual deductible ($250 or $500)<br />Annual deductible is Taian Exclusive!", "$0, $100, $250, $500, $1,000, $2,500 annual deductible",
             "Student Health Center Copay", "$5 copay, no deductible", "$5 copay, no deductible", "N/A",
             "Coinsurance", "No coinsurance in PPO", "No coinsurance in PPO or out of PPO", "In-PPO 90% to $5,000, then 100%<br />Out-PPO, 80% to $5,000 then 100%",
             "Hospital Room & Board", "Average semi-private room", "Average semi-private room", "Average semi-private room", 
@@ -4398,7 +4414,7 @@ function writeSections(legacy) {
                 "Taian Travel Insurance",
                 makeRawURL("Patriot America For non-US citizens traveling internationally", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
                 makeRawURL("Patriot International For US citizens traveling outside  home country", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
-
+                "Insurance Provider", "IMG (International Medical Group)", "IMG (International Medical Group)", 
                 "Lifetime maximum", "$50,000, $100,000, $500,000, $1,000,000", "$50,000, $100,000, $500,000, $1,000,000", 
                 "Term", "5 days to 2 years", "5 days to 2 years", 
                 "Deductible", "$0, $100, $250, $500, $1,000, $2,500", "$0, $100, $250, $500, $1,000, $2,500", 
@@ -4515,6 +4531,7 @@ function writeSections(legacy) {
 
             // Rest of the table:
             // Row 2
+            "Insurance Provider", "IMG (International Medical Group)", "IMG (International Medical Group)", "IMG (International Medical Group)",            
             "Plan Type", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.", "Designed for anyone traveling outside their home country. F2/J2 can buy alone. Purchase daily (at least 5 days) or monthly, renewable up to 2 years if 1 month or more is purchased.",
 
             // Row 3
@@ -4522,7 +4539,7 @@ function writeSections(legacy) {
 
 
 
-            "Deductible (Insured pays before insurance pays)", "$100 per illness/injury", "$250 or $500 annual deductible<br />Annual deductible is Taian Exclusive!", "$0, $100, $250, $500, $1,000, $2,500 annual deductible",
+            "Deductible (Insured pays before insurance pays)", "$100 per illness/injury: For each illness or injury, insured pays $100 before insurance pays.", "$250 or $500 annual deductible: During whole policy period (not over a year), insured pays $250 or $500 before insurance pays 100%.<br />IMG product, Taian Exclusive!", "$0, $100, $250, $500, $1,000, $2,500 annual deductible",
             "Student Health Center Copay", "$5 copay, no deductible", "$5 copay, no deductible", "N/A",
             "Coinsurance", "No coinsurance in PPO or out of PPO", "No coinsurance in PPO or out of PPO", "In-PPO 90% to $5,000, then 100%<br />Out-PPO, 80% to $5,000 then 100%",
             "Hospital Room & Board", "Average semi-private room", "Average semi-private room", "Average semi-private room", 

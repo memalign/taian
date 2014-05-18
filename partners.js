@@ -14,7 +14,7 @@ function getPartnership(partner) {
                     contactInfo: ["Call from US - 9:00AM to 10:00PM Eastern time - Includes weekend: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English)",
                                   "Call from China: 950-4044-2336 (Chinese, Beijing time 7-11am, no long distance charges)",
                                   "WeChat ID: wxid_taian_usa",
-                                  "Skype: chris.lee136",
+                                  "Business Address: 13747 Fieldshire Terr - Carmel, IN 46074 - USA",
                                   "Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>"
                                  ],
                     tabs: [
