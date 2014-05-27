@@ -514,7 +514,8 @@ if ($requestedSkips > 0) {
 echo "There are about " . count($allResults) . " policies to process.<br />";
 
 # Prune ones that are no longer relevant - "CANCELLED TO INCEPTION", "DECLINED, PAYMENT", "SOLD, PART TERMINATED", "PENDNG RENEWAL"
-$pruneStatuses = array("CANCELLED TO INCEPTION", "DECLINED, PAYMENT", "SOLD, PART TERMINATED", "PENDNG RENEWAL");
+$pruneTerminalStatuses = array("CANCELLED TO INCEPTION", "SOLD, PART TERMINATED");
+$pruneStatuses = array_merge(array("DECLINED, PAYMENT", "PENDNG RENEWAL"), $pruneTerminalStatuses);
 foreach ($allResults as $key=>$value) {
     if (in_array($value["certificate_status"], $pruneStatuses)) {
         updateToIgnore($dbhandle, $value, "pruned status");
@@ -566,6 +567,7 @@ foreach ($allResults as $key=>$value) {
     # Check sibling effective dates, unset us if any sibling has a higher one
     # If effective dates are identical, compare expiration dates.
     foreach ($siblings as $sibling) {
+        $isTerminal = in_array($sibling["certificate_status"], $pruneTerminalStatuses) || in_array($myRow["certificate_status"], $pruneTerminalStatuses);
         $sibEffectiveDate = floatval($sibling[$effectiveDateKey]);
         $sibExpirationDate = floatval($sibling[$expirationDateKey]); 
         $sibRowID = intval($sibling["rowid"]);
@@ -576,7 +578,9 @@ foreach ($allResults as $key=>$value) {
         $iAmNewer = false;
 
         if (abs($myEffectiveDate - $sibEffectiveDate) < $epsilon) {
-            if (abs($myExpirationDate - $sibExpirationDate) < $epsilon) {
+            // We've found that terminal certificate statuses (such as CANCELLED) have an expiration date that's the same as the effective date even if
+            // the older rows for the same policy have an effective date farther in the future.
+            if ($isTerminal || (abs($myExpirationDate - $sibExpirationDate) < $epsilon)) {
                 $sameAge = true;
             } elseif ($sibExpirationDate < $myExpirationDate) {
                 $iAmNewer = true;
