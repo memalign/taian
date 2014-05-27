@@ -1112,6 +1112,15 @@ function referralSubstitution(key) {
         acnbvc: "l=cn&partner=bvc&p=pivot-international-student&adid=acnbvc",        
         gbvc: "partner=bvc&p=pivot-international-student&adid=gbvc",
         ibvc: "partner=bvc&p=pivot-international-student",
+
+        umsl: "partner=umsl&p=pivot-home&adid=sumsl",
+        cnumsl: "l=cn&partner=umsl&p=pivot-home&adid=scnumsl",   
+        gcnumsl: "l=cn&partner=umsl&p=pivot-international-student&adid=gcnumsl",
+        acnumsl: "l=cn&partner=umsl&p=pivot-international-student&adid=acnumsl",        
+        gumsl: "partner=umsl&p=pivot-international-student&adid=gumsl",
+        iumsl: "partner=umsl&p=pivot-international-student",  
+        icnumsl: "l=cn&partner=umsl&p=pivot-international-student",         
+        umslexch: "l=cn&partner=umsl&p=exchange-form",        
         cwu: "partner=cwu&p=pivot-home&adid=scwu",
         cncwu: "l=cn&partner=cwu&p=pivot-home&adid=scncwu",   
         gcncwu: "l=cn&partner=cwu&p=pivot-international-studentandscholar&adid=gcncwu",
@@ -3036,6 +3045,11 @@ function writeSectionForSchoolWaiverRequirements() {
                 "",
                 makeURL("School J1 requirement", "http://international.missouri.edu/come-to-mu/faculty-staff/j1-scholars/insurance.php"),
                 makeURL("Plan that meets this school's standards for J scholar", "#usdos"),
+
+                makeURL("University of Missouri Saint Louis (MO)", "http://www.umsl.edu/"),
+                makeURL("School F1 requirement", "http://www.umsl.edu/~intelstu/Files/PDFs/Health%20Insurance%20Waiver%20Request.pdf"),
+                makeURL("School J1 requirement", "http://www.umsl.edu/~intelstu/International%20Scholars/j1info.html#healthinsurance"),
+                makeURL("Health insurance for University of Missouri Saint Louis Students and Scholars", "#iumsl"), 
                 
                 makeURL("University of Nebraska - Lincoln (NE)", "http://www.unl.edu/"),
                 makeURL("School F1 requirement", "http://health.unl.edu/billing/insurancewaiverpolicy/"),

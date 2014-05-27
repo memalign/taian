@@ -1007,7 +1007,30 @@ function getPartnership(partner) {
                                 ]));
                         endRow();
                     }
-              },               
+              },   
+
+         umsl: {
+                    windowTitle: "TaiAn Health Insurance for University of Missouri Saint Louis",
+                    pageTitle: "TaiAn Health Insurance for University of Missouri Saint Louis",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText("University of Missouri Saint Louis J scholars and students who are not full time have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS. Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.");
+                        
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("University of Missouri Saint Louis Scholar Requirements", "http://www.umsl.edu/~intelstu/International%20Scholars/j1info.html#healthinsurance"),
+                                makeURL("University of Missouri Saint Louis Student Requirements", "http://www.umsl.edu/~intelstu/Files/PDFs/Health%20Insurance%20Waiver%20Request.pdf")                        
+                                ]));
+                        endRow();
+                    }
+              },                      
               
          cwu: {
                     windowTitle: "TaiAn Health Insurance for Central Washington University",
