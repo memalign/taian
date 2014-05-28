@@ -317,9 +317,13 @@ l['Georgia State University Scholar Requirements'] = "Georgia State University �
 l['Georgia State University Student Requirements'] = "Georgia State University 留学生医疗保险的标准";
 l['Health insurance for Georgia State University Students and Scholars'] = "符合Georgia State University标准的留学生和访问学者医疗保险";
 
-l['Washington University in St. Louis Scholar Requirements'] = "Washington University in St. Louis 访问学者医疗保险的标准";
-l['TaiAn Health Insurance for Washington University in St. Louis'] = "泰安国际医疗保险 - Washington University in St. Louis";
-l['Health insurance for Washington University in St. Louis Scholars'] = "符合Washington University in St. Louis标准的访问学者医疗保险";
+l['Washington University in St. Louis & WUSTL Medical School Scholar Requirements'] = "Washington University in St. Louis & WUSTL Medical School 访问学者医疗保险的标准";
+l['TaiAn Health Insurance for Washington University in St. Louis & WUSTL Medical School'] = "泰安国际医疗保险 - Washington University in St. Louis & WUSTL Medical School";
+l['Health insurance for Washington University in St. Louis & WUSTL Medical School Scholars'] = "符合Washington University in St. Louis & WUSTL Medical School标准的访问学者医疗保险";
+
+l['William & Mary Scholar Requirements'] = "William & Mary 访问学者医疗保险的标准";
+l['TaiAn Health Insurance for William & Mary'] = "泰安国际医疗保险 - William & Mary";
+l['Health insurance for William & Mary Scholars'] = "符合William & Mary标准的访问学者医疗保险";
 
 l['Taian Scholar/Student Insurance Plan A and Plan B meet West Virginia University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $100,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500; 5. Copay not over $10. Plan B with $250,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to West Virginia University in St. Louis as proof of insurance.'] = "West Virginia University 对J1访问学者（不包括全日制在校学生)购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$100,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500; 5. 挂号费不超过$10。泰安访问学者/留学生保险计划B Standard Plan 里的$250,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email电子保单，其中含有你的保险卡和确认信。你可以将确认信发给学校证明你已购买满足学校要求的保险。";
 l['West Virginia University Scholar Requirements'] = "West Virginia University 访问学者医疗保险的标准";

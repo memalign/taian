@@ -502,6 +502,13 @@ function referralSubstitution(key) {
         iwustl: "partner=wustl&p=pivot-international-student",
         icnwustl: "l=cn&partner=wustl&p=pivot-international-student",  
 
+        wm: "partner=wm&p=pivot-home&adid=swm",
+        cnwm: "l=cn&partner=wm&p=pivot-home&adid=scnwm",   
+        gcnwm: "l=cn&partner=wm&p=pivot-international-student&adid=gcnwm",
+        gwm: "partner=wm&p=pivot-international-student&adid=gwm",
+        acnwm: "l=cn&partner=wm&p=pivot-international-student&adid=acnwm", 
+        iwm: "partner=wm&p=pivot-international-student",
+        icnwm: "l=cn&partner=wm&p=pivot-international-student",          
   
         
         ucsf: "partner=ucsf&p=pivot-home&adid=sucsf",
@@ -3265,10 +3272,10 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School J1 requirement", "http://ip.wsu.edu/global-services/scholars/J-1/medical-insurance.html"),
                 makeURL("Health insurance for Washington State University Scholars", "#iwsu"),
                 
-                makeURL("Washington University in St. Louis (MO)", "http://www.wustl.edu/"),
+                makeURL("Washington University in St. Louis & WUSTL Medical School(MO)", "http://www.wustl.edu/"),
                 makeURL("School F1 requirement", "http://shs.wustl.edu/Insurance/Pages/default.aspx"),
                 makeURL("School J1 requirement", "http://oiss.wustl.edu/scholars/j-1-exchange-visitors/maintaining-j-1status/"),
-                makeURL("Health insurance for Washington University in St. Louis Scholars", "#iwustl"),
+                makeURL("Health insurance for Washington University in St. Louis & WUSTL Medical School Scholars", "#iwustl"),
                 
                 makeURL("Wayne State University (MI)", "http://www.wayne.edu/"),
                 makeURL("School F1 requirement", "http://www.oiss.wayne.edu/health-insurance/health-insurance.php#scholars"),
@@ -3294,6 +3301,11 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School F1 requirement", "http://www.wwu.edu/chw/student_health/billing.shtml"),
                 makeURL("School J1 requirement", "http://www.wwu.edu/chw/student_health/billing.shtml"),
                 makeURL("Health insurance for Western Washington University Students and Scholars", "#iwwu"),
+                
+                makeURL("William & Mary (VA)", "http://www.wm.edu"),
+                makeURL("School F1 requirement", "http://www.wm.edu/offices/healthcenter/studentinsurance/waiverinfo/index.php#International"),
+                makeURL("School J1 requirement", "http://www.wm.edu/offices/revescenter/issp/life/insurance/scholar/index.php"),
+                makeURL("Health insurance for William & Mary Scholars", "#iwm"),                
                 
                 makeURL("Yale University (CT)", "http://www.yale.edu/"),
                 makeURL("School F1 requirement", "http://www.yale.edu/oiss/life/practical/health/index.html"),

@@ -3731,8 +3731,8 @@ function getPartnership(partner) {
               },           
 
         wustl: {
-                    windowTitle: "TaiAn Health Insurance for Washington University in St. Louis",
-                    pageTitle: "TaiAn Health Insurance for Washington University in St. Louis",
+                    windowTitle: "TaiAn Health Insurance for Washington University in St. Louis & WUSTL Medical School",
+                    pageTitle: "TaiAn Health Insurance for Washington University in St. Louis & WUSTL Medical School",
                     tabs: [
                             "pivot-home",
                             "pivot-international-student",
@@ -3743,13 +3743,34 @@ function getPartnership(partner) {
                           
                     internationalStudentContent: function () {
                         startRow();
-                        writeText(loc("Washington University in St. Louis ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+                        writeText(loc("Washington University in St. Louis & WUSTL Medical School ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("Washington University in St. Louis Scholar Requirements", "http://oiss.wustl.edu/scholars/j-1-exchange-visitors/maintaining-j-1status/")                        
+                                makeURL("Washington University in St. Louis & WUSTL Medical School Scholar Requirements", "http://oiss.wustl.edu/scholars/j-1-exchange-visitors/maintaining-j-1status/")                        
                                 ]));
                         endRow();
                     }
               }, 
+              
+        wm: {
+                    windowTitle: "TaiAn Health Insurance for William & Mary",
+                    pageTitle: "TaiAn Health Insurance for William & Mary",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText(loc("William & Mary ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("William & Mary Scholar Requirements", "http://www.wm.edu/offices/revescenter/issp/life/insurance/scholar/index.php")                        
+                                ]));
+                        endRow();
+                    }
+              },               
 
             
               
