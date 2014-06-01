@@ -105,6 +105,11 @@ function referralSubstitution(key) {
         knl2: "l=cn&p=pivot-international-student&adid=knl2",
         knl: "l=cn&p=pivot-school-waiver&adid=knl",         
         
+        newyorkservicecenter: "l=cn&partner=newyorkservicecenter&p=pivot-international-student",
+        nyscs: "l=cn&partner=newyorkservicecenter&p=pivot-international-student",
+        nyscl: "l=cn&partner=newyorkservicecenter&p=pivot-school-waiver", 
+        nysct: "l=cn&partner=newyorkservicecenter&p=pivot-travel-insurance",        
+        
         chinamarketing: "partner=chinamarketing&p=pivot-home&adid=chinamarketing",        
         wll: "l=cn&partner=wll&p=pivot-home&adid=wll",         
         confucius: "p=pivot-confucius-educator", 

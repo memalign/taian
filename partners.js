@@ -30,6 +30,31 @@ function getPartnership(partner) {
                             
                },
                
+         newyorkservicecenter: {
+                    windowTitle: "New York Service Center for Chinese Study Fellows - TaiAn International Health Insurance",
+                    pageTitle: "New York Service Center for Chinese Study Fellows - TaiAn International Health Insurance",
+                    logoImage: "longevity.gif",
+                    logoHeight: "30",
+                    logoWidth: "30",
+                    contactInfo: ["Call from US - 9:00AM to 10:00PM Eastern time - Includes weekend: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English)",
+                                  "Call from China: 950-4044-2336 (Chinese, Beijing time 7-11am, no long distance charges)",
+                                  "WeChat ID: wxid_taian_usa",
+                                  "Business Address: 13747 Fieldshire Terr - Carmel, IN 46074 - USA",
+                                  "Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>"
+                                 ],
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-travel-insurance"
+
+
+
+
+                          ]
+                            
+               },              
+               
+               
         baidu1: {
                     windowTitle: "TaiAn International Health Insurance | 泰安国际医疗保险",
                     pageTitle: "TaiAn International Health Insurance",
