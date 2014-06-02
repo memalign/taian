@@ -209,7 +209,17 @@ function getPartnership(partner) {
                             "pivot-travel-insurance",
                             "pivot-aboutus"
                           ]
-              },                 
+              },  
+
+        beijing: {
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ]
+              },                    
 
         mdy: {
                     tabs: [

@@ -906,6 +906,7 @@ function referralSubstitution(key) {
         gb1: "l=cn&partner=gb1&p=pivot-global-medical&adid=gb1",        
         upgrade: "l=cn&partner=upgrade&p=pivot-home&adid=upgrade",        
         lng: "l=cn&partner=lng",
+        beijing: "l=cn&partner=beijing&adid=beijing",        
         lngglbl: "l=cn&partner=lng&p=pivot-global-medical&adid=lng",
         lngglblform: "l=cn&partner=lng&p=global-form&adid=lng",        
         mdy: "l=cn&partner=mdy&p=pivot-home&adid=mdy",  
