@@ -661,7 +661,16 @@ function referralSubstitution(key) {
         acnfiu: "l=cn&partner=fiu&p=pivot-international-student&adid=acnfiu", 
         ifiu: "partner=fiu&p=pivot-international-student",
         icnfiu: "l=cn&partner=fiu&p=pivot-international-student",        
-        fiuexch: "l=cn&partner=fiu&p=exchange-form",       
+        fiuexch: "l=cn&partner=fiu&p=exchange-form", 
+
+        fau: "partner=fau&p=pivot-home&adid=sfau",
+        cnfau: "l=cn&partner=fau&p=pivot-home&adid=scnfau",   
+        gcnfau: "l=cn&partner=fau&p=pivot-international-student&adid=gcnfau",
+        gfau: "partner=fau&p=pivot-international-student&adid=gfau",
+        acnfau: "l=cn&partner=fau&p=pivot-international-student&adid=acnfau", 
+        ifau: "partner=fau&p=pivot-international-student",
+        icnfau: "l=cn&partner=fau&p=pivot-international-student",        
+       
         
         lsu: "partner=lsu&p=pivot-home&adid=slsu",
         cnlsu: "l=cn&partner=lsu&p=pivot-home&adid=scnlsu",   
@@ -909,7 +918,9 @@ function referralSubstitution(key) {
         beijing: "l=cn&partner=beijing&adid=beijing",  
         beijingglblform: "l=cn&partner=beijing&p=global-form&adid=beijing",         
         lngglbl: "l=cn&partner=lng&p=pivot-global-medical&adid=lng",
-        lngglblform: "l=cn&partner=lng&p=global-form&adid=lng",        
+        lngglblform: "l=cn&partner=lng&p=global-form&adid=lng", 
+        cag: "l=cn&partner=cag&p=pivot-global-medical&adid=cag",
+        esl: "partner=esl&p=pivot-travel-insurance&adid=cag",       
         mdy: "l=cn&partner=mdy&p=pivot-home&adid=mdy",  
         mdys: "l=cn&partner=mdy&p=pivot-school-waiver&adid=mdy",        
         wxct: "l=cn&p=pivot-home&adid=wxct",
@@ -2552,6 +2563,11 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School J1 requirement", "http://www.emory.edu/isss/scholars/maintaining_j1_status_scholars/health_insurance.html"),
                 makeURL("Health insurance for Emory University Scholars", "#iemory"),
 
+                makeURL("Florida Atlantic University (FL)", "http://www.fau.edu/"),
+                makeURL("School F1 requirement", "http://www.fau.edu/shs/PDFs/Alternate_Insurance_Form_2014_2015.pdf"),
+                makeURL("School J1 requirement", "http://www.fau.edu/isss/pdf/INSURANCE_COMPLIANCE_FORM_FOR_J_Exhange_VIsitors_Formfill.pdf"),
+                makeURL("Health insurance for Florida Atlantic University Students and Scholars", "#ifau"),                
+                               
                 makeURL("Florida International University (FL)", "https://www.fiu.edu/"),
                 makeURL("School F1 requirement", "http://studenthealth.fiu.edu/_assets/docs/Forms/Insurance%20Forms/Alternate%20Insurance%20Compliance%20Form%202013%20to%202014.pdf"),
                 makeURL("School J1 requirement", "http://isss.fiu.edu/j1scholars_health.htm"),
@@ -2598,9 +2614,9 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Health insurance for Georgia State University Students and Scholars", "#igsu"),
                 
                 makeURL("Harvard University and Harvard Medical School(MA)", "http://www.harvard.edu/"),
-                makeURL("School F1 requirement", "http://www.hio.harvard.edu/healthcareandinsurance/students/healthinsurancerequirementsandwaivers/"),
+                makeURL("School F1 requirement", "http://hushp.harvard.edu/waiver-checklist"),
                 makeURL("School J1 requirement", "http://www.hio.harvard.edu/healthcareandinsurance/scholars/requirementsforjvisaholders/"),
-                makeURL("Health insurance for Harvard University and Harvard Medical School Scholars", "#iharvard"),
+                makeURL("Health insurance for Harvard University and Harvard Medical School Students and Scholars", "#iharvard"),
 
                 makeURL("Hostos Community College, CUNY (NY)", "http://www.hostos.cuny.edu/"),
                 makeURL("School F1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
@@ -4965,7 +4981,7 @@ function writeSections(legacy) {
     startSection("pivot-travel-insurance", "Travel Insurance");
 
     startRow();
-    writeText("Taian Travel Insurance is designed for anyone (U.S. and non-U.S. citizens) traveling out of their home country, regardless of visa requirements. Cost starts at about $1/day. Purchase 5 days - 1 year, and renewable up to 2 years if 1 month or more is purchased initially.");
+    writeText("Taian Travel Insurance is designed for anyone (U.S. and non-U.S. citizens) traveling out of their home country, regardless of visa requirements. Cost starts at about $1/day. Purchase 5 days - 1 year, and renewable up to 2 years if 1 month or more is purchased initially. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter).  You can use the confirmation letter as proof of your insurance.");
     endRow();
     
     var partnerShip = getPartnership(getPageAttribute("partner"));
