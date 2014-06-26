@@ -729,8 +729,8 @@ function getPartnership(partner) {
               },               
               
          unc: {
-                    windowTitle: "TaiAn Health Insurance for University of North Carolina",
-                    pageTitle: "TaiAn Health Insurance for University of North Carolina",
+                    windowTitle: "TaiAn Health Insurance for University of North Carolina - (Chapel Hill, Charlotte, Greensboro, Wilmington)",
+                    pageTitle: "TaiAn Health Insurance for University of North Carolina - (Chapel Hill, Charlotte, Greensboro, Wilmington)",
                     tabs: [
                             "pivot-home",
                             "pivot-international-studentandscholar",
@@ -741,11 +741,18 @@ function getPartnership(partner) {
                           
                     internationalStudentandscholarContent: function () {
                         startRow();
-                        writeText(loc("University of North Carolina ") + loc("J scholars and enrolled students (F or J) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+                        writeText(loc("University of North Carolina - (Chapel Hill, Charlotte, Greensboro, Wilmington) ") + loc("J scholars and enrolled students (F or J) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         writeText("Enrolled students need to purchase insurance before the start of the semester and complete an on line waiver.");                        
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("University of North Carolina Scholar Requirements", "http://oisss.unc.edu/academic_staff/j/j_insurance.pdf"),
-                                makeURL("University of North Carolina Student Requirements", "https://www.bcbsnc.com/assets/studentblue/pdfs/U9308b%20International%20Brochure%20Enroll-Waiver%20Process%20FINAL%20for%20UNC.pdf")                        
+                                makeURL("University of North Carolina (Chapel Hill) Scholar Requirements", "http://oisss.unc.edu/international-faculty-and-researchers/j1/mandatory-medical-insurance/"),
+                                makeURL("University of North Carolina (Chapel Hill) Student Requirements", "https://www.bcbsnc.com/assets/studentblue/pdfs/U9308b%20International%20Brochure%20Enroll-Waiver%20Process%20FINAL%20for%20UNC.pdf"),                        
+                                makeURL("University of North Carolina (Charlotte) Scholar Requirements", "https://isso.uncc.edu/international-facultyscholars/resources-departments/how-guide/help-visitoremployee-prepare-arrival/h"),
+                                makeURL("University of North Carolina (Charlotte) Student Requirements", "http://studenthealth.uncc.edu/insurance"), 
+                                makeURL("University of North Carolina (Greensboro) Scholar Requirements", "http://www.uncg.edu/ipg/insurattestationform.pdf"),
+                                makeURL("University of North Carolina (Greensboro) Student Requirements", "http://www.uncg.edu/ipg/healthinsurance.html"), 
+                                makeURL("University of North Carolina (Wilmington) Scholar Requirements", "http://uncw.edu/international/isss/healthins.html"),
+                                makeURL("University of North Carolina (Wilmington) Student Requirements", "http://uncw.edu/international/isss/prearrivalhealthinsurance.html#requirement")
+      
                                 ]));
                         endRow();
                         
