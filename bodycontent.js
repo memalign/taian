@@ -3642,7 +3642,7 @@ function writeSections(legacy) {
                         "All Taian Patriot Exchange plans meet the USDOS standards.",
                         "F2/J2 can buy Patriot Exchange alone (if F1/J1 buys schools plan) or buy with F1/J1",                        
                         "Plastic ID card (ONLY AVAILABLE FROM TAIAN) available for purchases of six months or longer",
-                        "Taian Patriot Exchange Group plan available for groups of 2 or more primary applicants",
+                        "Taian Patriot Exchange Group plan available for groups of 2 or more primary applicants. Use one credit card to pay for the whole group. Use the credit card holder\'s email as the the group contact for the plan.",
                         "Other available options include: travel protection for baggage and valuables, legal assistance, personal liability coverage, adventure sports coverage",
                         "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays."
                         ]),
@@ -3876,7 +3876,7 @@ function writeSections(legacy) {
                         "All Taian Patriot Exchange plans meet the USDOS standards.",
                         "F2/J2 can buy Patriot Exchange alone (if F1/J1 buys schools plan) or buy with F1/J1",                        
                         "Plastic ID card (ONLY AVAILABLE FROM TAIAN) available for purchases of six months or longer",
-                        "Taian Patriot Exchange Group plan available for groups of 2 or more primary applicants",
+                        "Taian Patriot Exchange Group plan available for groups of 2 or more primary applicants. Use one credit card to pay for the whole group. Use the credit card holder\'s email as the the group contact for the plan.",
                         "Other available options include: travel protection for baggage and valuables, legal assistance, personal liability coverage, adventure sports coverage",
                         "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays."
                         ]),
@@ -4113,7 +4113,7 @@ function writeSections(legacy) {
                         "All Taian Patriot Exchange plans meet the USDOS standards.",
                         "F2/J2 can buy Patriot Exchange alone (if F1/J1 buys schools plan) or buy with F1/J1",                        
                         "Plastic ID card (ONLY AVAILABLE FROM TAIAN) available for purchases of six months or longer",
-                        "Taian Patriot Exchange Group plan available for groups of 2 or more primary applicants",
+                        "Taian Patriot Exchange Group plan available for groups of 2 or more primary applicants. Use one credit card to pay for the whole group. Use the credit card holder\'s email as the the group contact for the plan.",
                         "Other available options include: travel protection for baggage and valuables, legal assistance, personal liability coverage, adventure sports coverage",
                         "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays."
                         ]),
@@ -4282,7 +4282,7 @@ function writeSections(legacy) {
                         "All Taian Patriot Exchange plans meet the USDOS standards.",
                         "F2/J2 can buy Patriot Exchange alone (if F1/J1 buys schools plan) or buy with F1/J1",                        
                         "Plastic ID card (ONLY AVAILABLE FROM TAIAN) available for purchases of six months or longer",
-                        "Taian Patriot Exchange Group plan available for groups of 2 or more primary applicants",
+                        "Taian Patriot Exchange Group plan available for groups of 2 or more primary applicants. Use one credit card to pay for the whole group. Use the credit card holder\'s email as the the group contact for the plan.",
                         "Other available options include: travel protection for baggage and valuables, legal assistance, personal liability coverage, adventure sports coverage",
                         "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays."
                         ]),
@@ -4697,7 +4697,7 @@ function writeSections(legacy) {
                         "All Taian Patriot Exchange plans meet the USDOS standards.",
                         "F2/J2 can buy Patriot Exchange alone (if F1/J1 buys schools plan) or buy with F1/J1",                        
                         "Plastic ID card (ONLY AVAILABLE FROM TAIAN) available for purchases of six months or longer",
-                        "Taian Patriot Exchange Group plan available for groups of 2 or more primary applicants",
+                        "Taian Patriot Exchange Group plan available for groups of 2 or more primary applicants. Use one credit card to pay for the whole group. Use the credit card holder\'s email as the the group contact for the plan.",
                         "Other available options include: travel protection for baggage and valuables, legal assistance, personal liability coverage, adventure sports coverage",
                         "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays."
                         ]),
