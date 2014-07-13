@@ -103,12 +103,16 @@ function referralSubstitution(key) {
         nl2: "l=cn&p=pivot-international-student&adid=nl2",
         nl: "l=cn&p=pivot-school-waiver&adid=nl",        
         knl2: "l=cn&p=pivot-international-student&adid=knl2",
-        knl: "l=cn&p=pivot-school-waiver&adid=knl",         
+        knl: "l=cn&p=pivot-school-waiver&adid=knl",  
+        wshsa: "l=cn&p=pivot-school-waiver&adid=wshsa", 
+        wshsb: "l=cn&p=pivot-international-student&adid=wshsb",        
         
         newyorkservicecenter: "l=cn&partner=newyorkservicecenter&p=pivot-international-student",
         nyscs: "l=cn&partner=newyorkservicecenter&p=pivot-international-student",
         nyscl: "l=cn&partner=newyorkservicecenter&p=pivot-school-waiver", 
-        nysct: "l=cn&partner=newyorkservicecenter&p=pivot-travel-insurance",        
+        nysct: "l=cn&partner=newyorkservicecenter&p=pivot-travel-insurance",  
+
+        awinsurance: "l=cn&partner=awinsurance&p=pivot-international-student&adid=awinsurance",        
         
         chinamarketing: "partner=chinamarketing&p=pivot-home&adid=chinamarketing",        
         wll: "l=cn&partner=wll&p=pivot-home&adid=wll",         
@@ -826,6 +830,11 @@ function referralSubstitution(key) {
         ikent: "partner=kent&p=pivot-international-studentandscholar",
         icnkent: "l=cn&partner=kent&p=pivot-international-studentandscholar",
         
+        ishawnee: "partner=shawnee&p=pivot-international-studentandscholar",
+        icnshawnee: "l=cn&partner=shawnee&p=pivot-international-studentandscholar",
+        imorgan: "partner=morgan&p=pivot-international-studentandscholar",
+        icnmorgan: "l=cn&partner=morgan&p=pivot-international-studentandscholar",       
+        
         depaul: "partner=depaul&p=pivot-home&adid=sdepaul",
         cndepaul: "l=cn&partner=depaul&p=pivot-home&adid=scndepaul",   
         gcndepaul: "l=cn&partner=depaul&p=pivot-international-studentandscholar&adid=gcndepaul",
@@ -851,6 +860,14 @@ function referralSubstitution(key) {
         acnfordham: "l=cn&partner=fordham&p=pivot-scholar-student&adid=acnfordham", 
         ifordham: "partner=fordham&p=pivot-scholar-student",
         icnfordham: "l=cn&partner=fordham&p=pivot-scholar-student",
+        
+        northwestern: "partner=northwestern&p=pivot-home&adid=snorthwestern",
+        cnnorthwestern: "l=cn&partner=northwestern&p=pivot-home&adid=scnnorthwestern",   
+        gcnnorthwestern: "l=cn&partner=northwestern&p=pivot-scholar-student&adid=gcnnorthwestern",
+        gnorthwestern: "partner=northwestern&p=pivot-scholar-student&adid=gnorthwestern",
+        acnnorthwestern: "l=cn&partner=northwestern&p=pivot-scholar-student&adid=acnnorthwestern", 
+        inorthwestern: "partner=northwestern&p=pivot-scholar-student",
+        icnnorthwestern: "l=cn&partner=northwestern&p=pivot-scholar-student",        
         
         babson: "partner=babson&p=pivot-home&adid=sbabson",
         cnbabson: "l=cn&partner=babson&p=pivot-home&adid=scnbabson",   
@@ -920,7 +937,7 @@ function referralSubstitution(key) {
         lngglbl: "l=cn&partner=lng&p=pivot-global-medical&adid=lng",
         lngglblform: "l=cn&partner=lng&p=global-form&adid=lng", 
         cag: "l=cn&partner=cag&p=pivot-global-medical&adid=cag",
-        esl: "partner=esl&p=pivot-travel-insurance&adid=cag",       
+        esl: "partner=esl&p=pivot-travel-insurance&adid=esl",       
         mdy: "l=cn&partner=mdy&p=pivot-home&adid=mdy",  
         mdys: "l=cn&partner=mdy&p=pivot-school-waiver&adid=mdy",        
         wxct: "l=cn&p=pivot-home&adid=wxct",
@@ -2718,6 +2735,11 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School J1 requirement", "http://www.admissions.msstate.edu/pdf/international/exchange-visitor.pdf"),
                 makeURL("Health insurance for Mississippi State University Scholars", "#imsstate"),
                 
+                makeURL("Morgan State University (MD)", "http://www.morgan.edu/"),
+                makeURL("School F1 requirement", "https://www.formstack.com/forms/ais-msuwaiver_form__20142015"),
+                makeURL("School J1 requirement", "http://www.morgan.edu/Documents/ADMINISTRATION/Student%20Affairs/IntlServices/J1%20Insurance%20Overview.pdf"),
+                makeURL("Health insurance for Morgan State University Students and Scholars", "#imorgan"),                
+                
                 makeURL("Murray State University (KY)", "http://www.murraystate.edu/"),
                 makeURL("School F1 requirement", "http://www.murraystate.edu/Students/International/IIS/StudentScholarServices/HealthcareInsurance.aspx"),
                 makeURL("School J1 requirement", "http://www.murraystate.edu/Students/International/IIS/StudentScholarServices/HealthcareInsurance.aspx"),
@@ -2764,9 +2786,9 @@ function writeSectionForSchoolWaiverRequirements() {
                 "Consult your school about their requirements",
                 
                 makeURL("Northwestern University (IL)", "http://www.northwestern.edu/"),
-                makeURL("School F1 requirement", "http://www.northwestern.edu/international/student/pre-arrival-information.html#health"),
+                makeURL("School F1 requirement", "http://www.northwestern.edu/risk/insurance/student-health/waiver-process.html"),
                 makeURL("School J1 requirement", "http://www.northwestern.edu/risk/insurance/visiting-scholar/waiver-process.html"),                
-                "Consult your school about their requirements",
+                makeURL("Health Insurance for Northwestern University J2/F2 dependents", "#inorthwestern"),
                 
                 makeURL("Oakland University (CA)", "https://www.oakland.edu/"),
                 makeURL("School F1 requirement", "https://www.oakland.edu/?id=11874&sid=115"),
@@ -2843,6 +2865,11 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School F1 requirement", "http://www.scripps.edu/resources/isso/"),
                 makeURL("School J1 requirement", "http://www.scripps.edu/resources/isso/evpinsurance.html"),
                 makeURL("Health insurance for Scripps Research Institute Students and Scholars", "#iscripps"),
+                
+                makeURL("Shawnee State University (OH)", "http://www.shawnee.edu/"),
+                makeURL("School F1 requirement", "http://www.shawnee.edu/offices/international-students/media/pdf/J1-QA.pdf"),
+                makeURL("School J1 requirement", "http://www.shawnee.edu/offices/international-students/media/pdf/J1-QA.pdf"),
+                makeURL("Health insurance for Shawnee State University Students and Scholars", "#ishawnee"),                
 
                 makeURL("Stanford University (CA)", "http://www.stanford.edu/"),
                 makeURL("School F1 requirement", "http://www.stanford.edu/group/vaden/insurance/using_your_own.html"),
@@ -3234,7 +3261,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("University of Texas - Austin (TX)", "http://www.utexas.edu/"),
                 makeURL("School F1 requirement", "http://world.utexas.edu/forms/isss/PVT_Waiver.pdf"),
                 makeURL("School J1 requirement", "http://world.utexas.edu/isss/insurance/vs-overview"),
-                makeURL("Health Insurance for　UT Austin International Students and Scholars", "#iutaustin"),
+                makeURL("Health Insurance for　UT Austin Scholars", "#iutaustin"),
                 
                 makeURL("University of Texas - Arlington (TX)", "http://www.uta.edu/"),
                 makeURL("School F1 requirement", "http://www.uta.edu/oie/?page=forms&form=HealthInsuranceWaiver"),
@@ -3250,15 +3277,15 @@ function writeSectionForSchoolWaiverRequirements() {
                  makeURL("University of Texas - Dallas (TX)", "http://www.utdallas.edu/"),
                 makeURL("School F1 requirement", "http://www.utdallas.edu/healthcenter/insurance/intl-waivers.html"),
                 makeURL("School J1 requirement", "http://www.utdallas.edu/hrm/forms/insreqvisitors.pdf"),
-                makeURL("Health Insurance for UT Dallas International Students and Scholars", "#iutdallas"),               
+                makeURL("Health Insurance for UT Dallas Scholars", "#iutdallas"),               
 
                 makeURL("University of Texas - El Paso (TX)", "http://utep.edu/"),
                 makeURL("School F1 requirement", "http://sa.utep.edu/oip/health-care-and-insurance/"),
-                makeURL("School J1 requirement", "http://sa.utep.edu/oip/j-1-visa-requirements/"),
+                makeURL("School J1 requirement", "http://sa.utep.edu/oip/health-care-and-insurance/"),
                 makeURL("Health insurance for University of Texas El Paso Scholars", "#iutep"),  
                 
                 makeURL("University of Texas - Health Center Houston (TX)", "http://www.uth.edu"),
-                makeURL("School F1 requirement", ""),
+                makeURL("School F1 requirement", "http://www.uth.edu/auxiliary-enterprises/insurance/index.htm"),
                 makeURL("School J1 requirement", "http://www.uth.edu/international-affairs/exchange-visitors-j-1/j-1-health-insurance.htm"),
                 makeURL("Health insurance for University of Texas Health Center Houston Scholars", "#iuth"),                
 
