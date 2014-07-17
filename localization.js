@@ -158,14 +158,14 @@ l['Dependents can only purchase when the scholar purchases'] = "家属不能单�
 l['J2 can buy Patriot Exchange alone (if J1 buys schools plan) or buy with J1'] = "如果J1在其学校购买了保险，J2就可以单独购买计划 B, 否则J2需要与J1一起购买计划 B";
 
 l['Health insurance for Fordham University Students and Scholars'] = "符合Fordham University标准的留学生和访问学者医疗保险";
-l['TaiAn Health Insurance for Fordham University'] = "泰安国际医疗保险 - Fordham University";
+l['TaiAn Health Insurance for Fordham University'] = "美国泰安国际医疗保险 - Fordham University";
 l['Fordham University requirements for F1 international students or J1 scholar health insurance are: 1. Medical benefits of $500,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Taian Scholar/Student Insurance Plan B (with $500,000 benefit per accident or illness) and Plan C (with $500 deductible and $500,000 benefit) are the most affordable plans that meet the school requirements and the US Department of State requirements (which plan is more affordable depends on your age and family members). Shortly after submitting an application you will receive confirmation of your coverage which you can send to your school as proof of insurance.'] = "Fordham University对F1国际学生和J1访问学者医疗保险的要求是：1. 每次生病或受伤的最高赔付为$500,000; 2. 遗体返送$7,500; 3. 紧急救护$10,000; 4. 免赔额不超过$500。 泰安保险计划B的每次生病或受伤最高赔付$500,000选项和计划C的免赔额$500, 最高赔付$500,000选项是满足此标准的最经济实惠的两种保险计划，同时也都符合美国国务院的标准。哪个计划更划算取决于你的年龄和家属成员。 网上提交申请几分钟后你就会收到Email电子保单，其中含有保险卡和确认信(Visa Letter)。将确认信发给学校证明你已购买满足学校要求的保险。";
 l['Fordham University Student and Scholar Requirements'] = "Fordham University 留学生和访问学者保险的标准";
 l['Monthly Price for Plan C ($500,000 benefit, $500 deductible)'] = "计划C的月费（$500,000最高赔付，$500免赔额）";
 
 
 l['Western University of Health Sciences exchange visitors (J visa) have required health insurance coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Taian Scholar/Student Insurance Plan B ($100 deductible and $50,000 benefit per illness or injury) and Plan C ($500 deductible with $50,000 benefit) are the most affordable plans that meet the school requirements and the US Department of State requirements (which plan is more affordable depends on your age and family members). Shortly after submitting an application you will receive confirmation of your coverage which you can send to your school as proof of insurance. See plan benefits in the chart below.'] = "Western University of Health Sciences对J1访问学者医疗保险的要求是：1. 每次生病或受伤的最高赔付为$50,000; 2. 遗体返送$7,500; 3. 紧急救护$10,000; 4. 免赔额不超过$500。 泰安保险计划B 免赔额$100, 每次生病或受伤最高赔付$50,000选项和计划C 免赔额$500, 最高赔付$50,000选项是满足此标准的最经济实惠的两种保险计划，同时也都符合美国国务院的标准。哪个计划更划算取决于你的年龄和家庭成员。网上提交申请几分钟后你就会收到Email电子保单，其中含有你的保险卡和确认信（Visa Letter)。你可以将确认信发给学校证明已经购买满足学校要求的保险。保险简介请见下面的表格。";
-l['TaiAn Health Insurance for Western University of Health Sciences'] = "泰安国际医疗保险 - Western University of Health Sciences";
+l['TaiAn Health Insurance for Western University of Health Sciences'] = "美国泰安国际医疗保险 - Western University of Health Sciences";
 l['Western University of Health Sciences Scholar Requirements'] = "Western University of Health Sciences 访问学者医疗保险的标准";
 l['STUDENTS (CA or OR)'] = "留学生（加州和俄勒冈州）";
 l['Western University of Health Sciences enrolled F visa students have required health insurance coverage as follows: 1. Deductible not over $1,000 per policy year (and not over $2,000 for family). Taian Scholar/Student Insurance Plan C ($1000 deductible) with $50,000 benefit is the most affordable plan that meets the school requirements.'] = "Western University of Health Sciences对F1留学生医疗保险的要求是：个人年度免赔额不超过$1,000, 家庭年度免赔额不超过$2,000。泰安访问学者/留学生保险计划C（免赔额$1,000) 里的最高赔付$50,000选项是满足此标准的最经济实惠的保险计划。";
@@ -228,15 +228,15 @@ l['Buy Patriot America Medical Insurance'] = "购买爱国者旅游医疗保险"
 
 l['Johns Hopkins University Scholar Requirements'] = "Johns Hopkins University 访问学者医疗保险的标准";
 l['Johns Hopkins Medical Institutions Scholar Requirements'] = "Johns Hopkins Medical Institutions 访问学者医疗保险的标准";
-l['TaiAn Health Insurance for Johns Hopkins University'] = "泰安国际医疗保险 - Johns Hopkins University";
+l['TaiAn Health Insurance for Johns Hopkins University'] = "美国泰安国际医疗保险 - Johns Hopkins University";
 l['Health insurance for Johns Hopkins University Scholars'] = "符合Johns Hopkins University标准的访问学者医疗保险";
 l['Health insurance for Johns Hopkins Medical Scholars'] = "符合Johns Hopkins Medical标准的访问学者医疗保险";
-l['TaiAn Health Insurance for University of Pennsylvania'] = "泰安国际医疗保险 - University of Pennsylvania";
+l['TaiAn Health Insurance for University of Pennsylvania'] = "美国泰安国际医疗保险 - University of Pennsylvania";
 l['Taian Scholar/Student Insurance Plan A and Plan B meet University of Pennsylvania J scholar standards and J student standards (Not F visa student standards).  J visa holders have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Pennsylvania as proof of insurance.'] = "University of Pennsylvania 对J1访问学者和J1国际学生（不包括F1国际学生)购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$50,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明你已购买满足学校要求的保险。";
 l['University of Pennsylvania Scholar Requirements'] = "University of Pennsylvania 访问学者医疗保险的标准";
 l['Health insurance for University of Pennsylvania Students and Scholars'] = "符合University of Pennsylvania标准的留学生和访问学者医疗保险";
 
-l['TaiAn Health Insurance for University of Hawaii'] = "泰安国际医疗保险 - University of Hawaii";
+l['TaiAn Health Insurance for University of Hawaii'] = "美国泰安国际医疗保险 - University of Hawaii";
 l['Taian Scholar/Student Insurance Plan A and Plan B meet University of Hawaii standards for F visa and J visa  standards. J visa holders (enrolled students or visiting scholars) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Hawaii as proof of insurance.  J students have their insurance approved by ISS.'] = "泰安访问学者留学生保险计划A和B符合University of Hawaii对J签证和F签证保险的要求。University of Hawaii 对J1访问学者和J1国际学生购买医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$50,000； 2.遗体返送$7,500; 3. 紧急救护$10,000;  4. 每次生病或受伤的免赔额不超过$500。泰安访问学者留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明已经购买满足学校要求的保险。J1国际学生保险还需要在学校 ISS办理waiver。";
 l['University of Hawaii F visa student insurance is approved by Student Health Insurance Office.  F visa holders have required coverage as follows: 1. Medical benefits of $100,000 per accident or illness; 2. Coinsurance coverage of 75% or more and mental nervous benefits ; 3.Repatriation of remains of $7,500; 4. Medical evacuation of $10,000; 5. Deductible not over $500; 6. Pre-existing waiting period not over 6 months.  Plan A is the most affordable plan that meets the standards. You need to select the optional rider for a 6 month pre-existing condition waiting period.'] = "F1国际学生的保险需要在Student Health Insurance Office办理waiver。F1国际学生的保险要求是： 1.每次生病或受伤的最高赔付至少为$100,000； 2. 共同保险75%并有精神健康保险； 3.遗体返送$7,500;  4. 紧急救护$10,000; 5. 每次生病或受伤的免赔额不超过$500； 6. 先前疾病的免责期不超过6个月。泰安访问学者留学生保险计划A是满足此标准的最经济实惠的保险计划，你需要选先前疾病免责期6个月的附加选项。";
 l['University of Hawaii J scholar'] = "University of HawaiiJ1 访问学者链接";
@@ -248,136 +248,136 @@ l['J1 student requirement'] = "J1 国际学生保险的标准";
 l['J1 scholar requirement'] = "J1 访问学者保险的标准";
 l['University of Pennsylvania J1 student requirement'] = "University of Pennsylvania J1 国际学生保险的标准";
 l['University of Pennsylvania J1 scholar requirement'] = "University of Pennsylvania J1 访问学者保险的标准";
-l['TaiAn Health Insurance for Brown University'] = "泰安国际医疗保险 - Brown University";
+l['TaiAn Health Insurance for Brown University'] = "美国泰安国际医疗保险 - Brown University";
 l['Enrolled international students have to buy Plan A to meet Brown University standards, and complete an online waiver.'] = "全日制留学生可以购买泰安访问学者/留学生保险计划A以满足学校对留学生保险的要求。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。将确认信和填写好的Waiver Form 一起发给学校要求waiver， 泰安公司可以协助填写Waiver Form.";
 l['Brown University Scholar Requirements'] = "Brown University 访问学者医疗保险的标准";
 l['Brown University Student Requirements'] = "Brown University 留学生医疗保险的标准";
 l['Health insurance for Brown University Students and Scholars'] = "符合Brown University标准的留学生和访问学者医疗保险";
-l['TaiAn Health Insurance for Caltech'] = "泰安国际医疗保险 - Caltech";
+l['TaiAn Health Insurance for Caltech'] = "美国泰安国际医疗保险 - Caltech";
 l['Caltech Scholar Requirements'] = "Caltech 访问学者医疗保险的标准";
 l['Caltech Student Requirements'] = "Caltech 留学生医疗保险的标准";
 l['Health insurance for Caltech Scholars'] = "符合Caltech标准的访问学者医疗保险";
 
-l['TaiAn Health Insurance for California State University - Long Beach'] = "泰安国际医疗保险 - California State University - Long Beach";
+l['TaiAn Health Insurance for California State University - Long Beach'] = "美国泰安国际医疗保险 - California State University - Long Beach";
 l['California State University - Long Beach Scholar Requirements'] = "California State University - Long Beach 访问学者医疗保险的标准";
 l['California State University - Long Beach does not have an online listing of J scholar insurance requirements.  We have received emails from prior customers confirming their requirements conform to US Department of State standards.'] = "California State University - Long Beach 对J签证访问学者保险没有明确要求。 该校J1访问学者购买美国国务院标准的保险都得到学校的认同。";
 l['Health insurance for California State University - Long Beach Scholars'] = "符合California State University - Long Beach标准的访问学者医疗保险";
 
-l['TaiAn Health Insurance for University of Rhode Island'] = "泰安国际医疗保险 - University of Rhode Island";
+l['TaiAn Health Insurance for University of Rhode Island'] = "美国泰安国际医疗保险 - University of Rhode Island";
 
 l['University of Rhode Island Scholar Requirements'] = "University of Rhode Island 访问学者医疗保险的标准";
 l['Health insurance for University of Rhode Island Scholars'] = "符合University of Rhode Island标准的访问学者医疗保险";
 
-l['TaiAn Health Insurance for University of South Florida'] = "泰安国际医疗保险 - University of South Florida";
+l['TaiAn Health Insurance for University of South Florida'] = "美国泰安国际医疗保险 - University of South Florida";
 l['University of South Florida Scholar Requirements'] = "University of South Florida 访问学者医疗保险的标准";
 l['Health insurance for University of South Florida Scholars'] = "符合University of South Florida标准的访问学者医疗保险";
 
-l['TaiAn Health Insurance for University of Tennessese - Knoxville'] = "泰安国际医疗保险 - University of Tennessese - Knoxville";
+l['TaiAn Health Insurance for University of Tennessese - Knoxville'] = "美国泰安国际医疗保险 - University of Tennessese - Knoxville";
 l['University of Tennessese - Knoxville Scholar Requirements'] = "University of Tennessese - Knoxville 访问学者医疗保险的标准";
 l['University of Tennessese - Knoxville Student Requirements'] = "University of Tennessese - Knoxville 留学生医疗保险的标准";
 l['Health insurance for University of Tennessese - Knoxville Students and Scholars'] = "符合University of Tennessese - Knoxville标准的留学生和访问学者医疗保险";
 l['Enrolled international students have required coverage as follows: 1. Medical benefits of $500,000 per accident or illness; 2. Repatriation of remains of $20,000; 3. Medical evacuation of $50,000; 4. Deductible not over $500; 5. A waiting period for pre-existing conditions of less than 13 months.  Taian Scholar/Student Insurance Plan B with $500,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the standards.  Plan A does not meet the student coverage requirement.  Coverage for the fall semester must be August 1 – December 31, coverage for the spring semester must include summer and be January 1 – July 31.  You will also need to complete a waiver.'] = "全日制在校国际学生的保险要求是： 1.每次生病或受伤的最高赔付至少为$500,000; 2.遗体返送$20,000; 3.紧急救护$50,000; 4. 每次生病或受伤的免赔额不超过$500; 5.先前疾病的等待期不超过13个月。 泰安保险计划B 里的每次生病或受伤$500,000最高赔付配合三种不同免赔额选项都是满足此标准的最经济实惠的保险计划。 泰安保险计划A不能满足学校对国际学生的保险要求。 Fall semester的保险需要覆盖August 1 – December 31。 Spring semester需要包括summer覆盖January 1 – July 31。 购买成功后，需要将保险确认信和waiver form 一起发给学校, 要求waive 学校保险。";
 
-l['TaiAn Health Insurance for Washington State University'] = "泰安国际医疗保险 - Washington State University";
+l['TaiAn Health Insurance for Washington State University'] = "美国泰安国际医疗保险 - Washington State University";
 l['Washington State University Scholar Requirements'] = "Washington State University 访问学者医疗保险的标准";
 l['Health insurance for Washington State University Scholars'] = "符合Washington State University标准的访问学者医疗保险";
-l['TaiAn Health Insurance for Cleveland State University'] = "泰安国际医疗保险 - Cleveland State University";
+l['TaiAn Health Insurance for Cleveland State University'] = "美国泰安国际医疗保险 - Cleveland State University";
 
 l['Cleveland State University Scholar Requirements'] = "Cleveland State University 访问学者医疗保险的标准";
 l['Health insurance for Cleveland State University Scholars'] = "符合Cleveland State University标准的访问学者医疗保险";
 
-l['TaiAn Health Insurance for Clark University'] = "泰安国际医疗保险 - Clark University";
+l['TaiAn Health Insurance for Clark University'] = "美国泰安国际医疗保险 - Clark University";
 
 l['Clark University Scholar Requirements'] = "Clark University 访问学者医疗保险的标准";
 l['Health insurance for Clark University Scholars'] = "符合Clark University标准的访问学者医疗保险";
 
-l['TaiAn Health Insurance for George Washington University'] = "泰安国际医疗保险 - George Washington University";
+l['TaiAn Health Insurance for George Washington University'] = "美国泰安国际医疗保险 - George Washington University";
 
 l['George Washington University Scholar Requirements'] = "George Washington University 访问学者医疗保险的标准";
 l['Health insurance for George Washington University Scholars'] = "符合George Washington University标准的访问学者医疗保险";
-l['TaiAn Health Insurance for Iowa State University'] = "泰安国际医疗保险 - Iowa State University";
+l['TaiAn Health Insurance for Iowa State University'] = "美国泰安国际医疗保险 - Iowa State University";
 
 l['Iowa State University Scholar Requirements'] = "Iowa State University 访问学者医疗保险的标准";
 l['Health insurance for Iowa State University Scholars'] = "符合Iowa State University标准的访问学者医疗保险";
 
-l['TaiAn Health Insurance for Georgetown University'] = "泰安国际医疗保险 - Georgetown University";
+l['TaiAn Health Insurance for Georgetown University'] = "美国泰安国际医疗保险 - Georgetown University";
 l['Taian Scholar/Student Insurance Plan A and Plan B meet Georgetown University enrolled international student standards and J scholar standards.  Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Georgetown as proof of insurance.'] = "Georgetown 对J1访问学者购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$50,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明已经购买满足学校要求的保险。";
 l['Georgetown University Scholar Requirements'] = "Georgetown University 访问学者医疗保险的标准";
 l['Georgetown University Student Requirements'] = "Georgetown University 留学生医疗保险的标准";
 l['Health insurance for Georgetown University Students and Scholars'] = "符合Georgetown University标准的留学生和访问学者医疗保险";
 
-l['TaiAn Health Insurance for University of Notre Dame'] = "泰安国际医疗保险 - University of Notre Dame";
+l['TaiAn Health Insurance for University of Notre Dame'] = "美国泰安国际医疗保险 - University of Notre Dame";
 l['Taian Scholar/Student Insurance Plan A and Plan B meet University of Notre Dame enrolled international student standards and J scholar standards.  Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Notre Dame as proof of insurance.'] = "University of Notre Dame 对J1访问学者购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$50,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明已经购买满足学校要求的保险。";
 l['University of Notre Dame Scholar Requirements'] = "University of Notre Dame 访问学者医疗保险的标准";
 l['University of Notre Dame Student Requirements'] = "University of Notre Dame 留学生医疗保险的标准";
 l['Health insurance for University of Notre Dame Students and Scholars'] = "符合University of Notre Dame标准的留学生和访问学者医疗保险";
 
-l['TaiAn Health Insurance for University of Toledo'] = "泰安国际医疗保险 - University of Toledo";
+l['TaiAn Health Insurance for University of Toledo'] = "美国泰安国际医疗保险 - University of Toledo";
 l['Taian Scholar/Student Insurance Plan A and Plan B meet University of Toledo enrolled international student standards and J scholar standards.  Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Toledo as proof of insurance.'] = "University of Toledo 对J1访问学者购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$50,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明已经购买满足学校要求的保险。";
 l['University of Toledo Scholar Requirements'] = "University of Toledo 访问学者医疗保险的标准";
 l['University of Toledo Student Requirements'] = "University of Toledo 留学生医疗保险的标准";
 l['Health insurance for University of Toledo Students and Scholars'] = "符合University of Toledo标准的留学生和访问学者医疗保险";
-l['TaiAn Health Insurance for Georgia State University'] = "泰安国际医疗保险 - Georgia State University";
+l['TaiAn Health Insurance for Georgia State University'] = "美国泰安国际医疗保险 - Georgia State University";
 l['Taian Scholar/Student Insurance Plan A and Plan B meet Georgia State University enrolled international student standards and J scholar standards.  Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Georgia State as proof of insurance.'] = "Georgia State 对J1访问学者购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$50,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明已经购买满足学校要求的保险。";
 l['Georgia State University Scholar Requirements'] = "Georgia State University 访问学者医疗保险的标准";
 l['Georgia State University Student Requirements'] = "Georgia State University 留学生医疗保险的标准";
 l['Health insurance for Georgia State University Students and Scholars'] = "符合Georgia State University标准的留学生和访问学者医疗保险";
 
 l['Washington University in St. Louis & WUSTL Medical School Scholar Requirements'] = "Washington University in St. Louis & WUSTL Medical School 访问学者医疗保险的标准";
-l['TaiAn Health Insurance for Washington University in St. Louis & WUSTL Medical School'] = "泰安国际医疗保险 - Washington University in St. Louis & WUSTL Medical School";
+l['TaiAn Health Insurance for Washington University in St. Louis & WUSTL Medical School'] = "美国泰安国际医疗保险 - Washington University in St. Louis & WUSTL Medical School";
 l['Health insurance for Washington University in St. Louis & WUSTL Medical School Scholars'] = "符合Washington University in St. Louis & WUSTL Medical School标准的访问学者医疗保险";
 
 l['William & Mary Scholar Requirements'] = "William & Mary 访问学者医疗保险的标准";
-l['TaiAn Health Insurance for William & Mary'] = "泰安国际医疗保险 - William & Mary";
+l['TaiAn Health Insurance for William & Mary'] = "美国泰安国际医疗保险 - William & Mary";
 l['Health insurance for William & Mary Scholars'] = "符合William & Mary标准的访问学者医疗保险";
 
 l['Taian Scholar/Student Insurance Plan A and Plan B meet West Virginia University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $100,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500; 5. Copay not over $10. Plan B with $250,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to West Virginia University in St. Louis as proof of insurance.'] = "West Virginia University 对J1访问学者（不包括全日制在校学生)购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$100,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500; 5. 挂号费不超过$10。泰安访问学者/留学生保险计划B Standard Plan 里的$250,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email电子保单，其中含有你的保险卡和确认信。你可以将确认信发给学校证明你已购买满足学校要求的保险。";
 l['West Virginia University Scholar Requirements'] = "West Virginia University 访问学者医疗保险的标准";
-l['TaiAn Health Insurance for West Virginia University'] = "泰安国际医疗保险 - West Virginia University";
+l['TaiAn Health Insurance for West Virginia University'] = "美国泰安国际医疗保险 - West Virginia University";
 l['Health insurance for West Virginia University Scholars'] = "符合West Virginia University标准的访问学者医疗保险";
 
 
 l['UC San Francisco Scholar Requirements'] = "UC San Francisco 访问学者医疗保险的标准";
-l['TaiAn Health Insurance for UC San Francisco'] = "泰安国际医疗保险 - UC San Francisco";
+l['TaiAn Health Insurance for UC San Francisco'] = "美国泰安国际医疗保险 - UC San Francisco";
 l['Health insurance for UC San Francisco Scholars'] = "符合UC San Francisco标准的访问学者医疗保险";
 
 l['UC Irvine Scholar Requirements'] = "UC Irvine 访问学者医疗保险的标准";
-l['TaiAn Health Insurance for UC Irvine'] = "泰安国际医疗保险 - UC Irvine";
+l['TaiAn Health Insurance for UC Irvine'] = "美国泰安国际医疗保险 - UC Irvine";
 l['Health insurance for UC Irvine Scholars'] = "符合UC Irvine标准的访问学者医疗保险";
 l['Taian Scholar/Student Insurance Plan B meets UC Riverside J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $500,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $50,000; 4. Deductible not over $250. Plan B with $500,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UC Riverside as proof of insurance.'] = "UC Riverside  对J1访问学者（不包括全日制在校学生)购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$500,000；2.遗体返送$7,500; 3. 紧急救护$50,000; 4. 每次生病或受伤的免赔额不超过$250。泰安访问学者/留学生保险计划B Standard Plan 里的$500,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明你已购买满足学校要求的保险。";
 l['UC Riverside Scholar Requirements'] = "UC Riverside 访问学者医疗保险的标准";
-l['TaiAn Health Insurance for UC Riverside'] = "泰安国际医疗保险 - UC Riverside";
+l['TaiAn Health Insurance for UC Riverside'] = "美国泰安国际医疗保险 - UC Riverside";
 l['Health insurance for UC Riverside Scholars'] = "符合UC Riverside标准的访问学者医疗保险";
 
 l['UC Santa Barbara Scholar Requirements'] = "UC Santa Barbara 访问学者医疗保险的标准";
-l['TaiAn Health Insurance for UC Santa Barbara'] = "泰安国际医疗保险 - UC Santa Barbara";
+l['TaiAn Health Insurance for UC Santa Barbara'] = "美国泰安国际医疗保险 - UC Santa Barbara";
 l['Health insurance for UC Santa Barbara Scholars'] = "符合UC Santa Barbara标准的访问学者医疗保险";
 
 l['UC Santa Cruz Scholar Requirements'] = "UC Santa Cruz 访问学者医疗保险的标准";
-l['TaiAn Health Insurance for UC Santa Cruz'] = "泰安国际医疗保险 - UC Santa Cruz";
+l['TaiAn Health Insurance for UC Santa Cruz'] = "美国泰安国际医疗保险 - UC Santa Cruz";
 l['Health insurance for UC Santa Cruz Scholars'] = "符合UC Santa Cruz标准的访问学者医疗保险";
 
 l['University of Illinois at Chicago Scholar Requirements'] = "University of Illinois at Chicago 访问学者医疗保险的标准";
-l['TaiAn Health Insurance for University of Illinois at Chicago'] = "泰安国际医疗保险 - University of Illinois at Chicago";
+l['TaiAn Health Insurance for University of Illinois at Chicago'] = "美国泰安国际医疗保险 - University of Illinois at Chicago";
 l['Health insurance for University of Illinois at Chicago Scholars'] = "符合University of Illinois at Chicago标准的访问学者医疗保险";
-l['TaiAn Health Insurance for MUSC'] = "泰安国际医疗保险 - MUSC";
+l['TaiAn Health Insurance for MUSC'] = "美国泰安国际医疗保险 - MUSC";
 
 l['MUSC Scholar Requirements'] = "MUSC 访问学者医疗保险的标准";
 l['Health insurance for MUSC Scholars'] = "符合MUSC标准的访问学者医疗保险";
 
-l['TaiAn Health Insurance for University of California at Berkeley'] = "泰安国际医疗保险 - University of California at Berkeley";
+l['TaiAn Health Insurance for University of California at Berkeley'] = "美国泰安国际医疗保险 - University of California at Berkeley";
 l['Taian Travel Insurance Plan (Patriot America) with $250.00 deductible and $500,000 benefit meets UC Berkeley J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $500,000 per illness/injury; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Annual deductible not over $250.00. Travel plan with $250.00 deductible and $500,000 maximum (we suggest $1,000,000 maximum) is the most affordable plan that meets the standards, and the US Department of State requirements. The chart on the left below shows the monthly premium rates for this plan.  The chart on the right shows premium rates to choose a $0 deductible plan with the same benefits (a little more expensive).  Shortly after submitting an application you will receive confirmation of your coverage which you can send to UC Berkeley as proof of insurance.'] = "泰安旅游医疗保险(Patriot America) $500,000最高赔付和免赔额$250选项符合 UC Berkeley J1访问学者的保险标准(不包括全日制在校学生)。 UC Berkeley 对J1访问学者保险的要求如下：1.每次生病或受伤的最高赔付至少为$500,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 年度免赔额不超过$250。泰安旅游医疗保险$500,000最高赔付(建议$1,000,000更好）和免赔额$250选项是满足此标准的最经济实惠的保险计划，下面表格的左侧就是该计划每月保费的价格表。右侧是免赔额为$0的选择。这两种选择都满足UC Berkeley对J1访问学者的要求，同时也符合美国国务院的标准。 网上提交申请几分钟后你就会收到电子保单，其中含有你的保险卡和确认信。你可以将确认信发给学校证明你已购买满足学校要求的保险。";
 l['Please click on Travel Insurance tab at top of page.  Student Plan A and Plan B do not meet UC Berkeley requirements.'] = "请点击页面顶部的旅游和探亲保险按钮。学生保险计划A和B不符合 UC Berkeley 的要求。";
 l['UC Berkeley Scholar Requirements'] = "UC Berkeley 访问学者医疗保险的标准";
 l['Health insurance for UC Berkeley Scholars'] = "符合UC Berkeley标准的访问学者医疗保险";
 l['J-2 dependents are subject to the same benefit requirements.  Your J-2 dependents can buy with you, or buy a separate plan.  If your J-2 dependents are not going to be in the US for the same time period you will be here, you can buy a separate plan with different coverage dates to match their stay in the US.'] = "J2 购买保险的标准与J1的一样。J2可以与J1一起购买, 也可以单独购买(如果J1购买了学校保险或其他公司的保险)。 J1和J2需要购买不同日期的保险时，可以分开申请购买不同保期的保险。";
 
-l['TaiAn Health Insurance for Duke University'] = "泰安国际医疗保险 - Duke University";
+l['TaiAn Health Insurance for Duke University'] = "美国泰安国际医疗保险 - Duke University";
 l['Taian Travel Insurance Plan (Patriot America) with $0.00 deductible and $1,000,000 benefit meets Duke University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $500,000 per illness/injury; 2. No Deductible; 3. Coinsurance not over 20%; 4. Medical evacuation of $10,000;  5.  Repatriation of remains of $7,500. Travel plan with $0.00 deductible and $1,000,000 maximum is the most affordable plan that meets the standards, and the US Department of State requirements.  Shortly after submitting an application you will receive confirmation of your coverage which you can send to Duke University as proof of insurance.'] = "泰安国际旅游医疗保险(Patriot America) $1,000,000最高赔付和$0.00 免赔额选项符合 Duke University J1访问学者的保险标准(不包括全日制在校学生)。 Duke University 对J1访问学者保险的要求如下: 1. 每次生病或受伤的最高赔付至少为$500,000; 2. 免赔额为$0.00; 3. 共同保险不超过20%; 4. 紧急救护$10,000; 5. 遗体返送$7,500。 泰安国际旅游医疗保险$1,000,000最高赔付和免赔额$0.00选项是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准。 网上提交申请几分钟后你就会收到email 电子保单，其中含有你的保险卡和确认信。你可以将确认信发给学校证明你已购买满足学校要求的保险。";
 l['Duke University Scholar Requirements'] = "Duke University 访问学者医疗保险的标准";
 l['Health insurance for Duke University Scholars'] = "符合Duke University标准的访问学者医疗保险";
 
-l['TaiAn Health Insurance for Kansas State University'] = "泰安国际医疗保险 - Kansas State University";
+l['TaiAn Health Insurance for Kansas State University'] = "美国泰安国际医疗保险 - Kansas State University";
 l['Taian Travel Insurance Plan with $500.00 deductible and $500,000 benefit meets Kansas State University enrolled student standards (F or J visa). Enrolled students have required coverage as follows: 1. Medical benefits of $500,000 per illness/injury; 2. Repatriation of remains of $10,000; 3. Medical evacuation of $15,000; 4. Annual deductible not over $500.00. Our travel plan with $500.00 deductible and $500,000 maximum (we suggest $1,000,000 maximum) is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage.  You will need to complete Kansas State University on line waiver.'] = "泰安旅游医疗保险$500,000最高赔付和免赔额$500选项符合 Kansas State University F1 和 J1在校学生的保险标准。 KSU对F1 和 J1学生的保险标准如下：1.每次生病或受伤的最高赔付为 $500,000；2.遗体返送$10,000; 3. 紧急救护$15,000; 4. 年度免赔额不超过$500。泰安旅游医疗保险$500,000最高赔付(建议$1,000,000更好）和免赔额$500选项是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你需要填写online waiver form。";
 l['Enrolled students please click on Travel Insurance tab at top of page. Student Plan A and Plan B do not meet Kansas State University enrolled student requirements.'] = "F1 和 J1在校学生请点击页面顶部的旅游和探亲保险按钮。学生保险计划A和B不符合Kansas State University 的要求。";
 l['Kansas State University Scholar Requirements'] = "Kansas State University 访问学者医疗保险的标准";
@@ -385,42 +385,42 @@ l['Health Insurance for Kansas State University International Students and Schol
 l['Kansas State University Student Requirements'] = "Kansas State University 留学生医疗保险的标准";
 l['Taian Scholar/Student Insurance Plan A and Plan B meet Kansas State University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Kansas State University as proof of insurance.'] = "Kansas State University  对J1访问学者（不包括全日制在校学生)购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$50,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明你已购买满足学校要求的保险。";
 
-l['TaiAn Health Insurance for University of Cincinnati'] = "泰安国际医疗保险 - University of Cincinnati";
+l['TaiAn Health Insurance for University of Cincinnati'] = "美国泰安国际医疗保险 - University of Cincinnati";
 l['Taian Scholar/Student Insurance Plan A and Plan B meet University of Cincinnati J scholar standards (and enrolled students with 5 or fewer credit hours per semester). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Cincinnati as proof of insurance.'] = "University of Cincinnati 对J1访问学者（包括每学期修课5学分或少于5学分的在校国际学生)购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$50,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明你已购买满足学校要求的保险。";
 l['University of Cincinnati Scholar Requirements'] = "University of Cincinnati 访问学者医疗保险的标准";
 l['Health insurance for University of Cincinnati Scholars'] = "符合University of Cincinnati标准的访问学者医疗保险";
 
-l['TaiAn Health Insurance for University of Texas MD Anderson'] = "泰安国际医疗保险 - University of Texas MD Anderson";
+l['TaiAn Health Insurance for University of Texas MD Anderson'] = "美国泰安国际医疗保险 - University of Texas MD Anderson";
 
 l['University of Texas MD Anderson Scholar Requirements'] = "University of Texas MD Anderson 访问学者医疗保险的标准";
 l['Health insurance for University of Texas MD Anderson Scholars'] = "符合University of Texas MD Anderson标准的访问学者医疗保险";
 
-l['TaiAn Health Insurance for University of Texas Southwestern Medical Center'] = "泰安国际医疗保险 - University of Texas Southwestern Medical Center";
+l['TaiAn Health Insurance for University of Texas Southwestern Medical Center'] = "美国泰安国际医疗保险 - University of Texas Southwestern Medical Center";
 
 l['University of Texas Southwestern Medical Center Scholar Requirements'] = "University of Texas Southwestern Medical Center 访问学者医疗保险的标准";
 l['Health insurance for University of Texas Southwestern Medical Center Scholars'] = "符合University of Texas Southwestern Medical Center标准的访问学者医疗保险";
 
-l['TaiAn Health Insurance for University of Texas Health Center Houston'] = "泰安国际医疗保险 - University of Texas Health Center Houston";
+l['TaiAn Health Insurance for University of Texas Health Center Houston'] = "美国泰安国际医疗保险 - University of Texas Health Center Houston";
 
 l['University of Texas Health Center Houston Scholar Requirements'] = "University of Texas Health Center Houston 访问学者医疗保险的标准";
 l['Health insurance for University of Texas Health Center Houston Scholars'] = "符合University of Texas Health Center Houston标准的访问学者医疗保险";
 
-l['TaiAn Health Insurance for University of Texas El Paso'] = "泰安国际医疗保险 - University of Texas El Paso";
+l['TaiAn Health Insurance for University of Texas El Paso'] = "美国泰安国际医疗保险 - University of Texas El Paso";
 
 l['University of Texas El Paso Scholar Requirements'] = "University of Texas El Paso 访问学者医疗保险的标准";
 l['Health insurance for University of Texas El Paso Scholars'] = "符合University of Texas El Paso标准的访问学者医疗保险";
 
-l['TaiAn Health Insurance for University of Texas Brownsville'] = "泰安国际医疗保险 - University of Texas Brownsville";
+l['TaiAn Health Insurance for University of Texas Brownsville'] = "美国泰安国际医疗保险 - University of Texas Brownsville";
 
 l['University of Texas Brownsville Scholar Requirements'] = "University of Texas Brownsville 访问学者医疗保险的标准";
 l['Health insurance for University of Texas Brownsville Scholars'] = "符合University of Texas Brownsville标准的访问学者医疗保险";
 
 
-l['TaiAn Health Insurance for University of Virginia'] = "泰安国际医疗保险 - University of Virginia";
+l['TaiAn Health Insurance for University of Virginia'] = "美国泰安国际医疗保险 - University of Virginia";
 
 l['University of Virginia Scholar Requirements'] = "University of Virginia 访问学者医疗保险的标准";
 
-l['TaiAn Health Insurance for University of Utah'] = "泰安国际医疗保险 - University of Utah";
+l['TaiAn Health Insurance for University of Utah'] = "美国泰安国际医疗保险 - University of Utah";
 
 l['University of Utah Scholar Requirements'] = "University of Utah 访问学者医疗保险的标准";
 l['Health insurance for University of Utah Scholars'] = "符合University of Utah标准的访问学者医疗保险";
@@ -448,27 +448,27 @@ l['University of Miami Scholar Requirements'] = "University of Miami 访问学�
 
 
 l['University of Nebraska (Lincoln) Scholar Requirements'] = "University of Nebraska (Lincoln) 访问学者医疗保险的标准";
-l['TaiAn Health Insurance for University of Nebraska (Lincoln)'] = "泰安国际医疗保险 - University of Nebraska (Lincoln)";
+l['TaiAn Health Insurance for University of Nebraska (Lincoln)'] = "美国泰安国际医疗保险 - University of Nebraska (Lincoln)";
 l['Health insurance for University of Nebraska (Lincoln) Scholars'] = "符合University of Nebraska (Lincoln)标准的访问学者医疗保险";
 
 
 l['University of Nebraska (Omaha) Scholar Requirements'] = "University of Nebraska (Omaha) 访问学者医疗保险的标准";
-l['TaiAn Health Insurance for University of Nebraska (Omaha)'] = "泰安国际医疗保险 - University of Nebraska (Omaha)";
+l['TaiAn Health Insurance for University of Nebraska (Omaha)'] = "美国泰安国际医疗保险 - University of Nebraska (Omaha)";
 l['Health insurance for University of Nebraska (Omaha) Scholars'] = "符合University of Nebraska (Omaha)标准的访问学者医疗保险";
 
 
 l['Florida State University Scholar Requirements'] = "Florida State University 访问学者医疗保险的标准";
-l['TaiAn Health Insurance for Florida State University'] = "泰安国际医疗保险 - Florida State University";
+l['TaiAn Health Insurance for Florida State University'] = "美国泰安国际医疗保险 - Florida State University";
 l['Health insurance for Florida State University Scholars'] = "符合Florida State University标准的访问学者医疗保险";
 
 l['Florida International University allows international students to waive the school plan. Students have required coverage as follows: 1. Medical benefits of $200,000 per accident or illness; 2. Repatriation of remains of $10,000; 3. Medical evacuation of $25,000; 4. Deductible not over $100, or not over $50 at student health center; 5. Maternity benefits; 6. Pre existing conditions covered after six months. Plan A with the six month preexisting conditions option selected meets the requirements. Shortly after submitting an application you will receive confirmation of your coverage.  You can then email us to complete your waiver form.'] = "Florida International University 国际学生waive学校保险购买校外保险的要求是：1.每次生病或受伤的最高赔付至少为 $200,000; 2.遗体返送$10,000; 3. 紧急救护$25,000; 4. 每次生病或受伤的免赔额不超过$100 或就诊学校医务室不超过$50; 5. 含生育保险; 6. 6个月的免责期后覆盖先前的疾病。 泰安留学生保险计划A 里的先前疾病6个月免责期选项是满足此标准的最经济实惠的保险计划，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明你已购买满足学校要求的保险。";
 l['J visa scholars not enrolled in classes are not allowed to waive the school plan.'] = "非全日制上课的J1访问学者不能购买校外保险waive学校保险。";
 l['Florida International University Student Requirements'] = "Florida International University 留学生医疗保险的标准";
-l['TaiAn Health Insurance for Florida International University'] = "泰安国际医疗保险 - Florida International University";
+l['TaiAn Health Insurance for Florida International University'] = "美国泰安国际医疗保险 - Florida International University";
 l['Health insurance for Florida International University Students'] = "符合Florida International University标准的留学生医疗保险";
 
 l['Florida Atlantic University Student Requirements'] = "Florida Atlantic University 留学生医疗保险的标准";
-l['TaiAn Health Insurance for Florida Atlantic University'] = "泰安国际医疗保险 - Florida Atlantic University";
+l['TaiAn Health Insurance for Florida Atlantic University'] = "美国泰安国际医疗保险 - Florida Atlantic University";
 l['Health insurance for Florida Atlantic University Students and Scholars'] = "符合Florida Atlantic University标准的留学生和访问学者医疗保险";
 l['Florida Atlantic University Scholar Requirements'] = "Florida Atlantic University 访问学者医疗保险的标准";
 l['Florida Atlantic University J1 scholars have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500; 5. Pre-existing condition coverage after a 6 month wait.'] = "Florida Atlantic University 对J1访问学者购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$50,000; 2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500; 5. 先前疾病免责期不超过6个月。 ";
@@ -477,13 +477,13 @@ l['TaiAn Plan A meets both the Student and Scholar requirements. You need to sel
 
 l['Louisiana State University Scholar Requirements'] = "Louisiana State University 访问学者医疗保险的标准";
 l['Health insurance for University of Virginia Scholars'] = "符合University of Virginia标准的访问学者医疗保险";
-l['TaiAn Health Insurance for Michigan State University'] = "泰安国际医疗保险 - Michigan State University";
+l['TaiAn Health Insurance for Michigan State University'] = "美国泰安国际医疗保险 - Michigan State University";
 l['Taian Scholar/Student Insurance Plan A and Plan B meet Michigan State University enrolled international student standards and J scholar standards.  Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Michigan State University as proof of insurance.'] = "Michigan State University 对J1访问学者购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$50,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明已经购买满足学校要求的保险。";
 l['Enrolled international students are required to carry $250,000 per illness or injury, have coverage for mental nervous claims, and complete a waiver. Taian Scholar/Student Insurance Plan A is the most affordable plan that meets the standards.'] = "全日制留学生保险要求$250,000每次疾病或受伤，含有心理健康险并要求完成waiver申请。泰安访问学者/留学生保险计划A是满足这些标准的最经济实惠的保险计划。";
 l['Michigan State University Scholar Requirements'] = "Michigan State University 访问学者医疗保险的标准";
 l['Health Insurance for MSU International Students and Scholars'] = "符合Michigan State University标准的留学生和访问学者医疗保险";
 l['Michigan State University Student Requirements'] = "Michigan State University 留学生医疗保险的标准";
-l['TaiAn Health Insurance for Harvard University and Harvard Medical School'] = "泰安国际医疗保险 - Harvard University and Harvard Medical School";
+l['TaiAn Health Insurance for Harvard University and Harvard Medical School'] = "美国泰安国际医疗保险 - Harvard University and Harvard Medical School";
 l['Taian Scholar/Student Insurance Plan A and Plan B meet Harvard University and Harvard Medical School J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500; 5. Pre-existing condition coverage after a reasonable wait; 6. Patient share of expenses not over 25%.  Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Harvard University and Harvard Medical School as proof of insurance.'] = "Harvard University and Harvard Medical School 对J1访问学者（不包括全日制在校学生)购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$50,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500; 5. 合理的等待期后覆盖先前的疾病; 6. 共同保险不超过25%。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明你已购买满足学校要求的保险。";
 l['Harvard University and Harvard Medical School Scholar Requirements'] = "Harvard University and Harvard Medical School 访问学者医疗保险的标准";
 l['Health insurance for Harvard University and Harvard Medical School Scholars'] = "符合Harvard University and Harvard Medical School标准的访问学者医疗保险";
@@ -496,104 +496,108 @@ l['Health insurance for Harvard University and Harvard Medical School Students a
 
 
 
-l['TaiAn Health Insurance for Boston University'] = "泰安国际医疗保险 - Boston University";
+l['TaiAn Health Insurance for Boston University'] = "美国泰安国际医疗保险 - Boston University";
 
 l['Boston University Scholar Requirements'] = "Boston University 访问学者医疗保险的标准";
 l['Health insurance for Boston University Scholars'] = "符合Boston University标准的访问学者医疗保险";
 
 
 l['Oakland University Scholar Requirements'] = "Oakland University 访问学者医疗保险的标准";
-l['TaiAn Health Insurance for Oakland University'] = "泰安国际医疗保险 - Oakland University";
+l['TaiAn Health Insurance for Oakland University'] = "美国泰安国际医疗保险 - Oakland University";
 l['Health insurance for Oakland University Scholars'] = "符合Oakland University标准的访问学者医疗保险";
 
-l['TaiAn Health Insurance for Boston College'] = "泰安国际医疗保险 - Boston College";
+l['TaiAn Health Insurance for Boston College'] = "美国泰安国际医疗保险 - Boston College";
 
 l['Boston College Scholar Requirements'] = "Boston College 访问学者医疗保险的标准";
 l['Health insurance for Boston College Scholars'] = "符合Boston College标准的访问学者医疗保险";
 
-l['TaiAn Health Insurance for Babson College'] = "泰安国际医疗保险 - Babson College";
+l['TaiAn Health Insurance for Babson College'] = "美国泰安国际医疗保险 - Babson College";
 
 l['Babson College Scholar Requirements'] = "Babson College 访问学者医疗保险的标准";
 l['Health insurance for Babson College Scholars'] = "符合Babson College标准的访问学者医疗保险";
 
-l['TaiAn Health Insurance for University of Florida'] = "泰安国际医疗保险 - University of Florida";
+l['TaiAn Health Insurance for University of Florida'] = "美国泰安国际医疗保险 - University of Florida";
 l['Taian Scholar/Student Insurance Plan A and Plan B meet University of Florida J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500; 5. Policy shall not unreasonably exclude risks inherent to the exchange program; 6. The insurance must meet certain credit rating criteria; 7. Must be accepted in all medical facilities. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Florida as proof of insurance.'] = "University of Florida 对J1访问学者（不包括全日制在校学生)购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$50,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500; 5. 保险计划不得不合理地排除交流计划中固有的风险; 6. 保险必须符合一定的信用评级标准; 7. 必须接受所有的医疗设施。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明你已购买满足学校要求的保险。";
 l['University of Florida Scholar Requirements'] = "University of Florida 访问学者医疗保险的标准";
 l['Health insurance for University of Florida Scholars'] = "符合University of Florida标准的访问学者医疗保险";
-l['TaiAn Health Insurance for Northeastern University'] = "泰安国际医疗保险 - Northeastern University";
+l['TaiAn Health Insurance for Northeastern University'] = "美国泰安国际医疗保险 - Northeastern University";
 
 l['Northeastern University Scholar Requirements'] = "Northeastern University 访问学者医疗保险的标准";
 l['Health insurance for Northeastern University Scholars'] = "符合Northeastern University标准的访问学者医疗保险";
-l['TaiAn Health Insurance for Georgia Institute of Technology'] = "泰安国际医疗保险 - Georgia Institute of Technology";
+l['TaiAn Health Insurance for Georgia Institute of Technology'] = "美国泰安国际医疗保险 - Georgia Institute of Technology";
 
 l['Georgia Institute of Technology Scholar Requirements'] = "Georgia Institute of Technology 访问学者医疗保险的标准";
 l['Health insurance for Georgia Institute of Technology Scholars'] = "符合Georgia Institute of Technology标准的访问学者医疗保险";
 
-l['TaiAn Health Insurance for Georgia Regents University'] = "泰安国际医疗保险 - Georgia Regents University";
+l['TaiAn Health Insurance for Georgia Regents University'] = "美国泰安国际医疗保险 - Georgia Regents University";
 
 l['Georgia Regents University Scholar Requirements'] = "Georgia Regents University 访问学者医疗保险的标准";
 l['Health insurance for Georgia Regents University Scholars'] = "符合Georgia Regents University标准的访问学者医疗保险";
 
-l['TaiAn Health Insurance for Arizona State University'] = "泰安国际医疗保险 - Arizona State University";
-
+l['TaiAn Health Insurance for Arizona State University'] = "美国泰安国际医疗保险 - Arizona State University";
 l['Arizona State University Scholar Requirements'] = "Arizona State University 访问学者医疗保险的标准";
 l['Health insurance for Arizona State University Scholars'] = "符合Arizona State University标准的访问学者医疗保险";
-l['TaiAn Health Insurance for Mississippi State University'] = "泰安国际医疗保险 - Mississippi State University";
+
+l['TaiAn Health Insurance for UC Merced'] = "美国泰安国际医疗保险 - UC Merced";
+l['UC Merced Scholar Requirements'] = "UC Merced 访问学者医疗保险的标准";
+l['Health insurance for UC Merced Scholars'] = "符合UC Merced标准的访问学者医疗保险";
+
+l['TaiAn Health Insurance for Mississippi State University'] = "美国泰安国际医疗保险 - Mississippi State University";
 
 l['Mississippi State University Scholar Requirements'] = "Mississippi State University 访问学者医疗保险的标准";
 l['Health insurance for Mississippi State University Scholars'] = "符合Mississippi State University标准的访问学者医疗保险";
-l['TaiAn Health Insurance for University of California at San Diego'] = "泰安国际医疗保险 - University of California at San Diego";
+l['TaiAn Health Insurance for University of California at San Diego'] = "美国泰安国际医疗保险 - University of California at San Diego";
 
 l['UC San Diego Scholar Requirements'] = "UC San Diego 访问学者医疗保险的标准";
 l['Health insurance for UC San Diego Scholars'] = "符合UC San Diego标准的访问学者医疗保险";
-l['TaiAn Health Insurance for University of Arizona'] = "泰安国际医疗保险 - University of Arizona";
+l['TaiAn Health Insurance for University of Arizona'] = "美国泰安国际医疗保险 - University of Arizona";
 
 l['University of Arizona Scholar Requirements'] = "University of Arizona 访问学者医疗保险的标准";
 l['Health insurance for University of Arizona Scholars'] = "符合University of Arizona标准的访问学者医疗保险";
 
-l['TaiAn Health Insurance for University of Akron'] = "泰安国际医疗保险 - University of Akron";
+l['TaiAn Health Insurance for University of Akron'] = "美国泰安国际医疗保险 - University of Akron";
 
 l['University of Akron Scholar Requirements'] = "University of Akron 访问学者医疗保险的标准";
 l['Health insurance for University of Akron Scholars'] = "符合University of Akron标准的访问学者医疗保险";
 
-l['TaiAn Health Insurance for University of Chicago'] = "泰安国际医疗保险 - University of Chicago";
+l['TaiAn Health Insurance for University of Chicago'] = "美国泰安国际医疗保险 - University of Chicago";
 
 l['University of Chicago Scholar Requirements'] = "University of Chicago 访问学者医疗保险的标准";
 l['Health insurance for University of Chicago Scholars'] = "符合University of Chicago标准的访问学者医疗保险";
-l['TaiAn Health Insurance for Emory University'] = "泰安国际医疗保险 - Emory University";
+l['TaiAn Health Insurance for Emory University'] = "美国泰安国际医疗保险 - Emory University";
 
 l['Emory University Scholar Requirements'] = "Emory University 访问学者医疗保险的标准";
 l['Health insurance for Emory University Scholars'] = "符合Emory University标准的访问学者医疗保险";
-l['TaiAn Health Insurance for Bellevue College'] = "泰安国际医疗保险 - Bellevue College";
+l['TaiAn Health Insurance for Bellevue College'] = "美国泰安国际医疗保险 - Bellevue College";
 l['Enrolled international students with J visa need to complete a waiver.  Students with other visas can not waive school plan.'] = "J1签证的国际学生需要提交 waiver 申请。持有其他签证的国际学生不能waive 学校保险。";
 l['Bellevue College Scholar Requirements'] = "Bellevue College 访问学者医疗保险的标准";
 l['Bellevue College Student Requirements'] = "Bellevue College 留学生医疗保险的标准";
 l['Health insurance for Bellevue College Students and Scholars'] = "符合Bellevue College标准的留学生和访问学者医疗保险";
 
-l['TaiAn Health Insurance for University of Missouri Saint Louis'] = "泰安国际医疗保险 - University of Missouri Saint Louis";
+l['TaiAn Health Insurance for University of Missouri Saint Louis'] = "美国泰安国际医疗保险 - University of Missouri Saint Louis";
 
 
 l['University of Missouri Saint Louis Scholar Requirements'] = "University of Missouri Saint Louis 访问学者医疗保险的标准";
 l['University of Missouri Saint Louis Student Requirements'] = "University of Missouri Saint Louis 留学生医疗保险的标准";
 l['Health insurance for University of Missouri Saint Louis Students and Scholars'] = "符合University of Missouri Saint Louis标准的留学生和访问学者医疗保险";
 
-l['TaiAn Health Insurance for Central Washington University'] = "泰安国际医疗保险 - Central Washington University";
+l['TaiAn Health Insurance for Central Washington University'] = "美国泰安国际医疗保险 - Central Washington University";
 l['Central Washington University Scholar Requirements'] = "Central Washington University 访问学者医疗保险的标准";
 l['Central Washington University Student Requirements'] = "Central Washington University 留学生医疗保险的标准";
 l['Health insurance for Central Washington University Students and Scholars'] = "符合Central Washington University标准的留学生和访问学者医疗保险";
 
-l['TaiAn Health Insurance for Scripps Research Institute'] = "泰安国际医疗保险 - Scripps Research Institute";
+l['TaiAn Health Insurance for Scripps Research Institute'] = "美国泰安国际医疗保险 - Scripps Research Institute";
 l['Scripps Research Institute Scholar Requirements'] = "Scripps Research Institute 访问学者医疗保险的标准";
 l['Scripps Research Institute Student Requirements'] = "Scripps Research Institute 留学生医疗保险的标准";
 l['Health insurance for Scripps Research Institute Students and Scholars'] = "符合Scripps Research Institute标准的留学生和访问学者医疗保险";
 
 
-l['TaiAn Health Insurance for Case Western Reserve'] = "泰安国际医疗保险 - Case Western Reserve";
+l['TaiAn Health Insurance for Case Western Reserve'] = "美国泰安国际医疗保险 - Case Western Reserve";
 l['Case Western Reserve Scholar Requirements'] = "Case Western Reserve 访问学者医疗保险的标准";
 l['Case Western Reserve Student Requirements'] = "Case Western Reserve 留学生医疗保险的标准";
 l['Health insurance for Case Western Reserve Scholars'] = "符合Case Western Reserve标准的访问学者医疗保险";
 
-l['TaiAn Health Insurance for City University of New York (CUNY)'] = "泰安国际医疗保险 - City University of New York (CUNY)";
+l['TaiAn Health Insurance for City University of New York (CUNY)'] = "美国泰安国际医疗保险 - City University of New York (CUNY)";
 l['Taian Scholar/Student Insurance Plan A and Plan B meet all City University of New York (CUNY) enrolled international student standards and J scholar standards (See CUNY School List Below). Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to CUNY as proof of insurance.'] = "泰安保险计划A和B符合City University of New York (CUNY)留学生和访问学者保险的标准。CUNY系统的所有学校(见下面的列表)对F1/J1留学生和J1访问学者购买校外医疗保险的要求是： 1.每次生病或受伤的最高赔付至少为$50,000; 2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明你已购买满足学校要求的保险。";
 l['CUNY Scholar Requirements'] = "CUNY 访问学者医疗保险的标准";
 l['CUNY Student Requirements'] = "CUNY 留学生医疗保险的标准";
@@ -601,28 +605,38 @@ l['Health insurance for CUNY Students and Scholars'] = "符合CUNY标准的留�
 l['CUNY Requirements for all CUNY schools Students and Scholars'] = "CUNY系统所有学校留学生和访问学者的保险标准";
 l['CUNY School List:'] = "CUNY系统所有学校列表:";
 
-l['TaiAn Health Insurance for Kent State University'] = "泰安国际医疗保险 - Kent State University";
+l['TaiAn Health Insurance for Kent State University'] = "美国泰安国际医疗保险 - Kent State University";
 l['Kent State University Scholar Requirements'] = "Kent State University 访问学者医疗保险的标准";
 l['Kent State University Student Requirements'] = "Kent State University 留学生医疗保险的标准";
 l['Health insurance for Kent State University Students and Scholars'] = "符合Kent State University标准的留学生和访问学者医疗保险";
 
-l['TaiAn Health Insurance for Morgan State University'] = "泰安国际医疗保险 - Morgan State University";
+l['TaiAn Health Insurance for Morgan State University'] = "美国泰安国际医疗保险 - Morgan State University";
 l['Morgan State University Scholar Requirements'] = "Morgan State University 访问学者医疗保险的标准";
 l['Morgan State University Student Requirements'] = "Morgan State University 留学生医疗保险的标准";
 l['Health insurance for Morgan State University Students and Scholars'] = "符合Morgan State University标准的留学生和访问学者医疗保险";
 
-l['TaiAn Health Insurance for Shawnee State University'] = "泰安国际医疗保险 - Shawnee State University";
+l['TaiAn Health Insurance for Alfred University'] = "美国泰安国际医疗保险 - Alfred University";
+l['Alfred University Scholar Requirements'] = "Alfred University 访问学者医疗保险的标准";
+l['Alfred University Student Requirements'] = "Alfred University 留学生医疗保险的标准";
+l['Health insurance for Alfred University Students and Scholars'] = "符合Alfred University标准的留学生和访问学者医疗保险";
+
+l['TaiAn Health Insurance for Lehigh University'] = "美国泰安国际医疗保险 - Lehigh University";
+l['Lehigh University Scholar Requirements'] = "Lehigh University 访问学者医疗保险的标准";
+l['Lehigh University Student Requirements'] = "Lehigh University 留学生医疗保险的标准";
+l['Health insurance for Lehigh University Students and Scholars'] = "符合Lehigh University标准的留学生和访问学者医疗保险";
+
+l['TaiAn Health Insurance for Shawnee State University'] = "美国泰安国际医疗保险 - Shawnee State University";
 l['Shawnee State University Scholar Requirements'] = "Shawnee State University 访问学者医疗保险的标准";
 l['Shawnee State University Student Requirements'] = "Shawnee State University 留学生医疗保险的标准";
 l['Health insurance for Shawnee State University Students and Scholars'] = "符合Shawnee State University标准的留学生和访问学者医疗保险";
 
-l['TaiAn Health Insurance for Depaul University'] = "泰安国际医疗保险 - Depaul University";
+l['TaiAn Health Insurance for Depaul University'] = "美国泰安国际医疗保险 - Depaul University";
 l['Taian Scholar/Student Insurance Plan A and Plan B meet Depaul University enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Depaul University as proof of insurance.'] = "Depaul University 对F1/J1国际学生和J1访问学者购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$50,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明你已购买满足学校要求的保险。";
 l['Depaul University Scholar Requirements'] = "Depaul University 访问学者医疗保险的标准";
 l['Depaul University Student Requirements'] = "Depaul University 留学生医疗保险的标准";
 l['Health insurance for Depaul University Students and Scholars'] = "符合Depaul University标准的留学生和访问学者医疗保险";
 
-l['TaiAn Health Insurance for Murray State University'] = "泰安国际医疗保险 - Murray State University";
+l['TaiAn Health Insurance for Murray State University'] = "美国泰安国际医疗保险 - Murray State University";
 l['Taian Scholar/Student Insurance Plan A and Plan B meet Murray State University enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Murray State University as proof of insurance.'] = "Murray State University 对F1/J1国际学生和J1访问学者购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$50,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明你已购买满足学校要求的保险。";
 l['Murray State University Scholar Requirements'] = "Murray State University 访问学者医疗保险的标准";
 l['Murray State University Student Requirements'] = "Murray State University 留学生医疗保险的标准";
@@ -647,20 +661,20 @@ l['Plan C (Patriot Travel) $100,000'] = "计划C(Patriot Travel) 最高赔付$10
 l['Plan B (Patriot Exchange) $100 deductible'] = "计划B (Patriot Exchange) $100免赔额";
 
 
-l['TaiAn Health Insurance for Western Washington University'] = "泰安国际医疗保险 - Western Washington University";
+l['TaiAn Health Insurance for Western Washington University'] = "美国泰安国际医疗保险 - Western Washington University";
 l['Taian Scholar/Student Insurance Plan A and Plan B meet Western Washington University enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Western Washington University as proof of insurance.'] = "Western Washington University 对F1/J1国际学生和J1访问学者购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$50,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明你已购买满足学校要求的保险。";
 l['Western Washington University Scholar Requirements'] = "Western Washington University 访问学者医疗保险的标准";
 l['Western Washington University Student Requirements'] = "Western Washington University 留学生医疗保险的标准";
 l['Health insurance for Western Washington University Students and Scholars'] = "符合Western Washington University标准的留学生和访问学者医疗保险";
-l['TaiAn Health Insurance for Texas A&M University'] = "泰安国际医疗保险 - Texas A&M University";
+l['TaiAn Health Insurance for Texas A&M University'] = "美国泰安国际医疗保险 - Texas A&M University";
 
 l['Texas A&M University Scholar Requirements'] = "Texas A&M University 访问学者医疗保险的标准";
 l['Health insurance for Texas A&M University Scholars'] = "符合Texas A&M University标准的访问学者医疗保险";
-l['TaiAn Health Insurance for University of Houston'] = "泰安国际医疗保险 - University of Houston";
+l['TaiAn Health Insurance for University of Houston'] = "美国泰安国际医疗保险 - University of Houston";
 
 l['University of Houston Scholar Requirements'] = "University of Houston 访问学者医疗保险的标准";
 l['Health insurance for University of Houston Scholars'] = "符合University of Houston标准的访问学者医疗保险";
-l['TaiAn Health Insurance for Cornell University'] = "泰安国际医疗保险 - Cornell University";
+l['TaiAn Health Insurance for Cornell University'] = "美国泰安国际医疗保险 - Cornell University";
 
 l['Cornell University Scholar Requirements'] = "Cornell University 访问学者医疗保险的标准";
 l['Health insurance for Cornell University Scholars'] = "符合Cornell University标准的访问学者医疗保险";
@@ -668,12 +682,12 @@ l['Health insurance for Cornell University Scholars'] = "符合Cornell Universit
 l['Taian Scholar/Student Insurance Plan A and Plan B meet University of Maryland enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Maryland as proof of insurance.'] = "University of Maryland 对留学生和访问学者购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$50,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明你已购买满足学校要求的保险。";
 l['University of Maryland Scholar Requirements'] = "University of Maryland 访问学者医疗保险的标准";
 l['University of Maryland Student Requirements'] = "University of Maryland 留学生医疗保险的标准";
-l['TaiAn Health Insurance for University of Maryland'] = "泰安国际医疗保险 - University of Maryland";
+l['TaiAn Health Insurance for University of Maryland'] = "美国泰安国际医疗保险 - University of Maryland";
 l['Health insurance for University of Maryland Students and Scholars'] = "符合University of Maryland标准的访问学者和留学生医疗保险";
 
 
 l['UMASS Boston Scholar Requirements'] = "UMASS Boston 访问学者医疗保险的标准";
-l['TaiAn Health Insurance for UMASS Boston'] = "泰安国际医疗保险 - UMASS Boston";
+l['TaiAn Health Insurance for UMASS Boston'] = "美国泰安国际医疗保险 - UMASS Boston";
 l['Health insurance for UMASS Boston Scholars'] = "符合UMASS Boston标准的访问学者医疗保险";
 
 
@@ -683,9 +697,9 @@ l['Health insurance for UMASS Boston Scholars'] = "符合UMASS Boston标准的�
 l['University of Massachusetts - Amherst Scholar Requirements'] = "University of Massachusetts - Amherst 访问学者医疗保险的标准";
 l['University of Massachusetts - Dartmouth Scholar Requirements'] = "University of Massachusetts - Dartmouth 访问学者医疗保险的标准";
 l['University of Massachusetts - Lowell Scholar Requirements'] = "University of Massachusetts - Lowell 访问学者医疗保险的标准";
-l['TaiAn Health Insurance for University of Massachusetts - Amherst, Dartmouth, and Lowell'] = "泰安国际医疗保险 - University of Massachusetts - Amherst, Dartmouth, and Lowell";
-l['TaiAn Health Insurance for University of Massachusetts - Dartmouth'] = "泰安国际医疗保险 - University of Massachusetts - Dartmouth";
-l['TaiAn Health Insurance for University of Massachusetts - Lowell'] = "泰安国际医疗保险 - University of Massachusetts - Lowell";
+l['TaiAn Health Insurance for University of Massachusetts - Amherst, Dartmouth, and Lowell'] = "美国泰安国际医疗保险 - University of Massachusetts - Amherst, Dartmouth, and Lowell";
+l['TaiAn Health Insurance for University of Massachusetts - Dartmouth'] = "美国泰安国际医疗保险 - University of Massachusetts - Dartmouth";
+l['TaiAn Health Insurance for University of Massachusetts - Lowell'] = "美国泰安国际医疗保险 - University of Massachusetts - Lowell";
 l['Health insurance for University of Massachusetts - Amherst, Dartmouth, and Lowell Scholars'] = "符合University of Massachusetts - Amherst, Dartmouth, and Lowell标准的访问学者医疗保险";
 l['Health insurance for UMASS Amherst Scholars'] = "符合UMASS Amherst标准的访问学者医疗保险";
 l['Health insurance for UMASS Dartmouth Scholars'] = "符合UMASS Dartmouth标准的访问学者医疗保险";
@@ -696,7 +710,7 @@ l['University of Pittsburgh Scholar Requirements'] = "University of Pittsburgh �
 l['Enrolled students are required to attest that they have coverage at the beginning of each fall semester.'] = "在校国际学生每年秋季学期开始时都必须证明已购买满足学校要求的保险。";
 l['Student attestation'] = "国际学生网上提交证明链结";
 l['University of Pittsburgh Student Requirements'] = "University of Pittsburgh 留学生医疗保险的标准";
-l['TaiAn Health Insurance for University of Pittsburgh'] = "泰安国际医疗保险 - University of Pittsburgh";
+l['TaiAn Health Insurance for University of Pittsburgh'] = "美国泰安国际医疗保险 - University of Pittsburgh";
 l['Health insurance for University of Pittsburgh Students and Scholars'] = "符合University of Pittsburgh标准的访问学者和留学生医疗保险";
 
 l['University of North Carolina (Chapel Hill) Scholar Requirements'] = "University of North Carolina (Chapel Hill) 访问学者医疗保险的标准";
@@ -707,7 +721,7 @@ l['University of North Carolina (Greensboro) Scholar Requirements'] = "Universit
 l['University of North Carolina (Greensboro) Student Requirements'] = "University of North Carolina (Greensboro)留学生医疗保险的标准";
 l['University of North Carolina (Wilmington) Scholar Requirements'] = "University of North Carolina (Wilmington) 访问学者医疗保险的标准";
 l['University of North Carolina (Wilmington) Student Requirements'] = "University of North Carolina (Wilmington)留学生医疗保险的标准";
-l['TaiAn Health Insurance for University of North Carolina - (Chapel Hill, Charlotte, Greensboro, Wilmington)'] = "泰安国际医疗保险 - University of North Carolina - (Chapel Hill, Charlotte, Greensboro, Wilmington)";
+l['TaiAn Health Insurance for University of North Carolina - (Chapel Hill, Charlotte, Greensboro, Wilmington)'] = "美国泰安国际医疗保险 - University of North Carolina - (Chapel Hill, Charlotte, Greensboro, Wilmington)";
 l['Health insurance for University of North Carolina (Chapel Hill) Students and Scholars'] = "符合University of North Carolina (Chapel Hill) 标准的访问学者和留学生医疗保险";
 l['Health insurance for University of North Carolina (Charlotte) Students and Scholars'] = "符合University of North Carolina (Charlotte) 标准的访问学者和留学生医疗保险";
 l['Health insurance for University of North Carolina (Greensboro) Students and Scholars'] = "符合University of North Carolina (Greensboro) 标准的访问学者和留学生医疗保险";
@@ -716,67 +730,67 @@ l['Enrolled international students need to complete an online waiver.'] = "全�
 l['Taian Scholar/Student Insurance Plan A and Plan B meet Temple University enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Temple University as proof of insurance.'] = "Temple University 对留学生和访问学者购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$50,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明你已购买满足学校要求的保险。";
 l['Temple University Scholar Requirements'] = "Temple University 访问学者医疗保险的标准";
 l['Temple University Student Requirements'] = "Temple University 留学生医疗保险的标准";
-l['TaiAn Health Insurance for Temple University'] = "泰安国际医疗保险 - Temple University";
+l['TaiAn Health Insurance for Temple University'] = "美国泰安国际医疗保险 - Temple University";
 l['Health insurance for Temple University Students and Scholars'] = "符合Temple University标准的访问学者和留学生医疗保险";
 l['Taian Scholar/Student Insurance Plan A and Plan B meet University of Colorado enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Colorado as proof of insurance.'] = "University of Colorado 对留学生和访问学者购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$50,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明你已购买满足学校要求的保险。";
 l['University of Colorado Scholar Requirements'] = "University of Colorado 访问学者医疗保险的标准";
 l['University of Colorado Student Requirements'] = "University of Colorado 留学生医疗保险的标准";
-l['TaiAn Health Insurance for University of Colorado'] = "泰安国际医疗保险 - University of Colorado";
+l['TaiAn Health Insurance for University of Colorado'] = "美国泰安国际医疗保险 - University of Colorado";
 l['Health insurance for University of Colorado Students and Scholars'] = "符合University of Colorado标准的访问学者和留学生医疗保险";
 l['Taian Scholar/Student Insurance Plan A and Plan B meet University of Connecticut enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Connecticut as proof of insurance.'] = "University of Connecticut 对留学生和访问学者购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$50,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明你已购买满足学校要求的保险。";
 l['University of Connecticut Scholar Requirements'] = "University of Connecticut 访问学者医疗保险的标准";
 l['University of Connecticut Student Requirements'] = "University of Connecticut 留学生医疗保险的标准";
-l['TaiAn Health Insurance for University of Connecticut'] = "泰安国际医疗保险 - University of Connecticut";
+l['TaiAn Health Insurance for University of Connecticut'] = "美国泰安国际医疗保险 - University of Connecticut";
 l['Health insurance for University of Connecticut Students and Scholars'] = "符合University of Connecticut标准的访问学者和留学生医疗保险";
 l['Taian Scholar/Student Insurance Plan A and Plan B meet Clemson University enrolled international student standards and J scholar standards.  Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Clemson University as proof of insurance.'] = "Clemson University 对访问学者购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$50,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明已经购买满足学校要求的保险。";
 l['Enrolled international students have to buy Plan A to meet Clemson University standards, and complete an online waiver.'] = "全日制留学生可以购买泰安访问学者/留学生保险计划A以满足学校对留学生保险的要求。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。将确认信和填写好的Waiver Form 一起发给学校要求waiver， 泰安公司可以协助填写Waiver Form.";
 l['Clemson University Scholar Requirements'] = "Clemson University 访问学者医疗保险的标准";
 l['Clemson University Student Requirements'] = "Clemson University 留学生医疗保险的标准";
-l['TaiAn Health Insurance for Clemson University'] = "泰安国际医疗保险 - Clemson University";
+l['TaiAn Health Insurance for Clemson University'] = "美国泰安国际医疗保险 - Clemson University";
 l['Health insurance for Clemson University Students and Scholars'] = "符合Clemson University标准的访问学者和留学生医疗保险";
 
 l['Taian Scholar/Student Insurance Plan A and Plan B meet Claremont School of Theology enrolled international student standards and J scholar standards.  Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Claremont School of Theology as proof of insurance.'] = "Claremont School of Theology 对访问学者和留学生购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$50,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明已经购买满足学校要求的保险。";
 l['Claremont School of Theology Scholar Requirements'] = "Claremont School of Theology 访问学者医疗保险的标准";
 l['Claremont School of Theology Student Requirements'] = "Claremont School of Theology 留学生医疗保险的标准";
-l['TaiAn Health Insurance for Claremont School of Theology'] = "泰安国际医疗保险 - Claremont School of Theology";
+l['TaiAn Health Insurance for Claremont School of Theology'] = "美国泰安国际医疗保险 - Claremont School of Theology";
 l['Health insurance for Claremont School of Theology Students and Scholars'] = "符合Claremont School of Theology标准的访问学者和留学生医疗保险";
 
 
 
 l['Dartmouth College Scholar Requirements'] = "Dartmouth College 访问学者医疗保险的标准";
 l['Dartmouth College Student Requirements'] = "Dartmouth College 留学生医疗保险的标准";
-l['TaiAn Health Insurance for Dartmouth College'] = "泰安国际医疗保险 - Dartmouth College";
+l['TaiAn Health Insurance for Dartmouth College'] = "美国泰安国际医疗保险 - Dartmouth College";
 l['Health insurance for Dartmouth College Scholars'] = "符合Dartmouth College标准的访问学者医疗保险";
 
 
 
 l['Virginia Tech Scholar Requirements'] = "Virginia Tech 访问学者医疗保险的标准";
 
-l['TaiAn Health Insurance for Virginia Tech'] = "泰安国际医疗保险 - Virginia Tech";
+l['TaiAn Health Insurance for Virginia Tech'] = "美国泰安国际医疗保险 - Virginia Tech";
 
 l['Taian Scholar/Student Insurance Plan A and Plan B meet Virginia Commonwealth University enrolled international student standards and J scholar standards.  Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Virginia Commonwealth University as proof of insurance.'] = "Virginia Commonwealth University 对访问学者购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$50,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明已经购买满足学校要求的保险。";
 l['Enrolled international students are required to carry $250,000 per illness or injury. Taian Scholar/Student Insurance Plan B with $250,000 benefit per illness or injury is the most affordable plan that meets the standards.'] = "在校国际学生的保险需要含有$250,000 per illness or injury。 泰安访问学者/留学生保险计划B Standard Plan 里的$250,000 per illness or injury 是满足此标准的最经济实惠的保险计划。";
 l['Virginia Commonwealth Scholar Requirements'] = "Virginia Commonwealth 访问学者医疗保险的标准";
 l['Virginia Commonwealth Student Requirements'] = "Virginia Commonwealth 留学生医疗保险的标准";
-l['TaiAn Health Insurance for Virginia Commonwealth University'] = "泰安国际医疗保险 - Virginia Commonwealth University";
+l['TaiAn Health Insurance for Virginia Commonwealth University'] = "美国泰安国际医疗保险 - Virginia Commonwealth University";
 l['Health insurance for Virginia Commonwealth Students and Scholars'] = "符合Virginia Commonwealth University标准的访问学者和留学生医疗保险";
 
-l['TaiAn Health Insurance for Yale University'] = "泰安国际医疗保险 - Yale University";
-l['TaiAn Health Insurance for Massachusetts Institute of Technology (MIT)'] = "泰安国际医疗保险 - Massachusetts Institute of Technology (MIT)";
-l['TaiAn Health Insurance for Princeton University'] = "泰安国际医疗保险 - Princeton University";
-l['TaiAn Health Insurance for Tufts University'] = "泰安国际医疗保险 - Tufts University";
-l['TaiAn Health Insurance for Carnegie Mellon University'] = "泰安国际医疗保险 - Carnegie Mellon University";
-l['TaiAn Health Insurance for Brandeis University'] = "泰安国际医疗保险 - Brandeis University";
-l['TaiAn Health Insurance for University of Georgia'] = "泰安国际医疗保险 - University of Georgia";
-l['TaiAn Health Insurance for University of Delaware'] = "泰安国际医疗保险 - University of Delaware";
-l['TaiAn Health Insurance for University of Washington'] = "泰安国际医疗保险 - University of Washington";
-l['TaiAn Health Insurance for Vanderbilt University'] = "泰安国际医疗保险 - Vanderbilt University";
-l['TaiAn Health Insurance for University of Miami'] = "泰安国际医疗保险 - University of Miami";
+l['TaiAn Health Insurance for Yale University'] = "美国泰安国际医疗保险 - Yale University";
+l['TaiAn Health Insurance for Massachusetts Institute of Technology (MIT)'] = "美国泰安国际医疗保险 - Massachusetts Institute of Technology (MIT)";
+l['TaiAn Health Insurance for Princeton University'] = "美国泰安国际医疗保险 - Princeton University";
+l['TaiAn Health Insurance for Tufts University'] = "美国泰安国际医疗保险 - Tufts University";
+l['TaiAn Health Insurance for Carnegie Mellon University'] = "美国泰安国际医疗保险 - Carnegie Mellon University";
+l['TaiAn Health Insurance for Brandeis University'] = "美国泰安国际医疗保险 - Brandeis University";
+l['TaiAn Health Insurance for University of Georgia'] = "美国泰安国际医疗保险 - University of Georgia";
+l['TaiAn Health Insurance for University of Delaware'] = "美国泰安国际医疗保险 - University of Delaware";
+l['TaiAn Health Insurance for University of Washington'] = "美国泰安国际医疗保险 - University of Washington";
+l['TaiAn Health Insurance for Vanderbilt University'] = "美国泰安国际医疗保险 - Vanderbilt University";
+l['TaiAn Health Insurance for University of Miami'] = "美国泰安国际医疗保险 - University of Miami";
 
-l['TaiAn Health Insurance for Louisiana State University'] = "泰安国际医疗保险 - Louisiana State University";
+l['TaiAn Health Insurance for Louisiana State University'] = "美国泰安国际医疗保险 - Louisiana State University";
 
 l['North Carolina State University Scholar Requirements'] = "North Carolina State University 访问学者医疗保险的标准";
-l['TaiAn Health Insurance for North Carolina State University'] = "泰安国际医疗保险 - North Carolina State University";
+l['TaiAn Health Insurance for North Carolina State University'] = "美国泰安国际医疗保险 - North Carolina State University";
 l['Health insurance for North Carolina State University Scholars'] = "符合North Carolina State University标准的访问学者医疗保险";
 l['Hospital Daily Indemnity'] = " 住院补贴";
 l['$100 per day.  10 day maximum.'] = "$100/天，最多10天";
@@ -812,61 +826,61 @@ l['Health Insurance for　UT Austin Scholars'] = "符合UT Austin标准的访问
 l['UT Austin Scholar Requirements'] = "UT Austin访问学者医疗保险的标准";
 l['UT Austin Student Requirements'] = "UT Austin学校对留学生的要求";
 l['J scholars (not for enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.'] = "J1访问学者 (不包括全日制在校学生) 购买校外医疗保险的要求是：1. 每次生病或受伤的最高赔付至少为$50,000; 2. 遗体返送$7,500; 3. 紧急救护$10,000; 4. 免赔额不超过$500。 此标准与美国国务院的标准一样。 泰安保险计划B (每次生病或受伤$50,000最高赔付配合三种不同免赔额选项)和计划C ($50,000最高赔付, 免赔额不超过$500)都是满足此标准的最经济实惠的保险计划。根据自己的需要你也可以选择泰安计划B里更高的赔付或者计划A。 网上提交申请几分钟后你就会收到Email电子保单，其中含有保险卡(ID Card)和确认信(Visa Letter)。 将确认信发给学校证明你已购买满足学校要求的保险。";
-l['TaiAn Health Insurance for UT Austin'] = "泰安国际医疗保险 - UT Austin";
+l['TaiAn Health Insurance for UT Austin'] = "美国泰安国际医疗保险 - UT Austin";
 
 l['Health insurance for New School Scholars'] = "符合New School标准的访问学者医疗保险";
 
 l['New School Scholar Requirements'] = "New School访问学者医疗保险的标准";
-l['TaiAn Health Insurance for New School'] = "泰安国际医疗保险 - New School";
-l['TaiAn Health Insurance for New School'] = "泰安国际医疗保险 - New School";
+l['TaiAn Health Insurance for New School'] = "美国泰安国际医疗保险 - New School";
+l['TaiAn Health Insurance for New School'] = "美国泰安国际医疗保险 - New School";
 
 
 l['Health Insurance for UT Dallas Scholars'] = "符合UT Dallas标准的访问学者医疗保险";
 l['UT Dallas Scholar Requirements'] = "UT Dallas访问学者医疗保险的标准";
 l['UT Dallas Student Requirements'] = "UT Dallas学校对留学生的要求";
-l['TaiAn Health Insurance for UT Dallas'] = "泰安国际医疗保险 - UT Dallas";
+l['TaiAn Health Insurance for UT Dallas'] = "美国泰安国际医疗保险 - UT Dallas";
 
 l['Health Insurance for UT San Antonio International Students and Scholars'] = "符合UT San Antonio 标准的留学生和访问学者医疗保险";
 l['UT San Antonio Scholar Requirements'] = "UT San Antonio访问学者医疗保险的标准";
 l['UT San Antonio Student Requirements'] = "UT San Antonio学校对留学生的要求";
 l['Taian Scholar/Student Insurance Plan A and Plan B meet UT San Antonio enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $500,000 per person per policy year; 2. Medical benefits of $50,000 per accident or illness; 3. Repatriation of remains of $7,500; 4. Medical evacuation of $10,000; 5. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UT San Antonio as proof of insurance.'] = "UT San Antonio 对留学生和访问学者购买校外医疗保险的要求是：1. 每人的年度最高赔付 $500,000; 2. 每次生病或受伤的最高赔付至少为$50,000；3. 遗体返送$7,500; 4. 紧急救护$10,000; 5. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。访问学者可以将确认信发给学校证明已经购买满足学校要求的保险。留学生可以将确认信和填写好的Waiver Form 一起发给学校要求waiver， 泰安公司可以协助填写Waiver Form.";
-l['TaiAn Health Insurance for UT San Antonio'] = "泰安国际医疗保险 - UT San Antonio";
+l['TaiAn Health Insurance for UT San Antonio'] = "美国泰安国际医疗保险 - UT San Antonio";
 
 l['Health Insurance for UT Pan American International Students and Scholars'] = "符合UT Pan American 标准的留学生和访问学者医疗保险";
 l['UT Pan American Scholar Requirements'] = "UT Pan American访问学者医疗保险的标准";
 l['UT Pan American Student Requirements'] = "UT Pan American学校对留学生的要求";
 l['Taian Scholar/Student Insurance Plan A and Plan B meet UT Pan American enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $500,000 per person per policy year; 2. Medical benefits of $50,000 per accident or illness; 3. Repatriation of remains of $7,500; 4. Medical evacuation of $10,000; 5. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UT Pan American as proof of insurance.'] = "UT Pan American 对留学生和访问学者购买校外医疗保险的要求是：1. 每人的年度最高赔付 $500,000; 2. 每次生病或受伤的最高赔付至少为$50,000；3. 遗体返送$7,500; 4. 紧急救护$10,000; 5. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。访问学者可以将确认信发给学校证明已经购买满足学校要求的保险。留学生可以将确认信和填写好的Waiver Form 一起发给学校要求waiver， 泰安公司可以协助填写Waiver Form.";
-l['TaiAn Health Insurance for UT Pan American'] = "泰安国际医疗保险 - UT Pan American";
+l['TaiAn Health Insurance for UT Pan American'] = "美国泰安国际医疗保险 - UT Pan American";
 
 l['Health Insurance for UT Health Science Center San Antonio International Students and Scholars'] = "符合UT Health Science Center San Antonio 标准的留学生和访问学者医疗保险";
 l['UT Health Science Center San Antonio Scholar Requirements'] = "UT Health Science Center San Antonio访问学者医疗保险的标准";
 l['UT Health Science Center San Antonio Student Requirements'] = "UT Health Science Center San Antonio学校对留学生的要求";
 l['Taian Scholar/Student Insurance Plan A and Plan B meet UT Health Science Center San Antonio enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $500,000 per person per policy year; 2. Medical benefits of $50,000 per accident or illness; 3. Repatriation of remains of $7,500; 4. Medical evacuation of $10,000; 5. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UT Health Science Center San Antonio as proof of insurance.'] = "UT Health Science Center San Antonio 对留学生和访问学者购买校外医疗保险的要求是：1. 每人的年度最高赔付 $500,000; 2. 每次生病或受伤的最高赔付至少为$50,000；3. 遗体返送$7,500; 4. 紧急救护$10,000; 5. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。访问学者可以将确认信发给学校证明已经购买满足学校要求的保险。留学生可以将确认信和填写好的Waiver Form 一起发给学校要求waiver， 泰安公司可以协助填写Waiver Form.";
-l['TaiAn Health Insurance for UT Health Science Center San Antonio'] = "泰安国际医疗保险 - UT Health Science Center San Antonio";
+l['TaiAn Health Insurance for UT Health Science Center San Antonio'] = "美国泰安国际医疗保险 - UT Health Science Center San Antonio";
 
 l['Health Insurance for UT Medical Branch Galveston International Students and Scholars'] = "符合UT Medical Branch Galveston 标准的留学生和访问学者医疗保险";
 l['UT Medical Branch Galveston Scholar Requirements'] = "UT Medical Branch Galveston访问学者医疗保险的标准";
 l['UT Medical Branch Galveston Student Requirements'] = "UT Medical Branch Galveston学校对留学生的要求";
 l['Taian Scholar/Student Insurance Plan A and Plan B meet UT Medical Branch Galveston enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $500,000 per person per policy year; 2. Medical benefits of $50,000 per accident or illness; 3. Repatriation of remains of $7,500; 4. Medical evacuation of $10,000; 5. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UT Medical Branch Galveston as proof of insurance.'] = "UT Medical Branch Galveston 对留学生和访问学者购买校外医疗保险的要求是：1. 每人的年度最高赔付 $500,000; 2. 每次生病或受伤的最高赔付至少为$50,000；3. 遗体返送$7,500; 4. 紧急救护$10,000; 5. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。访问学者可以将确认信发给学校证明已经购买满足学校要求的保险。留学生可以将确认信和填写好的Waiver Form 一起发给学校要求waiver， 泰安公司可以协助填写Waiver Form.";
-l['TaiAn Health Insurance for UT Medical Branch Galveston'] = "泰安国际医疗保险 - UT Medical Branch Galveston";
+l['TaiAn Health Insurance for UT Medical Branch Galveston'] = "美国泰安国际医疗保险 - UT Medical Branch Galveston";
 
 l['Health Insurance for UT Permian Basin International Students and Scholars'] = "符合UT Permian Basin 标准的留学生和访问学者医疗保险";
 l['UT Permian Basin Scholar Requirements'] = "UT Permian Basin访问学者医疗保险的标准";
 l['UT Permian Basin Student Requirements'] = "UT Permian Basin学校对留学生的要求";
 l['Taian Scholar/Student Insurance Plan A and Plan B meet UT Permian Basin enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $500,000 per person per policy year; 2. Medical benefits of $50,000 per accident or illness; 3. Repatriation of remains of $7,500; 4. Medical evacuation of $10,000; 5. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UT Permian Basin as proof of insurance.'] = "UT Permian Basin 对留学生和访问学者购买校外医疗保险的要求是：1. 每人的年度最高赔付 $500,000; 2. 每次生病或受伤的最高赔付至少为$50,000；3. 遗体返送$7,500; 4. 紧急救护$10,000; 5. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。访问学者可以将确认信发给学校证明已经购买满足学校要求的保险。留学生可以将确认信和填写好的Waiver Form 一起发给学校要求waiver， 泰安公司可以协助填写Waiver Form.";
-l['TaiAn Health Insurance for UT Permian Basin'] = "泰安国际医疗保险 - UT Permian Basin";
+l['TaiAn Health Insurance for UT Permian Basin'] = "美国泰安国际医疗保险 - UT Permian Basin";
 
 
 l['Health Insurance for UT Tyler International Students and Scholars'] = "符合UT Tyler 标准的留学生和访问学者医疗保险";
 l['UT Tyler Scholar Requirements'] = "UT Tyler访问学者医疗保险的标准";
 l['UT Tyler Student Requirements'] = "UT Tyler学校对留学生的要求";
 l['Taian Scholar/Student Insurance Plan A and Plan B meet UT Tyler enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $500,000 per person per policy year; 2. Medical benefits of $50,000 per accident or illness; 3. Repatriation of remains of $7,500; 4. Medical evacuation of $10,000; 5. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UT Tyler as proof of insurance.'] = "UT Tyler 对留学生和访问学者购买校外医疗保险的要求是：1. 每人的年度最高赔付 $500,000; 2. 每次生病或受伤的最高赔付至少为$50,000；3. 遗体返送$7,500; 4. 紧急救护$10,000; 5. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。访问学者可以将确认信发给学校证明已经购买满足学校要求的保险。留学生可以将确认信和填写好的Waiver Form 一起发给学校要求waiver， 泰安公司可以协助填写Waiver Form.";
-l['TaiAn Health Insurance for UT Tyler'] = "泰安国际医疗保险 - UT Tyler";
+l['TaiAn Health Insurance for UT Tyler'] = "美国泰安国际医疗保险 - UT Tyler";
 
 
 l['Health Insurance for　UT Arlington International Students and Scholars'] = "符合UT Arlington 标准的留学生和访问学者医疗保险";
 l['Taian Scholar/Student Insurance Plan A and Plan B meet UT Arlington enrolled international student standards and J scholar standards. Both students (F or J visa) and Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to UT Arlington as proof of insurance.'] = "UT Arlington 对留学生和访问学者购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$50,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。访问学者可以将确认信发给学校证明已经购买满足学校要求的保险。留学生可以将确认信和填写好的Waiver Form 一起发给学校要求waiver， 泰安公司可以协助填写Waiver Form.";
-l['TaiAn Health Insurance for UT Arlington'] = "泰安国际医疗保险 - UT Arlington";
+l['TaiAn Health Insurance for UT Arlington'] = "美国泰安国际医疗保险 - UT Arlington";
 l['UT Arlington Scholar Requirements'] = "UT Arlington访问学者医疗保险的标准";
 l['UT Arlington Student Requirements'] = "UT Arlington学校对留学生的要求";
 
@@ -936,8 +950,8 @@ l['Designed specifically for international scholars(J1,J2). Purchase monthly, re
 
 l['Patriot Exchange Plan B Standard Plan with $50,000 limit per illness/injury meets the US Dept of state standards for Exchange visitors (J visa) which are: At least $50,000 per illness, repatriation of remains of $7,500, Medical evacuation benefits of $10,000, and a deductible not over $500.'] = "计划B (Patriot Exchange Standard Plan) 里的$50,000Maximum/illness or injury 符合美国国务院对J签证的要求。国务院的要求是： 1.每次生病至少$50,000的最高赔付； 2. 遗体返送$7,500; 3. 紧急救护$10,000; 4. 免赔额不超过$500.";
 l['Student Requirements'] = "学校对留学生的要求";
-l['TaiAn Health Insurance for UC Davis J Scholars'] = "泰安国际医疗保险 - UC Davis 访问学者";
-l['TaiAn International Health Insurance'] = "泰安国际医疗保险";
+l['TaiAn Health Insurance for UC Davis J Scholars'] = "美国泰安国际医疗保险 - UC Davis 访问学者";
+l['TaiAn International Health Insurance'] = "美国泰安国际医疗保险";
 l['Do you want a $100 per illness deductible, $250 annual deductible, or $500 annual deductible?'] = "免赔额选择： 每次生病或受伤$100免赔额，年度免赔额$250, 年度免赔额$500";
 l['Maximum Benefit per illness/injury ($50,000, $100,000, $250,000, $500,000)'] = "每次疾病或受伤的最高赔付限额($50,000，$100,000, $250,000，$500,000）"; 
 l['Do you want adventure sports rider?'] = "你需要冒险运动选项吗？";
@@ -966,32 +980,32 @@ l['Primary Insured-If yes, name of the program'] = "主申请人- 如果是，�
 l['Primary Insured-Are you a J2 visa holder?'] = "主申请人- 你持有J2签证吗？";
 l['Do you want optional coverage for higher risk sports?  (Most people say no)'] = "你需要购买额外的危险运动保险吗？（大多数人不需要）";
 l['Do you want the ad on benefit for loss of baggage, legal assistance, and personal liability (Most people say no)'] = "你需要附加保险包括行李丢失，法律援助和个人责任吗？（大多数人不需要）";
-l['TaiAn Health Insurance for University of Southern California'] = "泰安国际医疗保险 - University of Southern California";
-l['TaiAn Health Insurance for Stanford University'] = "泰安国际医疗保险 - Stanford University";
+l['TaiAn Health Insurance for University of Southern California'] = "美国泰安国际医疗保险 - University of Southern California";
+l['TaiAn Health Insurance for Stanford University'] = "美国泰安国际医疗保险 - Stanford University";
 l['Health insurance for Stanford University Students and Scholars'] = "符合Stanford标准的留学生和访问学者医疗保险";
 l['Stanford Scholar Requirements'] = "Stanford访问学者医疗保险的标准";
 l['Stanford Student Requirements'] = "Stanford学校对留学生的要求";
 l['Taian Scholar/Student Insurance Plan A and Plan B meet Stanford University J scholar standards (not for enrolled students). Exchange visitors (J visa) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500.  Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Stanford to waive the school plan.'] = "Stanford University 对J1访问学者（不包括全日制在校学生)购买医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$50,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校要求waive学校保险。";
 l['Enrolled students with F or J visa are required to have additional coverage (see link below). Taian Plan A meets these requirements.  Shortly after submitting an application you will receive confirmation of your coverage.  You will then need to submit a certification form to Stanford which we can help you with.'] = "Stanford University 对 F1 international Student 和 J1 visiting student 购买保险有更高的要求，详见下面链接“Stanford学校对留学生的要求”。泰安访问学者留学生保险计划A是满足这些要求的最经济实惠的保险计划，同时也符合美国国务院的标准。网上提交申请几分钟后你就会收到保险确认信（Visa Letter）。然后，泰安公司可以协助你填写学校的 Waiver Form （Insurance Coverage Certification Form）。";
 
-l['TaiAn Health Insurance for Rudolf Steiner College'] = "泰安国际医疗保险 - Rudolf Steiner College";
+l['TaiAn Health Insurance for Rudolf Steiner College'] = "美国泰安国际医疗保险 - Rudolf Steiner College";
 l['Health insurance for Rudolf Steiner College Students and Scholars'] = "符合Rudolf Steiner College标准的留学生和访问学者医疗保险";
 l['Rudolf Steiner College Scholar Requirements'] = "Rudolf Steiner College访问学者医疗保险的标准";
 l['Rudolf Steiner College Student Requirements'] = "Rudolf Steiner College学校对留学生的要求";
 l['Rudolf Steiner College lists no specific insurance requirements, so the US Department of State requirements apply.  Taian Scholar/Student Insurance Plan A and Plan B meet Rudolf Steiner College J scholar standards and enrolled students requirements. Exchange visitors (J visa) and students have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to Rudolf Steiner College as proof of insurance.'] = "Rudolf Steiner College 对国际学生和访问学者购买保险没有明确的要求。 所以该校国际学生和访问学者需要购买符合美国国务院要求的保险。 国务院要求是：1.每次生病或受伤的最高赔付至少为$50,000; 2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明你已购买满足学校要求的保险。";
 
 
-l['TaiAn Health Insurance for University of Illinois Urbana Champaign'] = "泰安国际医疗保险 - University of Illinois Urbana Champaign";
-l['TaiAn Health Insurance for New York University and NYU Poly'] = "泰安国际医疗保险 - New York University and NYU Poly";
-l['TaiAn Health Insurance for New York Institute of Technology'] = "泰安国际医疗保险 - New York Institute of Technology";
-l['TaiAn Health Insurance for Pennsylvania State University'] = "泰安国际医疗保险 - Pennsylvania State University";
-l['TaiAn Health Insurance for JHMI'] = "泰安国际医疗保险 - JHMI";
-l['TaiAn Health Insurance for Purdue University'] = "泰安国际医疗保险 - Purdue University";
-l['TaiAn Health Insurance for Columbia University'] = "泰安国际医疗保险 - Columbia University";
-l['TaiAn Health Insurance for UCLA'] = "泰安国际医疗保险 - UCLA";
-l['TaiAn Health Insurance for UC Davis'] = "泰安国际医疗保险 - UC Davis";
-l['TaiAn Health Insurance for IU Bloomington'] = "泰安国际医疗保险 - IU Bloomington";
-l['TaiAn Health Insurance for Univtemplate'] = "泰安国际医疗保险 - Univtemplate";
+l['TaiAn Health Insurance for University of Illinois Urbana Champaign'] = "美国泰安国际医疗保险 - University of Illinois Urbana Champaign";
+l['TaiAn Health Insurance for New York University and NYU Poly'] = "美国泰安国际医疗保险 - New York University and NYU Poly";
+l['TaiAn Health Insurance for New York Institute of Technology'] = "美国泰安国际医疗保险 - New York Institute of Technology";
+l['TaiAn Health Insurance for Pennsylvania State University'] = "美国泰安国际医疗保险 - Pennsylvania State University";
+l['TaiAn Health Insurance for JHMI'] = "美国泰安国际医疗保险 - JHMI";
+l['TaiAn Health Insurance for Purdue University'] = "美国泰安国际医疗保险 - Purdue University";
+l['TaiAn Health Insurance for Columbia University'] = "美国泰安国际医疗保险 - Columbia University";
+l['TaiAn Health Insurance for UCLA'] = "美国泰安国际医疗保险 - UCLA";
+l['TaiAn Health Insurance for UC Davis'] = "美国泰安国际医疗保险 - UC Davis";
+l['TaiAn Health Insurance for IU Bloomington'] = "美国泰安国际医疗保险 - IU Bloomington";
+l['TaiAn Health Insurance for Univtemplate'] = "美国泰安国际医疗保险 - Univtemplate";
 l['Travel Group Information Submitted'] = "团体旅游医疗保险信息提交成功";
 l['Travel Group Application'] = "申请团体旅游医疗保险";
 l['Travel Group Application Information'] = "团体旅游医疗保险申请信息";
@@ -1281,7 +1295,7 @@ l['A deductible not to exceed $500 per accident or illness.'] = " 每次生病�
 l['TaiAn Insurance for Educators'] = "泰安J1教育者保险";
 l['Designed specifically for international scholars，educators，students and their families (US visa J1/J2, F1/F2). Purchase monthly increments (from 1 to 12 months), renewable up to 5 years if initial purchase is 3 months or more.'] = "计划专为持J签证和F签证的学者，教育者，学生和家属而设计。按整月购买（1至12个月），首次购买3个月以上者可以续保至5年。";
 l['Designed specifically for international scholars，educators，students and their families (US visa J1/J2, F1/F2). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.'] = "计划专为持J签证和F签证的学者，教育者，学生和家属而设计。按整月购买（1至12个月），可以续保至4年。";
-l['TaiAn International Health Insurance for Confucius Institutes'] = "泰安国际医疗保险 - 孔子学院";
+l['TaiAn International Health Insurance for Confucius Institutes'] = "美国泰安国际医疗保险 - 孔子学院";
 
 l['J1 insurance requirement'] = "J1保险标准";
 
@@ -1318,7 +1332,7 @@ l['WeChat ID: wxid_taian_usa'] = "微信： wxid_taian_usa";
 l['Skype: chris.lee136'] = "Skype: chris.lee136";
 l['Email: chris@taianfinancial.com, taianfinancialllc@gmail.com'] = "电子邮件：chris@taianfinancial.com, taianfinancialllc@gmail.com";
 l['Call from US - 9:00AM to 10:00PM Eastern time - Includes weekend: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time 7-11am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>'] = "美国电话(美东时间9am-10pm, 包括周末): +1 (317)318-8258 (中文), +1 (317)318-8259 (英语)。 中国电话: 950-4044-2336 (中文, 北京时间上午7-11点, 直接拨打, 无长途费)。 电子邮件：<a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>";
-l['TaiAn Financial'] = "泰安国际医疗保险";
+l['TaiAn Financial'] = "美国泰安国际医疗保险";
 l['Student Representatives and Travel Agents contact us for collaboration opportunities'] = "学生代表和旅行社请联系我们商讨合作";
 l['WeChat ID: wxid_taian_usa'] = "微信: wxid_taian_usa";
 l['Dependents can only purchase when the student purchases'] = "F2/J2 不能单独购买，只能与F1/J1一起购买。";
@@ -1886,8 +1900,8 @@ l['Insurance Provider'] = "保险提供商";
 l['$100 per illness/injury: For each illness or injury, insured pays $100 before insurance pays 100%.'] = "$100每次疾病或受伤免赔额 : 每次生病或受伤, 自付$100后保险赔付100%.";
 l['$250 or $500 annual deductible: During whole policy period (not over a year), insured pays $250 or $500 before insurance pays 100%.<br />IMG product, Taian Exclusive!'] = "$250 或 $500年度免赔额: 整个保险期间(不超过一年), 自付$250 或 $500后保险赔付100%。<br />IMG产品, 泰安独家代理!";
 l['$100 per illness/injury: For each illness or injury, insured pays $100 before insurance pays.'] = "$100每次疾病或受伤免赔额 : 每次生病或受伤, 自付$100后保险开始赔付.";
-l['New York Service Center for Chinese Study Fellows - TaiAn International Health Insurance'] = "纽约中国留学服务中心 - 泰安国际医疗保险";
-l['TaiAn International Health Insurance for AW Insurance'] = "泰安国际医疗保险 - AW Insurance";
+l['New York Service Center for Chinese Study Fellows - TaiAn International Health Insurance'] = "纽约中国留学服务中心 - 美国泰安国际医疗保险";
+l['TaiAn International Health Insurance for AW Insurance'] = "美国泰安国际医疗保险 - AW Insurance";
 l['The details above describe the minimum required coverage at Virginia Commonwealth University.  However, the Global Education Office at Virginia Commonwealth University strongly prefers International students and scholars buy Plan A instead of Plan B.'] = "以上是Virginia Commonwealth University对访问学者和国际学生医疗保险的最低标准。 然而，学校Global Education Office强烈推荐访问学者和国际学生购买计划A而不是计划B。";
 l['Health Insurance for Northwestern University J2/F2 dependents'] = "符合Northwestern University标准的 J2/F2 医疗保险";
 l['Our plans will not meet Northwestern University requirements for students or scholars.  We can provide coverage for student or scholar\'s family members.  Northwestern University families of students and scholars (J2/F2) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS. Taian Plan B (with $50,000 benefit per illness or injury, deductible not over $500) and Plan C (with $50,000 benefit, deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B or Plan C with a higher benefit if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.'] = "泰安目前没有保险计划能够满足Northwestern University对访问学者和国际学生保险的要求， 但我们可以为访问学者和国际学生的J2/F2家属提供优质实惠的保险。Northwestern University对访问学者和国际学生的J2/F2家属的保险要求是：1.每次生病或受伤的最高赔付至少为$50,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500。此标准与国务院的标准一样。泰安保险计划B (每次生病或受伤$50,000最高赔付, 免赔额不超过$500)和计划C ($50,000最高赔付, 免赔额不超过$500)都是满足此标准的最经济实惠的保险计划。根据自己的需要你也可以选择泰安计划B和计划C里更高的赔付。 网上提交申请几分钟后你就会收到Email电子保单，其中含有保险卡(ID Card)和确认信(Visa Letter)。将确认信发给学校证明你已购买满足学校要求的保险。";
