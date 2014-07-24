@@ -2806,7 +2806,7 @@ function getPartnership(partner) {
                         writeText("Harvard University and Harvard Medical School J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500; 5. Pre-existing condition coverage after a reasonable wait; 6. Patient share of expenses not over 25%. These requirements are the same as the USDOS. Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.");
                         writeText("Enrolled international students have to buy Plan A to meet Harvard University standards, and complete an online waiver."); 
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("Harvard University and Harvard Medical School Scholar Requirements", "http://www.hio.harvard.edu/healthcareandinsurance/scholars/requirementsforjvisaholders/"),                         
+                                makeURL("Harvard University and Harvard Medical School Scholar Requirements", "http://hio.harvard.edu/health-care-scholars"),                         
                                 makeURL("Harvard University and Harvard Medical School Student Requirements", "http://hushp.harvard.edu/waiver-checklist")
                                 ]));
                         endRow();
@@ -5177,7 +5177,7 @@ function getPartnership(partner) {
                         startRow();
                         writeText(loc("University of Massachusetts - Amherst ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("University of Massachusetts - Amherst Scholar Requirements", "http://www.umass.edu/ipo/iss/health.php") 
+                                makeURL("University of Massachusetts - Amherst Scholar Requirements", "http://www.umass.edu/ipo/iss/health") 
                                 
                                 ]));
                         endRow();

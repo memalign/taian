@@ -1236,6 +1236,7 @@ function referralSubstitution(key) {
         acntamu: "l=cn&partner=tamu&p=pivot-international-student&adid=acntamu",        
         gtamu: "partner=tamu&p=pivot-international-student&adid=gtamu",
         itamu: "partner=tamu&p=pivot-international-student",
+        icntamu: "l=cn&partner=tamu&p=pivot-international-student",        
         uh: "partner=uh&p=pivot-home&adid=suh",
         cnuh: "l=cn&partner=uh&p=pivot-home&adid=scnuh",   
         gcnuh: "l=cn&partner=uh&p=pivot-international-student&adid=gcnuh",
@@ -2643,7 +2644,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("Harvard University and Harvard Medical School(MA)", "http://www.harvard.edu/"),
                 makeURL("School F1 requirement", "http://hushp.harvard.edu/waiver-checklist"),
-                makeURL("School J1 requirement", "http://www.hio.harvard.edu/healthcareandinsurance/scholars/requirementsforjvisaholders/"),
+                makeURL("School J1 requirement", "http://hio.harvard.edu/health-care-scholars"),
                 makeURL("Health insurance for Harvard University and Harvard Medical School Students and Scholars", "#iharvard"),
 
                 makeURL("Hostos Community College, CUNY (NY)", "http://www.hostos.cuny.edu/"),
@@ -3127,7 +3128,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("University of Massachusetts - Amherst (MA)", "http://www.umass.edu/"),
                 makeURL("School F1 requirement", "http://www.umass.edu/uhs/insurance/ship/"),
-                makeURL("School J1 requirement", "http://www.umass.edu/ipo/iss/health.php"),
+                makeURL("School J1 requirement", "http://www.umass.edu/ipo/iss/health"),
                 makeURL("Health insurance for UMASS Amherst Scholars", "#iumass"),
                 
                 makeURL("University of Massachusetts - Boston (MA)", "http://www.umb.edu/"),
@@ -3624,7 +3625,8 @@ function writeSections(legacy) {
             makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),            
 
                 "", 
-                "",
+            makeBuyURL(loc("Buy Group A (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699"),
+
             makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
             makeBuyURL(loc("Buy Group B (10% off, $39 and up)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699")            
           
@@ -3858,7 +3860,7 @@ function writeSections(legacy) {
             makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),            
 
                 "", 
-                "",
+            makeBuyURL(loc("Buy Group A (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699"),
             makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
             makeBuyURL(loc("Buy Group B (10% off, $39 and up)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699")            
            
@@ -4095,7 +4097,7 @@ function writeSections(legacy) {
             makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),            
 
                 "", 
-                "",
+            makeBuyURL(loc("Buy Group A (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699"),
             makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
             makeBuyURL(loc("Buy Group B (10% off, $39 and up)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699")            
            
