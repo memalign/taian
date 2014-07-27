@@ -100,6 +100,8 @@ function referralSubstitution(key) {
         shisu: "l=cn&p=pivot-school-waiver&adid=shisu",         
         ucsh: "l=cn&p=pivot-school-waiver&adid=ucsh",
         aeshmain: "l=cn&p=pivot-home&adid=aeshmain", 
+        wxzzs: "l=cn&p=pivot-international-student&adid=wxzzs",
+        wxzzl: "l=cn&p=pivot-school-waiver&adid=wxzzl",       
         nl2: "l=cn&p=pivot-international-student&adid=nl2",
         nl: "l=cn&p=pivot-school-waiver&adid=nl",        
         knl2: "l=cn&p=pivot-international-student&adid=knl2",
@@ -646,7 +648,12 @@ function referralSubstitution(key) {
         goakland: "partner=oakland&p=pivot-international-student&adid=goakland",
         acnoakland: "l=cn&partner=oakland&p=pivot-international-student&adid=acnoakland", 
         ioakland: "partner=oakland&p=pivot-international-student",
-        icnoakland: "l=cn&partner=oakland&p=pivot-international-student",          
+        icnoakland: "l=cn&partner=oakland&p=pivot-international-student",  
+
+
+ 
+        inova: "partner=nova&p=pivot-international-student",
+        icnnova: "l=cn&partner=nova&p=pivot-international-student",         
         
         
         fsu: "partner=fsu&p=pivot-home&adid=sfsu",
@@ -2802,6 +2809,11 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School F1 requirement", "http://www.northwestern.edu/risk/insurance/student-health/waiver-process.html"),
                 makeURL("School J1 requirement", "http://www.northwestern.edu/risk/insurance/visiting-scholar/waiver-process.html"),                
                 makeURL("Health Insurance for Northwestern University J2/F2 dependents", "#inorthwestern"),
+
+                makeURL("Nova Southeastern University (FL)", "http://www.nova.edu/"),
+                makeURL("School F1 requirement", "http://aisstudentinsurance.com/nsu"),
+                makeURL("School J1 requirement", "http://www.nova.edu/internationalstudents/forms/exchange_visitor_req.pdf"),
+                makeURL("Health insurance for Nova Southeastern University Scholars", "#inova"),
                 
                 makeURL("Oakland University (CA)", "https://www.oakland.edu/"),
                 makeURL("School F1 requirement", "https://www.oakland.edu/?id=11874&sid=115"),
@@ -3556,7 +3568,7 @@ function writeSections(legacy) {
             "Medical Evacuation", "$500,000", "$50,000", "$50,000",
             "Repatriation of remains", "$50,000", "$25,000", "$25,000",
             "Pre-existing conditions", "After 12 months of continuous coverage", "After 12 months of continuous coverage", "After 12 months of continuous coverage",
-            "Group Pricing", "N/A", "2 or more primary insured have about 10% discount", "2 or more primary insured have about 10% discount", 
+            "Group Pricing", "2 or more primary insured have about 10% discount", "2 or more primary insured have about 10% discount", "2 or more primary insured have about 10% discount", 
             // Table within a table
             "Cost Per Month (Non-US Citizens)",
             makeTable(4, [
@@ -3653,7 +3665,7 @@ function writeSections(legacy) {
 
                 "Plan Highlights",
                 makeBulletedListWithTitle("", [
-                        "Maternity covered if you are not pregnant when you purchase.",
+                        "On the Plan A effective date you need to have a valid J1/F1 visa and be outside of your home country for your study or program.  Taian Plan A covers maternity only if the pregnancy begins after the plan is effective.",
                         "Routine Nursery Care: $750 maximum per period of coverage",
                         "Newborn care is covered for 31 days after birth if the birth is covered under the plan.",                        
                         "Emergency Room: Injury: URC; Illness resulting in hospitalization: URC; Illness without hospitalization: Subject to addtional $250 deductible",
@@ -3792,7 +3804,7 @@ function writeSections(legacy) {
             "Medical Evacuation", "$500,000", "$50,000", "$50,000",
             "Repatriation of remains", "$50,000", "$25,000", "$25,000",
             "Pre-existing conditions", "After 12 months of continuous coverage", "After 12 months of continuous coverage", "After 12 months of continuous coverage",
-            "Group Pricing", "N/A", "2 or more primary insured have about 10% discount", "2 or more primary insured have about 10% discount", 
+            "Group Pricing", "2 or more primary insured have about 10% discount", "2 or more primary insured have about 10% discount", "2 or more primary insured have about 10% discount", 
             // Table within a table
             "Cost Per Month (Non-US Citizens)",
             makeTable(4, [
@@ -3887,7 +3899,7 @@ function writeSections(legacy) {
 
                 "Plan Highlights",
                 makeBulletedListWithTitle("", [
-                        "Maternity covered if you are not pregnant when you purchase.",
+                        "On the Plan A effective date you need to have a valid J1/F1 visa and be outside of your home country for your study or program.  Taian Plan A covers maternity only if the pregnancy begins after the plan is effective.",
                         "Routine Nursery Care: $750 maximum per period of coverage",
                         "Newborn care is covered for 31 days after birth if the birth is covered under the plan.",                        
                         "Emergency Room: Injury: URC; Illness resulting in hospitalization: URC; Illness without hospitalization: Subject to addtional $250 deductible",
@@ -4028,7 +4040,7 @@ function writeSections(legacy) {
             "Medical Evacuation", "$500,000", "$50,000", "$50,000",
             "Repatriation of remains", "$50,000", "$25,000", "$25,000",
             "Pre-existing conditions", "After 12 months of continuous coverage", "After 12 months of continuous coverage", "After 12 months of continuous coverage",
-            "Group Pricing", "N/A", "2 or more primary insured have about 10% discount", "2 or more primary insured have about 10% discount", 
+            "Group Pricing", "2 or more primary insured have about 10% discount", "2 or more primary insured have about 10% discount", "2 or more primary insured have about 10% discount", 
             // Table within a table
             "Cost Per Month (Non-US Citizens)",
             makeTable(4, [
@@ -4124,7 +4136,7 @@ function writeSections(legacy) {
 
                 "Plan Highlights",
                 makeBulletedListWithTitle("", [
-                        "Maternity covered if you are not pregnant when you purchase.",
+                        "On the Plan A effective date you need to have a valid J1/F1 visa and be outside of your home country for your study or program.  Taian Plan A covers maternity only if the pregnancy begins after the plan is effective.",
                         "Routine Nursery Care: $750 maximum per period of coverage",
                         "Newborn care is covered for 31 days after birth if the birth is covered under the plan.",                        
                         "Emergency Room: Injury: URC; Illness resulting in hospitalization: URC; Illness without hospitalization: Subject to addtional $250 deductible",
@@ -4267,7 +4279,7 @@ function writeSections(legacy) {
             "Medical Evacuation", "$500,000", "$50,000", "$500,000",
             "Repatriation of remains", "$50,000", "$25,000", "$50,000",
             "Pre-existing conditions", "After 12 months of continuous coverage", "After 12 months of continuous coverage", "Up to $50,000 coverage ($2,500 for over 65 years old) for sudden and unexpected recurrence. Otherwise not covered.",
-            "Group Pricing", "N/A", "2 or more primary insured have about 10% discount", "5 or more primary insured have about 10% discount"
+            "Group Pricing", "2 or more primary insured have about 10% discount", "2 or more primary insured have about 10% discount", "5 or more primary insured have about 10% discount"
 
            
 
@@ -4293,7 +4305,7 @@ function writeSections(legacy) {
 
                 "Plan Highlights",
                 makeBulletedListWithTitle("", [
-                        "Maternity covered if you are not pregnant when you purchase.",
+                        "On the Plan A effective date you need to have a valid J1/F1 visa and be outside of your home country for your study or program.  Taian Plan A covers maternity only if the pregnancy begins after the plan is effective.",
                         "Routine Nursery Care: $750 maximum per period of coverage",
                         "Newborn care is covered for 31 days after birth if the birth is covered under the plan.",                        
                         "Emergency Room: Injury: URC; Illness resulting in hospitalization: URC; Illness without hospitalization: Subject to addtional $250 deductible",

@@ -506,6 +506,10 @@ l['Oakland University Scholar Requirements'] = "Oakland University 访问学者�
 l['TaiAn Health Insurance for Oakland University'] = "美国泰安国际医疗保险 - Oakland University";
 l['Health insurance for Oakland University Scholars'] = "符合Oakland University标准的访问学者医疗保险";
 
+l['Nova Southeastern University Scholar Requirements'] = "Nova Southeastern University 访问学者医疗保险的标准";
+l['TaiAn Health Insurance for Nova Southeastern University'] = "美国泰安国际医疗保险 - Nova Southeastern University";
+l['Health insurance for Nova Southeastern University Scholars'] = "符合Nova Southeastern University标准的访问学者医疗保险";
+
 l['TaiAn Health Insurance for Boston College'] = "美国泰安国际医疗保险 - Boston College";
 
 l['Boston College Scholar Requirements'] = "Boston College 访问学者医疗保险的标准";
@@ -886,7 +890,7 @@ l['UT Arlington Student Requirements'] = "UT Arlington学校对留学生的要�
 
 
 
-l['Maternity covered if you are not pregnant when you purchase.'] = "生育保险必须是在怀孕之前购买才有效";
+l['On the Plan A effective date you need to have a valid J1/F1 visa and be outside of your home country for your study or program.  Taian Plan A covers maternity only if the pregnancy begins after the plan is effective.'] = "购买泰安保险计划A时，申请人需要有生效的J1或F1签证并且已经到达访学国家进行访学项目时保险才能生效。 只有保险生效以后的怀孕才在生育险的理赔范围内。";
 l['Requirements for all schools for F and J visa'] = " 全美各校F鉴证和J签证医疗保险的标准";
 l['School Requirements and Most Affordable Insurance Plan'] = "全美各校F和J签证保险标准及符合各校标准的保险计划";
 l['Find your school insurance requirements and most affordable plan here'] = "全美各校F和J签证保险的标准以及符合各标准的保险计划";
