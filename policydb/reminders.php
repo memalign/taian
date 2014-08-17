@@ -488,13 +488,13 @@ if (!is_null($_POST['processedRows'])) {
 }
 
 // People who need emails:
-// These are the people who will be expired between 20 days prior to today and at most 10 days from now who have:
+// These are the people who will be expired between 8 days prior to today and at most 6 days from now who have:
 // - Never been reminded
 // OR
 //   - They haven't been reminded since before the day before expiration
 //   AND
-//   - They've gotten a reminder and today is later than the day before expiration
-$soonToExpireQuery = "select $importantColumns from policy where (should_ignore = 0) and julianday(expiration_date_fmt) >= julianday(\"now\", \"-8 days\") and julianday(expiration_date_fmt) <= julianday(\"now\", \"+7 days\") and ( (last_reminder_date_fmt IS NULL) or (length(last_reminder_date_fmt) = 0) or ( (julianday(last_reminder_date_fmt) < julianday(expiration_date_fmt, \"-1 day\")) AND (julianday(\"now\") >= julianday(expiration_date_fmt, \"-1 day\"))  )   ) order by rowid desc";
+//   - They've gotten a reminder and today is later than the day of expiration
+$soonToExpireQuery = "select $importantColumns from policy where (should_ignore = 0) and julianday(expiration_date_fmt) >= julianday(\"now\", \"-8 days\") and julianday(expiration_date_fmt) <= julianday(\"now\", \"+6 days\") and ( (last_reminder_date_fmt IS NULL) or (length(last_reminder_date_fmt) = 0) or ( (julianday(last_reminder_date_fmt) < julianday(expiration_date_fmt, \"-1 day\")) AND (julianday(\"now\") >= julianday(expiration_date_fmt))  )   ) order by rowid desc";
 
 $result = sqlite_query($dbhandle, $soonToExpireQuery, $error);
 if (!$result) {
