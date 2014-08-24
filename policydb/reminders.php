@@ -143,7 +143,7 @@ END;
     $studentBRenew = <<<END
 Dear __PRIMARY_INSURED_NAME__,
 
-您购买的泰安访问学者留学生保险计划B(Patriot Exchange Program) __EXPIRATION_DATE__ 就要过期了。 如果您仍然满足购买该保险的条件(您的签证和身份没有变化)并且需要续保的話，请在过期日期之前提交申请以完成续保。
+您购买的泰安访问学者留学生保险计划B(TaiAn Patriot Exchange) __EXPIRATION_DATE__ 就要过期了。 如果您仍然满足购买该保险的条件(您的签证和身份没有变化)并且需要续保的話，请在过期日期之前提交申请以完成续保。
 
 请点击此链接申请续保： https://purchase.imglobal.com/beginrenewal?CertificateNumber=__CERTIFICATE_NUMBER__
 
@@ -220,7 +220,7 @@ END;
     $studentBExpiresToday = <<<END
 Dear __PRIMARY_INSURED_NAME__,
 
-您购买的泰安保险B（Patriot Exchange Program)今天就要过期了。 如果您仍然满足购买该保险的条件(您的签证和身份没有变化)并且需要续保的話，今天是最后一天仍可续保。 请点击下面的链接申请续保： 
+您购买的泰安保险B（TaiAn Patriot Exchange)今天就要过期了。 如果您仍然满足购买该保险的条件(您的签证和身份没有变化)并且需要续保的話，今天是最后一天仍可续保。 请点击下面的链接申请续保： 
 
 https://purchase.imglobal.com/beginrenewal?CertificateNumber=__CERTIFICATE_NUMBER__
          
@@ -265,9 +265,9 @@ END;
     $patriotExchangeGroupRenew = <<<END
 Dear __PRIMARY_INSURED_NAME__,
 
-您购买的泰安访问学者留学生团体保险计划B(Patriot Exchange Group) __EXPIRATION_DATE__ 就要过期了。 如果您们仍然满足购买该保险的条件(签证和身份没有变化)并且需要续保的話，请在过期日期申请团体延期。 即使团体中只有一位成员需要续保，团体可以继续存在并延期。请注意，保险期间所产生的疾病续保时就不是 pre-existing condition，而重新购买新保险就不具备这个好处。
+您购买的泰安团体保险 __EXPIRATION_DATE__ 就要过期了。 如果您们仍然满足购买该保险的条件(签证和身份没有变化)并且需要续保的話，请在过期日期前申请团体延期。 即使团体中只有一位成员需要续保，团体可以继续存在并延期。 第一年之内的延期不能超过12个月。延期需要超过一年时请与泰安公司联系，您需要先填写团体延期表格，然后团体中的成员才能在新的一年中续保或加入新成员。请注意，保险期间所产生的疾病续保时就不是 pre-existing condition，而重新购买新保险就不具备这个好处。 
 
-您可以发email给IMG，要求团体保险延期。请见下面我们为您写的Email草稿。填入括号中的内容，将Email发给IMG。
+您可以发email给IMG，要求保险延期。请见下面我们为您写的Email草稿。填入括号中的内容，将Email发给IMG。
 
 非常感谢您对我们公司的信任和支持。对我们工作的不足之处，请给我们一个提醒。把我们泰安介绍给您的家人朋友和同事是对我们工作的最大的肯定。泰安公司非常希望得到您的继续支持。
 
@@ -305,12 +305,12 @@ END;
     $patriotExchangeGroupExpiresToday = <<<END
 Dear __PRIMARY_INSURED_NAME__,
 
-您购买的泰安访问学者留学生团体保险计划B(Patriot Group Exchange ) 今天就要过期了。 如果您们仍然满足购买该保险的条件(签证和身份没有变化)并且需要延期的話，今天是最后一天仍可申请团体保险延期。 即使团体中只有一位成员需要续保，团体可以继续存在并延期。请注意，保险期间所产生的疾病续保时就不是 pre-existing condition，而重新购买新保险就不具备这个好处。
+您购买的泰安团体保险 __EXPIRATION_DATE__ 今天就要过期了。 如果您们仍然满足购买该保险的条件(签证和身份没有变化)并且需要续保的話，请在今天(美东时间晚12点前）申请续保。 即使团体中只有一位成员需要续保，团体可以继续存在并延期。 第一年之内的延期不能超过12个月。延期需要超过一年时请与泰安公司联系，您需要先填写团体延期表格，然后团体中的成员才能在新的一年中续保或加入新成员。请注意，保险期间所产生的疾病续保时就不是 pre-existing condition，而重新购买新保险就不具备这个好处。 
 
-您可以发email给IMG，要求团体保险延期。请见下面我们为您写的Email草稿。填入括号中的内容，将Email发给IMG。
+您可以发email给IMG，要求保险延期。请见下面我们为您写的Email草稿。填入括号中的内容，将Email发给IMG。
 
-如果您今天不能完成保险延期，以后您需要重新购买时， 请登陆泰安网站： http://taianfinancial.com/#l=cn&p=pivot-international-student
-      
+如果您今天不能完成保险延期，以后您需要重新购买时， 请登陆泰安网站：http://taianfinancial.com/chinese
+
 非常感谢您对我们公司的信任和支持。对我们工作的不足之处，请给我们一个提醒。把我们泰安介绍给您的家人朋友和同事是对我们工作的最大的肯定。泰安公司非常希望得到您的继续支持。
 
 __SIGNATURE__
@@ -346,6 +346,7 @@ END;
 
     $renewalSubject = "泰安保险续保通知";
     $patriotExchangeGroupRenewalSubject = "泰安团体保险延期通知";
+    $patriotExchangeGroupExpiresTodaySubject = "泰安团体保险过期通知";
     $rebuySubject = "泰安保险过期提醒";
     $expiresTodaySubject = "您的泰安保险今天过期";
 
@@ -420,10 +421,11 @@ END;
              }
         }
     } elseif (startsWith($certificateNumber, "EPSWN") ||
+              startsWith($certificateNumber, "PGTAI") ||
               startsWith($certificateNumber, "TPEG")) {
         if ($tooLateToRenew) {
             $renewEmail = $patriotExchangeGroupExpiresToday;
-            $subject = $expiresTodaySubject;
+            $subject = $patriotExchangeGroupExpiresTodaySubject;
         } else {
             $renewEmail = $patriotExchangeGroupRenew;
             $subject = $patriotExchangeGroupRenewalSubject;
@@ -434,8 +436,8 @@ END;
     $emailSignature = <<<END
 再次深表感谢，祝福平安健康！
 
-Chris
-泰安国际医疗保险 （IMG授权的独立的IMG中文销售中心） 
+客户服务中心
+美国泰安国际医疗保险 （IMG授权的独立的IMG中文销售中心） 
 美国电话: +1 (317)318-8258 (中文), +1 (317)318-8259 (英语)
 中国电话: 950-4044-2336 (中文, 北京时间上午7-11点，直接拨号，无长途费)
 taianfinancial.com/chinese
