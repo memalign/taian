@@ -107,7 +107,8 @@ function referralSubstitution(key) {
         knl2: "l=cn&p=pivot-international-student&adid=knl2",
         knl: "l=cn&p=pivot-school-waiver&adid=knl",  
         wshsa: "l=cn&p=pivot-school-waiver&adid=wshsa", 
-        wshsb: "l=cn&p=pivot-international-student&adid=wshsb",        
+        wshsb: "l=cn&p=pivot-international-student&adid=wshsb", 
+        lwd: "l=cn&p=pivot-international-student&adid=lwd",        
         
         newyorkservicecenter: "l=cn&partner=newyorkservicecenter&p=pivot-international-student",
         nyscs: "l=cn&partner=newyorkservicecenter&p=pivot-international-student",
@@ -755,10 +756,10 @@ function referralSubstitution(key) {
         iiastate: "partner=iastate&p=pivot-international-student",
         georgetown: "partner=georgetown&p=pivot-home&adid=sgeorgetown",
         cngeorgetown: "l=cn&partner=georgetown&p=pivot-home&adid=scngeorgetown",   
-        gcngeorgetown: "l=cn&partner=georgetown&p=pivot-international-studentandscholar&adid=gcngeorgetown",
-        ggeorgetown: "partner=georgetown&p=pivot-international-studentandscholar&adid=ggeorgetown",
-        acngeorgetown: "l=cn&partner=georgetown&p=pivot-international-studentandscholar&adid=acngeorgetown", 
-        igeorgetown: "partner=georgetown&p=pivot-international-studentandscholar", 
+        gcngeorgetown: "l=cn&partner=georgetown&p=pivot-international-student&adid=gcngeorgetown",
+        ggeorgetown: "partner=georgetown&p=pivot-international-student&adid=ggeorgetown",
+        acngeorgetown: "l=cn&partner=georgetown&p=pivot-international-student&adid=acngeorgetown", 
+        igeorgetown: "partner=georgetown&p=pivot-international-student", 
         nd: "partner=nd&p=pivot-home&adid=snd",
         cnnd: "l=cn&partner=nd&p=pivot-home&adid=scnnd",   
         gcnnd: "l=cn&partner=nd&p=pivot-international-student&adid=gcnnd",
@@ -1134,12 +1135,7 @@ function referralSubstitution(key) {
         acnnortheastern: "l=cn&partner=northeastern&p=pivot-international-student&adid=acnnortheastern",        
         gnortheastern: "partner=northeastern&p=pivot-international-student&adid=gnortheastern",
         inortheastern: "partner=northeastern&p=pivot-international-student",
-        gatech: "partner=gatech&p=pivot-home&adid=sgatech",
-        cngatech: "l=cn&partner=gatech&p=pivot-home&adid=scngatech",   
-        gcngatech: "l=cn&partner=gatech&p=pivot-international-student&adid=gcngatech",
-        acngatech: "l=cn&partner=gatech&p=pivot-international-student&adid=acngatech",        
-        ggatech: "partner=gatech&p=pivot-international-student&adid=ggatech",
-        igatech: "partner=gatech&p=pivot-international-student",
+
         asu: "partner=asu&p=pivot-home&adid=sasu",
         cnasu: "l=cn&partner=asu&p=pivot-home&adid=scnasu",   
         gcnasu: "l=cn&partner=asu&p=pivot-international-student&adid=gcnasu",
@@ -2163,6 +2159,11 @@ function makeBuyStyle(text) {
     return "<h2 class=\"uglyBuyStyle\">" + text + "</h2>";
 }
 
+function makeResourceCenterURL(title, pivot) {
+    return makeURL(title, "./resourcecenter/index.html#l="+getPageAttribute("l")+"&p="+pivot);
+}
+
+
 function makeBulletedListWithTitle(title, list) {
     var listCode = '<h2>'+loc(title)+'</h2>';
     listCode += '<ul class="styled-ul">';
@@ -2470,7 +2471,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("Boston University (MA)", "http://www.bu.edu/"),
                 makeURL("School F1 requirement", "http://www.bu.edu/studentaccountingservices/resources/medical-insurance/"),
-                makeURL("School J1 requirement", "http://www.bu.edu/isso/administrators/j1/ev-overview.html"),
+                makeURL("School J1 requirement", "http://www.bu.edu/isso/students/current/j1/status/health-insurance.html"),
                 makeURL("Health insurance for Boston University Scholars", "#ibu"),                            
                 
                 makeURL("Brandeis University (MA)", "http://www.brandeis.edu/"),
@@ -2500,7 +2501,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("California Institute of Technology (CA)", "http://www.caltech.edu/"),
                 makeURL("School F1 requirement", "http://benefits.caltech.edu/SiteDocuments/WaiverRequirements.pdf"),
-                makeURL("School J1 requirement", "http://www.international.caltech.edu/maintainstatus/j1scholar"),
+                makeURL("School J1 requirement", "http://www.international.caltech.edu/maintainstatus/J1insurarnce"),
                 makeURL("Health insurance for Caltech Scholars", "#icaltech"),
                 
                 makeURL("California State University - Long Beach (CA)", "http://www.csulb.edu/"),
@@ -2545,8 +2546,8 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Health insurance for Clark University Scholars", "#iclarku"),                 
                 
                 makeURL("Clemson University (SC)", "http://www.clemson.edu/"),
-                makeURL("School F1 requirement", "http://www.clemson.edu/campus-life/campus-services/redfern/insurance/faq.html"),
-                makeURL("School J1 requirement", "http://www.clemson.edu/administration/ia/services/students/scholars.html"),
+                makeURL("School F1 requirement", "http://www.clemson.edu/campus-life/campus-services/redfern/insurance/faq.html#tuitionfees"),
+                makeURL("School J1 requirement", "http://www.clemson.edu/administration/ia/services/students/scholars.html#maintain"),
                 makeURL("Health insurance for Clemson University Scholars", "#iclemson"),
                 
                 makeURL("Cleveland State University (OH)", "http://www.csuohio.edu/"),
@@ -2640,14 +2641,14 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Health insurance for Fordham University Students and Scholars", "#ifordham"),                
                 
                 makeURL("George Mason University (VA)", "http://www.gmu.edu/"),
-                makeURL("School F1 requirement", "http://eli.gmu.edu/status/health-insurance-requirement/"),
-                makeURL("School J1 requirement", "http://www.gmu.edu/depts/unilife/oips/evp/maintain_j.php?type=1"),
+                makeURL("School F1 requirement", "http://shs.gmu.edu/insurance/international/insurance-waiver/"),
+                makeURL("School J1 requirement", "http://shs.gmu.edu/insurance/j-1-visiting-scholars/"),
                 makeURL("Plan that meets this school's standards for J scholar", "#usdos"),
                 
                 makeURL("Georgetown University (DC)", "http://www.georgetown.edu/"),
                 makeURL("School F1 requirement", "http://studenthealth.georgetown.edu/insurance/requirements/full-time/waiver/approval/"),
                 makeURL("School J1 requirement", "http://internationalservices.georgetown.edu/j-1scholars/healthinsurance/"),
-                makeURL("Health insurance for Georgetown University Students and Scholars", "#igeorgetown"),
+                makeURL("Health insurance for Georgetown University Scholars", "#igeorgetown"),
                 
                 makeURL("George Washington University (DC)", "http://www.gwu.edu/"),
                 makeURL("School F1 requirement", "http://studenthealth.gwu.edu/student-health-insurance"),
@@ -2657,16 +2658,16 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Georgia Institute of Technology", "http://www.gatech.edu/"),
                 makeURL("School F1 requirement", "http://www.health.gatech.edu/finance/Pages/insurance.aspx"),
                 makeURL("School J1 requirement", "http://www.oie.gatech.edu/scholars/procedures"),
-                makeURL("Health insurance for Georgia Institute of Technology Scholars", "#igatech"),
+                "Consult your school about their requirements", 
                 
                 makeURL("Georgia Regents University (GA)", "http://www.gru.edu/"),
-                makeURL("School F1 requirement", "http://www.gru.edu/diversity/ipso/students/index.php"),
+                makeURL("School F1 requirement", "http://www.gru.edu/shs/waiver.php"),
                 makeURL("School J1 requirement", "http://www.gru.edu/diversity/ipso/students/j1students.php"),
                 makeURL("Health insurance for Georgia Regents University Scholars", "#igru"),                
                 
                 makeURL("Georgia State University", "http://www.gsu.edu/"),
                 makeURL("School F1 requirement", "http://isss.gsu.edu/files/2013/02/Updated-FAQ.pdf"),
-                makeURL("School J1 requirement", "http://isss.gsu.edu/files/2013/02/J-1-Insurance-Compliance-Form.pdf"),
+                makeURL("School J1 requirement", "http://isss.gsu.edu/files/2014/08/J-1-Insurance-Compliance-Form.pdf"),
                 makeURL("Health insurance for Georgia State University Students and Scholars", "#igsu"),
                 
                 makeURL("Harvard University and Harvard Medical School(MA)", "http://www.harvard.edu/"),
@@ -2745,9 +2746,9 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Health insurance for CUNY Students and Scholars", "#icuny"),                
                 
                 makeURL("LSU Baton Rouge(LA)", "http://www.lsu.edu"),
-                makeURL("School F1 requirement", "http://www.oip.lsu.edu/iso/iso_Insurance_Important_Info.htm"),
-                makeURL("School J1 requirement", "http://www.oip.lsu.edu/iso/pdfs/J-1%20Scholar%20Insurance%20Coverage%20Evaluation%20Form.pdf"),
-                makeURL("Health insurance for Louisiana State University Scholars", "#ilsu"),
+                makeURL("School F1 requirement", "http://international.lsu.edu/IS/current/insuranceinfo-private.php"),
+                makeURL("School J1 requirement", "http://international.lsu.edu/IS/faculty/J-1Exchange.php"),
+                makeURL("Health insurance for Louisiana State University Students and Scholars", "#ilsu"),
                 
                 makeURL("Massachusetts Institute of Technology (MA)", "http://web.mit.edu/"),
                 makeURL("School F1 requirement", "http://medweb.mit.edu/healthplans/student/waiver.html#requirements"),
@@ -2836,8 +2837,8 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Health insurance for Nova Southeastern University Scholars", "#inova"),
                 
                 makeURL("Oakland University (CA)", "https://www.oakland.edu/"),
-                makeURL("School F1 requirement", "https://www.oakland.edu/?id=11874&sid=115"),
-                makeURL("School J1 requirement", "http://www.oakland.edu/isso/scholarinformation/"),
+                makeURL("School F1 requirement", "http://www.oakland.edu/?id=23748&sid=115"),
+                makeURL("School J1 requirement", "http://www.oakland.edu/?id=29333&sid=115"),
                 makeURL("Health insurance for Oakland University Scholars", "#ioakland"),                
                 
                 makeURL("Ohio State University-Columbus(OH)", "http://www.osu.edu/"),
@@ -2846,7 +2847,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 "Consult your school about their requirements",
                 
                 makeURL("Oklahoma State University System (OK)", "http://www.system.okstate.edu/"),
-                makeURL("School F1 requirement", "http://www.okstate.edu/UHS/insurance.php"),
+                makeURL("School F1 requirement", "https://uhs.okstate.edu/mandatory-insurance#buy_insurance"),
                 makeURL("School J1 requirement", "http://iss.okstate.edu/sites/iss.okstate.edu/files/files/docs/HostingEVChecklist.pdf"),
                 makeURL("Plan that meets this school's standards for J scholar", "#usdos"),
                 
@@ -2857,7 +2858,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("Pennsylvania State University System (PA)", "http://www.psu.edu/"),
                 makeURL("School F1 requirement", "http://studentaffairs.psu.edu/health/services/insurance/waiver.shtml"),
-                makeURL("School J1 requirement", "http://global.psu.edu/faculty_staff/scholars/j1.cfm"),
+                makeURL("School J1 requirement", "http://global.psu.edu/info/internationals-psu/scholars/becoming-scholar/scholars-medical-insurance"),
                 "Consult your school about their requirements",
                 
                 makeURL("Princeton University (NJ)", "http://www.princeton.edu/"),
@@ -2917,7 +2918,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Health insurance for Shawnee State University Students and Scholars", "#ishawnee"),                
 
                 makeURL("Stanford University (CA)", "http://www.stanford.edu/"),
-                makeURL("School F1 requirement", "http://www.stanford.edu/group/vaden/insurance/using_your_own.html"),
+                makeURL("School F1 requirement", "http://vaden.stanford.edu/insurance/waiving-cardinal-care/international-students"),
                 makeURL("School J1 requirement", "http://icenter.stanford.edu/quick_reference/healthinsurance.html#J1reqs"),
                 makeURL("Health insurance for Stanford University Students and Scholars", "#ista"),
                 
@@ -2937,8 +2938,8 @@ function writeSectionForSchoolWaiverRequirements() {
                 "Consult your school about their requirements",
                 
                 makeURL("SUNY Stony Brook (NY)", "http://www.sunysb.edu/"),
-                makeURL("School F1 requirement", "http://studentaffairs.stonybrook.edu/shs/intl.shtml"),
-                makeURL("School J1 requirement", "http://studentaffairs.stonybrook.edu/shs/intl_visop.shtml"),
+                makeURL("School F1 requirement", "http://studentaffairs.stonybrook.edu/shs/insurance/internationalinsurance.shtml"),
+                makeURL("School J1 requirement", "http://studentaffairs.stonybrook.edu/shs/insurance/intl_visop.shtml"),
                 "Consult your school about their requirements",
                 
                 makeURL("Syracuse University (NY)", "http://www.syr.edu/"),
@@ -2974,13 +2975,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("University of Akron (OH)", "http://www.uakron.edu/"),
                 makeURL("School F1 requirement", "http://www.uakron.edu/oip/immigration/f1/insurance-for-international-students.dot"),
                 makeURL("School J1 requirement", "http://www.uakron.edu/oip/immigration/insurance-for-j1-scholar.dot"),
-                makeURL("Health insurance for University of Akron Scholars", "#iuakron"),
-
-                
-                makeURL("University of Alabama -Tuscaloosa (AL)", "http://www.ua.edu/"),
-                makeURL("School F1 requirement", "http://is.ua.edu/insurance-medical-care/medical-insurance/"),
-                makeURL("School J1 requirement", "http://is.ua.edu/international-faculty-staff/j-1-exchange-visitors/j-1-overview-categories/"),
-                makeURL("Plan that meets this school's standards for J scholar", "#usdos"),
+                makeURL("Health insurance for University of Akron Scholars", "#iuakron"),                
                 
                 makeURL("University of Alabama - Birmingham (AL)", "http://www.uab.edu/"),
                 makeURL("School F1 requirement", "http://www.uab.edu/studenthealth/insurance-and-waivers/mandatory-insurance-waivers"),
@@ -2990,6 +2985,11 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("University of Alabama - Huntsville (AL)", "http://www.uah.edu/"),
                 makeURL("School F1 requirement", "http://www.uah.edu/ISSO/Students/newstudents.php"),
                 makeURL("School J1 requirement", "http://www.uah.edu/isso/scholars-employees/j1-scholars/maintain-status"),
+                makeURL("Plan that meets this school's standards for J scholar", "#usdos"),
+
+                makeURL("University of Alabama -Tuscaloosa (AL)", "http://www.ua.edu/"),
+                makeURL("School F1 requirement", "http://www.uah.edu/isss/students/accepted-students"),
+                makeURL("School J1 requirement", "http://is.ua.edu/international-faculty-staff/j-1-exchange-visitors/j-1-overview-categories/"),
                 makeURL("Plan that meets this school's standards for J scholar", "#usdos"),
                 
                 makeURL("University of Alaska - Fairbanks (AK)", "http://www.uaf.edu/"),
@@ -3014,7 +3014,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("University of California Davis (CA)", "http://www.ucdavis.edu/"),
                 makeURL("School F1 requirement", "http://shcs.ucdavis.edu/information/newstudent/international-ins.html"),
-                makeURL("School J1 requirement", "http://siss.ucdavis.edu/health_j1.cfm"),
+                makeURL("School J1 requirement", "http://siss.ucdavis.edu/resources/intl_scholar_resources/healthcare_scholars.html"),
                 makeURL("Health insurance for UC Davis Scholars", "#iucdav"),
                 
                 makeURL("University of California Irvine (CA)", "http://www.uci.edu/"),
@@ -3023,18 +3023,18 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Health insurance for UC Irvine Scholars", "#iuci"),
                 
                 makeURL("University of California Los Angeles (CA)", "http://www.ucla.edu/"),
-                makeURL("School F1 requirement", "http://www.admissions.ucla.edu/NewBruins/Intl_insurance.htm"),
+                makeURL("School F1 requirement", "http://www.internationalcenter.ucla.edu/home/handbook/181/196/health"),
                 makeURL("School J1 requirement", "http://www.internationalcenter.ucla.edu/home/J1Visa/74/75/Overview"),
                 makeURL("Health insurance for UCLA Scholars", "#iucla"),
                 
                 makeURL("University of California Merced (CA)", "http://www.ucmerced.edu/"),
-                makeURL("School F1 requirement", "http://health.ucmerced.edu/insurance/2014-15-waiver-application"),
+                makeURL("School F1 requirement", "http://iss.ucmerced.edu/resources/insurance"),
                 makeURL("School J1 requirement", "http://iss.ucmerced.edu/professors-researchers/j-1/health-insurance"),
                 makeURL("Health insurance for UC Merced Scholars", "#iucmerced"),                                
                 
                 
                 makeURL("University of California Riverside (CA)", "http://www.ucr.edu/"),
-                makeURL("School F1 requirement", "http://internationalcenter.ucr.edu/InternationalStudents/Pages/HealthandMoneyMatters.aspx"),
+                makeURL("School F1 requirement", "http://www.campushealth.ucr.edu/"),
                 makeURL("School J1 requirement", "http://internationalscholars.ucr.edu/visa/joneinsurance.html"),
                 makeURL("Health insurance for UC Riverside Scholars", "#iucr"),
                 
@@ -3049,12 +3049,12 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Health insurance for UC San Francisco Scholars", "#iucsf"),
                 
                 makeURL("University of California Santa Barbara (CA)", "http://www.ucsb.edu/"),
-                makeURL("School F1 requirement", "http://studenthealth.sa.ucsb.edu/GHI.aspx"),
-                makeURL("School J1 requirement", "http://oiss.sa.ucsb.edu/scholars/Insurance.aspx"),
+                makeURL("School F1 requirement", "https://studenthealth.sa.ucsb.edu/Insurance/UCwaivercriteria.aspx"),
+                makeURL("School J1 requirement", "http://oiss.sa.ucsb.edu/scholars/prospective-j-1-scholars/insurance"),
                 makeURL("Health insurance for UC Santa Barbara Scholars", "#iucsb"),
                 
                 makeURL("University of California Santa Cruz (CA)", "http://www.ucsc.edu/"),
-                makeURL("School F1 requirement", "http://healthcenter.ucsc.edu/forms/13-14-online-waiver-questions.pdf"),
+                makeURL("School F1 requirement", "http://healthcenter.ucsc.edu/forms/14-15-online-waiver-questions.pdf"),
                 makeURL("School J1 requirement", "http://ieo.ucsc.edu/intl-scholars/j1/post-arrival-insurance.html#Federal"),
                 makeURL("Health insurance for UC Santa Cruz Scholars", "#iucsc"),
                 
@@ -3075,12 +3075,12 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("University of Connecticut (CT)", "http://www.uconn.edu/"),
                 makeURL("School F1 requirement", "http://www.shs.uconn.edu/insurance.html"),
-                makeURL("School J1 requirement", "http://global.uconn.edu/about/immigration-services/visiting-scholars/insurance-requirements-for-j-1-exchange-visitors/"),
+                makeURL("School J1 requirement", "http://global.uconn.edu/about/isss/visiting-scholars/insurance-requirements-for-j-1-exchange-visitors/"),
                 makeURL("Health insurance for University of Connecticut Students and Scholars", "#iuconn"),
                 
                 makeURL("University of Dayton (OH)", "http://www.udayton.edu/"),
                 makeURL("School F1 requirement", "http://www.udayton.edu/international/arrival/health_insurance.php"),
-                makeURL("School J1 requirement", "https://www-secure.udayton.edu/international/_resources/docs/isss/intl_student_guidebook_11-12.pdf"),
+                makeURL("School J1 requirement", "https://www.udayton.edu/international/_resources/docs/isss/j1_request_form.pdf"),
                 makeURL("Health insurance for University of Dayton International Students and Scholars", "#iudayton"),
                 
                 makeURL("University of Delaware (DE)", "http://www.udel.edu/"),
@@ -3109,8 +3109,8 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Health Insurance for University of Hawaii Students and Scholars", "#ihawaii"),
                 
                 makeURL("University of Houston (TX)", "http://www.uh.edu/"),
-                makeURL("School F1 requirement", "http://www.issso.uh.edu/pdf/HealthInsuranceRequirementsforNon-ImmigrantInternationalStudentsFall2011.pdf"),
-                makeURL("School J1 requirement", "http://www.issso.uh.edu/finances/healthinsurance.html"),
+                makeURL("School F1 requirement", "http://www.uh.edu/healthcenter/insurance/"),
+                makeURL("School J1 requirement", "http://www.uh.edu/oisss/scholars/for-j1-research-scholars-and-professors/j1-j2-insurance-requirements/"),
                 makeURL("Health insurance for University of Houston Scholars", "#iuh"),
                 
                 makeURL("University of Idaho (ID)", "http://www.uidaho.edu/"),
@@ -3120,7 +3120,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("University of Illinois ,Urbana-Champaign (IL)", "http://www.uiuc.edu/"),
                 makeURL("School F1 requirement", "http://www.si.uiuc.edu/Default.aspx?tabid=64"),
-                makeURL("School J1 requirement", "http://isss.illinois.edu/download_forms/handbooks/j1_prog_handbook.pdf"),
+                makeURL("School J1 requirement", "http://isss.illinois.edu/download_forms/handbooks/j1_prog_handbook.pdf#page=16"),
                 makeURL("Health Insurance for UIUC International Students and Scholars", "#iuiuc"),
                 
                 makeURL("University of Illinois, Chicago (IL)", "http://www.uic.edu/"),
@@ -3154,8 +3154,8 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Plan that meets this school's standards for J scholar", "#usdos"),
                 
                 makeURL("University of Maryland - College Park (MD)", "http://www.umcp.umd.edu/"),
-                makeURL("School F1 requirement", "http://www.international.umd.edu/ies/123"),
-                makeURL("School J1 requirement", "http://www.international.umd.edu/ies/2750"),
+                makeURL("School F1 requirement", "http://globalmaryland.umd.edu/offices/international-students-scholar-services/health-insurance-0"),
+                makeURL("School J1 requirement", "http://globalmaryland.umd.edu/offices/international-students-scholar-services/health-insurance-0"),
                 makeURL("Health insurance for University of Maryland Students and Scholars", "#iuom"),
                 
                 makeURL("University of Massachusetts - Amherst (MA)", "http://www.umass.edu/"),
@@ -3194,12 +3194,12 @@ function writeSectionForSchoolWaiverRequirements() {
                 "Consult your school about their requirements",
                 
                 makeURL("University of Mississippi (MS)", "http://www.olemiss.edu/"),
-                makeURL("School F1 requirement", "http://www.olemiss.edu/gradschool/student_health_insurance.html"),
+                makeURL("School F1 requirement", "http://healthcenter.olemiss.edu/fees-billing-and-insurance/"),
                 makeURL("School J1 requirement", "http://international.olemiss.edu/j-1-scholar-health-insurance/"),
                 makeURL("Plan that meets this school's standards for J scholar", "#usdos"),
                 
                 makeURL("University of Missouri - Columbia (MO)", "http://www.missouri.edu/"),
-                "",
+                makeURL("School F1 requirement", "http://international.missouri.edu/come-to-mu/students/insurance.php"),
                 makeURL("School J1 requirement", "http://international.missouri.edu/come-to-mu/faculty-staff/j1-scholars/insurance.php"),
                 makeURL("Plan that meets this school's standards for J scholar", "#usdos"),
 
@@ -3229,12 +3229,12 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Plan that meets this school's standards for J scholar", "#usdos"),
                 
                 makeURL("University of North Carolina - Chapel Hill (NC)", "http://www.unc.edu/"),
-                makeURL("School F1 requirement", "https://www.bcbsnc.com/assets/studentblue/pdfs/U9308b%20International%20Brochure%20Enroll-Waiver%20Process%20FINAL%20for%20UNC.pdf"),
+                makeURL("School F1 requirement", "http://campushealth.unc.edu/charges-insurance/mandatory-student-health-insurance-hard-waiver-process/international-student"),
                 makeURL("School J1 requirement", "http://oisss.unc.edu/international-faculty-and-researchers/j1/mandatory-medical-insurance/"),
                 makeURL("Health insurance for University of North Carolina (Chapel Hill) Students and Scholars", "#iunc"),
                 
                 makeURL("University of North Carolina - Charlotte (NC)", "http://www.uncc.edu/"),
-                makeURL("School F1 requirement", "http://studenthealth.uncc.edu/insurance"),
+                makeURL("School F1 requirement", "http://studenthealth.uncc.edu/insurance/international-student-insurance-requirements"),
                 makeURL("School J1 requirement", "https://isso.uncc.edu/international-facultyscholars/resources-departments/how-guide/help-visitoremployee-prepare-arrival/h"),
                 makeURL("Health insurance for University of North Carolina (Charlotte) Students and Scholars", "#iunc"),  
 
@@ -3251,7 +3251,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("University of Notre Dame (IN)", "http://www.nd.edu/"),
                 makeURL("School F1 requirement", "http://uhs.nd.edu/insurance-billing/"),
                 makeURL("School J1 requirement", "https://hr.nd.edu/assets/20192/j_1_visa.pdf"),
-                makeURL("Health insurance for University of Notre Dame Students and Scholars", "#ind"),
+                makeURL("Health insurance for University of Notre Dame Scholars", "#ind"),
                                
                 
                 makeURL("University of Oklahoma (OK)", "http://www.ou.edu/"),
@@ -3291,7 +3291,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("University of South Carolina - Columbia (SC)", "http://www.sc.edu/"),
                 makeURL("School F1 requirement", "http://www.sa.sc.edu/shs/billing/insurance/"),
-                makeURL("School J1 requirement", "http://iss.sc.edu/index.php?option=com_docman&task=doc_view&gid=493&Itemid="),
+                makeURL("School J1 requirement", "http://iss.sc.edu/index.php?option=com_content&view=article&id=141&Itemid=396"),
                 makeURL("Plan that meets this school's standards for J scholar", "#usdos"),
                 
                 makeURL("University of Southern California (CA)", "http://www.usc.edu/"),
@@ -3300,7 +3300,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Health insurance for USC Scholars", "#iusc"),
                 
                 makeURL("University of South Florida (FL)", "http://www.usf.edu/"),
-                makeURL("School F1 requirement", "http://www.shs.usf.edu/userfiles/files/13-14_ComplianceForm.pdf"),
+                makeURL("School F1 requirement", "http://www.usf.edu/student-affairs/student-health-services/insurance/inscompliance.aspx"),
                 makeURL("School J1 requirement", "http://global.usf.edu/is/downloads/J1_DS2019.pdf"),
                 makeURL("Health insurance for University of South Florida Scholars", "#iusf"),
                 
@@ -3317,7 +3317,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("University of Texas - Arlington (TX)", "http://www.uta.edu/"),
                 makeURL("School F1 requirement", "http://www.uta.edu/oie/?page=forms&form=HealthInsuranceWaiver"),
                 makeURL("School J1 requirement", "http://www.uta.edu/oie/?page=JScholar"),
-                makeURL("Health Insurance for　UT Arlington International Students and Scholars", "#iuta"),
+                makeURL("Health Insurance for　UT Arlington International Scholars", "#iuta"),
 
                 makeURL("University of Texas - Brownsville (TX)", "http://www.utb.edu/Pages/default.aspx"),
                 makeURL("School F1 requirement", "https://www.academichealthplans.com/utb/2013-2014/eligibilityGuidelines.php"),
@@ -3358,7 +3358,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("University of Texas - Pan American (TX)", "http://www.utpa.edu/"),
                 makeURL("School F1 requirement", "http://portal.utpa.edu/utpa_main/dsa_home/oias_home/resources/insurance"),
                 makeURL("School J1 requirement", "https://portal.utpa.edu/portal/page/portal/utpa_main/daa_home/intlprograms_home/intlprg_imagesfiles/j-1_application_(rev_9-20-11_final).pdf"),
-                makeURL("Health Insurance for UT Pan American International Students and Scholars", "#iutpa"),
+                makeURL("Health Insurance for UT Pan American International Scholars", "#iutpa"),
                 
                 makeURL("University of Texas - Permian Basin (TX)", "http://www.utpb.edu/"),
                 makeURL("School F1 requirement", "http://www.utpb.edu/admissions/apply-now!/international"),
@@ -3379,7 +3379,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("University of Texas - Tyler (TX)", "http://www.uttyler.edu/"),
                 makeURL("School F1 requirement", "http://www.uttyler.edu/oip/insurance.php"),
                 makeURL("School J1 requirement", "http://www.uttyler.edu/oip/issfs.php"),
-                makeURL("Health Insurance for UT Tyler International Students and Scholars", "#iuttyler"), 
+                makeURL("Health Insurance for UT Tyler International Scholars", "#iuttyler"), 
 
                 
                 makeURL("University of Toledo (OH)", "http://www.utoledo.edu"),
@@ -3398,7 +3398,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 "Consult your school about their requirements",
                 
                 makeURL("University of Virginia (VA)", "http://www.virginia.edu/"),
-                makeURL("School F1 requirement", "http://www.virginia.edu/studenthealth/insurance/HardWaiver1011.html"),
+                makeURL("School F1 requirement", "http://www.virginia.edu/studenthealth/insurance/HardWaiver1415.html"),
                 makeURL("School J1 requirement", "http://www.virginia.edu/iso/issp/NewWindows/HealthInsScholarExchange.html"),
                 makeURL("Health insurance for University of Virginia Scholars", "#iuva"),
                 
@@ -3433,7 +3433,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Health insurance for Virginia Tech Scholars", "#ivt"),
                 
                 makeURL("Washington State University", "http://www.wsu.edu/"),
-                makeURL("School F1 requirement", "http://studentinsurance.wsu.edu/iship/"),
+                makeURL("School F1 requirement", "http://studentinsurance.wsu.edu/international-students/"),
                 makeURL("School J1 requirement", "http://ip.wsu.edu/global-services/scholars/J-1/medical-insurance.html"),
                 makeURL("Health insurance for Washington State University Scholars", "#iwsu"),
                 
@@ -3541,7 +3541,7 @@ function writeSections(legacy) {
     }
 
     startRow();
-    writeText(makePivotURL("pivot-school-waiver", "Find your school insurance requirements and most affordable plan here"));
+    writeText("<strong>" + makePivotURL("pivot-school-waiver", "Find your school insurance requirements and most affordable plan here") + "</strong>");
     endRow();
    
     startRow();
@@ -3660,9 +3660,11 @@ function writeSections(legacy) {
             makeBuyURL(loc("Buy Group A (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699"),
 
             makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
-            makeBuyURL(loc("Buy Group B (10% off, $39 and up)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699")            
-          
-
+            makeBuyURL(loc("Buy Group B (10% off, $39 and up)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),            
+            "",
+            makeResourceCenterURL(loc("Questions and Answers about Plan A"),"pivot-qanda-plana"),            
+            makeResourceCenterURL(loc("Questions and Answers about Plan B"),"pivot-qanda-planb"),
+            makeResourceCenterURL(loc("Questions and Answers about Plan B"),"pivot-qanda-planb")            
             ])
             );
     endRow();
@@ -3779,7 +3781,7 @@ function writeSections(legacy) {
     }
 
     startRow();
-    writeText(makePivotURL("pivot-school-waiver", "Find your school insurance requirements and most affordable plan here"));
+    writeText("<strong>" + makePivotURL("pivot-school-waiver", "Find your school insurance requirements and most affordable plan here") + "</strong>");
     endRow();
    
     startRow();
@@ -3894,7 +3896,12 @@ function writeSections(legacy) {
                 "", 
             makeBuyURL(loc("Buy Group A (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699"),
             makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
-            makeBuyURL(loc("Buy Group B (10% off, $39 and up)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699")            
+            makeBuyURL(loc("Buy Group B (10% off, $39 and up)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+
+            "",
+            makeResourceCenterURL(loc("Questions and Answers about Plan A"),"pivot-qanda-plana"),
+            makeResourceCenterURL(loc("Questions and Answers about Plan B"),"pivot-qanda-planb"),
+            makeResourceCenterURL(loc("Questions and Answers about Plan B"),"pivot-qanda-planb")            
            
 
             ])
@@ -4131,7 +4138,12 @@ function writeSections(legacy) {
                 "", 
             makeBuyURL(loc("Buy Group A (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699"),
             makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
-            makeBuyURL(loc("Buy Group B (10% off, $39 and up)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699")            
+            makeBuyURL(loc("Buy Group B (10% off, $39 and up)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+
+            "",
+            makeResourceCenterURL(loc("Questions and Answers about Plan A"),"pivot-qanda-plana"),
+            makeResourceCenterURL(loc("Questions and Answers about Plan B"),"pivot-qanda-planb"),
+            makeResourceCenterURL(loc("Questions and Answers about Plan B"),"pivot-qanda-planb")            
            
 
             ])
@@ -4253,7 +4265,7 @@ function writeSections(legacy) {
     endRow();
     
     startRow();
-    writeText(makePivotURL("pivot-school-waiver", "Find your school insurance requirements and most affordable plan here"));
+    writeText("<strong>" + makePivotURL("pivot-school-waiver", "Find your school insurance requirements and most affordable plan here") + "</strong>");
     endRow();
    
     startRow();
@@ -4299,7 +4311,11 @@ function writeSections(legacy) {
             "Medical Evacuation", "$500,000", "$50,000", "$500,000",
             "Repatriation of remains", "$50,000", "$25,000", "$50,000",
             "Pre-existing conditions", "After 12 months of continuous coverage", "After 12 months of continuous coverage", "Up to $50,000 coverage ($2,500 for over 65 years old) for sudden and unexpected recurrence. Otherwise not covered.",
-            "Group Pricing", "2 or more primary insured have about 10% discount", "2 or more primary insured have about 10% discount", "5 or more primary insured have about 10% discount"
+            "Group Pricing", "2 or more primary insured have about 10% discount", "2 or more primary insured have about 10% discount", "5 or more primary insured have about 10% discount",
+            "",
+            makeResourceCenterURL(loc("Questions and Answers about Plan A"),"pivot-qanda-plana"),
+            makeResourceCenterURL(loc("Questions and Answers about Plan B"),"pivot-qanda-planb"),
+            ""  
 
            
 
@@ -4575,7 +4591,8 @@ function writeSections(legacy) {
 
     endSection();
 
-    
+ 
+   
     
     
     
@@ -4590,7 +4607,7 @@ function writeSections(legacy) {
     }
 
     startRow();
-    writeText(makePivotURL("pivot-school-waiver", "Find your school insurance requirements and most affordable plan here"));
+    writeText("<strong>" + makePivotURL("pivot-school-waiver", "Find your school insurance requirements and most affordable plan here") + "</strong>");
     endRow();
    
     startRow();
@@ -4699,7 +4716,7 @@ function writeSections(legacy) {
     endRow();
     
     startRow();
-    writeText(makePivotURL("pivot-school-waiver", "Find your school insurance requirements and most affordable plan here"));
+    writeText("<strong>" + makePivotURL("pivot-school-waiver", "Find your school insurance requirements and most affordable plan here") + "</strong>");
     endRow();
    
     startRow();
@@ -4745,7 +4762,11 @@ function writeSections(legacy) {
             "Medical Evacuation", "$50,000", "$50,000", "$500,000",
             "Repatriation of remains", "$25,000", "$25,000", "$50,000",
             "Pre-existing conditions", "After 12 months of continuous coverage", "After 12 months of continuous coverage", "Up to $50,000 coverage ($2,500 for over 65 years old) for sudden and unexpected recurrence. Otherwise not covered.",
-            "Group Pricing", "2 or more primary insured have about 10% discount", "2 or more primary insured have about 10% discount", "5 or more primary insured have about 10% discount"
+            "Group Pricing", "2 or more primary insured have about 10% discount", "2 or more primary insured have about 10% discount", "5 or more primary insured have about 10% discount",
+            "",
+            makeResourceCenterURL(loc("Questions and Answers about Plan B"),"pivot-qanda-planb"),
+            makeResourceCenterURL(loc("Questions and Answers about Plan B"),"pivot-qanda-planb"),
+            ""  
 
            
 
