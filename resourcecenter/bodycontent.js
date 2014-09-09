@@ -20,7 +20,7 @@ function getPageAttributes() {
 
     // Page
     if (!map["p"] || map["p"].length <= 0) {
-        map["p"] = "pivot-qanda-plana";
+        map["p"] = "pivot-qanda-planb";
     }
 
     return map;
@@ -159,10 +159,10 @@ function showPivot(pivotName) {
 function urlsToAppIds() {
     var urlsToAppIds = {
         "https://purchase.imglobal.com/quote/patriot_group_exchange?imgac=80000699" : "PatExchGroupPlanB",
-        "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699" : "TaianPatExchGroupPlanB",        
+        
         "https://purchase.imglobal.com/quote/patriot_exchange?imgac=80000699" : "PatExchPlanB",
-        "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699" : "TaianPatExchPlanB",
-        "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699" : "SHAPlanA",
+
+
         "https://purchase.imglobal.com/quote/patriot?imgac=80000699" : "Travel",
         "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699" : "TravelGroup"
     };
@@ -347,6 +347,7 @@ function makeText(text) {
     text = text.replace(/\n/g, '<br />');
     return '<p align="left">'+text+'</p>';
 }
+
 
 
 function writeText(text) {
@@ -542,8 +543,8 @@ function writeContactInfo() {
 
 function writeTabs() {
     var topLevelNames = { 
-                          "pivot-qanda-plana": "Plan A Questions and Answers",
-                          "pivot-qanda-planb": "Plan B Questions and Answers"
+                          "pivot-qanda-plana": "TaiAn Plan A (Student Health Advantage) Questions and Answers",
+                          "pivot-qanda-planb": "TaiAn Plan B (TaiAn Patriot Exchange) Questions and Answers"
     };
 
     var partnership = getPartnership(getPageAttribute("partner"));
@@ -568,7 +569,7 @@ function getContactInfo() {
 
 function writeSections(legacy) {
     // Questions and Answers
-    startSection("pivot-qanda-planb", "Plan B Questions and Answers");
+    startSection("pivot-qanda-planb", "TaiAn Plan B (TaiAn Patriot Exchange) Questions and Answers");
 
     var partnerShip = getPartnership(getPageAttribute("partner"));
     var travelStudentPartnerContent = partnerShip["travelStudentContent"];
@@ -603,7 +604,7 @@ function writeSections(legacy) {
 
     startRow();
 
-    writeText("<strong>" + loc("3. ") + loc("Who is eligible to buy Plan B and what do I need to know before purchase?") + "</strong>" + "<br />" + loc("TaiAn Plan B is designed specifically for international scholars and students (F1,F2,J1,J2,OPT) and their dependents.") + "<br />" + loc("F1 College Student: You need to confirm TaiAn Plan B meets your school F1 insurance waiver requirements.") + "<br />" + loc("J1 Visiting Scholar: J1 scholar's insurance needs to meet USDOS standard and school standard. Since Plan B meets the USDOS standard, you only need to confirm Plan B also meets your school J1 insurance requirements.") + "<br />" + loc("OPT student: You can buy Plan B with any options.") + "<br />" + loc("F1/J1 high school student or ESL student:  You can buy after confirming school requirements.") + "<br />" + loc("F2/J2 visa holder: You can buy with your F1/J1. If the J1/F1 visa holder has purchased school insurance the J2/F2 dependents can purchase TaiAn Plan B alone.  If the J1/F1 visa holder has purchased TaiAn Plan B and his/her J2/F2 dependents come later, they can purchase Plan B alone for different dates."));
+    writeText("<strong>" + loc("3. ") + loc("Who is eligible to buy Plan B and what do I need to know before purchase?") + "</strong>" + "<br />" + loc("TaiAn Plan B is designed specifically for international scholars, students and their dependents (F1,F2,J1,J2,OPT).") + "<br />" + loc("F1 College Student: You need to confirm TaiAn Plan B meets your school F1 insurance waiver requirements.") + "<br />" + loc("J1 Visiting Scholar: J1 scholar's insurance needs to meet USDOS standard and school standard. Since Plan B meets the USDOS standard, you only need to confirm Plan B also meets your school J1 insurance requirements.") + "<br />" + loc("OPT student: You can buy Plan B with any options.") + "<br />" + loc("F1/J1 high school student or ESL student:  You can buy after confirming school requirements.") + "<br />" + loc("F2/J2 visa holder: You can buy with your F1/J1. If the J1/F1 visa holder has purchased school insurance the J2/F2 dependents can purchase TaiAn Plan B alone.  If the J1/F1 visa holder has purchased TaiAn Plan B and his/her J2/F2 dependents come later, they can purchase Plan B alone for different dates."));
     
     endRow();  
     
@@ -615,13 +616,13 @@ function writeSections(legacy) {
 
     startRow();
 
-    writeText("<strong>" + loc("5. ") + loc("How do I buy Plan B and how long will it take to receive the fulfillment?") + "</strong>" + "<br />" + loc("Buy Plan B online and receive the fulfillment instantly.  Purchase steps are as follows:") + "<br />" + loc("1) Click on the link:  ") + makeMainSiteURL("Taian Patriot Exchange", "pivot-international-student") + "<br />" + loc("2) Read Plan B benefits chart and brochure") + "<br />" + loc("3) Click on ") + makeURL("\"Buy Plan B  TaiAn Patriot Exchange\"", "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699") + "<br />" + loc("4) According to your school requirements and your own needs, select a deductible and benefit maximum.") + "<br />" + loc("5) Payment is on the last page of application. You can use a credit card or a debit card which has a Visa, MasterCard or American Express logo to pay.  Billing Address is the address you used when you applied for your credit card. IMG will not bill to your billing address.") + "<br />" + loc("6) After you submit an application online successfully, you will receive an Email from IMG in a few minutes (If you do not receive it, please check your spam), which contains your insurance card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school to prove that you have qualified medical insurance."));
+    writeText("<strong>" + loc("5. ") + loc("How do I buy Plan B and how long will it take to receive the fulfillment?") + "</strong>" + "<br />" + loc("Buy Plan B online and receive the fulfillment instantly.  Purchase steps are as follows:") + "<br />" + loc("1) Click on the link:  ") + makeMainSiteURL("Plan B (Taian Patriot Exchange)", "pivot-international-student") + "<br />" + loc("2) Read Plan B benefits chart and brochure") + "<br />" + loc("3) Click on ") + makeURL("Buy Plan B TaiAn Patriot Exchange", "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699") + "<br />" + loc("4) According to your school requirements and your own needs, select a deductible and benefit maximum.") + "<br />" + loc("5) Payment is on the last page of application. You can use a credit card or a debit card which has a Visa, MasterCard or American Express logo to pay.  Billing Address is the address you used when you applied for your credit card. IMG will not bill to your billing address.") + "<br />" + loc("6) After you submit an application online successfully, you will receive an Email from IMG in a few minutes (If you do not receive it, please check your spam), which contains your insurance card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school to prove that you have qualified medical insurance."));
     
     endRow();
 
     startRow();
 
-    writeText("<strong>" + loc("6. ") + loc("How do I buy Group Plan B to get 10% off?") + "</strong>" + "<br />" + loc("TaiAn Patriot Exchange Group plan is available for groups of 2 or more primary applicants (F1/J1).") + "<br />" + loc("1) Click on the link:  ") + makeMainSiteURL("Taian Patriot Exchange", "pivot-international-student") + "<br />" + loc("2)  Read Plan B benefits chart and brochure") + "<br />" + loc("3) Click on ") + makeURL("\"Buy Group B (10% off) For 2 primary insured or more\"", "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699") + "<br />" + loc("4) The total length of group duration cannot be more than a year, you can renew before the plan is expired if you are still eligible. The primary applicants in the group may have different insurance dates. No one can have an expiration date beyond one year from the group start date until the group renews for a second year.") + "<br />" + loc("5)  According to your school requirements and your group needs, select a deductible and benefit maximum.") + "<br />" + loc("6)  Payment is on the last page of application. You have to use one credit card (or debit card which has a Visa, MasterCard or American Express logo) to pay for the whole group. Please use the credit card holder's initials as the group name. Use the credit card holder's email as the group contact for the plan. Billing Address is the address you used when you applied for your credit card. IMG will not bill to your billing address.") + "<br />" + loc("7)  After you submit an application online successfully, you will receive an Email from IMG in a few minutes (If you do not receive it, please check your spam), which contains every member's insurance card and confirmation letter (Visa Letter). You can send the confirmation letter to your school to prove that you have qualified medical insurance."));
+    writeText("<strong>" + loc("6. ") + loc("How do I buy Group Plan B to get 10% off?") + "</strong>" + "<br />" + loc("TaiAn Patriot Exchange Group plan is available for groups of 2 or more primary applicants (F1/J1).") + "<br />" + loc("1) Click on the link:  ") + makeMainSiteURL("Plan B (Taian Patriot Exchange)", "pivot-international-student") + "<br />" + loc("2) After reading Plan B benefits chart and brochure, click on ") + makeURL("Buy Group B (10% off) For 2 primary insured or more", "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699") + "<br />" + loc("3) The total length of group duration cannot be more than a year, you can renew before the plan is expired if you are still eligible. The primary applicants in the group may have different insurance dates. No one can have an expiration date beyond one year from the group start date until the group renews for a second year.") + "<br />" + loc("4)  According to your school requirements and your group needs, select a deductible and benefit maximum.") + "<br />" + loc("5)  Payment is on the last page of application. You have to use one credit card (or debit card which has a Visa, MasterCard or American Express logo) to pay for the whole group. Please use the credit card holder's initials as the group name. Use the credit card holder's email as the group contact for the plan. Billing Address is the address you used when you applied for your credit card. IMG will not bill to your billing address.") + "<br />" + loc("6)  After you submit an application online successfully, you will receive an Email from IMG in a few minutes (If you do not receive it, please check your spam), which contains every member's insurance card and confirmation letter (Visa Letter). You can send the confirmation letter to your school to prove that you have qualified medical insurance."));
     
     endRow();   
     
@@ -633,7 +634,7 @@ function writeSections(legacy) {
 
     startRow();
 
-    writeText("<strong>" + loc("8. ") + loc("How do I make the payment?  What do I do if the payment gets declined?") + "</strong>" + "<br />" + loc("You will have an instant quote online and can pay with your credit card or debit card which has a Visa, MasterCard or American Express logo") + "<br />" + loc("Some common reasons for a declined payment are:") + "<br />" + loc("1) Your credit limit ") + "<br />" + loc("2) Some banks need to be notified in advance when you make a credit card charge outside your home country.") + "<br />" + loc("You may need to call the number on the back of your card to tell them this is a genuine charge.") + "<br />" + loc("3) Inaccurate billing address.  When IMG asks for billing address, you need to fill in the address that your credit card bill is sent. This will not impact where your insurance material are sent, but is needed to verify your card.") + "<br />" + loc("4) On the payment page, the electronic signature should be the same as the name on the credit card.") + "<br />" + loc("If your card is declined you can submit a new on line application after fixing the problem."));
+    writeText("<strong>" + loc("8. ") + loc("How do I make the payment?  What do I do if the payment gets declined?") + "</strong>" + "<br />" + loc("You will have an instant quote online and can pay with your credit card or debit card which has a Visa, MasterCard or American Express logo") + "<br />" + loc("Some common reasons for a declined payment are:") + "<br />" + loc("1) Your credit limit ") + "<br />" + loc("2) Some banks need to be notified in advance when you make a credit card charge outside your home country.  You may need to call the number on the back of your card to tell them this is a genuine charge.") + "<br />" + loc("3) Inaccurate billing address.  When IMG asks for billing address, you need to fill in the address that your credit card bill is sent. This will not impact where your insurance material are sent, but is needed to verify your card.") + "<br />" + loc("4) On the payment page, the electronic signature should be the same as the name on the credit card.") + "<br />" + loc("If your card is declined you can submit a new on line application after fixing the problem."));
     
     endRow();
 
@@ -648,33 +649,157 @@ function writeSections(legacy) {
     writeText("<strong>" + loc("10. ") + loc("How do I get medical treatment when I get sick?") + "</strong>" + "<br />" + loc("Plan B customers can go to any provider, in-PPO or out of PPO you get the same benefits.  This doesn't necessarily mean every hospital provides direct billing service.  Medical providers decide whether to provide direct billing or not, the decision is not made by the insurance company.  Different providers, or the same provider for different illness /injury, can make different decisions.") + "<br />" + loc("When you get sick you can try first going to your Student Health Center where you will only pay a $5 copay. If you need urgent care and the student health center won't meet your needs, an Urgent Care center might. They usually have evening and weekend hours and no appointment is necessary. If you need to go to a doctor in the United States, you need an appointment. For your own benefit, usually try to go to IMG's designated provider (doctor, hospital or urgent care center) although you are not required to go to this network.  You can search ") + makeURL("First Health Network", "http://www.providerlookuponline.com/coventry/po7/gateway.aspx?plancode=141") + "<br />" + loc(" PPO network link to find a medical provider.") + "<br />" + loc("When you see a doctor, carry your insurance card and personal ID (to verify your identity). In the United States if you do not have an appointment and go directly to the hospital, you go to the Emergency Room. If you go to the Emergency room and are not admitted to the hospital you have to pay a $250 additional deductible. In a real emergency situation (that is life-threatening or disabling), go to the nearest Emergency Room."));
     
     endRow();
+    
+    startRow();
+
+    writeText("<strong>" + loc("11. ") + loc("Do I need to pre-certify before going to see a doctor?") + "</strong>" + "<br />" + loc("You must call IMG to pre-certify any of the following conditions: any treatment requiring hospitalization; out-patient surgery, CAT scans, MRI\'s; within 48 hours after an emergency admission to the hospital; care in an extended care facility; home nursing care; Durable medical equipment including artificial limbs; or transplant. You don\'t need to pre-certify if your illness or injury is not serious and can be treated in a doctor\'s office.  See details at ") + makeURL("Pre-certification", "https://myimg.imglobal.com/UnAuth/PrecertForm.aspx") );
+    
+    endRow();    
 
     startRow();
 
-    writeText("<strong>" + loc("11. ") + loc("How do I submit a claim?") + "</strong>" + "<br />" + loc("There are two ways to file a claim in the IMG system. One is that the medical provider directly bills IMG, the other is that the customer needs to pay upfront before filing a claim with IMG for reimbursement. For both situations you always need to submit a claim to IMG. If your provider is direct billing IMG, you just submit the claims form. If you need to pay upfront, you need to submit the claim form along with all the payment receipts to IMG.  You can create a MyIMG account after submitting the claim form, and then you can check whether IMG has received the medical provider bills and the claim status. You also can call IMG about your claims questions. Please have your insurance ID card ready when you call.  If you prefer to speak to IMG in a language other than English, you can ask for foreign language assistance, and tell them your preferred language."));
+    writeText("<strong>" + loc("12. ") + loc("How do I submit a claim?") + "</strong>" + "<br />" + loc("There are two ways to file a claim in the IMG system. One is that the medical provider directly bills IMG, the other is that the customer needs to pay upfront before filing a claim with IMG for reimbursement. For both situations you always need to submit a claim to IMG. If your provider is direct billing IMG, you just submit the claims form. If you need to pay upfront, you need to submit the claim form along with all the payment receipts to IMG.  You can create a ") + makeURL("MyIMG account", "https://myimg.imglobal.com/unauth/homepage.aspx") + loc( " after submitting the claim form, and then you can check whether IMG has received the medical provider bills and the claim status. You also can call IMG about your claims questions (1-800-628-4664 or 317-655-4500). Please have your insurance ID card ready when you call.  If you prefer to speak to IMG in a language other than English, you can ask for foreign language assistance, and tell them your preferred language."));
     
     endRow(); 
 
     startRow();
 
-    writeText("<strong>" + loc("12. ") + loc("What is the coinsurance?") + "</strong>" + "<br />" + loc("There is no coinsurance for TaiAn Plan B. After you pay your deductible, the insurance pays 100% of eligible medical expenses."));
+    writeText("<strong>" + loc("13. ") + loc("What is the coinsurance?") + "</strong>" + "<br />" + loc("There is no coinsurance for TaiAn Plan B. After you pay your deductible, the insurance pays 100% of eligible medical expenses."));
     
     endRow();
 
     startRow();
 
-    writeText("<strong>" + loc("13. ") + loc("How much can I get reimbursed for prescription medicine?") + "</strong>" + "<br />" + loc("If the illness or injury is covered, the prescription medicine will be covered (subject to deductible) at 100% of usual charges until the per illness or injury maximum that you bought is met. When you need to fill a prescription you go to the pharmacy with the prescription you received from the doctor. Make sure to bring the Universal URX Discount Card with you. You will have to pay for your prescription at the pharmacy but may receive a 10% to 50% discount with the card. You can then submit your receipts and a claim form to IMG for reimbursement."));
+    writeText("<strong>" + loc("14. ") + loc("How much can I get reimbursed for prescription medicine?") + "</strong>" + "<br />" + loc("If the illness or injury is covered, the prescription medicine will be covered (subject to deductible) at 100% of usual charges until the per illness or injury maximum that you bought is met. When you need to fill a prescription you go to the pharmacy with the prescription you received from the doctor. Make sure to bring the Universal URX Discount Card with you. You will have to pay for your prescription at the pharmacy but may receive a 10% to 50% discount with the card. You can then submit your receipts and a claim form to IMG for reimbursement."));
     
     endRow();  
+
+    startRow();
+
+    writeText("<strong>" + loc("15. ") + loc("Does the plan cover child physical exams and vaccines?") + "</strong>" + "<br />" + loc("No, it doesn't. In the U.S., insurance that covers child physical exams and vaccines normally cost more than $200-$300 per month.  Contact us for ways to get inexpensive, and sometimes free, vaccines or immunizations, as well as child physical exams."));
+    
+    endRow();    
+    
+
+
+    startRow();
+    writeText("");
+    endRow();
+
+    endSection();
+
+
+    // Questions and Answers
+    startSection("pivot-qanda-plana", "TaiAn Plan A (Student Health Advantage) Questions and Answers");
+
+    var partnerShip = getPartnership(getPageAttribute("partner"));
+    var travelStudentPartnerContent = partnerShip["travelStudentContent"];
+    var hasTStPartnerContent = !(typeof travelStudentPartnerContent === "undefined");
+    if (hasTStPartnerContent) {
+        travelStudentPartnerContent();
+    }    
+
+
+
+
+    startRow();
+    writeText("");
+    endRow();
+
+    startRow();
+
+    writeText("Call from US - 9:00AM to 10:00PM Eastern time - Includes weekend: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time 7-11am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>");
+    endRow();
+
+    startRow();
+
+    writeText("<strong>" + loc("1. ") + loc("Why Should I buy IMG insurance through TaiAn?") + "</strong>" + "<br />" + loc("International Medical Group (IMG) is a worldwide leader in the International medical insurance business, and TaiAn Financial LLC is leading producer for IMG.  TaiAn\'s custom product offering and extended service hours enable us provide our customers industry leading, professional, prompt service and make their insurance experience as easy as possible."));
+    
+    endRow();
+
+    startRow();
+
+    writeText("<strong>" + loc("2. ") + loc("Does Plan A meet US Department of State Insurance (USDOS) Requirements for J visa?") + "</strong>" + "<br />" + loc("US Department of State Insurance Requirements for J visa:") + "<br />" + loc("1) Medical benefits of at least $50,000 per accident or illness") + "<br />" + loc("2) Repatriation of remains in the amount of $7,500") + "<br />" + loc("3) Expenses associated with the medical evacuation of the exchange visitor to his or her home country in the amount of $10,000") + "<br />" + loc("4) A deductible not to exceed $500 per accident or illness") + "<br />" + loc("5) An insurance policy secured to meet the benefits requirements must be underwritten by an insurance corporation with an A.M. Best rating of \"A-\" or above, an Insurance Solvency International, Ltd. (ISI) rating of \"A-I\" or above, a Standard and Poor's Claims Paying Ability rating of \"A-\" or above, or a Weiss Research, Inc. rating of B+ or above") + "<br />" + "<br />" + loc("All the options in TaiAn Plan A meet USDOS requirements.  The insurer rating by A.M. Best is \"A\", and also meets the requirements."));
+ 
+    startRow();
+
+    writeText("<strong>" + loc("3. ") + loc("Who is eligible to buy Plan A and what do I need to know before purchase?") + "</strong>" + "<br />" + loc("TaiAn Plan A is designed specifically for international scholars, students and their dependents (F1,F2,J1,J2,OPT).  You can buy online after you confirm the plan meets your school standard. Dependents can only purchase when the student purchases. For example, F2/J2 cannot buy alone, but they can buy with their F1/J1.  On the Plan A effective date you need to have a valid J1/F1 visa and be outside of your home country for your study or program. "));
+    
+    endRow(); 
+    
+    startRow();
+
+    writeText("<strong>" + loc("4. ") + loc("How do I make sure Plan A meets my school requirement?") + "</strong>" + "<br />" + loc("1) Click on the link:  ") + "<strong>" + makeMainSiteURL("Find your school insurance requirements and most affordable plan here", "pivot-school-waiver") + "</strong>" + "<br />" + loc("2) Find your school in the first column on the chart, click on the corresponding fourth column that will show you what insurance plan meets your school requirements") + "<br />" + loc("3) You can also send email with your school requirements to TaiAn at <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>") + "<br />" + loc("TaiAn will help you to figure it out."));
+    
+    endRow();  
+
+    startRow();
+
+    writeText("<strong>" + loc("5. ") + loc("How do I buy Plan A and how long will it take to receive the fulfillment?") + "</strong>" + "<br />" + loc("Buy Plan A online and receive the fulfillment instantly.  Purchase steps are as follows:") + "<br />" + loc("1) Click on the link:  ") + makeMainSiteURL("Plan A (Student Health Advantage)", "pivot-international-student") + "<br />" + loc("2) Read Plan A benefits chart and brochure") + "<br />" + loc("3) Click on ") + makeURL("Buy Plan A Student Health Advantage", "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699") + "<br />" + loc("4) Payment is on the last page of application. You can use a credit card or a debit card which has a Visa, MasterCard or American Express logo to pay.  Billing Address is the address you used when you applied for your credit card. IMG will not bill to your billing address.") + "<br />" + loc("5) After you submit an application online successfully, you will receive an Email from IMG in a few minutes (If you do not receive it, please check your spam), which contains your insurance card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school to prove that you have qualified medical insurance."));
+    
+    endRow(); 
+
+    startRow();
+
+    writeText("<strong>" + loc("6. ") + loc("How do I buy Group Plan A to get 10% off?") + "</strong>" + "<br />" + loc("Student Health Advantage Group plan is available for groups of 2 or more primary applicants (F1/J1).") + "<br />" + loc("1) Click on the link:  ") + makeMainSiteURL("Plan A (Student Health Advantage)", "pivot-international-student") + "<br />" + loc("2) After reading Plan A benefits chart and brochure, click on ") + makeURL("Buy Group A (10% off) For 2 primary insured or more", "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699") + "<br />" + loc("3) The total length of group duration cannot be more than a year, you can renew before the plan is expired if you are still eligible. The primary applicants in the group may have different insurance dates. No one can have an expiration date beyond one year from the group start date until the group renews for a second year.") + "<br />" + loc("4) Payment is on the last page of application. You have to use one credit card (or debit card which has a Visa, MasterCard or American Express logo) to pay for the whole group. Please use the credit card holder's initials as the group name. Use the credit card holder's email as the group contact for the plan. Billing Address is the address you used when you applied for your credit card. IMG will not bill to your billing address.") + "<br />" + loc("5) After you submit an application online successfully, you will receive an Email from IMG in a few minutes (If you do not receive it, please check your spam), which contains every member's insurance card and confirmation letter (Visa Letter). You can send the confirmation letter to your school to prove that you have qualified medical insurance."));
+    
+    endRow();   
+    
+
+    startRow();
+
+    writeText("<strong>" + loc("7. ") + loc("How do I make the payment?  What do I do if the payment gets declined?") + "</strong>" + "<br />" + loc("You will have an instant quote online and can pay with your credit card or debit card which has a Visa, MasterCard or American Express logo") + "<br />" + loc("Some common reasons for a declined payment are:") + "<br />" + loc("1) Your credit limit ") + "<br />" + loc("2) Some banks need to be notified in advance when you make a credit card charge outside your home country.  You may need to call the number on the back of your card to tell them this is a genuine charge.") + "<br />" + loc("3) Inaccurate billing address.  When IMG asks for billing address, you need to fill in the address that your credit card bill is sent. This will not impact where your insurance material are sent, but is needed to verify your card.") + "<br />" + loc("4) On the payment page, the electronic signature should be the same as the name on the credit card.") + "<br />" + loc("If your card is declined you can submit a new on line application after fixing the problem."));
+    
+    endRow();
+
+    startRow();
+
+    writeText("<strong>" + loc("8. ") + loc("How do I renew?") + "</strong>" + "<br />" + loc("If you have an individual policy, you will receive a few renewal Email notices.  The notices have the same renew link.  Click the renew link, enter your information, and pay with a credit card.  You can finish the renewal online easily.  You can change your phone number, Email address, mailing address and credit card during your renewal.  If you have a group policy, you will receive a renew notice before the policy expires.  The notice will tell you how to write an Email to IMG to renew."));
+    
+    endRow();
+    
+    startRow();
+
+    writeText("<strong>" + loc("9. ") + loc("What do I need to know if  I need the maternity coverage from Plan A?") + "</strong>" + "<br />" + loc("1) TaiAn Plan A covers maternity only if the pregnancy begins after the plan is effective. In order to ensure that the insurance is purchased before pregnancy, it is usually recommended after your plan is effective, wait until after a menstruation, and then try to get pregnant.") + "<br />" + loc("2) The plan is renewable only if 3 months or more are purchased. If you get pregnant during these three months, you need to renew not rebuy a new plan. With renewal the pregnancy is covered. With a rebuy the maternity is a pre-existing condition and not covered. So, it is very important to buy at least three months initially, and to renew on time.") + "<br />" + loc("3) If the pregnancy test is positive and it is found that conception was after the effective date, then it would be covered. If the conception was prior to the effective date or the pregnancy test is negative, it would not be covered. You don't need to do pre-certification until your pregnancy is confirmed by a doctor.") + "<br />" + loc("4) Please pre-certify with IMG after your pregnancy is confirmed by a doctor. Create a MyIMG account (myimg.imglobal.com) and you will be able to see your precertification result and claim status.  It would be best if you can find a doctor who will provide direct billing and send all bills to IMG. Note that in order to maximize your benefits, the hospital for the delivery needs to be in the PPO network and precertification is required at time of delivery. You may advise the hospital of this at time of delivery, they will begin the Precertification Process."));
+    
+    endRow(); 
+
+    startRow();
+
+    writeText("<strong>" + loc("10. ") + loc("What is the 6 month Pre-existing Condition Rider and how does it change the maternity benefit?") + "</strong>" + "<br />" + loc("In Florida, Hawaii, Idaho, and Massachusetts you can shorten pre-ex from 12 months to 6 months in Plan A, but this change will results in a 10 month wait for maternity benefits, and an increase in the premium. Normally for Student Health Advantage a maternity is covered so long as the conception is after the effective date. When someone selects the optional 6 month pre-ex rider, there is a 10 month wait for maternity benefits. This means any maternity related claim filed for services provided during the first 10 months of the policy will be declined. A maternity claim filed in the 11th month is covered. If a baby is born in the 11th month, the delivery charges would be covered. It doesn't mean they need to have a conception date of the 11th month or later."));
+    
+    endRow();   
+
+
+    
+    startRow();
+
+    writeText("<strong>" + loc("11. ") + loc("Do I need to pre-certify before going to see a doctor?") + "</strong>" + "<br />" + loc("You must call IMG to pre-certify any of the following conditions: any treatment requiring hospitalization; out-patient surgery, CAT scans, MRI\'s; within 48 hours after an emergency admission to the hospital; care in an extended care facility; home nursing care; Durable medical equipment including artificial limbs; or transplant. You don\'t need to pre-certify if your illness or injury is not serious and can be treated in a doctor\'s office.  See details at ") + makeURL("Pre-certification", "https://myimg.imglobal.com/UnAuth/PrecertForm.aspx") );
+    
+    endRow();  
+
+    startRow();
+
+    writeText("<strong>" + loc("12. ") + loc("How do I get medical treatment when I get sick?") + "</strong>" + "<br />" + loc("Plan A customers go to in-PPO network get more benefits.  When you get sick you can try first going to your Student Health Center where you will only pay a $5 copay. If you need urgent care and the student health center won't meet your needs, an Urgent Care center might. They usually have evening and weekend hours and no appointment is necessary. If you need to go to a doctor in the United States, you need an appointment. For your own benefit, usually try to go to IMG's designated provider (doctor, hospital or urgent care center).  You can search \"First Health Network\" PPO network link to find a medical provider: ") + makeURL("First Health Network", "http://www.providerlookuponline.com/coventry/po7/gateway.aspx?plancode=141") + "<br />" + loc("When you see a doctor, carry your insurance card and personal ID (to verify your identity). In the United States if you do not have an appointment and go directly to the hospital, you go to the Emergency Room. If you go to the Emergency room and are not admitted to the hospital you have to pay a $250 additional deductible. In a real emergency situation (that is life-threatening or disabling), go to the nearest Emergency Room."));
+    
+    endRow();    
+
+    startRow();
+
+    writeText("<strong>" + loc("13. ") + loc("How do I submit a claim?") + "</strong>" + "<br />" + loc("There are two ways to file a claim in the IMG system. One is that the medical provider directly bills IMG, the other is that the customer needs to pay upfront before filing a claim with IMG for reimbursement. For both situations you always need to submit a claim to IMG. If your provider is direct billing IMG, you just submit the claims form. If you need to pay upfront, you need to submit the claim form along with all the payment receipts to IMG.  You can create a MyIMG account after submitting the claim form, and then you can check whether IMG has received the medical provider bills and the claim status. You also can call IMG about your claims questions. Please have your insurance ID card ready when you call.  If you prefer to speak to IMG in a language other than English, you can ask for foreign language assistance, and tell them your preferred language."));
+    
+    endRow(); 
+
+
 
     startRow();
 
     writeText("<strong>" + loc("14. ") + loc("Does the plan cover child physical exams and vaccines?") + "</strong>" + "<br />" + loc("No, it doesn't. In the U.S., insurance that covers child physical exams and vaccines normally cost more than $200-$300 per month.  Contact us for ways to get inexpensive, and sometimes free, vaccines or immunizations, as well as child physical exams."));
     
     endRow();    
-    
-
-
+        
+ 
+    endRow();
     startRow();
     writeText("");
     endRow();
