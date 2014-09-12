@@ -4051,6 +4051,78 @@ function getPartnership(partner) {
                     }
               },  
               
+        ou: {
+                    windowTitle: "TaiAn Health Insurance for University of Oklahoma",
+                    pageTitle: "TaiAn Health Insurance for University of Oklahoma",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText(loc("University of Oklahoma ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+                        writeText("J visa students");
+                        writeText("Enrolled Students with J visa have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Annual deductible not over $500.  Taian Plan B with $50,000 benefit per illness or injury and $500 annual deductible is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.");                        
+                        writeText("F visa students");                        
+                        writeText("Enrolled Students with F visa have required coverage as follows: 1. Medical benefits of $100,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Annual deductible not over $750.  Taian Plan B with $100,000 benefit per illness or injury and $500 annual deductible is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.");                      
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("University of Oklahoma Scholar Requirements", "http://hr.ou.edu/%5C/ifss/documents/J-1MedicalHealthInsuranceRequirement.pdf"),                         
+                                makeURL("University of Oklahoma Student Requirements", "http://hr.ou.edu/studenthealth/StudentHealthWaiver.asp") 
+                                ]));
+                        endRow();
+                    }
+              }, 
+
+        umaine: {
+                    windowTitle: "TaiAn Health Insurance for University of Maine",
+                    pageTitle: "TaiAn Health Insurance for University of Maine",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText(loc("University of Maine ") + loc("J scholars and enrolled students (F or J) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+                        writeText("Enrolled international students need to complete a waiver.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("University of Maine Scholar Requirements", "http://umaine.edu/international/current-students/health-insurance/"),                         
+                                makeURL("University of Maine Student Requirements", "http://umaine.edu/international/isss/students/health-insurance/") 
+                                ]));
+                        endRow();
+                    }
+              },  
+
+        unm: {
+                    windowTitle: "TaiAn Health Insurance for University of New Mexico",
+                    pageTitle: "TaiAn Health Insurance for University of New Mexico",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText(loc("University of New Mexico ") + loc("J scholars and enrolled students (F or J) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+                        writeText("Enrolled international students need to complete an online waiver.");
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("University of New Mexico Scholar Requirements", "http://geo.unm.edu/health_insurance_scholar.html"),                         
+                                makeURL("University of New Mexico Student Requirements", "http://geo.unm.edu/health_insurance_student.html") 
+                                ]));
+                        endRow();
+                    }
+              },                       
+              
         ucmerced: {
                     windowTitle: "TaiAn Health Insurance for UC Merced",
                     pageTitle: "TaiAn Health Insurance for UC Merced",
@@ -5133,8 +5205,11 @@ function getPartnership(partner) {
                     internationalStudentContent: function () {
                         startRow();
                         writeText(loc("University of Georgia ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+                        writeText("Enrolled international students are required to carry $250,000 per illness or injury, and complete a waiver. Taian Scholar/Student Insurance Plan B with $250,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements.");
+
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("University of Georgia Scholar Requirements", "http://issis.uga.edu/docs/Fac_Scholar_Section/Health_%20Ins_Companies_Requirements.pdf")                        
+                                makeURL("University of Georgia Scholar Requirements", "http://issis.uga.edu/docs/Fac_Scholar_Section/Health_%20Ins_Companies_Requirements.pdf"),                        
+                                makeURL("University of Georgia Student Requirements", "http://www.hr.uga.edu/mandatory-plan-waiver")
                                 ]));
                         endRow();
                     }

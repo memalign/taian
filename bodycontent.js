@@ -1289,7 +1289,16 @@ function referralSubstitution(key) {
         gutdallas: "partner=utdallas&p=pivot-international-studentandscholar&adid=gutdallas",
         iutdallas: "partner=utdallas&p=pivot-international-studentandscholar",
         icnutdallas: "l=cn&partner=utdallas&p=pivot-international-studentandscholar",
-        
+  
+        iou: "partner=ou&p=pivot-international-student",
+        icnou: "l=cn&partner=ou&p=pivot-international-student", 
+
+        iumaine: "partner=umaine&p=pivot-international-student",
+        icnumaine: "l=cn&partner=umaine&p=pivot-international-student", 
+
+        iunm: "partner=unm&p=pivot-international-student",
+        icnunm: "l=cn&partner=unm&p=pivot-international-student",         
+  
         iu: "partner=iu&p=pivot-home&adid=siu",
         cniu: "l=cn&partner=iu&p=pivot-home&adid=scniu",   
         gcniu: "l=cn&partner=iu&p=pivot-international-student&adid=gcniu",
@@ -3096,7 +3105,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("University of Georgia (GA)", "http://www.uga.edu/"),
                 makeURL("School F1 requirement", "http://www.hr.uga.edu/mandatory-plan-waiver"),
                 makeURL("School J1 requirement", "http://issis.uga.edu/docs/Fac_Scholar_Section/Health_%20Ins_Companies_Requirements.pdf"),
-                makeURL("Health insurance for University of Georgia Scholars", "#iuga"),
+                makeURL("Health insurance for University of Georgia International Students and Scholars", "#iuga"),
                 
                 makeURL("University of Hawaii - Manoa (HI)", "http://www.uhm.hawaii.edu/"),
                 makeURL("School F1 requirement", "http://www.hawaii.edu/issmanoa/pages/home/health-insurance.php"),
@@ -3149,9 +3158,9 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Plan that meets this school's standards for J scholar", "#usdos"),
                 
                 makeURL("University of Maine - Orono (ME)", "http://www.umaine.edu/"),
-                makeURL("School F1 requirement", "http://umaine.edu/international/files/2010/07/Insurance-Waiver-Spring-2012-2.pdf"),
+                makeURL("School F1 requirement", "http://umaine.edu/international/isss/students/health-insurance/"),
                 makeURL("School J1 requirement", "http://umaine.edu/international/current-students/health-insurance/"),
-                makeURL("Plan that meets this school's standards for J scholar", "#usdos"),
+                makeURL("Health insurance for University of Maine Students and Scholars", "#iumaine"),
                 
                 makeURL("University of Maryland - College Park (MD)", "http://www.umcp.umd.edu/"),
                 makeURL("School F1 requirement", "http://globalmaryland.umd.edu/offices/international-students-scholar-services/health-insurance-0"),
@@ -3224,9 +3233,9 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Plan that meets this school's standards for J scholar", "#usdos"),
                 
                 makeURL("University of New Mexico (NM)", "http://www.unm.edu/"),
-                makeURL("School F1 requirement", "http://shac.unm.edu/shi-2014-2015.html"),
+                makeURL("School F1 requirement", "http://geo.unm.edu/health_insurance_student.html"),
                 makeURL("School J1 requirement", "http://geo.unm.edu/health_insurance_scholar.html"),
-                makeURL("Plan that meets this school's standards for J scholar", "#usdos"),
+                makeURL("Health insurance for University of New Mexico Students and Scholars", "#iunm"),
                 
                 makeURL("University of North Carolina - Chapel Hill (NC)", "http://www.unc.edu/"),
                 makeURL("School F1 requirement", "http://campushealth.unc.edu/charges-insurance/mandatory-student-health-insurance-hard-waiver-process/international-student"),
@@ -3256,8 +3265,13 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("University of Oklahoma (OK)", "http://www.ou.edu/"),
                 makeURL("School F1 requirement", "http://hr.ou.edu/studenthealth/StudentHealthWaiver.asp"),
-                makeURL("School J1 requirement", "http://hr.ou.edu/%5C/ifss/documents/J-1MedicalHealthInsuranceRequirement.pdf"),
-                makeURL("Plan that meets this school's standards for J scholar", "#usdos"),
+                    makeBulletedListWithTitle("", [
+                        makeURL("J1 student requirement", 
+                        "http://hr.ou.edu/studenthealth/StudentHealthWaiver.asp"),
+                        makeURL("J1 scholar requirement", 
+                        "http://hr.ou.edu/%5C/ifss/documents/J-1MedicalHealthInsuranceRequirement.pdf")
+                        ]), 
+                makeURL("Health insurance for University of Oklahoma Students and Scholars", "#iou"),
                 
                 makeURL("University of Oregon (OR)", "http://www.uoregon.edu/"),
                 makeURL("School F1 requirement", "https://international.uoregon.edu/sites/default/files/isss/Insurance%20waiver%20criteria%20explanation.pdf"),
