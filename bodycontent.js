@@ -107,8 +107,8 @@ function referralSubstitution(key) {
         knl2: "l=cn&p=pivot-international-student&adid=knl2",
         knl: "l=cn&p=pivot-school-waiver&adid=knl",  
         wshsa: "l=cn&p=pivot-school-waiver&adid=wshsa", 
-        wshsb: "l=cn&p=pivot-international-student&adid=wshsb", 
-        lwd: "l=cn&p=pivot-international-student&adid=lwd",        
+        wshsb: "l=cn&p=pivot-international-student&adid=wshsb",  
+        lwd: "l=cn&p=pivot-international-student&adid=lwd",         
         
         newyorkservicecenter: "l=cn&partner=newyorkservicecenter&p=pivot-international-student",
         nyscs: "l=cn&partner=newyorkservicecenter&p=pivot-international-student",
@@ -654,10 +654,18 @@ function referralSubstitution(key) {
         ioakland: "partner=oakland&p=pivot-international-student",
         icnoakland: "l=cn&partner=oakland&p=pivot-international-student",  
 
+        iohio: "partner=ohio&p=pivot-international-student",
+        icnohio: "l=cn&partner=ohio&p=pivot-international-student",
 
  
         inova: "partner=nova&p=pivot-international-student",
         icnnova: "l=cn&partner=nova&p=pivot-international-student",         
+        iuidaho: "partner=uidaho&p=pivot-international-student",
+        icnuidaho: "l=cn&partner=uidaho&p=pivot-international-student",        
+        irice: "partner=rice&p=pivot-international-student",
+        icnrice: "l=cn&partner=rice&p=pivot-international-student",        
+        
+        
         
         
         fsu: "partner=fsu&p=pivot-home&adid=sfsu",
@@ -937,12 +945,12 @@ function referralSubstitution(key) {
 
         duke: "partner=duke&p=pivot-home&adid=sduke",
         cnduke: "l=cn&partner=duke&p=pivot-home&adid=scnduke",   
-        gcnduke: "l=cn&partner=duke&p=pivot-j-scholar&adid=gcnduke",
-        gduke: "partner=duke&p=pivot-j-scholar&adid=gduke",
-        acnduke: "l=cn&partner=duke&p=pivot-j-scholar&adid=acnduke", 
-        iduke: "partner=duke&p=pivot-j-scholar",
-        icnduke: "l=cn&partner=duke&p=pivot-j-scholar",
-        icndukez1: "l=cn&partner=duke&p=pivot-j-scholar&adid=icndukez1",        
+        gcnduke: "l=cn&partner=duke&p=pivot-international-student&adid=gcnduke",
+        gduke: "partner=duke&p=pivot-international-student&adid=gduke",
+        acnduke: "l=cn&partner=duke&p=pivot-international-student&adid=acnduke", 
+        iduke: "partner=duke&p=pivot-international-student",
+        icnduke: "l=cn&partner=duke&p=pivot-international-student",
+        icndukez1: "l=cn&partner=duke&p=pivot-international-student&adid=icndukez1",        
         
         
         ncsu: "partner=ncsu&p=pivot-home&adid=sncsu",
@@ -1289,16 +1297,28 @@ function referralSubstitution(key) {
         gutdallas: "partner=utdallas&p=pivot-international-studentandscholar&adid=gutdallas",
         iutdallas: "partner=utdallas&p=pivot-international-studentandscholar",
         icnutdallas: "l=cn&partner=utdallas&p=pivot-international-studentandscholar",
-  
+        
         iou: "partner=ou&p=pivot-international-student",
-        icnou: "l=cn&partner=ou&p=pivot-international-student", 
+        icnou: "l=cn&partner=ou&p=pivot-international-student",  
+        
+        idrexel: "partner=drexel&p=pivot-international-student",
+        icndrexel: "l=cn&partner=drexel&p=pivot-international-student", 
+        
+        iusu: "partner=usu&p=pivot-international-student",
+        icnusu: "l=cn&partner=usu&p=pivot-international-student",       
+        
+        iwfu: "partner=wfu&p=pivot-international-student",
+        icnwfu: "l=cn&partner=wfu&p=pivot-international-student",        
+
+        icedars: "partner=cedars&p=pivot-international-student",
+        icncedars: "l=cn&partner=cedars&p=pivot-international-student",        
 
         iumaine: "partner=umaine&p=pivot-international-student",
-        icnumaine: "l=cn&partner=umaine&p=pivot-international-student", 
+        icnumaine: "l=cn&partner=umaine&p=pivot-international-student",  
 
         iunm: "partner=unm&p=pivot-international-student",
-        icnunm: "l=cn&partner=unm&p=pivot-international-student",         
-  
+        icnunm: "l=cn&partner=unm&p=pivot-international-student",        
+
         iu: "partner=iu&p=pivot-home&adid=siu",
         cniu: "l=cn&partner=iu&p=pivot-home&adid=scniu",   
         gcniu: "l=cn&partner=iu&p=pivot-international-student&adid=gcniu",
@@ -2172,7 +2192,6 @@ function makeResourceCenterURL(title, pivot) {
     return makeURL(title, "./resourcecenter/index.html#l="+getPageAttribute("l")+"&p="+pivot);
 }
 
-
 function makeBulletedListWithTitle(title, list) {
     var listCode = '<h2>'+loc(title)+'</h2>';
     listCode += '<ul class="styled-ul">';
@@ -2429,6 +2448,13 @@ function writePatriotTravelTable() {
 function writeSectionForSchoolWaiverRequirements() {
     // School waiver requirements
     startSection("pivot-school-waiver", "School Requirements and Most Affordable Insurance Plan");
+
+
+    startRow();
+    writeText("Use this page to find insurance that meets your school requirements: 1) Find your school name in the first column; 2) Click on the corresponding fourth column, then you will see your school special page which tells you how to buy insurance that meets your school requirements.");
+    endRow();
+
+
     startRow();
     writeText("Call from US - 9:00AM to 10:00PM Eastern time - Includes weekend: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time 7-11am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>");
     endRow();
@@ -2511,7 +2537,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("California Institute of Technology (CA)", "http://www.caltech.edu/"),
                 makeURL("School F1 requirement", "http://benefits.caltech.edu/SiteDocuments/WaiverRequirements.pdf"),
                 makeURL("School J1 requirement", "http://www.international.caltech.edu/maintainstatus/J1insurarnce"),
-                makeURL("Health insurance for Caltech Scholars", "#icaltech"),
+                makeURL(loc("Health insurance for ") + loc("Caltech") + loc(" International Students and Scholars"), "#icaltech"),                
                 
                 makeURL("California State University - Long Beach (CA)", "http://www.csulb.edu/"),
                 makeURL("School F1 requirement", "http://www.ccpe.csulb.edu/international/visitor.aspx?pID=63"),
@@ -2528,6 +2554,12 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School F1 requirement", "http://studentaffairs.case.edu/medicalplan/news/4915.newx"),
                 makeURL("School J1 requirement", "http://www.case.edu/finadmin/humres/ffs/j1.html"),
                 makeURL("Health insurance for Case Western Reserve Scholars", "#icasew"),
+
+                makeURL("Cedars-Sinai Medical Center (CA)", "http://www.cedars-sinai.edu/"),
+                "",
+                makeURL("School J1 requirement", "http://www.cedars-sinai.edu/Research/Research-Administration/Visa-and-Intl-Services-/CSMC-Visa-Types/J-1-Visa/Maintaining-Legal-Status.aspx"),
+                makeURL(loc("Health insurance for ") + loc("Cedars-Sinai Medical Center") + loc(" Scholars"), "#icedars"),
+
                 
                 makeURL("Central Washington University (WA)", "http://www.cwu.edu/"),
                 makeURL("School F1 requirement", "http://www.cwu.edu/international-programs/medical-insurance"),
@@ -2618,6 +2650,13 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School F1 requirement", "http://oiss.depaul.edu/FAQ/index.asp"),
                 makeURL("School J1 requirement", "http://oiss.depaul.edu/docs/J-1_EV_health_insurance_requirements.pdf"),
                 makeURL("Health insurance for Depaul University Students and Scholars", "#idepaul"),                
+
+                makeURL("Drexel University (PA)", "http://www.drexel.edu/"),
+                makeURL("School F1 requirement", "http://drexel.edu/healthservices/insurance-immunizations/health-insurance/health-insurance-international/"),
+                makeURL("School J1 requirement", "http://drexel.edu/studentaffairs/get_involved/international_students_scholars/hiring_fn/j1_scholars/"),
+                makeURL(loc("Health insurance for ") + loc("Drexel University") + loc(" Scholars"), "#idrexel"),
+
+
                 
                 makeURL("Duke University (NC)", "http://www.duke.edu/"),
                 makeURL("School F1 requirement", "http://studentaffairs.duke.edu/studenthealth/health-insurance/waiver-criteria-review"),
@@ -2642,7 +2681,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Florida State University (FL)", "http://www.fsu.edu/"),
                 makeURL("School F1 requirement", "http://studentinsurance.fsu.edu/forms/comparable_coverage_international.pdf"),
                 makeURL("School J1 requirement", "http://cge.fsu.edu/intlScholars/healthinsurance.html"),
-                makeURL("Health insurance for Florida State University Scholars", "#ifsu"),
+                makeURL(loc("Health insurance for ") + loc("Florida State University") + loc(" International Students and Scholars"), "#ifsu"),
                 
                 makeURL("Fordham University (NY)", "http://www.fordham.edu/"),
                 makeURL("School F1 requirement", "http://www.fordham.edu/academics/office_of_the_provos/international_educat/office_for_internati/current_students/health_and_safety/health_insurance_inf/"),
@@ -2775,9 +2814,9 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Health insurance for MUSC Scholars", "#imusc"),                
                 
                 makeURL("Michigan State University (MI)", "http://www.msu.edu/"),
-                makeURL("School F1 requirement", "http://oiss.isp.msu.edu/students/health/policy.htm"),
+                makeURL("School F1 requirement", "http://oiss.isp.msu.edu/students/health/waiver.htm"),
                 makeURL("School J1 requirement", "http://oiss.isp.msu.edu/documents/scholars/DS2019_Scholar_Extension.pdf"),
-                makeURL("Health Insurance for MSU International Students and Scholars", "#imsu"),
+                makeURL(loc("Health insurance for ") + loc("MSU") + loc(" Scholars"), "#imsu"),                
                 
                 makeURL("Mississippi State University (MS)", "http://www.msstate.edu/"),
                 makeURL("School F1 requirement", "http://admissions.msstate.edu/international/apply/insurance.php"),
@@ -2849,6 +2888,11 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School F1 requirement", "http://www.oakland.edu/?id=23748&sid=115"),
                 makeURL("School J1 requirement", "http://www.oakland.edu/?id=29333&sid=115"),
                 makeURL("Health insurance for Oakland University Scholars", "#ioakland"),                
+
+                makeURL("Ohio University (OH)", "http://www.ohio.edu/"),
+                makeURL("School F1 requirement", "http://www.ohio.edu/isfs/arrival/livinginathens.htm#health"),
+                makeURL("School J1 requirement", "http://www.ohio.edu/isfs/forms/pdf/evhealthinsurance.pdf"),
+                makeURL("Health insurance for Ohio University Scholars", "#iohio"), 
                 
                 makeURL("Ohio State University-Columbus(OH)", "http://www.osu.edu/"),
                 makeURL("School F1 requirement", "http://shi.osu.edu/coverage-comparison-tools/"),
@@ -2896,9 +2940,9 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Plan that meets this school's standards for J scholar", "#usdos"),
                 
                 makeURL("Rice University (TX)", "http://www.riceinfo.rice.edu/"),
-                makeURL("School F1 requirement", "http://oiss.rice.edu/gateway.aspx?id=208"),
-                makeURL("School J1 requirement", "http://oiss.rice.edu/gateway.aspx?id=228"),
-                "Consult your school about their requirements",
+                makeURL("School F1 requirement", "http://studenthealthinsurance.rice.edu/waiverrequirements/"),
+                makeURL("School J1 requirement", "http://oiss.rice.edu/uploadedFiles/Docs/J-1%20Health%20Insurance%20Information.pdf"),
+                makeURL(loc("Health insurance for ") + loc("Rice University") + loc(" International Students and Scholars"), "#irice"),
 
                 makeURL("Rudolf Steiner College (CA)", "http://www.steinercollege.edu/"),
                 makeURL("School F1 requirement", "http://www.steinercollege.edu/international"),
@@ -3125,7 +3169,8 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("University of Idaho (ID)", "http://www.uidaho.edu/"),
                 makeURL("School F1 requirement", "http://www.uidaho.edu/~/media/Files/orgs/Academic%20Affairs/IPO/ISSS/F1%20Student%20UI%20Health%20Insurance%20Requirements%20%20Companies.ashx"),
                 makeURL("School J1 requirement", "http://www.uidaho.edu/~/media/Files/orgs/Academic%20Affairs/IPO/ISSS/International%20Scholars/JI%20PreArrival%20Document.ashx"),
-                makeURL("Plan that meets this school's standards for J scholar", "#usdos"),
+                makeURL(loc("Health insurance for ") + loc("University of Idaho") + loc(" International Students and Scholars"), "#iuidaho"),
+                
                 
                 makeURL("University of Illinois ,Urbana-Champaign (IL)", "http://www.uiuc.edu/"),
                 makeURL("School F1 requirement", "http://www.si.uiuc.edu/Default.aspx?tabid=64"),
@@ -3316,7 +3361,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("University of South Florida (FL)", "http://www.usf.edu/"),
                 makeURL("School F1 requirement", "http://www.usf.edu/student-affairs/student-health-services/insurance/inscompliance.aspx"),
                 makeURL("School J1 requirement", "http://global.usf.edu/is/downloads/J1_DS2019.pdf"),
-                makeURL("Health insurance for University of South Florida Scholars", "#iusf"),
+                makeURL(loc("Health insurance for ") + loc("University of South Florida") + loc(" International Students and Scholars"), "#iusf"),
                 
                 makeURL("University of Tennessee - Knoxville (TN)", "http://www.utk.edu/"),
                 makeURL("School F1 requirement", "http://studenthealth.utk.edu/insrec_intl.php"),
@@ -3429,7 +3474,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Utah State University (UT)", "http://www.usu.edu/"),
                 makeURL("School F1 requirement", "http://globalengagement.usu.edu/htm/study-abroad/incoming-students/health-insurance"),
                 makeURL("School J1 requirement", "http://globalengagement.usu.edu/htm/study-abroad/incoming-students/health-insurance"),
-                makeURL("Plan that meets this school's standards for J scholar", "#usdos"),
+                makeURL(loc("Health insurance for ") + loc("Utah State University") + loc(" International Students and Scholars"), "#iusu"),
                 
                 makeURL("Vanderbilt University (TN)", "http://www.vanderbilt.edu/"),
                 makeURL("School F1 requirement", "http://www.vanderbilt.edu/isss/wp-content/uploads/HealthInsWaiverRequest.pdf"),
@@ -3446,6 +3491,11 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School J1 requirement", "http://www.iss.vt.edu/index.php/foreign-national/j-1/health-insurance"),
                 makeURL("Health insurance for Virginia Tech Scholars", "#ivt"),
                 
+                makeURL("Wake Forest University (NC)", "http://www.wfu.edu/"),
+                makeURL("School F1 requirement", "http://sip.studentlife.wfu.edu/enrollment/"),
+                makeURL("School J1 requirement", "http://global.wfu.edu/iss/j1/insurance/"),
+                makeURL(loc("Health insurance for ") + loc("Wake Forest University") + loc(" Scholars"), "#iwfu"),
+
                 makeURL("Washington State University", "http://www.wsu.edu/"),
                 makeURL("School F1 requirement", "http://studentinsurance.wsu.edu/international-students/"),
                 makeURL("School J1 requirement", "http://ip.wsu.edu/global-services/scholars/J-1/medical-insurance.html"),
@@ -3544,7 +3594,11 @@ function writeSections(legacy) {
     startSection("pivot-international-student", "International Scholars and Students");
 
     startRow();
-    writeText("Taian International Health Insurance provides IMG International Scholar and Student Insurance for US visa holders (F1 visa, J1 visa, OPT, and M1 visa) and their dependents. Taian Insurance Plan A and Plan B meet many schools\' student insurance standards and almost every schools\' J1 scholar insurance standards and are more affordable than most school plans. All J visa holders are required to meet the US Department of State (USDOS) requirements and their school requirements for the duration of their visa. Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the USDOS requirements. Most schools requirements for J1 scholars are the same as the USDOS, however some schools have higher requirements. Please click the links below to see your school requirements and US Department of State requirements.");
+    writeText("<strong>" + makePivotURL("pivot-school-waiver", "Find your school insurance requirements and most affordable plan here") + "</strong>");
+    endRow();    
+    
+    startRow();
+    writeText("Taian International Health Insurance provides IMG International Scholar and Student Insurance for US visa holders (F1 visa, J1 visa, OPT, and M1 visa) and their dependents. Taian Insurance Plan A and Plan B meet many schools\' student insurance standards and almost every schools\' J1 scholar insurance standards and are more affordable than most school plans. All J visa holders are required to meet the US Department of State (USDOS) requirements and their school requirements for the duration of their visa. Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the USDOS requirements. Most schools requirements for J1 scholars are the same as the USDOS, however some schools have higher requirements. Please click the links to see your school requirements and US Department of State requirements.");
     endRow();
 
     var partnerShip = getPartnership(getPageAttribute("partner"));
@@ -3554,9 +3608,7 @@ function writeSections(legacy) {
         internationalStudentPartnerContent();
     }
 
-    startRow();
-    writeText("<strong>" + makePivotURL("pivot-school-waiver", "Find your school insurance requirements and most affordable plan here") + "</strong>");
-    endRow();
+
    
     startRow();
     writeText(makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/"));
@@ -3574,7 +3626,7 @@ function writeSections(legacy) {
             [
             // Column headers:
             "TaiAn Scholars and Students",
-            makeRawURL("Plan A (Student Health Advantage)", "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+            loc(makeRawURL("Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, ", "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeRawURL("Platinum Plan A", "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
             makeRawURL("Plan B (Taian Patriot Exchange), $100 per illness deductible", "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
             makeRawURL("Plan B (Taian Patriot Exchange)- Annual Deductible<br />ONLY AVAILABLE FROM TAIAN", "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),            
 
@@ -3584,16 +3636,16 @@ function writeSections(legacy) {
             "Plan Type", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 5 years if initial purchase is 3 months or more.", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.",
 
             // Row 3
-            "Maximum Limit", "$500,000 lifetime maximum, $300,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury",
+            "Maximum Limit", "Standard Plan: $500,000  maximum per period of coverage, $300,000 per illness/injury<br />Platinum Plan: $1,000,000 maximum per period of coverage, $500,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury",
 
 
 
-            "Deductible (Insured pays before insurance pays)", "$100 per illness/injury: For each illness or injury, insured pays $100 before insurance pays.", "$100 per illness/injury: For each illness or injury, insured pays $100 before insurance pays 100%.", "$250 or $500 annual deductible: During whole policy period (not over a year), insured pays $250 or $500 before insurance pays 100%.<br />IMG product, Taian Exclusive!",
+            "Deductible (Insured pays before insurance pays)", "Standard Plan: $100 per illness/injury: For each illness or injury, insured pays $100 before insurance pays.<br />Platinum Plan: $25 per illness/injury In PPO, $50 per illness/injury Out of PPO", "$100 per illness/injury: For each illness or injury, insured pays $100 before insurance pays 100%.", "$250 or $500 annual deductible: During whole policy period (not over a year), insured pays $250 or $500 before insurance pays 100%.<br />IMG product, Taian Exclusive!",
             "Student Health Center Copay", "$5 copay, no deductible", "$5 copay, no deductible", "$5 copay, no deductible",
-            "Coinsurance", "No coinsurance in PPO", "No coinsurance in PPO or out of PPO", "No coinsurance in PPO or out of PPO",
+            "Illness or Injury Coinsurance", "No coinsurance outside of U.S or in PPO within U.S.  Out of PPO within U.S.: 80% of the first $5,000 of eligible charges, then 100%.", "No coinsurance in PPO or out of PPO", "No coinsurance in PPO or out of PPO",
             "Hospital Room & Board", "Average semi-private room", "Average semi-private room", "Average semi-private room", 
             "Intensive Care", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)",
-            "Maternity", "URC - If not pregnant when you purchase.   Not covered - If you are pregnant when you purchase.", "N/A", "N/A",
+            "Maternity Coinsurance", "Not covered - If you are pregnant before your policy is effective.<br />Standard Plan: In US/Canada In PPO 80%/20% - Plan pays 80% of URC. 60%/40% Out of PPO.  Outside US/Canada covered 100% of URC.<br />Platinum Plan: Same as any illness or injury coinsurance.", "N/A", "N/A",
             "Mental Health", "In-patient URC to $10,000, out-patient $50/day to $500", "N/A", "N/A",
             "Emergency Room", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization",
             "Prescription Drugs", "In-patient URC, out-patient 50%", "URC", "URC",
@@ -3601,18 +3653,30 @@ function writeSections(legacy) {
             "Accidental Death & Loss of Limb", "$25,000", "$25,000", "$25,000",
             "Medical Evacuation", "$500,000", "$50,000", "$50,000",
             "Repatriation of remains", "$50,000", "$25,000", "$25,000",
-            "Pre-existing conditions", "After 12 months of continuous coverage", "After 12 months of continuous coverage", "After 12 months of continuous coverage",
+            "Pre-existing conditions (Illness or Injury)", "Standard Plan: After 12 months of continuous coverage<br />Platinum Plan: After 6 months of continuous coverage", "After 12 months of continuous coverage", "After 12 months of continuous coverage",
             "Group Pricing", "2 or more primary insured have about 10% discount", "2 or more primary insured have about 10% discount", "2 or more primary insured have about 10% discount", 
             // Table within a table
             "Cost Per Month (Non-US Citizens)",
+            loc("Standard Plan") +
             makeTable(4, [
                     "Age",     "F1/J1", "Spouse", "Children",
-                    "&lt; 19", "$72",   "$386",   "$82",
-                    "19-23",   "$95",   "$386",   "$82",
-                    "24-30",   "$110",  "$426",   "$82",
-                    "31-40",   "$197",  "$567",   "$82",
-                    "41-50",   "$322",  "$586",   "$82",
-                    "51-64",   "$430",  "$567",   "$82"
+                    "&lt; 19", "$69",   "$372",   "$79",
+                    "19-23",   "$92",   "$372",   "$79",
+                    "24-30",   "$106",  "$411",   "$79",
+                    "31-40",   "$190",  "$547",   "$79",
+                    "41-50",   "$311",  "$565",   "$79",
+                    "51-64",   "$415",  "$547",   "$79"
+                    ]) +
+            loc("<br /><br />") +                    
+            loc("Platinum Plan") +
+            makeTable(4, [
+                    "Age",     "F1/J1", "Spouse", "Children",
+                    "&lt; 19", "$111",   "$594",   "$126",
+                    "19-23",   "$146",   "$594",   "$126",
+                    "24-30",   "$169",  "$656",   "$126",
+                    "31-40",   "$303",  "$873",   "$126",
+                    "41-50",   "$496",  "$902",   "$126",
+                    "51-64",   "$662",  "$873",   "$126"
                     ]), 
 
             loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
@@ -3666,19 +3730,21 @@ function writeSections(legacy) {
                     + makeURL(loc("Click here for more benefit level and deductible options"),"#p=pivot-taian-patriotexchange"), 
                     
             "", 
-            makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+            loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
             makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
             makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),            
 
                 "", 
-            makeBuyURL(loc("Buy Group A (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699"),
+            loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
 
             makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
-            makeBuyURL(loc("Buy Group B (10% off, $39 and up)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),            
+            makeBuyURL(loc("Buy Group B (10% off, $39 and up)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
             "",
             makeResourceCenterURL(loc("Questions and Answers about Plan A"),"pivot-qanda-plana"),            
             makeResourceCenterURL(loc("Questions and Answers about Plan B"),"pivot-qanda-planb"),
-            makeResourceCenterURL(loc("Questions and Answers about Plan B"),"pivot-qanda-planb")            
+            makeResourceCenterURL(loc("Questions and Answers about Plan B"),"pivot-qanda-planb")           
+          
+
             ])
             );
     endRow();
@@ -3706,15 +3772,15 @@ function writeSections(legacy) {
                         "Newborn care is covered for 31 days after birth if the birth is covered under the plan.",                        
                         "Emergency Room: Injury: URC; Illness resulting in hospitalization: URC; Illness without hospitalization: Subject to addtional $250 deductible",
                         "Physical Therapy: URC -limit once per day",
-                        "Local Ambulance: Per injury up to $350, Per illness only if admitted in-patient up to $350",
+                        "Standard Plan Local Ambulance: Per injury up to $350, Per illness only if admitted in-patient up to $350",
+                        "Platinum Plan Local Ambulance: Per injury up to $750, Per illness only if admitted in-patient up to $750",
                         "Dental: Injury due to covered accident $500; Sudden & unexpected pain $350",
                         "Intercollegiate/Interscholastic/intramural or club sports: $5,000 per injury/illness medical expenses only",
                         "Incidental home country coverage: up to cumulative two weeks",
                         "Terrorism coverage: up to 50,000 lifetime maximum",
-                        "Dependents can only purchase when the student purchases",
+                        "F2/J2 dependents can only purchase when the F1/J1 purchases",
                         "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays.",                        
-                        "Optional benefit change in Florida, Hawaii, Idaho, Massachusetts to shorten the preexisting condition exclusion from 12 months to 6 months.",
-                        "With 6 month preexisting condition benefit change there is a 10 month wait for maternity benefits."                        
+                        "Standard Plan: Optional benefit change in Florida, Hawaii, Idaho, Massachusetts to shorten the preexisting condition exclusion from 12 months to 6 months. With 6 month preexisting condition benefit change there is a 10 month wait for maternity benefits."                        
                         ]),
 
 
@@ -3812,7 +3878,7 @@ function writeSections(legacy) {
             [
             // Column headers:
             "TaiAn Scholars and Students",
-            makeRawURL("Plan A (Student Health Advantage)", "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+            loc(makeRawURL("Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, ", "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeRawURL("Platinum Plan A", "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
             makeRawURL("Plan B (Taian Patriot Exchange), $100 per illness deductible", "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
             makeRawURL("Plan B (Taian Patriot Exchange)- Annual Deductible<br />ONLY AVAILABLE FROM TAIAN", "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),            
 
@@ -3822,16 +3888,16 @@ function writeSections(legacy) {
             "Plan Type", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 5 years if initial purchase is 3 months or more.", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.",
 
             // Row 3
-            "Maximum Limit", "$500,000 lifetime maximum, $300,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury",
+            "Maximum Limit", "Standard Plan: $500,000  maximum per period of coverage, $300,000 per illness/injury<br />Platinum Plan: $1,000,000 maximum per period of coverage, $500,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury",
 
 
 
-            "Deductible (Insured pays before insurance pays)", "$100 per illness/injury: For each illness or injury, insured pays $100 before insurance pays.", "$100 per illness/injury: For each illness or injury, insured pays $100 before insurance pays 100%.", "$250 or $500 annual deductible: During whole policy period (not over a year), insured pays $250 or $500 before insurance pays 100%.<br />IMG product, Taian Exclusive!",
+            "Deductible (Insured pays before insurance pays)", "Standard Plan: $100 per illness/injury: For each illness or injury, insured pays $100 before insurance pays.<br />Platinum Plan: $25 per illness/injury In PPO, $50 per illness/injury Out of PPO", "$100 per illness/injury: For each illness or injury, insured pays $100 before insurance pays 100%.", "$250 or $500 annual deductible: During whole policy period (not over a year), insured pays $250 or $500 before insurance pays 100%.<br />IMG product, Taian Exclusive!",
             "Student Health Center Copay", "$5 copay, no deductible", "$5 copay, no deductible", "$5 copay, no deductible",
-            "Coinsurance", "No coinsurance in PPO", "No coinsurance in PPO or out of PPO", "No coinsurance in PPO or out of PPO",
+            "Illness or Injury Coinsurance", "No coinsurance outside of U.S or in PPO within U.S.  Out of PPO within U.S.: 80% of the first $5,000 of eligible charges, then 100%.", "No coinsurance in PPO or out of PPO", "No coinsurance in PPO or out of PPO",
             "Hospital Room & Board", "Average semi-private room", "Average semi-private room", "Average semi-private room", 
             "Intensive Care", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)",
-            "Maternity", "URC - If not pregnant when you purchase.   Not covered - If you are pregnant when you purchase.", "N/A", "N/A",
+            "Maternity Coinsurance", "Not covered - If you are pregnant before your policy is effective.<br />Standard Plan: In US/Canada In PPO 80%/20% - Plan pays 80% of URC. 60%/40% Out of PPO.  Outside US/Canada covered 100% of URC.<br />Platinum Plan: Same as any illness or injury coinsurance.", "N/A", "N/A",
             "Mental Health", "In-patient URC to $10,000, out-patient $50/day to $500", "N/A", "N/A",
             "Emergency Room", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization",
             "Prescription Drugs", "In-patient URC, out-patient 50%", "URC", "URC",
@@ -3839,18 +3905,31 @@ function writeSections(legacy) {
             "Accidental Death & Loss of Limb", "$25,000", "$25,000", "$25,000",
             "Medical Evacuation", "$500,000", "$50,000", "$50,000",
             "Repatriation of remains", "$50,000", "$25,000", "$25,000",
-            "Pre-existing conditions", "After 12 months of continuous coverage", "After 12 months of continuous coverage", "After 12 months of continuous coverage",
+            "Pre-existing conditions (Illness or Injury)", "Standard Plan: After 12 months of continuous coverage<br />Platinum Plan: After 6 months of continuous coverage", "After 12 months of continuous coverage", "After 12 months of continuous coverage",
             "Group Pricing", "2 or more primary insured have about 10% discount", "2 or more primary insured have about 10% discount", "2 or more primary insured have about 10% discount", 
+                        
             // Table within a table
             "Cost Per Month (Non-US Citizens)",
+            loc("Standard Plan") +
             makeTable(4, [
                     "Age",     "F1/J1", "Spouse", "Children",
-                    "&lt; 19", "$72",   "$386",   "$82",
-                    "19-23",   "$95",   "$386",   "$82",
-                    "24-30",   "$110",  "$426",   "$82",
-                    "31-40",   "$197",  "$567",   "$82",
-                    "41-50",   "$322",  "$586",   "$82",
-                    "51-64",   "$430",  "$567",   "$82"
+                    "&lt; 19", "$69",   "$372",   "$79",
+                    "19-23",   "$92",   "$372",   "$79",
+                    "24-30",   "$106",  "$411",   "$79",
+                    "31-40",   "$190",  "$547",   "$79",
+                    "41-50",   "$311",  "$565",   "$79",
+                    "51-64",   "$415",  "$547",   "$79"
+                    ]) +
+            loc("<br /><br />") +                    
+            loc("Platinum Plan") +
+            makeTable(4, [
+                    "Age",     "F1/J1", "Spouse", "Children",
+                    "&lt; 19", "$111",   "$594",   "$126",
+                    "19-23",   "$146",   "$594",   "$126",
+                    "24-30",   "$169",  "$656",   "$126",
+                    "31-40",   "$303",  "$873",   "$126",
+                    "41-50",   "$496",  "$902",   "$126",
+                    "51-64",   "$662",  "$873",   "$126"
                     ]), 
 
             loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
@@ -3903,12 +3982,12 @@ function writeSections(legacy) {
  
                     
             "", 
-            makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+            loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
             makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
             makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),            
 
                 "", 
-            makeBuyURL(loc("Buy Group A (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699"),
+            loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
             makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
             makeBuyURL(loc("Buy Group B (10% off, $39 and up)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
 
@@ -3945,15 +4024,15 @@ function writeSections(legacy) {
                         "Newborn care is covered for 31 days after birth if the birth is covered under the plan.",                        
                         "Emergency Room: Injury: URC; Illness resulting in hospitalization: URC; Illness without hospitalization: Subject to addtional $250 deductible",
                         "Physical Therapy: URC -limit once per day",
-                        "Local Ambulance: Per injury up to $350, Per illness only if admitted in-patient up to $350",
+                        "Standard Plan Local Ambulance: Per injury up to $350, Per illness only if admitted in-patient up to $350",
+                        "Platinum Plan Local Ambulance: Per injury up to $750, Per illness only if admitted in-patient up to $750",
                         "Dental: Injury due to covered accident $500; Sudden & unexpected pain $350",
                         "Intercollegiate/Interscholastic/intramural or club sports: $5,000 per injury/illness medical expenses only",
                         "Incidental home country coverage: up to cumulative two weeks",
                         "Terrorism coverage: up to 50,000 lifetime maximum",
-                        "Dependents can only purchase when the student purchases",
+                        "F2/J2 dependents can only purchase when the F1/J1 purchases",
                         "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays.",                        
-                        "Optional benefit change in Florida, Hawaii, Idaho, Massachusetts to shorten the preexisting condition exclusion from 12 months to 6 months.",
-                        "With 6 month preexisting condition benefit change there is a 10 month wait for maternity benefits."                        
+                        "Standard Plan: Optional benefit change in Florida, Hawaii, Idaho, Massachusetts to shorten the preexisting condition exclusion from 12 months to 6 months. With 6 month preexisting condition benefit change there is a 10 month wait for maternity benefits."                        
                         ]),
 
 
@@ -4054,7 +4133,7 @@ function writeSections(legacy) {
             [
             // Column headers:
             "TaiAn Insurance for Educators",
-            makeRawURL("Plan A (Student Health Advantage)", "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+            loc(makeRawURL("Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, ", "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeRawURL("Platinum Plan A", "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
             makeRawURL("Plan B (Taian Patriot Exchange), $100 per illness deductible", "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
             makeRawURL("Plan B (Taian Patriot Exchange)- Annual Deductible<br />ONLY AVAILABLE FROM TAIAN", "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),            
 
@@ -4064,15 +4143,15 @@ function writeSections(legacy) {
             "Plan Type", "Designed specifically for international scholars，educators，students and their families (US visa J1/J2, F1/F2). Purchase monthly increments (from 1 to 12 months), renewable up to 5 years if initial purchase is 3 months or more.", "Designed specifically for international scholars，educators，students and their families (US visa J1/J2, F1/F2). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.", "Designed specifically for international scholars，educators，students and their families (US visa J1/J2, F1/F2). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.",
 
             // Row 3
-            "Maximum Limit", "$500,000 lifetime maximum, $300,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury",
+            "Maximum Limit", "Standard Plan: $500,000  maximum per period of coverage, $300,000 per illness/injury<br />Platinum Plan: $1,000,000 maximum per period of coverage, $500,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury",
 
 
-            "Deductible (Insured pays before insurance pays)", "$100 per illness/injury: For each illness or injury, insured pays $100 before insurance pays.", "$100 per illness/injury: For each illness or injury, insured pays $100 before insurance pays 100%.", "$250 or $500 annual deductible: During whole policy period (not over a year), insured pays $250 or $500 before insurance pays 100%.<br />IMG product, Taian Exclusive!",
+            "Deductible (Insured pays before insurance pays)", "Standard Plan: $100 per illness/injury: For each illness or injury, insured pays $100 before insurance pays.<br />Platinum Plan: $25 per illness/injury In PPO, $50 per illness/injury Out of PPO", "$100 per illness/injury: For each illness or injury, insured pays $100 before insurance pays 100%.", "$250 or $500 annual deductible: During whole policy period (not over a year), insured pays $250 or $500 before insurance pays 100%.<br />IMG product, Taian Exclusive!",
             "Student Health Center Copay", "$5 copay, no deductible", "$5 copay, no deductible", "$5 copay, no deductible",
-            "Coinsurance", "No coinsurance in PPO", "No coinsurance in PPO or out of PPO", "No coinsurance in PPO or out of PPO",
+            "Illness or Injury Coinsurance", "No coinsurance outside of U.S or in PPO within U.S.  Out of PPO within U.S.: 80% of the first $5,000 of eligible charges, then 100%.", "No coinsurance in PPO or out of PPO", "No coinsurance in PPO or out of PPO",
             "Hospital Room & Board", "Average semi-private room", "Average semi-private room", "Average semi-private room", 
             "Intensive Care", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)",
-            "Maternity", "URC - If not pregnant when you purchase.   Not covered - If you are pregnant when you purchase.", "N/A", "N/A",
+            "Maternity Coinsurance", "Not covered - If you are pregnant before your policy is effective.<br />Standard Plan: In US/Canada In PPO 80%/20% - Plan pays 80% of URC. 60%/40% Out of PPO.  Outside US/Canada covered 100% of URC.<br />Platinum Plan: Same as any illness or injury coinsurance.", "N/A", "N/A",
             "Mental Health", "In-patient URC to $10,000, out-patient $50/day to $500", "N/A", "N/A",
             "Emergency Room", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization",
             "Prescription Drugs", "In-patient URC, out-patient 50%", "URC", "URC",
@@ -4080,19 +4159,31 @@ function writeSections(legacy) {
             "Accidental Death & Loss of Limb", "$25,000", "$25,000", "$25,000",
             "Medical Evacuation", "$500,000", "$50,000", "$50,000",
             "Repatriation of remains", "$50,000", "$25,000", "$25,000",
-            "Pre-existing conditions", "After 12 months of continuous coverage", "After 12 months of continuous coverage", "After 12 months of continuous coverage",
+            "Pre-existing conditions (Illness or Injury)", "Standard Plan: After 12 months of continuous coverage<br />Platinum Plan: After 6 months of continuous coverage", "After 12 months of continuous coverage", "After 12 months of continuous coverage",
             "Group Pricing", "2 or more primary insured have about 10% discount", "2 or more primary insured have about 10% discount", "2 or more primary insured have about 10% discount", 
             // Table within a table
             "Cost Per Month (Non-US Citizens)",
+            loc("Standard Plan") +
             makeTable(4, [
                     "Age",     "F1/J1", "Spouse", "Children",
-                    "&lt; 19", "$72",   "$386",   "$82",
-                    "19-23",   "$95",   "$386",   "$82",
-                    "24-30",   "$110",  "$426",   "$82",
-                    "31-40",   "$197",  "$567",   "$82",
-                    "41-50",   "$322",  "$586",   "$82",
-                    "51-64",   "$430",  "$567",   "$82"
-                    ]), 
+                    "&lt; 19", "$69",   "$372",   "$79",
+                    "19-23",   "$92",   "$372",   "$79",
+                    "24-30",   "$106",  "$411",   "$79",
+                    "31-40",   "$190",  "$547",   "$79",
+                    "41-50",   "$311",  "$565",   "$79",
+                    "51-64",   "$415",  "$547",   "$79"
+                    ]) +
+            loc("<br /><br />") +                    
+            loc("Platinum Plan") +
+            makeTable(4, [
+                    "Age",     "F1/J1", "Spouse", "Children",
+                    "&lt; 19", "$111",   "$594",   "$126",
+                    "19-23",   "$146",   "$594",   "$126",
+                    "24-30",   "$169",  "$656",   "$126",
+                    "31-40",   "$303",  "$873",   "$126",
+                    "41-50",   "$496",  "$902",   "$126",
+                    "51-64",   "$662",  "$873",   "$126"
+                    ]),  
 
             loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
             makeTable(4, [
@@ -4145,12 +4236,12 @@ function writeSections(legacy) {
  
                     
             "", 
-            makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+            loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
             makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
             makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),            
 
                 "", 
-            makeBuyURL(loc("Buy Group A (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699"),
+            loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
             makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
             makeBuyURL(loc("Buy Group B (10% off, $39 and up)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
 
@@ -4187,15 +4278,15 @@ function writeSections(legacy) {
                         "Newborn care is covered for 31 days after birth if the birth is covered under the plan.",                        
                         "Emergency Room: Injury: URC; Illness resulting in hospitalization: URC; Illness without hospitalization: Subject to addtional $250 deductible",
                         "Physical Therapy: URC -limit once per day",
-                        "Local Ambulance: Per injury up to $350, Per illness only if admitted in-patient up to $350",
+                        "Standard Plan Local Ambulance: Per injury up to $350, Per illness only if admitted in-patient up to $350",
+                        "Platinum Plan Local Ambulance: Per injury up to $750, Per illness only if admitted in-patient up to $750",
                         "Dental: Injury due to covered accident $500; Sudden & unexpected pain $350",
                         "Intercollegiate/Interscholastic/intramural or club sports: $5,000 per injury/illness medical expenses only",
                         "Incidental home country coverage: up to cumulative two weeks",
                         "Terrorism coverage: up to 50,000 lifetime maximum",
-                        "Dependents can only purchase when the student purchases",
+                        "F2/J2 dependents can only purchase when the F1/J1 purchases",
                         "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays.",                        
-                        "Optional benefit change in Florida, Hawaii, Idaho, Massachusetts to shorten the preexisting condition exclusion from 12 months to 6 months.",
-                        "With 6 month preexisting condition benefit change there is a 10 month wait for maternity benefits."                        
+                        "Standard Plan: Optional benefit change in Florida, Hawaii, Idaho, Massachusetts to shorten the preexisting condition exclusion from 12 months to 6 months. With 6 month preexisting condition benefit change there is a 10 month wait for maternity benefits."                        
                         ]),
 
 
@@ -4296,7 +4387,7 @@ function writeSections(legacy) {
             [
             // Column headers:
             "TaiAn Scholars and Students",
-            makeRawURL("Plan A (Student Health Advantage)", "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+            loc(makeRawURL("Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, ", "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeRawURL("Platinum Plan A", "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
 
             makeRawURL("Plan B (Taian Patriot Exchange)", "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"), 
             makeRawURL("Plan C (Patriot Travel for non-US citizens)", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),            
@@ -4307,16 +4398,16 @@ function writeSections(legacy) {
             "Plan Type", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 5 years if initial purchase is 3 months or more.", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.", "Designed for anyone traveling outside their home country. F2/J2 can buy alone. Purchase daily (at least 5 days) or monthly, renewable up to 2 years if 1 month or more is purchased.",
 
             // Row 3
-            "Maximum Limit", "$500,000 lifetime maximum, $300,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury", "$50,000, $100,000, $500,000, $1,000,000 lifetime maximum",
+            "Maximum Limit", "Standard Plan: $500,000  maximum per period of coverage, $300,000 per illness/injury<br />Platinum Plan: $1,000,000 maximum per period of coverage, $500,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury", "$50,000, $100,000, $500,000, $1,000,000 lifetime maximum",
 
 
 
-            "Deductible (Insured pays before insurance pays)", "$100 per illness/injury", "Two options: 1) $100 per illness/injury; 2) Annual deductible ($250 or $500)<br />Annual deductible is Taian Exclusive!", "$0, $100, $250, $500, $1,000, $2,500 annual deductible",
+            "Deductible (Insured pays before insurance pays)", "Standard Plan: $100 per illness/injury: For each illness or injury, insured pays $100 before insurance pays.<br />Platinum Plan: $25 per illness/injury In PPO, $50 per illness/injury Out of PPO", "Two options: 1) $100 per illness/injury; 2) Annual deductible ($250 or $500)<br />Annual deductible is Taian Exclusive!", "$0, $100, $250, $500, $1,000, $2,500 annual deductible",
             "Student Health Center Copay", "$5 copay, no deductible", "$5 copay, no deductible", "N/A",
-            "Coinsurance", "No coinsurance in PPO", "No coinsurance in PPO or out of PPO", "In-PPO 90% to $5,000, then 100%<br />Out-PPO, 80% to $5,000 then 100%",
+            "Illness or Injury Coinsurance", "No coinsurance outside of U.S or in PPO within U.S.  Out of PPO within U.S.: 80% of the first $5,000 of eligible charges, then 100%.", "No coinsurance in PPO or out of PPO", "In-PPO 90% to $5,000, then 100%<br />Out-PPO, 80% to $5,000 then 100%",
             "Hospital Room & Board", "Average semi-private room", "Average semi-private room", "Average semi-private room", 
             "Intensive Care", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)",
-            "Maternity", "URC - If not pregnant when you purchase.   Not covered - If you are pregnant when you purchase.", "N/A", "N/A",
+            "Maternity Coinsurance", "Not covered - If you are pregnant before your policy is effective.<br />Standard Plan: In US/Canada In PPO 80%/20% - Plan pays 80% of URC. 60%/40% Out of PPO.  Outside US/Canada covered 100% of URC.<br />Platinum Plan: Same as any illness or injury coinsurance.", "N/A", "N/A",
             "Mental Health", "In-patient URC to $10,000, out-patient $50/day to $500", "N/A", "N/A",
             "Emergency Room", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization",
             "Prescription Drugs", "In-patient URC, out-patient 50%", "URC", "URC",
@@ -4324,13 +4415,12 @@ function writeSections(legacy) {
             "Accidental Death & Loss of Limb", "$25,000", "$25,000", "$25,000",
             "Medical Evacuation", "$500,000", "$50,000", "$500,000",
             "Repatriation of remains", "$50,000", "$25,000", "$50,000",
-            "Pre-existing conditions", "After 12 months of continuous coverage", "After 12 months of continuous coverage", "Up to $50,000 coverage ($2,500 for over 65 years old) for sudden and unexpected recurrence. Otherwise not covered.",
+            "Pre-existing conditions (Illness or Injury)", "Standard Plan: After 12 months of continuous coverage<br />Platinum Plan: After 6 months of continuous coverage", "After 12 months of continuous coverage", "Up to $50,000 coverage ($2,500 for over 65 years old) for sudden and unexpected recurrence. Otherwise not covered.",
             "Group Pricing", "2 or more primary insured have about 10% discount", "2 or more primary insured have about 10% discount", "5 or more primary insured have about 10% discount",
             "",
             makeResourceCenterURL(loc("Questions and Answers about Plan A"),"pivot-qanda-plana"),
             makeResourceCenterURL(loc("Questions and Answers about Plan B"),"pivot-qanda-planb"),
             ""  
-
            
 
             ])
@@ -4360,15 +4450,15 @@ function writeSections(legacy) {
                         "Newborn care is covered for 31 days after birth if the birth is covered under the plan.",                        
                         "Emergency Room: Injury: URC; Illness resulting in hospitalization: URC; Illness without hospitalization: Subject to addtional $250 deductible",
                         "Physical Therapy: URC -limit once per day",
-                        "Local Ambulance: Per injury up to $350, Per illness only if admitted in-patient up to $350",
+                        "Standard Plan Local Ambulance: Per injury up to $350, Per illness only if admitted in-patient up to $350",
+                        "Platinum Plan Local Ambulance: Per injury up to $750, Per illness only if admitted in-patient up to $750",
                         "Dental: Injury due to covered accident $500; Sudden & unexpected pain $350",
                         "Intercollegiate/Interscholastic/intramural or club sports: $5,000 per injury/illness medical expenses only",
                         "Incidental home country coverage: up to cumulative two weeks",
                         "Terrorism coverage: up to 50,000 lifetime maximum",
-                        "Dependents can only purchase when the student purchases",
+                        "F2/J2 dependents can only purchase when the F1/J1 purchases",
                         "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays.",                        
-                        "Optional benefit change in Florida, Hawaii, Idaho, Massachusetts to shorten the preexisting condition exclusion from 12 months to 6 months.",
-                        "With 6 month preexisting condition benefit change there is a 10 month wait for maternity benefits."                        
+                        "Standard Plan: Optional benefit change in Florida, Hawaii, Idaho, Massachusetts to shorten the preexisting condition exclusion from 12 months to 6 months. With 6 month preexisting condition benefit change there is a 10 month wait for maternity benefits."                        
                         ]),
 
 
@@ -4605,9 +4695,8 @@ function writeSections(legacy) {
 
     endSection();
 
- 
-   
     
+ 
     
     
     // J Scholar

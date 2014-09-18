@@ -363,7 +363,7 @@ function getPartnership(partner) {
                     internationalStudentContent: function () {
                         startRow();
                         writeText(loc("Stanford University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
-                        writeText("Enrolled students with F or J visa are required to have additional coverage (see link below). Taian Plan A meets these requirements.  Shortly after submitting an application you will receive confirmation of your coverage.  You will then need to submit a certification form to Stanford which we can help you with.");
+                        writeText("Enrolled students with F or J visa are required to have additional coverage (see link below). Taian Plan A (Platinum only) meets these requirements. Shortly after submitting an application you will receive confirmation of your coverage. You will then need to submit a certification form to Stanford which we can help you with.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Stanford Scholar Requirements", "http://icenter.stanford.edu/quick_reference/healthinsurance.html#J1reqs"),
                                 makeURL("Stanford Student Requirements", "http://vaden.stanford.edu/insurance/waiving-cardinal-care/international-students"),
@@ -399,20 +399,32 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
                                 loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -455,12 +467,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
@@ -525,20 +537,33 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+ 
                                 loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -581,12 +606,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
@@ -651,20 +676,33 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+ 
                                 loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -707,12 +745,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
@@ -766,9 +804,10 @@ function getPartnership(partner) {
                           
                     internationalStudentandscholarContent: function () {
                         startRow();
-                        writeText("University of North Carolina - (Chapel Hill, Charlotte, Greensboro, Wilmington) J scholars and enrolled students (F or J) (except for UNC Charlotte enrolled students) have required coverage as follows:  1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.");
+                        writeText("University of North Carolina - (Chapel Hill, Charlotte, Greensboro, Wilmington) J scholars and enrolled students (F or J) (except for UNC Charlotte enrolled students) have required coverage as follows:  1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.");                        
                         writeText("Enrolled students need to purchase insurance before the start of the semester and complete an on line waiver.");                        
-                        writeText("University of North Carolina at Charlotte enrolled students need to purchase Plan A to meet the waiver requirements.");
+                        writeText("University of North Carolina at Charlotte enrolled students need to purchase Plan A to meet the waiver requirements.");                        
+
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of North Carolina (Chapel Hill) Scholar Requirements", "http://oisss.unc.edu/international-faculty-and-researchers/j1/mandatory-medical-insurance/"),
                                 makeURL("University of North Carolina (Chapel Hill) Student Requirements", "http://campushealth.unc.edu/charges-insurance/mandatory-student-health-insurance-hard-waiver-process/international-student"),                        
@@ -787,20 +826,33 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+ 
                                 loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -843,12 +895,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
@@ -891,20 +943,33 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+ 
                                 loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -947,12 +1012,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
@@ -996,20 +1061,33 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+
                                 loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -1052,12 +1130,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
@@ -1144,20 +1222,33 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+ 
                                 loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -1200,12 +1291,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
@@ -1244,20 +1335,33 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+ 
                                 loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -1300,12 +1404,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
@@ -1399,20 +1503,33 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+ 
                                 loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -1455,12 +1572,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
@@ -1512,20 +1629,33 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+
                                 loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -1568,12 +1698,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
@@ -1624,20 +1754,33 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+
                                 loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -1680,12 +1823,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
@@ -1736,20 +1879,33 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+ 
                                 loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -1792,12 +1948,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
@@ -1848,20 +2004,33 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+ 
                                 loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -1904,12 +2073,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
@@ -1954,20 +2123,33 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+ 
                                 loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -2010,12 +2192,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
@@ -2059,20 +2241,33 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+ 
                                 loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -2115,12 +2310,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
@@ -2165,20 +2360,33 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+ 
                                 loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -2222,12 +2430,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
@@ -2252,20 +2460,33 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+ 
                                 loc("$100,000 per illness/injury, $100 per illness deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -2310,12 +2531,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
@@ -2365,20 +2586,33 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+ 
                                 loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -2421,12 +2655,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
@@ -2473,20 +2707,33 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+
                                 loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -2529,12 +2776,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
@@ -2599,20 +2846,33 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+ 
                                 loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -2655,12 +2915,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
@@ -2694,13 +2954,82 @@ function getPartnership(partner) {
                         writeText(loc("Dartmouth College ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.")); 
 
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("Dartmouth College Scholar Requirements", "http://www.dartmouth.edu/~ovis/updates/j1/health.html")
+                                makeURL(loc("Dartmouth College ") + loc("Scholar Requirements"), "http://www.dartmouth.edu/~ovis/updates/j1/health.html")
                        
                                 ]));
                         endRow();
                     }
-              },               
+              },   
 
+         drexel: {
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Drexel University"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Drexel University"),
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText(loc("Drexel University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.")); 
+
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL(loc("Drexel University ") + loc("Scholar Requirements"), "http://drexel.edu/studentaffairs/get_involved/international_students_scholars/hiring_fn/j1_scholars/")
+                       
+                                ]));
+                        endRow();
+                    }
+              },
+              
+         wfu: {
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Wake Forest University"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Wake Forest University"),
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText(loc("Wake Forest University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.")); 
+
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL(loc("Wake Forest University ") + loc("Scholar Requirements"), "http://global.wfu.edu/iss/j1/insurance/")
+                       
+                                ]));
+                        endRow();
+                    }
+              },              
+              
+         cedars: {
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Cedars-Sinai Medical Center"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Cedars-Sinai Medical Center"),
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText(loc("Cedars-Sinai Medical Center ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.")); 
+
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL(loc("Cedars-Sinai Medical Center ") + loc("Scholar Requirements"), "http://www.cedars-sinai.edu/Research/Research-Administration/Visa-and-Intl-Services-/CSMC-Visa-Types/J-1-Visa/Maintaining-Legal-Status.aspx")
+                       
+                                ]));
+                        endRow();
+                    }
+              },
+              
          vt: {
                     windowTitle: "TaiAn Health Insurance for Virginia Tech",
                     pageTitle: "TaiAn Health Insurance for Virginia Tech",
@@ -2928,8 +3257,9 @@ function getPartnership(partner) {
               
               
         caltech: {
-                    windowTitle: "TaiAn Health Insurance for Caltech",
-                    pageTitle: "TaiAn Health Insurance for Caltech",
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Caltech"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Caltech"),
+
                     tabs: [
                             "pivot-home",
                             "pivot-international-student",
@@ -2941,9 +3271,12 @@ function getPartnership(partner) {
                     internationalStudentContent: function () {
                         startRow();
                         writeText(loc("Caltech ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+                        writeText("Enrolled international students have to buy Plan A (Platinum only) to meet the waiver standards, and complete an online waiver.");
       
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("Caltech Scholar Requirements", "http://www.international.caltech.edu/maintainstatus/J1insurarnce")                        
+                     
+                                makeURL(loc("Caltech ") + loc("Scholar Requirements"), "http://www.international.caltech.edu/maintainstatus/J1insurarnce"),
+                                makeURL(loc("Caltech ") + loc("Student Requirements"), "http://benefits.caltech.edu/SiteDocuments/WaiverRequirements.pdf")
 
                                 ]));
                         endRow();
@@ -3019,8 +3352,8 @@ function getPartnership(partner) {
               },               
               
         usf: {
-                    windowTitle: "TaiAn Health Insurance for University of South Florida",
-                    pageTitle: "TaiAn Health Insurance for University of South Florida",
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("University of South Florida"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("University of South Florida"),
                     tabs: [
                             "pivot-home",
                             "pivot-international-student",
@@ -3032,13 +3365,43 @@ function getPartnership(partner) {
                     internationalStudentContent: function () {
                         startRow();
                         writeText(loc("University of South Florida ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+                        writeText("Enrolled international students have to buy Plan A (Platinum only) to meet the waiver standards, and complete an online waiver.");
+
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("University of South Florida Scholar Requirements", "http://global.usf.edu/is/downloads/J1_DS2019.pdf")                         
+                       
+                                makeURL(loc("University of South Florida ") + loc("Scholar Requirements"), "http://global.usf.edu/is/downloads/J1_DS2019.pdf"),
+                                makeURL(loc("University of South Florida ") + loc("Student Requirements"), "http://www.usf.edu/student-affairs/student-health-services/insurance/inscompliance.aspx")
 
                                 ]));
                         endRow();
                     }
-              },              
+              },  
+
+        usu: {
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Utah State University"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Utah State University"),
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText(loc("Utah State University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+                        writeText("Enrolled international students have to buy Plan A (Platinum only) to meet the waiver standards, and complete an online waiver.");
+
+                        document.write(makeBulletedListWithTitle("", [
+                       
+                                makeURL(loc("Utah State University ") + loc("Scholar Requirements"), "http://globalengagement.usu.edu/htm/study-abroad/incoming-students/health-insurance"),
+                                makeURL(loc("Utah State University ") + loc("Student Requirements"), "http://globalengagement.usu.edu/htm/study-abroad/incoming-students/health-insurance")
+
+                                ]));
+                        endRow();
+                    }
+              },               
 
         utk: {
                     windowTitle: "TaiAn Health Insurance for University of Tennessese - Knoxville",
@@ -3054,7 +3417,8 @@ function getPartnership(partner) {
                     internationalStudentContent: function () {
                         startRow();
                         writeText(loc("University of Tennessese - Knoxville ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
-                        writeText("Enrolled International Students - Please check back soon, we have no plan to meet your school standards.  We expect to have one soon.");
+                        writeText("Enrolled international students have to buy Plan A (Platinum only) to meet the waiver standards, and complete an online waiver.");
+
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("University of Tennessese - Knoxville Scholar Requirements", "http://international.utk.edu/health-insurance-information/scholars-2/"),                         
                                 makeURL("University of Tennessese - Knoxville Student Requirements", "http://studenthealth.utk.edu/insrec_intl.php")
@@ -3176,7 +3540,7 @@ function getPartnership(partner) {
 
  
               
-        georgetown: {
+                georgetown: {
                     windowTitle: "TaiAn Health Insurance for Georgetown University",
                     pageTitle: "TaiAn Health Insurance for Georgetown University",
                     tabs: [
@@ -3200,7 +3564,7 @@ function getPartnership(partner) {
                         
                         
                     }
-              }, 
+                 },  
               
         nd: {
                     windowTitle: "TaiAn Health Insurance for University of Notre Dame",
@@ -3218,7 +3582,7 @@ function getPartnership(partner) {
                         writeText(loc("University of Notre Dame ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
 
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("University of Notre Dame Scholar Requirements", "https://hr.nd.edu/assets/20192/j_1_visa.pdf")                        
+                                makeURL("University of Notre Dame Scholar Requirements", "https://hr.nd.edu/assets/20192/j_1_visa.pdf")                         
 
                                 ]));
                         endRow();
@@ -3274,20 +3638,33 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+ 
                                 loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -3330,12 +3707,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
@@ -3479,56 +3856,20 @@ function getPartnership(partner) {
                     pageTitle: "TaiAn Health Insurance for Duke University",
                     tabs: [
                             "pivot-home",
-                            "pivot-j-scholar",                            
+                            "pivot-international-student",                            
                             "pivot-global-medical",
                             "pivot-travel-insurance",
                             "pivot-aboutus"
                           ],
-                    jScholarContent: function () {
-                        startRow();
-                        writeText("Duke has changed their standards for J visa holders.  The plan listed on this page no longer meets their requirements.  We expect to have a new plan available shortly that may meet their requirements.  You can contact us for more details.");
-                        writeText("");
-
-                        startRow();
-                            document.write(makeTable(1,
-                            [
-                            // Column headers:
-
-                            "Monthly Price for $500,000 benefit $0 deductible", 
-
-
-                            // Table within a table
-
-                                makeTable(4, [
-                                "Age",     "J1", "Spouse", "Children",
-                                "&lt; 30", "$73.75",   "$73.75",   "$66.25",
-                                "30-39",   "$97.50",   "$97.50",   "$66.25",
-                                "40-49",   "$148.75",  "$148.75",   "$66.25"
-
-                                ]), 
-
-       
-                                
-                    
-
-
-                                makeBuyURL("Buy Patriot America Medical Insurance", "https://purchase.imglobal.com/quote/patriot?imgac=80000699")
-
-
-                                   ])
-                                    );
-                                endRow();                 
-                        
+                    internationalStudentContent: function () {
                                 startRow();
-                                writeText("");
-                                endRow();                        
-                          
+                                writeText(loc("Duke University ") + loc("J scholars (not enrolled students) have required coverage as follows:  1. Medical benefits of $500,000 per illness/injury; 2. Annual deductible of $250 or less; 3. Coinsurance not over 20%; 4. Medical evacuation of $10,000; 5. Repatriation of remains of $7,500; 6. Maternity included in the coverage (for males and females). Taian Plan A (Platinum only) is the most affordable plan that meets the requirements and USDOS requirements.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation Email and Visa Letter to your school as proof of insurance."));
+                                endRow(); 
+                    
                                 startRow();
                                 writeText(makeURL("Duke University Scholar Requirements", "http://www.visaservices.duke.edu/J_Health_Insurance.html"));
                                 endRow();                               
-                                endRow();
-                                
-                                
+                                                            
                                 
                                 }
                                 },                                    
@@ -3560,20 +3901,33 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+ 
                                 loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -3616,12 +3970,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
@@ -3676,20 +4030,33 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+
                                 loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -3732,12 +4099,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
@@ -3879,20 +4246,33 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+ 
                                 loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -3935,12 +4315,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
@@ -4075,8 +4455,8 @@ function getPartnership(partner) {
                                 ]));
                         endRow();
                     }
-              }, 
-
+              },              
+ 
         umaine: {
                     windowTitle: "TaiAn Health Insurance for University of Maine",
                     pageTitle: "TaiAn Health Insurance for University of Maine",
@@ -4098,8 +4478,8 @@ function getPartnership(partner) {
                                 ]));
                         endRow();
                     }
-              },  
-
+              }, 
+              
         unm: {
                     windowTitle: "TaiAn Health Insurance for University of New Mexico",
                     pageTitle: "TaiAn Health Insurance for University of New Mexico",
@@ -4121,8 +4501,8 @@ function getPartnership(partner) {
                                 ]));
                         endRow();
                     }
-              },                       
-              
+              },              
+ 
         ucmerced: {
                     windowTitle: "TaiAn Health Insurance for UC Merced",
                     pageTitle: "TaiAn Health Insurance for UC Merced",
@@ -4704,7 +5084,7 @@ function getPartnership(partner) {
                                 "&lt; 25", "$58.55","$58.55",  "$58.55",
                                 "25-49",   "$76.23","$76.23",  "$58.55",
                                 "50-64",   "$163.22","$163.22","$58.55"
-                                      ]), 
+                                     ]), 
                                      
                                 makeTable(4, [
                                 "Age",     "F1/J1", "Spouse", "Children",
@@ -4938,20 +5318,33 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+ 
                                 loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -4994,12 +5387,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
@@ -5454,7 +5847,28 @@ function getPartnership(partner) {
                                 ]));
                         endRow();
                     }
-              },    
+              },  
+
+        ohio: {
+                    windowTitle: "TaiAn Health Insurance for Ohio University",
+                    pageTitle: "TaiAn Health Insurance for Ohio University",
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText(loc("Ohio University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL("Ohio University Scholar Requirements", "http://www.ohio.edu/isfs/forms/pdf/evhealthinsurance.pdf")                        
+                                ]));
+                        endRow();
+                    }
+              },              
 
 
          nova: {
@@ -5479,8 +5893,9 @@ function getPartnership(partner) {
               },                    
 
         fsu: {
-                    windowTitle: "TaiAn Health Insurance for Florida State University",
-                    pageTitle: "TaiAn Health Insurance for Florida State University",
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Florida State University"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Florida State University"),
+                    
                     tabs: [
                             "pivot-home",
                             "pivot-international-student",
@@ -5492,12 +5907,75 @@ function getPartnership(partner) {
                     internationalStudentContent: function () {
                         startRow();
                         writeText(loc("Florida State University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.")); 
+                        writeText("Enrolled international students have to buy Plan A (Platinum only) to meet the waiver standards, and complete an online waiver.");
+
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("Florida State University Scholar Requirements", "http://cge.fsu.edu/intlScholars/healthinsurance.html")                        
+                      
+                                makeURL(loc("Florida State University ") + loc("Scholar Requirements"), "http://cge.fsu.edu/intlScholars/healthinsurance.html"),
+                                makeURL(loc("Florida State University ") + loc("Student Requirements"), "http://studentinsurance.fsu.edu/forms/comparable_coverage_international.pdf")
+
                                 ]));
                         endRow();
                     }
-              },     
+              },  
+
+        uidaho: {
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("University of Idaho"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("University of Idaho"),
+                    
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText(loc("University of Idaho ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.")); 
+                        writeText("Female J scholars are required to have maternity coverage. Plan A - Student Health Advantage Standard is the lowest cost plan that meets the requirements.");
+
+                        writeText("Enrolled international students have to buy Plan A (Platinum only) to meet the waiver standards, and complete an online waiver.");
+
+                        document.write(makeBulletedListWithTitle("", [
+                      
+                                makeURL(loc("University of Idaho ") + loc("Scholar Requirements"), "http://www.uidaho.edu/~/media/Files/orgs/Academic%20Affairs/IPO/ISSS/International%20Scholars/JI%20PreArrival%20Document.ashx"),
+                                makeURL(loc("University of Idaho ") + loc("Student Requirements"), "http://www.uidaho.edu/~/media/Files/orgs/Academic%20Affairs/IPO/ISSS/F1%20Student%20UI%20Health%20Insurance%20Requirements%20%20Companies.ashx")
+
+                                ]));
+                        endRow();
+                    }
+              },  
+
+        rice: {
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Rice University"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Rice University"),
+                    
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText(loc("Rice University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness; 5. Pre-existing conditions excluded for not more than 6 months.  Plan A (Platinum only) meets these requirements and USDOS requirements After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the the confirmation email and Visa Letter to your school as proof of insurance.")); 
+                        writeText("Enrolled international students are required to have $500,000 of benefits, mental nervous benefits, and complete an online waiver.  Plan A (Platinum only) also meets these requirements.");
+
+                        document.write(makeBulletedListWithTitle("", [
+                      
+                                makeURL(loc("Rice University ") + loc("Scholar Requirements"), "http://oiss.rice.edu/uploadedFiles/Docs/J-1%20Health%20Insurance%20Information.pdf"),
+                                makeURL(loc("Rice University ") + loc("Student Requirements"), "http://studenthealthinsurance.rice.edu/waiverrequirements/")
+
+                                ]));
+                        endRow();
+                    }
+              },               
+
+              
 
         fiu: {
                     windowTitle: "TaiAn Health Insurance for Florida International University",
@@ -5560,10 +6038,10 @@ function getPartnership(partner) {
                         startRow();
                         writeText(loc("Louisiana State University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         writeText("Enrolled international students have to buy Plan A to meet Louisiana  State University standards, and complete a waiver.");
-
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Louisiana State University Scholar Requirements", "http://international.lsu.edu/IS/faculty/J-1Exchange.php"),                        
                                 makeURL("Louisiana State University Student Requirements", "http://international.lsu.edu/IS/current/insuranceinfo-private.php")
+
                                 ]));
                         endRow();
                     }
@@ -5571,8 +6049,8 @@ function getPartnership(partner) {
  
 
         msu: {
-                    windowTitle: "TaiAn Health Insurance for Michigan State University",
-                    pageTitle: "TaiAn Health Insurance for Michigan State University",
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Michigan State University"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Michigan State University"),                    
                     tabs: [
                             "pivot-home",
                             "pivot-international-student",
@@ -5584,11 +6062,10 @@ function getPartnership(partner) {
                     internationalStudentContent: function () {
                         startRow();
                         writeText(loc("Michigan State University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
-                        writeText("Enrolled international students are required to carry $250,000 per illness or injury, have coverage for mental nervous claims, and complete a waiver. Taian Scholar/Student Insurance Plan A is the most affordable plan that meets the standards.");
-                        document.write(makeBulletedListWithTitle("", [
-                                makeURL("Michigan State University Student Requirements", "http://oiss.isp.msu.edu/students/health/policy.htm"),
-                                makeURL("Michigan State University Scholar Requirements", "http://oiss.isp.msu.edu/documents/scholars/DS2019_Scholar_Extension.pdf")                                
 
+                        document.write(makeBulletedListWithTitle("", [
+                              
+                                makeURL(loc("Michigan State University ") + loc("Scholar Requirements"), "http://oiss.isp.msu.edu/documents/scholars/DS2019_Scholar_Extension.pdf")
                                 ]));
                         endRow();
                     }
@@ -5830,20 +6307,33 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+ 
                                 loc("$100,000 per illness/injury, $100 per illness deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -5887,12 +6377,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
@@ -5990,20 +6480,33 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+ 
                                 loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -6046,12 +6549,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
@@ -6095,20 +6598,33 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+ 
                                 loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -6151,12 +6667,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
@@ -6199,20 +6715,33 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+
                                 loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -6255,12 +6784,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
@@ -6306,20 +6835,33 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+ 
                                 loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -6362,12 +6904,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
@@ -6411,20 +6953,33 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+
                                 loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -6467,12 +7022,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
@@ -6515,20 +7070,33 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+ 
                                 loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -6571,12 +7139,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
@@ -6636,7 +7204,7 @@ function getPartnership(partner) {
 
                         writeText(loc("UT Tyler ") + loc("J scholars (not for enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
-
+ 
                                 makeURL("UT Tyler Scholar Requirements", "http://www.uttyler.edu/oip/issfs.php")                               
                                 ]));
                         endRow();
@@ -6646,20 +7214,33 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+ 
                                 loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -6702,12 +7283,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
@@ -6739,7 +7320,8 @@ function getPartnership(partner) {
                     internationalStudentandscholarContent: function () {
                         startRow();
 
-                        writeText(loc("UT Arlington ") + loc("J scholars (not for enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.")); 
+                        writeText(loc("UT Arlington ") + loc("J scholars (not for enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+
                         document.write(makeBulletedListWithTitle("", [
  
                                 makeURL("UT Arlington Scholar Requirements", "http://www.uta.edu/oie/?page=JScholar")                               
@@ -6751,20 +7333,33 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+ 
                                 loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -6807,12 +7402,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
@@ -6857,20 +7452,33 @@ function getPartnership(partner) {
                             [
                             // Column headers:
 
-                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage), $100 per illness deductible", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
 
 
                             // Table within a table
                                "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
                                 makeTable(4, [
-                                "Age",     "F1/J1", "Spouse", "Children",
-                                "&lt; 19", "$72",   "$386",   "$82",
-                                "19-23",   "$95",   "$386",   "$82",
-                                "24-30",   "$110",  "$426",   "$82",
-                                "31-40",   "$197",  "$567",   "$82",
-                                "41-50",   "$322",  "$586",   "$82",
-                                "51-64",   "$430",  "$567",   "$82"
-                                   ]), 
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+ 
                                 loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
                                 makeTable(4, [
                                         "Age",     "F1/J1", "Spouse", "Children",
@@ -6913,12 +7521,12 @@ function getPartnership(partner) {
 
 
                                 "",
-                                makeBuyURL(loc("Buy Plan A") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699"),
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
 
                                 "",
-                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
                                 makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
                                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
                                 
