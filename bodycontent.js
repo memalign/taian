@@ -110,11 +110,6 @@ function referralSubstitution(key) {
         wshsb: "l=cn&p=pivot-international-student&adid=wshsb",  
         lwd: "l=cn&p=pivot-international-student&adid=lwd",         
         
-        newyorkservicecenter: "l=cn&partner=newyorkservicecenter&p=pivot-international-student",
-        nyscs: "l=cn&partner=newyorkservicecenter&p=pivot-international-student",
-        nyscl: "l=cn&partner=newyorkservicecenter&p=pivot-school-waiver", 
-        nysct: "l=cn&partner=newyorkservicecenter&p=pivot-travel-insurance",  
-
         awinsurance: "l=cn&partner=awinsurance&p=pivot-international-student&adid=awinsurance",        
         
         chinamarketing: "partner=chinamarketing&p=pivot-home&adid=chinamarketing",        
@@ -267,7 +262,8 @@ function referralSubstitution(key) {
         
         xyf1: "l=cn&partner=xyf&p=pivot-travel-insurance&adid=xyf1",
         xyf2: "l=cn&partner=xyf&p=pivot-home&adid=xyf2",
-        emuch: "l=cn&p=pivot-school-waiver&adid=emuch",        
+        emuch: "l=cn&p=pivot-school-waiver&adid=emuch", 
+        tnqq: "l=cn&p=pivot-school-waiver&adid=tnqq",        
         jhu: "partner=jhu&p=pivot-home&adid=sjhu",
         cnjhu: "l=cn&partner=jhu&p=pivot-home&adid=scnjhu",   
         gcnjhu: "l=cn&partner=jhu&p=pivot-international-student&adid=gcnjhu",
@@ -529,6 +525,7 @@ function referralSubstitution(key) {
         gucsf: "partner=ucsf&p=pivot-international-student&adid=gucsf",
         acnucsf: "l=cn&partner=ucsf&p=pivot-international-student&adid=acnucsf", 
         iucsf: "partner=ucsf&p=pivot-international-student",
+        icnucsf: "l=cn&partner=ucsf&p=pivot-international-student",        
         uci: "partner=uci&p=pivot-home&adid=suci",
         cnuci: "l=cn&partner=uci&p=pivot-home&adid=scnuci",   
         gcnuci: "l=cn&partner=uci&p=pivot-international-student&adid=gcnuci",
@@ -1304,9 +1301,21 @@ function referralSubstitution(key) {
         idrexel: "partner=drexel&p=pivot-international-student",
         icndrexel: "l=cn&partner=drexel&p=pivot-international-student", 
         
-        insuok: "partner=nsuok&p=pivot-international-student",
-        icnnsuok: "l=cn&partner=nsuok&p=pivot-international-student",        
+        imissouri: "partner=missouri&p=pivot-international-student",
+        icnmissouri: "l=cn&partner=missouri&p=pivot-international-student",         
         
+        isiu: "partner=siu&p=pivot-international-student",
+        icnsiu: "l=cn&partner=siu&p=pivot-international-student",        
+        
+        insuok: "partner=nsuok&p=pivot-international-student",
+        icnnsuok: "l=cn&partner=nsuok&p=pivot-international-student", 
+        
+        icsus: "partner=csus&p=pivot-international-student",
+        icncsus: "l=cn&partner=csus&p=pivot-international-student",        
+
+        istevens: "partner=stevens&p=pivot-international-student",
+        icnstevens: "l=cn&partner=stevens&p=pivot-international-student",         
+              
         iucf: "partner=ucf&p=pivot-international-student",
         icnucf: "l=cn&partner=ucf&p=pivot-international-student",         
 
@@ -1414,7 +1423,9 @@ function urlsToAppIds() {
         "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699" : "TaianPatExchPlanB",
         "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699" : "SHAPlanA",
         "https://purchase.imglobal.com/quote/patriot?imgac=80000699" : "Travel",
-        "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699" : "TravelGroup"
+        "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699" : "TravelGroup",
+        "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699" : "SHAPlanAplat",
+        "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699" : "SHAPlanAGroupstand"        
     };
     
     var perLang = {
@@ -2571,6 +2582,10 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School J1 requirement", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/"),
                 makeURL("Health insurance for California State University - Long Beach Scholars", "#icsulb"),                
                 
+                makeURL("California State University - Sacramento (CA)", "http://www.csus.edu/"),
+                makeURL("School F1 requirement", "http://www.csus.edu/oge/international-students/newly%20admitted%20students/New-Intl-Health.html"),
+                makeURL("School J1 requirement", "http://taianfinancial.com/schoolstandards/calstatesacj1092814.png"),
+                makeURL(loc("Health insurance for ") + loc("California State University - Sacramento") + loc(" Students and Scholars"), "#icsus"), 
                 
                 makeURL("Carnegie Mellon University (PA)", "http://www.cmu.edu/"),
                 makeURL("School F1 requirement", "http://www.studentaffairs.cmu.edu/oie/settlinginguides/insurance/students.html"),
@@ -3010,12 +3025,23 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Smithsonian Institutions", "http://www.si.edu/"),
                 "",
                 makeURL("J1 requirement", "http://www.smithsonianofi.com/wp-content/uploads/2014/09/SI-AA-Handbook.pdf"), 
-                makeURL(loc("Health insurance for ") + loc("Smithsonian Institutions") + loc(" Scholars"), "#isi"),                
+                makeURL(loc("Health insurance for ") + loc("Smithsonian Institutions") + loc(" Scholars"), "#isi"),   
+
+                makeURL("Southern Illinois University (IL)", "http://www.siu.edu/"),
+                makeURL("School F1 requirement", "http://cie.siu.edu/j1-exchange/index.html"),
+                makeURL("School J1 requirement", "http://cie.siu.edu/j1-exchange/index.html"),
+                makeURL(loc("Health insurance for ") + loc("Southern Illinois University") + loc(" Scholars"), "#isiu"),                
 
                 makeURL("Stanford University (CA)", "http://www.stanford.edu/"),
                 makeURL("School F1 requirement", "http://vaden.stanford.edu/insurance/waiving-cardinal-care/international-students"),
                 makeURL("School J1 requirement", "http://icenter.stanford.edu/quick_reference/healthinsurance.html#J1reqs"),
                 makeURL("Health insurance for Stanford University Students and Scholars", "#ista"),
+                
+                makeURL("Stevens Institute of Technology (NJ)", "http://www.stevens.edu/"),
+                makeURL("School F1 requirement", "http://www.stevens.edu/sit/ssc/sfs/health-insurance-info"),
+                makeURL("School J1 requirement", "http://www.stevens.edu/sit/isss/j1-scholars"),
+                makeURL(loc("Health insurance for ") + loc("Stevens Institute of Technology") + loc(" International Students and Scholars"), "#istevens"),               
+                
                 
                 makeURL("SUNY Albany (NY)", "http://www.albany.edu/"),
                 makeURL("School F1 requirement", "http://www.albany.edu/ship/waiving_out.shtml"),
@@ -3309,7 +3335,12 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("University of Missouri - Columbia (MO)", "http://www.missouri.edu/"),
                 makeURL("School F1 requirement", "http://international.missouri.edu/come-to-mu/students/insurance.php"),
                 makeURL("School J1 requirement", "http://international.missouri.edu/come-to-mu/faculty-staff/j1-scholars/insurance.php"),
-                makeURL("Plan that meets this school's standards for J scholar", "#usdos"),
+                makeURL(loc("Health insurance for ") + loc("University of Missouri - Columbia") + loc(" Scholars"), "#imissouri"),
+                
+                makeURL("University of Missouri - Kansas City (MO)", "http://www.umkc.edu/"),
+                makeURL("School F1 requirement", "http://www.umkc.edu/isao/healthinsurance_waivers.cfm"),
+                makeURL("School J1 requirement", "http://www.umkc.edu/isao/pdf/J_regulations.pdf"),
+                makeURL(loc("Health insurance for ") + loc("University of Missouri - Kansas City") + loc(" Scholars"), "#imissouri"),                
 
                 makeURL("University of Missouri Saint Louis (MO)", "http://www.umsl.edu/"),
                 makeURL("School F1 requirement", "http://www.umsl.edu/~intelstu/Files/PDFs/Health%20Insurance%20Waiver%20Request.pdf"),
@@ -3868,7 +3899,7 @@ function writeSections(legacy) {
                         "All Taian Patriot Exchange plans meet the USDOS standards.",
                         "F2/J2 can buy Patriot Exchange alone (if F1/J1 buys schools plan) or buy with F1/J1",                        
                         "Plastic ID card (ONLY AVAILABLE FROM TAIAN) available for purchases of six months or longer",
-                        "Taian Patriot Exchange Group plan available for groups of 2 or more primary applicants. Use one credit card to pay for the whole group. Use the credit card holder\'s name as the group name. Use the credit card holder\'s email as the group contact for the plan.",
+                        "Taian Patriot Exchange Group plan available for groups of 2 or more primary applicants. Use one credit card to pay for the whole group. Use the credit card holder\'s initials as the \"Sponsoring Organization\". Use the credit card holders name as the \"Contact Name\".  Use the credit card holder's email as the group contact for the plan.",
                         "Other available options include: travel protection for baggage and valuables, legal assistance, personal liability coverage, adventure sports coverage",
                         "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays."
                         ]),
@@ -4120,7 +4151,7 @@ function writeSections(legacy) {
                         "All Taian Patriot Exchange plans meet the USDOS standards.",
                         "F2/J2 can buy Patriot Exchange alone (if F1/J1 buys schools plan) or buy with F1/J1",                        
                         "Plastic ID card (ONLY AVAILABLE FROM TAIAN) available for purchases of six months or longer",
-                        "Taian Patriot Exchange Group plan available for groups of 2 or more primary applicants. Use one credit card to pay for the whole group. Use the credit card holder\'s name as the group name. Use the credit card holder\'s email as the group contact for the plan.",
+                        "Taian Patriot Exchange Group plan available for groups of 2 or more primary applicants. Use one credit card to pay for the whole group. Use the credit card holder\'s initials as the \"Sponsoring Organization\". Use the credit card holders name as the \"Contact Name\".  Use the credit card holder's email as the group contact for the plan.",
                         "Other available options include: travel protection for baggage and valuables, legal assistance, personal liability coverage, adventure sports coverage",
                         "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays."
                         ]),
@@ -4374,7 +4405,7 @@ function writeSections(legacy) {
                         "All Taian Patriot Exchange plans meet the USDOS standards.",
                         "F2/J2 can buy Patriot Exchange alone (if F1/J1 buys schools plan) or buy with F1/J1",                        
                         "Plastic ID card (ONLY AVAILABLE FROM TAIAN) available for purchases of six months or longer",
-                        "Taian Patriot Exchange Group plan available for groups of 2 or more primary applicants. Use one credit card to pay for the whole group. Use the credit card holder\'s name as the group name. Use the credit card holder\'s email as the group contact for the plan.",
+                        "Taian Patriot Exchange Group plan available for groups of 2 or more primary applicants. Use one credit card to pay for the whole group. Use the credit card holder\'s initials as the \"Sponsoring Organization\". Use the credit card holders name as the \"Contact Name\".  Use the credit card holder's email as the group contact for the plan.",
                         "Other available options include: travel protection for baggage and valuables, legal assistance, personal liability coverage, adventure sports coverage",
                         "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays."
                         ]),
@@ -4546,7 +4577,7 @@ function writeSections(legacy) {
                         "All Taian Patriot Exchange plans meet the USDOS standards.",
                         "F2/J2 can buy Patriot Exchange alone (if F1/J1 buys schools plan) or buy with F1/J1",                        
                         "Plastic ID card (ONLY AVAILABLE FROM TAIAN) available for purchases of six months or longer",
-                        "Taian Patriot Exchange Group plan available for groups of 2 or more primary applicants. Use one credit card to pay for the whole group. Use the credit card holder\'s name as the group name. Use the credit card holder\'s email as the group contact for the plan.",
+                        "Taian Patriot Exchange Group plan available for groups of 2 or more primary applicants. Use one credit card to pay for the whole group. Use the credit card holder\'s initials as the \"Sponsoring Organization\". Use the credit card holders name as the \"Contact Name\".  Use the credit card holder's email as the group contact for the plan.",
                         "Other available options include: travel protection for baggage and valuables, legal assistance, personal liability coverage, adventure sports coverage",
                         "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays."
                         ]),
@@ -4965,7 +4996,7 @@ function writeSections(legacy) {
                         "All Taian Patriot Exchange plans meet the USDOS standards.",
                         "F2/J2 can buy Patriot Exchange alone (if F1/J1 buys schools plan) or buy with F1/J1",                        
                         "Plastic ID card (ONLY AVAILABLE FROM TAIAN) available for purchases of six months or longer",
-                        "Taian Patriot Exchange Group plan available for groups of 2 or more primary applicants. Use one credit card to pay for the whole group. Use the credit card holder\'s name as the group name. Use the credit card holder\'s email as the group contact for the plan.",
+                        "Taian Patriot Exchange Group plan available for groups of 2 or more primary applicants. Use one credit card to pay for the whole group. Use the credit card holder\'s initials as the \"Sponsoring Organization\". Use the credit card holders name as the \"Contact Name\".  Use the credit card holder's email as the group contact for the plan.",
                         "Other available options include: travel protection for baggage and valuables, legal assistance, personal liability coverage, adventure sports coverage",
                         "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays."
                         ]),

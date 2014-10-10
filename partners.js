@@ -55,29 +55,7 @@ function getPartnership(partner) {
                             
                },               
                
-         newyorkservicecenter: {
-                    windowTitle: "New York Service Center for Chinese Study Fellows - TaiAn International Health Insurance",
-                    pageTitle: "New York Service Center for Chinese Study Fellows - TaiAn International Health Insurance",
-                    logoImage: "longevity.gif",
-                    logoHeight: "30",
-                    logoWidth: "30",
-                    contactInfo: ["Call from US - 9:00AM to 10:00PM Eastern time - Includes weekend: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English)",
-                                  "Call from China: 950-4044-2336 (Chinese, Beijing time 7-11am, no long distance charges)",
-                                  "WeChat ID: wxid_taian_usa",
-                                  "Business Address: 13747 Fieldshire Terr - Carmel, IN 46074 - USA",
-                                  "Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>"
-                                 ],
-                    tabs: [
-                            "pivot-home",
-                            "pivot-international-student",
-                            "pivot-travel-insurance"
-
-
-
-
-                          ]
-                            
-               },              
+            
                
                
         wsjf: {
@@ -305,8 +283,8 @@ function getPartnership(partner) {
               },   
 
        jhmi: {
-                    windowTitle: "TaiAn Health Insurance for JHMI",
-                    pageTitle: "TaiAn Health Insurance for JHMI",
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("JHMI"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("JHMI"),                    
                     tabs: [
                             "pivot-home",
                             "pivot-international-student",
@@ -317,8 +295,9 @@ function getPartnership(partner) {
               },  
 
        psu: {
-                    windowTitle: "TaiAn Health Insurance for Pennsylvania State University",
-                    pageTitle: "TaiAn Health Insurance for Pennsylvania State University",
+
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Pennsylvania State University"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Pennsylvania State University"),                   
                     tabs: [
                             "pivot-home",
                             "pivot-international-student",
@@ -329,8 +308,9 @@ function getPartnership(partner) {
               },                
 
         usc: {
-                    windowTitle: "TaiAn Health Insurance for University of Southern California",
-                    pageTitle: "TaiAn Health Insurance for University of Southern California",
+
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("University of Southern California"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("University of Southern California"),                    
                     tabs: [
                             "pivot-home",
                             "pivot-international-student",
@@ -350,8 +330,9 @@ function getPartnership(partner) {
               },
 
         sta: {
-                    windowTitle: "TaiAn Health Insurance for Stanford University",
-                    pageTitle: "TaiAn Health Insurance for Stanford University",
+
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Stanford University"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Stanford University"),                    
                     tabs: [
                             "pivot-home",
                             "pivot-international-student",
@@ -373,8 +354,9 @@ function getPartnership(partner) {
               },  
 
         steinercollege: {
-                    windowTitle: "TaiAn Health Insurance for Rudolf Steiner College",
-                    pageTitle: "TaiAn Health Insurance for Rudolf Steiner College",
+
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Rudolf Steiner College"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Rudolf Steiner College"),                    
                     tabs: [
                             "pivot-home",
                             "pivot-international-studentandscholar",
@@ -490,8 +472,9 @@ function getPartnership(partner) {
               },               
 
          jhu: {
-                    windowTitle: "TaiAn Health Insurance for Johns Hopkins University",
-                    pageTitle: "TaiAn Health Insurance for Johns Hopkins University",
+
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Johns Hopkins University"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Johns Hopkins University"),                    
                     tabs: [
                             "pivot-home",
                             "pivot-international-student",
@@ -512,8 +495,9 @@ function getPartnership(partner) {
               },  
 
          uom: {
-                    windowTitle: "TaiAn Health Insurance for University of Maryland",
-                    pageTitle: "TaiAn Health Insurance for University of Maryland",
+
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("University of Maryland"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("University of Maryland"),                    
                     tabs: [
                             "pivot-home",
                             "pivot-international-studentandscholar",
@@ -629,8 +613,8 @@ function getPartnership(partner) {
               }, 
               
          umb: {
-                    windowTitle: "TaiAn Health Insurance for UMASS Boston",
-                    pageTitle: "TaiAn Health Insurance for UMASS Boston",
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("UMASS Boston"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("UMASS Boston"),                    
                     tabs: [
                             "pivot-home",
                             "pivot-international-student",
@@ -650,8 +634,10 @@ function getPartnership(partner) {
               },               
               
          upitt: {
-                    windowTitle: "TaiAn Health Insurance for University of Pittsburgh",
-                    pageTitle: "TaiAn Health Insurance for University of Pittsburgh",
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("University of Pittsburgh"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("University of Pittsburgh"),                    
+                    
+                    
                     tabs: [
                             "pivot-home",
                             "pivot-international-studentandscholar",
@@ -768,8 +754,8 @@ function getPartnership(partner) {
               }, 
               
          hawaii: {
-                    windowTitle: "TaiAn Health Insurance for University of Hawaii",
-                    pageTitle: "TaiAn Health Insurance for University of Hawaii",
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("University of Hawaii"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("University of Hawaii"),                     
                     tabs: [
                             "pivot-home",
                             "pivot-international-student",
@@ -792,8 +778,8 @@ function getPartnership(partner) {
               },               
               
          unc: {
-                    windowTitle: "TaiAn Health Insurance for University of North Carolina - (Chapel Hill, Charlotte, Greensboro, Wilmington)",
-                    pageTitle: "TaiAn Health Insurance for University of North Carolina - (Chapel Hill, Charlotte, Greensboro, Wilmington)",
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("University of North Carolina - (Chapel Hill, Charlotte, Greensboro, Wilmington)"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("University of North Carolina - (Chapel Hill, Charlotte, Greensboro, Wilmington)"),                     
                     tabs: [
                             "pivot-home",
                             "pivot-international-studentandscholar",
@@ -918,9 +904,10 @@ function getPartnership(partner) {
                     }
               },   
 
-         temple: {
-                    windowTitle: "TaiAn Health Insurance for Temple University",
-                    pageTitle: "TaiAn Health Insurance for Temple University",
+         temple: { 
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Temple University"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Temple University"),                     
+                    
                     tabs: [
                             "pivot-home",
                             "pivot-international-studentandscholar",
@@ -1036,9 +1023,10 @@ function getPartnership(partner) {
                     }
               }, 
 
-         colorado: {
-                    windowTitle: "TaiAn Health Insurance for University of Colorado",
-                    pageTitle: "TaiAn Health Insurance for University of Colorado",
+         colorado: {                    
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("University of Colorado"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("University of Colorado"),                     
+                   
                     tabs: [
                             "pivot-home",
                             "pivot-international-studentandscholar",
@@ -1154,8 +1142,9 @@ function getPartnership(partner) {
               }, 
 
          bvc: {
-                    windowTitle: "TaiAn Health Insurance for Bellevue College",
-                    pageTitle: "TaiAn Health Insurance for Bellevue College",
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Bellevue College"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Bellevue College"),                     
+                    
                     tabs: [
                             "pivot-home",
                             "pivot-international-student",
@@ -1177,8 +1166,8 @@ function getPartnership(partner) {
               },   
 
          umsl: {
-                    windowTitle: "TaiAn Health Insurance for University of Missouri Saint Louis",
-                    pageTitle: "TaiAn Health Insurance for University of Missouri Saint Louis",
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("University of Missouri Saint Louis"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("University of Missouri Saint Louis"),                    
                     tabs: [
                             "pivot-home",
                             "pivot-international-student",
@@ -1200,8 +1189,8 @@ function getPartnership(partner) {
               },                      
               
          cwu: {
-                    windowTitle: "TaiAn Health Insurance for Central Washington University",
-                    pageTitle: "TaiAn Health Insurance for Central Washington University",
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Central Washington University"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Central Washington University"),                    
                     tabs: [
                             "pivot-home",
                             "pivot-international-studentandscholar",
@@ -1313,8 +1302,9 @@ function getPartnership(partner) {
               }, 
               
          scripps: {
-                    windowTitle: "TaiAn Health Insurance for Scripps Research Institute",
-                    pageTitle: "TaiAn Health Insurance for Scripps Research Institute",
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Scripps Research Institute"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Scripps Research Institute"),                    
+                    
                     tabs: [
                             "pivot-home",
                             "pivot-international-studentandscholar",
@@ -1426,8 +1416,9 @@ function getPartnership(partner) {
               },               
 
          casew: {
-                    windowTitle: "TaiAn Health Insurance for Case Western Reserve",
-                    pageTitle: "TaiAn Health Insurance for Case Western Reserve",
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Case Western Reserve"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Case Western Reserve"),                    
+                    
                     tabs: [
                             "pivot-home",
                             "pivot-international-student",
@@ -1448,8 +1439,9 @@ function getPartnership(partner) {
               },              
               
          cuny: {
-                    windowTitle: "TaiAn Health Insurance for City University of New York (CUNY)",
-                    pageTitle: "TaiAn Health Insurance for City University of New York (CUNY)",
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("City University of New York (CUNY)"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("City University of New York (CUNY)"),                    
+                   
                     tabs: [
                             "pivot-home",
                             "pivot-international-studentandscholar",
@@ -2984,6 +2976,53 @@ function getPartnership(partner) {
                         endRow();
                     }
               },
+              
+         missouri: {
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("University of Missouri - Columbia and Kansas City"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("University of Missouri - Columbia and Kansas City"),
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText(loc("University of Missouri - Columbia and Kansas City ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.")); 
+
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL(loc("University of Missouri - Columbia ") + loc("Scholar Requirements"), "http://international.missouri.edu/come-to-mu/faculty-staff/j1-scholars/insurance.php"),
+                                makeURL(loc("University of Missouri - Kansas City ") + loc("Scholar Requirements"), "http://www.umkc.edu/isao/pdf/J_regulations.pdf")
+                       
+                                ]));
+                        endRow();
+                    }
+              },              
+              
+         siu: {
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Southern Illinois University"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Southern Illinois University"),
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText(loc("Southern Illinois University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.")); 
+
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL(loc("Southern Illinois University ") + loc("Scholar Requirements"), "http://cie.siu.edu/j1-exchange/index.html")
+                       
+                                ]));
+                        endRow();
+                    }
+              },              
               
          ucf: {
                     windowTitle: loc("TaiAn Health Insurance for ") + loc("University of Central Florida"),
@@ -4681,6 +4720,54 @@ function getPartnership(partner) {
                         endRow();
                     }
               },  
+              
+        csus: {
+
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("California State University - Sacramento"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("California State University - Sacramento"),                    
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText(loc("California State University - Sacramento ") + loc("J scholars and enrolled students (F or J) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+                        document.write(makeBulletedListWithTitle("", [
+
+                                makeURL(loc("California State University - Sacramento ") + loc("Scholar Requirements"), "http://taianfinancial.com/schoolstandards/calstatesacj1092814.png"),  
+                                makeURL(loc("California State University - Sacramento ") + loc("Student Requirements"), "http://www.csus.edu/oge/international-students/newly%20admitted%20students/New-Intl-Health.html"),                                
+                                ]));
+                        endRow();
+                    }
+              },                
+              
+         stevens: {
+
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Stevens Institute of Technology"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Stevens Institute of Technology"),                    
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText(loc("Stevens Institute of Technology ") + loc("J scholars and enrolled students (F or J) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+                        document.write(makeBulletedListWithTitle("", [
+
+                                makeURL(loc("Stevens Institute of Technology ") + loc("Scholar Requirements"), "http://www.stevens.edu/sit/isss/j1-scholars"),  
+                                makeURL(loc("Stevens Institute of Technology ") + loc("Student Requirements"), "http://www.stevens.edu/sit/ssc/sfs/health-insurance-info"),                                
+                                ]));
+                        endRow();
+                    }
+              },               
               
  
         ucmerced: {
@@ -6645,6 +6732,7 @@ function getPartnership(partner) {
                     internationalStudentContent: function () {
                         startRow();
                         writeText(loc("UC Davis ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+                        writeText("J visa undergraduate researchers have the same requirements.");
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("UC Davis Scholar Requirements", "http://siss.ucdavis.edu/resources/intl_scholar_resources/healthcare_scholars.html")                              
                                 ]));
