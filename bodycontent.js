@@ -3859,7 +3859,7 @@ function writeSections(legacy) {
     writeText("More plan details:");
     writeText("");
     document.write(makeTable(2, [
-                "Plan", "Student Health Advantage more benefits",
+                "Plan", "More about Student Health Advantage",
 
                 "Plan Highlights",
                 makeBulletedListWithTitle("", [
@@ -3874,7 +3874,7 @@ function writeSections(legacy) {
                         "Intercollegiate/Interscholastic/intramural or club sports: $5,000 per injury/illness medical expenses only",
                         "Incidental home country coverage: up to cumulative two weeks",
                         "Terrorism coverage: up to 50,000 lifetime maximum",
-                        "F2/J2 dependents can only purchase when the F1/J1 purchases",
+                        "F2/J2 dependents can only purchase when the F1/J1 purchases.  Maximum limit per period of coverage and per illness maximum for dependents is $50,000 (Standard Plan A) or $100,000 (Platinum Plan A)",
                         "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays.",                        
                         "Standard Plan: Optional benefit change in Florida, Hawaii, Idaho, Massachusetts to shorten the preexisting condition exclusion from 12 months to 6 months. With 6 month preexisting condition benefit change there is a 10 month wait for maternity benefits."                        
                         ]),
@@ -4111,7 +4111,7 @@ function writeSections(legacy) {
     writeText("More plan details:");
     writeText("");
     document.write(makeTable(2, [
-                "Plan", "Student Health Advantage more benefits",
+                "Plan", "More about Student Health Advantage",
 
                 "Plan Highlights",
                 makeBulletedListWithTitle("", [
@@ -4126,7 +4126,7 @@ function writeSections(legacy) {
                         "Intercollegiate/Interscholastic/intramural or club sports: $5,000 per injury/illness medical expenses only",
                         "Incidental home country coverage: up to cumulative two weeks",
                         "Terrorism coverage: up to 50,000 lifetime maximum",
-                        "F2/J2 dependents can only purchase when the F1/J1 purchases",
+                        "F2/J2 dependents can only purchase when the F1/J1 purchases.  Maximum limit per period of coverage and per illness maximum for dependents is $50,000 (Standard Plan A) or $100,000 (Platinum Plan A)",
                         "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays.",                        
                         "Standard Plan: Optional benefit change in Florida, Hawaii, Idaho, Massachusetts to shorten the preexisting condition exclusion from 12 months to 6 months. With 6 month preexisting condition benefit change there is a 10 month wait for maternity benefits."                        
                         ]),
@@ -4365,7 +4365,7 @@ function writeSections(legacy) {
     writeText("More plan details:");
     writeText("");
     document.write(makeTable(2, [
-                "Plan", "Student Health Advantage more benefits",
+                "Plan", "More about Student Health Advantage",
 
                 "Plan Highlights",
                 makeBulletedListWithTitle("", [
@@ -4380,7 +4380,7 @@ function writeSections(legacy) {
                         "Intercollegiate/Interscholastic/intramural or club sports: $5,000 per injury/illness medical expenses only",
                         "Incidental home country coverage: up to cumulative two weeks",
                         "Terrorism coverage: up to 50,000 lifetime maximum",
-                        "F2/J2 dependents can only purchase when the F1/J1 purchases",
+                        "F2/J2 dependents can only purchase when the F1/J1 purchases.  Maximum limit per period of coverage and per illness maximum for dependents is $50,000 (Standard Plan A) or $100,000 (Platinum Plan A)",
                         "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays.",                        
                         "Standard Plan: Optional benefit change in Florida, Hawaii, Idaho, Massachusetts to shorten the preexisting condition exclusion from 12 months to 6 months. With 6 month preexisting condition benefit change there is a 10 month wait for maternity benefits."                        
                         ]),
@@ -4537,7 +4537,7 @@ function writeSections(legacy) {
     writeText("More plan details:");
     writeText("");
     document.write(makeTable(2, [
-                "Plan", "Student Health Advantage more benefits",
+                "Plan", "More about Student Health Advantage",
 
                 "Plan Highlights",
                 makeBulletedListWithTitle("", [
@@ -4552,7 +4552,7 @@ function writeSections(legacy) {
                         "Intercollegiate/Interscholastic/intramural or club sports: $5,000 per injury/illness medical expenses only",
                         "Incidental home country coverage: up to cumulative two weeks",
                         "Terrorism coverage: up to 50,000 lifetime maximum",
-                        "F2/J2 dependents can only purchase when the F1/J1 purchases",
+                        "F2/J2 dependents can only purchase when the F1/J1 purchases.  Maximum limit per period of coverage and per illness maximum for dependents is $50,000 (Standard Plan A) or $100,000 (Platinum Plan A)",
                         "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays.",                        
                         "Standard Plan: Optional benefit change in Florida, Hawaii, Idaho, Massachusetts to shorten the preexisting condition exclusion from 12 months to 6 months. With 6 month preexisting condition benefit change there is a 10 month wait for maternity benefits."                        
                         ]),
