@@ -480,7 +480,10 @@ function referralSubstitution(key) {
         gprinceton: "partner=princeton&p=pivot-international-student&adid=gprinceton",
         acnprinceton: "l=cn&partner=princeton&p=pivot-international-student&adid=acnprinceton", 
         iprinceton: "partner=princeton&p=pivot-international-student",
-        icnprinceton: "l=cn&partner=princeton&p=pivot-international-student",        
+        icnprinceton: "l=cn&partner=princeton&p=pivot-international-student", 
+        ioregonstate: "partner=oregonstate&p=pivot-international-student",
+        icnoregonstate: "l=cn&partner=oregonstate&p=pivot-international-student", 
+        
         tufts: "partner=tufts&p=pivot-home&adid=stufts",
         cntufts: "l=cn&partner=tufts&p=pivot-home&adid=scntufts",   
         gcntufts: "l=cn&partner=tufts&p=pivot-international-student&adid=gcntufts",
@@ -915,6 +918,9 @@ function referralSubstitution(key) {
         acnnewschool: "l=cn&partner=newschool&p=pivot-international-student&adid=acnnewschool", 
         inewschool: "partner=newschool&p=pivot-international-student",
         icnnewschool: "l=cn&partner=newschool&p=pivot-international-student",
+        
+        inybloodcenter: "partner=nybloodcenter&p=pivot-international-student",
+        icnnybloodcenter: "l=cn&partner=nybloodcenter&p=pivot-international-student",        
 
         cuny: "partner=cuny&p=pivot-home&adid=scuny",
         cncuny: "l=cn&partner=cuny&p=pivot-home&adid=scncuny",   
@@ -1301,6 +1307,9 @@ function referralSubstitution(key) {
         
         idrexel: "partner=drexel&p=pivot-international-student",
         icndrexel: "l=cn&partner=drexel&p=pivot-international-student", 
+        
+        iuu: "partner=uu&p=pivot-international-studentandscholar",
+        icnuu: "l=cn&partner=uu&p=pivot-international-studentandscholar",        
         
         imissouri: "partner=missouri&p=pivot-international-student",
         icnmissouri: "l=cn&partner=missouri&p=pivot-international-student",         
@@ -2986,7 +2995,12 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("New School (NY)", "http://www.newschool.edu/"),
                 makeURL("School F1 requirement", "https://www.universityhealthplans.com/secure/waiver.cgi"),
                 makeURL("School J1 requirement", "https://www.newschool.edu/international-student-services/resources/health-insurance-for-internationals/"),
-                makeURL("Health insurance for New School Scholars", "#inewschool"),                
+                makeURL("Health insurance for New School Scholars", "#inewschool"),  
+
+                makeURL("New York Blood Center (NY)", "http://nybloodcenter.org/"),
+                "",
+                makeURL("School J1 requirement", "http://nybloodcenter.org/"),
+                makeURL(loc("Health insurance for ") + loc("New York Blood Center") + loc(" Scholars"), "#inybloodcenter"),                
 
                 makeURL("New York City College of Technology, CUNY (NY)", "http://www.citytech.cuny.edu/"),
                 makeURL("School F1 requirement", "http://www.citytech.cuny.edu/files/admissions/handbook.pdf"),
@@ -3056,6 +3070,11 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Oregon State University (OR)", "http://oregonstate.edu/"),
                 makeURL("School F1 requirement", "http://studenthealth.oregonstate.edu/internationalplan"),
                 makeURL("School J1 requirement", "http://oregonstate.edu/international/sites/default/files/atosu/insurance.pdf"),
+                makeURL(loc("Health insurance for ") + loc("Oregon State University") + loc(" Scholars"), "#ioregonstate"),
+
+                makeURL("Pennington Biomedical Research Center - LSU (LA)", "http://pbrc.edu"),
+                makeURL("School F1 requirement", "http://pbrc.edu"),
+                makeURL("School J1 requirement", "http://pbrc.edu"),
                 makeURL("Plan that meets this school's standards for J scholar", "#usdos"),
                 
                 makeURL("Pennsylvania State University System (PA)", "http://www.psu.edu/"),
@@ -3182,7 +3201,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Syracuse University (NY)", "http://www.syr.edu/"),
                 makeURL("School F1 requirement", "http://international.syr.edu/new-students/health-insurance/index.html"),
                 makeURL("School J1 requirement", "http://international.syr.edu/international-faculty-staff/j1-exchange-visitors/index.html"),
-                makeURL("Health insurance for Syracuse University Students and Scholars", "#isyr"),
+                makeURL(loc("Health insurance for ") + loc("Syracuse University") + loc(" International Students and Scholars"), "#isyr"),                
                 
                 makeURL("Temple University (PA)", "http://www.temple.edu/"),
                 makeURL("School F1 requirement", "http://www.temple.edu/hr/students/healthinsurance/international/summary.htm"),
@@ -3230,7 +3249,11 @@ function writeSectionForSchoolWaiverRequirements() {
                 document.write(makeTable(4,
                 [
                 "School", "F1 Visa", "J1 Visa", "Affordable Insurance that Meets School Requirements",                  
-                
+ 
+                makeURL("Union University (TN)", "http://www.UU.edu"),
+                makeURL("School F1 requirement", "http://www.uu.edu/institutes/international/students/international-student-resources.cfm#insurance"),
+                makeURL("School J1 requirement", "http://www.uu.edu/institutes/international/students/international-student-resources.cfm#insurance"), 
+                makeURL(loc("Health insurance for ") + loc("Union University") + loc(" International Students and Scholars"), "#iuu"),                
                 
                 makeURL("University of Akron (OH)", "http://www.uakron.edu/"),
                 makeURL("School F1 requirement", "http://www.uakron.edu/oip/immigration/f1/insurance-for-international-students.dot"),

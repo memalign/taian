@@ -1590,8 +1590,9 @@ function getPartnership(partner) {
 
 
           morgan: {
-                    windowTitle: "TaiAn Health Insurance for Morgan State University",
-                    pageTitle: "TaiAn Health Insurance for Morgan State University",
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Morgan State University"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Morgan State University"),
+
                     tabs: [
                             "pivot-home",
                             "pivot-international-studentandscholar",
@@ -1715,8 +1716,9 @@ function getPartnership(partner) {
               },  
               
           alfred: {
-                    windowTitle: "TaiAn Health Insurance for Alfred University",
-                    pageTitle: "TaiAn Health Insurance for Alfred University",
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Alfred University"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Alfred University"),
+                    
                     tabs: [
                             "pivot-home",
                             "pivot-international-studentandscholar",
@@ -1840,8 +1842,8 @@ function getPartnership(partner) {
               }, 
 
           lehigh: {
-                    windowTitle: "TaiAn Health Insurance for Lehigh University",
-                    pageTitle: "TaiAn Health Insurance for Lehigh University",
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Lehigh University"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Lehigh University"),                    
                     tabs: [
                             "pivot-home",
                             "pivot-international-studentandscholar",
@@ -1965,8 +1967,8 @@ function getPartnership(partner) {
               },               
 
            shawnee: {
-                    windowTitle: "TaiAn Health Insurance for Shawnee State University",
-                    pageTitle: "TaiAn Health Insurance for Shawnee State University",
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Shawnee State University"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Shawnee State University"),                    
                     tabs: [
                             "pivot-home",
                             "pivot-international-studentandscholar",
@@ -2091,8 +2093,8 @@ function getPartnership(partner) {
              
 
          kent: {
-                    windowTitle: "TaiAn Health Insurance for Kent State University",
-                    pageTitle: "TaiAn Health Insurance for Kent State University",
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Kent State University"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Kent State University"),                    
                     tabs: [
                             "pivot-home",
                             "pivot-international-studentandscholar",
@@ -2209,8 +2211,8 @@ function getPartnership(partner) {
               },     
 
          depaul: {
-                    windowTitle: "TaiAn Health Insurance for Depaul University",
-                    pageTitle: "TaiAn Health Insurance for Depaul University",
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Depaul University"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Depaul University"),                    
                     tabs: [
                             "pivot-home",
                             "pivot-international-studentandscholar",
@@ -2326,8 +2328,8 @@ function getPartnership(partner) {
               },                
 
          murraystate: {
-                    windowTitle: "TaiAn Health Insurance for Murray State University",
-                    pageTitle: "TaiAn Health Insurance for Murray State University",
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Murray State University"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Murray State University"),                    
                     tabs: [
                             "pivot-home",
                             "pivot-international-studentandscholar",
@@ -2554,8 +2556,8 @@ function getPartnership(partner) {
               },               
               
          wwu: {
-                    windowTitle: "TaiAn Health Insurance for Western Washington University",
-                    pageTitle: "TaiAn Health Insurance for Western Washington University",
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Western Washington University"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Western Washington University"),                    
                     tabs: [
                             "pivot-home",
                             "pivot-international-studentandscholar",
@@ -3212,8 +3214,8 @@ function getPartnership(partner) {
               },
               
          vt: {
-                    windowTitle: "TaiAn Health Insurance for Virginia Tech",
-                    pageTitle: "TaiAn Health Insurance for Virginia Tech",
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Virginia Tech"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Virginia Tech"),                    
                     tabs: [
                             "pivot-home",
                             "pivot-international-student",
@@ -3227,7 +3229,7 @@ function getPartnership(partner) {
                         writeText(loc("Virginia Tech ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
 
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("Virginia Tech Scholar Requirements", "http://www.iss.vt.edu/index.php/foreign-national/j-1/health-insurance")
+                                makeURL(loc("Virginia Tech ") + loc("Scholar Requirements"), "http://www.iss.vt.edu/index.php/foreign-national/j-1/health-insurance")
                         
                                 ]));
                         endRow();
@@ -3235,8 +3237,8 @@ function getPartnership(partner) {
               },
 
          vcu: {
-                    windowTitle: "TaiAn Health Insurance for Virginia Commonwealth University",
-                    pageTitle: "TaiAn Health Insurance for Virginia Commonwealth University",
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Virginia Commonwealth University"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Virginia Commonwealth University"),                    
                     tabs: [
                             "pivot-home",
                             "pivot-international-student",
@@ -3251,7 +3253,7 @@ function getPartnership(partner) {
                         writeText("Enrolled international students are required to have medical benefits of $250,000 per illness or injury.");
                         writeText("The Global Education Office at Virginia Commonwealth University strongly prefers International students and scholars buy TaiAn Plan A.");
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("Virginia Commonwealth Scholar Requirements", "http://www.global.vcu.edu/pdf/immigration/j1/J-1_Health_Insurance_Requirements.pdf"),
+                                makeURL(loc("Virginia Commonwealth ") + loc("Scholar Requirements"), "http://www.global.vcu.edu/pdf/immigration/j1/J-1_Health_Insurance_Requirements.pdf"),
                                 makeURL("Virginia Commonwealth Student Requirements", "http://www.global.vcu.edu/students/connections/started/insurance.html")                        
                                 ]));
                         endRow();
@@ -3414,8 +3416,8 @@ function getPartnership(partner) {
               }, 
               
         syr: {
-                    windowTitle: "TaiAn Health Insurance for Syracuse University",
-                    pageTitle: "TaiAn Health Insurance for Syracuse University",
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Syracuse University"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Syracuse University"),                    
                     tabs: [
                             "pivot-home",
                             "pivot-international-student",
@@ -3429,12 +3431,34 @@ function getPartnership(partner) {
                         writeText(loc("Syracuse University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         writeText("Enrolled international students have to buy Plan A to meet Syracuse University standards, and complete an online waiver.");       
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("Syracuse University Scholar Requirements", "http://international.syr.edu/international-faculty-staff/j1-exchange-visitors/index.html"),                         
-                                makeURL("Syracuse University Student Requirements", "http://international.syr.edu/new-students/health-insurance/index.html")
+                                makeURL(loc("Syracuse University ") + loc("Scholar Requirements"), "http://international.syr.edu/international-faculty-staff/j1-exchange-visitors/index.html"),                         
+                                makeURL(loc("Syracuse University ") + loc("Student Requirements"), "http://international.syr.edu/new-students/health-insurance/index.html")
                                 ]));
                         endRow();
                     }
-              },               
+              }, 
+
+        uu: {
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Union University"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Union University"),                    
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-studentandscholar",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentandscholarContent: function () {
+                        startRow();
+                        writeText(loc("Union University ") + loc("J scholars and enrolled students (F or J) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));       
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL(loc("Union University ") + loc("Scholar Requirements"), "http://www.uu.edu/institutes/international/students/international-student-resources.cfm#insurance"),                         
+                                makeURL(loc("Union University ") + loc("Student Requirements"), "http://www.uu.edu/institutes/international/students/international-student-resources.cfm#insurance")
+                                ]));
+                        endRow();
+                    }
+              },              
               
               
         caltech: {
@@ -5179,7 +5203,28 @@ function getPartnership(partner) {
                                 ]));
                         endRow();
                     }
-              },    
+              },  
+
+        oregonstate: {
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Oregon State University"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Oregon State University"),                    
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText(loc("Oregon State University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL(loc("Oregon State University ") + loc("Scholar Requirements"), "http://oregonstate.edu/international/sites/default/files/atosu/insurance.pdf")                        
+                                ]));
+                        endRow();
+                    }
+              },              
 
         tufts: {
                     windowTitle: "TaiAn Health Insurance for Tufts University",
@@ -5203,8 +5248,8 @@ function getPartnership(partner) {
               },       
 
         cmu: {
-                    windowTitle: "TaiAn Health Insurance for Carnegie Mellon University",
-                    pageTitle: "TaiAn Health Insurance for Carnegie Mellon University",
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Carnegie Mellon University"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Carnegie Mellon University"),                    
                     tabs: [
                             "pivot-home",
                             "pivot-international-student",
@@ -5217,15 +5262,15 @@ function getPartnership(partner) {
                         startRow();
                         writeText(loc("Carnegie Mellon University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("Carnegie Mellon University Scholar Requirements", "http://www.studentaffairs.cmu.edu/oie/forscho/j1/conditions.html")                        
+                                makeURL(loc("Carnegie Mellon University ") + loc("Scholar Requirements"), "http://www.studentaffairs.cmu.edu/oie/forscho/j1/conditions.html")                        
                                 ]));
                         endRow();
                     }
               },           
 
         wustl: {
-                    windowTitle: "TaiAn Health Insurance for Washington University in St. Louis & WUSTL Medical School",
-                    pageTitle: "TaiAn Health Insurance for Washington University in St. Louis & WUSTL Medical School",
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Washington University in St. Louis & WUSTL Medical School"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Washington University in St. Louis & WUSTL Medical School"),                    
                     tabs: [
                             "pivot-home",
                             "pivot-international-student",
@@ -5238,15 +5283,15 @@ function getPartnership(partner) {
                         startRow();
                         writeText(loc("Washington University in St. Louis & WUSTL Medical School ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("Washington University in St. Louis & WUSTL Medical School Scholar Requirements", "http://oiss.wustl.edu/scholars/j-1-exchange-visitors/maintaining-j-1status/")                        
+                                makeURL(loc("Washington University in St. Louis & WUSTL Medical School ") + loc("Scholar Requirements"), "http://oiss.wustl.edu/scholars/j-1-exchange-visitors/maintaining-j-1status/")                        
                                 ]));
                         endRow();
                     }
               }, 
               
         wm: {
-                    windowTitle: "TaiAn Health Insurance for William & Mary",
-                    pageTitle: "TaiAn Health Insurance for William & Mary",
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("William & Mary"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("William & Mary"),                    
                     tabs: [
                             "pivot-home",
                             "pivot-international-student",
@@ -5259,7 +5304,7 @@ function getPartnership(partner) {
                         startRow();
                         writeText(loc("William & Mary ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness; 5. Maternity Benefits.  Taian Plan A  is the most affordable plan that meets the requirements.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("William & Mary Scholar Requirements", "http://www.wm.edu/offices/revescenter/issp/life/insurance/scholar/index.php")                        
+                                makeURL(loc("William & Mary ") + loc("Scholar Requirements"), "http://www.wm.edu/offices/revescenter/issp/life/insurance/scholar/index.php")                        
                                 ]));
                         endRow();
                     }
@@ -5268,8 +5313,8 @@ function getPartnership(partner) {
             
               
         ucsf: {
-                    windowTitle: "TaiAn Health Insurance for UC San Francisco",
-                    pageTitle: "TaiAn Health Insurance for UC San Francisco",
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("UC San Francisco"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("UC San Francisco"),                     
                     tabs: [
                             "pivot-home",
                             "pivot-international-student",
@@ -5284,15 +5329,15 @@ function getPartnership(partner) {
                         writeText("Scholars are required to show the international office proof of coverage for the same time as their DS-2019 up to one year.");
 
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("UC San Francisco Scholar Requirements", "http://isso.ucsf.edu/immigration-visas/for-scholars/j-1-scholars/health-insurance-requirement")                        
+                                makeURL(loc("UC San Francisco ") + loc("Scholar Requirements"), "http://isso.ucsf.edu/immigration-visas/for-scholars/j-1-scholars/health-insurance-requirement")                        
                                 ]));
                         endRow();
                     }
               },
 
         uci: {
-                    windowTitle: "TaiAn Health Insurance for UC Irvine",
-                    pageTitle: "TaiAn Health Insurance for UC Irvine",
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("UC Irvine"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("UC Irvine"),                    
                     tabs: [
                             "pivot-home",
                             "pivot-international-student",
@@ -5305,7 +5350,7 @@ function getPartnership(partner) {
                         startRow();
                         writeText(loc("UC Irvine ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
-                                makeURL("UC Irvine Scholar Requirements", "http://www.ic.uci.edu/Scholars/J-1/healthinsurance.php")                        
+                                makeURL(loc("UC Irvine ") + loc("Scholar Requirements"), "http://www.ic.uci.edu/Scholars/J-1/healthinsurance.php")                        
                                 ]));
                         endRow();
                     }
@@ -6346,6 +6391,8 @@ function getPartnership(partner) {
                         startRow();
                         writeText(loc("Louisiana State University ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         writeText("Enrolled international students have to buy Plan A to meet Louisiana  State University standards, and complete a waiver.");
+                        writeText("Students and scholars will need to purchase the medical evacuation and repatriation of remains benefit that is available from LSU for $16 per year in addition to our plan.");
+
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("Louisiana State University Scholar Requirements", "http://international.lsu.edu/IS/faculty/J-1Exchange.php"),                        
                                 makeURL("Louisiana State University Student Requirements", "http://international.lsu.edu/IS/current/insuranceinfo-private.php")
@@ -6437,6 +6484,27 @@ function getPartnership(partner) {
                         writeText(loc("New School ") + loc("J scholars (not enrolled students) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
                         document.write(makeBulletedListWithTitle("", [
                                 makeURL("New School Scholar Requirements", "https://www.newschool.edu/international-student-services/resources/health-insurance-for-internationals/")                              
+                                ]));
+                        endRow();
+                    }
+              }, 
+
+        nybloodcenter: {
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("New York Blood Center"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("New York Blood Center"),
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText(loc("New York Blood Center ") + loc("J scholars have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL(loc("New York Blood Center ") + loc("Scholar Requirements"), "http://j1visa.state.gov/sponsors/how-to-administer-a-program/")                              
                                 ]));
                         endRow();
                     }
