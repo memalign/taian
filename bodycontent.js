@@ -753,6 +753,7 @@ function referralSubstitution(key) {
         ggwu: "partner=gwu&p=pivot-international-student&adid=ggwu",
         acngwu: "l=cn&partner=gwu&p=pivot-international-student&adid=acngwu", 
         igwu: "partner=gwu&p=pivot-international-student",
+        icngwu: "partner=gwu&p=pivot-international-student&l=cn",        
         iastate: "partner=iastate&p=pivot-home&adid=siastate",
         cniastate: "l=cn&partner=iastate&p=pivot-home&adid=scniastate",   
         gcniastate: "l=cn&partner=iastate&p=pivot-international-student&adid=gcniastate",
@@ -2229,9 +2230,11 @@ function makeBulletedListWithTitle(title, list) {
     listCode += '<ul class="styled-ul">';
 
     for (var i = 0; i < list.length; i++) {
-        listCode += '<li class="styled-li">'+loc(list[i])+"</li>";
+        if (list[i].length > 0) {
+            listCode += '<li class="styled-li">'+loc(list[i])+"</li>";
+        }
     }
-    
+
     listCode += "</ul>";
     return listCode;
 }
@@ -2483,7 +2486,7 @@ function writeSectionForSchoolWaiverRequirements() {
 
 
     startRow();
-    writeText("Use this page to find insurance that meets your school requirements: 1) Find your school name in the first column; 2) Click on the corresponding fourth column, then you will see your school special page which tells you how to buy insurance that meets your school requirements.");
+    writeText("Use this page to find insurance that meets your school requirements: 1) Find your school name in the first column; 2) Click on the corresponding fourth column, then you will see your school special page; 3) Follow the instructions to buy insurance that meets your school requirements.");
     endRow();
 
 
@@ -2491,10 +2494,49 @@ function writeSectionForSchoolWaiverRequirements() {
     writeText("Call from US - 9:00AM to 10:00PM Eastern time - Includes weekend: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time 7-11am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>");
     endRow();
 
+    
+    startRow();
+    writeText("");
+
+    writeText("");     
+    endRow(); 
+    
+    startRow();
+    document.write(makeTable(8, [
+                "Select the first letter of your school name",   
+                makeSubsectionURL("school-subsections", "a-d", "A B C D"),
+                makeSubsectionURL("school-subsections", "e-h", "E F G H"),
+                makeSubsectionURL("school-subsections", "i-l", "I J K L"),              
+                makeSubsectionURL("school-subsections", "m-p", "M N O P"),
+                makeSubsectionURL("school-subsections", "q-t", "Q R S T"),
+                makeSubsectionURL("school-subsections", "u-v", "U V"),               
+                makeSubsectionURL("school-subsections", "w-z", "W X Y Z")
+                             
+                
+                
+
+                        ])
+                );
+    endRow();     
+ 
+    startRow();
+    writeText("");
+
+    writeText("");     
+    endRow(); 
+    
+
+    startSubsections("school-subsections");
+
+    startSubsection("a-d");    
+    
+    
+    
+    
     startRow();
     document.write(makeTable(4,
                 [
-                "School", "F1 Visa", "J1 Visa", "Affordable Insurance that Meets School Requirements",
+                "School Name", "F1 Visa", "J1 Visa", "Affordable Insurance that Meets School Requirements",
                 
                 makeURL("Albert Einstein College of Medicine at YU (NY)", "http://www.einstein.yu.edu/"),
                 makeURL("School F1 requirement", "https://www.einstein.yu.edu/education/student-affairs/academic-support-counseling/personal-counseling/health-insurance.aspx"),
@@ -2703,7 +2745,26 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Duke University (NC)", "http://www.duke.edu/"),
                 makeURL("School F1 requirement", "http://studentaffairs.duke.edu/studenthealth/health-insurance/waiver-criteria-review"),
                 makeURL("School J1 requirement", "http://www.visaservices.duke.edu/J_Health_Insurance.html"),
-                makeURL("Health insurance for Duke University Scholars", "#iduke"),
+                makeURL("Health insurance for Duke University Scholars", "#iduke")
+
+                ]));
+                endRow(); 
+                
+                startRow(); 
+                writeText("");                
+                endRow(); 
+
+                endSubsection();
+
+
+
+                startSubsection("e-h"); 
+                
+                startRow();
+                document.write(makeTable(4,
+                [
+                "School", "F1 Visa", "J1 Visa", "Affordable Insurance that Meets School Requirements",
+
                 
                 makeURL("Emory University (GA)", "http://www.emory.edu/"),
                 makeURL("School F1 requirement", "http://www.gs.emory.edu/financial_support/health.html"),
@@ -2778,7 +2839,25 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Hunter College, CUNY (NY)", "http://www.hunter.cuny.edu/main/"),
                 makeURL("School F1 requirement", "http://www.hunter.cuny.edu/studentservices/counseling-and-wellness/wellness/health-insurance-for-international-students"),
                 makeURL("School J1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
-                makeURL("Health insurance for CUNY Students and Scholars", "#icuny"),                
+                makeURL("Health insurance for CUNY Students and Scholars", "#icuny") 
+                 
+                ]));
+                endRow();   
+
+                startRow(); 
+                writeText("");                
+                endRow();                
+
+                endSubsection();
+
+
+
+                startSubsection("i-l"); 
+                
+                startRow();
+                document.write(makeTable(4,
+                [
+                "School", "F1 Visa", "J1 Visa", "Affordable Insurance that Meets School Requirements",                
                 
                 makeURL("Indiana University-Bloomington", "http://www.iub.edu/"),
                 makeURL("School F1 requirement", "http://ois.iu.edu/living-working/health/insurance/waiver.shtml"),
@@ -2843,7 +2922,25 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("LSU Baton Rouge(LA)", "http://www.lsu.edu"),
                 makeURL("School F1 requirement", "http://international.lsu.edu/IS/current/insuranceinfo-private.php"),
                 makeURL("School J1 requirement", "http://international.lsu.edu/IS/faculty/J-1Exchange.php"),
-                makeURL("Health insurance for Louisiana State University Students and Scholars", "#ilsu"),
+                makeURL("Health insurance for Louisiana State University Students and Scholars", "#ilsu")
+
+                ]));
+                endRow();   
+
+                 startRow(); 
+                writeText("");                
+                endRow();               
+
+                endSubsection();
+
+
+
+                startSubsection("m-p"); 
+                
+                startRow();
+                document.write(makeTable(4,
+                [
+                "School", "F1 Visa", "J1 Visa", "Affordable Insurance that Meets School Requirements",
                 
                 makeURL("Massachusetts Institute of Technology (MA)", "http://web.mit.edu/"),
                 makeURL("School F1 requirement", "http://medweb.mit.edu/healthplans/student/waiver.html#requirements"),
@@ -2974,7 +3071,26 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Purdue University (IN)", "http://www.purdue.edu/"),
                 makeURL("School F1 requirement", "http://www.purdue.edu/push/insurance/waivers.shtml"),
                 makeURL("School J1 requirement", "http://www.iss.purdue.edu/Current/J1/HealthInsurance.cfm"),
-                makeURL("Health insurance for Purdue Students and Scholars", "#ipurdue"),
+                makeURL("Health insurance for Purdue Students and Scholars", "#ipurdue")
+                
+                ]));
+                endRow();   
+
+                startRow(); 
+                writeText("");                
+                endRow();                
+
+                endSubsection();
+
+
+
+                startSubsection("q-t"); 
+                
+                startRow();
+                document.write(makeTable(4,
+                [
+                "School", "F1 Visa", "J1 Visa", "Affordable Insurance that Meets School Requirements",                
+                
  
                 makeURL("Queens College, CUNY (NY)", "http://www.qc.cuny.edu/Pages/home.aspx"),
                 makeURL("School F1 requirement", "http://www.qc.cuny.edu/StudentLife/services/health/Pages/Health%20Insurance.aspx#internationalstudent"),
@@ -2985,7 +3101,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School F1 requirement", "http://www.qcc.cuny.edu/ISA/f1.html"),
                 makeURL("School J1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
                 makeURL("Health insurance for CUNY Students and Scholars", "#icuny"),                
- 
+                
                 makeURL("Rensselaer Polytechnic Institute (NY)", "http://www.rpi.edu/"),
                 makeURL("School F1 requirement", "http://studenthealth.rpi.edu/insurance.php?catid=1035"),
                 makeURL("School J1 requirement", "http://doso.rpi.edu/update.do?artcenterkey=494"),
@@ -3091,8 +3207,31 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Tulane University (LA)", "http://www.tulane.edu/"),
                 makeURL("School F1 requirement", "https://tulane.app.box.com/inswaiver"),
                 makeURL("School J1 requirement", "https://tulane.app.box.com/inswaiver"),
-                "Consult your school about their requirements",
+                "Consult your school about their requirements"
 
+
+
+
+                
+                ]));
+                endRow();   
+                
+                startRow(); 
+                writeText("");                
+                endRow();               
+
+                endSubsection();
+
+
+
+                startSubsection("u-v");
+                
+                startRow();
+                document.write(makeTable(4,
+                [
+                "School", "F1 Visa", "J1 Visa", "Affordable Insurance that Meets School Requirements",                  
+                
+                
                 makeURL("University of Akron (OH)", "http://www.uakron.edu/"),
                 makeURL("School F1 requirement", "http://www.uakron.edu/oip/immigration/f1/insurance-for-international-students.dot"),
                 makeURL("School J1 requirement", "http://www.uakron.edu/oip/immigration/insurance-for-j1-scholar.dot"),
@@ -3566,7 +3705,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School F1 requirement", "http://globalengagement.usu.edu/htm/study-abroad/incoming-students/health-insurance"),
                 makeURL("School J1 requirement", "http://globalengagement.usu.edu/htm/study-abroad/incoming-students/health-insurance"),
                 makeURL(loc("Health insurance for ") + loc("Utah State University") + loc(" International Students and Scholars"), "#iusu"),
-                
+
                 makeURL("Vanderbilt University (TN)", "http://www.vanderbilt.edu/"),
                 makeURL("School F1 requirement", "http://www.vanderbilt.edu/isss/wp-content/uploads/HealthInsWaiverRequest.pdf"),
                 makeURL("School J1 requirement", "http://www.vanderbilt.edu/isss/financial-statements/j-1-student-intern/j-1-student-intern-orientation/"),
@@ -3580,7 +3719,30 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Virginia Tech (VA)", "http://www.vt.edu/"),
                 makeURL("School F1 requirement", "http://www.co.vt.edu/Risk/studenthealthinsr/Aetna/2014-2015/2014-2015_International_Waiver.pdf"),
                 makeURL("School J1 requirement", "http://www.iss.vt.edu/index.php/foreign-national/j-1/health-insurance"),
-                makeURL("Health insurance for Virginia Tech Scholars", "#ivt"),
+                makeURL("Health insurance for Virginia Tech Scholars", "#ivt")
+
+
+                
+                ]));
+                endRow(); 
+
+                startRow(); 
+                writeText("");                
+                endRow();                
+
+                endSubsection();
+
+
+
+                startSubsection("w-z");
+                
+                startRow();
+                document.write(makeTable(4,
+                [
+                "School", "F1 Visa", "J1 Visa", "Affordable Insurance that Meets School Requirements",  
+
+                
+
                 
                 makeURL("Wake Forest University (NC)", "http://www.wfu.edu/"),
                 makeURL("School F1 requirement", "http://sip.studentlife.wfu.edu/enrollment/"),
@@ -3644,6 +3806,12 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 ]));
     endRow();
+    
+    endSubsection();
+
+
+    endSubsections();  
+    
     endSection();
 }
 
@@ -3906,13 +4074,19 @@ function writeSections(legacy) {
 
                 "Full Brochures", 
                 makeBulletedListWithTitle("", [
-                        makeURL("Taian Patriot Exchange Brochure", 
-                        "http://producer.imglobal.com/producerdocuments.ashx?documentid=2857"),
-                        makeURL("Taian Patriot Exchange Group Brochure", 
-                        "http://producer.imglobal.com/producerdocuments.ashx?documentid=2858")                        
+                        makeURL("Taian Patriot Exchange Full Brochure", 
+                        "http://producer.imglobal.com/producerdocuments.ashx?documentid=2857"),  
 
+                        (langIsChinese() ?  makeURL("TaiAn Patriot Exchange Chinese Brochure", "http://producer.imglobal.com/producerdocuments.ashx?documentid=2943") : ""),
+
+                        makeURL("Taian Patriot Exchange Group Full Brochure", 
+                        "http://producer.imglobal.com/producerdocuments.ashx?documentid=2858"),                        
+                        (langIsChinese() ?  makeURL("TaiAn Patriot Exchange Group Chinese Brochure", "http://producer.imglobal.com/producerdocuments.ashx?documentid=2944") + loc("<br />If Chinese version is in conflict with English one, please follow the  English one") : "")
+                        
 
                         ])
+     
+                      
 
 
                ]));
@@ -4158,11 +4332,15 @@ function writeSections(legacy) {
 
                 "Full Brochures", 
                 makeBulletedListWithTitle("", [
-                        makeURL("Taian Patriot Exchange Brochure", 
-                        "http://producer.imglobal.com/producerdocuments.ashx?documentid=2857"),
-                        makeURL("Taian Patriot Exchange Group Brochure", 
-                        "http://producer.imglobal.com/producerdocuments.ashx?documentid=2858")                        
+                        makeURL("Taian Patriot Exchange Full Brochure", 
+                        "http://producer.imglobal.com/producerdocuments.ashx?documentid=2857"),  
 
+                        (langIsChinese() ?  makeURL("TaiAn Patriot Exchange Chinese Brochure", "http://producer.imglobal.com/producerdocuments.ashx?documentid=2943") : ""),
+
+                        makeURL("Taian Patriot Exchange Group Full Brochure", 
+                        "http://producer.imglobal.com/producerdocuments.ashx?documentid=2858"),                        
+                        (langIsChinese() ?  makeURL("TaiAn Patriot Exchange Group Chinese Brochure", "http://producer.imglobal.com/producerdocuments.ashx?documentid=2944") + loc("<br />If Chinese version is in conflict with English one, please follow the  English one") : "")
+                        
 
                         ])
 
@@ -4412,10 +4590,15 @@ function writeSections(legacy) {
 
                 "Full Brochures", 
                 makeBulletedListWithTitle("", [
-                        makeURL("Taian Patriot Exchange Brochure", 
-                        "http://producer.imglobal.com/producerdocuments.ashx?documentid=2857"),
-                        makeURL("Taian Patriot Exchange Group Brochure", 
-                        "http://producer.imglobal.com/producerdocuments.ashx?documentid=2858")
+                        makeURL("Taian Patriot Exchange Full Brochure", 
+                        "http://producer.imglobal.com/producerdocuments.ashx?documentid=2857"),  
+
+                        (langIsChinese() ?  makeURL("TaiAn Patriot Exchange Chinese Brochure", "http://producer.imglobal.com/producerdocuments.ashx?documentid=2943") : ""),
+
+                        makeURL("Taian Patriot Exchange Group Full Brochure", 
+                        "http://producer.imglobal.com/producerdocuments.ashx?documentid=2858"),                        
+                        (langIsChinese() ?  makeURL("TaiAn Patriot Exchange Group Chinese Brochure", "http://producer.imglobal.com/producerdocuments.ashx?documentid=2944") + loc("<br />If Chinese version is in conflict with English one, please follow the  English one") : "")
+                        
 
                         ])
 
@@ -4584,10 +4767,15 @@ function writeSections(legacy) {
 
                 "Full Brochures", 
                 makeBulletedListWithTitle("", [
-                        makeURL("Taian Patriot Exchange Brochure", 
-                        "http://producer.imglobal.com/producerdocuments.ashx?documentid=2857"),
-                        makeURL("Taian Patriot Exchange Group Brochure", 
-                        "http://producer.imglobal.com/producerdocuments.ashx?documentid=2858")
+                        makeURL("Taian Patriot Exchange Full Brochure", 
+                        "http://producer.imglobal.com/producerdocuments.ashx?documentid=2857"),  
+
+                        (langIsChinese() ?  makeURL("TaiAn Patriot Exchange Chinese Brochure", "http://producer.imglobal.com/producerdocuments.ashx?documentid=2943") : ""),
+
+                        makeURL("Taian Patriot Exchange Group Full Brochure", 
+                        "http://producer.imglobal.com/producerdocuments.ashx?documentid=2858"),                        
+                        (langIsChinese() ?  makeURL("TaiAn Patriot Exchange Group Chinese Brochure", "http://producer.imglobal.com/producerdocuments.ashx?documentid=2944") + loc("<br />If Chinese version is in conflict with English one, please follow the  English one") : "")
+                        
 
                         ])
 
@@ -5003,11 +5191,15 @@ function writeSections(legacy) {
 
                 "Full Brochures", 
                 makeBulletedListWithTitle("", [
-                        makeURL("Taian Patriot Exchange Brochure", 
-                        "http://producer.imglobal.com/producerdocuments.ashx?documentid=2857"),
-                        makeURL("Taian Patriot Exchange Group Brochure", 
-                        "http://producer.imglobal.com/producerdocuments.ashx?documentid=2858")                        
+                        makeURL("Taian Patriot Exchange Full Brochure", 
+                        "http://producer.imglobal.com/producerdocuments.ashx?documentid=2857"),  
 
+                        (langIsChinese() ?  makeURL("TaiAn Patriot Exchange Chinese Brochure", "http://producer.imglobal.com/producerdocuments.ashx?documentid=2943") : ""),
+
+                        makeURL("Taian Patriot Exchange Group Full Brochure", 
+                        "http://producer.imglobal.com/producerdocuments.ashx?documentid=2858"),                        
+                        (langIsChinese() ?  makeURL("TaiAn Patriot Exchange Group Chinese Brochure", "http://producer.imglobal.com/producerdocuments.ashx?documentid=2944") + loc("<br />If Chinese version is in conflict with English one, please follow the  English one") : "")
+                        
 
                         ])
 
