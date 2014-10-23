@@ -467,13 +467,7 @@ l['Kent State University Scholar Requirements'] = "Kent State University 访问�
 l['Kent State University Student Requirements'] = "Kent State University 留学生医疗保险的标准";
 l['Health insurance for Kent State University Students and Scholars'] = "符合Kent State University标准的留学生和访问学者医疗保险";
 
-l['Morgan State University Scholar Requirements'] = "Morgan State University 访问学者医疗保险的标准";
-l['Morgan State University Student Requirements'] = "Morgan State University 留学生医疗保险的标准";
-l['Health insurance for Morgan State University Students and Scholars'] = "符合Morgan State University标准的留学生和访问学者医疗保险";
 
-l['Alfred University Scholar Requirements'] = "Alfred University 访问学者医疗保险的标准";
-l['Alfred University Student Requirements'] = "Alfred University 留学生医疗保险的标准";
-l['Health insurance for Alfred University Students and Scholars'] = "符合Alfred University标准的留学生和访问学者医疗保险";
 
 l['Lehigh University Scholar Requirements'] = "Lehigh University 访问学者医疗保险的标准";
 l['Lehigh University Student Requirements'] = "Lehigh University 留学生医疗保险的标准";

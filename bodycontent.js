@@ -929,7 +929,10 @@ function referralSubstitution(key) {
         acncuny: "l=cn&partner=cuny&p=pivot-international-studentandscholar&adid=acncuny", 
         icuny: "partner=cuny&p=pivot-international-studentandscholar",
         icncuny: "l=cn&partner=cuny&p=pivot-international-studentandscholar",  
-        cunyexch: "l=cn&partner=cuny&p=exchange-form",         
+        cunyexch: "l=cn&partner=cuny&p=exchange-form",  
+
+        iparkland: "partner=parkland&p=pivot-international-studentandscholar",
+        icnparkland: "l=cn&partner=parkland&p=pivot-international-studentandscholar",        
         
 
         
@@ -1333,7 +1336,10 @@ function referralSubstitution(key) {
         icnsi: "l=cn&partner=si&p=pivot-international-student",         
         
         igeorgiasouthern: "partner=georgiasouthern&p=pivot-international-student",
-        icngeorgiasouthern: "l=cn&partner=georgiasouthern&p=pivot-international-student",         
+        icngeorgiasouthern: "l=cn&partner=georgiasouthern&p=pivot-international-student",  
+
+        irushu: "partner=rushu&p=pivot-international-student",
+        icnrushu: "l=cn&partner=rushu&p=pivot-international-student",         
         
         iucdenver: "partner=ucdenver&p=pivot-international-student",
         icnucdenver: "l=cn&partner=ucdenver&p=pivot-international-student",        
@@ -2555,8 +2561,8 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("Alfred University (NY)", "http://www.alfred.edu/"),
                 makeURL("School F1 requirement", "http://www.alfred.edu/iso/forms/docs/INTERNATIONALSTUDENTHANDBOOK2013-14.pdf "),
-                makeURL("School J1 requirement", "http://www.alfred.edu/iso/forms/docs/INTERNATIONALSTUDENTHANDBOOK2013-14.pdf "),
-                makeURL("Health insurance for Alfred University Students and Scholars", "#ialfred"),                  
+                makeURL("School J1 requirement", "http://www.alfred.edu/iso/forms/docs/INTERNATIONALSTUDENTHANDBOOK2013-14.pdf "), 
+                makeURL(loc("Health insurance for ") + loc("Alfred") + loc(" International Students and Scholars"), "#ialfred"),                
 
                 makeURL("Arizona State University (AZ)", "http://www.asu.edu/"),
                 makeURL("School F1 requirement", "https://students.asu.edu/internationalstudenthealth"),
@@ -2979,7 +2985,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Morgan State University (MD)", "http://www.morgan.edu/"),
                 makeURL("School F1 requirement", "https://www.formstack.com/forms/ais-msuwaiver_form__20142015"),
                 makeURL("School J1 requirement", "http://www.morgan.edu/Documents/ADMINISTRATION/Student%20Affairs/IntlServices/J1%20Insurance%20Overview.pdf"),
-                makeURL("Health insurance for Morgan State University Students and Scholars", "#imorgan"),   
+                makeURL(loc("Health insurance for ") + loc("Morgan State University") + loc(" International Students and Scholars"), "#imorgan"),                
                 
                 
                 makeURL("Murray State University (KY)", "http://www.murraystate.edu/"),
@@ -3071,6 +3077,11 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School F1 requirement", "http://studenthealth.oregonstate.edu/internationalplan"),
                 makeURL("School J1 requirement", "http://oregonstate.edu/international/sites/default/files/atosu/insurance.pdf"),
                 makeURL(loc("Health insurance for ") + loc("Oregon State University") + loc(" Scholars"), "#ioregonstate"),
+                
+                makeURL("Parkland College (IL)", "http://www.parkland.edu/"),
+                makeURL("School F1 requirement", "http://www.parkland.edu/international"),
+                makeURL("School J1 requirement", "http://www.parkland.edu/international"),
+                makeURL(loc("Health insurance for ") + loc("Parkland College") + loc(" International Students and Scholars"), "#iparkland"),                 
 
                 makeURL("Pennington Biomedical Research Center - LSU (LA)", "http://pbrc.edu"),
                 makeURL("School F1 requirement", "http://pbrc.edu"),
@@ -3135,6 +3146,11 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School F1 requirement", "http://www.steinercollege.edu/international"),
                 makeURL("School J1 requirement", "http://www.steinercollege.edu/international"),
                 makeURL("Health insurance for Rudolf Steiner College Students and Scholars", "#isteinercollege"),
+                
+                makeURL("Rush University (IL)", "http://www.rushu.rush.edu/sp/Pages/Home.aspx"),
+                makeURL("School F1 requirement", "http://www.rushu.rush.edu/servlet/Satellite?c=RushUnivLevel2Page&cid=1269228871069&pagename=Rush%2FRushUnivLevel2Page%2FLevel_2_Student_Services_Area_Page"),
+                makeURL("School J1 requirement", "http://www.rushu.rush.edu/sp/Pages/Home.aspx"),
+                makeURL(loc("Health insurance for ") + loc("Rush University, Medical College, College of Nursing, <br/>Graduate College, and College of Health Sciences") + loc(" Scholars"), "#irushu"),                
 
                 
                 makeURL("Rutgers University (NJ)", "http://www.rutgers.edu/"),

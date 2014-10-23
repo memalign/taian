@@ -1586,7 +1586,131 @@ function getPartnership(partner) {
                         
 
                     }
-              },     
+              },  
+
+         parkland: {
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Parkland College (IL)"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Parkland College (IL)"),                    
+                   
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-studentandscholar",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentandscholarContent: function () {
+                        startRow();
+                        writeText(loc("Parkland College ") + loc("J scholars and enrolled students (F or J) have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. These requirements are the same as the US Department of State. Taian Plan B (with $50,000 benefit per illness or injury and three deductible options) and Plan C (with $50,000 benefit and deductible not over $500) are the most affordable plans that meet the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires. After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance."));                        
+                        document.write(makeBulletedListWithTitle("", [
+                                makeURL(loc("Parkland College ") + loc("Scholar Requirements"), "http://www.parkland.edu/international"),
+                                makeURL(loc("Parkland College ") + loc("Student Requirements"), "http://www.parkland.edu/international")                       
+                                ]));
+                        writeText("");  
+                        endRow();
+
+            
+
+
+                            
+                       
+                        startRow();
+                            document.write(makeTable(4,
+                            [
+                            // Column headers:
+
+                               "TaiAn Scholars and Students", "Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, Platinum Plan A", "Plan B (Taian Patriot Exchange)", "Plan C (Patriot Travel for non-US citizens)",
+
+
+                            // Table within a table
+                               "Cost Per Month (Non-US Citizens)",
+                                loc("Standard Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$69",   "$372",   "$79",
+                                        "19-23",   "$92",   "$372",   "$79",
+                                        "24-30",   "$106",  "$411",   "$79",
+                                        "31-40",   "$190",  "$547",   "$79",
+                                        "41-50",   "$311",  "$565",   "$79",
+                                        "51-64",   "$415",  "$547",   "$79"
+                                        ]) +
+                                loc("<br /><br />") +                    
+                                loc("Platinum Plan") +
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 19", "$111",   "$594",   "$126",
+                                        "19-23",   "$146",   "$594",   "$126",
+                                        "24-30",   "$169",  "$656",   "$126",
+                                        "31-40",   "$303",  "$873",   "$126",
+                                        "41-50",   "$496",  "$902",   "$126",
+                                        "51-64",   "$662",  "$873",   "$126"
+                                        ]),  
+ 
+                                loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$48.62","$48.62",  "$48.62",
+                                        "25-49",   "$63.37","$63.37",  "$48.62",
+                                        "50-64",   "$135.70","$135.70","$48.62"
+                                        ]) +
+
+                                loc("$50,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN<br />***Best Value***") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$47.16","$47.16",  "$47.16",
+                                        "25-49",   "$61.47","$61.47",  "$47.16",
+                                        "50-64",   "$131.63","$131.63","$47.16"
+                                        ])  + 
+
+                                loc("$100,000 per illness/injury, $250 annual deductible<br />ONLY AVAILABLE FROM TAIAN") +         
+                                makeTable(4, [
+                                        "Age",     "F1/J1", "Spouse", "Children",
+                                        "&lt; 25", "$54.76","$54.76",  "$54.76",
+                                        "25-49",   "$71.30","$71.30",  "$54.76",
+                                        "50-64",   "$152.63","$152.63","$54.76"
+                                        ]), 
+                                loc("$50,000 benefit, $500 annual deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$33.30",   "$33.30",   "$30.60",
+                                "30-39",   "$44.10",   "$44.10",   "$30.60",
+                                "40-49",   "$65.70",  "$65.70",   "$30.60",
+                                "50-59",   "$96.30",  "$96.30",   "$30.60"
+                                ]) + 
+                                loc("$50,000 benefit, no deductible") +                                        
+                                makeTable(4, [
+                                "Age",     "F1/J1", "Spouse", "Children",
+                                "&lt; 30", "$46.25",   "$46.25",   "$42.50",
+                                "30-39",   "$61.25",   "$61.25",   "$42.50",
+                                "40-49",   "$91.25",  "$91.25",   "$42.50",
+                                "50-59",   "$133.75",  "$133.75",   "$42.50"
+                                ]),                                
+
+
+                                "",
+                                loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
+                                makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Plan C")+ "<br />" + loc("Patriot Travel Medical"), "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
+
+                                "",
+                                loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
+                                makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+                                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                                
+                                "",
+                                "", 
+                                makeURL("Complete Price Chart for Taian Patriot Exchange", "#p=pivot-taian-patriotexchange"),
+                                ""                                
+
+                                   ])
+                                    );
+                        endRow();                        
+                           
+                        
+
+                    }
+              },               
 
 
           morgan: {
@@ -1607,8 +1731,8 @@ function getPartnership(partner) {
                         
                         document.write(makeBulletedListWithTitle("", [
 
-                                makeURL("Morgan State University Scholar Requirements", "http://www.morgan.edu/Documents/ADMINISTRATION/Student%20Affairs/IntlServices/J1%20Insurance%20Overview.pdf"),
-                                makeURL("Morgan State University Student Requirements", "https://www.formstack.com/forms/ais-msuwaiver_form__20142015")                       
+                                makeURL(loc("Morgan State University ") + loc("Scholar Requirements"), "http://www.morgan.edu/Documents/ADMINISTRATION/Student%20Affairs/IntlServices/J1%20Insurance%20Overview.pdf"),
+                                makeURL(loc("Morgan State University ") + loc("Student Requirements"), "https://www.formstack.com/forms/ais-msuwaiver_form__20142015")                       
                                 ]));
 
                         endRow();
@@ -1733,8 +1857,8 @@ function getPartnership(partner) {
                         
                         document.write(makeBulletedListWithTitle("", [
 
-                                makeURL("Alfred University Scholar Requirements", "http://www.alfred.edu/iso/forms/docs/INTERNATIONALSTUDENTHANDBOOK2013-14.pdf "),
-                                makeURL("Alfred University Student Requirements", "http://www.alfred.edu/iso/forms/docs/INTERNATIONALSTUDENTHANDBOOK2013-14.pdf ")                       
+                                makeURL(loc("Alfred University ") + loc("Scholar Requirements"), "http://www.alfred.edu/iso/forms/docs/INTERNATIONALSTUDENTHANDBOOK2013-14.pdf "),
+                                makeURL(loc("Alfred University ") + loc("Student Requirements"), "http://www.alfred.edu/iso/forms/docs/INTERNATIONALSTUDENTHANDBOOK2013-14.pdf ")                       
                                 ]));
 
                         endRow();
@@ -3070,7 +3194,27 @@ function getPartnership(partner) {
                                 ]));
                         endRow();
                     }
-              },              
+              },  
+
+         rushu: {
+                    windowTitle: loc("TaiAn Health Insurance for ") + loc("Rush University, Medical College, College of Nursing, Graduate College, and College of Health Sciences"),
+                    pageTitle: loc("TaiAn Health Insurance for ") + loc("Rush University, Rush Medical College, Rush College of Nursing, Rush Graduate College, Rush College of Health Sciences"),
+                    tabs: [
+                            "pivot-home",
+                            "pivot-international-student",
+                            "pivot-global-medical",
+                            "pivot-travel-insurance",
+                            "pivot-aboutus"
+                          ],
+                          
+                    internationalStudentContent: function () {
+                        startRow();
+                        writeText(loc("Rush University, Medical College, College of Nursing, Graduate College, and College of Health Sciences ") + loc("J scholars have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500 per accident or illness. These requirements are the same as the USDOS.  Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the requirements. You can also choose Taian Plan B with a higher benefit or Taian Plan A if you need more benefits than your school requires.  After submitting an application online successfully, you will receive an Email in a few minutes which contains your insurance ID card and your confirmation letter (Visa Letter). You can send the confirmation letter to your school as proof of insurance.")); 
+
+
+                        endRow();
+                    }
+              },                
               
            georgiasouthern: {
                     windowTitle: loc("TaiAn Health Insurance for ") + loc("Georgia Southern University"),
