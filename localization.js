@@ -129,11 +129,6 @@ l['Monthly Price for $500,000 benefit $0 deductible'] = "$500,000最高赔付和
 l['Monthly Price for $1,000,000 benefit $0 deductible'] = "$1,000,000最高赔付和 $0 免赔额的月费";
 l['Buy Patriot America Medical Insurance'] = "购买爱国者旅游医疗保险";
 
-
-l['Johns Hopkins University Scholar Requirements'] = "Johns Hopkins University 访问学者医疗保险的标准";
-l['Johns Hopkins Medical Institutions Scholar Requirements'] = "Johns Hopkins Medical Institutions 访问学者医疗保险的标准";
-l['Health insurance for Johns Hopkins University Scholars'] = "符合Johns Hopkins University标准的访问学者医疗保险";
-l['Health insurance for Johns Hopkins Medical Scholars'] = "符合Johns Hopkins Medical标准的访问学者医疗保险";
 l['TaiAn Health Insurance for University of Pennsylvania'] = "美国泰安国际医疗保险 - University of Pennsylvania";
 l['Taian Scholar/Student Insurance Plan A and Plan B meet University of Pennsylvania J scholar standards and J student standards (Not F visa student standards).  J visa holders have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Pennsylvania as proof of insurance.'] = "University of Pennsylvania 对J1访问学者和J1国际学生（不包括F1国际学生)购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$50,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明你已购买满足学校要求的保险。";
 l['University of Pennsylvania Scholar Requirements'] = "University of Pennsylvania 访问学者医疗保险的标准";
@@ -324,17 +319,6 @@ l['Vanderbilt University Scholar Requirements'] = "Vanderbilt University 访问�
 
 l['University of Miami Scholar Requirements'] = "University of Miami 访问学者医疗保险的标准";
 
-
-l['University of Nebraska (Lincoln) Scholar Requirements'] = "University of Nebraska (Lincoln) 访问学者医疗保险的标准";
-l['TaiAn Health Insurance for University of Nebraska (Lincoln)'] = "美国泰安国际医疗保险 - University of Nebraska (Lincoln)";
-l['Health insurance for University of Nebraska (Lincoln) Scholars'] = "符合University of Nebraska (Lincoln)标准的访问学者医疗保险";
-
-
-l['University of Nebraska (Omaha) Scholar Requirements'] = "University of Nebraska (Omaha) 访问学者医疗保险的标准";
-l['TaiAn Health Insurance for University of Nebraska (Omaha)'] = "美国泰安国际医疗保险 - University of Nebraska (Omaha)";
-l['Health insurance for University of Nebraska (Omaha) Scholars'] = "符合University of Nebraska (Omaha)标准的访问学者医疗保险";
-
-
 l['Florida International University allows international students to waive the school plan. Students have required coverage as follows: 1. Medical benefits of $200,000 per accident or illness; 2. Repatriation of remains of $10,000; 3. Medical evacuation of $25,000; 4. Deductible not over $100, or not over $50 at student health center; 5. Maternity benefits; 6. Pre existing conditions covered after six months. Plan A with the six month preexisting conditions option selected meets the requirements. Shortly after submitting an application you will receive confirmation of your coverage.  You can then email us to complete your waiver form.'] = "Florida International University 国际学生waive学校保险购买校外保险的要求是：1.每次生病或受伤的最高赔付至少为 $200,000; 2.遗体返送$10,000; 3. 紧急救护$25,000; 4. 每次生病或受伤的免赔额不超过$100 或就诊学校医务室不超过$50; 5. 含生育保险; 6. 6个月的免责期后覆盖先前的疾病。 泰安留学生保险计划A 里的先前疾病6个月免责期选项是满足此标准的最经济实惠的保险计划，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明你已购买满足学校要求的保险。";
 l['J visa scholars not enrolled in classes are not allowed to waive the school plan.'] = "非全日制上课的J1访问学者不能购买校外保险waive学校保险。";
 l['Florida International University Student Requirements'] = "Florida International University 留学生医疗保险的标准";
@@ -441,21 +425,6 @@ l['TaiAn Health Insurance for Emory University'] = "美国泰安国际医疗保�
 l['Emory University Scholar Requirements'] = "Emory University 访问学者医疗保险的标准";
 l['Health insurance for Emory University Scholars'] = "符合Emory University标准的访问学者医疗保险";
 l['Enrolled international students with J visa need to complete a waiver.  Students with other visas can not waive school plan.'] = "J1签证的国际学生需要提交 waiver 申请。持有其他签证的国际学生不能waive 学校保险。";
-l['Bellevue College Scholar Requirements'] = "Bellevue College 访问学者医疗保险的标准";
-l['Bellevue College Student Requirements'] = "Bellevue College 留学生医疗保险的标准";
-l['Health insurance for Bellevue College Students and Scholars'] = "符合Bellevue College标准的留学生和访问学者医疗保险";
-l['University of Missouri Saint Louis Scholar Requirements'] = "University of Missouri Saint Louis 访问学者医疗保险的标准";
-l['University of Missouri Saint Louis Student Requirements'] = "University of Missouri Saint Louis 留学生医疗保险的标准";
-l['Health insurance for University of Missouri Saint Louis Students and Scholars'] = "符合University of Missouri Saint Louis标准的留学生和访问学者医疗保险";
-l['Central Washington University Scholar Requirements'] = "Central Washington University 访问学者医疗保险的标准";
-l['Central Washington University Student Requirements'] = "Central Washington University 留学生医疗保险的标准";
-l['Health insurance for Central Washington University Students and Scholars'] = "符合Central Washington University标准的留学生和访问学者医疗保险";
-l['Scripps Research Institute Scholar Requirements'] = "Scripps Research Institute 访问学者医疗保险的标准";
-l['Scripps Research Institute Student Requirements'] = "Scripps Research Institute 留学生医疗保险的标准";
-l['Health insurance for Scripps Research Institute Students and Scholars'] = "符合Scripps Research Institute标准的留学生和访问学者医疗保险";
-l['Case Western Reserve Scholar Requirements'] = "Case Western Reserve 访问学者医疗保险的标准";
-l['Case Western Reserve Student Requirements'] = "Case Western Reserve 留学生医疗保险的标准";
-l['Health insurance for Case Western Reserve Scholars'] = "符合Case Western Reserve标准的访问学者医疗保险";
 l['CUNY Scholar Requirements'] = "CUNY 访问学者医疗保险的标准";
 l['CUNY Student Requirements'] = "CUNY 留学生医疗保险的标准";
 l['Health insurance for CUNY Students and Scholars'] = "符合CUNY标准的留学生和访问学者医疗保险";
@@ -463,27 +432,6 @@ l['CUNY Requirements for all CUNY schools Students and Scholars'] = "CUNY系统�
 l['CUNY School List:'] = "CUNY系统所有学校列表:";
 
 
-l['Kent State University Scholar Requirements'] = "Kent State University 访问学者医疗保险的标准";
-l['Kent State University Student Requirements'] = "Kent State University 留学生医疗保险的标准";
-l['Health insurance for Kent State University Students and Scholars'] = "符合Kent State University标准的留学生和访问学者医疗保险";
-
-
-
-l['Lehigh University Scholar Requirements'] = "Lehigh University 访问学者医疗保险的标准";
-l['Lehigh University Student Requirements'] = "Lehigh University 留学生医疗保险的标准";
-l['Health insurance for Lehigh University Students and Scholars'] = "符合Lehigh University标准的留学生和访问学者医疗保险";
-
-l['Shawnee State University Scholar Requirements'] = "Shawnee State University 访问学者医疗保险的标准";
-l['Shawnee State University Student Requirements'] = "Shawnee State University 留学生医疗保险的标准";
-l['Health insurance for Shawnee State University Students and Scholars'] = "符合Shawnee State University标准的留学生和访问学者医疗保险";
-
-l['Depaul University Scholar Requirements'] = "Depaul University 访问学者医疗保险的标准";
-l['Depaul University Student Requirements'] = "Depaul University 留学生医疗保险的标准";
-l['Health insurance for Depaul University Students and Scholars'] = "符合Depaul University标准的留学生和访问学者医疗保险";
-
-l['Murray State University Scholar Requirements'] = "Murray State University 访问学者医疗保险的标准";
-l['Murray State University Student Requirements'] = "Murray State University 留学生医疗保险的标准";
-l['Health insurance for Murray State University Students and Scholars'] = "符合Murray State University标准的留学生和访问学者医疗保险";
 l['F visa holders are required to have $100,000 of coverage. Plan C with $100,000 benefit and $500 deductible is the most affordable plan that meets the standards.'] = "F签证持有人购买校外医疗保险要求最高赔付至少为$100,000。 泰安保险计划C里的免赔额$500, 最高赔付$100,000选项是满足此标准的最经济实惠的保险计划。";
 l['Shortly after submitting an application you will receive confirmation of your coverage which you can send to Murray State University as proof of insurance.'] = "网上提交申请几分钟后你就会收到Email电子保单，其中含有你的保险卡和确认信。你可以将确认信发给学校证明你已购买满足学校要求的保险。";
 l['Murray State University requirements'] = "Murray State University 医疗保险的标准";
@@ -518,16 +466,6 @@ l['TaiAn Health Insurance for Cornell University'] = "美国泰安国际医疗�
 
 l['Cornell University Scholar Requirements'] = "Cornell University 访问学者医疗保险的标准";
 l['Health insurance for Cornell University Scholars'] = "符合Cornell University标准的访问学者医疗保险";
-l['University of Maryland Scholar Requirements'] = "University of Maryland 访问学者医疗保险的标准";
-l['University of Maryland Student Requirements'] = "University of Maryland 留学生医疗保险的标准";
-l['Health insurance for University of Maryland Students and Scholars'] = "符合University of Maryland标准的访问学者和留学生医疗保险";
-
-
-l['UMASS Boston Scholar Requirements'] = "UMASS Boston 访问学者医疗保险的标准";
-l['Health insurance for UMASS Boston Scholars'] = "符合UMASS Boston标准的访问学者医疗保险";
-
-
-
 
 
 l['University of Massachusetts - Amherst Scholar Requirements'] = "University of Massachusetts - Amherst 访问学者医疗保险的标准";
@@ -539,51 +477,14 @@ l['Health insurance for UMASS Amherst Scholars'] = "符合UMASS Amherst标准的
 l['Health insurance for UMASS Dartmouth Scholars'] = "符合UMASS Dartmouth标准的访问学者医疗保险";
 l['Health insurance for UMASS Lowell Scholars'] = "符合UMASS Lowell标准的访问学者医疗保险";
 
-l['University of Pittsburgh Scholar Requirements'] = "University of Pittsburgh 访问学者医疗保险的标准";
+
 l['Enrolled students are required to attest that they have coverage at the beginning of each fall semester.'] = "在校国际学生每年秋季学期开始时都必须证明已购买满足学校要求的保险。";
 l['Student attestation'] = "国际学生网上提交证明链结";
-l['University of Pittsburgh Student Requirements'] = "University of Pittsburgh 留学生医疗保险的标准";
-l['Health insurance for University of Pittsburgh Students and Scholars'] = "符合University of Pittsburgh标准的访问学者和留学生医疗保险";
 
-l['University of North Carolina (Chapel Hill) Scholar Requirements'] = "University of North Carolina (Chapel Hill) 访问学者医疗保险的标准";
-l['University of North Carolina (Chapel Hill) Student Requirements'] = "University of North Carolina (Chapel Hill)留学生医疗保险的标准";
-l['University of North Carolina (Charlotte) Scholar Requirements'] = "University of North Carolina (Charlotte) 访问学者医疗保险的标准";
-l['University of North Carolina (Charlotte) Student Requirements'] = "University of North Carolina (Charlotte)留学生医疗保险的标准";
-l['University of North Carolina (Greensboro) Scholar Requirements'] = "University of North Carolina (Greensboro) 访问学者医疗保险的标准";
-l['University of North Carolina (Greensboro) Student Requirements'] = "University of North Carolina (Greensboro)留学生医疗保险的标准";
-l['University of North Carolina (Wilmington) Scholar Requirements'] = "University of North Carolina (Wilmington) 访问学者医疗保险的标准";
-l['University of North Carolina (Wilmington) Student Requirements'] = "University of North Carolina (Wilmington)留学生医疗保险的标准";
-l['Health insurance for University of North Carolina (Chapel Hill) Students and Scholars'] = "符合University of North Carolina (Chapel Hill) 标准的访问学者和留学生医疗保险";
-l['Health insurance for University of North Carolina (Charlotte) Students and Scholars'] = "符合University of North Carolina (Charlotte) 标准的访问学者和留学生医疗保险";
-l['Health insurance for University of North Carolina (Greensboro) Students and Scholars'] = "符合University of North Carolina (Greensboro) 标准的访问学者和留学生医疗保险";
-l['Health insurance for University of North Carolina (Wilmington) Students and Scholars'] = "符合University of North Carolina (Wilmington) 标准的访问学者和留学生医疗保险";
+
 l['Enrolled international students need to complete an online waiver.'] = "全日制国际学生需要提交 online waiver 申请";
-l['Temple University Scholar Requirements'] = "Temple University 访问学者医疗保险的标准";
-l['Temple University Student Requirements'] = "Temple University 留学生医疗保险的标准";
-l['Health insurance for Temple University Students and Scholars'] = "符合Temple University标准的访问学者和留学生医疗保险";
-l['University of Colorado Scholar Requirements'] = "University of Colorado 访问学者医疗保险的标准";
-l['University of Colorado Student Requirements'] = "University of Colorado 留学生医疗保险的标准";
-l['Health insurance for University of Colorado Students and Scholars'] = "符合University of Colorado标准的访问学者和留学生医疗保险";
-l['University of Connecticut Scholar Requirements'] = "University of Connecticut 访问学者医疗保险的标准";
-l['University of Connecticut Student Requirements'] = "University of Connecticut 留学生医疗保险的标准";
-l['TaiAn Health Insurance for University of Connecticut'] = "美国泰安国际医疗保险 - University of Connecticut";
-l['Health insurance for University of Connecticut Students and Scholars'] = "符合University of Connecticut标准的访问学者和留学生医疗保险";
-l['Clemson University Scholar Requirements'] = "Clemson University 访问学者医疗保险的标准";
-l['Clemson University Student Requirements'] = "Clemson University 留学生医疗保险的标准";
-l['TaiAn Health Insurance for Clemson University'] = "美国泰安国际医疗保险 - Clemson University";
-l['Health insurance for Clemson University Scholars'] = "符合Clemson University标准的访问学者医疗保险";
-
-l['Claremont School of Theology Scholar Requirements'] = "Claremont School of Theology 访问学者医疗保险的标准";
-l['Claremont School of Theology Student Requirements'] = "Claremont School of Theology 留学生医疗保险的标准";
-l['TaiAn Health Insurance for Claremont School of Theology'] = "美国泰安国际医疗保险 - Claremont School of Theology";
-l['Health insurance for Claremont School of Theology Students and Scholars'] = "符合Claremont School of Theology标准的访问学者和留学生医疗保险";
-
-
 
 l['Scholar Requirements'] = "访问学者医疗保险的标准";
-l['Dartmouth College Student Requirements'] = "Dartmouth College 留学生医疗保险的标准";
-l['TaiAn Health Insurance for Dartmouth College'] = "美国泰安国际医疗保险 - Dartmouth College";
-l['Health insurance for Dartmouth College Scholars'] = "符合Dartmouth College标准的访问学者医疗保险";
 
 l['TaiAn Health Insurance for '] = "美国泰安国际医疗保险 - ";
 l['Health insurance for '] = "符合 ";
@@ -643,7 +544,6 @@ l['Health insurance for Purdue Students and Scholars'] = "符合Purdue标准的�
 l['Health insurance for UCLA Scholars'] = "符合UCLA标准的访问学者医疗保险";
 l['Health insurance for UC Davis Scholars'] = "符合UC Davis标准的访问学者医疗保险";
 l['Health Insurance for UIUC International Students and Scholars'] = "符合UIUC标准的留学生和访问学者医疗保险";
-l['Health insurance for USC Scholars'] = "符合USC标准的访问学者医疗保险";
 l['Health Insurance for　UT Austin Scholars'] = "符合UT Austin标准的访问学者医疗保险";
 l['UT Austin Scholar Requirements'] = "UT Austin访问学者医疗保险的标准";
 l['UT Austin Student Requirements'] = "UT Austin学校对留学生的要求";
@@ -736,8 +636,6 @@ l['UC Davis Scholar Requirements'] = "UC Davis访问学者医疗保险的标准"
 
 l['A few minutes after submitting an application, you will receive a confirmation letter of your coverage which you can send to UCLA to waive the school mandatory plan.'] = "网上提交申请几分钟以后，你就会收到Email，其中含有你的保险卡和确认信，您可以将确认信发送到学校要求waive学校保险。";
 l['UCLA Scholar Requirements'] = "UCLA访问学者医疗保险的标准";
-l['A few minutes after submitting an application, you will receive a confirmation letter of your coverage which you can send to USC to waive the school mandatory plan.'] = "网上提交申请几分钟以后，你就会收到Email，其中含有你的保险卡和确认信，您可以将确认信发送到学校要求waive学校保险。";
-l['USC Scholar Requirements'] = "USC访问学者医疗保险的标准";
 
 l['US Department of State Insurance Requirements for J visa'] = "美国国务院J签证医疗保险的标准";
 
@@ -790,14 +688,7 @@ l['Primary Insured-If yes, name of the program'] = "主申请人- 如果是，�
 l['Primary Insured-Are you a J2 visa holder?'] = "主申请人- 你持有J2签证吗？";
 l['Do you want optional coverage for higher risk sports?  (Most people say no)'] = "你需要购买额外的危险运动保险吗？（大多数人不需要）";
 l['Do you want the ad on benefit for loss of baggage, legal assistance, and personal liability (Most people say no)'] = "你需要附加保险包括行李丢失，法律援助和个人责任吗？（大多数人不需要）";
-l['Health insurance for Stanford University Students and Scholars'] = "符合Stanford标准的留学生和访问学者医疗保险";
-l['Stanford Scholar Requirements'] = "Stanford访问学者医疗保险的标准";
-l['Stanford Student Requirements'] = "Stanford学校对留学生的要求";
 l['Enrolled students with F or J visa are required to have additional coverage (see link below). Taian Plan A (Platinum only) meets these requirements. Shortly after submitting an application you will receive confirmation of your coverage. You will then need to submit a certification form to Stanford which we can help you with.'] = "Stanford University 对 F1 international Student 和 J1 visiting student 购买保险有更高的要求，详见下面链接“Stanford学校对留学生的要求”。泰安铂金计划A (Student Health Advantage - Platinum)是满足这些要求的最经济实惠的保险计划，同时也符合美国国务院的标准。网上提交申请几分钟后你就会收到保险确认信（Visa Letter）。然后，泰安公司可以协助你填写学校的 Waiver Form （Insurance Coverage Certification Form）。";
-l['Health insurance for Rudolf Steiner College Students and Scholars'] = "符合Rudolf Steiner College标准的留学生和访问学者医疗保险";
-l['Rudolf Steiner College Scholar Requirements'] = "Rudolf Steiner College访问学者医疗保险的标准";
-l['Rudolf Steiner College Student Requirements'] = "Rudolf Steiner College学校对留学生的要求";
-
 
 l['TaiAn Health Insurance for University of Illinois Urbana Champaign'] = "美国泰安国际医疗保险 - University of Illinois Urbana Champaign";
 l['TaiAn Health Insurance for New York University and NYU Poly'] = "美国泰安国际医疗保险 - New York University and NYU Poly";
