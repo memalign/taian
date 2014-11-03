@@ -102,7 +102,7 @@ l['$50,000, $100,000, $500,000, $1,000,000 lifetime maximum'] = "$50,000, $100,0
 l['$0, $100, $250, $500, $1,000, $2,500 annual deductible'] = "$0, $100, $250, $500, $1,000, $2,500 年度免赔额";
 
 l['To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays.'] = "为了您的最大利益,  住院治疗前应取得预认证。如果是紧急住院，也应尽早通知IMG。";
-l['Newborn care is covered for 31 days after birth if the birth is covered under the plan.'] = "计划包括新生儿出生后31天的护理。";
+l['In vitro fertilization or artificial insemination is not covered.'] = "人工授精或试管婴儿不在理赔范围内";
 
 l['Name of your prior student insurance provider (If you have been in the US 6 months or longer)?'] = "你之前的学生保险的保险公司名称（如果你一直在美国6个月或更长的时间）？";
 l['Prior coverage expiration date (If you have been in the US 6 months or longer)?'] = "之前的保险何时过期的（如果你一直在美国6个月或更长的时间）？";
@@ -129,10 +129,7 @@ l['Monthly Price for $500,000 benefit $0 deductible'] = "$500,000最高赔付和
 l['Monthly Price for $1,000,000 benefit $0 deductible'] = "$1,000,000最高赔付和 $0 免赔额的月费";
 l['Buy Patriot America Medical Insurance'] = "购买爱国者旅游医疗保险";
 
-l['TaiAn Health Insurance for University of Pennsylvania'] = "美国泰安国际医疗保险 - University of Pennsylvania";
 l['Taian Scholar/Student Insurance Plan A and Plan B meet University of Pennsylvania J scholar standards and J student standards (Not F visa student standards).  J visa holders have required coverage as follows: 1. Medical benefits of $50,000 per accident or illness; 2. Repatriation of remains of $7,500; 3. Medical evacuation of $10,000; 4. Deductible not over $500. Plan B with $50,000 benefit per illness or injury is the most affordable plan that meets the standards, and the US Department of State requirements. Shortly after submitting an application you will receive confirmation of your coverage which you can send to University of Pennsylvania as proof of insurance.'] = "University of Pennsylvania 对J1访问学者和J1国际学生（不包括F1国际学生)购买校外医疗保险的要求是：1.每次生病或受伤的最高赔付至少为$50,000；2.遗体返送$7,500; 3. 紧急救护$10,000; 4. 每次生病或受伤的免赔额不超过$500。泰安访问学者/留学生保险计划B Standard Plan 里的$50,000 per illness or injury 是满足此标准的最经济实惠的保险计划，同时也符合美国国务院的标准，详见以下链接。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。你可以将确认信发给学校证明你已购买满足学校要求的保险。";
-l['University of Pennsylvania Scholar Requirements'] = "University of Pennsylvania 访问学者医疗保险的标准";
-l['Health insurance for University of Pennsylvania Students and Scholars'] = "符合University of Pennsylvania标准的留学生和访问学者医疗保险";
 
 l['University of Hawaii F visa student insurance is approved by Student Health Insurance Office.  F visa holders have required coverage as follows: 1. Medical benefits of $100,000 per accident or illness; 2. Coinsurance coverage of 75% or more and mental nervous benefits ; 3.Repatriation of remains of $7,500; 4. Medical evacuation of $10,000; 5. Deductible not over $500; 6. Pre-existing waiting period not over 6 months.  Plan A is the most affordable plan that meets the standards. You need to select the optional rider for a 6 month pre-existing condition waiting period.'] = "F1国际学生的保险需要在Student Health Insurance Office办理waiver。F1国际学生的保险要求是： 1.每次生病或受伤的最高赔付至少为$100,000； 2. 共同保险75%并有精神健康保险； 3.遗体返送$7,500;  4. 紧急救护$10,000; 5. 每次生病或受伤的免赔额不超过$500； 6. 先前疾病的免责期不超过6个月。泰安访问学者留学生保险计划A是满足此标准的最经济实惠的保险计划，你需要选先前疾病免责期6个月的附加选项。";
 l['University of Hawaii J scholar'] = "University of HawaiiJ1 访问学者链接";
@@ -142,34 +139,12 @@ l['Health Insurance for University of Hawaii Students and Scholars'] = "符合Un
 
 l['J1 student requirement'] = "J1 国际学生保险的标准";
 l['J1 scholar requirement'] = "J1 访问学者保险的标准";
-l['University of Pennsylvania J1 student requirement'] = "University of Pennsylvania J1 国际学生保险的标准";
-l['University of Pennsylvania J1 scholar requirement'] = "University of Pennsylvania J1 访问学者保险的标准";
-l['TaiAn Health Insurance for Brown University'] = "美国泰安国际医疗保险 - Brown University";
 l['Enrolled international students have to buy Plan A to meet Brown University standards, and complete an online waiver.'] = "全日制留学生可以购买泰安访问学者/留学生保险计划A以满足学校对留学生保险的要求。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。将确认信和填写好的Waiver Form 一起发给学校要求waiver， 泰安公司可以协助填写Waiver Form.";
-l['Brown University Scholar Requirements'] = "Brown University 访问学者医疗保险的标准";
-l['Brown University Student Requirements'] = "Brown University 留学生医疗保险的标准";
-l['Health insurance for Brown University Students and Scholars'] = "符合Brown University标准的留学生和访问学者医疗保险";
 
 l['Enrolled international students have to buy Plan A to meet Syracuse University standards, and complete an online waiver.'] = "全日制留学生可以购买泰安访问学者/留学生保险计划A以满足学校对留学生保险的要求。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。将确认信和填写好的Waiver Form 一起发给学校要求waiver， 泰安公司可以协助填写Waiver Form.";
 
-l['TaiAn Health Insurance for California State University - Long Beach'] = "美国泰安国际医疗保险 - California State University - Long Beach";
-l['California State University - Long Beach Scholar Requirements'] = "California State University - Long Beach 访问学者医疗保险的标准";
-l['California State University - Long Beach does not have an online listing of J scholar insurance requirements.  We have received emails from prior customers confirming their requirements conform to US Department of State standards.'] = "California State University - Long Beach 对J签证访问学者保险没有明确要求。 该校J1访问学者购买美国国务院标准的保险都得到学校的认同。";
-l['Health insurance for California State University - Long Beach Scholars'] = "符合California State University - Long Beach标准的访问学者医疗保险";
-
-l['TaiAn Health Insurance for University of Rhode Island'] = "美国泰安国际医疗保险 - University of Rhode Island";
-l['University of Rhode Island Scholar Requirements'] = "University of Rhode Island 访问学者医疗保险的标准";
-l['Health insurance for University of Rhode Island Scholars'] = "符合University of Rhode Island标准的访问学者医疗保险";
-
-l['TaiAn Health Insurance for University of Rochester'] = "美国泰安国际医疗保险 - University of Rochester";
-l['University of Rochester Scholar Requirements'] = "University of Rochester 访问学者医疗保险的标准";
-l['Health insurance for University of Rochester Scholars'] = "符合University of Rochester标准的访问学者医疗保险";
 l['Enrolled international students have to buy Plan A (Platinum only) to meet the waiver standards, and complete an online waiver.'] = "全日制留学生可以购买泰安铂金计划A (Student Health Advantage - Platinum)以满足Waive学校保险的要求，购买后需要提交online waiver申请。";
 
-l['TaiAn Health Insurance for University of Tennessese - Knoxville'] = "美国泰安国际医疗保险 - University of Tennessese - Knoxville";
-l['University of Tennessese - Knoxville Scholar Requirements'] = "University of Tennessese - Knoxville 访问学者医疗保险的标准";
-l['University of Tennessese - Knoxville Student Requirements'] = "University of Tennessese - Knoxville 留学生医疗保险的标准";
-l['Health insurance for University of Tennessese - Knoxville Students and Scholars'] = "符合University of Tennessese - Knoxville标准的留学生和访问学者医疗保险";
 l['Enrolled international students have required coverage as follows: 1. Medical benefits of $500,000 per accident or illness; 2. Repatriation of remains of $20,000; 3. Medical evacuation of $50,000; 4. Deductible not over $500; 5. A waiting period for pre-existing conditions of less than 13 months.  Taian Scholar/Student Insurance Plan B with $500,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the standards.  Plan A does not meet the student coverage requirement.  Coverage for the fall semester must be August 1 – December 31, coverage for the spring semester must include summer and be January 1 – July 31.  You will also need to complete a waiver.'] = "全日制在校国际学生的保险要求是： 1.每次生病或受伤的最高赔付至少为$500,000; 2.遗体返送$20,000; 3.紧急救护$50,000; 4. 每次生病或受伤的免赔额不超过$500; 5.先前疾病的等待期不超过13个月。 泰安保险计划B 里的每次生病或受伤$500,000最高赔付配合三种不同免赔额选项都是满足此标准的最经济实惠的保险计划。 泰安保险计划A不能满足学校对国际学生的保险要求。 Fall semester的保险需要覆盖August 1 – December 31。 Spring semester需要包括summer覆盖January 1 – July 31。 购买成功后，需要将保险确认信和waiver form 一起发给学校, 要求waive 学校保险。";
 
 l['TaiAn Health Insurance for Washington State University'] = "美国泰安国际医疗保险 - Washington State University";
@@ -336,23 +311,9 @@ l['TaiAn Plan A meets both the Student and Scholar requirements. You need to sel
 l['Louisiana State University Scholar Requirements'] = "Louisiana State University 访问学者医疗保险的标准";
 l['Health insurance for University of Virginia Scholars'] = "符合University of Virginia标准的访问学者医疗保险";
 l['Enrolled international students are required to carry $250,000 per illness or injury, have coverage for mental nervous claims, and complete a waiver. Taian Scholar/Student Insurance Plan A is the most affordable plan that meets the standards.'] = "全日制留学生保险要求$250,000每次疾病或受伤，含有心理健康险并要求完成waiver申请。泰安访问学者/留学生保险计划A是满足这些标准的最经济实惠的保险计划。";
-l['TaiAn Health Insurance for Harvard University and Harvard Medical School'] = "美国泰安国际医疗保险 - Harvard University and Harvard Medical School";
-l['Harvard University and Harvard Medical School Scholar Requirements'] = "Harvard University and Harvard Medical School 访问学者医疗保险的标准";
-l['Health insurance for Harvard University and Harvard Medical School Scholars'] = "符合Harvard University and Harvard Medical School标准的访问学者医疗保险";
+
+
 l['Enrolled international students have to buy Plan A to meet Harvard University standards, and complete an online waiver.'] = "全日制留学生可以购买泰安访问学者/留学生保险计划A以满足学校对留学生保险的要求。 网上提交申请几分钟后你就会收到Email，其中含有你的保险卡和确认信。将确认信和填写好的Waiver Form 一起发给学校要求waiver， 泰安公司可以协助填写Waiver Form.";
-l['Harvard University and Harvard Medical School Student Requirements'] = "Harvard University and Harvard Medical School 留学生医疗保险的标准";
-
-l['Health insurance for Harvard University and Harvard Medical School Students and Scholars'] = "符合Harvard University and Harvard Medical School标准的留学生和访问学者医疗保险";
-
-
-
-
-
-l['TaiAn Health Insurance for Boston University'] = "美国泰安国际医疗保险 - Boston University";
-
-l['Boston University Scholar Requirements'] = "Boston University 访问学者医疗保险的标准";
-l['Health insurance for Boston University Scholars'] = "符合Boston University标准的访问学者医疗保险";
-
 
 l['Oakland University Scholar Requirements'] = "Oakland University 访问学者医疗保险的标准";
 l['TaiAn Health Insurance for Oakland University'] = "美国泰安国际医疗保险 - Oakland University";
@@ -366,16 +327,6 @@ l['Health insurance for Ohio University Scholars'] = "符合Ohio University标�
 l['Nova Southeastern University Scholar Requirements'] = "Nova Southeastern University 访问学者医疗保险的标准";
 l['TaiAn Health Insurance for Nova Southeastern University'] = "美国泰安国际医疗保险 - Nova Southeastern University";
 l['Health insurance for Nova Southeastern University Scholars'] = "符合Nova Southeastern University标准的访问学者医疗保险";
-
-l['TaiAn Health Insurance for Boston College'] = "美国泰安国际医疗保险 - Boston College";
-
-l['Boston College Scholar Requirements'] = "Boston College 访问学者医疗保险的标准";
-l['Health insurance for Boston College Scholars'] = "符合Boston College标准的访问学者医疗保险";
-
-l['TaiAn Health Insurance for Babson College'] = "美国泰安国际医疗保险 - Babson College";
-
-l['Babson College Scholar Requirements'] = "Babson College 访问学者医疗保险的标准";
-l['Health insurance for Babson College Scholars'] = "符合Babson College标准的访问学者医疗保险";
 
 l['TaiAn Health Insurance for University of Florida'] = "美国泰安国际医疗保险 - University of Florida";
 l['University of Florida Scholar Requirements'] = "University of Florida 访问学者医疗保险的标准";
@@ -492,8 +443,6 @@ l[' Scholars'] = " 标准的访问学者医疗保险";
 
 
 l['Enrolled international students are required to carry $250,000 per illness or injury. Taian Scholar/Student Insurance Plan B with $250,000 benefit per illness or injury is the most affordable plan that meets the standards.'] = "在校国际学生的保险需要含有$250,000 per illness or injury。 泰安访问学者/留学生保险计划B Standard Plan 里的$250,000 per illness or injury 是满足此标准的最经济实惠的保险计划。";
-l['Virginia Commonwealth Student Requirements'] = "Virginia Commonwealth 留学生医疗保险的标准";
-l['Health insurance for Virginia Commonwealth Students and Scholars'] = "符合Virginia Commonwealth University标准的访问学者和留学生医疗保险";
 
 l['TaiAn Health Insurance for Yale University'] = "美国泰安国际医疗保险 - Yale University";
 l['TaiAn Health Insurance for Massachusetts Institute of Technology (MIT)'] = "美国泰安国际医疗保险 - Massachusetts Institute of Technology (MIT)";
@@ -509,9 +458,6 @@ l['TaiAn Health Insurance for University of Miami'] = "美国泰安国际医疗�
 
 l['TaiAn Health Insurance for Louisiana State University'] = "美国泰安国际医疗保险 - Louisiana State University";
 
-l['North Carolina State University Scholar Requirements'] = "North Carolina State University 访问学者医疗保险的标准";
-l['TaiAn Health Insurance for North Carolina State University'] = "美国泰安国际医疗保险 - North Carolina State University";
-l['Health insurance for North Carolina State University Scholars'] = "符合North Carolina State University标准的访问学者医疗保险";
 l['Hospital Daily Indemnity'] = " 住院补贴";
 l['$100 per day.  10 day maximum.'] = "$100/天，最多10天";
 l['Up to $50,000 coverage ($2,500 for over 65 years old) for sudden and unexpected recurrence. Otherwise not covered.'] = "先前的疾病意外突发最高赔付$50,000(65岁以上最高赔付$2,500)。 否则不在理赔范围内。";
@@ -521,7 +467,6 @@ l['Health insurance for Columbia Scholars'] = "符合Columbia标准的访问学�
 l['Health Insurance for IU International Students and Scholars'] = "符合IU标准的留学生和访问学者医疗保险";
 l['Health Insurance for '] = "符合 ";
 l[' International Students and Scholars'] = " 标准的留学生和访问学者医疗保险";
-l['Health insurance for Virginia Tech Scholars'] = "符合Virginia Tech标准的访问学者医疗保险";
 l['Health insurance for Yale University International Students and Scholars'] = "符合Yale University标准的留学生和访问学者医疗保险";
 l['Health Insurance for IUPUI International Students and Scholars'] = "符合IUPUI标准的留学生和访问学者医疗保险";
 l['Health insurance for NYU and NYU Poly Scholars'] = "符合NYU and NYU Poly标准的访问学者医疗保险";
@@ -1087,7 +1032,7 @@ l['No coinsurance in PPO'] = "在指定医疗网络就医，无个人赔付比�
 l['No coinsurance in PPO or out of PPO'] = "无个人赔付比例, 没有网络内外之分";
 l['Hospital Room & Board'] = "住院";
 l['Average semi-private room'] = "保证普通病房费用";
-l['Intensive Care'] = "重症监护津贴";
+l['Intensive Care'] = "重症监护";
 l['URC(Usual Reasonable and Customary)'] = "URC(通常合理的惯例的费用)";
 l['Maternity'] = "产科保险 ";
 l['URC'] = "";
@@ -1176,7 +1121,7 @@ l['Full Brochure'] = "完全手册";
 l['Buy Patriot Travel Medical Insurance'] = "购买爱国者旅游医疗保险";
 l['You have enough to worry about when you\'re traveling. Don\'t let your medical coverage be an uncertainty. Patriot International® provides coverage for U.S. citizens traveling outside the U.S. with coverage for brief returns to the U.S., while Patriot America® provides coverage for non-U.S. citizens traveling outside their home country. Both plans are available for a minimum of 5 days up to a maximum of two years.'] = "当你出游时，不要让您的医疗保险成为另一个不确定因素。爱国者国际旅游保险提供美国公民在美国以外的旅游以及简短的返回美国的保险。而爱国者美国旅游保险提供非美国公民在国外旅游的保险。这两个计划保期灵活，少至5天，多到两年。";
 l['The international medical plans offer excellent benefits and services to meet your global needs. You have access to international, multilingual customer service centers, claims administrators who process claims from all over the world, handling virtually every language and currency, and 24 hour access to highly qualified coordinators of emergency medical services and international treatment. You can also choose from a wide range of deductibles, several Maximum Limits, and you have access to more than 17,000 providers through the International Provider AccessSM (IPA) when seeking treatment outside the U.S.  You can also reduce your out-of-pocket costs when seeking treatment in the U.S. by locating providers through the independent Preferred Provider Organization.'] = "国际医疗保险计划提供良好的福利和服务，以满足您全球旅游的需求。要求索赔时你可以到国际化多语种的客户服务中心享受世界各地的索赔管理员的24小时服务。他们可以用每一种语言和货币, 高素质地处理紧急医疗和协调国际治疗。您可以选择不同的免赔额和最高赔付限额。在美国以外寻求治疗时, 通过国际Provider Access （IPA），您有17,000多个医生可以选择。在美国寻求治疗时，通过独立的首选医疗组织您还可以减少费用。 ";
-l['Routine Nursery Care: $750 maximum per period of coverage'] = "新生儿护理： $750/期";
+l['Routine Nursery Care $750 maximum for 31 days after birth if the birth is covered under the plan'] = "生产在理赔范围内时，保险包括新生儿出生后31天的常规护理$750";
 l['Emergency Room: Injury: URC; Illness resulting in hospitalization: URC; Illness without hospitalization: Subject to addtional $250 deductible'] = "急诊室： 受伤 URC； 急诊入院 URC; 门诊急诊 $250 免赔额";
 l['Physical Therapy: URC -limit once per day'] = "理疗： URC - 限于1次/天";
 l['Local Ambulance: Per injury up to $350, Per illness only if admitted in-patient up to $350'] = "救护车： $350/受伤； 入院急诊救护车每次最高$350";
@@ -1209,7 +1154,7 @@ l['Up to $50,000 medical evacuation'] = "紧急医疗救援$50,000";
 l['Up to $5,000-50,000 repatriation of remains to home country.'] = "身故遗体送返$5,000-50,000";
 l['Our highlighted example plans:'] = "范例";
 l['Global Medical (Silver Plan) $250 deductible'] = "银质计划 - 免赔额$250范例";
-l['Global Medical (Gold Plan and Gold Plus Plan) $500 deductible (See Notes below)'] = "金质计划和金加计划 - 免赔额$500范例（见下面的注释）";
+l['Global Medical (Gold Plan and Gold Plus Plan) $500 deductible (See Notes below)'] = "金质计划和金加计划 - 免赔额$500范例 （见下面的注释）";
 
 l['Global Medical (Platinum Plan) $1000 deductible'] = "铂金计划 - 免赔额$1000范例";
 l['Male'] = "男";
@@ -1226,7 +1171,10 @@ l['Lifetime Max limit'] = "最高赔付限额";
 l['$5,000,000 per individual'] = "每人$5,000,000";
 l['$8,000,000 per individual'] = "每人$8,000,000";
 l['Treatment inside the U.S.'] = "美国境内就医";
-l['Treatment outside the U.S.'] = "美国境外就医";
+l['Treatment outside the U.S. (Except Canada)'] = "美加境外就医";
+l['Treatment in Canada'] = "加拿大就医";
+l['Subject to deductible.  10% of next $5000 expenses after deductible'] = "免赔额后，自付10%共同保险至$500";
+l['Subject to deductible.  20% of next $5000 expenses after deductible'] = "免赔额后，自付20%共同保险至$1000";
 l['Subject to deductible. No coinsurance'] = "付免赔额，无个人赔付比例";
 l['Intensive care unit'] = "重症监护";
 l['$1,500/day, 180 day /event'] = "$1,500/天, 180天/次";
@@ -1316,7 +1264,7 @@ l['No coinsurance outside of U.S.'] = "美国和加拿大境外： 共同保险�
 l['In-PPO 90% to $5,000, then 100%<br />Out-PPO, 80% to $5,000 then 100%'] = "在指定医疗网络就医，免赔额后，自付10%至$500<br />在非指定医疗网络就医，免赔额后，自付20%至$1000";
 l['dependent child'] = "子女";
 l['Up to the Maximum'] = "至最高赔付限额";
-l['Hospitalization / room & board'] = "住院津贴";
+l['Hospitalization / room & board'] = "住院";
 l['Up to the Max for average semi-private room rate'] = "普通病房费用，至最高赔付限额, ";
 l['Up to the Maximum for average semi-private room rate'] = "普通病房费用，至最高赔付限额";
 l['Emergency Room'] = "急诊室";
@@ -1657,8 +1605,9 @@ l['TaiAn Patriot Exchange Group Chinese Brochure'] = "泰安团体计划B(Taian 
 l['Scholars are required to show the international office proof of coverage for the same time as their DS-2019 up to one year.'] = "学校要求访问学者购买保险的期限与其DS2019期限一致，但不需超过一年。";
 l['Select the first letter of your school name'] = "点击你校名称的首个字母快速查找";
 l['Students and scholars will need to purchase the medical evacuation and repatriation of remains benefit that is available from LSU for $16 per year in addition to our plan.'] = "LSU对访问学者和留学生保险中的medical evacuation and repatriation of remains(紧急救援和遗体返送) 有特殊要求。购买泰安保险后需要另外购买 LSU学校提供的紧急救援和遗体返送单项保险，每年$16。";
+l['Questions and Answers about Patriot Travel'] = "旅游保险常见问题解答";
+l['Enrolled international students (with F or J visa) have to buy Plan A (Platinum only) to meet the waiver standards.'] = "全日制F1/J1国际学生可以购买泰安铂金计划A (Student Health Advantage - Platinum)以满足Waive学校保险的要求.";
 l[''] = "";
-
 
 //var locLog = {};
 function loc(str) {

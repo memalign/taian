@@ -814,6 +814,9 @@ function referralSubstitution(key) {
         iusf: "partner=usf&p=pivot-international-student",
         icnusf: "l=cn&partner=usf&p=pivot-international-student", 
         
+        ifgcu: "partner=fgcu&p=pivot-international-student",
+        icnfgcu: "l=cn&partner=fgcu&p=pivot-international-student",         
+        
         utk: "partner=utk&p=pivot-home&adid=sutk",
         cnutk: "l=cn&partner=utk&p=pivot-home&adid=scnutk",   
         gcnutk: "l=cn&partner=utk&p=pivot-international-student&adid=gcnutk",
@@ -2585,7 +2588,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Babson College (MA)", "http://www.babson.edu/"),
                 makeURL("School F1 requirement", "http://www.babson.edu/student-life/health-wellness/pages/insurance-requirements.aspx"),
                 makeURL("School J1 requirement", "http://www.babson.edu/about-babson/global/mie/isss/visiting-scholars/Pages/health-insurance-requirement.aspx"),
-                makeURL("Health insurance for Babson College Scholars", "#ibabson"),                  
+                makeURL(loc("Health insurance for ") + loc("Babson College") + loc(" Scholars"), "#ibabson"),                  
                 
                 makeURL("Baruch College, CUNY (NY)", "http://www.baruch.cuny.edu/"),
                 makeURL("School F1 requirement", "http://www.baruch.cuny.edu/studentaffairs/healthServices_ins.htm"),
@@ -2605,12 +2608,12 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Boston College (MA)", "http://www.bc.edu/"),
                 makeURL("School F1 requirement", "http://www.bc.edu/content/bc/offices/oiss/incoming/pre/health.html"),
                 makeURL("School J1 requirement", "http://www.bc.edu/content/bc/offices/oiss/scholars/department.html"),
-                makeURL("Health insurance for Boston College Scholars", "#ibc"),                
+                makeURL(loc("Health insurance for ") + loc("Boston College") + loc(" Scholars"), "#ibc"),                
                 
                 makeURL("Boston University (MA)", "http://www.bu.edu/"),
                 makeURL("School F1 requirement", "http://www.bu.edu/studentaccountingservices/resources/medical-insurance/"),
                 makeURL("School J1 requirement", "http://www.bu.edu/isso/students/current/j1/status/health-insurance.html"),
-                makeURL("Health insurance for Boston University Scholars", "#ibu"),                            
+                makeURL(loc("Health insurance for ") + loc("Boston University") + loc(" Scholars"), "#ibu"),                            
                 
                 makeURL("Brandeis University (MA)", "http://www.brandeis.edu/"),
                 makeURL("School F1 requirement", "http://heller.brandeis.edu/admissions/admitted-students/grad-selection-form-8-2011.pdf"),
@@ -2635,7 +2638,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Brown University (RI)", "http://www.brown.edu/"),
                 makeURL("School F1 requirement", "http://www.universityhealthplans.com/letters/letter.cgi?school_id=165"),
                 makeURL("School J1 requirement", "http://brown.edu/Administration/OISSS/scholars/docs/J1_health_insurance_memo.pdf"),
-                makeURL("Health insurance for Brown University Students and Scholars", "#ibrown"),
+                makeURL(loc("Health insurance for ") + loc("Brown University") + loc(" International Students and Scholars"), "#ibrown"),
                 
                 makeURL("California Institute of Technology (CA)", "http://www.caltech.edu/"),
                 makeURL("School F1 requirement", "http://benefits.caltech.edu/SiteDocuments/WaiverRequirements.pdf"),
@@ -2645,7 +2648,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("California State University - Long Beach (CA)", "http://www.csulb.edu/"),
                 makeURL("School F1 requirement", "http://www.ccpe.csulb.edu/international/visitor.aspx?pID=63"),
                 makeURL("School J1 requirement", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/"),
-                makeURL("Health insurance for California State University - Long Beach Scholars", "#icsulb"),                
+                makeURL(loc("Health insurance for ") + loc("California State University - Long Beach") + loc(" Scholars"), "#icsulb"),                
                 
                 makeURL("California State University - Sacramento (CA)", "http://www.csus.edu/"),
                 makeURL("School F1 requirement", "http://www.csus.edu/oge/international-students/newly%20admitted%20students/New-Intl-Health.html"),
@@ -2798,7 +2801,12 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School F1 requirement", "http://www.fau.edu/shs/PDFs/Alternate_Insurance_Form_2014_2015.pdf"),
                 makeURL("School J1 requirement", "http://www.fau.edu/isss/pdf/INSURANCE_COMPLIANCE_FORM_FOR_J_Exhange_VIsitors_Formfill.pdf"),
                 makeURL("Health insurance for Florida Atlantic University Students and Scholars", "#ifau"),                
-                               
+
+                makeURL("Florida Gulf Coast University (FL)", "http://www.fgcu.edu"),
+                makeURL("School F1 requirement", "http://www.fgcu.edu/International/Information/MedicalInsuranceCompliance_3pg_form_090413.pdf"),
+                makeURL("School J1 requirement", "http://www.fgcu.edu/International/Information/Sickness_and_Accident_Insurance_Verification_Form_2013.pdf"),
+                makeURL(loc("Health insurance for ") + loc("Florida Gulf Coast University") + loc(" International Students and Scholars"), "#ifgcu"),
+                
                 makeURL("Florida International University (FL)", "https://www.fiu.edu/"),
                 makeURL("School F1 requirement", "http://studenthealth.fiu.edu/_assets/docs/Forms/Insurance%20Forms/Alternate%20Insurance%20Compliance%20Form%202013%20to%202014.pdf"),
                 makeURL("School J1 requirement", "http://isss.fiu.edu/j1scholars_health.htm"),
@@ -2852,7 +2860,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Harvard University and Harvard Medical School(MA)", "http://www.harvard.edu/"),
                 makeURL("School F1 requirement", "http://hushp.harvard.edu/waiver-checklist"),
                 makeURL("School J1 requirement", "http://hio.harvard.edu/health-care-scholars"),
-                makeURL("Health insurance for Harvard University and Harvard Medical School Students and Scholars", "#iharvard"),
+                makeURL(loc("Health insurance for ") + loc("Harvard University and Harvard Medical School") + loc(" International Students and Scholars"), "#iharvard"),
 
                 makeURL("Hostos Community College, CUNY (NY)", "http://www.hostos.cuny.edu/"),
                 makeURL("School F1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
@@ -3034,7 +3042,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("North Carolina State University (NC)", "http://www.ncsu.edu/"),
                 makeURL("School F1 requirement", " http://healthcenter.ncsu.edu/insurance/"),
                 makeURL("School J1 requirement", "http://www.ncsu.edu/ois/research/j1require.php"),
-                makeURL("Health insurance for North Carolina State University Scholars", "#incsu"),
+                makeURL(loc("Health insurance for ") + loc("North Carolina State University") + loc(" Scholars"), "#incsu"),
 
                 makeURL("Northeastern State University (OK)", "http://www.nsuok.edu/"),
                 makeURL("School F1 requirement", "http://offices.nsuok.edu/studentaffairs/StudentHealthServices/ForParents.aspx"),
@@ -3612,7 +3620,7 @@ function writeSectionForSchoolWaiverRequirements() {
                         makeURL("J1 scholar requirement", 
                         "http://global.upenn.edu/isss/j1scholar")
                         ]),           
-                makeURL("Health insurance for University of Pennsylvania Students and Scholars", "#iuop"),
+                makeURL(loc("Health insurance for ") + loc("University of Pennsylvania") + loc(" International Students and Scholars"), "#iuop"),
                 
                 makeURL("University of Pittsburgh (PA)", "http://www.pitt.edu/"),
                 makeURL("School F1 requirement", "http://www.ois.pitt.edu/immigration-related-stuff/health-insurance/#student"),
@@ -3622,12 +3630,12 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("University of Rhode Island (RI)", "http://www.uri.edu/"),
                 makeURL("School F1 requirement", "http://health.uri.edu/docs/insuranceletter.pdf"),
                 makeURL("School J1 requirement", "http://www.uri.edu/iss/PDF/j%20insurance%20info.pdf"),
-                makeURL("Health insurance for University of Rhode Island Scholars", "#iuri"),
+                makeURL(loc("Health insurance for ") + loc("University of Rhode Island") + loc(" Scholars"), "#iuri"),
                 
                 makeURL("University of Rochester (NY)", "http://www.rochester.edu/"),
                 makeURL("School F1 requirement", "http://www.rochester.edu/uhs/studentinsurance/files/WaiverCriteria2014.pdf"),
                 makeURL("School J1 requirement", "http://www.iso.rochester.edu/employment/scholars/insurance.html"),
-                makeURL("Health insurance for University of Rochester Scholars", "#irochester"),
+                makeURL(loc("Health insurance for ") + loc("University of Rochester") + loc(" Scholars"), "#irochester"),
                 
                 makeURL("University of South Carolina - Columbia (SC)", "http://www.sc.edu/"),
                 makeURL("School F1 requirement", "http://www.sa.sc.edu/shs/billing/insurance/"),
@@ -3647,7 +3655,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("University of Tennessee - Knoxville (TN)", "http://www.utk.edu/"),
                 makeURL("School F1 requirement", "http://studenthealth.utk.edu/insrec_intl.php"),
                 makeURL("School J1 requirement", "http://international.utk.edu/health-insurance-information/scholars-2/"),
-                makeURL("Health insurance for University of Tennessese - Knoxville Students and Scholars", "#iutk"),
+                makeURL(loc("Health insurance for ") + loc("University of Tennessee - Knoxville") + loc(" International Students and Scholars"), "#iutk"),
                 
                 makeURL("University of Texas - Austin (TX)", "http://www.utexas.edu/"),
                 makeURL("School F1 requirement", "http://world.utexas.edu/forms/isss/PVT_Waiver.pdf"),
@@ -3771,12 +3779,12 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Virginia Commonwealth University (VA)", "http://www.vcu.edu/"),
                 makeURL("School F1 requirement", "http://www.global.vcu.edu/students/connections/started/insurance.html"),
                 makeURL("School J1 requirement", "http://www.global.vcu.edu/pdf/immigration/j1/J-1_Health_Insurance_Requirements.pdf"),
-                makeURL("Health insurance for Virginia Commonwealth Students and Scholars", "#ivcu"),
+                makeURL(loc("Health insurance for ") + loc("Virginia Commonwealth University") + loc(" International Students and Scholars"), "#ivcu"),
                 
                 makeURL("Virginia Tech (VA)", "http://www.vt.edu/"),
                 makeURL("School F1 requirement", "http://www.co.vt.edu/Risk/studenthealthinsr/Aetna/2014-2015/2014-2015_International_Waiver.pdf"),
                 makeURL("School J1 requirement", "http://www.iss.vt.edu/index.php/foreign-national/j-1/health-insurance"),
-                makeURL("Health insurance for Virginia Tech Scholars", "#ivt")
+                makeURL(loc("Health insurance for ") + loc("Virginia Tech") + loc(" Scholars"), "#ivt")
 
 
                 
@@ -4089,8 +4097,8 @@ function writeSections(legacy) {
                 "Plan Highlights",
                 makeBulletedListWithTitle("", [
                         "On the Plan A effective date you need to have a valid J1/F1 visa and be outside of your home country for your study or program.  Taian Plan A covers maternity only if the pregnancy begins after the plan is effective.",
-                        "Routine Nursery Care: $750 maximum per period of coverage",
-                        "Newborn care is covered for 31 days after birth if the birth is covered under the plan.",                        
+                        "Routine Nursery Care $750 maximum for 31 days after birth if the birth is covered under the plan",
+                        "In vitro fertilization or artificial insemination is not covered.",                        
                         "Emergency Room: Injury: URC; Illness resulting in hospitalization: URC; Illness without hospitalization: Subject to addtional $250 deductible",
                         "Physical Therapy: URC -limit once per day",
                         "Standard Plan Local Ambulance: Per injury up to $350, Per illness only if admitted in-patient up to $350",
@@ -4347,8 +4355,8 @@ function writeSections(legacy) {
                 "Plan Highlights",
                 makeBulletedListWithTitle("", [
                         "On the Plan A effective date you need to have a valid J1/F1 visa and be outside of your home country for your study or program.  Taian Plan A covers maternity only if the pregnancy begins after the plan is effective.",
-                        "Routine Nursery Care: $750 maximum per period of coverage",
-                        "Newborn care is covered for 31 days after birth if the birth is covered under the plan.",                        
+                        "Routine Nursery Care $750 maximum for 31 days after birth if the birth is covered under the plan",
+                        "In vitro fertilization or artificial insemination is not covered.",                        
                         "Emergency Room: Injury: URC; Illness resulting in hospitalization: URC; Illness without hospitalization: Subject to addtional $250 deductible",
                         "Physical Therapy: URC -limit once per day",
                         "Standard Plan Local Ambulance: Per injury up to $350, Per illness only if admitted in-patient up to $350",
@@ -4605,8 +4613,8 @@ function writeSections(legacy) {
                 "Plan Highlights",
                 makeBulletedListWithTitle("", [
                         "On the Plan A effective date you need to have a valid J1/F1 visa and be outside of your home country for your study or program.  Taian Plan A covers maternity only if the pregnancy begins after the plan is effective.",
-                        "Routine Nursery Care: $750 maximum per period of coverage",
-                        "Newborn care is covered for 31 days after birth if the birth is covered under the plan.",                        
+                        "Routine Nursery Care $750 maximum for 31 days after birth if the birth is covered under the plan",
+                        "In vitro fertilization or artificial insemination is not covered.",                        
                         "Emergency Room: Injury: URC; Illness resulting in hospitalization: URC; Illness without hospitalization: Subject to addtional $250 deductible",
                         "Physical Therapy: URC -limit once per day",
                         "Standard Plan Local Ambulance: Per injury up to $350, Per illness only if admitted in-patient up to $350",
@@ -4756,7 +4764,7 @@ function writeSections(legacy) {
             "",
             makeResourceCenterURL(loc("Questions and Answers about Plan A"),"pivot-qanda-plana"),
             makeResourceCenterURL(loc("Questions and Answers about Plan B"),"pivot-qanda-planb"),
-            ""  
+            makeResourceCenterURL(loc("Questions and Answers about Patriot Travel"),"pivot-qanda-travel")  
            
 
             ])
@@ -4782,8 +4790,8 @@ function writeSections(legacy) {
                 "Plan Highlights",
                 makeBulletedListWithTitle("", [
                         "On the Plan A effective date you need to have a valid J1/F1 visa and be outside of your home country for your study or program.  Taian Plan A covers maternity only if the pregnancy begins after the plan is effective.",
-                        "Routine Nursery Care: $750 maximum per period of coverage",
-                        "Newborn care is covered for 31 days after birth if the birth is covered under the plan.",                        
+                        "Routine Nursery Care $750 maximum for 31 days after birth if the birth is covered under the plan",
+                        "In vitro fertilization or artificial insemination is not covered.",                        
                         "Emergency Room: Injury: URC; Illness resulting in hospitalization: URC; Illness without hospitalization: Subject to addtional $250 deductible",
                         "Physical Therapy: URC -limit once per day",
                         "Standard Plan Local Ambulance: Per injury up to $350, Per illness only if admitted in-patient up to $350",
@@ -5210,7 +5218,7 @@ function writeSections(legacy) {
             "",
             makeResourceCenterURL(loc("Questions and Answers about Plan B"),"pivot-qanda-planb"),
             makeResourceCenterURL(loc("Questions and Answers about Plan B"),"pivot-qanda-planb"),
-            ""  
+            makeResourceCenterURL(loc("Questions and Answers about Patriot Travel"),"pivot-qanda-travel")  
 
            
 
@@ -5336,7 +5344,8 @@ function writeSections(legacy) {
             "Family Deductible", "3 times the individual", "3 times the individual", "2 times the individual", 
             "Lifetime Max limit", "$5,000,000 per individual",  "$5,000,000 per individual", "$8,000,000 per individual", 
             "Treatment inside the U.S.", "In-PPO: deductible 50% waived (up to $2500). No coinsurance.<br />Non-PPO: 20% of next $5000 expenses after deductible", "In-PPO: deductible 50% waived (up to $2500). No coinsurance.<br />Non-PPO: 20% of next $5000 expenses after deductible", "In-PPO: deductible 50% waived (up to $2500). No coinsurance<br />Non-PPO: 10% of next $5000 expenses after deductible",
-            "Treatment outside the U.S.", "Subject to deductible. No coinsurance", "Subject to deductible. No coinsurance", "Subject to deductible. No coinsurance",
+            "Treatment outside the U.S. (Except Canada)", "Subject to deductible. No coinsurance", "Subject to deductible. No coinsurance", "Subject to deductible. No coinsurance",
+            "Treatment in Canada", "Subject to deductible.  20% of next $5000 expenses after deductible", "Subject to deductible.  20% of next $5000 expenses after deductible", "Subject to deductible.  10% of next $5000 expenses after deductible",
             "Intensive care unit", "$1,500/day, 180 day /event", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)",
             "Hospitalization/room & board", "In U.S. average semi-private room rate. Outside of U.S. URC of private room rate (not exceed 150% semi-private). All subject to $600/day, 240 day max", "In U.S. average semi-private room rate. Outside of U.S. URC of private room rate (not exceed 150% semi-private).", "Private room rate",
             "Emergency Room", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization",
@@ -5665,7 +5674,10 @@ function writeSections(legacy) {
                 "", 
 
                 makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
-                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699")
+                makeBuyURL(loc("Buy Group (10% off)")+ "<br />" + loc("Group for 5 or more"), "https://purchase.imglobal.com/Quote/patriot_group/pre-quote?imgac=80000699"),
+                "",
+                makeResourceCenterURL(loc("Questions and Answers about Patriot Travel"),"pivot-qanda-travel"),
+                makeResourceCenterURL(loc("Questions and Answers about Patriot Travel"),"pivot-qanda-travel")
                 ]));
     endRow();
 
