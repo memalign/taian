@@ -1,4 +1,10 @@
 <?
+
+$bannedIPs = "65.208.151.";
+if ( strncmp($_SERVER["REMOTE_ADDR"], $bannedIPs, strlen($bannedIPs)) === 0 ) {
+    return;
+}
+
 $message = "Form submission from ".$_SERVER["REMOTE_ADDR"]."\n";
 $message .= "Form name: ".$_POST["formName"]."\n";
 $message .= "Partner ID: ".$_POST["partnerID"]."\n";
