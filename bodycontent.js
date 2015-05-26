@@ -110,7 +110,8 @@ function referralSubstitution(key) {
         knl: "l=cn&p=pivot-school-waiver&adid=knl",  
         wshsa: "l=cn&p=pivot-school-waiver&adid=wshsa", 
         wshsb: "l=cn&p=pivot-international-student&adid=wshsb",  
-        lwd: "l=cn&p=pivot-international-student&adid=lwd",         
+        lwd: "l=cn&p=pivot-international-student&adid=lwd", 
+        tgi: "l=cn&p=pivot-international-student&adid=tgi",        
         
         awinsurance: "l=cn&partner=awinsurance&p=pivot-international-student&adid=awinsurance",        
         
@@ -350,10 +351,10 @@ function referralSubstitution(key) {
         
         uom: "partner=uom&p=pivot-home&adid=suom",
         cnuom: "l=cn&partner=uom&p=pivot-home&adid=scnuom",   
-        gcnuom: "l=cn&partner=uom&p=pivot-international-studentandscholar&adid=gcnuom",
-        guom: "partner=uom&p=pivot-international-studentandscholar&adid=guom",
-        acnuom: "l=cn&partner=uom&p=pivot-international-studentandscholar&adid=acnuom",  
-        iuom: "partner=uom&p=pivot-international-studentandscholar",
+        gcnuom: "l=cn&partner=uom&p=pivot-international-student&adid=gcnuom",
+        guom: "partner=uom&p=pivot-international-student&adid=guom",
+        acnuom: "l=cn&partner=uom&p=pivot-international-student&adid=acnuom",  
+        iuom: "partner=uom&p=pivot-international-student",
         upitt: "partner=upitt&p=pivot-home&adid=supitt",
         cnupitt: "l=cn&partner=upitt&p=pivot-home&adid=scnupitt",   
         gcnupitt: "l=cn&partner=upitt&p=pivot-international-studentandscholar&adid=gcnupitt",
@@ -418,11 +419,11 @@ function referralSubstitution(key) {
         
         uthscsa: "partner=uthscsa&p=pivot-home&adid=suthscsa",
         cnuthscsa: "l=cn&partner=uthscsa&p=pivot-home&adid=scnuthscsa",   
-        gcnuthscsa: "l=cn&partner=uthscsa&p=pivot-international-studentandscholar&adid=gcnuthscsa",
-        guthscsa: "partner=uthscsa&p=pivot-international-studentandscholar&adid=guthscsa",
-        acnuthscsa: "l=cn&partner=uthscsa&p=pivot-international-studentandscholar&adid=acnuthscsa", 
-        iuthscsa: "partner=uthscsa&p=pivot-international-studentandscholar",
-        icnuthscsa: "l=cn&partner=uthscsa&p=pivot-international-studentandscholar",     
+        gcnuthscsa: "l=cn&partner=uthscsa&p=pivot-international-student&adid=gcnuthscsa",
+        guthscsa: "partner=uthscsa&p=pivot-international-student&adid=guthscsa",
+        acnuthscsa: "l=cn&partner=uthscsa&p=pivot-international-student&adid=acnuthscsa", 
+        iuthscsa: "partner=uthscsa&p=pivot-international-student",
+        icnuthscsa: "l=cn&partner=uthscsa&p=pivot-international-student",     
 
         utmb: "partner=utmb&p=pivot-home&adid=sutmb",
         cnutmb: "l=cn&partner=utmb&p=pivot-home&adid=scnutmb",   
@@ -442,19 +443,19 @@ function referralSubstitution(key) {
 
         utpa: "partner=utpa&p=pivot-home&adid=sutpa",
         cnutpa: "l=cn&partner=utpa&p=pivot-home&adid=scnutpa",   
-        gcnutpa: "l=cn&partner=utpa&p=pivot-international-studentandscholar&adid=gcnutpa",
-        gutpa: "partner=utpa&p=pivot-international-studentandscholar&adid=gutpa",
-        acnutpa: "l=cn&partner=utpa&p=pivot-international-studentandscholar&adid=acnutpa", 
-        iutpa: "partner=utpa&p=pivot-international-studentandscholar",
-        icnutpa: "l=cn&partner=utpa&p=pivot-international-studentandscholar",            
+        gcnutpa: "l=cn&partner=utpa&p=pivot-international-student&adid=gcnutpa",
+        gutpa: "partner=utpa&p=pivot-international-student&adid=gutpa",
+        acnutpa: "l=cn&partner=utpa&p=pivot-international-student&adid=acnutpa", 
+        iutpa: "partner=utpa&p=pivot-international-student",
+        icnutpa: "l=cn&partner=utpa&p=pivot-international-student",            
 
         uttyler: "partner=uttyler&p=pivot-home&adid=suttyler",
         cnuttyler: "l=cn&partner=uttyler&p=pivot-home&adid=scnuttyler",   
-        gcnuttyler: "l=cn&partner=uttyler&p=pivot-international-studentandscholar&adid=gcnuttyler",
-        guttyler: "partner=uttyler&p=pivot-international-studentandscholar&adid=guttyler",
-        acnuttyler: "l=cn&partner=uttyler&p=pivot-international-studentandscholar&adid=acnuttyler", 
-        iuttyler: "partner=uttyler&p=pivot-international-studentandscholar",
-        icnuttyler: "l=cn&partner=uttyler&p=pivot-international-studentandscholar",         
+        gcnuttyler: "l=cn&partner=uttyler&p=pivot-international-student&adid=gcnuttyler",
+        guttyler: "partner=uttyler&p=pivot-international-student&adid=guttyler",
+        acnuttyler: "l=cn&partner=uttyler&p=pivot-international-student&adid=acnuttyler", 
+        iuttyler: "partner=uttyler&p=pivot-international-student",
+        icnuttyler: "l=cn&partner=uttyler&p=pivot-international-student",         
         
         
         vt: "partner=vt&p=pivot-home&adid=svt",
@@ -653,7 +654,14 @@ function referralSubstitution(key) {
         unomahaexch: "l=cn&partner=unomaha&p=exchange-form", 
 
         iunr: "partner=unr&p=pivot-international-student",
-        icnunr: "l=cn&partner=unr&p=pivot-international-student",        
+        icnunr: "l=cn&partner=unr&p=pivot-international-student", 
+        iunh: "partner=unh&p=pivot-international-student",
+        icnunh: "l=cn&partner=unh&p=pivot-international-student",        
+        iwpi: "partner=wpi&p=pivot-international-student",
+        icnwpi: "l=cn&partner=wpi&p=pivot-international-student",
+        
+        isjsu: "partner=sjsu&p=pivot-international-student",
+        icnsjsu: "l=cn&partner=sjsu&p=pivot-international-student",          
 
         oakland: "partner=oakland&p=pivot-home&adid=soakland",
         cnoakland: "l=cn&partner=oakland&p=pivot-home&adid=scnoakland",   
@@ -709,7 +717,12 @@ function referralSubstitution(key) {
         gcnlsu: "l=cn&partner=lsu&p=pivot-international-student&adid=gcnlsu",
         glsu: "partner=lsu&p=pivot-international-student&adid=glsu",
         acnlsu: "l=cn&partner=lsu&p=pivot-international-student&adid=acnlsu", 
-        ilsu: "partner=lsu&p=pivot-international-student",        
+        ilsu: "partner=lsu&p=pivot-international-student", 
+        ilsuhsc: "partner=lsuhsc&p=pivot-international-student",
+        icnlsuhsc: "l=cn&partner=lsuhsc&p=pivot-international-student",  
+        inmu: "partner=nmu&p=pivot-international-student",
+        icnnmu: "l=cn&partner=nmu&p=pivot-international-student",         
+        
         brown: "partner=brown&p=pivot-home&adid=sbrown",
         cnbrown: "l=cn&partner=brown&p=pivot-home&adid=scnbrown",   
         gcnbrown: "l=cn&partner=brown&p=pivot-international-student&adid=gcnbrown",
@@ -822,7 +835,10 @@ function referralSubstitution(key) {
         icnusf: "l=cn&partner=usf&p=pivot-international-student", 
         
         ifgcu: "partner=fgcu&p=pivot-international-student",
-        icnfgcu: "l=cn&partner=fgcu&p=pivot-international-student",         
+        icnfgcu: "l=cn&partner=fgcu&p=pivot-international-student",
+
+        ifit: "partner=fit&p=pivot-international-student",
+        icnfit: "l=cn&partner=fit&p=pivot-international-student",        
         
         utk: "partner=utk&p=pivot-home&adid=sutk",
         cnutk: "l=cn&partner=utk&p=pivot-home&adid=scnutk",   
@@ -880,8 +896,8 @@ function referralSubstitution(key) {
         
         ilehigh: "partner=lehigh&p=pivot-international-studentandscholar",
         icnlehigh: "l=cn&partner=lehigh&p=pivot-international-studentandscholar",
-        ialfred: "partner=alfred&p=pivot-international-studentandscholar",
-        icnalfred: "l=cn&partner=alfred&p=pivot-international-studentandscholar",   
+        ialfred: "partner=alfred&p=pivot-international-student",
+        icnalfred: "l=cn&partner=alfred&p=pivot-international-student",   
         iucmerced: "partner=ucmerced&p=pivot-international-student",
         icnucmerced: "l=cn&partner=ucmerced&p=pivot-international-student", 
         inih: "partner=nih&p=pivot-international-student",
@@ -907,11 +923,11 @@ function referralSubstitution(key) {
         
         fordham: "partner=fordham&p=pivot-home&adid=sfordham",
         cnfordham: "l=cn&partner=fordham&p=pivot-home&adid=scnfordham",   
-        gcnfordham: "l=cn&partner=fordham&p=pivot-international-studentandscholar&adid=gcnfordham",
-        gfordham: "partner=fordham&p=pivot-international-studentandscholar&adid=gfordham",
-        acnfordham: "l=cn&partner=fordham&p=pivot-international-studentandscholar&adid=acnfordham", 
-        ifordham: "partner=fordham&p=pivot-international-studentandscholar",
-        icnfordham: "l=cn&partner=fordham&p=pivot-international-studentandscholar",
+        gcnfordham: "l=cn&partner=fordham&p=pivot-international-student&adid=gcnfordham",
+        gfordham: "partner=fordham&p=pivot-international-student&adid=gfordham",
+        acnfordham: "l=cn&partner=fordham&p=pivot-international-student&adid=acnfordham", 
+        ifordham: "partner=fordham&p=pivot-international-student",
+        icnfordham: "l=cn&partner=fordham&p=pivot-international-student",
         
 
         inorthwestern: "partner=northwestern&p=pivot-international-student",
@@ -937,7 +953,8 @@ function referralSubstitution(key) {
         
         inybloodcenter: "partner=nybloodcenter&p=pivot-international-student",
         icnnybloodcenter: "l=cn&partner=nybloodcenter&p=pivot-international-student",        
-
+        imines: "partner=mines&p=pivot-international-student",
+        icnmines: "l=cn&partner=mines&p=pivot-international-student",
         cuny: "partner=cuny&p=pivot-home&adid=scuny",
         cncuny: "l=cn&partner=cuny&p=pivot-home&adid=scncuny",   
         gcncuny: "l=cn&partner=cuny&p=pivot-international-studentandscholar&adid=gcncuny",
@@ -948,8 +965,15 @@ function referralSubstitution(key) {
         cunyexch: "l=cn&partner=cuny&p=exchange-form",  
 
         iparkland: "partner=parkland&p=pivot-international-studentandscholar",
-        icnparkland: "l=cn&partner=parkland&p=pivot-international-studentandscholar",        
-        
+        icnparkland: "l=cn&partner=parkland&p=pivot-international-studentandscholar", 
+        isva: "partner=sva&p=pivot-international-studentandscholar",
+        icnsva: "l=cn&partner=sva&p=pivot-international-studentandscholar",        
+        imontgomerycollege: "partner=montgomerycollege&p=pivot-international-studentandscholar",
+        icnmontgomerycollege: "l=cn&partner=montgomerycollege&p=pivot-international-studentandscholar",        
+        imiddlebury: "partner=middlebury&p=pivot-international-studentandscholar",
+        icnmiddlebury: "l=cn&partner=middlebury&p=pivot-international-studentandscholar",  
+        iacademyart: "partner=academyart&p=pivot-international-studentandscholar",
+        icnacademyart: "l=cn&partner=academyart&p=pivot-international-studentandscholar",        
 
         
         musc: "partner=musc&p=pivot-home&adid=smusc",
@@ -997,16 +1021,6 @@ function referralSubstitution(key) {
         siupui: "partner=iupui&p=pivot-international-student&adid=siupui",
         scniupui: "l=cn&partner=iupui&p=pivot-international-student&adid=scniupui",
 
-        psu: "partner=psu&p=pivot-home&adid=spsu",
-        cnpsu: "l=cn&partner=psu&p=pivot-home&adid=scnpsu",   
-        gcnpsu: "l=cn&partner=psu&p=pivot-international-student&adid=gcnpsu",
-        acnpsu: "l=cn&partner=psu&p=pivot-international-student&adid=acnpsu",        
-        gpsu: "partner=psu&p=pivot-international-student&adid=gpsu", 
-        jhmi: "partner=jhmi&p=pivot-home&adid=sjhmi",
-        cnjhmi: "l=cn&partner=jhmi&p=pivot-home&adid=scnjhmi",   
-        gcnjhmi: "l=cn&partner=jhmi&p=pivot-international-student&adid=gcnjhmi",
-        acnjhmi: "l=cn&partner=jhmi&p=pivot-international-student&adid=acnjhmi",        
-        gjhmi: "partner=jhmi&p=pivot-international-student&adid=gjhmi",         
 
         econnect: "partner=econnect",        
         iupuiexch: "l=cn&partner=iupui&p=exchange-form", 
@@ -1117,10 +1131,10 @@ function referralSubstitution(key) {
         iuta: "partner=uta&p=pivot-international-studentandscholar",
         gsu: "partner=gsu&p=pivot-home&adid=sgsu",
         cngsu: "l=cn&partner=gsu&p=pivot-home&adid=scngsu",   
-        gcngsu: "l=cn&partner=gsu&p=pivot-international-studentandscholar&adid=gcngsu",
-        acngsu: "l=cn&partner=gsu&p=pivot-international-studentandscholar&adid=acngsu",        
-        ggsu: "partner=gsu&p=pivot-international-studentandscholar&adid=ggsu",
-        igsu: "partner=gsu&p=pivot-international-studentandscholar",
+        gcngsu: "l=cn&partner=gsu&p=pivot-international-student&adid=gcngsu",
+        acngsu: "l=cn&partner=gsu&p=pivot-international-student&adid=acngsu",        
+        ggsu: "partner=gsu&p=pivot-international-student&adid=ggsu",
+        igsu: "partner=gsu&p=pivot-international-student",
         msstate: "partner=msstate&p=pivot-home&adid=smsstate",
         cnmsstate: "l=cn&partner=msstate&p=pivot-home&adid=scnmsstate",   
         gcnmsstate: "l=cn&partner=msstate&p=pivot-international-student&adid=gcnmsstate",
@@ -1144,6 +1158,9 @@ function referralSubstitution(key) {
         gbc: "partner=bc&p=pivot-international-student&adid=gbc",
         ibc: "partner=bc&p=pivot-international-student",  
         icnbc: "l=cn&partner=bc&p=pivot-international-student",
+        
+        iuwyo: "partner=uwyo&p=pivot-international-student",  
+        icnuwyo: "l=cn&partner=uwyo&p=pivot-international-student",        
         
         ufl: "partner=ufl&p=pivot-home&adid=sufl",
         cnufl: "l=cn&partner=ufl&p=pivot-home&adid=scnufl",   
@@ -1208,19 +1225,19 @@ function referralSubstitution(key) {
 
         kstate: "partner=kstate&p=pivot-home&adid=skstate",
         cnkstate: "l=cn&partner=kstate&p=pivot-home&adid=scnkstate",   
-        gcnkstate: "l=cn&partner=kstate&p=pivot-international-studentandscholar&adid=gcnkstate",
-        acnkstate: "l=cn&partner=kstate&p=pivot-international-studentandscholar&adid=acnkstate",        
-        gkstate: "partner=kstate&p=pivot-international-studentandscholar&adid=gkstate",
-        ikstate: "partner=kstate&p=pivot-international-studentandscholar", 
-        icnkstate: "l=cn&partner=kstate&p=pivot-international-studentandscholar",
+        gcnkstate: "l=cn&partner=kstate&p=pivot-international-student&adid=gcnkstate",
+        acnkstate: "l=cn&partner=kstate&p=pivot-international-student&adid=acnkstate",        
+        gkstate: "partner=kstate&p=pivot-international-student&adid=gkstate",
+        ikstate: "partner=kstate&p=pivot-international-student", 
+        icnkstate: "l=cn&partner=kstate&p=pivot-international-student",
         
 
   
 
         
 
-        iwvu: "partner=wvu&p=pivot-international-studentandscholar", 
-        icnwvu: "l=cn&partner=wvu&p=pivot-international-studentandscholar",        
+        iwvu: "partner=wvu&p=pivot-international-student", 
+        icnwvu: "l=cn&partner=wvu&p=pivot-international-student",        
         
         uconn: "partner=uconn&p=pivot-home&adid=suconn",
         cnuconn: "l=cn&partner=uconn&p=pivot-home&adid=scnuconn",   
@@ -1252,11 +1269,11 @@ function referralSubstitution(key) {
         umslexch: "l=cn&partner=umsl&p=exchange-form",        
         cwu: "partner=cwu&p=pivot-home&adid=scwu",
         cncwu: "l=cn&partner=cwu&p=pivot-home&adid=scncwu",   
-        gcncwu: "l=cn&partner=cwu&p=pivot-international-studentandscholar&adid=gcncwu",
-        acncwu: "l=cn&partner=cwu&p=pivot-international-studentandscholar&adid=acncwu",        
-        gcwu: "partner=cwu&p=pivot-international-studentandscholar&adid=gcwu",
-        icwu: "partner=cwu&p=pivot-international-studentandscholar",
-        icncwu: "l=cn&partner=cwu&p=pivot-international-studentandscholar", 
+        gcncwu: "l=cn&partner=cwu&p=pivot-international-student&adid=gcncwu",
+        acncwu: "l=cn&partner=cwu&p=pivot-international-student&adid=acncwu",        
+        gcwu: "partner=cwu&p=pivot-international-student&adid=gcwu",
+        icwu: "partner=cwu&p=pivot-international-student",
+        icncwu: "l=cn&partner=cwu&p=pivot-international-student", 
         
         scripps: "partner=scripps&p=pivot-home&adid=sscripps",
         cnscripps: "l=cn&partner=scripps&p=pivot-home&adid=scnscripps",   
@@ -1287,7 +1304,12 @@ function referralSubstitution(key) {
         acntamu: "l=cn&partner=tamu&p=pivot-international-student&adid=acntamu",        
         gtamu: "partner=tamu&p=pivot-international-student&adid=gtamu",
         itamu: "partner=tamu&p=pivot-international-student",
-        icntamu: "l=cn&partner=tamu&p=pivot-international-student",        
+        icntamu: "l=cn&partner=tamu&p=pivot-international-student",
+        ittu: "partner=ttu&p=pivot-international-student",
+        icnttu: "l=cn&partner=ttu&p=pivot-international-student",
+        isouthernct: "partner=southernct&p=pivot-international-student",
+        icnsouthernct: "l=cn&partner=southernct&p=pivot-international-student",        
+        
         uh: "partner=uh&p=pivot-home&adid=suh",
         cnuh: "l=cn&partner=uh&p=pivot-home&adid=scnuh",   
         gcnuh: "l=cn&partner=uh&p=pivot-international-student&adid=gcnuh",
@@ -1330,17 +1352,20 @@ function referralSubstitution(key) {
         isacwaldorf: "partner=sacwaldorf&p=pivot-international-scholar",
         icnsacwaldorf: "l=cn&partner=sacwaldorf&p=pivot-international-scholar",         
         
-        iuu: "partner=uu&p=pivot-international-studentandscholar",
-        icnuu: "l=cn&partner=uu&p=pivot-international-studentandscholar",        
+        iuu: "partner=uu&p=pivot-international-student",
+        icnuu: "l=cn&partner=uu&p=pivot-international-student",        
         
         imissouri: "partner=missouri&p=pivot-international-student",
         icnmissouri: "l=cn&partner=missouri&p=pivot-international-student",         
         
         isiu: "partner=siu&p=pivot-international-student",
-        icnsiu: "l=cn&partner=siu&p=pivot-international-student",        
+        icnsiu: "l=cn&partner=siu&p=pivot-international-student", 
+
+        ibsu: "partner=bsu&p=pivot-international-student",
+        icnbsu: "l=cn&partner=bsu&p=pivot-international-student",       
         
-        insuok: "partner=nsuok&p=pivot-international-student",
-        icnnsuok: "l=cn&partner=nsuok&p=pivot-international-student", 
+        insuok: "partner=nsuok&p=pivot-international-studentandscholar",
+        icnnsuok: "l=cn&partner=nsuok&p=pivot-international-studentandscholar", 
         
         icsus: "partner=csus&p=pivot-international-student",
         icncsus: "l=cn&partner=csus&p=pivot-international-student",        
@@ -1394,7 +1419,10 @@ function referralSubstitution(key) {
         icnpacificu: "l=cn&partner=pacificu&p=pivot-international-student", 
 
         iua: "partner=ua&p=pivot-international-student",
-        icnua: "l=cn&partner=ua&p=pivot-international-student",        
+        icnua: "l=cn&partner=ua&p=pivot-international-student",
+
+        ipurduecal: "partner=purduecal&p=pivot-international-student",
+        icnpurduecal: "l=cn&partner=purduecal&p=pivot-international-student",        
 
         iduke: "partner=duke&p=pivot-international-studentandscholar",
         icnduke: "l=cn&partner=duke&p=pivot-international-studentandscholar",        
@@ -2461,11 +2489,10 @@ function writeTabs() {
     var topLevelNames = { "pivot-home": "Home",
                           "pivot-international-student": "International Scholar/Student",
                           "pivot-international-scholar": "International Scholar/Student",                          
-                          "pivot-international-studentandscholar": "International Scholar/Student",
-                          "pivot-scholar-student": "International Scholar/Student",
-                          "pivot-j-scholar": "J Scholar",                          
-                          "pivot-global-medical": "Global Medical",
+                          "pivot-international-studentandscholar": "International Scholar/Student",                         
                           "pivot-travel-insurance": "Travel Insurance",
+                          "pivot-global-medical": "Global Medical",
+
                           "pivot-indiana-residents": "Indiana Residents",
 
 
@@ -2580,7 +2607,7 @@ function writeSectionForSchoolWaiverRequirements() {
 
 
     startRow();
-    writeText("Call from US - 9:00AM to 10:00PM Eastern time - Includes weekend: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time  8:30am-11:30am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>");
+    writeText("Call from US - 8:00AM to 9:00PM Eastern time: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time  8:00pm-12:00am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>");
     endRow();
 
     
@@ -2626,6 +2653,11 @@ function writeSectionForSchoolWaiverRequirements() {
     document.write(makeTable(4,
                 [
                 "School Name", "F1 Visa", "J1 Visa", "Affordable Insurance that Meets School Requirements",
+
+                makeURL("Academy of Art University (CA)", "http://www.academyart.edu/"),
+                makeURL("School F1 requirement", "http://www.academyart.edu/content/aau/en/faqs/faqs-student.html"),
+                makeURL("School J1 requirement", "http://www.academyart.edu/content/aau/en/faqs/faqs-student.html"), 
+                makeURL(loc("Health insurance for ") + loc("Academy of Art University") + loc(" International Students and Scholars"), "#iacademyart"),
                 
                 makeURL("Albert Einstein College of Medicine at YU (NY)", "http://www.einstein.yu.edu/"),
                 makeURL("School F1 requirement", "https://www.einstein.yu.edu/education/student-affairs/academic-support-counseling/personal-counseling/health-insurance.aspx"),
@@ -2640,7 +2672,7 @@ function writeSectionForSchoolWaiverRequirements() {
 
                 makeURL("Arizona State University (AZ)", "http://www.asu.edu/"),
                 makeURL("School F1 requirement", "https://students.asu.edu/internationalstudenthealth"),
-                makeURL("School J1 requirement", "https://global.asu.edu/sites/default/files/DS2019Packet.pdf"),
+                makeURL("School J1 requirement", "https://students.asu.edu/sites/default/files/j_medical_insurance_requirement_0.docx"),
                 makeURL(loc("Health insurance for ") + loc("Arizona State University") + loc(" Scholars"), "#iasu"), 
 
                 makeURL("Auburn University (AL)", "http://www.auburn.edu/"),
@@ -2652,6 +2684,12 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School F1 requirement", "http://www.babson.edu/student-life/health-wellness/pages/insurance-requirements.aspx"),
                 makeURL("School J1 requirement", "http://www.babson.edu/about-babson/global/mie/isss/visiting-scholars/Pages/health-insurance-requirement.aspx"),
                 makeURL(loc("Health insurance for ") + loc("Babson College") + loc(" Scholars"), "#ibabson"),                  
+
+                makeURL("Ball State University (IN)", "http://cms.bsu.edu/"),
+                makeURL("School F1 requirement", "http://cms.bsu.edu/about/administrativeoffices/riskmanagement/studentinsurance/studenthealthinsurance/internationalstudenthealthinsurance"),
+                makeURL("School J1 requirement", "http://cms.bsu.edu/admissions/international/internationalservices/visa-info/j1visitingscholars/healthinsurance"), 
+                makeURL(loc("Health insurance for ") + loc("Ball State University") + loc(" International Students and Scholars"), "#ibsu"),                
+
                 
                 makeURL("Baruch College, CUNY (NY)", "http://www.baruch.cuny.edu/"),
                 makeURL("School F1 requirement", "http://www.baruch.cuny.edu/studentaffairs/healthServices_ins.htm"),
@@ -2680,7 +2718,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("Boston University (MA)", "http://www.bu.edu/"),
                 makeURL("School F1 requirement", "http://www.bu.edu/studentaccountingservices/resources/medical-insurance/"),
-                makeURL("School J1 requirement", "http://www.bu.edu/isso/students/current/j1/status/health-insurance.html"),
+                makeURL("School J1 requirement", "http://www.bu.edu/isso/getting-started/medical/j-1-health-insurance/"),
                 makeURL(loc("Health insurance for ") + loc("Boston University") + loc(" Scholars"), "#ibu"),                            
                 
                 makeURL("Brandeis University (MA)", "http://www.brandeis.edu/"),
@@ -2715,7 +2753,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("California State University - Long Beach (CA)", "http://www.csulb.edu/"),
                 makeURL("School F1 requirement", "http://www.ccpe.csulb.edu/international/visitor.aspx?pID=63"),
-                makeURL("School J1 requirement", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/"),
+                makeURL("School J1 requirement", "http://www.ecfr.gov/cgi-bin/retrieveECFR?gp=1&SID=82f8d860b341376220fccdae31ad72b5&ty=HTML&h=L&r=PART&n=pt22.1.62#se22.1.62_114"),
                 makeURL(loc("Health insurance for ") + loc("California State University - Long Beach") + loc(" Scholars"), "#icsulb"),                
                 
                 makeURL("California State University - Sacramento (CA)", "http://www.csus.edu/"),
@@ -2778,6 +2816,11 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School F1 requirement", "http://www.csi.cuny.edu/studentaffairs/healthservices/insurance.html"),
                 makeURL("School J1 requirement", "http://cuny.edu/about/administration/offices/sa/services/international-students/ISinsurance.html"),
                 makeURL("Health insurance for CUNY Students and Scholars", "#icuny"),
+                
+                makeURL("Colorado School of Mines (CO)", "http://www.mines.edu/"),
+                makeURL("School F1 requirement", "http://shbp.mines.edu/"),
+                makeURL("School J1 requirement", "http://inside.mines.edu/ISSS-Info-for-Current-J-Exchange-Visitors"),
+                makeURL(loc("Health insurance for ") + loc("Colorado School of Mines") + loc(" Scholars"), "#imines"),                
  
                 makeURL("Colorado State University (CO)", "http://www.colostate.edu/"),
                 makeURL("School F1 requirement", "http://health.colostate.edu/student-health-insurance/international-student-health-insurance/"),
@@ -2791,7 +2834,7 @@ function writeSectionForSchoolWaiverRequirements() {
  
                 "Confucius Institute (World Wide)",
                 makeURL("", ""),
-                makeURL("J1 insurance requirement", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/"),
+                makeURL("J1 insurance requirement", "http://www.ecfr.gov/cgi-bin/retrieveECFR?gp=1&SID=82f8d860b341376220fccdae31ad72b5&ty=HTML&h=L&r=PART&n=pt22.1.62#se22.1.62_114"),
                 makeURL("TaiAn International Health Insurance for Confucius Institutes", "#confucius"),
                 
                 makeURL("Cornell University (NY)", "http://www.cornell.edu/"),
@@ -2838,7 +2881,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("Duke University (NC)", "http://www.duke.edu/"),
                 makeURL("School F1 requirement", "http://studentaffairs.duke.edu/studenthealth/health-insurance/waiver-criteria-review"),
-                makeURL("School J1 requirement", "http://www.visaservices.duke.edu/J_Health_Insurance.html"),
+                makeURL("School J1 requirement", "http://www.garnett-powers.com/duke/vs/"),
                 makeURL(loc("Health insurance for ") + loc("Duke University") + loc(" Scholars"), "#iduke") 
 
 
@@ -2863,7 +2906,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("Emory University (GA)", "http://www.emory.edu/"),
                 makeURL("School F1 requirement", "http://www.gs.emory.edu/financial_support/health.html"),
-                makeURL("School J1 requirement", "http://www.emory.edu/isss/scholars/maintaining_j1_status_scholars/health_insurance.html"),
+                makeURL("School J1 requirement", "http://www.emory.edu/isss/life_in_the_us/health_insurance/index.html"),
                 makeURL(loc("Health insurance for ") + loc("Emory University") + loc(" Scholars"), "#iemory"),
 
                 makeURL("Florida Atlantic University (FL)", "http://www.fau.edu/"),
@@ -2876,9 +2919,15 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School J1 requirement", "http://www.fgcu.edu/International/Information/Sickness_and_Accident_Insurance_Verification_Form_2013.pdf"),
                 makeURL(loc("Health insurance for ") + loc("Florida Gulf Coast University") + loc(" International Students and Scholars"), "#ifgcu"),
                 
+                makeURL("Florida Institute of Technology (FL)", "http://www.fit.edu/"),
+                makeURL("School F1 requirement", "http://www.fit.edu/isss/health_waiver.php"),
+                makeURL("School J1 requirement", "http://www.fit.edu/isss/j-1/health.php"),
+                makeURL(loc("Health insurance for ") + loc("Florida Institute of Technology") + loc(" Scholars"), "#ifit"),
+
+
                 makeURL("Florida International University (FL)", "https://www.fiu.edu/"),
                 makeURL("School F1 requirement", "http://studenthealth.fiu.edu/_assets/docs/Forms/Insurance%20Forms/Alternate%20Insurance%20Compliance%20Form%202013%20to%202014.pdf"),
-                makeURL("School J1 requirement", "http://isss.fiu.edu/j1scholars_health.htm"),
+                makeURL("School J1 requirement", "https://globalaffairs.fiu.edu/isss/services/j-1-health-care-insurance/"),
                 makeURL("Health insurance for Florida International University Students", "#ifiu"),
                 
                 makeURL("Florida State University (FL)", "http://www.fsu.edu/"),
@@ -2888,7 +2937,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("Fordham University (NY)", "http://www.fordham.edu/"),
                 makeURL("School F1 requirement", "http://legacy.fordham.edu/academics/office_of_the_provos/international_educat/office_for_internati/current_students/health_and_safety/health_insurance_inf/index.asp"),
-                makeURL("School J1 requirement", "http://taianfinancial.com/schoolstandards/fordham.pdf"),
+                makeURL("School J1 requirement", "http://legacy.fordham.edu/academics/office_of_the_provos/international_educat/office_for_internati/hiring_or_sponsoring/conduct_research_oth_81784.asp"),
                 makeURL(loc("Health insurance for ") + loc("Fordham University") + loc(" International Students and Scholars"), "#ifordham"),                
                 
                 makeURL("George Mason University (VA)", "http://www.gmu.edu/"),
@@ -2913,7 +2962,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("Georgia Regents University (GA)", "http://www.gru.edu/"),
                 makeURL("School F1 requirement", "http://www.gru.edu/shs/waiver.php"),
-                makeURL("School J1 requirement", "http://www.gru.edu/diversity/ipso/students/j1students.php"),
+                makeURL("School J1 requirement", "http://www.gru.edu/diversity/ipso/international/internationalscholarsj1.php"),
                 makeURL(loc("Health insurance for ") + loc("Georgia Regents University") + loc(" Scholars"), "#igru"),                
                 
                 makeURL("Georgia Southern (GA)", "www.georgiasouthern.edu/"),
@@ -2922,7 +2971,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL(loc("Health insurance for ") + loc("Georgia Southern University") + loc(" Scholars"), "#igeorgiasouthern"),                
                 
                 makeURL("Georgia State University", "http://www.gsu.edu/"),
-                makeURL("School F1 requirement", "http://isss.gsu.edu/files/2013/02/Updated-FAQ.pdf"),
+                makeURL("School F1 requirement", "http://sfs.gsu.edu/tuition-fees/student-health-insurance/waiving-ship/"),
                 makeURL("School J1 requirement", "http://isss.gsu.edu/files/2014/08/J-1-Insurance-Compliance-Form.pdf"),
                 makeURL(loc("Health insurance for ") + loc("Georgia State University") + loc(" International Students and Scholars"), "#igsu"),
                 
@@ -3000,8 +3049,8 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL(loc("Health insurance for ") + loc("Kansas State University") + loc(" Scholars"), "#ikstate"),
     
                 makeURL("Kent State University (OH)", "http://www.kent.edu"),
-                makeURL("School F1 requirement", "http://www.kent.edu/isss/futurestudents/upload/welcome-guide-aug-2013-4.pdf"),
-                makeURL("School J1 requirement", "http://www.kent.edu/isss/scholars/upload/j1-student-and-scholar-guide.pdf"),
+                makeURL("School F1 requirement", "http://www.kent.edu/globaleducation/insurance-and-immunization"),
+                makeURL("School J1 requirement", "http://www.kent.edu/globaleducation/scholars-frequently-asked-questions"),
                 makeURL(loc("Health insurance for ") + loc("Kent State University") + loc(" International Students and Scholars"), "#ikent"),                
 
                 makeURL("Kingsborough Community College, CUNY (NY)", "http://www.kbcc.cuny.edu/Pages/default.aspx"),
@@ -3027,8 +3076,14 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Louisiana State University (LSU) - Baton Rouge(LA)", "http://www.lsu.edu"),
                 makeURL("School F1 requirement", "http://international.lsu.edu/IS/current/insuranceinfo-private.php"),
                 makeURL("School J1 requirement", "http://international.lsu.edu/IS/faculty/J-1Exchange.php"),
-                makeURL(loc("Health insurance for ") + loc("Louisiana State University") + loc(" International Students and Scholars"), "#ilsu")
+                makeURL(loc("Health insurance for ") + loc("Louisiana State University") + loc(" International Students and Scholars"), "#ilsu"),
 
+                makeURL("Louisiana State University Health Science Center (LSU) - New Orleans(LA)", "http://www.lsuhsc.edu/"),
+                makeURL("School F1 requirement", "https://www.lsuhsc.edu/orgs/studenthealth/insurance/docs/LSU_Health_Brochure.pdf"),
+                makeURL("School J1 requirement", "http://www.lsuhsc.edu/administration/academic/ois/j_required_insurance.aspx"),
+                makeURL(loc("Health insurance for ") + loc("Louisiana State University") + loc(" Scholars"), "#ilsuhsc")
+                
+                
                 ]));
                 endRow();   
 
@@ -3071,7 +3126,12 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School F1 requirement", "http://oiss.isp.msu.edu/students/health/waiver.htm"),
                 makeURL("School J1 requirement", "http://oiss.isp.msu.edu/documents/scholars/DS2019_Scholar_Extension.pdf"),
                 makeURL(loc("Health insurance for ") + loc("MSU") + loc(" Scholars"), "#imsu"),                
-                
+
+                makeURL("Middlebury College (VT)", "http://www.middlebury.edu/#story471846"),
+                makeURL("School F1 requirement", "http://www.middlebury.edu/studentlife/services/health/healthtopicsa-z/insurance"),
+                makeURL("School J1 requirement", "http://www.middlebury.edu/media/view/454886/original/j-1_ev_guidelines_2013.pdf"),
+                makeURL(loc("Health insurance for ") + loc("Middlebury College") + loc(" International Students and Scholars"), "#imiddlebury"),                
+             
                 makeURL("Mississippi State University (MS)", "http://www.msstate.edu/"),
                 makeURL("School F1 requirement", "http://admissions.msstate.edu/international/apply/insurance.php"),
                 makeURL("School J1 requirement", "http://international.msstate.edu/current/services/"),
@@ -3081,7 +3141,13 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School F1 requirement", "http://international.mst.edu/insurance/policy/"),
                 makeURL("School J1 requirement", "http://international.mst.edu/insurance/policy/"),
                 makeURL(loc("Health insurance for ") + loc("Missouri University of Science and Technology") + loc(" Scholars"), "#imst"),               
-                
+ 
+                makeURL("Montgomery College (MD)", "http://cms.montgomerycollege.edu/"),
+                makeURL("School F1 requirement", "http://cms.montgomerycollege.edu/edu/department2.aspx?id=60949"),
+                makeURL("School J1 requirement", "http://cms.montgomerycollege.edu/edu/department2.aspx?id=60949"),
+                makeURL(loc("Health insurance for ") + loc("Montgomery College") + loc(" International Students and Scholars"), "#imontgomerycollege"),                
+
+ 
                 makeURL("Morgan State University (MD)", "http://www.morgan.edu/"),
                 makeURL("School F1 requirement", "https://www.formstack.com/forms/ais-msuwaiver_form__20142015"),
                 makeURL("School J1 requirement", "http://www.morgan.edu/Documents/ADMINISTRATION/Student%20Affairs/IntlServices/J1%20Insurance%20Overview.pdf"),
@@ -3095,7 +3161,7 @@ function writeSectionForSchoolWaiverRequirements() {
 
                 makeURL("National Institute of Health (MD)", "http://www.nih.gov/"),
                 makeURL("F1 requirement", "http://dis.ors.od.nih.gov/visitingprogram/04_vprequirements.html#health"),
-                makeURL("J1 requirement", "http://dis.ors.od.nih.gov/forms/NH829_6.PDF"),
+                makeURL("J1 requirement", "http://dis.ors.od.nih.gov/forms/maintainjstatus.pdf"),
                 makeURL(loc("Health insurance for ") + loc("National Institute of Health") + loc(" International Students and Scholars"), "#inih"),                   
                 
                 makeURL("New Jersey Institute of Technology (NJ)", "http://www.njit.edu/"),
@@ -3129,7 +3195,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL(loc("Health insurance for ") + loc("NYIT") + loc(" Scholars"), "#inyit"),                
                 
                 makeURL("North Carolina State University (NC)", "http://www.ncsu.edu/"),
-                makeURL("School F1 requirement", " http://healthcenter.ncsu.edu/insurance/"),
+                makeURL("School F1 requirement", "http://internationalservices.ncsu.edu/mandatory-insurance-hard-waiver-plan"),
                 makeURL("School J1 requirement", "http://internationalservices.ncsu.edu/health-insurance-healthcare-information-j-1-exchange-visitors"),
                 makeURL(loc("Health insurance for ") + loc("North Carolina State University") + loc(" Scholars"), "#incsu"),
 
@@ -3142,6 +3208,11 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School F1 requirement", "http://www.northeastern.edu/issi/insurance.html"),
                 makeURL("School J1 requirement", "http://www.northeastern.edu/issi/insurance.html"),
                 makeURL(loc("Health insurance for ") + loc("Northeastern University") + loc(" Scholars"), "#inortheastern"),
+                
+                makeURL("Northern Michigan University (MI)", "http://www.nmu.edu/"),
+                makeURL("School F1 requirement", "http://www.nmu.edu/internationalprograms/node/120"),
+                makeURL("School J1 requirement", "http://www.nmu.edu/internationalprograms/node/247#overlay-context=apply"),
+                makeURL(loc("Health insurance for ") + loc("Northern Michigan University") + loc(" Scholars"), "#inmu"),                
                 
                 makeURL("Northwest University (WA)", "http://www.northwestu.edu/"),
                 makeURL("School F1 requirement", "http://www.northwestu.edu/international/undergraduate/requirements/"),
@@ -3159,9 +3230,9 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL(loc("Health insurance for ") + loc("Nova Southeastern University") + loc(" Scholars"), "#inova"),
                 
                 makeURL("Oakland University (CA)", "https://www.oakland.edu/"),
-                makeURL("School F1 requirement", "http://www.oakland.edu/?id=23748&sid=115"),
+                makeURL("School F1 requirement", "http://www.oakland.edu/?id=31207&sid=546"),
                 makeURL("School J1 requirement", "http://www.oakland.edu/?id=29333&sid=115"),
-                makeURL(loc("Health insurance for ") + loc("Oakland University") + loc(" Scholars"), "#ioakland"),                
+                makeURL(loc("Health insurance for ") + loc("Oakland University") + loc(" Students and Scholars"), "#ioakland"),                
 
                 makeURL("Ohio University (OH)", "http://www.ohio.edu/"),
                 makeURL("School F1 requirement", "http://www.ohio.edu/isfs/arrival/livinginathens.htm#health"),
@@ -3180,7 +3251,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("Oregon State University (OR)", "http://oregonstate.edu/"),
                 makeURL("School F1 requirement", "http://studenthealth.oregonstate.edu/internationalplan"),
-                makeURL("School J1 requirement", "http://oregonstate.edu/international/sites/default/files/atosu/insurance.pdf"),
+                makeURL("School J1 requirement", "http://international.oregonstate.edu/isfs/international-scholars/j-1-exchange-visitors/health-insurance-and-care"),
                 makeURL(loc("Health insurance for ") + loc("Oregon State University") + loc(" Scholars"), "#ioregonstate"),
 
                 makeURL("Pacific Northwest National Laboratory", "http://www.pnl.gov/"),
@@ -3216,7 +3287,12 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Purdue University (IN)", "http://www.purdue.edu/"),
                 makeURL("School F1 requirement", "http://www.purdue.edu/push/insurance/waivers.shtml"),
                 makeURL("School J1 requirement", "http://www.iss.purdue.edu/Current/J1/HealthInsurance.cfm"),
-                makeURL(loc("Health insurance for ") + loc("Purdue University") + loc(" International Students and Scholars"), "#ipurdue")
+                makeURL(loc("Health insurance for ") + loc("Purdue University") + loc(" International Students and Scholars"), "#ipurdue"),
+                
+                makeURL("Purdue University - Calumet (IN)", "http://webs.purduecal.edu/"),
+                makeURL("School F1 requirement", "http://webs.purduecal.edu/intl/iss/"),
+                makeURL("School J1 requirement", "http://webs.purduecal.edu/intl/iss/"),
+                makeURL(loc("Health insurance for ") + loc("Purdue University - Calumet") + loc(" International Students and Scholars"), "#ipurduecal")                
                 
                 ]));
                 endRow();   
@@ -3283,6 +3359,11 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School J1 requirement", "http://www.isc.sdsu.edu/content/Future/HealthInsurance.html"),
                 "Consult your school about their requirements",
  
+                makeURL("San Jose State University (CA)", "http://www.sjsu.edu/"),
+                makeURL("School F1 requirement", "http://www.sjsu.edu/studyabroad/incoming_exchange_students/health_insurance_for_incoming_exchange_students/"),
+                makeURL("School J1 requirement", "http://www.sjsu.edu/isss/"),
+                makeURL(loc("Health insurance for ") + loc("San Jose State University") + loc(" International Students and Scholars"), "#isjsu"), 
+ 
                 makeURL("Scripps Research Institute (CA, FL)", "http://www.scripps.edu/"),
                 makeURL("School F1 requirement", "http://www.scripps.edu/resources/isso/"),
                 makeURL("School J1 requirement", "http://www.scripps.edu/resources/isso/evpinsurance.html"),
@@ -3293,6 +3374,11 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School J1 requirement", "http://www.shawnee.edu/offices/international-students/media/pdf/J1-QA.pdf"),
                 makeURL(loc("Health insurance for ") + loc("Shawnee State University") + loc(" International Students and Scholars"), "#ishawnee"),                
 
+                makeURL("School of Visual Arts (NY)", "http://www.sva.edu/"),
+                makeURL("School F1 requirement", "http://www.sva.edu/student-life/student-accounts/tuition-and-fees"),
+                makeURL("School J1 requirement", "https://www.google.com/url?q=http://www.sva.edu/downloadFile/j-1-exchange-visitor-health-insurance-requirement&sa=U&ei=i643VeiCGJL9oQSmg4DIDQ&ved=0CAgQFjAC&client=internal-uds-cse&usg=AFQjCNE2bT99sKIcp5436hXNJzUw_SaSlA"),
+                makeURL(loc("Health insurance for ") + loc("School of Visual Arts") + loc(" International Students and Scholars"), "#isva"),                
+                
                 makeURL("Smithsonian Institutions", "http://www.si.edu/"),
                 "",
                 makeURL("J1 requirement", "http://www.smithsonianofi.com/wp-content/uploads/2014/09/SI-AA-Handbook.pdf"), 
@@ -3303,6 +3389,11 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School J1 requirement", "http://www.semo.edu/ies/visiting_scholars.html"),
                 makeURL(loc("Health insurance for ") + loc("Southeast Missouri State University") + loc(" Scholars"), "#isemo"),                
 
+                makeURL("Southern Connecticut State University (CT)", "http://www.southernct.edu/"),
+                makeURL("School F1 requirement", "http://www.southernct.edu/offices/finance-administration/bursar/tuition-and-fees/health-insurance.html"),
+                makeURL("School J1 requirement", "http://www.southernct.edu/academics/international/1inbound/exchange/FAQs.html"),
+                makeURL(loc("Health insurance for ") + loc("Southern Connecticut State University") + loc(" International Students and Scholars"), "#isouthernct"),                
+                
                 makeURL("Southern Illinois University (IL)", "http://www.siu.edu/"),
                 makeURL("School F1 requirement", "http://cie.siu.edu/j1-exchange/index.html"),
                 makeURL("School J1 requirement", "http://cie.siu.edu/j1-exchange/index.html"),
@@ -3354,10 +3445,10 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School J1 requirement", "http://ifss.tamu.edu/J/insurance"),
                 makeURL(loc("Health insurance for ") + loc("Texas A&M") + loc(" Scholars"), "#itamu"),
                 
-                makeURL("Texas Tech University", "http://www.ttu.edu/"),
+                makeURL("Texas Tech University (TX)", "http://www.ttu.edu/"),
                 makeURL("School F1 requirement", "http://www.ttuhsc.edu/studenthealth/"),
-                makeURL("School J1 requirement", "http://www.iaff.ttu.edu/Main/ISSS/CurrentStudentscholars/JInsReqs.asp"),
-                makeURL("Plan that meets this school's standards for J scholar", "#usdos"),
+                makeURL("School J1 requirement", "http://www.depts.ttu.edu/international/isss/scholarstaff/j1exchange/j1exchins.php"),
+                makeURL(loc("Health insurance for ") + loc("Texas Tech University") + loc(" Scholars"), "#ittu"),
                 
                 makeURL("Thomas Jefferson University (PA)", "http://www.jefferson.edu/university.html"),
                 makeURL("School F1 requirement", "http://www.jefferson.edu/university/international_affairs/current/f1_student_info/Healthinsurance.html"),
@@ -3510,7 +3601,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("University of Colorado at Boulder", "http://www.colorado.edu/"),
                 makeURL("School F1 requirement", "http://www.colorado.edu/healthcenter/insurance"),
-                makeURL("School J1 requirement", "http://www.colorado.edu/oie/sites/default/files/attached-files/21%20Insurance%20Compliance%20Form.pdf"),
+                makeURL("School J1 requirement", "http://www.colorado.edu/oie/j-1-overview/j-1-health-insurance"),
                 makeURL(loc("Health insurance for ") + loc("University of Colorado - Boulder") + loc(" International Students and Scholars"), "#icolorado"),                
 
                 makeURL("University of Colorado - Denver (CO)", "http://www.ucdenver.edu"),
@@ -3520,8 +3611,8 @@ function writeSectionForSchoolWaiverRequirements() {
 
                 
                 makeURL("University of Connecticut (CT)", "http://www.uconn.edu/"),
-                makeURL("School F1 requirement", "http://www.shs.uconn.edu/insurance.html"),
-                makeURL("School J1 requirement", "http://global.uconn.edu/about/isss/visiting-scholars/insurance-requirements-for-j-1-exchange-visitors/"),
+                makeURL("School F1 requirement", "http://shs.uconn.edu/insurance-information/"),
+                makeURL("School J1 requirement", "http://isss.uconn.edu/medical-insurance/"),
                 makeURL(loc("Health insurance for ") + loc("University of Connecticut") + loc(" International Students and Scholars"), "#iuconn"),                
                 
                 makeURL("University of Dayton (OH)", "http://www.udayton.edu/"),
@@ -3541,7 +3632,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("University of Georgia (GA)", "http://www.uga.edu/"),
                 makeURL("School F1 requirement", "http://www.hr.uga.edu/mandatory-plan-waiver"),
-                makeURL("School J1 requirement", "http://issis.uga.edu/docs/Fac_Scholar_Section/Health_%20Ins_Companies_Requirements.pdf"),
+                makeURL("School J1 requirement", "http://international.uga.edu/issis/information-for-international-scholars-faculty-staff/j-1-scholars-and-faculty"),
                 makeURL(loc("Health insurance for ") + loc("University of Georgia") + loc(" International Students and Scholars"), "#iuga"),
                 
                 makeURL("University of Hawaii - Manoa (HI)", "http://www.uhm.hawaii.edu/"),
@@ -3572,12 +3663,12 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("University of Illinois, Chicago (IL)", "http://www.uic.edu/"),
                 makeURL("School F1 requirement", "https://www.google.com/url?q=http://www.obfs.uillinois.edu/common/pages/DisplayFile.aspx%3FitemId%3D929186&amp;sa=U&amp;ei=V93jT-nTAcWNmQWZ6JCSCw&amp;ved=0CAgQFjAB&amp;client=internal-uds-cse&amp;usg=AFQjCNEUIscgKqfoSRPZ3LjDurIWAfOkKQ"),
-                makeURL("School J1 requirement", "http://www.ois.uic.edu/cms/one.aspx?portalId=1138157&pageId=1143737"),
+                makeURL("School J1 requirement", "https://www.ois.uic.edu/cms/one.aspx?portalId=1581&pageId=189712"),
                 makeURL(loc("Health insurance for ") + loc("University of Illinois at Chicago") + loc(" Scholars"), "#iuic"),
                 
                 makeURL("University of Iowa (IA)", "http://www.uiowa.edu/"),
                 makeURL("School F1 requirement", "http://hr.uiowa.edu/benefits/health-insurance-undergraduate"),
-                makeURL("School J1 requirement", "http://international.uiowa.edu/international-scholars/health-insurance-requirements"),
+                makeURL("School J1 requirement", "http://international.uiowa.edu/isss/new/pre-arrival/health-insurance"),
                 "Consult your school about their requirements",
                 
                 makeURL("University of Kansas (KS)", "http://www.ku.edu/"),
@@ -3622,7 +3713,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("University of Massachusetts - Lowell (MA)", "http://www.uml.edu/"),
                 makeURL("School F1 requirement", "http://www.uml.edu/Tuition-fees/Tuition-Costs/Undergraduate-Students/Additional-Fees.aspx"),
-                makeURL("School J1 requirement", "http://www.uml.edu/ISSO/Employment/j1-training.aspx"),
+                makeURL("School J1 requirement", "http://www.uml.edu/ISSO/Non-Student-International-Scholars-Faculty.aspx"),
                 makeURL(loc("Health insurance for ") + loc("UMASS Lowell") + loc(" Scholars"), "#iumassl"),
                 
                 makeURL("University of Miami (FL)", "http://www.miami.edu/"),
@@ -3677,8 +3768,8 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("University of New Hampshire (NH)", "http://www.unh.edu/"),
                 makeURL("School F1 requirement", "http://www.unh.edu/health-services/shbp/"),
-                makeURL("School J1 requirement", "http://unh.edu/oiss/department-state-mandatory-j-1-insurance-regulations"),
-                makeURL("Plan that meets this school's standards for J scholar", "#usdos"),
+                makeURL("School J1 requirement", "http://www.unh.edu/oiss/department-state-mandatory-j-1-insurance-regulations-0"),
+                makeURL(loc("Health insurance for ") + loc("University of New Hampshire") + loc(" Scholars"), "#iunh"),
                 
                 makeURL("University of New Mexico (NM)", "http://www.unm.edu/"),
                 makeURL("School F1 requirement", "http://geo.unm.edu/health_insurance_student.html"),
@@ -3707,7 +3798,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("University of Notre Dame (IN)", "http://www.nd.edu/"),
                 makeURL("School F1 requirement", "http://uhs.nd.edu/insurance-billing/"),
-                makeURL("School J1 requirement", "https://hr.nd.edu/assets/20192/j_1_visa.pdf"),
+                makeURL("School J1 requirement", "http://hr.nd.edu/assets/56006/j1_visa_form_insurance_certification_1_.pdf"),
                 makeURL(loc("Health insurance for ") + loc("University of Notre Dame") + loc(" Scholars"), "#ind"),
                                
                 
@@ -3717,13 +3808,13 @@ function writeSectionForSchoolWaiverRequirements() {
                         makeURL("J1 student requirement", 
                         "http://hr.ou.edu/studenthealth/StudentHealthWaiver.asp"),
                         makeURL("J1 scholar requirement", 
-                        "http://hr.ou.edu/%5C/ifss/documents/J-1MedicalHealthInsuranceRequirement.pdf")
+                        "http://hr.ou.edu/IFSS/documents/J-1MedicalHealthInsuranceRequirement_004.pdf")
                         ]), 
                 makeURL(loc("Health insurance for ") + loc("University of Oklahoma") + loc(" International Students and Scholars"), "#iou"),
                 
                 makeURL("University of Oregon (OR)", "http://www.uoregon.edu/"),
                 makeURL("School F1 requirement", "https://international.uoregon.edu/sites/default/files/isss/Insurance%20waiver%20criteria%20explanation.pdf"),
-                makeURL("School J1 requirement", "http://international.uoregon.edu/sites/default/files/J-INSURANCE-REQUIREMENTS.pdf"),
+                makeURL("School J1 requirement", "http://international.uoregon.edu/node/1147"),
                 makeURL("Plan that meets this school's standards for J scholar", "#usdos"),
                 
                 makeURL("University of Pennsylvania (PA)", "http://www.upenn.edu/"),
@@ -3803,13 +3894,13 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL(loc("Health insurance for ") + loc("University of Texas - Health Center Houston") + loc(" Scholars"), "#iuth"),                
 
                 makeURL("University of Texas - Health Science Center at San Antonio (TX)", "http://uthscsa.edu/"),
-                makeURL("School F1 requirement", "http://uthscsa.edu/ois/Insurance%20Attestation.pdf"),
-                makeURL("School J1 requirement", "http://uthscsa.edu/ois/faq.asp#q2"),
+                makeURL("School F1 requirement", "http://uthscsa.edu/ois/forms/1_F/F-1_Student_Request_Form_2015.pdf"),
+                makeURL("School J1 requirement", "http://uthscsa.edu/ois/forms_masterlist.asp#anchorJ"),
                 makeURL(loc("UT Health Science Center San Antonio ") + loc("International Students and Scholar Requirements"), "#iuthscsa"),                
                 
                 makeURL("University of Texas - MD Anderson (TX)", "http://www.mdanderson.org/"),
                 makeURL("School F1 requirement", "http://www.mdanderson.org/education-and-research/education-and-training/schools-and-programs/school-of-health-professions/school-of-health-professions-student-catalog/policies-and-procedures/student-health-insurance.html"),
-                makeURL("School J1 requirement", "https://www.academichealthplans.com/uthouston/2012-2013/FAQs.php"),
+                makeURL("School J1 requirement", "http://www.mdanderson.org/education-and-research/education-and-training/trainee-and-alumni-affairs/e-forms/form---j-1-biodata.pdf"),
                 makeURL(loc("Health insurance for ") + loc("University of Texas - MD Anderson") + loc(" Scholars"), "#iutmda"),
                 
                 makeURL("University of Texas - Medical Branch at Galveston (TX)", "http://www.utmb.edu/"),
@@ -3819,7 +3910,7 @@ function writeSectionForSchoolWaiverRequirements() {
 
                 makeURL("University of Texas - Pan American (TX)", "http://www.utpa.edu/"),
                 makeURL("School F1 requirement", "http://portal.utpa.edu/utpa_main/dsa_home/oias_home/resources/insurance"),
-                makeURL("School J1 requirement", "https://portal.utpa.edu/portal/page/portal/utpa_main/daa_home/intlprograms_home/intlprg_imagesfiles/j-1_application_(rev_9-20-11_final).pdf"),
+                makeURL("School J1 requirement", "http://portal.utpa.edu/utpa_main/daa_home/intlprograms_home/intlprgs_iev/iev_forms"),
                 makeURL(loc("Health insurance for ") + loc("University of Texas - Pan American") + loc(" Scholars"), "#iutpa"),
                 
                 makeURL("University of Texas - Permian Basin (TX)", "http://www.utpb.edu/"),
@@ -3830,7 +3921,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("University of Texas - San Antonio (TX)", "https://utsa.edu/"),
                 makeURL("School F1 requirement", "http://international.utsa.edu/insurance/health-insurance-waiver/"),
-                makeURL("School J1 requirement", "http://international.utsa.edu/insurance/health-insurance-waiver/"),
+                makeURL("School J1 requirement", "http://international.utsa.edu/visas/j-1-scholar/"),
                 makeURL(loc("Health insurance for ") + loc("UT - San Antonio") + loc(" Scholars"), "#iutsa"), 
 
                 makeURL("University of Texas - Southwestern Medical Center (TX)", "http://www.utsouthwestern.edu/"),
@@ -3846,7 +3937,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("University of Toledo (OH)", "http://www.utoledo.edu"),
                 makeURL("School F1 requirement", "http://www.utoledo.edu/healthservices/student/health_insurance/Waiver_Criteria.html"),
-                makeURL("School J1 requirement", "http://www.utoledo.edu/cisp/international/ExchangeVisitors/pdfs/J-1%20Handbook.pdf"),
+                makeURL("School J1 requirement", "https://www.utoledo.edu/cisp/international/ExchangeVisitors/pdfs/Maintain%20J1.pdf"),
                 makeURL(loc("Health insurance for ") + loc("University of Toledo") + loc(" International Students and Scholars"), "#iutoledo"),                
                 
                 makeURL("University of Utah (UT)", "http://www.utah.edu/"),
@@ -3856,8 +3947,8 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 makeURL("University of Vermont (VT)", "http://www.uvm.edu/"),
                 makeURL("School F1 requirement", "http://www.uvm.edu/~CHWB/insurance/?Page=mandatory.html"),
-                makeURL("School J1 requirement", "https://www.uvm.edu/oie/?Page=services/intl_students_health.html"),
-                "Consult your school about their requirements",
+                makeURL("School J1 requirement", "http://www.uvm.edu/~oies/pdf/HealthInsuranceRequirementsandProviders.pdf"),
+                makeURL("Plan that meets this school's standards for J scholar", "#usdos"),
                 
                 makeURL("University of Virginia (VA)", "http://www.virginia.edu/"),
                 makeURL("School F1 requirement", "http://www.virginia.edu/studenthealth/insurance/HardWaiver1415.html"),
@@ -3879,6 +3970,10 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School J1 requirement", "http://taianfinancial.com/schoolstandards/UWM.png"),
                 makeURL(loc("Health insurance for ") + loc("University of Wisconsin - Milwaukee") + loc(" Scholars"), "#iuwm"),
 
+                makeURL("University of Wyoming (WY)", "http://www.uwyo.edu/"),
+                makeURL("School F1 requirement", "http://www.uwyo.edu/iss/immigration/compare-f1-j1.html"),
+                makeURL("School J1 requirement", "http://www.uwyo.edu/iss/immigration/compare-f1-j1.html"),
+                makeURL(loc("Health insurance for ") + loc("University of Wyoming") + loc(" International Students and Scholars"), "#iuwyo"),               
                 
                 makeURL("Utah State University (UT)", "http://www.usu.edu/"),
                 makeURL("School F1 requirement", "http://globalengagement.usu.edu/htm/study-abroad/incoming-students/health-insurance"),
@@ -3887,12 +3982,12 @@ function writeSectionForSchoolWaiverRequirements() {
 
                 makeURL("Vanderbilt University (TN)", "http://www.vanderbilt.edu/"),
                 makeURL("School F1 requirement", "http://www.vanderbilt.edu/isss/wp-content/uploads/HealthInsWaiverRequest.pdf"),
-                makeURL("School J1 requirement", "http://www.vanderbilt.edu/isss/financial-statements/j-1-student-intern/j-1-student-intern-orientation/"),
+                makeURL("School J1 requirement", "http://www.vanderbilt.edu/isss/coming-to-vanderbilt/health-insurance/for-scholars-and-interns/"),
                 makeURL(loc("Health insurance for ") + loc("Vanderbilt University") + loc(" Scholars"), "#ivanderbilt"),
                 
                 makeURL("Virginia Commonwealth University (VA)", "http://www.vcu.edu/"),
-                makeURL("School F1 requirement", "http://www.global.vcu.edu/students/connections/started/insurance.html"),
-                makeURL("School J1 requirement", "http://www.global.vcu.edu/pdf/immigration/j1/J-1_Health_Insurance_Requirements.pdf"),
+                makeURL("School F1 requirement", "http://www.global.vcu.edu/students/connections/started/insurance/"),
+                makeURL("School J1 requirement", "http://global.vcu.edu/students/immigration/j1/insurance/"),
                 makeURL(loc("Health insurance for ") + loc("Virginia Commonwealth University") + loc(" International Students and Scholars"), "#ivcu"),
                 
                 makeURL("Virginia Tech (VA)", "http://www.vt.edu/"),
@@ -3944,9 +4039,9 @@ function writeSectionForSchoolWaiverRequirements() {
                 "Consult your school about their requirements",
                 
                 makeURL("West Virginia University (WV)", "http://www.wvu.edu/"),
-                makeURL("School F1 requirement", "http://oiss.wvu.edu/students/current_students/health_insurance_requirements_for_all_international_students"),
-                makeURL("School J1 requirement", "http://oiss.wvu.edu/scholars/j1_scholars/international-scholar-j-1-information"),
-                makeURL(loc("Health insurance for ") + loc("West Virginia University") + loc(" International Students and Scholars"), "#iwvu"),
+                makeURL("School F1 requirement", "http://studentinsurance.wvu.edu/waiver"),
+                makeURL("School J1 requirement", "http://oiss.wvu.edu/scholars/j-1-scholars"),
+                makeURL(loc("Health insurance for ") + loc("West Virginia University") + loc(" Scholars"), "#iwvu"),
 
                 makeURL("Western University of Health Sciences (CA, OR)", "http://www.westernu.edu/"),
                     makeBulletedListWithTitle("", [
@@ -3967,6 +4062,11 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("School F1 requirement", "http://www.wm.edu/offices/healthcenter/studentinsurance/waiverinfo/index.php#International"),
                 makeURL("School J1 requirement", "http://www.wm.edu/offices/revescenter/issp/life/insurance/scholar/index.php"),
                 makeURL(loc("Health insurance for ") + loc("William & Mary") + loc(" Scholars"), "#iwm"),                
+
+                makeURL("Worcester Polytechnic Institute (MA)", "http://www.wpi.edu/"),
+                makeURL("School F1 requirement", "http://www.wpi.edu/offices/acc/student-health-insurance.html"),
+                makeURL("School J1 requirement", "http://www.wpi.edu/offices/ih/j1-status.html"),
+                makeURL(loc("Health insurance for ") + loc("Worcester Polytechnic Institute") + loc(" Scholars"), "#iwpi"),                
                 
                 makeURL("Yale University (CT)", "http://www.yale.edu/"),
                 makeURL("School F1 requirement", "http://www.yale.edu/oiss/life/practical/health/index.html"),
@@ -4031,37 +4131,87 @@ function writeSections(legacy) {
 
 
 
-    // New DOS Standards
-    startSection("pivot-new-standards", "New US Department of State J Visa Insurance Standards Effective May 15, 2015");
+ 
+
+    
+
+    
+    // International Student
+    startSection("pivot-international-student", "International Scholars and Students");
 
     startRow();
-    writeText("");   
-    endRow();   
-    writeSectionForNewDosStandards();    
-    writeSectionForNewDosStandardschart();    
-    endSection();
-    
-function writeSectionForNewDosStandards() {
-    startRow();
-    writeText("The US Department of State is changing the J visa required insurance coverage.  The new requirement will be:");
-    writeText("Benefit per illness or injury needs to increase from $50,000 to $100,000."); 
-    writeText("Repatriation of remains benefit needs to increase from $7,500 to $25,000.");
-    writeText("Medical Evacuation benefit needs to increase from $10,000 to $50,000."); 
-    writeText(""); 
-    writeText("All other current requirements are the same.");
-    writeText("This requirement is effective May 15, 2015. According to the US Department of State the first time you renew or rebuy J visa insurance on or after May 15, 2015, your coverage will need to comply with the new standard. Your school might require compliance earlier. TaiAn has the coverage you will need now. Plan B - TaiAn Patriot Exchange with $100,000 benefit per illness or injury and three deductible options meets the new standards.");
     writeText("<strong>" + makePivotURL("pivot-school-waiver", "Find your school insurance requirements and most affordable plan here") + "</strong>");
-    writeText("");
-  
-    endRow(); 
-}
-
-function writeSectionForNewDosStandardschart() {
-    startRow();
-    writeText(makeURL("NEW US Department of State Insurance Requirements for J visa", "https://www.federalregister.gov/articles/2014/10/06/2014-23510/exchange-visitor-program-general-provisions#h-22"));    
+    endRow();    
     
-    writeText("Call from US - 9:00AM to 10:00PM Eastern time - Includes weekend: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time  8:30am-11:30am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>");
+    startRow();
+    writeText("Taian International Health Insurance provides IMG International Scholar and Student Insurance for US visa holders (F1 visa, J1 visa, OPT, and M1 visa) and their dependents. Taian Insurance Plan A and Plan B meet many schools\' student insurance standards and almost every schools\' J1 scholar insurance standards and are more affordable than most school plans. All J visa holders are required to meet the US Department of State (USDOS) requirements and their school requirements for the duration of their visa. Taian Plan B with $100,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the USDOS requirements. Most schools requirements for J1 scholars are the same as the USDOS, however some schools have higher requirements. Please click the links to see your school requirements and US Department of State requirements.");
+    endRow();
+
+    var partnerShip = getPartnership(getPageAttribute("partner"));
+    var internationalStudentPartnerContent = partnerShip["internationalStudentContent"];
+    var hasIStPartnerContent = !(typeof internationalStudentPartnerContent === "undefined");
+    if (hasIStPartnerContent) {
+        internationalStudentPartnerContent();
+    }
+
+
+   
+
+
+    startRow();
+    writeText("");
+    endRow();
+    
+    startRow();
+    writeText("<strong>" + loc("If you only need medical evacuation and repatriation of remains benefits click here:") + " " + makePivotURL("pivot-sky-rescue", "Sky Rescue") + "</strong>");    
+    endRow();    
+
+    startRow();
+    writeText("We have native English and Chinese speakers to answer all of your questions.");
+    endRow();
+
+    startRow();
+    writeText("Contact us to ensure a plan meets your requirements.");
+    endRow();
+
+    startRow();
+    writeText(loc("Other plans that cover more visa types:") + " " + makePivotURL("pivot-global-medical", "Global Medical") + " " + loc("and") + " " + makePivotURL("pivot-travel-insurance", "Patriot Travel"));
+    endRow();
+
+    startRow();
+    writeText("Insurance policy is underwritten by a health insurance company that is 'A' rated by A.M.Best");
+    endRow();
+
+    writeDontSeeWhatYouNeedRow();
+    endSection();
+
+    // International Scholar
+    startSection("pivot-international-scholar", "International Scholars and Students");
+
+    startRow();
+    writeText("");
+    endRow();
+
+    var partnerShip = getPartnership(getPageAttribute("partner"));
+    var internationalScholarPartnerContent = partnerShip["internationalScholarContent"];
+    var hasIStPartnerContent = !(typeof internationalScholarPartnerContent === "undefined");
+    if (hasIStPartnerContent) {
+        internationalScholarPartnerContent();
+    }
+
+    startRow();
+    writeText("<strong>" + makePivotURL("pivot-school-waiver", "Find your school insurance requirements and most affordable plan here") + "</strong>");
+    endRow();
+   
+    startRow();
+    writeText(makeURL("US Department of State Insurance Requirements for J visa", "http://www.ecfr.gov/cgi-bin/retrieveECFR?gp=1&SID=82f8d860b341376220fccdae31ad72b5&ty=HTML&h=L&r=PART&n=pt22.1.62#se22.1.62_114"));
     endRow();   
+    
+    startRow();
+
+    writeText("Call from US - 8:00AM to 9:00PM Eastern time: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time  8:00pm-12:00am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>");
+    endRow();
+
     startRow();
     document.write(makeTable(4,
             [
@@ -4070,9 +4220,10 @@ function writeSectionForNewDosStandardschart() {
             loc(makeRawURL("Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, ", "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeRawURL("Platinum Plan A", "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
             makeRawURL("Plan B (Taian Patriot Exchange), $100 per illness deductible", "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
             makeRawURL("Plan B (Taian Patriot Exchange)- Annual Deductible<br />ONLY AVAILABLE FROM TAIAN", "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),            
+
             // Rest of the table:
             // Row 2
-            "Insurance Provider", "IMG (International Medical Group)", "IMG (International Medical Group)", "IMG (International Medical Group)",
+            "Insurance Provider", "IMG (International Medical Group)", "IMG (International Medical Group)", "IMG (International Medical Group)",            
             "Plan Type", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 5 years if initial purchase is 3 months or more.", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.",
 
             // Row 3
@@ -4095,18 +4246,18 @@ function writeSectionForNewDosStandardschart() {
             "Repatriation of remains", "$50,000", "$25,000", "$25,000",
             "Pre-existing conditions (Illness or Injury)", "Standard Plan: After 12 months of continuous coverage<br />Platinum Plan: After 6 months of continuous coverage", "After 12 months of continuous coverage", "After 12 months of continuous coverage",
             "Group Pricing", "2 or more primary insured have about 10% discount", "2 or more primary insured have about 10% discount", "2 or more primary insured have about 10% discount", 
-
+                        
             // Table within a table
             "Cost Per Month (Non-US Citizens)",
             loc("Standard Plan") +
             makeTable(4, [
                     "Age",     "F1/J1", "Spouse", "Children",
-                    "&lt; 19", "$69",   "$372",   "$79",
-                    "19-23",   "$92",   "$372",   "$79",
-                    "24-30",   "$106",  "$411",   "$79",
-                    "31-40",   "$190",  "$547",   "$79",
-                    "41-50",   "$311",  "$565",   "$79",
-                    "51-64",   "$415",  "$547",   "$79"
+                    "&lt; 19", "$69",   "$405",   "$86",
+                    "19-23",   "$92",   "$405",   "$86",
+                    "24-30",   "$106",  "$448",   "$86",
+                    "31-40",   "$190",  "$596",   "$86",
+                    "41-50",   "$311",  "$616",   "$86",
+                    "51-64",   "$415",  "$596",   "$86"
                     ]) +
             loc("<br /><br />") +                    
             loc("Platinum Plan") +
@@ -4168,293 +4319,7 @@ function writeSectionForNewDosStandardschart() {
                     "25-49",   "$76.23","$76.23",  "$58.55",
                     "50-64",   "$163.22","$163.22","$58.55"
                     ])                   
-                    + makeURL(loc("Click here for more benefit level and deductible options"),"#p=pivot-taian-patriotexchange"), 
-                    
-            "", 
-            loc(makeBuyURL(loc("Buy Plan A Standard") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeBuyURL(loc("Buy Plan A Platinum") + "<br />" + loc("Student Health Advantage"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
-            makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
-            makeBuyURL(loc("Buy Plan B") + "<br />" + loc("Taian Patriot Exchange"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),            
 
-                "", 
-            loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
-
-            makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
-            makeBuyURL(loc("Buy Group B (10% off, $39 and up)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
-            "",
-            makeResourceCenterURL(loc("Questions and Answers about Plan A"),"pivot-qanda-plana"),            
-            makeResourceCenterURL(loc("Questions and Answers about Plan B"),"pivot-qanda-planb"),
-            makeResourceCenterURL(loc("Questions and Answers about Plan B"),"pivot-qanda-planb")           
-          
-
-            ])
-            );
-    endRow();   
-    
-    startRow();
-    writeText("");
-    endRow();    
-
-    
-
-    startRow();
-    writeText("");
-    endRow();
-            
-    startRow();
-    writeText("More plan details:");
-    writeText("");
-    document.write(makeTable(2, [
-                "Plan", "More about Student Health Advantage",
-
-                "Plan Highlights",
-                makeBulletedListWithTitle("", [
-                        "On the Plan A effective date you need to have a valid J1/F1 visa and be outside of your home country for your study or program.  Taian Plan A covers maternity only if the pregnancy begins after the plan is effective.",
-                        "Routine Nursery Care $750 maximum for 31 days after birth if the birth is covered under the plan",
-                        "In vitro fertilization or artificial insemination is not covered.",                        
-                        "Emergency Room: Injury: URC; Illness resulting in hospitalization: URC; Illness without hospitalization: Subject to addtional $250 deductible",
-                        "Physical Therapy: URC -limit once per day",
-                        "Standard Plan Local Ambulance: Per injury up to $350, Per illness only if admitted in-patient up to $350",
-                        "Platinum Plan Local Ambulance: Per injury up to $750, Per illness only if admitted in-patient up to $750",
-                        "Dental: Injury due to covered accident $500; Sudden & unexpected pain $350",
-                        "Intercollegiate/Interscholastic/intramural or club sports: $5,000 per injury/illness medical expenses only",
-                        "Incidental home country coverage: up to cumulative two weeks",
-                        "Terrorism coverage: up to 50,000 lifetime maximum",
-                        "F2/J2 dependents can only purchase when the F1/J1 purchases.  Maximum limit per period of coverage and per illness maximum for dependents is $50,000 (Standard Plan A) or $100,000 (Platinum Plan A)",
-                        "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays.",                        
-                        "Standard Plan: Optional benefit change in Florida, Hawaii, Idaho, Massachusetts to shorten the preexisting condition exclusion from 12 months to 6 months. With 6 month preexisting condition benefit change there is a 10 month wait for maternity benefits."                        
-                        ]),
-
-
-                "Full Brochure", makeURL("Full Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1938&a=80000699")
-
-
-
-                ]));
-
-    endRow();
-
-    startRow();
-    writeText("");
-    document.write(makeTable(2, [
-                "Plan", "More on Taian Patriot Exchange",
-
-                "Plan Highlights",
-                makeBulletedListWithTitle("", [
-                        "Taian Patriot Exchange Plan B with $100,000 limit per illness/injury is the most affordable plan that meets the NEW US Dept of State standards for Exchange visitors (J visa) which are: At least $100,000 per illness, repatriation of remains of $25,000, Medical evacuation benefits of $50,000, and a deductible not over $500.",
-                        "J2/F2 can buy TaiAn Plan B with the F1/J1. If the J1/F1 has purchased school insurance the J2/F2 dependents can purchase TaiAn Plan B alone. If the J1/F1 has purchased TaiAn Plan B and his/her J2/F2 dependents come later, they can purchase Plan B alone for different dates.",                        
-                        "Plastic ID card (ONLY AVAILABLE FROM TAIAN) available for purchases of six months or longer",
-                        "You can select the day after you submit application or any later date as your insurance effective date.  The insurance can only be effective after you arrive in the foreign country for your exchange program.",                        
-                        "Taian Patriot Exchange Group plan available for groups of 2 or more primary applicants. Use one credit card to pay for the whole group. Use the credit card holder\'s initials as the \"Sponsoring Organization\". Use the credit card holders name as the \"Contact Name\".  Use the credit card holder's email as the group contact for the plan.",
-                        "Other available options include: travel protection for baggage and valuables, legal assistance, personal liability coverage, adventure sports coverage",
-                        "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays."
-                        ]),
-
-                "Full Brochures", 
-                makeBulletedListWithTitle("", [
-                        makeURL("Taian Patriot Exchange Full Brochure", 
-                        "http://producer.imglobal.com/producerdocuments.ashx?documentid=2857"),  
-
-                        (langIsChinese() ?  makeURL("TaiAn Patriot Exchange Chinese Brochure", "http://producer.imglobal.com/producerdocuments.ashx?documentid=2943") : ""),
-
-                        makeURL("Taian Patriot Exchange Group Full Brochure", 
-                        "http://producer.imglobal.com/producerdocuments.ashx?documentid=2858"),                        
-                        (langIsChinese() ?  makeURL("TaiAn Patriot Exchange Group Chinese Brochure", "http://producer.imglobal.com/producerdocuments.ashx?documentid=2944") + loc("<br />If Chinese version is in conflict with English one, please follow the  English one") : "")
-                        
-
-                        ])
-     
-                      
-
-
-               ]));
-
-    endRow();    
-    
-}    
-    
-
-    
-    // International Student
-    startSection("pivot-international-student", "International Scholars and Students");
-
-    startRow();
-    writeText("<strong>" + makePivotURL("pivot-school-waiver", "Find your school insurance requirements and most affordable plan here") + "</strong>");
-    endRow();    
-    
-    startRow();
-    writeText("Taian International Health Insurance provides IMG International Scholar and Student Insurance for US visa holders (F1 visa, J1 visa, OPT, and M1 visa) and their dependents. Taian Insurance Plan A and Plan B meet many schools\' student insurance standards and almost every schools\' J1 scholar insurance standards and are more affordable than most school plans. All J visa holders are required to meet the US Department of State (USDOS) requirements and their school requirements for the duration of their visa. Taian Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the USDOS requirements. Most schools requirements for J1 scholars are the same as the USDOS, however some schools have higher requirements. Please click the links to see your school requirements and US Department of State requirements. The USDOS is changing the required insurance coverage.  See link below.");
-    endRow();
-
-    var partnerShip = getPartnership(getPageAttribute("partner"));
-    var internationalStudentPartnerContent = partnerShip["internationalStudentContent"];
-    var hasIStPartnerContent = !(typeof internationalStudentPartnerContent === "undefined");
-    if (hasIStPartnerContent) {
-        internationalStudentPartnerContent();
-    }
-
-
-   
-
-
-    startRow();
-    writeText("");
-    endRow();
-    
-    startRow();
-    writeText("<strong>" + loc("If you only need medical evacuation and repatriation of remains benefits click here:") + " " + makePivotURL("pivot-sky-rescue", "Sky Rescue") + "</strong>");    
-    endRow();    
-
-    startRow();
-    writeText("We have native English and Chinese speakers to answer all of your questions.");
-    endRow();
-
-    startRow();
-    writeText("Contact us to ensure a plan meets your requirements.");
-    endRow();
-
-    startRow();
-    writeText(loc("Other plans that cover more visa types:") + " " + makePivotURL("pivot-global-medical", "Global Medical") + " " + loc("and") + " " + makePivotURL("pivot-travel-insurance", "Patriot Travel"));
-    endRow();
-
-    startRow();
-    writeText("Insurance policy is underwritten by a health insurance company that is 'A' rated by A.M.Best");
-    endRow();
-
-    writeDontSeeWhatYouNeedRow();
-    endSection();
-
-    // International Scholar
-    startSection("pivot-international-scholar", "International Scholars and Students");
-
-    startRow();
-    writeText("");
-    endRow();
-
-    var partnerShip = getPartnership(getPageAttribute("partner"));
-    var internationalScholarPartnerContent = partnerShip["internationalScholarContent"];
-    var hasIStPartnerContent = !(typeof internationalScholarPartnerContent === "undefined");
-    if (hasIStPartnerContent) {
-        internationalScholarPartnerContent();
-    }
-
-    startRow();
-    writeText("<strong>" + makePivotURL("pivot-school-waiver", "Find your school insurance requirements and most affordable plan here") + "</strong>");
-    endRow();
-   
-    startRow();
-    writeText(makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/"));
-    endRow();   
-    
-    startRow();
-
-    writeText("Call from US - 9:00AM to 10:00PM Eastern time - Includes weekend: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time  8:30am-11:30am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>");
-    endRow();
-
-    startRow();
-    document.write(makeTable(4,
-            [
-            // Column headers:
-            "TaiAn Scholars and Students",
-            loc(makeRawURL("Plan A (Student Health Advantage)<br />Two levels: Standard Plan A, ", "https://purchase.imglobal.com/quote/student_health_advantage?imgac=80000699")) + loc(makeRawURL("Platinum Plan A", "https://purchase.imglobal.com/Quote/student_health_advantage_platinum/pre-quote?imgac=80000699")),
-            makeRawURL("Plan B (Taian Patriot Exchange), $100 per illness deductible", "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
-            makeRawURL("Plan B (Taian Patriot Exchange)- Annual Deductible<br />ONLY AVAILABLE FROM TAIAN", "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),            
-
-            // Rest of the table:
-            // Row 2
-            "Insurance Provider", "IMG (International Medical Group)", "IMG (International Medical Group)", "IMG (International Medical Group)",            
-            "Plan Type", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 5 years if initial purchase is 3 months or more.", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.",
-
-            // Row 3
-            "Maximum Limit", "Standard Plan: $500,000  maximum per period of coverage, $300,000 per illness/injury<br />Platinum Plan: $1,000,000 maximum per period of coverage, $500,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury",
-
-
-
-            "Deductible (Insured pays before insurance pays)", "Standard Plan: $100 per illness/injury: For each illness or injury, insured pays $100 before insurance pays.<br />Platinum Plan: $25 per illness/injury In PPO, $50 per illness/injury Out of PPO", "$100 per illness/injury: For each illness or injury, insured pays $100 before insurance pays 100%.", "$250 or $500 annual deductible: During whole policy period (not over a year), insured pays $250 or $500 before insurance pays 100%.<br />IMG product, Taian Exclusive!",
-            "Student Health Center Copay", "$5 copay, no deductible", "$5 copay, no deductible", "$5 copay, no deductible",
-            "Illness or Injury Coinsurance", "No coinsurance outside of U.S or in PPO within U.S.  Out of PPO within U.S.: 80% of the first $5,000 of eligible charges, then 100%.", "No coinsurance in PPO or out of PPO", "No coinsurance in PPO or out of PPO",
-            "Hospital Room & Board", "Average semi-private room", "Average semi-private room", "Average semi-private room", 
-            "Intensive Care", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)",
-            "Maternity Coinsurance", "Not covered - If you are pregnant before your policy is effective.<br />Standard Plan: In US/Canada In PPO 80%/20% - Plan pays 80% of URC. 60%/40% Out of PPO.  Outside US/Canada covered 100% of URC.<br />Platinum Plan: Same as any illness or injury coinsurance.", "N/A", "N/A",
-            "Mental Health", "In-patient URC to $10,000, out-patient $50/day to $500", "N/A", "N/A",
-            "Emergency Room", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization",
-            "Prescription Drugs", "In-patient URC, out-patient 50%", "URC", "URC",
-            "Accident Dental", "Injury $500, Sudden pain $350", "Injury $500, Sudden pain $350", "Injury $500, Sudden pain $350",
-            "Accidental Death & Loss of Limb", "$25,000", "$25,000", "$25,000",
-            "Medical Evacuation", "$500,000", "$50,000", "$50,000",
-            "Repatriation of remains", "$50,000", "$25,000", "$25,000",
-            "Pre-existing conditions (Illness or Injury)", "Standard Plan: After 12 months of continuous coverage<br />Platinum Plan: After 6 months of continuous coverage", "After 12 months of continuous coverage", "After 12 months of continuous coverage",
-            "Group Pricing", "2 or more primary insured have about 10% discount", "2 or more primary insured have about 10% discount", "2 or more primary insured have about 10% discount", 
-                        
-            // Table within a table
-            "Cost Per Month (Non-US Citizens)",
-            loc("Standard Plan") +
-            makeTable(4, [
-                    "Age",     "F1/J1", "Spouse", "Children",
-                    "&lt; 19", "$69",   "$372",   "$79",
-                    "19-23",   "$92",   "$372",   "$79",
-                    "24-30",   "$106",  "$411",   "$79",
-                    "31-40",   "$190",  "$547",   "$79",
-                    "41-50",   "$311",  "$565",   "$79",
-                    "51-64",   "$415",  "$547",   "$79"
-                    ]) +
-            loc("<br /><br />") +                    
-            loc("Platinum Plan") +
-            makeTable(4, [
-                    "Age",     "F1/J1", "Spouse", "Children",
-                    "&lt; 19", "$111",   "$594",   "$126",
-                    "19-23",   "$146",   "$594",   "$126",
-                    "24-30",   "$169",  "$656",   "$126",
-                    "31-40",   "$303",  "$873",   "$126",
-                    "41-50",   "$496",  "$902",   "$126",
-                    "51-64",   "$662",  "$873",   "$126"
-                    ]), 
-
-            loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
-            makeTable(4, [
-                    "Age",     "F1/J1", "Spouse", "Children",
-                    "&lt; 25", "$48.62","$48.62",  "$48.62",
-                    "25-49",   "$63.37","$63.37",  "$48.62",
-                    "50-64",   "$135.70","$135.70","$48.62"
-                    ]) +
-
-            loc("$250,000 per illness/injury benefit, $100 per illness/injury deductible") +         
-            makeTable(4, [
-                    "Age",     "F1/J1", "Spouse", "Children",
-                    "&lt; 25", "$60.36","$60.36",  "$60.36",
-                    "25-49",   "$78.59","$78.59",  "$60.36",
-                    "50-64",   "$168.27","$168.27","$60.36"
-                    ]) + 
-
-            loc("$500,000 per illness/injury benefit, $100 per illness/injury deductible") +         
-            makeTable(4, [
-                    "Age",     "F1/J1", "Spouse", "Children",
-                    "&lt; 25", "$63.66","$63.66",  "$63.66",
-                    "25-49",   "$82.90","$82.90",  "$63.66",
-                    "50-64",   "$177.53","$177.53","$63.66"
-                    ])
-                    + makeURL(loc("Click here for more benefit level and deductible options"),"#p=pivot-taian-patriotexchange"),                    
-
-            loc("$50,000 per illness/injury benefit, $500 annual deductible<br />***LOWEST PRICE***") +         
-            makeTable(4, [
-                    "Age",     "F1/J1", "Spouse", "Children",
-                    "&lt; 25", "$43.86","$43.86",  "$43.86",
-                    "25-49",   "$57.17","$57.17",  "$43.86",
-                    "50-64",   "$122.41","$122.41","$43.86"
-                    ]) +
-            loc("$50,000 per illness/injury benefit, $250 annual deductible<br />*******BEST VALUE*******") +         
-            makeTable(4, [
-                    "Age",     "F1/J1", "Spouse", "Children",
-                    "&lt; 25", "$47.16","$47.16",  "$47.16",
-                    "25-49",   "$61.47","$61.47",  "$47.16",
-                    "50-64",   "$131.63","$131.63","$47.16"
-                    ]) +
-            loc("$100,000 per illness/injury benefit, $250 annual deductible") +         
-            makeTable(4, [
-                    "Age",     "F1/J1", "Spouse", "Children",
-                    "&lt; 25", "$54.76","$54.76",  "$54.76",
-                    "25-49",   "$71.30","$71.30",  "$54.76",
-                    "50-64",   "$152.63","$152.63","$54.76"
-                    ])
                     + makeURL(loc("Click here for more benefit level and deductible options"),"#p=pivot-taian-patriotexchange"),                    
  
                     
@@ -4466,7 +4331,7 @@ function writeSectionForNewDosStandardschart() {
                 "", 
             loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
             makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
-            makeBuyURL(loc("Buy Group B (10% off, $39 and up)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+            makeBuyURL(loc("Buy Group B (10% off, $46 and up)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
 
             "",
             makeResourceCenterURL(loc("Questions and Answers about Plan A"),"pivot-qanda-plana"),
@@ -4507,7 +4372,7 @@ function writeSectionForNewDosStandardschart() {
                         "Intercollegiate/Interscholastic/intramural or club sports: $5,000 per injury/illness medical expenses only",
                         "Incidental home country coverage: up to cumulative two weeks",
                         "Terrorism coverage: up to 50,000 lifetime maximum",
-                        "F2/J2 dependents can only purchase when the F1/J1 purchases.  Maximum limit per period of coverage and per illness maximum for dependents is $50,000 (Standard Plan A) or $100,000 (Platinum Plan A)",
+                        "F2/J2 dependents can only purchase when the F1/J1 purchases. Maximum limit per period of coverage and per illness maximum for dependents is $100,000",
                         "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays.",                        
                         "Standard Plan: Optional benefit change in Florida, Hawaii, Idaho, Massachusetts to shorten the preexisting condition exclusion from 12 months to 6 months. With 6 month preexisting condition benefit change there is a 10 month wait for maternity benefits."                        
                         ]),
@@ -4585,16 +4450,16 @@ function writeSectionForNewDosStandardschart() {
     startSection("pivot-confucius-educator", "Confucius Teachers and Volunteers");
 
     startRow();
-    writeText("Confucius Institute volunteer teachers come to the US with J1 visas. Their exchange program requires them to have health insurance that meets the US Department of State (USDOS) requirements for the duration of their stay. Taian International Health Insurance provides insurance for J1 educators and their dependents. Taian Insurance Plan B with $50,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the USDOS requirements. Many Confucius teachers choose Plan B with $250,000 or $500,000 of benefits to get the best coverage. Taian Insurance Plan A also meets the requirements and offers affordable coverage with maternity benefits. Plan A and Plan B are also good for Confucius teachers anywhere around the world, not just in the US.");
+    writeText("Confucius Institute volunteer teachers come to the US with J1 visas. Their exchange program requires them to have health insurance that meets the US Department of State (USDOS) requirements for the duration of their stay. Taian International Health Insurance provides insurance for J1 educators and their dependents. Taian Insurance Plan B with $100,000 benefit per illness or injury and three deductible options is the most affordable plan that meets the USDOS requirements. Many Confucius teachers choose Plan B with $250,000 or $500,000 of benefits to get the best coverage. Taian Insurance Plan A also meets the requirements and offers affordable coverage with maternity benefits. Plan A and Plan B are also good for Confucius teachers anywhere around the world, not just in the US.");
     endRow();
    
 
     startRow();    
     document.write(makeBulletedListWithTitle("The USDOS requires:", [
 
-                        "Medical benefits of at least $50,000 per accident or illness",
-                        "Repatriation of remains in the amount of $7,500",
-                        "Expenses associated with the medical evacuation of the exchange visitor to his or her home country in the amount of $10,000",
+                        "Medical benefits of at least $100,000 per accident or illness",
+                        "Repatriation of remains in the amount of $25,000",
+                        "Expenses associated with the medical evacuation of the exchange visitor to his or her home country in the amount of $50,000",
                         "A deductible not to exceed $500 per accident or illness."
                        
                         ]));
@@ -4602,12 +4467,12 @@ function writeSectionForNewDosStandardschart() {
     endRow();
                         
     startRow();
-    writeText(makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/"));
+    writeText(makeURL("US Department of State Insurance Requirements for J visa", "http://www.ecfr.gov/cgi-bin/retrieveECFR?gp=1&SID=82f8d860b341376220fccdae31ad72b5&ty=HTML&h=L&r=PART&n=pt22.1.62#se22.1.62_114"));
     endRow();   
     
     startRow();
 
-    writeText("Call from US - 9:00AM to 10:00PM Eastern time - Includes weekend: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time  8:30am-11:30am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>");
+    writeText("Call from US - 8:00AM to 9:00PM Eastern time: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time  8:00pm-12:00am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>");
     endRow();
 
     startRow();
@@ -4648,12 +4513,12 @@ function writeSectionForNewDosStandardschart() {
             loc("Standard Plan") +
             makeTable(4, [
                     "Age",     "F1/J1", "Spouse", "Children",
-                    "&lt; 19", "$69",   "$372",   "$79",
-                    "19-23",   "$92",   "$372",   "$79",
-                    "24-30",   "$106",  "$411",   "$79",
-                    "31-40",   "$190",  "$547",   "$79",
-                    "41-50",   "$311",  "$565",   "$79",
-                    "51-64",   "$415",  "$547",   "$79"
+                    "&lt; 19", "$69",   "$405",   "$86",
+                    "19-23",   "$92",   "$405",   "$86",
+                    "24-30",   "$106",  "$448",   "$86",
+                    "31-40",   "$190",  "$596",   "$86",
+                    "41-50",   "$311",  "$616",   "$86",
+                    "51-64",   "$415",  "$596",   "$86"
                     ]) +
             loc("<br /><br />") +                    
             loc("Platinum Plan") +
@@ -4667,14 +4532,14 @@ function writeSectionForNewDosStandardschart() {
                     "51-64",   "$662",  "$873",   "$126"
                     ]),  
 
-            loc("$50,000 per illness/injury benefit, $100 per illness/injury deductible") +         
+            loc("$100,000 per illness/injury, $100 per illness deductible") +         
             makeTable(4, [
                     "Age",     "F1/J1", "Spouse", "Children",
-                    "&lt; 25", "$48.62","$48.62",  "$48.62",
-                    "25-49",   "$63.37","$63.37",  "$48.62",
-                    "50-64",   "$135.70","$135.70","$48.62"
+                    "&lt; 25", "$56.45","$56.45",  "$56.45",
+                    "25-49",   "$73.50","$73.50",  "$56.45",
+                    "50-64",   "$157.35","$157.35","$56.45"
                     ]) +
-
+            loc("<br /><br />") +
             loc("$250,000 per illness/injury benefit, $100 per illness/injury deductible") +         
             makeTable(4, [
                     "Age",     "F1/J1", "Spouse", "Children",
@@ -4682,7 +4547,7 @@ function writeSectionForNewDosStandardschart() {
                     "25-49",   "$78.59","$78.59",  "$60.36",
                     "50-64",   "$168.27","$168.27","$60.36"
                     ]) + 
-
+            loc("<br /><br />") +
             loc("$500,000 per illness/injury benefit, $100 per illness/injury deductible") +         
             makeTable(4, [
                     "Age",     "F1/J1", "Spouse", "Children",
@@ -4690,16 +4555,16 @@ function writeSectionForNewDosStandardschart() {
                     "25-49",   "$82.90","$82.90",  "$63.66",
                     "50-64",   "$177.53","$177.53","$63.66"
                     ])
-                    + makeURL(loc("Click here for more benefit level and deductible options"),"#p=pivot-taian-patriotexchange"),                   
+                    + makeURL(loc("Click here for more benefit level and deductible options"),"#p=pivot-taian-patriotexchange"),                      
 
-            loc("$50,000 per illness/injury benefit, $250 annual deductible") +         
+            loc("$100,000 per illness/injury, $500 annual deductible") +         
             makeTable(4, [
                     "Age",     "F1/J1", "Spouse", "Children",
-                    "&lt; 25", "$47.16","$47.16",  "$47.16",
-                    "25-49",   "$61.47","$61.47",  "$47.16",
-                    "50-64",   "$131.63","$131.63","$47.16"
+                    "&lt; 25", "$50.92","$50.92",  "$50.92",
+                    "25-49",   "$66.30","$66.30",  "$50.92",
+                    "50-64",   "$141.95","$141.95","$50.92"
                     ]) +
-
+            loc("<br /><br />") +                    
             loc("$100,000 per illness/injury benefit, $250 annual deductible") +         
             makeTable(4, [
                     "Age",     "F1/J1", "Spouse", "Children",
@@ -4707,14 +4572,15 @@ function writeSectionForNewDosStandardschart() {
                     "25-49",   "$71.30","$71.30",  "$54.76",
                     "50-64",   "$152.63","$152.63","$54.76"
                     ]) +
-            loc("$500,000 per illness/injury, $250 annual deductible") +         
+            loc("<br /><br />") +                    
+            loc("$250,000 per illness/injury, $250 annual deductible") +         
             makeTable(4, [
                     "Age",     "F1/J1", "Spouse", "Children",
-                    "&lt; 25", "$61.75","$61.75",  "$61.75",
-                    "25-49",   "$80.41","$80.41",  "$61.75",
-                    "50-64",   "$172.20","$172.20","$61.75"
-                    ])
-                     + makeURL(loc("Click here for more benefit level and deductible options"),"#p=pivot-taian-patriotexchange"),                   
+                    "&lt; 25", "$58.55","$58.55",  "$58.55",
+                    "25-49",   "$76.23","$76.23",  "$58.55",
+                    "50-64",   "$163.22","$163.22","$58.55"
+                    ])                   
+                    + makeURL(loc("Click here for more benefit level and deductible options"),"#p=pivot-taian-patriotexchange"), 
  
                     
             "", 
@@ -4725,7 +4591,7 @@ function writeSectionForNewDosStandardschart() {
                 "", 
             loc(makeBuyURL(loc("Buy Group A Standard (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_group/pre-quote?imgac=80000699")) + loc(makeBuyURL(loc("Buy Group A Platinum (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/student_health_advantage_platinum_group/pre-quote?imgac=80000699")),
             makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
-            makeBuyURL(loc("Buy Group B (10% off, $39 and up)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
+            makeBuyURL(loc("Buy Group B (10% off, $46 and up)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
 
             "",
             makeResourceCenterURL(loc("Questions and Answers about Plan A"),"pivot-qanda-plana"),
@@ -4766,7 +4632,7 @@ function writeSectionForNewDosStandardschart() {
                         "Intercollegiate/Interscholastic/intramural or club sports: $5,000 per injury/illness medical expenses only",
                         "Incidental home country coverage: up to cumulative two weeks",
                         "Terrorism coverage: up to 50,000 lifetime maximum",
-                        "F2/J2 dependents can only purchase when the F1/J1 purchases.  Maximum limit per period of coverage and per illness maximum for dependents is $50,000 (Standard Plan A) or $100,000 (Platinum Plan A)",
+                        "F2/J2 dependents can only purchase when the F1/J1 purchases. Maximum limit per period of coverage and per illness maximum for dependents is $100,000",
                         "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays.",                        
                         "Standard Plan: Optional benefit change in Florida, Hawaii, Idaho, Massachusetts to shorten the preexisting condition exclusion from 12 months to 6 months. With 6 month preexisting condition benefit change there is a 10 month wait for maternity benefits."                        
                         ]),
@@ -4862,13 +4728,12 @@ function writeSectionForNewDosStandardschart() {
     endRow();
    
     startRow();
-    writeText(makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/"));
-    writeText("<strong>" + makePivotURL("pivot-new-standards", "The US Department of State is Changing the required insurance coverage for J Visa holders May 15, 2015. Learn more here.") + "</strong>");
+    writeText(makeURL("US Department of State Insurance Requirements for J visa", "http://www.ecfr.gov/cgi-bin/retrieveECFR?gp=1&SID=82f8d860b341376220fccdae31ad72b5&ty=HTML&h=L&r=PART&n=pt22.1.62#se22.1.62_114"));
     endRow();   
     
     startRow();
 
-    writeText("Call from US - 9:00AM to 10:00PM Eastern time - Includes weekend: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time  8:30am-11:30am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>");
+    writeText("Call from US - 8:00AM to 9:00PM Eastern time: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time  8:00pm-12:00am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>");
     endRow();
 
     startRow();
@@ -4945,7 +4810,7 @@ function writeSectionForNewDosStandardschart() {
                         "Intercollegiate/Interscholastic/intramural or club sports: $5,000 per injury/illness medical expenses only",
                         "Incidental home country coverage: up to cumulative two weeks",
                         "Terrorism coverage: up to 50,000 lifetime maximum",
-                        "F2/J2 dependents can only purchase when the F1/J1 purchases.  Maximum limit per period of coverage and per illness maximum for dependents is $50,000 (Standard Plan A) or $100,000 (Platinum Plan A)",
+                        "F2/J2 dependents can only purchase when the F1/J1 purchases. Maximum limit per period of coverage and per illness maximum for dependents is $100,000",
                         "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays.",                        
                         "Standard Plan: Optional benefit change in Florida, Hawaii, Idaho, Massachusetts to shorten the preexisting condition exclusion from 12 months to 6 months. With 6 month preexisting condition benefit change there is a 10 month wait for maternity benefits."                        
                         ]),
@@ -5038,7 +4903,7 @@ function writeSectionForNewDosStandardschart() {
 
     startRow();
 
-    writeText("Call from US - 9:00AM to 10:00PM Eastern time - Includes weekend: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time  8:30am-11:30am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>");
+    writeText("Call from US - 8:00AM to 9:00PM Eastern time: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time  8:00pm-12:00am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>");
     endRow();
 
     startRow();
@@ -5165,7 +5030,7 @@ function writeSectionForNewDosStandardschart() {
                 "", 
             makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
             makeBuyURL(loc("Buy Group B (10% off)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),
-            makeBuyURL(loc("Buy Group B (10% off, $39 and up)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),            
+            makeBuyURL(loc("Buy Group B (10% off, $46 and up)") + "<br />" + loc("For 2 primary insured or more"), "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE_GROUP/pre-quote?imgac=80000699"),            
             
             "", "Group price 10% below individual", "Group price 10% below individual", "Group price 10% below individual"
             
@@ -5202,7 +5067,7 @@ function writeSectionForNewDosStandardschart() {
 
     startRow();
 
-    writeText("Call from US - 9:00AM to 10:00PM Eastern time - Includes weekend: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time  8:30am-11:30am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>");
+    writeText("Call from US - 8:00AM to 9:00PM Eastern time: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time  8:00pm-12:00am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>");
     endRow();
 
     startRow();
@@ -5222,7 +5087,7 @@ function writeSectionForNewDosStandardschart() {
             "Deductible (Insured pays before insurance pays)", "No Deductible",
             "Coinsurance", "No Coinsurance",
             "Medical Evacuation Benefit", "$100,000",
-            "Repatriation of Remains Benefit", "$20,000",  
+            "Repatriation of Remains Benefit", "$25,000",  
             "Local Cremation/Burial Benefit", "$5,000",  
             "Return of Minor Children", "$5,000", 
             "Political Evacuation", "$10,000",  
@@ -5274,265 +5139,9 @@ function writeSectionForNewDosStandardschart() {
  
     
     
-    // J Scholar
-    startSection("pivot-j-scholar", "J Scholar");
-
-    var partnerShip = getPartnership(getPageAttribute("partner"));
-    var jScholarPartnerContent = partnerShip["jScholarContent"];
-    var hasISPartnerContent = !(typeof jScholarPartnerContent === "undefined");
-    if (hasISPartnerContent) {
-        jScholarPartnerContent();
-    }
-
-    startRow();
-    writeText("<strong>" + makePivotURL("pivot-school-waiver", "Find your school insurance requirements and most affordable plan here") + "</strong>");
-    endRow();
-   
-    startRow();
-    writeText(makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/"));
-    endRow(); 
-
-
-
-    startRow();
-
-    writeText("Call from US - 9:00AM to 10:00PM Eastern time - Includes weekend: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time  8:30am-11:30am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>");
-    document.write(makeTable(3, [
-                "Taian Travel Insurance",
-                makeRawURL("Patriot America For non-US citizens traveling internationally", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
-                makeRawURL("Patriot International For US citizens traveling outside  home country", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
-                "Insurance Provider", "IMG (International Medical Group)", "IMG (International Medical Group)", 
-                "Lifetime maximum", "$50,000, $100,000, $500,000, $1,000,000", "$50,000, $100,000, $500,000, $1,000,000", 
-                "Term", "5 days to 2 years", "5 days to 2 years", 
-                "Deductible", "$0, $100, $250, $500, $1,000, $2,500", "$0, $100, $250, $500, $1,000, $2,500", 
-                "Coinsurance", "In-PPO 90% to $5,000, then 100%<br />Out-PPO, 80% to $5,000 then 100%", "No coinsurance outside of U.S.",
-                "Intensive care unit", "Up to the Maximum", "Up to the Maximum",
-                "Hospitalization / room & board", "Up to the Max for average semi-private room rate", "Up to the Maximum for average semi-private room rate",
-                "Hospital Daily Indemnity", "$100 per day.  10 day maximum.", "$100 per day.  10 day maximum.",
-                "Prescription Drugs", "Up to the Maximum", "Up to the Maximum",
-                "Emergency Room", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization",
-                "Local Ambulance", "Up to Maximum for injury resulting in needed emergency care, or illness resulting in overnight hospital stay. Otherwise not covered.", "Up to Maximum for injury resulting in needed emergency care, or illness resulting in overnight hospital stay. Otherwise not covered.",
-                "Accidental Dental Injury", "Up to the Maximum", "Up to the Maximum",
-                "Sport & Activities Coverage", "Up to the Maximum for basic sports", "Up to the Maximum for basic sports",
-                "Trip Interruption", "Up to $5,000", "Up to $5,000", 
-                "Accidental Death & Loss of Limb", "$25,000 principal sum", "$25,000 principal sum", 
-                "Emergency Medical Evacuation", "$500,000", "$500,000", 
-                "Repatriation of remains", "$50,000", "$50,000", 
-                "Pre-existing conditions", "Up to $50,000 coverage ($2,500 for over 65 years old) for sudden and unexpected recurrence. Otherwise not covered.", "Up to policy limit for sudden and unexpected recurrence if covered by domestic health policy ($2,500 for over 65 years old). Up to $20,000 if not covered by domestic policy. Otherwise not covered.",
-
-
-                "",
-                makeBuyURL("Buy Patriot Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
-                makeBuyURL("Buy Patriot Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot?imgac=80000699")
-
-                ]));
-    endRow();
-
-    startRow();
-    writeText("");
-    endRow();
-    
-    startRow();
-    writeText("More about Patriot Travel");
-    endRow();
-    
-    startRow();
-    writePatriotTravelTable();
-    endRow();
-
-
-
-
-
-
-
-
-
-    startRow();
-    writeText("");
-    endRow();
-
-    startRow();
-    writeText("Why do I need travel medical insurance?");
-    endRow();
-
-    startRow();
-    document.write(makeTableWithStyle("invisibleTableNormalText", 3, [
-                makeText(makeBold("Most medical insurance coverage will not provide benefits in a different country.")+ " "+ loc("If you are a US citizen, your passport says, \"Health Insurance: Medical costs abroad can be extremely expensive. Does your insurance apply overseas, including medical evacuation, payment to the overseas hospital or doctor, or reimbursement to you later?.....Medicare/Medicaid does not cover healthcare costs outside the US.\"")),
-                makeText(makeBold("Medical Evacuation is an important benefit.") + " " + loc("Maybe you are visiting a part of the world with a lesser developed healthcare system. You planned ahead and had your travel vaccines before you left, but what if you get injured on your trip? You might need to be evacuated to an adequate hospital. A medical evacuation benefit will provide what you need.")),
-                makeText(makeBold("Trip cancellation, lost baggage, travel delay benefits.")+ " " + loc("You spent a year planning for and saving for your trip. Now, you arrive at the airport for a connecting flight and the flight is cancelled. You don’t need a health insurance benefit, but you sure could use a travel insurance benefit. Help cover your costs for unforeseen travel problems with the right travel insurance coverage for you."))
-                ]));
-    endRow();
-
-    startRow();
-    writeText("");
-    document.write(makeBulletedListWithTitle("Travel Tips", [
-                loc("Visit") + " " + makeURL("CDC (Center for Disease Control)", "http://www.cdc.gov/") + " " + loc(" to learn about travel vaccine recommendations. They provide an up to date list by country of which travel vaccinations are required or recommended. They also provide up to date health information by location. Did you know a vaccine booster for Polio is recommended for travel to some locations? Also, the vaccines for Hepatitis A and B are good for life – be safe once now and you are covered forever! Once you have your passport health care preparations are critical."),
-                loc("Travel visa requirements depend on the country you are visiting. A US citizen might need a visa depending on where they are going. A visitor to the United States might need a visa depending on the nature of their visit. For details see the") + " " + makeURL("State Department website", "http://travel.state.gov/visa/visa_1750.html") + "."
-                ]));
-    endRow();
-
-    writeDontSeeWhatYouNeedRow();
-
-    endSection();
- 
 
    
    
-    // International Scholar
-    startSection("pivot-scholar-student", "International Scholar/Student");
-
-    var partnerShip = getPartnership(getPageAttribute("partner"));
-    var scholarStudentPartnerContent = partnerShip["scholarStudentContent"];
-    var hasSStuPartnerContent = !(typeof scholarStudentPartnerContent === "undefined");
-    if (hasSStuPartnerContent) {
-        scholarStudentPartnerContent();
-    }
-
-    startRow();
-    writeText("");
-    endRow();
-    
-    startRow();
-    writeText("<strong>" + makePivotURL("pivot-school-waiver", "Find your school insurance requirements and most affordable plan here") + "</strong>");
-    endRow();
-   
-    startRow();
-    writeText(makeURL("US Department of State Insurance Requirements for J visa", "http://j1visa.state.gov/sponsors/how-to-administer-a-program/"));
-    endRow();   
-    
-    startRow();
-
-    writeText("Call from US - 9:00AM to 10:00PM Eastern time - Includes weekend: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time  8:30am-11:30am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>");
-    endRow();
-
-    startRow();
-    document.write(makeTable(4,
-            [
-            // Column headers:
-            "TaiAn Scholars and Students",
-            makeRawURL("Plan B (Taian Patriot Exchange), $100 per illness deductible", "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"),
-
-            makeRawURL("Plan B (Taian Patriot Exchange)- Annual Deductible<br />ONLY AVAILABLE FROM TAIAN", "https://purchase.imglobal.com/Quote/TAIAN_PATRIOT_EXCHANGE/pre-quote?imgac=80000699"), 
-            makeRawURL("Plan C (Patriot Travel for non-US citizens)", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),            
-
-            // Rest of the table:
-            // Row 2
-            "Insurance Provider", "IMG (International Medical Group)", "IMG (International Medical Group)", "IMG (International Medical Group)",            
-            "Plan Type", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.", "Designed specifically for international scholars and students (F1,F2,J1,J2,OPT). Purchase monthly increments (from 1 to 12 months), renewable up to 4 years.", "Designed for anyone traveling outside their home country. F2/J2 can buy alone. Purchase daily (at least 5 days) or monthly, renewable up to 2 years if 1 month or more is purchased.",
-
-            // Row 3
-            "Maximum Limit", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury", "$5,000,000 lifetime. Options $50,000, $100,000, $250,000 or $500,000 per illness/injury", "$50,000, $100,000, $500,000, $1,000,000 lifetime maximum",
-
-
-
-            "Deductible (Insured pays before insurance pays)", "$100 per illness/injury: For each illness or injury, insured pays $100 before insurance pays.", "$250 or $500 annual deductible: During whole policy period (not over a year), insured pays $250 or $500 before insurance pays 100%.<br />IMG product, Taian Exclusive!", "$0, $100, $250, $500, $1,000, $2,500 annual deductible",
-            "Student Health Center Copay", "$5 copay, no deductible", "$5 copay, no deductible", "N/A",
-            "Coinsurance", "No coinsurance in PPO or out of PPO", "No coinsurance in PPO or out of PPO", "In-PPO 90% to $5,000, then 100%<br />Out-PPO, 80% to $5,000 then 100%",
-            "Hospital Room & Board", "Average semi-private room", "Average semi-private room", "Average semi-private room", 
-            "Intensive Care", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)", "URC(Usual Reasonable and Customary)",
-            "Maternity", "N/A", "N/A", "N/A",
-            "Mental Health", "N/A", "N/A", "N/A",
-            "Emergency Room", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization", "URC for injury or illness resulting in hospitalization. Additional $250 deductible for illness without hospitalization",
-            "Prescription Drugs", "URC", "URC", "URC",
-            "Accident Dental", "Injury $500, Sudden pain $350", "Injury $500, Sudden pain $350", "Injury up to policy max, Sudden pain N/A",
-            "Accidental Death & Loss of Limb", "$25,000", "$25,000", "$25,000",
-            "Medical Evacuation", "$50,000", "$50,000", "$500,000",
-            "Repatriation of remains", "$25,000", "$25,000", "$50,000",
-            "Pre-existing conditions", "After 12 months of continuous coverage", "After 12 months of continuous coverage", "Up to $50,000 coverage ($2,500 for over 65 years old) for sudden and unexpected recurrence. Otherwise not covered.",
-            "Group Pricing", "2 or more primary insured have about 10% discount", "2 or more primary insured have about 10% discount", "5 or more primary insured have about 10% discount",
-            "",
-            makeResourceCenterURL(loc("Questions and Answers about Plan B"),"pivot-qanda-planb"),
-            makeResourceCenterURL(loc("Questions and Answers about Plan B"),"pivot-qanda-planb"),
-            makeResourceCenterURL(loc("Questions and Answers about Patriot Travel"),"pivot-qanda-travel")  
-
-           
-
-            ])
-            );
-    endRow();
-
-    startRow();
-    writeText("");
-    endRow();    
-
-    
-
-    startRow();
-    writeText("");
-    endRow();
-            
-
-
-    startRow();
-    writeText("");
-    document.write(makeTable(2, [
-                "Plan", "More on Taian Patriot Exchange",
-
-                "Plan Highlights",
-                makeBulletedListWithTitle("", [
-                        "Taian Patriot Exchange Plan B with $50,000 limit per illness/injury is the most affordable plan that meets the US Dept of State standards for Exchange visitors (J visa) which are: At least $50,000 per illness, repatriation of remains of $7,500, Medical evacuation benefits of $10,000, and a deductible not over $500.",
-                        "All Taian Patriot Exchange plans meet the USDOS standards.",
-                        "J2/F2 can buy TaiAn Plan B with the F1/J1. If the J1/F1 has purchased school insurance the J2/F2 dependents can purchase TaiAn Plan B alone. If the J1/F1 has purchased TaiAn Plan B and his/her J2/F2 dependents come later, they can purchase Plan B alone for different dates.",                        
-                        "Plastic ID card (ONLY AVAILABLE FROM TAIAN) available for purchases of six months or longer",
-                        "You can select the day after you submit application or any later date as your insurance effective date.  The insurance can only be effective after you arrive in the foreign country for your exchange program.",                        
-                        "Taian Patriot Exchange Group plan available for groups of 2 or more primary applicants. Use one credit card to pay for the whole group. Use the credit card holder\'s initials as the \"Sponsoring Organization\". Use the credit card holders name as the \"Contact Name\".  Use the credit card holder's email as the group contact for the plan.",
-                        "Other available options include: travel protection for baggage and valuables, legal assistance, personal liability coverage, adventure sports coverage",
-                        "To maximize your benefits under your plan hospital stays should be precertified if planned in advance.  IMG should be notified promptly for emergency hospital stays."
-                        ]),
-
-                "Full Brochures", 
-                makeBulletedListWithTitle("", [
-                        makeURL("Taian Patriot Exchange Full Brochure", 
-                        "http://producer.imglobal.com/producerdocuments.ashx?documentid=2857"),  
-
-                        (langIsChinese() ?  makeURL("TaiAn Patriot Exchange Chinese Brochure", "http://producer.imglobal.com/producerdocuments.ashx?documentid=2943") : ""),
-
-                        makeURL("Taian Patriot Exchange Group Full Brochure", 
-                        "http://producer.imglobal.com/producerdocuments.ashx?documentid=2858"),                        
-                        (langIsChinese() ?  makeURL("TaiAn Patriot Exchange Group Chinese Brochure", "http://producer.imglobal.com/producerdocuments.ashx?documentid=2944") + loc("<br />If Chinese version is in conflict with English one, please follow the  English one") : "")
-                        
-
-                        ])
-
-
-               ]));
-
-    endRow();    
-    
-    startRow();
-    writeText("");
-    endRow();
-    
-    startRow();
-    writePatriotTravelTable();
-    endRow();    
-    startRow();
-    writeText("");
-    endRow();
-
-    startRow();
-    writeText("We have native English and Chinese speakers to answer all of your questions.");
-    endRow();
-
-    startRow();
-    writeText("Contact us to ensure a plan meets your requirements.");
-    endRow();
-
-    startRow();
-    writeText(loc("Other plans that cover more visa types:") + " " + makePivotURL("pivot-global-medical", "Global Medical") + " " + loc("and") + " " + makePivotURL("pivot-travel-insurance", "Patriot Travel"));
-    endRow();
-
-    startRow();
-    writeText("Insurance policy is underwritten by a health insurance company that is 'A' rated by A.M.Best");
-    endRow();
-
-    writeDontSeeWhatYouNeedRow();
-
-
-
-    endSection();
-    
 
     
     
@@ -5554,7 +5163,7 @@ function writeSectionForNewDosStandardschart() {
     
     
     startRow();
-    writeText("Call from US - 9:00AM to 10:00PM Eastern time - Includes weekend: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time  8:30am-11:30am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>");
+    writeText("Call from US - 8:00AM to 9:00PM Eastern time: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time  8:00pm-12:00am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>");
     endRow();
 
     startRow();
@@ -5588,6 +5197,7 @@ function writeSectionForNewDosStandardschart() {
             "Mental/Nervous", "Out-patient only, after 12 month of coverage", "$10,000 per year - $50,000 max, after 12 month of coverage", "$50,000 max, after 12 month of coverage", 
             "Pre-existing conditions", "May have limited coverage after 24 months or be excluded at time of underwriting", "May have limited coverage after 24 months or be excluded at time of underwriting", "May be covered same as any illness or excluded at time of underwriting",
             "Maternity", "Optional Rider (cost $4000 per year) - Maternity is covered same as any illness for any maternity related claim with a service date that occurs after 12 months of coverage. - $50,000 lifetime max. Max of $5000 for normal delivery, $7500 for C-section. $200 child wellness for first 12 month. new born care & congenital disorders max of $250,000 for the first 31 days (benefits reduced by 50% for births that occur in the 11th or 12th month of coverage).  Maternity related claims with dates of service before 10 months are not covered.", "Optional Rider (cost $4000 per year) - Maternity is covered same as any illness for any maternity related claim with a service date that occurs after 12 months of coverage. - $50,000 lifetime max. Max of $5000 for normal delivery, $7500 for C-section. $200 child wellness for first 12 month. new born care & congenital disorders max of $250,000 for the first 31 days (benefits reduced by 50% for births that occur in the 11th or 12th month of coverage).  Maternity related claims with dates of service before 10 months are not covered.", "Maternity is covered same as any illness for any maternity related claim with a service date that occurs after 10 months of coverage - $1000 additional deductible, $50,000 lifetime max. $200 child wellness for the first 12 months. new born care & congenital disorders max of $250,000 for the first 31 days. Maternity related claims with dates of service before 10 months are not covered.",
+            "More on Maternity", "IMG often excludes maternity coverage for dates of conception before 24 months.", "IMG often excludes maternity coverage for dates of conception before 24 months.", "IMG often excludes maternity coverage for dates of conception before 24 months.",
 
             "Monthly Rate",
             loc("Dependent child - see notes below") +
@@ -5770,7 +5380,7 @@ function writeSectionForNewDosStandardschart() {
                 "Complete Brochure", 
                 makeBulletedListWithTitle("", [
                         makeURL("Complete Brochure English", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1804&a=80000699"),
-                        makeURL("Chinese Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=2963&a=80000699"),
+
                         makeURL("Spanish Brochure", "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1813&a=80000699")+ loc("<br />If the brochure in your language is in conflict with the English one, please follow the English one")                     
 
                         ]),
@@ -5825,7 +5435,7 @@ function writeSectionForNewDosStandardschart() {
 
     startRow();
 
-    writeText("Call from US - 9:00AM to 10:00PM Eastern time - Includes weekend: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time  8:30am-11:30am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>");
+    writeText("Call from US - 8:00AM to 9:00PM Eastern time: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time  8:00pm-12:00am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>");
     document.write(makeTable(3, [
                 "Taian Travel Insurance",
                 makeRawURL("Patriot America For non-US citizens traveling internationally", "https://purchase.imglobal.com/quote/patriot?imgac=80000699"),
@@ -5933,7 +5543,7 @@ function writeSectionForNewDosStandardschart() {
     startSubsection("patriot-platinum");
 
     startRow();
-    writeText("Call from US - 9:00AM to 10:00PM Eastern time - Includes weekend: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time  8:30am-11:30am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>");
+    writeText("Call from US - 8:00AM to 9:00PM Eastern time: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time  8:00pm-12:00am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>");
     writeText("");    
     writeText("Patriot Platinum Travel Medical Insurance is a similar plan with more coverage (up to $8,000,000):");
     document.write(makeTable(2, [
