@@ -92,7 +92,15 @@ function referralSubstitution(key) {
     var referrals = {
         cn1: "l=cn&p=pivot-school-waiver",
         cn2: "l=cn&p=pivot-school-waiver", 
-
+        
+        nysccsf: "l=cn&partner=nysccsf&p=pivot-international-student&adid=nysccsf",
+        nyscb: "l=cn&partner=nysccsf&p=pivot-international-student&adid=nysccsf",        
+        nysccsfl: "l=cn&partner=nysccsf&p=pivot-school-waiver&adid=nysccsfl",
+        nysccsfe: "l=cn&partner=nysccsf&p=pivot-international-student&adid=nysccsfe",
+        
+        yddl: "l=cn&p=pivot-school-waiver&adid=ydd",        
+        ydds: "l=cn&p=pivot-international-student&adid=ydd",
+        
         aebj: "l=cn&p=pivot-school-waiver&adid=aebj",  
         baidu1: "partner=baidu1&l=cn&p=pivot-school-waiver&adid=baidu1",  
         hn1: "l=cn&p=pivot-school-waiver&adid=hn1",        
@@ -641,6 +649,8 @@ function referralSubstitution(key) {
         acnumassd: "l=cn&partner=umassd&p=pivot-international-student&adid=acnumassd", 
         iumassd: "partner=umassd&p=pivot-international-student",
         icnumassd: "l=cn&partner=umassd&p=pivot-international-student", 
+        sumassd: "partner=umassd&p=pivot-international-student&adid=sumassd",
+        scnumassd: "l=cn&partner=umassd&p=pivot-international-student&adid=sumassd",        
         umassexchd: "l=cn&partner=umassd&p=exchange-form",        
         
 
@@ -2329,8 +2339,25 @@ function makeBuyStyle(text) {
     return "<h2 class=\"uglyBuyStyle\">" + text + "</h2>";
 }
 
+
+function appendAdIdPartner(url) {
+    var adId = getPageAttribute("adid");
+    var hasAdId = !(typeof adId === "undefined");
+    if (hasAdId) {
+        url += "&adid="+adId;
+    }
+
+    var partner = getPageAttribute("partner");
+    var hasPartner = !(typeof partner === "undefined");
+    if (hasPartner) {
+        url += "&partner="+partner;
+    }
+
+    return url;
+}
+
 function makeResourceCenterURL(title, pivot) {
-    return makeURL(title, "./resourcecenter/index.html#l="+getPageAttribute("l")+"&p="+pivot);
+    return makeURL(title, appendAdIdPartner("./resourcecenter/index.html#l="+getPageAttribute("l")+"&p="+pivot));
 }
 
 function makeBulletedListWithTitle(title, list) {
@@ -3133,7 +3160,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL(loc("Health insurance for ") + loc("Middlebury College") + loc(" International Students and Scholars"), "#imiddlebury"),                
              
                 makeURL("Mississippi State University (MS)", "http://www.msstate.edu/"),
-                makeURL("School F1 requirement", "http://admissions.msstate.edu/international/apply/insurance.php"),
+                makeURL("School F1 requirement", "http://international.msstate.edu/future/requirements/health/index.php"),
                 makeURL("School J1 requirement", "http://international.msstate.edu/current/services/"),
                 makeURL(loc("Health insurance for ") + loc("Mississippi State University") + loc(" Scholars"), "#imsstate"),
                 
@@ -3324,12 +3351,12 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL("Health insurance for CUNY Students and Scholars", "#icuny"),                
                 
                 makeURL("Rensselaer Polytechnic Institute (NY)", "http://www.rpi.edu/"),
-                makeURL("School F1 requirement", "http://studenthealth.rpi.edu/insurance.php?catid=1035"),
+                makeURL("School F1 requirement", "http://studenthealth.rpi.edu/insurance.php?catid=1020"),
                 makeURL("School J1 requirement", "http://doso.rpi.edu/update.do?artcenterkey=494"),
                 makeURL("Plan that meets this school's standards for J scholar", "#usdos"),
                 
                 makeURL("Rice University (TX)", "http://www.riceinfo.rice.edu/"),
-                makeURL("School F1 requirement", "http://studenthealthinsurance.rice.edu/waiverrequirements/"),
+                makeURL("School F1 requirement", "http://oiss.rice.edu/studenthealth/"),
                 makeURL("School J1 requirement", "http://oiss.rice.edu/uploadedFiles/Docs/J-1%20Health%20Insurance%20Information.pdf"),
                 makeURL(loc("Health insurance for ") + loc("Rice University") + loc(" International Students and Scholars"), "#irice"),
 
@@ -3441,7 +3468,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL(loc("Health insurance for ") + loc("Temple University") + loc(" International Students and Scholars"), "#itemple"),                
                 
                 makeURL("Texas A&M University System (TX)", "http://www.tamu.edu/"),
-                makeURL("School F1 requirement", "http://iss.tamu.edu/insurance/insurance.asp"),
+                makeURL("School F1 requirement", "http://iss.tamu.edu/Current-Students/Health-Insurance#0-InsuranceRequirements"),
                 makeURL("School J1 requirement", "http://ifss.tamu.edu/J/insurance"),
                 makeURL(loc("Health insurance for ") + loc("Texas A&M") + loc(" Scholars"), "#itamu"),
                 
@@ -3503,7 +3530,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 "Consult your school about their requirements",
                 
                 makeURL("University of Alabama - Huntsville (AL)", "http://www.uah.edu/"),
-                makeURL("School F1 requirement", "http://www.uah.edu/ISSO/Students/newstudents.php"),
+                makeURL("School F1 requirement", "http://www.uah.edu/isss/students/accepted-students"),
                 makeURL("School J1 requirement", "http://www.uah.edu/isss/visiting-scholars-and-staff"),
                 makeURL("Plan that meets this school's standards for J scholar", "#usdos"),
 
@@ -3575,7 +3602,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL(loc("Health insurance for ") + loc("UC San Francisco") + loc(" Scholars"), "#iucsf"),
                 
                 makeURL("University of California Santa Barbara (CA)", "http://www.ucsb.edu/"),
-                makeURL("School F1 requirement", "https://studenthealth.sa.ucsb.edu/Insurance/UCwaivercriteria.aspx"),
+                makeURL("School F1 requirement", "https://studenthealth.sa.ucsb.edu/gaucho-health-insurance"),
                 makeURL("School J1 requirement", "http://oiss.sa.ucsb.edu/scholars/prospective-j-1-scholars/insurance"),
                 makeURL(loc("Health insurance for ") + loc("UC Santa Barbara") + loc(" Scholars"), "#iucsb"),
                 
@@ -3677,7 +3704,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 makeURL(loc("Health insurance for ") + loc("University of Kansas") + loc(" Scholars"), "#iku"),
                 
                 makeURL("University of Kentucky (KY)", "http://www.uky.edu/"),
-                makeURL("School F1 requirement", "https://www.academichealthplans.com/enroll_waive/index.php5?school_id=136"),
+                makeURL("School F1 requirement", "http://www.uky.edu/international/Insurance"),
                 makeURL("School J1 requirement", "http://www.uky.edu/international/Health_Insurance_J1"),
                 "Consult your school about their requirements",
                 
@@ -3879,7 +3906,7 @@ function writeSectionForSchoolWaiverRequirements() {
                 
                 
                  makeURL("University of Texas - Dallas (TX)", "http://www.utdallas.edu/"),
-                makeURL("School F1 requirement", "http://www.utdallas.edu/healthcenter/insurance/intl-waivers.html"),
+                makeURL("School F1 requirement", "https://www.utdallas.edu/insurance/international/"),
                 makeURL("School J1 requirement", "http://www.utdallas.edu/hrm/forms/insreqvisitors.pdf"),
                 makeURL(loc("Health insurance for ") + loc("UT Dallas") + loc(" Scholars"), "#iutdallas"),               
 
@@ -4162,9 +4189,6 @@ function writeSections(legacy) {
     writeText("");
     endRow();
     
-    startRow();
-    writeText("<strong>" + loc("If you only need medical evacuation and repatriation of remains benefits click here:") + " " + makePivotURL("pivot-sky-rescue", "Sky Rescue") + "</strong>");    
-    endRow();    
 
     startRow();
     writeText("We have native English and Chinese speakers to answer all of your questions.");
@@ -5055,87 +5079,6 @@ function writeSections(legacy) {
 
     endSection();
 
-    // Sky Rescue
-    startSection("pivot-sky-rescue", "Sky Rescue - Medical Evacuation and Repatriation of Remains");
-
-
-
-    startRow();
-    writeText("The Sky Rescue Plan is designed for international travelers wanting coverage for emergency evacuation and repatriation of remains.  The plan meets the US Department of State required coverage levels for J visa holders.");
-    endRow();
-    
-
-    startRow();
-
-    writeText("Call from US - 8:00AM to 9:00PM Eastern time: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time  8:00pm-12:00am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>");
-    endRow();
-
-    startRow();
-    document.write(makeTable(2,
-            [
-            // Column headers:
-            "TaiAn Scholars and Students",
-
-            makeRawURL("Sky Rescue", "https://purchase.imglobal.com/quote/sky_rescue?imgac=80000699"),
-            
-            
-            // Rest of the table:
-            // Row 2
-            "Plan Type", "Medical Evacuation and Repatriation of Remains",
-
-            // Row 3
-            "Deductible (Insured pays before insurance pays)", "No Deductible",
-            "Coinsurance", "No Coinsurance",
-            "Medical Evacuation Benefit", "$100,000",
-            "Repatriation of Remains Benefit", "$25,000",  
-            "Local Cremation/Burial Benefit", "$5,000",  
-            "Return of Minor Children", "$5,000", 
-            "Political Evacuation", "$10,000",  
-            "Accidental Death", "$100,000",  
-            "Personal Liability - Injury to third party", "$2,000 after $100 deductible", 
-            "Personal Liability - Injury to third party property", "$500 after $100 deductible", 
-            "Trip Interruption", "$5,000", 
-            "Lost Luggage", "$50 per item, $250 maximum",            
-
-
-
-            "Cost",
-        
-            makeTable(4, [
-                    "",     "3 months", "6 months", "12 months",
-                    "Single", "$76","$95",  "$168",
-                    "Couple",   "$101","$127",  "$224",
-                    "Family",   "$126","$157","$280"
-                    ]),
-                    
-     
-            "", 
-            makeBuyURL(loc("Buy Sky Rescue"), "https://purchase.imglobal.com/quote/sky_rescue?imgac=80000699"),
-
-
-                "", 
-            makeURL(loc("Full Brochure"), "http://producer.imglobal.com/ProducerDocuments.ashx?documentId=1903&a=80000699")
-            
-                
-           
-            
-            ])
-            );
-    endRow();
-
-    startRow();
-    writeText("");
-    endRow();    
-
-
-    startRow();
-    writeText("");
-    endRow();
-            
-
-
-
-    endSection();    
  
     
     
@@ -5408,15 +5351,32 @@ function writeSections(legacy) {
     }    
 
     startRow();
-    document.write(makeTableWithStyle("invisibleTableNormalText", 3, [
-                makeSubsectionURL("travel-subsections", "patriot-travel", "Patriot Travel Medical Insurance"),
-                makeSubsectionURL("travel-subsections", "patriot-platinum", "Patriot Platinum Travel Medical Insurance"),
-                makeSubsectionURL("travel-subsections", "trip-travel", "TRIP Insurance"),
+    document.write(makeTableWithStyle("invisibleTableNormalText", 2, [
+                makeSubsectionURL("travel-subsections", "patriot-travel", "Patriot Travel"),
+                makeSubsectionURL("travel-subsections", "patriot-americaplus", "Patriot America Plus"),                
+
 
                 makeBulletedListWithTitle("", [
                         "Medical coverage for most international travelers",
                         "Plan designs for U.S. citizens and non-U.S. citizens"
                         ]),
+                makeBulletedListWithTitle("", [
+                        "Similar to Patriot Travel",
+                        "Adds coverage for acute onset of pre-existing conditions"  
+                        
+                        ])                       
+
+
+                ]));
+    endRow();
+    
+    startRow();
+    document.write(makeTableWithStyle("invisibleTableNormalText", 2, [
+               
+                makeSubsectionURL("travel-subsections", "patriot-platinum", "Patriot Platinum"),
+                makeSubsectionURL("travel-subsections", "trip-travel", "TRIP Insurance"),
+
+                        
 
                 makeBulletedListWithTitle("", [
                         "Similar to Patriot Travel but more coverage",
@@ -5424,10 +5384,11 @@ function writeSections(legacy) {
                         ]),
 
                 makeBulletedListWithTitle("", [
-                        "Coverage to protect your travel cost and basic emergency medical coverage"
+                        "Coverage to protect your travel cost",
+                        "Basic emergency medical coverage"                       
                         ])
                 ]));
-    endRow();
+    endRow();    
 
     startSubsections("travel-subsections");
 
@@ -5457,7 +5418,7 @@ function writeSections(legacy) {
                 "Accidental Death & Loss of Limb", "$25,000 principal sum", "$25,000 principal sum", 
                 "Emergency Medical Evacuation", "$500,000", "$500,000", 
                 "Repatriation of remains", "$50,000", "$50,000", 
-                "Pre-existing conditions", "Up to $50,000 coverage ($2,500 for over 65 years old) for sudden and unexpected recurrence. Otherwise not covered.", "Up to policy limit for sudden and unexpected recurrence if covered by domestic health policy ($2,500 for over 65 years old). Up to $20,000 if not covered by domestic policy. Otherwise not covered.",
+                "Pre-existing conditions", "N/A", "Up to policy limit for sudden and unexpected recurrence if covered by domestic health policy ($2,500 for over 65 years old). Up to $20,000 if not covered by domestic policy. Otherwise not covered.",
                 "Group Pricing", "5 or more primary insured have about 10% discount", "5 or more primary insured have about 10% discount",
                 "Monthly rate for $50,000 maximum and $250 deductible ($10,000 max for 80+ age) - minimum purchase 5 days",
                 makeTable(2, [
@@ -5538,6 +5499,47 @@ function writeSections(legacy) {
     endRow();
 
     endSubsection();
+    
+    startSubsection("patriot-americaplus");
+
+    startRow();
+    writeText("Call from US - 8:00AM to 9:00PM Eastern time: +1 (317)318-8258 (Chinese), +1 (317)318-8259 (English).  Call from China: 950-4044-2336 (Chinese, Beijing time  8:00pm-12:00am, no long distance charges). Email: <a href=\"mailto:chris@taianfinancial.com\">chris@taianfinancial.com</a>, <a href=\"mailto:taianfinancialllc@gmail.com\">taianfinancialllc@gmail.com</a>");
+    writeText("");    
+
+    document.write(makeTable(2, [
+                "", makeRawURL("Patriot America Plus Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot_plus?imgac=80000699"),
+
+                "Changes from Patriot Travel Medical Insurance",
+                makeBulletedListWithTitle("", [
+
+                    "Maximum Limits $50,000, $100,000, $500,000", 
+                    "Medical Expenses for Acute Onset of Pre-existing Conditions prior to age 70 covered up to policy limit"
+
+                    ]),
+
+                "Shared features",
+                makeBulletedListWithTitle("", [
+                    "Short-term travel medical coverage (5 days to 2 years)", 
+                    "Deductible options from $0 to $2,500", 
+                    "Hospital Daily Indemnity $100 per day 10 day maximum", 
+                    "Renewable up to 24 months if 1 month or more is purchased",
+                    "Coverage for individuals and dependents",
+                    "Two plan designs for U.S. citizens and non-U.S. citizens traveling outside their home country",
+                    "Available in daily and monthly rates",
+                    "Freedom to seek treatment with hospital or doctor of your choice",
+                    "Trip cancellation, travel delay and baggage delay benefits available",
+                    "Universal Rx pharmacy discount savings",
+                    "24 hour secure access from anywhere in the world to manage your account at any time"
+                    ]),
+                "Patriot America Plus Brochure", makeURL("Brochure", "http://producer.imglobal.com/producerdocuments.ashx?a=80000699&documentid=3106"),
+
+               
+                "", makeBuyURL("Buy Patriot America Plus Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot_plus?imgac=80000699"),
+                "", makeBuyURL("Buy Patriot America Plus Group (for 5 or more) Travel Medical Insurance", "https://purchase.imglobal.com/quote/patriot_plus_group?imgac=80000699")                
+                ]));
+    endRow();
+
+    endSubsection();    
 
 
     startSubsection("patriot-platinum");
