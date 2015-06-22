@@ -1,0 +1,29 @@
+#!/usr/bin/perl
+
+my $zipPassword = `cat zippassword.txt`;
+$zipPassword =~ s/[\r\n]+//;
+my $cwd = $ENV{'PWD'};
+
+# find all files called info*.zip in ~/Downloads
+# Start by moving them into a scratch directory
+
+`mkdir -p /tmp/taianleads/ ; mv ~/Downloads/info*.zip /tmp/taianleads/`;
+
+# Go one .zip at a time
+
+my @zips = split("\n", `ls -1 /tmp/taianleads/*.zip`);
+chdir("/tmp/taianleads/");
+foreach my $zip (@zips) {
+    print "Processing $zip\n";
+    `yes A | unzip -P $zipPassword "$zip"`;
+    print "\n";
+    `php $cwd/xlstocsv.phptxt`;
+
+    # Output the info.csv contents
+    print "\n========== Read CSV ==========\n";
+    print `cat info.csv`;
+    print "==============================\n";
+
+    # Upload the info.csv contents
+}
+
