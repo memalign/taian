@@ -110,8 +110,21 @@ function writeIndividual($index, $individual) {
     echo "<br /><br />\n";
 }
 
+function remove_utf8_bom($text)
+{
+    $bom = pack('H*','EFBBBF');
+    $text = preg_replace("/^$bom/", '', $text);
+    return $text;
+}
+
+
 $emailbody = $_POST['emailbody'];
 $tabbedData = $_POST['tabbeddata'];
+if (is_null($tabbedData) && $_GET['readFromDisk']) {
+    # Try to read it from disk
+    $tabbedData = file_get_contents("/home1/taianfin/data.csv");
+    $tabbedData = remove_utf8_bom($tabbedData);
+}
 
 if (!is_null($emailbody)) {
     #echo "Found email body: $emailbody<br />";
@@ -233,6 +246,7 @@ if (!is_null($emailbody)) {
 
 } elseif (!is_null($tabbedData)) {
     echo "<a href=\".\">Back to main page.</a><br />";
+    echo "<a href=\"./index.php?readFromDisk=1\">Read CSV from server disk.</a><br />";
     echo "<a href=\"./reminders.php?slow=1\">Precompute then process reminder emails.</a><br />";
     echo "<a href=\"./reminders.php\">Process reminder emails.</a><br />";
 
@@ -461,6 +475,7 @@ if (!is_null($emailbody)) {
     sqlite_close($dbhandle);
 
 } else {
+    echo "<a href=\"./index.php?readFromDisk=1\">Read CSV from server disk.</a><br />";
     echo "<a href=\"./reminders.php?slow=1\">Precompute then process reminder emails.</a><br />";
     echo "<a href=\"./reminders.php\">Process reminder emails.</a><br />";
     echo "<a href=\"./adid.php\">Process AdIDs.</a><br />";
