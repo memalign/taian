@@ -1,6 +1,6 @@
 <?
 
-require_once 'PHPExcel-stripped/Classes/PHPExcel/IOFactory.php';
+require_once __DIR__.'/PHPExcel-stripped/Classes/PHPExcel/IOFactory.php';
 
 $inputFileType = 'Excel5';
 $inputFileName = 'info.xls';

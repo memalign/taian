@@ -2,7 +2,11 @@
 
 my $zipPassword = `cat zippassword.txt`;
 $zipPassword =~ s/[\r\n]+//;
+my $curlPassword = `cat curlpassword.txt`;
+$curlPassword =~ s/[\r\n]+//;
 my $cwd = $ENV{'PWD'};
+
+print "CWD: $cwd\n";
 
 # find all files called info*.zip in ~/Downloads
 # Start by moving them into a scratch directory
@@ -25,5 +29,11 @@ foreach my $zip (@zips) {
     print "==============================\n";
 
     # Upload the info.csv contents
+    print `curl $curlPassword -X POST --data-binary \@info.csv --header "Content-Type:text/csv" http://taianfinancial.com/referrals/index.php`;
+    print "\n";
+
+    # Put the info.csv somewhere safe
+    my $time = time();
+    `mkdir -p ~/Desktop/taiantools/processedFiles ; mv info.csv ~/Desktop/taiantools/processedFiles/info.$time.csv`;
 }
 
