@@ -29,11 +29,11 @@ foreach my $zip (@zips) {
     print "==============================\n";
 
     # Upload the info.csv contents
-    print `curl $curlPassword -X POST --data-binary \@info.csv --header "Content-Type:text/csv" http://taianfinancial.com/referrals/index.php`;
+    print `curl $curlPassword -X POST --data-binary \@info.csv --header "Content-Type:text/csv" http://taianfinancial.com/referrals/referrals.php`;
     print "\n";
 
     # Put the info.csv somewhere safe
     my $time = time();
-    `mkdir -p ~/Desktop/taiantools/processedFiles ; mv info.csv ~/Desktop/taiantools/processedFiles/info.$time.csv`;
+    `mkdir -p ~/Desktop/taiantools/processedFiles ; mv info.csv ~/Desktop/taiantools/processedFiles/info.$time.csv ; mv "$zip" ~/Desktop/taiantools/processedFiles/info.$time.zip`;
 }
 
