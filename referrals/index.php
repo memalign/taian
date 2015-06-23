@@ -125,10 +125,10 @@ while ($row = sqlite_fetch_array($result)) {
 
 $requestedSkips = max(intval($_POST['requestedSkips']), intval($_GET['requestedSkips']));
 if ($requestedSkips > 0) {
-    echo "You have requested to skip $requestedSkips polic".($requestedSkips == 1 ? "y" : "ies").".<br />";
+    echo "You have requested to skip $requestedSkips referral".($requestedSkips == 1 ? "" : "s").".<br />";
 }
 $count = count($allResults);
-echo "There are " . count($allResults) . " policies to process.<br />";
+echo "There ".($count == 1 ? "is" : "are")." " . $count . " referral".($count == 1 ? "" : "s")." to process.<br />";
 
 for ($i = 0; $i < $requestedSkips && $i < $count; $i = $i+1) {
     next($allResults);
