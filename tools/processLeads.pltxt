@@ -8,6 +8,9 @@ my $cwd = $ENV{'PWD'};
 
 print "CWD: $cwd\n";
 
+my $time = time();
+my $num = 0;
+
 # find all files called info*.zip in ~/Downloads
 # Start by moving them into a scratch directory
 
@@ -33,7 +36,9 @@ foreach my $zip (@zips) {
     print "\n";
 
     # Put the info.csv somewhere safe
-    my $time = time();
-    `mkdir -p ~/Desktop/taiantools/processedFiles ; mv info.csv ~/Desktop/taiantools/processedFiles/info.$time.csv ; mv "$zip" ~/Desktop/taiantools/processedFiles/info.$time.zip`;
+    my $numString = sprintf("%04d", $num);
+    `mkdir -p ~/Desktop/taiantools/processedFiles ; mv info.csv ~/Desktop/taiantools/processedFiles/info.$time.$numString.csv ; mv "$zip" ~/Desktop/taiantools/processedFiles/info.$time.$numString.zip`;
+
+    $num = $num + 1;
 }
 
