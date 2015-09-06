@@ -9,6 +9,8 @@
 
 require_once('db.php');
 
+set_time_limit(0);
+
 function sqlDateFromString($stringDate) {
     # These dates look like this: 24-Aug-2013
 
