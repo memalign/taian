@@ -124,7 +124,12 @@ $emailbody = $_POST['emailbody'];
 $tabbedData = $_POST['tabbeddata'];
 if (is_null($tabbedData) && $_GET['readFromDisk']) {
     # Try to read it from disk
-    $tabbedData = file_get_contents("/home1/taianfin/data.csv");
+    $filename = "/home1/taianfin/data.csv";
+    if (!is_null($_GET['specificFile'])) {
+        $filename = $_GET['specificFile'];
+    }
+
+    $tabbedData = file_get_contents($filename);
     $tabbedData = remove_utf8_bom($tabbedData);
 }
 
