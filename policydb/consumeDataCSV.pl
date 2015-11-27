@@ -17,6 +17,11 @@ foreach my $data (@splitDatas) {
 
 my @finalSplits = split("\n", `ls -1 $tmpDir/*.plus_header`);
 foreach my $finalSplit (@finalSplits) {
-   # Run php
-   system("php -f /home1/taianfin/public_html/policydb/index.php readFromDisk=1 specificFile=\"$finalSplit\"");
+   print "Processing $finalSplit\n";
+   my $ret = system("php -f /home1/taianfin/public_html/policydb/index.php readFromDisk=1 specificFile=\"$finalSplit\"");
+   print "Done processing $finalSplit". ($ret == 0 ? "success" : "failed with error $ret!!") ."\n";
+   if ($ret != 0) {
+      die("Failed to process all files.");
+   }
 }
+print "Done processing all files\n";
