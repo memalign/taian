@@ -265,9 +265,11 @@ END;
     $patriotExchangeGroupRenew = <<<END
 Dear __PRIMARY_INSURED_NAME__,
 
-您购买的泰安团体保险 __EXPIRATION_DATE__ 就要过期了。 如果您们仍然满足购买该保险的条件(签证和身份没有变化)并且需要续保的話，请在过期日期前申请团体延期。 第一年之内的延期不能超过12个月。延期需要超过一年时请与泰安公司联系，您需要先填写团体延期表格，然后团体中的成员才能在新的一年中续保。请注意，保险期间所产生的疾病续保时就不是 pre-existing condition，而重新购买新保险就不具备这个好处。 
+您购买的泰安团体保险 __EXPIRATION_DATE__ 就要过期了。 如果你们仍然满足购买该保险的条件(签证和身份没有变化)并且需要续保的話，请在过期日期前申请团体延期。 第一年之内的延期不能超过12个月。 延期超过一年时需要至少两个主申请人一起进入第二个年度，您需要先填写团体延期表格，然后团体中的成员才能在新的一年中续保，请与泰安公司联系。 请注意，保险期间所产生的疾病续保时就不是 pre-existing condition，而重新购买新保险就不具备这个好处。
 
 团体信用卡持有人可以发email给IMG，用上次的信用卡付款为需要续保的全体团体成员一起续保。一个团体IMG只接受一张信用卡，IMG要求提供信用卡号码的最后4位数字以确保信用卡正确。请见下面我们为您写的Email草稿。填入括号中的内容，将Email发给IMG。
+
+如果只有一个主申请人需要第二个年度的保险，您就不能续保团体保险了，请重新购买个人泰安计划B： http://taianfinancial.com/#l=cn&p=pivot-international-student
 
 非常感谢您对我们公司的信任和支持。对我们工作的不足之处，请给我们一个提醒。把我们泰安介绍给您的家人朋友和同事是对我们工作的最大的肯定。泰安公司非常希望得到您的继续支持。
 
@@ -304,11 +306,11 @@ END;
     $patriotExchangeGroupExpiresToday = <<<END
 Dear __PRIMARY_INSURED_NAME__,
 
-您购买的泰安团体保险 __EXPIRATION_DATE__ 今天就要过期了。 如果您们仍然满足购买该保险的条件(签证和身份没有变化)并且需要续保的話，请在今天(美东时间晚12点前）申请续保。 第一年之内的延期不能超过12个月。延期需要超过一年时请与泰安公司联系，您需要先填写团体延期表格，然后团体中的成员才能在新的一年中续保。请注意，保险期间所产生的疾病续保时就不是 pre-existing condition，而重新购买新保险就不具备这个好处。 
+您购买的泰安团体保险今天就要过期了。 如果你们仍然满足购买该保险的条件(签证和身份没有变化)并且需要续保的話，请在今天(美东时间晚12点前)申请续保。 第一年之内的延期不能超过12个月。 延期超过一年时需要至少两个主申请人一起进入第二个年度，您需要先填写团体延期表格，然后团体中的成员才能在新的一年中续保，请与泰安公司联系。 请注意，保险期间所产生的疾病续保时就不是 pre-existing condition，而重新购买新保险就不具备这个好处。
 
 团体信用卡持有人可以发email给IMG，用上次的信用卡付款为需要续保的全体团体成员一起续保。一个团体IMG只接受一张信用卡，IMG要求提供信用卡号码的最后4位数字以确保信用卡正确。请见下面我们为您写的Email草稿。填入括号中的内容，将Email发给IMG。
 
-如果您今天不能完成保险延期，以后您需要重新购买时， 请登陆泰安网站：http://taianfinancial.com/chinese
+如果只有一个主申请人需要第二个年度的保险，您就不能续保团体保险了，请重新购买个人泰安计划B： http://taianfinancial.com/#l=cn&p=pivot-international-student
 
 非常感谢您对我们公司的信任和支持。对我们工作的不足之处，请给我们一个提醒。把我们泰安介绍给您的家人朋友和同事是对我们工作的最大的肯定。泰安公司非常希望得到您的继续支持。
 
@@ -494,6 +496,7 @@ if (!is_null($_POST['processedRows'])) {
 //   - They haven't been reminded since before the day before expiration
 //   AND
 //   - They've gotten a reminder and today is later than the day of expiration
+$timeBeforeQuery = time();
 $soonToExpireQuery = "select $importantColumns from policy where (should_ignore = 0) and julianday(expiration_date_fmt) >= julianday(\"now\", \"-8 days\") and julianday(expiration_date_fmt) <= julianday(\"now\", \"+6 days\") and ( (last_reminder_date_fmt IS NULL) or (length(last_reminder_date_fmt) = 0) or ( (julianday(last_reminder_date_fmt) < julianday(expiration_date_fmt, \"-2 day\")) AND (julianday(\"now\") >= julianday(expiration_date_fmt, \"-1 day\"))  )   ) order by rowid desc";
 
 $result = sqlite_query($dbhandle, $soonToExpireQuery, $error);
@@ -501,11 +504,17 @@ if (!$result) {
     echo "Cannot execute query $error.";
     return;
 }
+$timeAfterQuery = time();
 
 $allResults = array();
+$timeForFirstFetch = 0;
 while ($row = sqlite_fetch_array($result)) {
+	if ($timeForFirstFetch <= 0) {
+		$timeForFirstFetch = time();
+	}
     array_push($allResults, $row);
 }
+$timeAfterFetchingResults = time();
 
 $requestedSkips = max(intval($_POST['requestedSkips']), intval($_GET['requestedSkips']));
 if ($requestedSkips > 0) {
@@ -524,6 +533,7 @@ foreach ($allResults as $key=>$value) {
 }
 
 echo "After pruning by certificate status, there are about " . count($allResults) . " policies to process.<br />";
+$timeAfterPruningByCertStatus = time();
 
 # Prune rows that lack an insured_name. These are group policy contact info rows.
 
@@ -535,7 +545,7 @@ foreach ($allResults as $key=>$value) {
 }
 
 echo "After pruning by insured name, there are about " . count($allResults) . " policies to process.<br />";
-
+$timeAfterPruningByInsuredName = time();
 
 # Prune ones with a newer effective date for the same person - find the siblings and check their effective date.
 # To improve performance, I can find the first non-nuked entry in $allResults and then only bother with other entries on the same certificate number
@@ -660,6 +670,7 @@ foreach ($allResults as $key=>$value) {
 }
 
 echo "After pruning by equivalent updated policies, there are about " . count($allResults) . " policies to process. (This is an over-estimate. Precise numbers take too long to calculate.)<br />";
+$timeAfterPruningByDate = time();
 
 reset($allResults); # Reset internal next pointer since we've removed some elements
 $firstKey = key($allResults);
@@ -724,7 +735,21 @@ echo implode(", ", $emails) . "<br />";
 echo nl2br($emailTemplate);
 echo "</div>";
 
+$timeAfterCreatingPage = time();
+
 sqlite_close($dbhandle);
+
+$timeAfterClosingDB = time();
+
+echo "<br /><br />";
+echo "Query time: " . ($timeAfterQuery - $timeBeforeQuery) . " seconds <br />";
+echo "First row fetch time: " . ($timeForFirstFetch - $timeAfterQuery) . " seconds <br />";
+echo "Fetch row time: " . ($timeAfterFetchingResults - $timeAfterQuery) . " seconds <br />";
+echo "Prune by cert status time: " . ($timeAfterPruningByCertStatus - $timeAfterFetchingResults) . " seconds <br />";
+echo "Prune by insured name time: " . ($timeAfterPruningByInsuredName - $timeAfterPruningByCertStatus) . " seconds <br />";
+echo "Prune by date time: " . ($timeAfterPruningByDate - $timeAfterPruningByInsuredName) . " seconds <br />";
+echo "Email create time: " . ($timeAfterCreatingPage - $timeAfterPruningByDate) . " seconds <br />";
+echo "Close DB time: " . ($timeAfterClosingDB - $timeAfterCreatingPage) . " seconds <br />";
 
 ?>
 
