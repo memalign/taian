@@ -156,6 +156,23 @@ Dear __PRIMARY_INSURED_NAME__,
 __SIGNATURE__
 END;
 
+    $studentSRenew = <<<END
+Dear __PRIMARY_INSURED_NAME__,
+
+您购买的泰安访问学者留学生保险计划S(TaiAn Exchange Select) __EXPIRATION_DATE__ 就要过期了。 如果您仍然满足购买该保险的条件(您的签证和身份没有变化)并且需要续保的話，请在过期日期之前提交申请以完成续保。
+
+请点击此链接申请续保： https://purchase.imglobal.com/beginrenewal?CertificateNumber=__CERTIFICATE_NUMBER__
+
+请注意，保险期间所产生的疾病续保时就不是 pre-existing condition，而重新购买新保险就不具备这个好处。
+
+另外，在续保输入信息时，您可以更改您的电话号码，Email address, 邮寄地址。您还可以选择邮寄方式接收还是Email only。
+
+非常感谢您对我们公司的信任和支持。对我们工作的不足之处，请给我们一个提醒。把我们泰安介绍给您的家人朋友和同事是对我们工作的最大的肯定。泰安公司非常希望得到您的继续支持。
+
+__SIGNATURE__
+END;
+
+
     $studentBBasicRenew = <<<END
 Dear __PRIMARY_INSURED_NAME__,
 
@@ -221,6 +238,23 @@ END;
 Dear __PRIMARY_INSURED_NAME__,
 
 您购买的泰安保险B（TaiAn Patriot Exchange)今天就要过期了。 如果您仍然满足购买该保险的条件(您的签证和身份没有变化)并且需要续保的話，今天是最后一天仍可续保。 请点击下面的链接申请续保： 
+
+https://purchase.imglobal.com/beginrenewal?CertificateNumber=__CERTIFICATE_NUMBER__
+         
+请注意，保险期间所产生的疾病续保时就不是 pre-existing condition，而重新购买新保险就不具备这个好处。另外，在续保输入信息时，您可以更改您的电话号码，Email address, 邮寄地址。您还可以选择邮寄方式接收还是Email only。
+     
+
+如果您今天不能完成续保，以后您需要重新购买时， 请登陆泰安网站： http://taianfinancial.com/#l=cn&p=pivot-international-student
+
+非常感谢您对我们公司的信任和支持。对我们工作的不足之处，请给我们一个提醒。把我们泰安介绍给您的家人朋友和同事是对我们工作的最大的肯定。泰安公司非常希望得到您的继续支持。
+
+__SIGNATURE__
+END;
+
+    $studentSExpiresToday = <<<END
+Dear __PRIMARY_INSURED_NAME__,
+
+您购买的泰安保险S（TaiAn Exchange Select)今天就要过期了。 如果您仍然满足购买该保险的条件(您的签证和身份没有变化)并且需要续保的話，今天是最后一天仍可续保。 请点击下面的链接申请续保： 
 
 https://purchase.imglobal.com/beginrenewal?CertificateNumber=__CERTIFICATE_NUMBER__
          
@@ -361,16 +395,17 @@ END;
         // These rules are not quite right for SHA policies. To renew the first time, the policy must be >= 3 months. Subsequent renewals can happen only 1 month apart.
         Student A renewal  - Start with SHA, policy at least 1 months
         Student A short rebuy - Start with SHA, policy < 1 months
-
         Student B renewal - start with EPSN; Also TaiAn Patriot Exchange (for individuals) which start with TPE(followed by numbers), TPEY. Be careful -- TPE isn't enough since group is TPEG.
+        Student S renewal - TPS, TPSY; Be careful -- TPS isn't a sufficient prefix condition because of TPSG plans
         Student B Basic plan renewal - start with EPBN
         Long term travel plan renew - PATA, PATI, PPLA  plus initial term (effective date to termination date) one month or more
         Short term travel plan rebuy (under one month can't renew) - PATA, PATI, PPLA  plus initial term (effective date to termination date) under one month
         Student A expires today rebuy - Start with SHA
         Student B expires today rebuy - start with EPSN; Also TaiAn Patriot Exchange (for individuals) which start with TPE(followed by numbers), TPEY. Be careful -- TPE isn't enough since group is TPEG.
+        Student S expires today rebuy - TPS, TPSY; Be careful -- TPS isn't a sufficient prefix condition because of TPSG plans
         Long term travel rebuy - PATA, PATI, PPLA  plus initial term (effective date to termination date) one month or more
-        Patriot Exchange group renewal - Starts with EPSWN; Also TaiAn Patriot Exchange Group which start with TPEG (and TPEGY)
-        Patriot Exchange group rebuy - Starts with EPSWN; Also TaiAn Patriot Exchange Group which start with TPEG (and TPEGY)
+        Group renewal - Starts with EPSWN; Also TaiAn Patriot Exchange Group which start with TPEG (and TPEGY), TPSG, TPSGY, TSGY
+        Group rebuy - Starts with EPSWN; Also TaiAn Patriot Exchange Group which start with TPEG (and TPEGY), TPSG, TPSGY, TSGY
      */
     $renewEmail = "";
     $subject = "";
@@ -386,6 +421,15 @@ END;
                 $renewEmail = $studentARenew;
                 $subject = $renewalSubject;
             }
+        }
+    } elseif (startsWith($certificateNumber, "TPSY") ||
+             (startsWith($certificateNumber, "TPS") && !startsWith($certificateNumber, "TPSG"))) {
+        if ($tooLateToRenew) {
+            $renewEmail = $studentSExpiresToday;
+            $subject = $expiresTodaySubject;
+        } else {
+            $renewEmail = $studentSRenew;
+            $subject = $renewalSubject;
         }
     } elseif (startsWith($certificateNumber, "EPSN") ||
               startsWith($certificateNumber, "TPEY") ||
@@ -422,7 +466,10 @@ END;
         }
     } elseif (startsWith($certificateNumber, "EPSWN") ||
               startsWith($certificateNumber, "PGTAI") ||
-              startsWith($certificateNumber, "TPEG")) {
+              startsWith($certificateNumber, "TPEG")  ||
+              startsWith($certificateNumber, "TPSG")  ||
+              startsWith($certificateNumber, "TPSGY") ||
+              startsWith($certificateNumber, "TSGY")) {
         if ($tooLateToRenew) {
             $renewEmail = $patriotExchangeGroupExpiresToday;
             $subject = $patriotExchangeGroupExpiresTodaySubject;
