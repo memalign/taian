@@ -778,7 +778,9 @@ $emailTemplate = emailTemplateForIndividuals($policiesOnSameCertificate);
 
 echo "Copy and paste this email:<br />";
 echo "<div id='faketextarea' style='border: 1px solid black; width:900px; overflow:auto' contenteditable>";
-echo implode(", ", $emails) . "<br />";
+if ($emails != null) {
+    echo implode(", ", $emails) . "<br />";
+}
 echo nl2br($emailTemplate);
 echo "</div>";
 
