@@ -2,6 +2,7 @@
 
 function sqlite_open($location,$mode) { 
     $handle = new SQLite3($location); 
+    $handle->busyTimeout(10000);
     return $handle; 
 } 
 
@@ -29,6 +30,7 @@ function sqlite_fetch_array(&$result) {
 
 function sqlite_close($handle) {
     $handle->close();
+    unset($handle);
 }
 
 function sqlite_escape_string($str) {
